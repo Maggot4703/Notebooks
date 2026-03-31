@@ -1,0 +1,12 @@
+compose
+
+[0m[0mAn alias to a run-mailcap's action compose.
+Originally run-mailcap is used to mime-type/file.
+More information: https://manned.org/compose.
+
+ - [0m[32;23;22;24;25mCompose action can be used to compose any existing file or new on default mailcap edit tool:
+   [33;23;22;24;25mcompose [0mfilename
+[0m
+ - [0m[32;23;22;24;25mWith run-mailcap:
+   [33;23;22;24;25mrun-mailcap --action=compose [0mfilename
+[0m[0m

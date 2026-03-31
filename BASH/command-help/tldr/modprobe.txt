@@ -1,0 +1,21 @@
+modprobe
+
+[0m[0mAdd or remove modules from the Linux kernel.
+See also: kmod for other module management commands.
+More information: https://manned.org/modprobe.
+
+ - [0m[32;23;22;24;25mPretend to load a module into the kernel, but don't actually do it:
+   [33;23;22;24;25msudo modprobe [0m[-n|--dry-run][33;23;22;24;25m [0mmodule_name
+[0m
+ - [0m[32;23;22;24;25mLoad a module into the kernel:
+   [33;23;22;24;25msudo modprobe [0mmodule_name
+[0m
+ - [0m[32;23;22;24;25mRemove a module from the kernel:
+   [33;23;22;24;25msudo modprobe [0m[-r|--remove][33;23;22;24;25m [0mmodule_name
+[0m
+ - [0m[32;23;22;24;25mRemove a module and those that depend on it from the kernel:
+   [33;23;22;24;25msudo modprobe --remove-dependencies [0mmodule_name
+[0m
+ - [0m[32;23;22;24;25mShow a kernel module's dependencies:
+   [33;23;22;24;25msudo modprobe [0m[-D|--show-depends][33;23;22;24;25m [0mmodule_name
+[0m[0m

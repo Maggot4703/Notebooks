@@ -1,0 +1,67 @@
+<form class="flexcol add-skill-dialog">
+
+    <div class="grid grid-2col">
+        <div class="resource grid-span-2">
+            <label for="label" class="resource-label">{{localize 'MGT2.EditSkill.SkillName'}}</label>
+            <input class="skillLabelField writable" name="label" type="text"
+                   data-dtype="String" value="{{label}}" title="{{localize 'MGT2.EditSkill.SkillNameDesc'}}"/>
+        </div>
+
+        <div class="resource">
+            <label for="shortname" class="resource-label">{{localize 'MGT2.EditSkill.ShortName'}}</label>
+            <input class="skillShortNameField" name="shortName" type="text"
+                   data-dtype="String" value="{{shortName}}"
+                   title="{{localize 'MGT2.EditSkill.ShortNameDesc'}}" readonly
+            />
+        </div>
+
+        <div class="resource">
+            <div class="parent-skill">
+                <label for="parentSkill" class="resource-label">Specialisation of</label><br/>
+                {{#if isEdit}}
+                    <input class="skillParentSelect" name="parentSkill" type="text"
+                           data-dtype="String" value="{{parentLabel}}" readonly />
+                {{else}}
+                    <select class="skillParentSelect" name="parentSkill">
+                        {{selectOptions SKILL_LIST selected=parentId}}
+                    </select>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+
+    <div class="characteristic-selection">
+        <label for="default" class="resource-label">Default Characteristic</label>
+        <select class="skillDefaultSelect" name="default">
+            {{selectOptions CHA_LIST selected=default}}
+        </select>
+        <br/>
+    </div>
+
+    <div>
+        <input type="checkbox" name="isCombat" class="skillCombatToggle"
+               {{checked isCombat}} data-type="Boolean"
+        />
+        <label for="isCombat" class="skillDialogLabel">{{localize 'MGT2.EditSkill.Combat'}}</label>
+    </div>
+    <div>
+        <input type="checkbox" name="isBackground" class="skillBackgroundToggle"
+               {{checked isBackground}} data-type="Boolean"
+        />
+        <label for="isBackground" class="skillDialogLabel">{{localize 'MGT2.EditSkill.Background'}}</label>
+    </div>
+    <div>
+        <input type="checkbox" name="isIndividual" class="skillIndividualToggle"
+               {{checked isIndividual}} data-type="Boolean"
+        />
+        <label for="isIndividual" class="skillDialogLabel">{{localize 'MGT2.EditSkill.Individual'}}</label>
+    </div>
+
+    <footer class="sheet-footer flexrow">
+        <button type="submit" name="submit" class="addNewSkill">Save</button>
+        {{#if isEdit}}
+            <button type="submit" name="submit" class="deleteSkill">{{#if isDeleted}}Undelete{{else}}Delete{{/if}}</button>
+        {{/if}}
+    </footer>
+
+</form>

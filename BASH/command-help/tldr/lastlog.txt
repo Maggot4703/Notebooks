@@ -1,0 +1,17 @@
+lastlog
+
+[0m[0mShow the most recent login of all users or of a user.
+More information: https://manned.org/lastlog.
+
+ - [0m[32;23;22;24;25mDisplay the most recent login of all users:
+   [33;23;22;24;25mlastlog[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the lastlog record of the specified user:
+   [33;23;22;24;25mlastlog --user [0musername
+[0m
+ - [0m[32;23;22;24;25mDisplay records older than 7 days:
+   [33;23;22;24;25mlastlog --before 7[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay records more recent than 3 days:
+   [33;23;22;24;25mlastlog --time 3[0m
+[0m[0m

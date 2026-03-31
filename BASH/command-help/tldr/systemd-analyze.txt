@@ -1,0 +1,27 @@
+systemd-analyze
+
+[0m[0mAnalyze and debug system manager.
+Show timing details about the boot process of units (services, mount points, devices, sockets).
+More information: https://www.freedesktop.org/software/systemd/man/systemd-analyze.html.
+
+ - [0m[32;23;22;24;25mPrint the last system startup time:
+   [33;23;22;24;25msystemd-analyze[0m
+[0m
+ - [0m[32;23;22;24;25mList all running units, ordered by the time they took to initialize:
+   [33;23;22;24;25msystemd-analyze blame[0m
+[0m
+ - [0m[32;23;22;24;25mPrint a tree of the time-critical chain of units:
+   [33;23;22;24;25msystemd-analyze critical-chain[0m
+[0m
+ - [0m[32;23;22;24;25mCreate an SVG file showing when each system service started, highlighting the time that they spent on initialization:
+   [33;23;22;24;25msystemd-analyze plot > [0mpath/to/file.svg
+[0m
+ - [0m[32;23;22;24;25mPlot a dependency graph and convert it to an SVG file:
+   [33;23;22;24;25msystemd-analyze dot | dot -T [0msvg[33;23;22;24;25m > [0mpath/to/file.svg
+[0m
+ - [0m[32;23;22;24;25mShow security scores of running units:
+   [33;23;22;24;25msystemd-analyze security[0m
+[0m
+ - [0m[32;23;22;24;25mView all udev rules together:
+   [33;23;22;24;25msystemd-analyze cat-config udev/rules.d[0m
+[0m[0m

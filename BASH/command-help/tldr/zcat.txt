@@ -1,0 +1,20 @@
+zcat
+
+[0m[0mPrint data from gzip compressed files to stdout.
+More information: https://www.gnu.org/software/gzip/manual/gzip.html.
+
+ - [0m[32;23;22;24;25mPrint the uncompressed contents of a gzip archive to stdout:
+   [33;23;22;24;25mzcat [0mpath/to/file.txt.gz
+[0m
+ - [0m[32;23;22;24;25mPrint compression details of a gzip archive to stdout:
+   [33;23;22;24;25mzcat [0m[-l|--list][33;23;22;24;25m [0mpath/to/file.txt.gz
+[0m
+ - [0m[32;23;22;24;25mTest the integrity of a compressed file verbosely:
+   [33;23;22;24;25mzcat [0m[-v|--verbose][33;23;22;24;25m [0m[-t|--test][33;23;22;24;25m [0mpath/to/file.txt.gz
+[0m
+ - [0m[32;23;22;24;25mSuppress all warnings when decompressing a file:
+   [33;23;22;24;25mzcat [0m[-q|--quiet][33;23;22;24;25m [0mpath/to/file.txt.gz
+[0m
+ - [0m[32;23;22;24;25mAvoid any system crashes when decompressing a file (slower output):
+   [33;23;22;24;25mzcat --synchronous [0mpath/to/file.txt.gz
+[0m[0m

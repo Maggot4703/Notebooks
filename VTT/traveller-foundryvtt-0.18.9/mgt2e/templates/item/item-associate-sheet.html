@@ -1,0 +1,55 @@
+<form class="{{cssClass}} item" autocomplete="off">
+    <section class="associate-sheet">
+        <h1 class="charname">
+            <select class="relationship-type" name="system.associate.relationship">
+                {{selectOptions RELATIONSHIP_SELECT selected=system.associate.relationship}}
+            </select>
+            <input class="associate-name" name="name" type="text" value="{{item.name}}" placeholder="Name"/>
+        </h1>
+    </section>
+
+    <section class="shadow">
+        <div class="resources grid grid-2col flex-group-left">
+            <div class="resource">
+                <label for="system.associate.affinity" class="resource-label">{{localize 'MGT2.History.Relation.Affinity'}}</label>
+                <br/>
+                <select name="system.associate.affinity">
+                    {{selectOptions AFFINITY_SELECT selected=system.associate.affinity}}
+                </select>
+            </div>
+            <div class="resource">
+                <label for="system.associate.enmity" class="resource-label">{{localize 'MGT2.History.Relation.Enmity'}}</label>
+                <br/>
+                <select name="system.associate.enmity">
+                    {{selectOptions ENMITY_SELECT selected=system.associate.enmity}}
+                </select>
+            </div>
+            <div class="resource">
+                <label for="system.associate.power" class="resource-label">{{localize 'MGT2.History.Relation.Power'}}</label>
+                <br/>
+                <select name="system.associate.power">
+                    {{selectOptions POWER_SELECT selected=system.associate.power}}
+                </select>
+            </div>
+            <div class="resource">
+                <label for="system.associate.influence" class="resource-label">{{localize 'MGT2.History.Relation.Influence'}}</label>
+                <br/>
+                <select name="system.associate.influence">
+                    {{selectOptions INFLUENCE_SELECT selected=system.associate.influence}}
+                </select>
+            </div>
+        </div>
+        <div>
+            <span class="rollable randomiseRelationship" title="Randomise relationship">
+                <i class="fa fa-dice"> </i>
+                Randomise relationship
+            </span>
+        </div>
+
+    </section>
+
+    <section class="item-description shadow">
+        {{editor enrichedDescription target="system.description" button=true editable=editable}}
+    </section>
+
+</form>

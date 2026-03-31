@@ -1,0 +1,17 @@
+setfacl
+
+[0m[0mSet file access control lists (ACL).
+More information: https://manned.org/setfacl.
+
+ - [0m[32;23;22;24;25mModify ACL of a file for user with read and write access:
+   [33;23;22;24;25msetfacl [0m[-m|--modify][33;23;22;24;25m u:[0musername[33;23;22;24;25m:rw [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mModify default ACL of a file for all users:
+   [33;23;22;24;25msetfacl [0m[-d|--default][33;23;22;24;25m [0m[-m|--modify][33;23;22;24;25m u::rw [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mRemove ACL of a file for a user:
+   [33;23;22;24;25msetfacl [0m[-x|--remove][33;23;22;24;25m u:[0musername[33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mRemove all ACL entries of a file:
+   [33;23;22;24;25msetfacl [0m[-b|--remove-all][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m[0m

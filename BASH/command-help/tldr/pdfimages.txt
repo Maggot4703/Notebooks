@@ -1,0 +1,17 @@
+pdfimages
+
+[0m[0mUtility for extracting images from PDFs.
+More information: https://manned.org/pdfimages.
+
+ - [0m[32;23;22;24;25mExtract all images from a PDF file and save them as PNGs:
+   [33;23;22;24;25mpdfimages -png [0mpath/to/file.pdf[33;23;22;24;25m [0mfilename_prefix
+[0m
+ - [0m[32;23;22;24;25mExtract images from pages 3 to 5:
+   [33;23;22;24;25mpdfimages -f [0m3[33;23;22;24;25m -l [0m5[33;23;22;24;25m [0mpath/to/file.pdf[33;23;22;24;25m [0mfilename_prefix
+[0m
+ - [0m[32;23;22;24;25mExtract images from a PDF file and include the page number in the output filenames:
+   [33;23;22;24;25mpdfimages -p [0mpath/to/file.pdf[33;23;22;24;25m [0mfilename_prefix
+[0m
+ - [0m[32;23;22;24;25mList information about all the images in a PDF file:
+   [33;23;22;24;25mpdfimages -list [0mpath/to/file.pdf
+[0m[0m

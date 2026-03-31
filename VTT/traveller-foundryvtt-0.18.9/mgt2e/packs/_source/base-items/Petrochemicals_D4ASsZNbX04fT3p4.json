@@ -1,0 +1,43 @@
+{
+  "name": "Petrochemicals",
+  "type": "cargo",
+  "img": "systems/mgt2e/icons/cargo/petrochemicals.svg",
+  "system": {
+    "cargo": {
+      "price": 10000,
+      "availability": "De, Fl, Ic, Wa",
+      "purchaseDM": "De +2",
+      "saleDM": "In +2, Ag +1, Lt 2",
+      "tons": "1D6 * 10",
+      "illegal": false,
+      "cost": 100
+    },
+    "description": "<p>Oil, liquid fuels.</p>",
+    "quantity": 1,
+    "cost": 1000
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "KjVCQnLdKUJeJDZy": 3,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.mongoose-traveller-core.cargo-items.Item.2BkcYETJjhLn9rHW",
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mgt2e",
+    "systemVersion": "0.13.2.0",
+    "createdTime": 1739833676234,
+    "modifiedTime": 1753212554005,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "exportSource": null
+  },
+  "folder": "nTFQBn7eKDifeKFR",
+  "_id": "D4ASsZNbX04fT3p4",
+  "sort": 0,
+  "_key": "!items!D4ASsZNbX04fT3p4"
+}

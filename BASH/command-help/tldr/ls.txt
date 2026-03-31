@@ -1,0 +1,29 @@
+ls
+
+[0m[0mList directory contents.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html.
+
+ - [0m[32;23;22;24;25mList files one per line:
+   [33;23;22;24;25mls -1[0m
+[0m
+ - [0m[32;23;22;24;25mList all files, including hidden files:
+   [33;23;22;24;25mls [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mList files with a trailing symbol to indicate file type (directory/, symbolic_link@, executable*, ...):
+   [33;23;22;24;25mls [0m[-F|--classify]
+[0m
+ - [0m[32;23;22;24;25mList all files in [l]ong format (permissions, ownership, size, and modification date):
+   [33;23;22;24;25mls [0m[-la|-l --all]
+[0m
+ - [0m[32;23;22;24;25mList files in [l]ong format with size displayed using human-readable units (KiB, MiB, GiB):
+   [33;23;22;24;25mls [0m[-lh|-l --human-readable]
+[0m
+ - [0m[32;23;22;24;25mList files in [l]ong format, sorted by [S]ize (descending) recursively:
+   [33;23;22;24;25mls [0m[-lSR|-lS --recursive]
+[0m
+ - [0m[32;23;22;24;25mList files in [l]ong format, sorted by [t]ime the file was modified and in reverse order (oldest first):
+   [33;23;22;24;25mls [0m[-ltr|-lt --reverse]
+[0m
+ - [0m[32;23;22;24;25mOnly list directories:
+   [33;23;22;24;25mls [0m[-d|--directory][33;23;22;24;25m */[0m
+[0m[0m

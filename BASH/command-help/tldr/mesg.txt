@@ -1,0 +1,15 @@
+mesg
+
+[0m[0mCheck or set a terminal's ability to receive messages from other users, usually from the write command.
+See also: write, talk.
+More information: https://manned.org/mesg.1p.
+
+ - [0m[32;23;22;24;25mCheck terminal's openness to write messages:
+   [33;23;22;24;25mmesg[0m
+[0m
+ - [0m[32;23;22;24;25mDisallow receiving messages from the write command:
+   [33;23;22;24;25mmesg n[0m
+[0m
+ - [0m[32;23;22;24;25mAllow receiving messages from the write command:
+   [33;23;22;24;25mmesg y[0m
+[0m[0m

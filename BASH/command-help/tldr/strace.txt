@@ -1,0 +1,26 @@
+strace
+
+[0m[0mTroubleshooting tool for tracing system calls.
+More information: https://manned.org/strace.
+
+ - [0m[32;23;22;24;25mStart tracing a specific process by its PID:
+   [33;23;22;24;25mstrace [0m[-p|--attach][33;23;22;24;25m [0mpid
+[0m
+ - [0m[32;23;22;24;25mTrace a process and filter output by system call [e]xpression:
+   [33;23;22;24;25mstrace [0m[-p|--attach][33;23;22;24;25m [0mpid[33;23;22;24;25m -e [0msystem_call,system_call2,...
+[0m
+ - [0m[32;23;22;24;25mCount time, calls, and errors for each system call and report a summary on program exit:
+   [33;23;22;24;25mstrace [0m[-p|--attach][33;23;22;24;25m [0mpid[33;23;22;24;25m [0m[-c|--summary-only]
+[0m
+ - [0m[32;23;22;24;25mShow the time spent in every system call and specify the maximum string size to print:
+   [33;23;22;24;25mstrace [0m[-p|--attach][33;23;22;24;25m [0mpid[33;23;22;24;25m [0m[-T|--syscall-times][33;23;22;24;25m [0m[-s|--string-limit][33;23;22;24;25m [0m32
+[0m
+ - [0m[32;23;22;24;25mStart tracing a program by executing it:
+   [33;23;22;24;25mstrace [0mprogram
+[0m
+ - [0m[32;23;22;24;25mStart tracing file operations of a program:
+   [33;23;22;24;25mstrace -e trace=file [0mprogram
+[0m
+ - [0m[32;23;22;24;25mStart tracing network operations of a program as well as all its forked and child processes, saving the output to a file:
+   [33;23;22;24;25mstrace [0m[-f|--follow-forks][33;23;22;24;25m -e trace=network [0m[-o|--output][33;23;22;24;25m [0mtrace.txt[33;23;22;24;25m [0mprogram
+[0m[0m

@@ -1,0 +1,11 @@
+unshare
+
+[0m[0mExecute a command in new user-defined namespaces.
+More information: https://manned.org/unshare.
+
+ - [0m[32;23;22;24;25mExecute a command without sharing access to connected networks:
+   [33;23;22;24;25munshare [0m[-n|--net][33;23;22;24;25m [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m
+ - [0m[32;23;22;24;25mExecute a command as a child process without sharing mounts, processes, or networks:
+   [33;23;22;24;25munshare [0m[-m|--mount][33;23;22;24;25m [0m[-i|--pid][33;23;22;24;25m [0m[-n|--net][33;23;22;24;25m [0m[-f|--fork][33;23;22;24;25m [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m[0m

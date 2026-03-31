@@ -1,0 +1,23 @@
+lvmpolld
+
+[0m[0mLVM poll daemon that supervises long-running LVM operations.
+More information: https://manned.org/lvmpolld.
+
+ - [0m[32;23;22;24;25mStart the daemon in the foreground:
+   [33;23;22;24;25mlvmpolld [0m[-f|--foreground]
+[0m
+ - [0m[32;23;22;24;25mStart in the foreground with debug logging:
+   [33;23;22;24;25mlvmpolld [0m[-f|--foreground][33;23;22;24;25m [0m[-l|--log][33;23;22;24;25m debug[0m
+[0m
+ - [0m[32;23;22;24;25mSet the idle shutdown timeout (seconds):
+   [33;23;22;24;25mlvmpolld [0m[-t|--timeout][33;23;22;24;25m [0m300
+[0m
+ - [0m[32;23;22;24;25mUse a custom socket path:
+   [33;23;22;24;25mlvmpolld [0m[-s|--socket][33;23;22;24;25m [0m/tmp/lvmpolld.socket
+[0m
+ - [0m[32;23;22;24;25mUse a custom PID file:
+   [33;23;22;24;25mlvmpolld [0m[-p|--pidfile][33;23;22;24;25m [0m/tmp/lvmpolld.pid
+[0m
+ - [0m[32;23;22;24;25mDump the current state:
+   [33;23;22;24;25mlvmpolld --dump[0m
+[0m[0m

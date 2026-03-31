@@ -1,0 +1,14 @@
+blkdiscard
+
+[0m[0mDiscards device sectors on storage devices. Useful for SSDs.
+More information: https://manned.org/blkdiscard.
+
+ - [0m[32;23;22;24;25mDiscard all sectors on a device, removing all data:
+   [33;23;22;24;25mblkdiscard [0m/dev/device
+[0m
+ - [0m[32;23;22;24;25mSecurely discard all blocks on a device, removing all data:
+   [33;23;22;24;25mblkdiscard [0m[-s|--secure][33;23;22;24;25m [0m/dev/device
+[0m
+ - [0m[32;23;22;24;25mDiscard the first 100 MB of a device:
+   [33;23;22;24;25mblkdiscard [0m[-l|--length][33;23;22;24;25m [0m100MB[33;23;22;24;25m [0m/dev/device
+[0m[0m

@@ -1,0 +1,11 @@
+fatlabel
+
+[0m[0mGet or set the label of a FAT32 partition.
+More information: https://manned.org/fatlabel.
+
+ - [0m[32;23;22;24;25mGet the label of a FAT32 partition:
+   [33;23;22;24;25mfatlabel [0m/dev/sda1
+[0m
+ - [0m[32;23;22;24;25mSet the label of a FAT32 partition:
+   [33;23;22;24;25mfatlabel [0m/dev/sdc3[33;23;22;24;25m "[0mnew_label[33;23;22;24;25m"[0m
+[0m[0m

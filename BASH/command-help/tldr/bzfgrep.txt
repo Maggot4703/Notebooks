@@ -1,0 +1,23 @@
+bzfgrep
+
+[0m[0mFind any fixed strings separated by new lines in bzip2 compressed files using fgrep.
+More information: https://manned.org/bzfgrep.
+
+ - [0m[32;23;22;24;25mSearch for lines matching the list of search strings separated by new lines in a compressed file (case-sensitive):
+   [33;23;22;24;25mbzfgrep "[0msearch_string[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for lines matching the list of search strings separated by new lines in a compressed file (case-insensitive):
+   [33;23;22;24;25mbzfgrep [0m[-i|--ignore-case][33;23;22;24;25m "[0msearch_string[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for lines that do not match the list of search strings separated by new lines in a compressed file:
+   [33;23;22;24;25mbzfgrep [0m[-v|--invert-match][33;23;22;24;25m "[0msearch_string[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint file name and line number for each match:
+   [33;23;22;24;25mbzfgrep [0m[-H|--with-filename][33;23;22;24;25m [0m[-n|--line-number][33;23;22;24;25m "[0msearch_string[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for lines matching a pattern, printing only the matched text:
+   [33;23;22;24;25mbzfgrep [0m[-o|--only-matching][33;23;22;24;25m "[0msearch_string[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mRecursively search files in a bzip2 compressed tar archive for the given list of strings:
+   [33;23;22;24;25mbzfgrep [0m[-r|--recursive][33;23;22;24;25m "[0msearch_string[33;23;22;24;25m" [0mpath/to/file
+[0m[0m

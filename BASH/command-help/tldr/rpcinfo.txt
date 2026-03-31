@@ -1,0 +1,20 @@
+rpcinfo
+
+[0m[0mMake an RPC call to an RPC server and reports what it finds.
+More information: https://manned.org/rpcinfo.
+
+ - [0m[32;23;22;24;25mShow full table of all RPC services registered on localhost:
+   [33;23;22;24;25mrpcinfo[0m
+[0m
+ - [0m[32;23;22;24;25mShow concise table of all RPC services registered on localhost:
+   [33;23;22;24;25mrpcinfo -s [0mlocalhost
+[0m
+ - [0m[32;23;22;24;25mDisplay table of statistics of rpcbind operations on localhost:
+   [33;23;22;24;25mrpcinfo -m[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay list of entries of given service name (mountd) and version number (2) on a remote nfs share:
+   [33;23;22;24;25mrpcinfo -l [0mremote_nfs_server_ip[33;23;22;24;25m [0mmountd[33;23;22;24;25m [0m2
+[0m
+ - [0m[32;23;22;24;25mDelete the registration for version 1 of the mountd service for all transports:
+   [33;23;22;24;25mrpcinfo -d [0mmountd[33;23;22;24;25m [0m1
+[0m[0m

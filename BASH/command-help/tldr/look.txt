@@ -1,0 +1,19 @@
+look
+
+[0m[0mDisplay lines beginning with a prefix in a sorted file.
+Note: The lines in the file must be sorted.
+See also: grep, sort.
+More information: https://man.openbsd.org/look.
+
+ - [0m[32;23;22;24;25mSearch for lines beginning with a specific prefix in a specific file:
+   [33;23;22;24;25mlook [0mprefix[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCase-insensitively search only on alphanumeric characters:
+   [33;23;22;24;25mlook [0m[-f|--ignore-case][33;23;22;24;25m [0m[-d|--alphanum][33;23;22;24;25m [0mprefix[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSpecify a string termination character (space by default):
+   [33;23;22;24;25mlook [0m[-t|--terminate][33;23;22;24;25m [0m,
+[0m
+ - [0m[32;23;22;24;25mSearch in /usr/share/dict/words (--alphanum and --ignore-case are assumed):
+   [33;23;22;24;25mlook [0mprefix
+[0m[0m

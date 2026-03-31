@@ -1,0 +1,11 @@
+cfdisk
+
+[0m[0mManage partition tables and partitions on a hard disk using a curses UI.
+More information: https://manned.org/cfdisk.
+
+ - [0m[32;23;22;24;25mStart the partition manipulator with a specific device:
+   [33;23;22;24;25mcfdisk [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mCreate a new partition table for a specific device and manage it:
+   [33;23;22;24;25mcfdisk [0m[-z|--zero][33;23;22;24;25m [0m/dev/sdX
+[0m[0m

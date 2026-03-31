@@ -1,0 +1,17 @@
+seq
+
+[0m[0mOutput a sequence of numbers to stdout.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/seq-invocation.html.
+
+ - [0m[32;23;22;24;25mSequence from 1 to 10:
+   [33;23;22;24;25mseq 10[0m
+[0m
+ - [0m[32;23;22;24;25mEvery 3rd number from 5 to 20:
+   [33;23;22;24;25mseq 5 3 20[0m
+[0m
+ - [0m[32;23;22;24;25mSeparate the output with a space instead of a newline:
+   [33;23;22;24;25mseq [0m[-s|--separator][33;23;22;24;25m " " 5 3 20[0m
+[0m
+ - [0m[32;23;22;24;25mFormat output width to a minimum of 4 digits padding with zeros as necessary:
+   [33;23;22;24;25mseq [0m[-f|--format][33;23;22;24;25m "%04g" 5 3 20[0m
+[0m[0m

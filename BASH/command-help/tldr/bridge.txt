@@ -1,0 +1,23 @@
+bridge
+
+[0m[0mShow and manipulate network bridge addresses and devices.
+More information: https://manned.org/bridge.
+
+ - [0m[32;23;22;24;25mList all bridges and their interfaces:
+   [33;23;22;24;25mbridge [0m[l|link]
+[0m
+ - [0m[32;23;22;24;25mShow port vlan information:
+   [33;23;22;24;25mbridge [0m[v|vlan]
+[0m
+ - [0m[32;23;22;24;25mAssign a VLAN to a port:
+   [33;23;22;24;25msudo bridge [0m[v|vlan][33;23;22;24;25m [0m[a|add][33;23;22;24;25m dev [0mlanX[33;23;22;24;25m vid [0mvlan_id[33;23;22;24;25m pvid [0mtagged|untagged
+[0m
+ - [0m[32;23;22;24;25mRemove a VLAN from a port:
+   [33;23;22;24;25msudo bridge [0m[v|vlan][33;23;22;24;25m [0m[d|delete][33;23;22;24;25m dev [0mlanX[33;23;22;24;25m vid [0mvlan_id
+[0m
+ - [0m[32;23;22;24;25mWatch for changes in bridge interfaces:
+   [33;23;22;24;25mbridge [0m[mo|monitor]
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mbridge [0m[h|help]
+[0m[0m

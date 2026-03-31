@@ -1,0 +1,14 @@
+unset
+
+[0m[0mRemove shell variables or functions.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-unset.
+
+ - [0m[32;23;22;24;25mRemove the variable foo, or if the variable doesn't exist, remove the function foo:
+   [33;23;22;24;25munset [0mfoo
+[0m
+ - [0m[32;23;22;24;25mRemove the variables foo and bar:
+   [33;23;22;24;25munset -v [0mfoo[33;23;22;24;25m [0mbar
+[0m
+ - [0m[32;23;22;24;25mRemove the function my_func:
+   [33;23;22;24;25munset -f [0mmy_func
+[0m[0m

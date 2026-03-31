@@ -1,0 +1,21 @@
+rmmod
+
+[0m[0mRemove modules from the Linux kernel.
+See also: kmod for other module management commands.
+More information: https://manned.org/rmmod.
+
+ - [0m[32;23;22;24;25mRemove a module from the kernel:
+   [33;23;22;24;25msudo rmmod [0mmodule_name
+[0m
+ - [0m[32;23;22;24;25mRemove a module from the kernel and display verbose information:
+   [33;23;22;24;25msudo rmmod --verbose [0mmodule_name
+[0m
+ - [0m[32;23;22;24;25mRemove a module from the kernel and send errors to syslog instead of stderr:
+   [33;23;22;24;25msudo rmmod --syslog [0mmodule_name
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mrmmod --help[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mrmmod --version[0m
+[0m[0m

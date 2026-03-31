@@ -1,0 +1,20 @@
+halt
+
+[0m[0mHalt the system.
+More information: https://manned.org/halt.8.
+
+ - [0m[32;23;22;24;25mHalt the system:
+   [33;23;22;24;25mhalt[0m
+[0m
+ - [0m[32;23;22;24;25mPower off the system (same as poweroff):
+   [33;23;22;24;25mhalt [0m[-p|--poweroff]
+[0m
+ - [0m[32;23;22;24;25mReboot the system (same as reboot):
+   [33;23;22;24;25mhalt --reboot[0m
+[0m
+ - [0m[32;23;22;24;25mHalt immediately without contacting the system manager:
+   [33;23;22;24;25mhalt [0m[-f|--force]
+[0m
+ - [0m[32;23;22;24;25mWrite the wtmp shutdown entry without halting the system:
+   [33;23;22;24;25mhalt [0m[-w|--wtmp-only]
+[0m[0m

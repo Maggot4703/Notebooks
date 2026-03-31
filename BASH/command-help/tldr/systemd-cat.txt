@@ -1,0 +1,20 @@
+systemd-cat
+
+[0m[0mConnect a pipeline or program's output streams with the systemd journal.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-cat.html.
+
+ - [0m[32;23;22;24;25mWrite the output of the specified command to the journal (both output streams are captured):
+   [33;23;22;24;25msystemd-cat [0mcommand
+[0m
+ - [0m[32;23;22;24;25mWrite the output of a pipeline to the journal (stderr stays connected to the terminal):
+   command[33;23;22;24;25m | systemd-cat[0m
+[0m
+ - [0m[32;23;22;24;25mUse the specified identifier (default: cat when reading from a pipeline, executable name otherwise):
+   command[33;23;22;24;25m | systemd-cat [0m[-t|--identifier][33;23;22;24;25m [0mid
+[0m
+ - [0m[32;23;22;24;25mUse the specified default priority level for all logged messages:
+   [33;23;22;24;25msystemd-cat [0m[-p|--priority][33;23;22;24;25m [0memerg|alert|crit|err|warning|notice|info|debug[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mUse the specified default priority level for the logged messages from the command's stderr:
+   [33;23;22;24;25msystemd-cat --stderr-priority [0memerg|alert|crit|err|warning|notice|info|debug[33;23;22;24;25m [0mcommand
+[0m[0m

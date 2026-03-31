@@ -1,0 +1,21 @@
+killall
+
+[0m[0mSend kill signal to all instances of a process by name (must be exact name).
+All signals except SIGKILL and SIGSTOP can be intercepted by the process, allowing a clean exit.
+More information: https://manned.org/killall.
+
+ - [0m[32;23;22;24;25mTerminate a process using the default SIGTERM (terminate) signal:
+   [33;23;22;24;25mkillall [0mprocess_name
+[0m
+ - [0m[32;23;22;24;25mList available signal names (to be used without the 'SIG' prefix):
+   [33;23;22;24;25mkillall [0m[-l|--list]
+[0m
+ - [0m[32;23;22;24;25mInteractively ask for confirmation before termination:
+   [33;23;22;24;25mkillall [0m[-i|--interactive][33;23;22;24;25m [0mprocess_name
+[0m
+ - [0m[32;23;22;24;25mTerminate a process using the SIGINT (interrupt) signal, which is the same signal sent by pressing <Ctrl c>:
+   [33;23;22;24;25mkillall -INT [0mprocess_name
+[0m
+ - [0m[32;23;22;24;25mForce kill a process:
+   [33;23;22;24;25mkillall -KILL [0mprocess_name
+[0m[0m

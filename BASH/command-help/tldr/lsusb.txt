@@ -1,0 +1,20 @@
+lsusb
+
+[0m[0mDisplay information about USB buses and devices connected to them.
+More information: https://manned.org/lsusb.
+
+ - [0m[32;23;22;24;25mList all the USB devices available:
+   [33;23;22;24;25mlsusb[0m
+[0m
+ - [0m[32;23;22;24;25mList the USB hierarchy as a tree:
+   [33;23;22;24;25mlsusb [0m[-t|--tree]
+[0m
+ - [0m[32;23;22;24;25mList verbose information about USB devices:
+   [33;23;22;24;25mlsusb [0m[-v|--verbose]
+[0m
+ - [0m[32;23;22;24;25mList detailed information about a USB device:
+   [33;23;22;24;25mlsusb [0m[-v|--verbose][33;23;22;24;25m -s [0mbus[33;23;22;24;25m:[0mdevice number
+[0m
+ - [0m[32;23;22;24;25mList devices with a specified vendor and product ID only:
+   [33;23;22;24;25mlsusb -d [0mvendor[33;23;22;24;25m:[0mproduct
+[0m[0m

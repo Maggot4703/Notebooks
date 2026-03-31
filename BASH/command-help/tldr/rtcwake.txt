@@ -1,0 +1,23 @@
+rtcwake
+
+[0m[0mEnter a system sleep state until specified wakeup time relative to your BIOS clock.
+More information: https://manned.org/rtcwake.
+
+ - [0m[32;23;22;24;25mShow whether an alarm is set or not:
+   [33;23;22;24;25msudo rtcwake [0m[-m|--mode][33;23;22;24;25m show [0m[-v|--verbose]
+[0m
+ - [0m[32;23;22;24;25mSuspend to RAM and wakeup after 10 seconds:
+   [33;23;22;24;25msudo rtcwake [0m[-m|--mode][33;23;22;24;25m mem [0m[-s|--seconds][33;23;22;24;25m [0m10
+[0m
+ - [0m[32;23;22;24;25mSuspend to disk (higher power saving) and wakeup 15 minutes later:
+   [33;23;22;24;25msudo rtcwake [0m[-m|--mode][33;23;22;24;25m disk --date +[0m15[33;23;22;24;25mmin[0m
+[0m
+ - [0m[32;23;22;24;25mFreeze the system (more efficient than suspend-to-RAM but version 3.9 or newer of the Linux kernel is required) and wakeup at a given date and time:
+   [33;23;22;24;25msudo rtcwake [0m[-m|--mode][33;23;22;24;25m freeze --date [0mYYYYMMDDhhmm
+[0m
+ - [0m[32;23;22;24;25mDisable a previously set alarm:
+   [33;23;22;24;25msudo rtcwake [0m[-m|--mode][33;23;22;24;25m disable[0m
+[0m
+ - [0m[32;23;22;24;25mPerform a dry run to wakeup the computer at a given time. (Press <Ctrl c> to abort):
+   [33;23;22;24;25msudo rtcwake [0m[-m|--mode][33;23;22;24;25m on --date [0mhh:ss
+[0m[0m

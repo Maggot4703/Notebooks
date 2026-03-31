@@ -1,0 +1,43 @@
+LRFVIEWER(1)                        calibre                       LRFVIEWER(1)
+
+NAME
+       lrfviewer - lrfviewer
+
+          lrfviewer [options] book.lrf
+
+       Read the LRF e-book book.lrf
+
+       Whenever  you pass arguments to lrfviewer that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+[OPTIONS]
+       --disable-hyphenation
+              Disable hyphenation. Should significantly speed up rendering.
+
+       --help, -h
+              show this help message and exit
+
+       --profile
+              Profile the LRF renderer
+
+       --verbose
+              Print more information about the rendering process
+
+       --version
+              show program's version number and exit
+
+       --visual-debug
+              Turn on visual aids to debugging the rendering engine
+
+       --white-background
+              By  default the background is off white as I find this easier on
+              the eyes. Use this option to make the background pure white.
+
+AUTHOR
+       Kovid Goyal
+
+COPYRIGHT
+       Kovid Goyal
+
+6.13.0                         February 17, 2023                  LRFVIEWER(1)

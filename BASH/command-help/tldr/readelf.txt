@@ -1,0 +1,20 @@
+readelf
+
+[0m[0mDisplay information about ELF files.
+More information: https://manned.org/readelf.1.
+
+ - [0m[32;23;22;24;25mDisplay all information about the ELF file:
+   [33;23;22;24;25mreadelf -all [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay all the headers present in the ELF file:
+   [33;23;22;24;25mreadelf --headers [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay the entries in symbol table section of the ELF file, if it has one:
+   [33;23;22;24;25mreadelf --symbols [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay ELF header information:
+   [33;23;22;24;25mreadelf --file-header [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay ELF section header information:
+   [33;23;22;24;25mreadelf --section-headers [0mpath/to/binary
+[0m[0m

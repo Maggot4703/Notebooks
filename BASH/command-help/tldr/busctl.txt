@@ -1,0 +1,26 @@
+busctl
+
+[0m[0mIntrospect and monitor the D-Bus bus.
+More information: https://www.freedesktop.org/software/systemd/man/busctl.html.
+
+ - [0m[32;23;22;24;25mShow all peers on the bus, by their service names:
+   [33;23;22;24;25mbusctl list[0m
+[0m
+ - [0m[32;23;22;24;25mShow process information and credentials of a bus service, a process, or the owner of the bus (if no parameter is specified):
+   [33;23;22;24;25mbusctl status [0mservice|pid
+[0m
+ - [0m[32;23;22;24;25mDump messages being exchanged. If no service is specified, show all messages on the bus:
+   [33;23;22;24;25mbusctl monitor [0mservice1 service2 ...
+[0m
+ - [0m[32;23;22;24;25mShow an object tree of one or more services (or all services if no service is specified):
+   [33;23;22;24;25mbusctl tree [0mservice1 service2 ...
+[0m
+ - [0m[32;23;22;24;25mShow interfaces, methods, properties and signals of the specified object on the specified service:
+   [33;23;22;24;25mbusctl introspect [0mservice[33;23;22;24;25m [0mpath/to/object
+[0m
+ - [0m[32;23;22;24;25mRetrieve the current value of one or more object properties:
+   [33;23;22;24;25mbusctl get-property [0mservice[33;23;22;24;25m [0mpath/to/object[33;23;22;24;25m [0minterface_name[33;23;22;24;25m [0mproperty_name
+[0m
+ - [0m[32;23;22;24;25mInvoke a method and show the response:
+   [33;23;22;24;25mbusctl call [0mservice[33;23;22;24;25m [0mpath/to/object[33;23;22;24;25m [0minterface_name[33;23;22;24;25m [0mmethod_name
+[0m[0m

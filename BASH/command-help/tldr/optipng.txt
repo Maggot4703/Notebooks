@@ -1,0 +1,23 @@
+optipng
+
+[0m[0mPNG file optimization utility.
+More information: https://optipng.sourceforge.net.
+
+ - [0m[32;23;22;24;25mCompress a PNG with default settings:
+   [33;23;22;24;25moptipng [0mpath/to/file.png
+[0m
+ - [0m[32;23;22;24;25mCompress a PNG with the best compression:
+   [33;23;22;24;25moptipng -o [0m7[33;23;22;24;25m [0mpath/to/file.png
+[0m
+ - [0m[32;23;22;24;25mCompress a PNG with the fastest compression:
+   [33;23;22;24;25moptipng -o [0m0[33;23;22;24;25m [0mpath/to/file.png
+[0m
+ - [0m[32;23;22;24;25mCompress a PNG and add interlacing:
+   [33;23;22;24;25moptipng -i [0m1[33;23;22;24;25m [0mpath/to/file.png
+[0m
+ - [0m[32;23;22;24;25mCompress a PNG and preserve all metadata (including file timestamps):
+   [33;23;22;24;25moptipng -preserve [0mpath/to/file.png
+[0m
+ - [0m[32;23;22;24;25mCompress a PNG and remove all metadata:
+   [33;23;22;24;25moptipng -strip all [0mpath/to/file.png
+[0m[0m

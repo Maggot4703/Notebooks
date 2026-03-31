@@ -1,0 +1,20 @@
+mktemp
+
+[0m[0mCreate a temporary file or directory.
+More information: https://man.openbsd.org/mktemp.1.
+
+ - [0m[32;23;22;24;25mCreate an empty temporary file and print its absolute path:
+   [33;23;22;24;25mmktemp[0m
+[0m
+ - [0m[32;23;22;24;25mUse a custom directory if $TMPDIR is not set (the default is platform-dependent, but usually /tmp):
+   [33;23;22;24;25mmktemp -p /[0mpath/to/temporary_directory
+[0m
+ - [0m[32;23;22;24;25mUse a custom path template (Xs are replaced with random alphanumeric characters):
+   [33;23;22;24;25mmktemp [0m/tmp/example.XXXXXXXX
+[0m
+ - [0m[32;23;22;24;25mUse a custom file name template:
+   [33;23;22;24;25mmktemp -t [0mexample.XXXXXXXX
+[0m
+ - [0m[32;23;22;24;25mCreate an empty temporary directory and print its absolute path:
+   [33;23;22;24;25mmktemp -d[0m
+[0m[0m

@@ -1,0 +1,14 @@
+mkfs.ntfs
+
+[0m[0mCreate a NTFS filesystem inside a partition.
+More information: https://manned.org/mkfs.ntfs.
+
+ - [0m[32;23;22;24;25mCreate a NTFS filesystem inside partition Y on device X:
+   [33;23;22;24;25mmkfs.ntfs [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mCreate filesystem with a volume-label:
+   [33;23;22;24;25mmkfs.ntfs [0m[-L|--label][33;23;22;24;25m [0mvolume_label[33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mCreate filesystem with specific UUID:
+   [33;23;22;24;25mmkfs.ntfs [0m[-U|--with-uuid][33;23;22;24;25m [0mUUID[33;23;22;24;25m [0m/dev/sdXY
+[0m[0m

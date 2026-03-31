@@ -1,0 +1,21 @@
+systemd-cgtop
+
+[0m[0mShow the top control groups of the local Linux control group hierarchy, ordered by their CPU, memory, or disk I/O load.
+See also: top.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-cgtop.html.
+
+ - [0m[32;23;22;24;25mStart an interactive view:
+   [33;23;22;24;25msystemd-cgtop[0m
+[0m
+ - [0m[32;23;22;24;25mChange the sort order:
+   [33;23;22;24;25msystemd-cgtop --order [0mcpu|memory|path|tasks|io
+[0m
+ - [0m[32;23;22;24;25mShow the CPU usage by time instead of percentage:
+   [33;23;22;24;25msystemd-cgtop --cpu=percentage[0m
+[0m
+ - [0m[32;23;22;24;25mChange the update interval in seconds (or one of these time units: ms, us, min):
+   [33;23;22;24;25msystemd-cgtop [0m[-d|--delay][33;23;22;24;25m [0minterval
+[0m
+ - [0m[32;23;22;24;25mOnly count userspace processes (without kernel threads):
+   [33;23;22;24;25msystemd-cgtop -P[0m
+[0m[0m

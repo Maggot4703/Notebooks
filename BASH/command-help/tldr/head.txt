@@ -1,0 +1,8 @@
+head
+
+[0m[0mOutput the first part of files.
+More information: https://manned.org/head.1p.
+
+ - [0m[32;23;22;24;25mOutput the first few lines of a file:
+   [33;23;22;24;25mhead -n [0mcount[33;23;22;24;25m [0mpath/to/file
+[0m[0m

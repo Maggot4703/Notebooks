@@ -1,0 +1,12 @@
+swayidle
+
+[0m[0mIdle management daemon for Wayland.
+Note: The configuration options are documented in its man page.
+More information: https://github.com/swaywm/swayidle/blob/master/swayidle.1.scd.
+
+ - [0m[32;23;22;24;25mListen for idle activity using the configuration in $XDG_CONFIG_HOME/swayidle/config or $HOME/swayidle/config:
+   [33;23;22;24;25mswayidle[0m
+[0m
+ - [0m[32;23;22;24;25mSpecify an alternative path to the configuration file:
+   [33;23;22;24;25mswayidle -C [0mpath/to/file
+[0m[0m

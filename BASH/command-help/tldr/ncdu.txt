@@ -1,0 +1,20 @@
+ncdu
+
+[0m[0mDisk usage analyzer with an ncurses interface.
+More information: https://manned.org/ncdu.
+
+ - [0m[32;23;22;24;25mAnalyze the current working directory:
+   [33;23;22;24;25mncdu[0m
+[0m
+ - [0m[32;23;22;24;25mColorize output:
+   [33;23;22;24;25mncdu --color [0mdark|off
+[0m
+ - [0m[32;23;22;24;25mAnalyze a given directory:
+   [33;23;22;24;25mncdu [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mSave results to a file:
+   [33;23;22;24;25mncdu -o [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mExclude files that match a pattern, argument can be given multiple times to add more patterns:
+   [33;23;22;24;25mncdu --exclude '[0m*.txt[33;23;22;24;25m'[0m
+[0m[0m

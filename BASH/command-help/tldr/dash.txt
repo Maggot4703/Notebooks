@@ -1,0 +1,26 @@
+dash
+
+[0m[0mDebian Almquist Shell, a modern, POSIX-compliant implementation of sh (not Bash-compatible).
+More information: https://manned.org/dash.
+
+ - [0m[32;23;22;24;25mStart an interactive shell session:
+   [33;23;22;24;25mdash[0m
+[0m
+ - [0m[32;23;22;24;25mExecute specific [c]ommands:
+   [33;23;22;24;25mdash -c "[0mecho 'dash is executed'[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a specific script:
+   [33;23;22;24;25mdash [0mpath/to/script.sh
+[0m
+ - [0m[32;23;22;24;25mCheck a specific script for syntax errors:
+   [33;23;22;24;25mdash -n [0mpath/to/script.sh
+[0m
+ - [0m[32;23;22;24;25mExecute a specific script while printing each command before executing it:
+   [33;23;22;24;25mdash -x [0mpath/to/script.sh
+[0m
+ - [0m[32;23;22;24;25mExecute a specific script and stop at the first [e]rror:
+   [33;23;22;24;25mdash -e [0mpath/to/script.sh
+[0m
+ - [0m[32;23;22;24;25mExecute specific commands from stdin:
+   echo "echo 'dash is executed'"[33;23;22;24;25m | dash[0m
+[0m[0m

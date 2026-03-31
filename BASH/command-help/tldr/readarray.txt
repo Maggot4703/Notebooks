@@ -1,0 +1,20 @@
+readarray
+
+[0m[0mRead lines from stdin into an array.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-readarray.
+
+ - [0m[32;23;22;24;25mInteractively input lines into an array:
+   [33;23;22;24;25mreadarray [0marray_name
+[0m
+ - [0m[32;23;22;24;25mRead lines from a file and insert them in an array:
+   [33;23;22;24;25mreadarray [0marray_name[33;23;22;24;25m < [0mpath/to/file.txt
+[0m
+ - [0m[32;23;22;24;25mRemove trailing deliminators (newline by default):
+   [33;23;22;24;25mreadarray -t [0marray_name[33;23;22;24;25m < [0mpath/to/file.txt
+[0m
+ - [0m[32;23;22;24;25mCopy at most n lines:
+   [33;23;22;24;25mreadarray -n [0mn[33;23;22;24;25m [0marray_name[33;23;22;24;25m < [0mpath/to/file.txt
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mhelp mapfile[0m
+[0m[0m

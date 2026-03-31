@@ -1,0 +1,22 @@
+virt-viewer
+
+[0m[0mMinimal graphical interface for a virtual machine (VM).
+Note: 'domain' refers to the name, UUID or ID for the existing VMs.
+See also: virsh.
+More information: https://manned.org/virt-viewer.
+
+ - [0m[32;23;22;24;25mLaunch virt-viewer with a prompt to select running virtual machines:
+   [33;23;22;24;25mvirt-viewer[0m
+[0m
+ - [0m[32;23;22;24;25mLaunch virt-viewer for a specific virtual machine by ID, UUID or name:
+   [33;23;22;24;25mvirt-viewer "[0mdomain[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mWait for a virtual machine to start and automatically reconnect if it shutdown and restarts:
+   [33;23;22;24;25mvirt-viewer --reconnect --wait "[0mdomain[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mConnect to a specific remote virtual machine over TLS:
+   [33;23;22;24;25mvirt-viewer --connect "xen//[0murl[33;23;22;24;25m" "[0mdomain[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mConnect to a specific remote virtual machine over SSH:
+   [33;23;22;24;25mvirt-viewer --connect "qemu+ssh//[0musername[33;23;22;24;25m@[0murl[33;23;22;24;25m/system" "[0mdomain[33;23;22;24;25m"[0m
+[0m[0m

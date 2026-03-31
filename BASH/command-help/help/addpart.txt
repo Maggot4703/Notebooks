@@ -1,0 +1,11 @@
+
+Usage:
+ addpart <disk device> <partition number> <start> <length>
+
+Tell the kernel about the existence of a specified partition.
+
+Options:
+ -h, --help     display this help
+ -V, --version  display version
+
+For more details see addpart(8).

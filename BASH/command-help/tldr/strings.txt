@@ -1,0 +1,17 @@
+strings
+
+[0m[0mFind printable strings in an object file or binary.
+More information: https://manned.org/strings.
+
+ - [0m[32;23;22;24;25mPrint all strings in a binary:
+   [33;23;22;24;25mstrings [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mLimit results to strings at least n characters long:
+   [33;23;22;24;25mstrings [0m[-n|--bytes][33;23;22;24;25m [0mn[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrefix each result with its offset within the file:
+   [33;23;22;24;25mstrings [0m[-t|--radix][33;23;22;24;25m d [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrefix each result with its offset within the file in hexadecimal:
+   [33;23;22;24;25mstrings [0m[-t|--radix][33;23;22;24;25m x [0mpath/to/file
+[0m[0m

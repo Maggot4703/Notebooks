@@ -1,0 +1,27 @@
+cancel
+
+[0m[0mCancel print jobs.
+See also: lp, lpmove, lpstat.
+More information: https://openprinting.github.io/cups/doc/man-cancel.html.
+
+ - [0m[32;23;22;24;25mCancel the current job of the default printer (set with lpoptions -d printer_name):
+   [33;23;22;24;25mcancel[0m
+[0m
+ - [0m[32;23;22;24;25mCancel the jobs of the default printer owned by a specific [u]ser:
+   [33;23;22;24;25mcancel -u [0musername
+[0m
+ - [0m[32;23;22;24;25mCancel the current job of a specific printer:
+   [33;23;22;24;25mcancel [0mprinter
+[0m
+ - [0m[32;23;22;24;25mCancel a specific job from a specific printer:
+   [33;23;22;24;25mcancel [0mprinter[33;23;22;24;25m-[0mjob_id
+[0m
+ - [0m[32;23;22;24;25mCancel [a]ll jobs of all printers:
+   [33;23;22;24;25mcancel -a[0m
+[0m
+ - [0m[32;23;22;24;25mCancel [a]ll jobs of a specific printer:
+   [33;23;22;24;25mcancel -a [0mprinter
+[0m
+ - [0m[32;23;22;24;25mCancel the current job of a specific server and then delete ([x]) job data files:
+   [33;23;22;24;25mcancel -h [0mserver[33;23;22;24;25m -x[0m
+[0m[0m

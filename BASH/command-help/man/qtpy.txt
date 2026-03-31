@@ -1,0 +1,26 @@
+QTPY(1)                     General Commands Manual                    QTPY(1)
+
+NAME
+       qtpy - Features to support development with QtPy
+
+SYNOPSIS
+       qtpy [option] subcommand ...
+
+DESCRIPTION
+       This manual page documents briefly the qtpy command.
+
+       qtpy  is  a  program  that supports development with QtPy.  At present,
+       there is a single subcommand available.
+
+SUBCOMMANDS
+       mypy-args
+              Generate command line arguments for using mypy with QtPy.
+
+OPTIONS
+       -h, --help
+              Show summary of options.
+
+       -v, --version
+              Show version of program.
+
+                                   July 2022                           QTPY(1)

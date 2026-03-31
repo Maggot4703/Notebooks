@@ -1,0 +1,9 @@
+groupdel
+
+[0m[0mDelete existing user groups from the system.
+See also: groups, groupadd, groupmod.
+More information: https://manned.org/groupdel.
+
+ - [0m[32;23;22;24;25mDelete an existing group:
+   [33;23;22;24;25msudo groupdel [0mgroup_name
+[0m[0m

@@ -1,0 +1,7 @@
+gmake
+
+[0m[0mThis command is an alias of GNU make.
+
+ - [0m[32;23;22;24;25mView documentation for the original command:
+   [33;23;22;24;25mtldr make[0m
+[0m[0m

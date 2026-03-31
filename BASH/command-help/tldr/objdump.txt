@@ -1,0 +1,23 @@
+objdump
+
+[0m[0mView information about object files.
+More information: https://manned.org/objdump.
+
+ - [0m[32;23;22;24;25mDisplay the file header information:
+   [33;23;22;24;25mobjdump [0m[-f|--file-headers][33;23;22;24;25m [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay all header information:
+   [33;23;22;24;25mobjdump [0m[-x|--all-headers][33;23;22;24;25m [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay the disassembled output of executable sections:
+   [33;23;22;24;25mobjdump [0m[-d|--disassemble][33;23;22;24;25m [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay the disassembled executable sections in Intel syntax:
+   [33;23;22;24;25mobjdump [0m[-M|--disassembler-options][33;23;22;24;25m intel [0m[-d|--disassemble][33;23;22;24;25m [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay the symbol table:
+   [33;23;22;24;25mobjdump [0m[-t|--syms][33;23;22;24;25m [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay a complete binary hex dump of all sections:
+   [33;23;22;24;25mobjdump [0m[-s|--full-contents][33;23;22;24;25m [0mpath/to/binary
+[0m[0m

@@ -1,0 +1,29 @@
+diff
+
+[0m[0mCompare files and directories.
+More information: https://manned.org/diff.
+
+ - [0m[32;23;22;24;25mCompare files (lists changes to turn old_file into new_file):
+   [33;23;22;24;25mdiff [0mold_file[33;23;22;24;25m [0mnew_file
+[0m
+ - [0m[32;23;22;24;25mCompare files, ignoring white spaces:
+   [33;23;22;24;25mdiff [0m[-w|--ignore-all-space][33;23;22;24;25m [0mold_file[33;23;22;24;25m [0mnew_file
+[0m
+ - [0m[32;23;22;24;25mCompare files, showing the differences side by side:
+   [33;23;22;24;25mdiff [0m[-y|--side-by-side][33;23;22;24;25m [0mold_file[33;23;22;24;25m [0mnew_file
+[0m
+ - [0m[32;23;22;24;25mCompare files, showing the differences in unified format (as used by git diff):
+   [33;23;22;24;25mdiff [0m[-u|--unified][33;23;22;24;25m [0mold_file[33;23;22;24;25m [0mnew_file
+[0m
+ - [0m[32;23;22;24;25mCompare directories recursively (shows names for differing files/directories as well as changes made to files):
+   [33;23;22;24;25mdiff [0m[-r|--recursive][33;23;22;24;25m [0mold_directory[33;23;22;24;25m [0mnew_directory
+[0m
+ - [0m[32;23;22;24;25mCompare directories, only showing the names of files that differ:
+   [33;23;22;24;25mdiff [0m[-r|--recursive][33;23;22;24;25m [0m[-q|--brief][33;23;22;24;25m [0mold_directory[33;23;22;24;25m [0mnew_directory
+[0m
+ - [0m[32;23;22;24;25mCreate a patch file for Git from the differences of two text files, treating nonexistent files as empty:
+   [33;23;22;24;25mdiff [0m[-a|--text][33;23;22;24;25m [0m[-u|--unified][33;23;22;24;25m [0m[-N|--new-file][33;23;22;24;25m [0mold_file[33;23;22;24;25m [0mnew_file[33;23;22;24;25m > [0mdiff.patch
+[0m
+ - [0m[32;23;22;24;25mCompare files, showing output in color and try hard to find smaller set of changes:
+   [33;23;22;24;25mdiff [0m[-d|--minimal][33;23;22;24;25m --color=always [0mold_file[33;23;22;24;25m [0mnew_file
+[0m[0m

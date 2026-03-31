@@ -1,0 +1,23 @@
+pr
+
+[0m[0mPaginate or columnate files for printing.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/pr-invocation.html.
+
+ - [0m[32;23;22;24;25mPrint multiple files with a default header and footer:
+   [33;23;22;24;25mpr [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mPrint with a custom centered header:
+   [33;23;22;24;25mpr [0m[-h|--header][33;23;22;24;25m "[0mheader[33;23;22;24;25m" [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mPrint with numbered lines and a custom date format:
+   [33;23;22;24;25mpr [0m[-n|--number-lines][33;23;22;24;25m [0m[-D|--date-format][33;23;22;24;25m "[0mformat[33;23;22;24;25m" [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mPrint all files together, one in each column, without a header or footer:
+   [33;23;22;24;25mpr [0m[-m|--merge][33;23;22;24;25m [0m[-T|--omit-pagination][33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mPrint, beginning at page 2 up to page 5, with a given page length (including header and footer):
+   [33;23;22;24;25mpr +2:5 [0m[-l|--length][33;23;22;24;25m [0mpage_length[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mPrint with an offset for each line and a truncating custom page width:
+   [33;23;22;24;25mpr [0m[-o|--indent][33;23;22;24;25m [0moffset[33;23;22;24;25m [0m[-W|--page_width][33;23;22;24;25m [0mwidth[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m[0m

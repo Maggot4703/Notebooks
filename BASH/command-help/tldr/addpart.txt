@@ -1,0 +1,9 @@
+addpart
+
+[0m[0mTell the Linux kernel about the existence of the specified partition.
+A simple wrapper around the add partition ioctl.
+More information: https://manned.org/addpart.
+
+ - [0m[32;23;22;24;25mTell the kernel about the existence of the specified partition:
+   [33;23;22;24;25maddpart [0mdevice[33;23;22;24;25m [0mpartition[33;23;22;24;25m [0mstart[33;23;22;24;25m [0mlength
+[0m[0m

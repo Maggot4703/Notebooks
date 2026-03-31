@@ -1,0 +1,8 @@
+zforce
+
+[0m[0mAdd a .gz extension to files compressed using gzip.
+More information: https://manned.org/zforce.
+
+ - [0m[32;23;22;24;25mAdd a .gz extension to the supplied Gzip files (Note: Other files are ignored):
+   [33;23;22;24;25mzforce [0mpath/to/file1 path/to/file2 ...
+[0m[0m

@@ -1,0 +1,1 @@
+No manual entry for v4l2-sysfs-path

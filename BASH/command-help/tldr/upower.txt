@@ -1,0 +1,20 @@
+upower
+
+[0m[0mSystem utility to provide power and battery information and statistics.
+More information: https://upower.freedesktop.org/docs/upower.1.html.
+
+ - [0m[32;23;22;24;25mDisplay power and battery information:
+   [33;23;22;24;25mupower [0m[-d|--dump]
+[0m
+ - [0m[32;23;22;24;25mList all power devices:
+   [33;23;22;24;25mupower [0m[-e|--enumerate]
+[0m
+ - [0m[32;23;22;24;25mWatch for and print power status changes:
+   [33;23;22;24;25mupower [0m[-m|--monitor]
+[0m
+ - [0m[32;23;22;24;25mWatch for and print detailed power status changes:
+   [33;23;22;24;25mupower --monitor-detail[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mupower [0m[-v|--version]
+[0m[0m

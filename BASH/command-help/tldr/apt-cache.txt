@@ -1,0 +1,20 @@
+apt-cache
+
+[0m[0mDebian and Ubuntu package query tool.
+More information: https://manned.org/apt-cache.8.
+
+ - [0m[32;23;22;24;25mSearch for a package in your current sources:
+   [33;23;22;24;25mapt-cache search [0mquery
+[0m
+ - [0m[32;23;22;24;25mShow information about a package:
+   [33;23;22;24;25mapt-cache show [0mpackage
+[0m
+ - [0m[32;23;22;24;25mShow whether a package is installed and up to date:
+   [33;23;22;24;25mapt-cache policy [0mpackage
+[0m
+ - [0m[32;23;22;24;25mShow dependencies for a package:
+   [33;23;22;24;25mapt-cache depends [0mpackage
+[0m
+ - [0m[32;23;22;24;25mShow packages that depend on a particular package:
+   [33;23;22;24;25mapt-cache rdepends [0mpackage
+[0m[0m

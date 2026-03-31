@@ -1,0 +1,2 @@
+/usr/bin/instmodsh
+instmodsh (1)        - A shell to examine installed modules

@@ -1,0 +1,1 @@
+Usage: apt-listchanges [options] {--apt | filename.deb ...}

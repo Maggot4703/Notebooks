@@ -1,0 +1,9 @@
+view
+
+[0m[0mA read-only version of vim.
+This is equivalent to vim -R.
+More information: https://www.vim.org.
+
+ - [0m[32;23;22;24;25mOpen a file:
+   [33;23;22;24;25mview [0mpath/to/file
+[0m[0m

@@ -1,0 +1,23 @@
+rev
+
+[0m[0mReverse a line of text or a file.
+More information: https://manned.org/rev.
+
+ - [0m[32;23;22;24;25mReverse text typed into terminal:
+   [33;23;22;24;25mrev[0m
+[0m
+ - [0m[32;23;22;24;25mReverse the text string "hello":
+   [33;23;22;24;25mecho "hello" | rev[0m
+[0m
+ - [0m[32;23;22;24;25mReverse an entire file and print to stdout:
+   [33;23;22;24;25mrev [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mUse '\0' as a line separator (zero termination):
+   [33;23;22;24;25mrev [0m[-0|--zero][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mrev [0m[-h|--help]
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mrev [0m[-V|--version]
+[0m[0m

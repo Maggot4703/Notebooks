@@ -1,0 +1,11 @@
+zdiff
+
+[0m[0mInvoke diff on gzip archives.
+More information: https://manned.org/zdiff.
+
+ - [0m[32;23;22;24;25mCompare two files, uncompressing them if necessary:
+   [33;23;22;24;25mzdiff [0mpath/to/file1.gz[33;23;22;24;25m [0mpath/to/file2.gz
+[0m
+ - [0m[32;23;22;24;25mCompare a file to a gzip archive with the same name:
+   [33;23;22;24;25mzdiff [0mpath/to/file
+[0m[0m

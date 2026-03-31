@@ -1,0 +1,8 @@
+logname
+
+[0m[0mShows the user's login name.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/logname-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay the currently logged in user's name:
+   [33;23;22;24;25mlogname[0m
+[0m[0m

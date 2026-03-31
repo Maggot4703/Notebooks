@@ -1,0 +1,26 @@
+fc
+
+[0m[0mOpen the most recent command for editing and then run it.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-fc.
+
+ - [0m[32;23;22;24;25mOpen the last command in the default system editor and run it after editing:
+   [33;23;22;24;25mfc[0m
+[0m
+ - [0m[32;23;22;24;25mSpecify an editor to open with:
+   [33;23;22;24;25mfc -e [0m'emacs'
+[0m
+ - [0m[32;23;22;24;25mList recent commands from history:
+   [33;23;22;24;25mfc -l[0m
+[0m
+ - [0m[32;23;22;24;25mList recent commands in reverse order:
+   [33;23;22;24;25mfc -l -r[0m
+[0m
+ - [0m[32;23;22;24;25mEdit and run a command from history:
+   [33;23;22;24;25mfc [0mnumber
+[0m
+ - [0m[32;23;22;24;25mEdit commands in a given interval and run them:
+   [33;23;22;24;25mfc '[0m416[33;23;22;24;25m' '[0m420[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mfc --help[0m
+[0m[0m

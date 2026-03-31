@@ -1,0 +1,18 @@
+lvcreate
+
+[0m[0mCreate a logical volume in an existing volume group. A volume group is a collection of logical and physical volumes.
+See also: lvm.
+More information: https://manned.org/lvcreate.
+
+ - [0m[32;23;22;24;25mCreate a logical volume of 10 gigabytes in the volume group vg1:
+   [33;23;22;24;25mlvcreate [0m[-L|--size][33;23;22;24;25m [0m10G[33;23;22;24;25m [0mvg1
+[0m
+ - [0m[32;23;22;24;25mCreate a 1500 megabyte linear logical volume named mylv in the volume group vg1:
+   [33;23;22;24;25mlvcreate [0m[-L|--size][33;23;22;24;25m [0m1500[33;23;22;24;25m [0m[-n|--name][33;23;22;24;25m [0mmylv[33;23;22;24;25m [0mvg1
+[0m
+ - [0m[32;23;22;24;25mCreate a logical volume called mylv that uses 60% of the total space in volume group vg1:
+   [33;23;22;24;25mlvcreate [0m[-l|--extents][33;23;22;24;25m [0m60%VG[33;23;22;24;25m [0m[-n|--name][33;23;22;24;25m [0mmylv[33;23;22;24;25m [0mvg1
+[0m
+ - [0m[32;23;22;24;25mCreate a logical volume called mylv that uses all the unallocated space in the volume group vg1:
+   [33;23;22;24;25mlvcreate [0m[-l|--extents][33;23;22;24;25m [0m100%FREE[33;23;22;24;25m [0m[-n|--name][33;23;22;24;25m [0mmylv[33;23;22;24;25m [0mvg1
+[0m[0m

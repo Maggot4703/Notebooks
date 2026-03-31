@@ -1,0 +1,8 @@
+cdrdao
+
+[0m[0mRead and write CDs in disc-at-once mode.
+More information: https://manned.org/cdrdao.
+
+ - [0m[32;23;22;24;25mRead a CD and write its contents to a file:
+   [33;23;22;24;25mcdrdao read-cd --device [0m/dev/cdrom[33;23;22;24;25m --read-raw [0mimage.toc
+[0m[0m

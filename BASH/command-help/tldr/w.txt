@@ -1,0 +1,17 @@
+w
+
+[0m[0mDisplay who is logged in and their processes.
+More information: https://manned.org/w.
+
+ - [0m[32;23;22;24;25mDisplay information about all users who are currently logged in:
+   [33;23;22;24;25mw[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay information about a specific user:
+   [33;23;22;24;25mw [0musername
+[0m
+ - [0m[32;23;22;24;25mDisplay logged-in user information without a header:
+   [33;23;22;24;25mw [0m[-h|--no-header]
+[0m
+ - [0m[32;23;22;24;25mDisplay information without including the login, JCPU and PCPU columns:
+   [33;23;22;24;25mw [0m[-s|--short]
+[0m[0m

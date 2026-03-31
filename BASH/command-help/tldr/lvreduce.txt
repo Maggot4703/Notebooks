@@ -1,0 +1,12 @@
+lvreduce
+
+[0m[0mReduce the size of a logical volume.
+See also: lvm.
+More information: https://manned.org/lvreduce.
+
+ - [0m[32;23;22;24;25mReduce a volume's size to 120 GB:
+   [33;23;22;24;25mlvreduce [0m[-L|--size][33;23;22;24;25m [0m120G[33;23;22;24;25m [0mlogical_volume
+[0m
+ - [0m[32;23;22;24;25mReduce a volume's size by 40 GB as well as the underlying filesystem:
+   [33;23;22;24;25mlvreduce [0m[-L|--size][33;23;22;24;25m -[0m40G[33;23;22;24;25m [0m[-r|--resizefs][33;23;22;24;25m [0mlogical_volume
+[0m[0m

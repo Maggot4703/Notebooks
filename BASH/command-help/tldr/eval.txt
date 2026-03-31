@@ -1,0 +1,11 @@
+eval
+
+[0m[0mExecute arguments as a single command in the current shell and return its result.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-eval.
+
+ - [0m[32;23;22;24;25mCall echo with the "foo" argument:
+   [33;23;22;24;25meval "[0mecho foo[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mSet a variable in the current shell:
+   [33;23;22;24;25meval "[0mfoo=bar[33;23;22;24;25m"[0m
+[0m[0m

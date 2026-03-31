@@ -1,0 +1,11 @@
+vgextend
+
+[0m[0mAdd one or more physical volumes to an existing volume group.
+More information: https://manned.org/vgextend.
+
+ - [0m[32;23;22;24;25mAdd a physical volume to an existing volume group:
+   [33;23;22;24;25mvgextend [0mvg1[33;23;22;24;25m [0m/dev/sda1
+[0m
+ - [0m[32;23;22;24;25mAdd multiple physical volumes to an existing volume group:
+   [33;23;22;24;25mvgextend [0mvg1[33;23;22;24;25m [0m/dev/sda1 /dev/sda2 ...
+[0m[0m

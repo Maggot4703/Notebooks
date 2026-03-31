@@ -1,0 +1,17 @@
+umask
+
+[0m[0mManage the read/write/execute permissions that are masked out (i.e. restricted) for newly created files by the user.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-umask.
+
+ - [0m[32;23;22;24;25mDisplay the current mask in octal notation:
+   [33;23;22;24;25mumask[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the current mask in symbolic (human-readable) mode:
+   [33;23;22;24;25mumask -S[0m
+[0m
+ - [0m[32;23;22;24;25mChange the mask symbolically to allow read permission for all users (the rest of the mask bits are unchanged):
+   [33;23;22;24;25mumask [0ma+r
+[0m
+ - [0m[32;23;22;24;25mSet the mask (using octal) to restrict no permissions for the file's owner, and restrict all permissions for everyone else:
+   [33;23;22;24;25mumask [0m077
+[0m[0m

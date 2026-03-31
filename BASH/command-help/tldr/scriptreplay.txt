@@ -1,0 +1,14 @@
+scriptreplay
+
+[0m[0mReplay a typescript created by the script command to stdout.
+More information: https://manned.org/scriptreplay.
+
+ - [0m[32;23;22;24;25mReplay a typescript at the speed it was recorded:
+   [33;23;22;24;25mscriptreplay [0mpath/to/timing_file[33;23;22;24;25m [0mpath/to/typescript
+[0m
+ - [0m[32;23;22;24;25mReplay a typescript at double the original speed:
+   [33;23;22;24;25mscriptreplay [0mpath/to/timingfile[33;23;22;24;25m [0mpath/to/typescript[33;23;22;24;25m 2[0m
+[0m
+ - [0m[32;23;22;24;25mReplay a typescript at half the original speed:
+   [33;23;22;24;25mscriptreplay [0mpath/to/timingfile[33;23;22;24;25m [0mpath/to/typescript[33;23;22;24;25m 0.5[0m
+[0m[0m

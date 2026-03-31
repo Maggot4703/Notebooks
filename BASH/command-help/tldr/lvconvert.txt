@@ -1,0 +1,20 @@
+lvconvert
+
+[0m[0mConvert or modify the type, redundancy, or state of logical volumes.
+More information: https://manned.org/lvconvert.
+
+ - [0m[32;23;22;24;25mConvert a linear logical volume to RAID1 (add one mirror: two copies total):
+   [33;23;22;24;25mlvconvert --type raid1 [0m[-m|--mirrors][33;23;22;24;25m 1 [0m/dev/vg_name/lv_name
+[0m
+ - [0m[32;23;22;24;25mRemove mirroring and convert back to a linear logical volume:
+   [33;23;22;24;25mlvconvert [0m[-m|--mirrors][33;23;22;24;25m 0 [0m/dev/vg_name/lv_name
+[0m
+ - [0m[32;23;22;24;25mMerge a snapshot back into its origin logical volume (applies on next activation):
+   [33;23;22;24;25mlvconvert --merge [0m/dev/vg_name/snapshot_lv
+[0m
+ - [0m[32;23;22;24;25mRepair a degraded RAID logical volume:
+   [33;23;22;24;25mlvconvert --repair [0m/dev/vg_name/lv_name
+[0m
+ - [0m[32;23;22;24;25mConvert an existing logical volume into a thin pool with a separate metadata LV:
+   [33;23;22;24;25mlvconvert --type thin-pool --poolmetadata [0m/dev/vg_name/pool_metadata_lv[33;23;22;24;25m [0m/dev/vg_name/pool_lv
+[0m[0m

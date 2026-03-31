@@ -1,0 +1,216 @@
+2026-03-22 19:44:02,529 - __main__ - INFO - Main application script started.
+2026-03-22 19:44:04,933 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 19:48:05,037 - __main__ - INFO - Main application script started.
+2026-03-22 19:48:06,267 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 19:48:11,648 - root - INFO - Auto-imported 77 modules successfully
+2026-03-22 19:48:11,648 - root - INFO - Skipped 19 modules (expected for script files)
+2026-03-22 19:48:11,648 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
+2026-03-22 19:48:11,659 - root - INFO - Status: Default data file not found.
+2026-03-22 19:48:11,665 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 19:52:34,482 - __main__ - INFO - Main application script started.
+2026-03-22 19:52:36,175 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 19:52:36,176 - root - INFO - Using cached auto-import results
+2026-03-22 19:52:36,182 - root - INFO - Status: Default data file not found.
+2026-03-22 19:52:36,197 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 19:52:53,208 - root - INFO - Status: Opening text file: main.py...
+2026-03-22 19:52:53,259 - root - INFO - Status: Loaded: main.py
+2026-03-22 19:52:59,705 - root - INFO - Status: Opening text file: main.py...
+2026-03-22 19:52:59,790 - root - INFO - Status: Loaded: main.py
+2026-03-22 19:53:08,696 - root - INFO - Status: Opening text file: startup.txt...
+2026-03-22 19:53:08,805 - root - INFO - Status: Loaded: startup.txt
+2026-03-22 19:53:25,890 - root - INFO - Status: Opening data file: Crew.csv...
+2026-03-22 19:53:26,026 - root - INFO - Status: Loaded 23 records
+2026-03-22 19:53:38,472 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-22 19:53:38,472 - __main__ - INFO - Main application script finished.
+2026-03-22 19:53:39,310 - __main__ - INFO - Main application script started.
+2026-03-22 19:53:40,678 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 19:53:42,561 - root - INFO - Auto-imported 77 modules successfully
+2026-03-22 19:53:42,561 - root - INFO - Skipped 19 modules (expected for script files)
+2026-03-22 19:53:42,562 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
+2026-03-22 19:53:42,568 - root - INFO - Status: Default data file not found.
+2026-03-22 19:53:42,570 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 19:53:47,182 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-22 19:53:47,183 - __main__ - INFO - Main application script finished.
+2026-03-22 19:54:04,081 - __main__ - INFO - Main application script started.
+2026-03-22 19:54:05,473 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 19:54:05,474 - root - INFO - Using cached auto-import results
+2026-03-22 19:54:05,476 - root - INFO - Status: Default data file not found.
+2026-03-22 19:54:05,477 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 19:54:35,885 - root - INFO - Status: Opening data file: Crew.csv...
+2026-03-22 19:54:36,026 - root - INFO - Status: Loaded 23 records
+2026-03-22 19:55:19,871 - root - INFO - Status: Opening data file: NPC.csv...
+2026-03-22 19:55:19,964 - root - INFO - Status: Loaded 16 records
+2026-03-22 19:55:30,943 - root - INFO - Status: Opening data file: Crew.csv...
+2026-03-22 19:55:31,035 - root - INFO - Status: Loaded 23 records
+2026-03-22 19:55:56,236 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-22 19:55:56,237 - __main__ - INFO - Main application script finished.
+2026-03-22 19:58:35,841 - __main__ - INFO - Main application script started.
+2026-03-22 19:58:36,445 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 19:58:36,446 - root - INFO - Using cached auto-import results
+2026-03-22 19:58:36,448 - root - INFO - Status: Default data file not found.
+2026-03-22 19:58:36,456 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 19:58:58,054 - root - WARNING - No data loaded to filter.
+2026-03-22 19:58:58,118 - root - WARNING - No data loaded to filter.
+2026-03-22 19:58:59,832 - root - INFO - Status: Filters cleared
+2026-03-22 20:00:04,139 - root - INFO - Status: Opening text file: npcs.py...
+2026-03-22 20:00:04,797 - root - INFO - Status: Loaded: npcs.py
+2026-03-22 20:00:14,837 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-22 20:00:14,837 - __main__ - INFO - Main application script finished.
+2026-03-22 20:00:15,856 - __main__ - INFO - Main application script started.
+2026-03-22 20:00:16,643 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 20:00:18,645 - root - INFO - Auto-imported 77 modules successfully
+2026-03-22 20:00:18,645 - root - INFO - Skipped 19 modules (expected for script files)
+2026-03-22 20:00:18,645 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
+2026-03-22 20:00:18,651 - root - INFO - Status: Default data file not found.
+2026-03-22 20:00:18,653 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 20:00:20,748 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-22 20:00:20,750 - __main__ - INFO - Main application script finished.
+2026-03-22 20:11:46,408 - __main__ - INFO - Main application script started.
+2026-03-22 20:11:50,997 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 20:12:02,390 - root - INFO - Auto-imported 77 modules successfully
+2026-03-22 20:12:02,390 - root - INFO - Skipped 19 modules (expected for script files)
+2026-03-22 20:12:02,390 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
+2026-03-22 20:12:02,474 - root - INFO - Status: Default data file not found.
+2026-03-22 20:12:02,478 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 22:27:02,856 - __main__ - INFO - Main application script started.
+2026-03-22 22:27:05,248 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 22:27:32,198 - root - INFO - Auto-imported 77 modules successfully
+2026-03-22 22:27:32,199 - root - INFO - Skipped 19 modules (expected for script files)
+2026-03-22 22:27:32,199 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
+2026-03-22 22:27:32,206 - root - INFO - Status: Default data file not found.
+2026-03-22 22:27:32,210 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 22:27:32,243 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-22 22:27:32,244 - __main__ - INFO - Main application script finished.
+2026-03-22 22:31:19,729 - __main__ - INFO - Main application script started.
+2026-03-22 22:31:20,578 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 22:31:20,580 - root - INFO - Using cached auto-import results
+2026-03-22 22:31:20,653 - root - INFO - Status: Default data file not found.
+2026-03-22 22:31:20,658 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 22:31:25,594 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-22 22:31:25,594 - __main__ - INFO - Main application script finished.
+2026-03-22 22:33:52,761 - __main__ - INFO - Main application script started.
+2026-03-22 22:33:53,558 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 22:33:57,175 - root - INFO - Auto-imported 77 modules successfully
+2026-03-22 22:33:57,175 - root - INFO - Skipped 19 modules (expected for script files)
+2026-03-22 22:33:57,175 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
+2026-03-22 22:33:58,486 - root - INFO - Status: Default data file not found.
+2026-03-22 22:33:58,491 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 22:39:54,111 - __main__ - INFO - Main application script started.
+2026-03-22 22:39:54,634 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-22 22:40:00,934 - root - INFO - Auto-imported 77 modules successfully
+2026-03-22 22:40:00,934 - root - INFO - Skipped 19 modules (expected for script files)
+2026-03-22 22:40:00,934 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
+2026-03-22 22:40:00,941 - root - INFO - Status: Default data file not found.
+2026-03-22 22:40:00,945 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-22 22:40:13,500 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-22 22:40:13,501 - __main__ - INFO - Main application script finished.
+2026-03-24 18:15:12,887 - __main__ - INFO - Main application script started.
+2026-03-24 18:15:14,523 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-24 18:15:18,200 - root - INFO - Auto-imported 77 modules successfully
+2026-03-24 18:15:18,200 - root - INFO - Skipped 19 modules (expected for script files)
+2026-03-24 18:15:18,201 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
+2026-03-24 18:15:18,304 - root - INFO - Status: Default data file not found.
+2026-03-24 18:15:18,311 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
+2026-03-24 18:16:14,230 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-24 18:16:14,231 - __main__ - INFO - Main application script finished.
+2026-03-24 18:32:25,198 - __main__ - INFO - Main application script started.
+2026-03-24 18:33:03,190 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-26 23:05:07,542 - __main__ - INFO - Main application script started.
+2026-03-26 23:05:11,793 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-26 23:05:16,754 - root - INFO - Auto-imported 86 modules successfully
+2026-03-26 23:05:16,754 - root - INFO - Skipped 20 modules (expected for script files)
+2026-03-26 23:05:16,754 - root - INFO - Auto-import summary: 86 imported, 20 failed, 38950 skipped, 39056 total files processed
+2026-03-26 23:05:16,793 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-03-26 23:05:17,022 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-03-26 23:05:17,038 - root - INFO - Status: Ready - Auto-imported 86 modules (20 failed)
+2026-03-26 23:05:48,520 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
+2026-03-26 23:05:49,623 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
+2026-03-26 23:05:49,841 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
+2026-03-26 23:05:51,471 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
+2026-03-26 23:05:54,605 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
+2026-03-26 23:05:57,965 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
+2026-03-26 23:06:12,349 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-26 23:06:28,598 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-26 23:06:38,343 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-26 23:06:45,750 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-26 23:06:46,838 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-26 23:06:47,905 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-26 23:07:09,405 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-26 23:07:10,789 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-26 23:17:58,514 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-26 23:18:36,144 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-26 23:18:36,145 - __main__ - INFO - Main application script finished.
+2026-03-26 23:45:26,846 - __main__ - INFO - Main application script started.
+2026-03-26 23:45:27,490 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-26 23:45:30,941 - root - INFO - Auto-imported 86 modules successfully
+2026-03-26 23:45:30,941 - root - INFO - Skipped 20 modules (expected for script files)
+2026-03-26 23:45:30,941 - root - INFO - Auto-import summary: 86 imported, 20 failed, 38950 skipped, 39056 total files processed
+2026-03-26 23:45:30,949 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-03-26 23:45:31,015 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-03-26 23:45:31,042 - root - INFO - Status: Ready - Auto-imported 86 modules (20 failed)
+2026-03-26 23:47:00,729 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-26 23:47:00,729 - __main__ - INFO - Main application script finished.
+2026-03-30 21:19:50,774 - __main__ - INFO - Main application script started.
+2026-03-30 21:19:53,226 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-30 21:21:22,634 - __main__ - INFO - Main application script started.
+2026-03-30 21:21:23,502 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-30 21:21:26,836 - root - INFO - Auto-imported 87 modules successfully
+2026-03-30 21:21:26,836 - root - INFO - Skipped 25 modules (expected for script files)
+2026-03-30 21:21:26,836 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39506 skipped, 39618 total files processed
+2026-03-30 21:21:26,849 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-03-30 21:21:27,008 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-03-30 21:21:27,045 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
+2026-03-30 21:21:31,166 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-30 21:21:31,167 - __main__ - INFO - Main application script finished.
+2026-03-30 21:35:28,801 - __main__ - INFO - Main application script started.
+2026-03-30 21:35:29,360 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-30 21:35:32,033 - root - INFO - Auto-imported 87 modules successfully
+2026-03-30 21:35:32,033 - root - INFO - Skipped 25 modules (expected for script files)
+2026-03-30 21:35:32,033 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39506 skipped, 39618 total files processed
+2026-03-30 21:35:32,040 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-03-30 21:35:32,150 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-03-30 21:35:32,156 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
+2026-03-30 21:35:33,996 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-30 21:35:33,998 - __main__ - INFO - Main application script finished.
+2026-03-31 10:04:01,748 - __main__ - INFO - Main application script started.
+2026-03-31 10:04:04,018 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-31 10:04:09,774 - root - INFO - Auto-imported 87 modules successfully
+2026-03-31 10:04:09,774 - root - INFO - Skipped 25 modules (expected for script files)
+2026-03-31 10:04:09,774 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39582 skipped, 39694 total files processed
+2026-03-31 10:04:09,781 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-03-31 10:04:09,843 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-03-31 10:04:09,845 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
+2026-03-31 10:05:09,081 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-31 10:05:09,082 - __main__ - INFO - Main application script finished.
+2026-03-31 10:12:42,668 - __main__ - INFO - Main application script started.
+2026-03-31 10:12:43,259 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-31 10:12:45,772 - root - INFO - Auto-imported 87 modules successfully
+2026-03-31 10:12:45,772 - root - INFO - Skipped 25 modules (expected for script files)
+2026-03-31 10:12:45,773 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39582 skipped, 39694 total files processed
+2026-03-31 10:12:45,778 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-03-31 10:12:45,889 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-03-31 10:12:45,897 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
+2026-03-31 10:13:50,588 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-31 10:13:50,589 - __main__ - INFO - Main application script finished.
+2026-03-31 10:41:23,406 - __main__ - INFO - Main application script started.
+2026-03-31 10:41:24,030 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-31 10:41:26,550 - root - INFO - Auto-imported 87 modules successfully
+2026-03-31 10:41:26,550 - root - INFO - Skipped 25 modules (expected for script files)
+2026-03-31 10:41:26,551 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39582 skipped, 39694 total files processed
+2026-03-31 10:41:26,564 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-03-31 10:41:26,668 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-03-31 10:41:26,680 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
+2026-03-31 10:41:58,824 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-31 10:42:00,600 - root - INFO - Updating script menu as it is about to be displayed...
+2026-03-31 10:50:13,170 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-31 10:50:13,170 - __main__ - INFO - Main application script finished.
+2026-03-31 10:50:14,161 - __main__ - INFO - Main application script started.
+2026-03-31 10:50:15,085 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-31 10:50:18,203 - root - INFO - Auto-imported 87 modules successfully
+2026-03-31 10:50:18,203 - root - INFO - Skipped 25 modules (expected for script files)
+2026-03-31 10:50:18,203 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39582 skipped, 39694 total files processed
+2026-03-31 10:50:18,213 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-03-31 10:50:18,345 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-03-31 10:50:18,375 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
+2026-03-31 10:50:18,393 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-03-31 10:50:18,393 - __main__ - INFO - Main application script finished.

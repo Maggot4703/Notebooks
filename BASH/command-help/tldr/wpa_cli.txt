@@ -1,0 +1,23 @@
+wpa_cli
+
+[0m[0mAdd and configure wlan interfaces.
+More information: https://manned.org/wpa_cli.
+
+ - [0m[32;23;22;24;25mScan for available networks:
+   [33;23;22;24;25msudo wpa_cli scan[0m
+[0m
+ - [0m[32;23;22;24;25mShow scan results:
+   [33;23;22;24;25msudo wpa_cli scan_results[0m
+[0m
+ - [0m[32;23;22;24;25mAdd a network:
+   [33;23;22;24;25msudo wpa_cli [0m[add_n|add_network][33;23;22;24;25m [0mnumber
+[0m
+ - [0m[32;23;22;24;25mSet a network's SSID:
+   [33;23;22;24;25msudo wpa_cli [0m[set_n|set_network][33;23;22;24;25m [0mnumber[33;23;22;24;25m ssid "[0mSSID[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mEnable network:
+   [33;23;22;24;25msudo wpa_cli [0m[en|enable_network][33;23;22;24;25m [0mnumber
+[0m
+ - [0m[32;23;22;24;25mSave config:
+   [33;23;22;24;25msudo wpa_cli [0m[sa|save_config]
+[0m[0m

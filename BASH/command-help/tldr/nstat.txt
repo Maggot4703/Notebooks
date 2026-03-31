@@ -1,0 +1,14 @@
+nstat
+
+[0m[0mView network statistics.
+More information: https://manned.org/nstat.
+
+ - [0m[32;23;22;24;25mView network statistics since last time nstat was run:
+   [33;23;22;24;25mnstat[0m
+[0m
+ - [0m[32;23;22;24;25mView all-time network statistics:
+   [33;23;22;24;25mnstat [0m[-a|--ignore]
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mnstat [0m[-h|--help]
+[0m[0m

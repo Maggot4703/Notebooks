@@ -1,0 +1,15 @@
+who
+
+[0m[0mDisplay who is logged in and related data (processes, boot time).
+See also: whoami.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/who-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay the username, line, and time of all currently logged-in sessions:
+   [33;23;22;24;25mwho[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay all available information:
+   [33;23;22;24;25mwho [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mDisplay all available information with table headers:
+   [33;23;22;24;25mwho [0m[-aH|--all --heading]
+[0m[0m

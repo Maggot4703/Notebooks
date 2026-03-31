@@ -1,0 +1,17 @@
+wall
+
+[0m[0mWrite a message on the terminals of users currently logged in.
+More information: https://manned.org/wall.
+
+ - [0m[32;23;22;24;25mSend a message:
+   [33;23;22;24;25mwall [0mmessage
+[0m
+ - [0m[32;23;22;24;25mSend a message to users that belong to a specific group:
+   [33;23;22;24;25mwall [0m[-g|--group][33;23;22;24;25m [0mgroup_name[33;23;22;24;25m [0mmessage
+[0m
+ - [0m[32;23;22;24;25mSend a message from a file:
+   [33;23;22;24;25mwall [0mfile
+[0m
+ - [0m[32;23;22;24;25mSend a message with timeout (default 300):
+   [33;23;22;24;25mwall [0m[-t|--timeout][33;23;22;24;25m [0mseconds[33;23;22;24;25m [0mfile
+[0m[0m

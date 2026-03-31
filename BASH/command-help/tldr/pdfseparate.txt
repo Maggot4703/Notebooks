@@ -1,0 +1,14 @@
+pdfseparate
+
+[0m[0mPortable Document Format (PDF) file page extractor.
+More information: https://manpages.debian.org/latest/poppler-utils/pdfseparate.1.en.html.
+
+ - [0m[32;23;22;24;25mExtract pages from PDF file and make a separate PDF file for each page:
+   [33;23;22;24;25mpdfseparate [0mpath/to/source_filename.pdf[33;23;22;24;25m [0mpath/to/destination_filename-%d.pdf
+[0m
+ - [0m[32;23;22;24;25mSpecify the first/start page for extraction:
+   [33;23;22;24;25mpdfseparate -f [0m3[33;23;22;24;25m [0mpath/to/source_filename.pdf[33;23;22;24;25m [0mpath/to/destination_filename-%d.pdf
+[0m
+ - [0m[32;23;22;24;25mSpecify the last page for extraction:
+   [33;23;22;24;25mpdfseparate -l [0m10[33;23;22;24;25m [0mpath/to/source_filename.pdf[33;23;22;24;25m [0mpath/to/destination_filename-%d.pdf
+[0m[0m

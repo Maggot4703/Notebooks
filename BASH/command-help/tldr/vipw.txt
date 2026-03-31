@@ -1,0 +1,11 @@
+vipw
+
+[0m[0mEdit the password file.
+More information: https://manned.org/vipw.
+
+ - [0m[32;23;22;24;25mEdit the password file:
+   [33;23;22;24;25mvipw[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mvipw [0m[-V|--version]
+[0m[0m

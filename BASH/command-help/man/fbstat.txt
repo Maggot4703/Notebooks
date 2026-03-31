@@ -1,0 +1,63 @@
+FBSTAT(1)                   Firebird documentation                   FBSTAT(1)
+
+NAME
+       fbstat - analyze firebird database
+
+SYNOPSIS
+           fbstat [command] [option...] [server:]database
+           fbstat -h server:db
+           fbstat -all server:db
+           fbstat -data server:db
+
+DESCRIPTION
+       (Note: Due to file-level conflict, the Debian package has changed the
+       name of gstat to fbstat.)
+
+       fbstat Analyzes Firebird databases and produces different kinds of
+       reports.  These are useful when analyzing where all this huge disk
+       space has gone or when estimating evaluating index efficiency.
+
+OPTIONS
+       -all
+           Analyze data and index pages.
+
+       -data
+           Analyze data pages.
+
+       -system
+           Analyze system tables.
+
+       -header
+           Display information from the database header, skip analyzing any
+           tables.
+
+       -index
+           Analyze leaf index pages.
+
+       -record
+           Analyze average record and version length.
+
+       -table table
+           Analyze data pages used by the given table.
+
+       -nocreation
+           Suppress creation date.
+
+       -user name
+       -password secret
+       -fetch_password file
+           Authentication parameters.
+
+       -z
+       -?  Displays version number.
+
+AUTHOR & COPYRIGHT
+       Copyright (C) 2010, Damyan Ivanov.
+
+       This manpage was written by Damyan Ivanov for the Debian project but
+       may be used by others. Permission is granted to use this document, with
+       or without modifications, provided that this notice is retained. If we
+       meet some day, and you think this stuff is worth it, you can buy me a
+       beer in return.
+
+Firebird 3.0                      2025-08-25                         FBSTAT(1)

@@ -1,0 +1,17 @@
+jobs
+
+[0m[0mDisplay status of jobs in the current session.
+More information: https://manned.org/jobs.
+
+ - [0m[32;23;22;24;25mShow status of all jobs:
+   [33;23;22;24;25mjobs[0m
+[0m
+ - [0m[32;23;22;24;25mShow status of a particular job:
+   [33;23;22;24;25mjobs %[0mjob_id
+[0m
+ - [0m[32;23;22;24;25mShow status and process IDs of all jobs:
+   [33;23;22;24;25mjobs -l[0m
+[0m
+ - [0m[32;23;22;24;25mShow process IDs of all jobs:
+   [33;23;22;24;25mjobs -p[0m
+[0m[0m

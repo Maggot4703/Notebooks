@@ -1,0 +1,24 @@
+tail
+
+[0m[0mDisplay the last part of a file.
+See also: head.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/tail-invocation.html.
+
+ - [0m[32;23;22;24;25mShow last 'count' lines in file:
+   [33;23;22;24;25mtail [0m[-n|--lines][33;23;22;24;25m [0mcount[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint a file from a specific line number:
+   [33;23;22;24;25mtail [0m[-n|--lines][33;23;22;24;25m +[0mcount[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint a specific count of bytes from the end of a given file:
+   [33;23;22;24;25mtail [0m[-c|--bytes][33;23;22;24;25m [0mcount[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint the last lines of a given file and keep reading it until <Ctrl c>:
+   [33;23;22;24;25mtail [0m[-f|--follow][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mKeep reading file until <Ctrl c>, even if the file is inaccessible:
+   [33;23;22;24;25mtail [0m[-F|--retry --follow][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mShow last 'num' lines in 'file' and refresh every 'n' seconds:
+   [33;23;22;24;25mtail [0m[-n|--lines][33;23;22;24;25m [0mcount[33;23;22;24;25m [0m[-s|--sleep-interval][33;23;22;24;25m [0mseconds[33;23;22;24;25m [0m[-f|--follow][33;23;22;24;25m [0mpath/to/file
+[0m[0m

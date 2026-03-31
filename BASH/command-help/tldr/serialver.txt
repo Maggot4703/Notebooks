@@ -1,0 +1,15 @@
+serialver
+
+[0m[0mReturns the serialVersionUID of classes.
+It does not set a security manager by default.
+More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/serialver.html.
+
+ - [0m[32;23;22;24;25mDisplay the serialVersionUID of a class:
+   [33;23;22;24;25mserialver [0mclassnames
+[0m
+ - [0m[32;23;22;24;25mDisplay the serialVersionUID for a colon-separated list of classes and resources:
+   [33;23;22;24;25mserialver -classpath [0mpath/to/directory[33;23;22;24;25m [0mclassname1:classname2:...
+[0m
+ - [0m[32;23;22;24;25mUse a specific option from reference page of Java application launcher to the Java Virtual Machine:
+   [33;23;22;24;25mserialver -Joption [0mclassnames
+[0m[0m

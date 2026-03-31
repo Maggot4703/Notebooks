@@ -1,0 +1,8 @@
+remote-viewer
+
+[0m[0mView desktops remotely.
+More information: https://manned.org/remote-viewer.
+
+ - [0m[32;23;22;24;25mView a remote using a virt-viewer file:
+   [33;23;22;24;25mremote-viewer [0mpath/to/virt_viewer_file
+[0m[0m

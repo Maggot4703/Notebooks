@@ -1,0 +1,23 @@
+meson
+
+[0m[0mSCons-like build system that uses Python as a front-end language and Ninja as a building backend.
+More information: https://mesonbuild.com/Commands.html.
+
+ - [0m[32;23;22;24;25mGenerate a C project with a given name and version:
+   [33;23;22;24;25mmeson init [0m[-l|--language][33;23;22;24;25m c [0m[-n|--name][33;23;22;24;25m [0mmyproject[33;23;22;24;25m --version [0m0.1
+[0m
+ - [0m[32;23;22;24;25mConfigure the builddir with default values:
+   [33;23;22;24;25mmeson setup [0mbuild_directory
+[0m
+ - [0m[32;23;22;24;25mBuild the project:
+   [33;23;22;24;25mmeson compile -C [0mpath/to/build_directory
+[0m
+ - [0m[32;23;22;24;25mRun all tests in the project:
+   [33;23;22;24;25mmeson test[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mmeson [0m[-h|--help]
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mmeson [0m[-v|--version]
+[0m[0m

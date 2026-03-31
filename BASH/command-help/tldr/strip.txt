@@ -1,0 +1,14 @@
+strip
+
+[0m[0mDiscard symbols from executables or object files.
+More information: https://manned.org/strip.
+
+ - [0m[32;23;22;24;25mReplace the input file with its stripped version:
+   [33;23;22;24;25mstrip [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mStrip symbols from a file, saving the output to a specific file:
+   [33;23;22;24;25mstrip [0mpath/to/input_file[33;23;22;24;25m -o [0mpath/to/output_file
+[0m
+ - [0m[32;23;22;24;25mStrip debug symbols only:
+   [33;23;22;24;25mstrip [0m[-d|--strip-debug][33;23;22;24;25m [0mpath/to/file.o
+[0m[0m

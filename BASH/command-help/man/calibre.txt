@@ -1,0 +1,62 @@
+CALIBRE(1)                          calibre                         CALIBRE(1)
+
+NAME
+       calibre - calibre
+
+          calibre [options] [path_to_ebook or calibre url ...]
+
+       Launch the main calibre Graphical User Interface and optionally add the
+       e-book at path_to_ebook to the database. You can also  specify  calibre
+       URLs  to perform various different actions, than just adding books. For
+       example:
+
+       calibre://view-book/test_library/1842/epub
+
+       Will open the book with id 1842 in the EPUB  format  from  the  library
+       "test_library"  in  the  calibre  E-book  viewer. Library names are the
+       folder names of the libraries with spaces replaced  by  underscores.  A
+       full  description  of the various URL based actions is in the User Man‐
+       ual.
+
+       Whenever you pass arguments to calibre that have spaces  in  them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+[OPTIONS]
+       --detach
+              Detach from the controlling terminal, if any (Linux only)
+
+       --help, -h
+              show this help message and exit
+
+       --ignore-plugins
+              Ignore custom plugins, useful if you installed a plugin that  is
+              preventing calibre from starting
+
+       --no-update-check
+              Do not check for updates
+
+       --shutdown-running-calibre, -s
+              Cause  a  running calibre instance, if any, to be shutdown. Note
+              that if there are running jobs, they will be  silently  aborted,
+              so use with care.
+
+       --start-in-tray
+              Start minimized to system tray.
+
+       --verbose, -v
+              Ignored, do not use. Present only for legacy reasons
+
+       --version
+              show program's version number and exit
+
+       --with-library
+              Use the library located at the specified path.
+
+AUTHOR
+       Kovid Goyal
+
+COPYRIGHT
+       Kovid Goyal
+
+6.13.0                         February 17, 2023                    CALIBRE(1)

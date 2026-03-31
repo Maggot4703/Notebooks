@@ -1,0 +1,23 @@
+setxkbmap
+
+[0m[0mSet the keyboard using the X Keyboard Extension.
+More information: https://manned.org/setxkbmap.
+
+ - [0m[32;23;22;24;25mSet the keyboard in French AZERTY:
+   [33;23;22;24;25msetxkbmap [0mfr
+[0m
+ - [0m[32;23;22;24;25mSet multiple keyboard layouts, their variants and switching option:
+   [33;23;22;24;25msetxkbmap -layout [0mus,de[33;23;22;24;25m -variant [0m,qwerty[33;23;22;24;25m -option [0m'grp:alt_caps_toggle'
+[0m
+ - [0m[32;23;22;24;25mList all layouts:
+   [33;23;22;24;25mlocalectl list-x11-keymap-layouts[0m
+[0m
+ - [0m[32;23;22;24;25mList variants for the layout:
+   [33;23;22;24;25mlocalectl list-x11-keymap-variants [0mde
+[0m
+ - [0m[32;23;22;24;25mList available switching options:
+   [33;23;22;24;25mlocalectl list-x11-keymap-options | grep grp:[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25msetxkbmap -help[0m
+[0m[0m

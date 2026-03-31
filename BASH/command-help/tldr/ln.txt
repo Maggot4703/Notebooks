@@ -1,0 +1,14 @@
+ln
+
+[0m[0mCreate links to files and directories.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html.
+
+ - [0m[32;23;22;24;25mCreate a symbolic link to a file or directory:
+   [33;23;22;24;25mln [0m[-s|--symbolic][33;23;22;24;25m /[0mpath/to/file_or_directory[33;23;22;24;25m [0mpath/to/symlink
+[0m
+ - [0m[32;23;22;24;25mOverwrite an existing symbolic link to point to a different file:
+   [33;23;22;24;25mln [0m[-sf|--symbolic --force][33;23;22;24;25m /[0mpath/to/new_file[33;23;22;24;25m [0mpath/to/symlink
+[0m
+ - [0m[32;23;22;24;25mCreate a hard link to a file:
+   [33;23;22;24;25mln /[0mpath/to/file[33;23;22;24;25m [0mpath/to/hardlink
+[0m[0m

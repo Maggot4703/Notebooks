@@ -1,0 +1,15 @@
+pkexec
+
+[0m[0mExecute commands as another user.
+Asks for password in a GUI if available.
+More information: https://polkit.pages.freedesktop.org/polkit/pkexec.1.html.
+
+ - [0m[32;23;22;24;25mRun command as root:
+   [33;23;22;24;25mpkexec [0mcommand
+[0m
+ - [0m[32;23;22;24;25mSwitch user to root:
+   [33;23;22;24;25mpkexec[0m
+[0m
+ - [0m[32;23;22;24;25mRun command as a specific user:
+   [33;23;22;24;25mpkexec --user [0musername[33;23;22;24;25m [0mcommand
+[0m[0m

@@ -1,0 +1,20 @@
+getent
+
+[0m[0mGet entries from Name Service Switch libraries.
+More information: https://manned.org/getent.
+
+ - [0m[32;23;22;24;25mGet list of all groups:
+   [33;23;22;24;25mgetent group[0m
+[0m
+ - [0m[32;23;22;24;25mSee the members of a group:
+   [33;23;22;24;25mgetent group [0mgroup_name
+[0m
+ - [0m[32;23;22;24;25mGet list of all services:
+   [33;23;22;24;25mgetent services[0m
+[0m
+ - [0m[32;23;22;24;25mFind a username by UID:
+   [33;23;22;24;25mgetent passwd 1000[0m
+[0m
+ - [0m[32;23;22;24;25mPerform a reverse DNS lookup:
+   [33;23;22;24;25mgetent hosts [0mhost
+[0m[0m

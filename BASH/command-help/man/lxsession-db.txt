@@ -1,0 +1,9 @@
+lxsession-db(1)             General Commands Manual            lxsession-db(1)
+
+NAME
+       lxsession-db - lxsesion database updater
+
+DESCRIPTION
+       This program is for internal usage by lxsession. Never run it manually.
+
+                                                               lxsession-db(1)

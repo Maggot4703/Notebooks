@@ -1,0 +1,16 @@
+systemd-repart
+
+[0m[0mAutomatically grow and add partitions.
+Grows and adds partitions based on the configuration files described in repart.d.
+Does not automatically resize file system on partition. See systemd-growfs to extend file system.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-repart.html.
+
+ - [0m[32;23;22;24;25mGrow the root partition (/) to all available disk space:
+   [33;23;22;24;25msystemd-repart[0m
+[0m
+ - [0m[32;23;22;24;25mView changes without applying:
+   [33;23;22;24;25msystemd-repart --dry-run yes[0m
+[0m
+ - [0m[32;23;22;24;25mGrow root partition size to 10 gigabytes:
+   [33;23;22;24;25msystemd-repart --size 10G --root /[0m
+[0m[0m

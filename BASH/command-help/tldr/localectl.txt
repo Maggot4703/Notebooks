@@ -1,0 +1,20 @@
+localectl
+
+[0m[0mControl the system locale and keyboard layout settings.
+More information: https://www.freedesktop.org/software/systemd/man/localectl.html.
+
+ - [0m[32;23;22;24;25mShow the current settings of the system locale and keyboard mapping:
+   [33;23;22;24;25mlocalectl[0m
+[0m
+ - [0m[32;23;22;24;25mList available locales:
+   [33;23;22;24;25mlocalectl list-locales[0m
+[0m
+ - [0m[32;23;22;24;25mSet a system locale variable:
+   [33;23;22;24;25mlocalectl set-locale [0mLANG[33;23;22;24;25m=[0men_US.UTF-8
+[0m
+ - [0m[32;23;22;24;25mList available keymaps:
+   [33;23;22;24;25mlocalectl list-keymaps[0m
+[0m
+ - [0m[32;23;22;24;25mSet the system keyboard mapping for the console and X11:
+   [33;23;22;24;25mlocalectl set-keymap [0mus
+[0m[0m

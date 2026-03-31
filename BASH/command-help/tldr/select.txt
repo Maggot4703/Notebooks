@@ -1,0 +1,17 @@
+select
+
+[0m[0mBash builtin construct for creating menus.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-select.
+
+ - [0m[32;23;22;24;25mCreate a menu out of individual words:
+   [33;23;22;24;25mselect [0mword[33;23;22;24;25m in [0mapple orange pear banana[33;23;22;24;25m; do echo $[0mword[33;23;22;24;25m; done[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a menu from the output of another command:
+   [33;23;22;24;25mselect [0mline[33;23;22;24;25m in $([0mcommand[33;23;22;24;25m); do echo $[0mline[33;23;22;24;25m; done[0m
+[0m
+ - [0m[32;23;22;24;25mSpecify the prompt string for select and create a menu for picking a file or folder from the current directory:
+   [33;23;22;24;25mPS3="[0mSelect a file: [33;23;22;24;25m"; select [0mfile[33;23;22;24;25m in *; do echo $[0mfile[33;23;22;24;25m; done[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a menu from a Bash array:
+   fruits[33;23;22;24;25m=([0mapple orange pear banana[33;23;22;24;25m); select [0mword[33;23;22;24;25m in $[0m{fruits[@]}[33;23;22;24;25m; do echo $[0mword[33;23;22;24;25m; done[0m
+[0m[0m

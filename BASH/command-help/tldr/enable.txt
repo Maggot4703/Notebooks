@@ -1,0 +1,11 @@
+enable
+
+[0m[0mEnable and disable shell builtins.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-enable.
+
+ - [0m[32;23;22;24;25mPrint the list of builtins:
+   [33;23;22;24;25menable[0m
+[0m
+ - [0m[32;23;22;24;25mDisable a builtin (works in bash only):
+   [33;23;22;24;25menable -n [0mcommand
+[0m[0m

@@ -1,0 +1,25 @@
+QT5CT(1)                    General Commands Manual                   QT5CT(1)
+
+NAME
+       qt5ct - Qt5 Configuration Utility
+
+SYNOPSIS
+       qt5ct
+
+DESCRIPTION
+       qt5ct  is  utility allows users to configure Qt5 settings (theme, font,
+       icons, etc.) under DE/WM without Qt integration.
+
+       Qt5ct could use qt5 gtk theme, KDE  breeze  theme,  the  fusion  theme,
+       QtCurve  theme and many more. Each style could be customized further by
+       changing the color schema.
+
+OPTIONS
+       qt5ct hasn't options. It just works.
+
+AUTHOR
+       qt5ct was written by Ilya Kotov <forkorov02@hotmail.ru>.   This  manual
+       page  was originally written for the Debian GNU/Linux system by Mateusz
+       Łukasik <mati75@linuxmint.pl>.
+
+qt5ct 0.21                       January 2016                         QT5CT(1)

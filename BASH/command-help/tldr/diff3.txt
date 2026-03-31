@@ -1,0 +1,11 @@
+diff3
+
+[0m[0mCompare three files line by line.
+More information: https://www.gnu.org/software/diffutils/manual/diffutils.html#Invoking-diff3.
+
+ - [0m[32;23;22;24;25mCompare files:
+   [33;23;22;24;25mdiff3 [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2[33;23;22;24;25m [0mpath/to/file3
+[0m
+ - [0m[32;23;22;24;25mShow all changes, outlining conflicts:
+   [33;23;22;24;25mdiff3 [0m[-A|--show-all][33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2[33;23;22;24;25m [0mpath/to/file3
+[0m[0m

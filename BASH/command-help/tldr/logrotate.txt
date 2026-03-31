@@ -1,0 +1,20 @@
+logrotate
+
+[0m[0mRotates, compresses, and mails system logs.
+More information: https://manned.org/logrotate.
+
+ - [0m[32;23;22;24;25mTrigger a run manually:
+   [33;23;22;24;25mlogrotate [0mpath/to/logrotate.conf[33;23;22;24;25m --force[0m
+[0m
+ - [0m[32;23;22;24;25mRun using a specific command to mail reports:
+   [33;23;22;24;25mlogrotate [0mpath/to/logrotate.conf[33;23;22;24;25m --mail [0m/usr/bin/mail_command
+[0m
+ - [0m[32;23;22;24;25mRun without using a state (lock) file:
+   [33;23;22;24;25mlogrotate [0mpath/to/logrotate.conf[33;23;22;24;25m --state /dev/null[0m
+[0m
+ - [0m[32;23;22;24;25mRun and skip the state (lock) file check:
+   [33;23;22;24;25mlogrotate [0mpath/to/logrotate.conf[33;23;22;24;25m --skip-state-lock[0m
+[0m
+ - [0m[32;23;22;24;25mTell logrotate to log verbose output into the log file:
+   [33;23;22;24;25mlogrotate [0mpath/to/logrotate.conf[33;23;22;24;25m --log [0mpath/to/log_file
+[0m[0m

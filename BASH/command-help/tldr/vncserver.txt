@@ -1,0 +1,14 @@
+vncserver
+
+[0m[0mLaunch a VNC (Virtual Network Computing) desktop.
+More information: https://manned.org/vncserver.1x.
+
+ - [0m[32;23;22;24;25mLaunch a VNC Server on next available display:
+   [33;23;22;24;25mvncserver[0m
+[0m
+ - [0m[32;23;22;24;25mLaunch a VNC Server with specific screen geometry:
+   [33;23;22;24;25mvncserver --geometry [0mwidth[33;23;22;24;25mx[0mheight
+[0m
+ - [0m[32;23;22;24;25mKill an instance of VNC Server running on a specific display:
+   [33;23;22;24;25mvncserver --kill :[0mdisplay_number
+[0m[0m

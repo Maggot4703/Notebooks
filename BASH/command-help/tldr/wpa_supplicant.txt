@@ -1,0 +1,11 @@
+wpa_supplicant
+
+[0m[0mManage protected wireless networks.
+More information: https://manned.org/wpa_supplicant.1.
+
+ - [0m[32;23;22;24;25mJoin a protected wireless network:
+   [33;23;22;24;25mwpa_supplicant -i [0minterface[33;23;22;24;25m -c [0mpath/to/wpa_supplicant_conf.conf
+[0m
+ - [0m[32;23;22;24;25mJoin a protected wireless network and run it in a daemon:
+   [33;23;22;24;25mwpa_supplicant -B -i [0minterface[33;23;22;24;25m -c [0mpath/to/wpa_supplicant_conf.conf
+[0m[0m

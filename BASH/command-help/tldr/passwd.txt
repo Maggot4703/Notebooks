@@ -1,0 +1,20 @@
+passwd
+
+[0m[0mChange a user's password.
+More information: https://manned.org/passwd.
+
+ - [0m[32;23;22;24;25mChange the password of the current user interactively:
+   [33;23;22;24;25mpasswd[0m
+[0m
+ - [0m[32;23;22;24;25mChange the password of a specific user:
+   [33;23;22;24;25mpasswd [0musername
+[0m
+ - [0m[32;23;22;24;25mGet the current status of the user:
+   [33;23;22;24;25mpasswd [0m[-S|--status]
+[0m
+ - [0m[32;23;22;24;25mMake the password of the account blank (it will set the named account passwordless):
+   [33;23;22;24;25mpasswd [0m[-d|--delete]
+[0m
+ - [0m[32;23;22;24;25mSet password programmatically (ideal for install scripts):
+   [33;23;22;24;25myes [0mpassword[33;23;22;24;25m | passwd[0m
+[0m[0m

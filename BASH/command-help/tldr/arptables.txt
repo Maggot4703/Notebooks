@@ -1,0 +1,24 @@
+arptables
+
+[0m[0mManage ARP filtering rules using the nftables backend.
+Part of the xtables-nft suite for ARP packet filtering.
+More information: https://manned.org/arptables.
+
+ - [0m[32;23;22;24;25mList all ARP rules in the filter table:
+   [33;23;22;24;25msudo arptables [0m[-L|--list]
+[0m
+ - [0m[32;23;22;24;25mAppend a rule to drop ARP packets from a specific IP address:
+   [33;23;22;24;25msudo arptables [0m[-A|--append][33;23;22;24;25m INPUT [0m[-s|--source-ip][33;23;22;24;25m [0m192.168.0.1[33;23;22;24;25m [0m[-j|--jump][33;23;22;24;25m DROP[0m
+[0m
+ - [0m[32;23;22;24;25mDelete a specific rule from the INPUT chain by its rule number:
+   [33;23;22;24;25msudo arptables [0m[-D|--delete][33;23;22;24;25m INPUT [0mrule_number
+[0m
+ - [0m[32;23;22;24;25mFlush all rules in the filter table:
+   [33;23;22;24;25msudo arptables [0m[-F|--flush]
+[0m
+ - [0m[32;23;22;24;25mSet the default policy of the OUTPUT chain to ACCEPT:
+   [33;23;22;24;25msudo arptables [0m[-P|--policy][33;23;22;24;25m OUTPUT ACCEPT[0m
+[0m
+ - [0m[32;23;22;24;25mSave the current ARP rules to a file:
+   [33;23;22;24;25msudo arptables-save > [0mpath/to/file
+[0m[0m

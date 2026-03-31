@@ -1,0 +1,17 @@
+function
+
+[0m[0mDefine a function.
+More information: https://www.gnu.org/software/bash/manual/bash.html#Shell-Functions.
+
+ - [0m[32;23;22;24;25mDefine a function with the specified name:
+   [33;23;22;24;25mfunction [0mfunc_name[33;23;22;24;25m { [0mecho "Function contents here"[33;23;22;24;25m; }[0m
+[0m
+ - [0m[32;23;22;24;25mRun a function named func_name:
+   [33;23;22;24;25mfunc_name[0m
+[0m
+ - [0m[32;23;22;24;25mDefine a function without the function keyword:
+   func_name[33;23;22;24;25m() { [0mecho "Function contents here"[33;23;22;24;25m; }[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mhelp function[0m
+[0m[0m

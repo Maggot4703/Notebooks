@@ -1,0 +1,20 @@
+gpasswd
+
+[0m[0mAdminister /etc/group and /etc/gshadow.
+More information: https://manned.org/gpasswd.
+
+ - [0m[32;23;22;24;25mDefine group administrators:
+   [33;23;22;24;25msudo gpasswd [0m[-A|--administrators][33;23;22;24;25m [0muser1,user2[33;23;22;24;25m [0mgroup
+[0m
+ - [0m[32;23;22;24;25mSet the list of group members:
+   [33;23;22;24;25msudo gpasswd [0m[-M|--members][33;23;22;24;25m [0muser1,user2[33;23;22;24;25m [0mgroup
+[0m
+ - [0m[32;23;22;24;25mCreate a password for the named group:
+   [33;23;22;24;25mgpasswd [0mgroup
+[0m
+ - [0m[32;23;22;24;25mAdd a user to the named group:
+   [33;23;22;24;25mgpasswd [0m[-a|--add][33;23;22;24;25m [0muser[33;23;22;24;25m [0mgroup
+[0m
+ - [0m[32;23;22;24;25mRemove a user from the named group:
+   [33;23;22;24;25mgpasswd [0m[-d|--delete][33;23;22;24;25m [0muser[33;23;22;24;25m [0mgroup
+[0m[0m

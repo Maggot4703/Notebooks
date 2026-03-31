@@ -1,0 +1,23 @@
+lspci
+
+[0m[0mList all PCI devices.
+More information: https://manned.org/lspci.
+
+ - [0m[32;23;22;24;25mShow a brief list of devices:
+   [33;23;22;24;25mlspci[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay additional information (Note: the -v flag can be repeated to increase verbosity):
+   [33;23;22;24;25mlspci -v[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay drivers and modules handling each device:
+   [33;23;22;24;25mlspci -k[0m
+[0m
+ - [0m[32;23;22;24;25mShow a specific device:
+   [33;23;22;24;25mlspci -s [0m00:18.3
+[0m
+ - [0m[32;23;22;24;25mDump info in a readable form:
+   [33;23;22;24;25mlspci -vm[0m
+[0m
+ - [0m[32;23;22;24;25mShow PCI vendor and device codes alongside its name:
+   [33;23;22;24;25mlspci -nn[0m
+[0m[0m

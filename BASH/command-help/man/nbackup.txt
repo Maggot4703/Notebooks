@@ -1,0 +1,102 @@
+NBACKUP(1)                  Firebird documentation                  NBACKUP(1)
+
+NAME
+       nbackup - Physical backup manager for Firebird
+
+SYNOPSIS
+       nbackup [option...] -l|-u|-f database
+       nbackup [option...] -b level database file
+       nbackup [option...] -r database file0 [file1...]
+
+DESCRIPTION
+       nbackup allows making incremental backups of firebird databases. It
+       also allows database files to be locked for copying with OS tools like
+       cp(1).
+
+COMMANDS
+       -l database
+       -lock database
+           Locks database for filesystem copy.
+
+           Options of the -lock command:
+
+           -s
+           -size
+               Print database size (in database pages) after locking.
+
+       -un database
+       -unlock database
+           Unlocks previously locked database.
+
+       -f database
+       -fixup database
+           Fixup database after filesystem copy. This needs to be done on the
+           target database before usage.
+
+       -b level database file
+       -backup level database file
+           Create incremental backup of level level. Level 0 means full
+           backup. Level N includes all the changes since the last backup of
+           level N. file may be "stdout" meaning to write the backup data to
+           the standard output.
+
+           Additional options to the -backup command:
+
+           -d on|off
+           -direct on|off
+               Turns on or off direct I/O during database backup.
+
+               Direct I/O may be useful when database is much larger that RAM,
+               because in that case using buffered I/O may cause replacing
+               useful cache contents with database file contents, which are
+               generally read only once.
+
+       -r database file0 [file1...]
+       -restore database file0 [file1...]
+           Restore incremental backup. file0 is the level 0 backup, file1 is
+           the level 1 backup and so on.
+
+           Additional -restore options:
+
+           -de command
+           -decompress command
+               Decompress backup file contents using the given command.
+
+           Note: -restore should be the last argument to nbackup followed only
+           by database and file names. All other options must precede -restore
+           or will be interpreted as backup file names.
+
+COMMON OPTIONS
+       -u user
+       -user user
+           User name for connecting to the firebird server.
+
+       -p password
+       -password password
+           Password for connecting to the firebird server.
+
+       -fetch_password file
+           Read password from specified file.
+
+       -nod
+       -nodbtriggers
+           Do not run database-level triggers.
+
+SEE ALSO
+       gbak(1)
+
+       Additional documentation about nbackup and other Firebird utilities can
+       be found on the Firebird Project website, <http://www.firebirdsql.org>.
+
+AUTHOR
+       Original idea is of Sean Leyne sean@broadviewsoftware.com.  Designed
+       and implemented by Nickolay Samofatov skidder@bssys.com.  This work was
+       funded through a grant from BroadView Software, Inc.
+
+       This manual page was written by Damyan Ivanov dmn@debian.org for the
+       Debian project. Permission is granted to use this document, with or
+       without modifications, provided that this notice is retained. If we
+       meet some day, and you think this stuff is worth it, you can buy me a
+       beer in return.
+
+Firebird 3.0                      2025-08-25                        NBACKUP(1)

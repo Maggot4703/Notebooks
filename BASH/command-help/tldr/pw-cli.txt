@@ -1,0 +1,21 @@
+pw-cli
+
+[0m[0mManage a PipeWire instance's modules, objects, nodes, devices, links and much more.
+See also: wpctl.
+More information: https://docs.pipewire.org/page_man_pw-cli_1.html.
+
+ - [0m[32;23;22;24;25mPrint information of all object of a specific type:
+   [33;23;22;24;25mpw-cli [0m[ls|list-objects][33;23;22;24;25m [0mNode|Link|Port|Client|Device|Metadata|Factory|Module|Profiler|SecurityContext|Core
+[0m
+ - [0m[32;23;22;24;25mPrint information about an object with a specific ID:
+   [33;23;22;24;25mpw-cli [0m[i|info][33;23;22;24;25m [0m4
+[0m
+ - [0m[32;23;22;24;25mPrint all objects' information:
+   [33;23;22;24;25mpw-cli [0m[i|info][33;23;22;24;25m all[0m
+[0m
+ - [0m[32;23;22;24;25mMonitor for object changes:
+   [33;23;22;24;25mpw-cli [0m[-m|--monitor]
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpw-cli [0m[h|help]
+[0m[0m

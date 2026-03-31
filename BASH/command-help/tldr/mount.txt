@@ -1,0 +1,29 @@
+mount
+
+[0m[0mGet access to an entire filesystem in one directory.
+More information: https://manned.org/mount.8.
+
+ - [0m[32;23;22;24;25mShow all mounted filesystems:
+   [33;23;22;24;25mmount[0m
+[0m
+ - [0m[32;23;22;24;25mMount a device to a directory:
+   [33;23;22;24;25mmount [0mpath/to/device_file[33;23;22;24;25m [0mpath/to/target_directory
+[0m
+ - [0m[32;23;22;24;25mCreate a specific directory if it does not exist and mount a device to it:
+   [33;23;22;24;25mmount [0m[-m|--mkdir][33;23;22;24;25m [0mpath/to/device_file[33;23;22;24;25m [0mpath/to/target_directory
+[0m
+ - [0m[32;23;22;24;25mMount a device to a directory for a specific user:
+   [33;23;22;24;25mmount [0m[-o|--options][33;23;22;24;25m uid=[0muser_id[33;23;22;24;25m,gid=[0mgroup_id[33;23;22;24;25m [0mpath/to/device_file[33;23;22;24;25m [0mpath/to/target_directory
+[0m
+ - [0m[32;23;22;24;25mMount a CD-ROM device (with the filetype ISO9660) to /cdrom (readonly):
+   [33;23;22;24;25mmount [0m[-t|--types][33;23;22;24;25m iso9660 [0m[-o|--options][33;23;22;24;25m ro [0m/dev/cdrom[33;23;22;24;25m /cdrom[0m
+[0m
+ - [0m[32;23;22;24;25mMount all the filesystems defined in /etc/fstab:
+   [33;23;22;24;25mmount [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mMount a specific filesystem described in /etc/fstab (e.g. /dev/sda1 /my_drive ext2 defaults 0 2):
+   [33;23;22;24;25mmount [0m/my_drive
+[0m
+ - [0m[32;23;22;24;25mMount a directory to another directory:
+   [33;23;22;24;25mmount [0m[-B|--bind][33;23;22;24;25m [0mpath/to/old_directory[33;23;22;24;25m [0mpath/to/new_directory
+[0m[0m

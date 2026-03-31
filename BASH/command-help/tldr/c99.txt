@@ -1,0 +1,17 @@
+c99
+
+[0m[0mCompile C programs according to the ISO C standard.
+More information: https://manned.org/c99.
+
+ - [0m[32;23;22;24;25mCompile source file(s) and create an executable:
+   [33;23;22;24;25mc99 [0mfile.c
+[0m
+ - [0m[32;23;22;24;25mCompile source file(s) and specify the executable [o]utput filename:
+   [33;23;22;24;25mc99 -o [0mexecutable_name[33;23;22;24;25m [0mfile.c
+[0m
+ - [0m[32;23;22;24;25mCompile source file(s) and create object file(s):
+   [33;23;22;24;25mc99 -c [0mfile.c
+[0m
+ - [0m[32;23;22;24;25mCompile source file(s), link with object file(s), and create an executable:
+   [33;23;22;24;25mc99 [0mfile.c[33;23;22;24;25m [0mfile.o
+[0m[0m

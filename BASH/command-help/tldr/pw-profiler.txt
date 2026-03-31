@@ -1,0 +1,17 @@
+pw-profiler
+
+[0m[0mProfile a local or remote instance.
+More information: https://docs.pipewire.org/page_man_pw-profiler_1.html.
+
+ - [0m[32;23;22;24;25mProfile the default instance, logging to profile.log (gnuplot files and a HTML file for result visualizing are also generated):
+   [33;23;22;24;25mpw-profiler[0m
+[0m
+ - [0m[32;23;22;24;25mChange the log output file:
+   [33;23;22;24;25mpw-profiler [0m[-o|--output][33;23;22;24;25m [0mpath/to/file.log
+[0m
+ - [0m[32;23;22;24;25mProfile a remote instance:
+   [33;23;22;24;25mpw-profiler [0m[-r|--remote][33;23;22;24;25m [0mremote_name
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpw-profiler [0m[-h|--help]
+[0m[0m

@@ -1,0 +1,23 @@
+pdftocairo
+
+[0m[0mConvert PDF files to PNG/JPEG/TIFF/PDF/PS/EPS/SVG using cairo.
+More information: https://manned.org/pdftocairo.
+
+ - [0m[32;23;22;24;25mConvert a PDF file to JPEG:
+   [33;23;22;24;25mpdftocairo [0mpath/to/file.pdf[33;23;22;24;25m -jpeg[0m
+[0m
+ - [0m[32;23;22;24;25mConvert to PDF expanding the output to fill the paper:
+   [33;23;22;24;25mpdftocairo [0mpath/to/file.pdf[33;23;22;24;25m [0moutput.pdf[33;23;22;24;25m -pdf -expand[0m
+[0m
+ - [0m[32;23;22;24;25mConvert to SVG specifying the first/last page to convert:
+   [33;23;22;24;25mpdftocairo [0mpath/to/file.pdf[33;23;22;24;25m [0moutput.svg[33;23;22;24;25m -svg -f [0mfirst_page[33;23;22;24;25m -l [0mlast_page
+[0m
+ - [0m[32;23;22;24;25mConvert to PNG with 200ppi resolution:
+   [33;23;22;24;25mpdftocairo [0mpath/to/file.pdf[33;23;22;24;25m [0moutput.png[33;23;22;24;25m -png -r 200[0m
+[0m
+ - [0m[32;23;22;24;25mConvert to grayscale TIFF setting paper size to A3:
+   [33;23;22;24;25mpdftocairo [0mpath/to/file.pdf[33;23;22;24;25m -tiff -gray -paper A3[0m
+[0m
+ - [0m[32;23;22;24;25mConvert to PNG cropping x and y pixels from the top-left corner:
+   [33;23;22;24;25mpdftocairo [0mpath/to/file.pdf[33;23;22;24;25m -png -x [0mx_pixels[33;23;22;24;25m -y [0my_pixels
+[0m[0m

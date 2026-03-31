@@ -1,0 +1,19 @@
+
+(alacarte:1884143): Gtk-CRITICAL **: 12:56:11.078: gtk_accel_label_set_accel_closure: assertion 'gtk_accel_group_from_accel_closure (accel_closure) != NULL' failed
+
+(alacarte:1884143): Gtk-CRITICAL **: 12:56:11.078: gtk_accel_label_set_accel_closure: assertion 'gtk_accel_group_from_accel_closure (accel_closure) != NULL' failed
+Traceback (most recent call last):
+  File "/usr/bin/alacarte", line 26, in <module>
+    main()
+  File "/usr/share/alacarte/Alacarte/MainWindow.py", line 470, in main
+    app.setMenuBasename(basename)
+  File "/usr/share/alacarte/Alacarte/MainWindow.py", line 63, in setMenuBasename
+    self.editor = MenuEditor(menu_basename)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/share/alacarte/Alacarte/MenuEditor.py", line 35, in __init__
+    self.load()
+  File "/usr/share/alacarte/Alacarte/MenuEditor.py", line 48, in load
+    if not self.tree.load_sync():
+           ^^^^^^^^^^^^^^^^^^^^^
+gi.repository.GLib.GError: g-io-error-quark: Failed to look up menu_file for "--help"
+ (0)

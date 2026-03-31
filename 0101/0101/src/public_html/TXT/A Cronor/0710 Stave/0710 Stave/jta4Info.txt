@@ -1,0 +1,82 @@
+Hex = 0710
+Name = Stave
+UWP = E7667A8-2
+Starport = E
+	Quality = Frontier
+	Yards = No
+	Repairs = No
+	Fuel = No
+	Downport = Beacon
+	Highport = No
+	possBases = No
+Size = 7
+	DIGIT	DIA(MI)	DIA(KM)
+	7	7,000	12,200
+Atmosphere = 6
+	DIGIT	DESCRIPTION	EFFECTS
+	6	Standard	
+Hydrosphere = 6
+	DIGIT	DESCRIPTION
+	6	60%
+Population = 7
+	POPULATION UNDER 80,000,000
+	DIGIT	DESCRIPTION	VALUE
+	7	Ten million	0,000,000
+Government = A
+	DIGIT	DESCRIPTION	NOTE
+	A	Charismatic Dictatorship	Government by a single leader enjoying the confidence of the citizens
+Law Level = 8
+	DIGIT	DESCRIPTION	NOTE
+	8	High Law	Open display of weapons prohibited
+Tech Level = 2
+	DIGIT		
+	2		
+Remarks = Ag Ga Ri (Obeyery)
+	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
+	Ag		456789	45678	567			Agricultural	
+	Ga	678	568	567				Garden World	
+	Ri		68		678			Rich	
+	Minor Race 	Native Intelligent Life = Obeyery
+No details
+	POP	ATM	TL	COMMENT	NOTE
+	7+	2-9	1+	Intelligent life evolved on this world	Natives
+{Ix} = { 0 }
+	Starport E = -1
+	TL 2 = -1
+	Ag  = +1
+	Ri  = +1
+	Importance = Unimportant (0)+0=0
+(Ex) = (965+1)
+	Resources =  9
+	Labour =  6
+	Infrastructure =  5
+	Efficiency =  1
+	RU = 270
+[Cx] = [7752]
+	Homogeneity = 7
+	Acceptance = 7
+	Strangeness = 5
+	Symbols = 2
+N = -
+	No Imperial Nobles
+B = -
+	DIGIT	DESCRIPTION	ALLEG
+Z = -
+	CODE	DESCRIPTION
+	-	Green - Unrestricted.  Imperial.
+PBG = 801
+	Population Multiplier = 8
+	POPULATION UNDER 80,000,000
+	Planetoid Belts = 0
+	Gas Giants = 1
+W = 8
+	Non Stars In System = 8
+	-1 (mainworld)
+	-0 (planetoid belts)
+	-1 (gas giants)
+	 = 6 other worlds
+A = NaHu
+	CODE	DESCRIPTION
+	NaHu	Non-Aligned, Human-dominated
+Stellar = K9 V M2 V
+	Stars = 2

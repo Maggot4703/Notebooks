@@ -1,0 +1,30 @@
+uv
+
+[0m[0mA fast Python package and project manager.
+Some subcommands such as tool and python have their own usage documentation.
+More information: https://docs.astral.sh/uv/reference/cli.
+
+ - [0m[32;23;22;24;25mCreate a new Python project in the current directory:
+   [33;23;22;24;25muv init[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a new Python project at the specified path:
+   [33;23;22;24;25muv init [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mAdd a new dependency to the project:
+   [33;23;22;24;25muv add [0mpackage
+[0m
+ - [0m[32;23;22;24;25mRemove a dependency from the project:
+   [33;23;22;24;25muv remove [0mpackage
+[0m
+ - [0m[32;23;22;24;25mRun a script in the project's environment:
+   [33;23;22;24;25muv run [0mpath/to/script.py
+[0m
+ - [0m[32;23;22;24;25mRun a command in the project's environment:
+   [33;23;22;24;25muv run [0mcommand
+[0m
+ - [0m[32;23;22;24;25mUpdate a project's environment from pyproject.toml:
+   [33;23;22;24;25muv sync[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a lock file for the project's dependencies:
+   [33;23;22;24;25muv lock[0m
+[0m[0m

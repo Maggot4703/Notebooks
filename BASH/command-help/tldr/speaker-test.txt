@@ -1,0 +1,18 @@
+speaker-test
+
+[0m[0mSpeaker test tone generator for ALSA.
+See also: aplay, arecord, amixer.
+More information: https://manned.org/speaker-test.
+
+ - [0m[32;23;22;24;25mTest the default speakers with pink noise:
+   [33;23;22;24;25mspeaker-test[0m
+[0m
+ - [0m[32;23;22;24;25mTest the default speakers with a sine wave:
+   [33;23;22;24;25mspeaker-test [0m[-t|--test][33;23;22;24;25m sine [0m[-f|--frequency][33;23;22;24;25m [0mfrequency
+[0m
+ - [0m[32;23;22;24;25mTest the default speakers with a predefined WAV file:
+   [33;23;22;24;25mspeaker-test [0m[-t|--test][33;23;22;24;25m wav[0m
+[0m
+ - [0m[32;23;22;24;25mTest the default speakers with a WAV file:
+   [33;23;22;24;25mspeaker-test [0m[-t|--test][33;23;22;24;25m wav [0m[-w|--wavfile][33;23;22;24;25m [0mpath/to/file
+[0m[0m

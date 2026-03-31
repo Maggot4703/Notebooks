@@ -1,0 +1,29 @@
+xauth
+
+[0m[0mEdit and display the authorization information used in connecting to the X server.
+More information: https://manned.org/xauth.
+
+ - [0m[32;23;22;24;25mStart interactive mode with a specific authority file (defaults to ~/.Xauthority):
+   [33;23;22;24;25mxauth -f [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay information about the authority file:
+   [33;23;22;24;25mxauth info[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay authorization entries for all the displays:
+   [33;23;22;24;25mxauth list[0m
+[0m
+ - [0m[32;23;22;24;25mAdd an authorization for a specific display:
+   [33;23;22;24;25mxauth add [0mdisplay_name[33;23;22;24;25m [0mprotocol_name[33;23;22;24;25m [0mkey
+[0m
+ - [0m[32;23;22;24;25mRemove the authorization for a specific display:
+   [33;23;22;24;25mxauth remove [0mdisplay_name
+[0m
+ - [0m[32;23;22;24;25mPrint the authorization entry for the current display to stdout:
+   [33;23;22;24;25mxauth extract - $DISPLAY[0m
+[0m
+ - [0m[32;23;22;24;25mMerge the authorization entries from a specific file into the authorization database:
+   [33;23;22;24;25mcat [0mpath/to/file[33;23;22;24;25m | xauth merge -[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mxauth --help[0m
+[0m[0m

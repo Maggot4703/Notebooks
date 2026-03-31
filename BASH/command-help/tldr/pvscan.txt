@@ -1,0 +1,17 @@
+pvscan
+
+[0m[0mList all physical volumes and manage their online status.
+More information: https://manned.org/pvscan.
+
+ - [0m[32;23;22;24;25mList all physical volumes:
+   [33;23;22;24;25mpvscan[0m
+[0m
+ - [0m[32;23;22;24;25mShow the volume group that uses a specific physical volume:
+   [33;23;22;24;25mpvscan --cache --listvg [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mShow logical volumes that use a specific physical volume:
+   [33;23;22;24;25mpvscan --cache --listlvs [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mDisplay detailed information in JSON format:
+   [33;23;22;24;25mpvscan --reportformat json[0m
+[0m[0m

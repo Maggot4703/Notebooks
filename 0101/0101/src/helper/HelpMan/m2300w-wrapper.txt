@@ -1,0 +1,97 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/m2300w-wrapper
+Illegal command:
+/usr/bin/m2300w-wrapper --help
+
+
+Usage:
+m2300w-wrapper [options] [ps-file]
+
+Foomatic wrapper script for the m2300w printer driver.
+This script reads a Postscript ps-file or standard input
+and converts it to the Konica Minolta magicolor 2300W/2400W
+proprietary raster format.
+
+Version 0.51
+
+Options:
+
+-M model	  Choose printer model [2300W]
+		    2300W
+		    2400W
+
+-d		  Increase debug level.
+		  Can be specified more than once.
+
+-r resolution     Set device resolution [2]
+		    1=600x600dpi (not implemented yet !)
+		    2=1200x600dpi
+		    3=2400x600dpi (2400W only)
+
+-m media          Media code to send to printer [0]
+		    0=standard, 1=carton (heavy paper),
+		    2=transparency, 3=envelope, 4=letterhead,
+		    5=postcard, 6=labels
+
+-p paper          Paper code [4]
+                    4=A4, 6=B5 JIS, 8=A5, 18=Folio,25=Legal,
+		    26=Government Legal, 27=Letter, 31=Executive,
+                    33=Statement, 36=Kuvert Monarch, 37=Kuver #10,
+		    38=Kuvert DL, 39=Kuvert C5, 40=Kuvert C6, 
+		    41=B5 ISO
+
+-2 / -4           2-up, 4-up (uses psnup)
+
+-s		  save Toner
+                    Discards every second pixel in a chequerboard 
+		    order to save 50 percent toner. 
+		    It works fine for text and graphic, but it dosn't 
+		    for photos.
+
+-P printoutMode	  Shortcut for specifying PrintoutMode (see below)
+
+-o option=value   Spefify long options:
+
+		  PrintoutMode [Auto]
+		    Auto ............ Print pages with only black
+				      text in B/W, otherwise in color
+		    Gray ............ Force printing in grayscale
+		    Photo ........... Print in color using the "Photo"
+		    		      color profile.
+		    Draft ........... Economy mode to save toner,
+		    		      approx. newspaper quality
+		    Draft.Gray ...... Grayscale economy mode
+
+		  Quality [@PrintoutMode]
+		    @PrintoutMode ... Derived from PrintoutMode
+		    Normal .......... Normal print quality
+		    Draft ........... Economy mode to save toner
+
+		  ColorMode [@PrintoutMode]
+		    @PrintoutMode ... Derived from PrintoutMode
+		    Gray ............ Force printing in grayscale
+		    Color ........... Print in color
+
+		  ColorProfile [@PrintoutMode]
+		    @PrintoutMode ... Derived from PrintoutMode
+		    AutoColor ....... Prints black color with black toner
+		    		      only (but slightly impacts the
+				      darkness of black and dark colors)
+		    Photo ........... Optimized for printing photos,
+				      produces deep, dark colors.
+		    Photo-kh ........ Optimized for printing photos,
+				      uses less black toner than 'Photo'
+		    None ............ Turn off CIE-based color matching
+		    User[1-5] ....... User defined CRD #1-5
+
+		  DeftRGB or
+		  DefaultRGB [sRGB]
+		    sRGB ............ sRGB
+		    AdobeRGB ........ AdobeRGB
+		    gimp-print ...... Use this setting if you are printing
+		    		      an image from gimp's File -> Print menu
+		    builtin ......... Ghostscript's builtin default

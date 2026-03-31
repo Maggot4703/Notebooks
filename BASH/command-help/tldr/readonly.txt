@@ -1,0 +1,14 @@
+readonly
+
+[0m[0mSet read-only shell variables.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-readonly.
+
+ - [0m[32;23;22;24;25mSet a read-only variable:
+   [33;23;22;24;25mreadonly [0mvariable_name[33;23;22;24;25m=[0mvalue
+[0m
+ - [0m[32;23;22;24;25mMark a variable as read-only:
+   [33;23;22;24;25mreadonly [0mexisting_variable
+[0m
+ - [0m[32;23;22;24;25m[p]rint the names and values of all read-only variables to stdout:
+   [33;23;22;24;25mreadonly -p[0m
+[0m[0m

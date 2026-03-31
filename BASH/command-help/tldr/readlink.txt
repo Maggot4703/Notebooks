@@ -1,0 +1,11 @@
+readlink
+
+[0m[0mFollow symlinks and get symlink information.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/readlink-invocation.html.
+
+ - [0m[32;23;22;24;25mGet the actual file to which the symlink points:
+   [33;23;22;24;25mreadlink [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGet the absolute path to a file:
+   [33;23;22;24;25mreadlink [0m[-f|--canonicalize][33;23;22;24;25m [0mpath/to/file
+[0m[0m

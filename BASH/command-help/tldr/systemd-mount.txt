@@ -1,0 +1,26 @@
+systemd-mount
+
+[0m[0mEstablish and destroy transient mount or auto-mount points.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-mount.html.
+
+ - [0m[32;23;22;24;25mMount a file system (image or block device) at /run/media/system/LABEL where LABEL is the filesystem label or the device name if there is no label:
+   [33;23;22;24;25msystemd-mount [0mpath/to/file_or_device
+[0m
+ - [0m[32;23;22;24;25mMount a file system (image or block device) at a specific location:
+   [33;23;22;24;25msystemd-mount [0mpath/to/file_or_device[33;23;22;24;25m [0mpath/to/mount_point
+[0m
+ - [0m[32;23;22;24;25mList all local, known block devices with file systems that may be mounted:
+   [33;23;22;24;25msystemd-mount --list[0m
+[0m
+ - [0m[32;23;22;24;25mCreate an automount point that mounts the actual file system at the time of first access:
+   [33;23;22;24;25msystemd-mount --automount yes [0mpath/to/file_or_device
+[0m
+ - [0m[32;23;22;24;25mUnmount one or more devices:
+   [33;23;22;24;25msystemd-mount [0m[-u|--umount][33;23;22;24;25m [0mpath/to/mount_point_or_device1 path/to/mount_point_or_device2 ...
+[0m
+ - [0m[32;23;22;24;25mMount a file system (image or block device) with a specific file system type:
+   [33;23;22;24;25msystemd-mount [0m[-t|--type][33;23;22;24;25m [0mfile_system_type[33;23;22;24;25m [0mpath/to/file_or_device[33;23;22;24;25m [0mpath/to/mount_point
+[0m
+ - [0m[32;23;22;24;25mMount a file system (image or block device) with additional mount options:
+   [33;23;22;24;25msystemd-mount [0m[-o|--options][33;23;22;24;25m [0mmount_options[33;23;22;24;25m [0mpath/to/file_or_device[33;23;22;24;25m [0mpath/to/mount_point
+[0m[0m

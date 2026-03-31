@@ -1,0 +1,14 @@
+command
+
+[0m[0mCommand forces the shell to execute the program and ignore any functions, builtins and aliases with the same name.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-command.
+
+ - [0m[32;23;22;24;25mExecute the ls program literally, even if an ls alias exists:
+   [33;23;22;24;25mcommand [0mls
+[0m
+ - [0m[32;23;22;24;25mFind and execute a command using a default $PATH (/bin:/usr/bin:/sbin:/usr/sbin:/etc:/usr/etc) that guarantees to find all standard utilities:
+   [33;23;22;24;25mcommand -p [0mcommand_name
+[0m
+ - [0m[32;23;22;24;25mDisplay the path to the executable or the alias definition of a specific command:
+   [33;23;22;24;25mcommand -v [0mcommand_name
+[0m[0m

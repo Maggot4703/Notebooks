@@ -1,0 +1,20 @@
+vgremove
+
+[0m[0mRemove volume group(s) in LVM.
+More information: https://manned.org/vgremove.
+
+ - [0m[32;23;22;24;25mRemove a volume group with confirmation:
+   [33;23;22;24;25mvgremove [0mvolume_group
+[0m
+ - [0m[32;23;22;24;25mForcefully remove a volume group without confirmation:
+   [33;23;22;24;25mvgremove [0m[-f|--force][33;23;22;24;25m [0mvolume_group
+[0m
+ - [0m[32;23;22;24;25mSet the debug level for detailed logging to level 2, (repeat --debug up to 6 times to increase the level):
+   [33;23;22;24;25mvgremove [0m[-d|--debug][33;23;22;24;25m [0m[-d|--debug][33;23;22;24;25m [0mvolume_group
+[0m
+ - [0m[32;23;22;24;25mUse a specific config setting to override defaults:
+   [33;23;22;24;25mvgremove --config '[0mglobal/locking_type=1[33;23;22;24;25m' [0mvolume_group
+[0m
+ - [0m[32;23;22;24;25mDisplay help text for usage information:
+   [33;23;22;24;25mvgremove [0m[-h|--help]
+[0m[0m

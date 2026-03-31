@@ -1,0 +1,23 @@
+dbus-daemon
+
+[0m[0mThe D-Bus message daemon, allowing multiple programs to exchange messages.
+More information: https://dbus.freedesktop.org/doc/dbus-daemon.1.html.
+
+ - [0m[32;23;22;24;25mRun the daemon with a configuration file:
+   [33;23;22;24;25mdbus-daemon --config-file [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mRun the daemon with the standard per-login-session message bus configuration:
+   [33;23;22;24;25mdbus-daemon --session[0m
+[0m
+ - [0m[32;23;22;24;25mRun the daemon with the standard systemwide message bus configuration:
+   [33;23;22;24;25mdbus-daemon --system[0m
+[0m
+ - [0m[32;23;22;24;25mSet the address to listen on and override the configuration value for it:
+   [33;23;22;24;25mdbus-daemon --address [0maddress
+[0m
+ - [0m[32;23;22;24;25mOutput the process ID to stdout:
+   [33;23;22;24;25mdbus-daemon --print-pid[0m
+[0m
+ - [0m[32;23;22;24;25mForce the message bus to write to the system log for messages:
+   [33;23;22;24;25mdbus-daemon --syslog[0m
+[0m[0m

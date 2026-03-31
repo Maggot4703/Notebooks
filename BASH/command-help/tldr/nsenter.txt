@@ -1,0 +1,18 @@
+nsenter
+
+[0m[0mRun a new command in a running process' namespace.
+Particularly useful for Docker images or chroot jails.
+More information: https://manned.org/nsenter.
+
+ - [0m[32;23;22;24;25mRun a specific command using the same namespaces as an existing process:
+   [33;23;22;24;25mnsenter [0m[-t|--target][33;23;22;24;25m [0mpid[33;23;22;24;25m [0m[-a|--all][33;23;22;24;25m [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m
+ - [0m[32;23;22;24;25mRun a specific command in an existing process's mount|UTS|IPC|network|PID|user|cgroup|time namespace:
+   [33;23;22;24;25mnsenter [0m[-t|--target][33;23;22;24;25m [0mpid[33;23;22;24;25m --[0mmount|uts|ipc|net|pid|user|cgroup[33;23;22;24;25m [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m
+ - [0m[32;23;22;24;25mRun a specific command in an existing process's UTS, time, and IPC namespaces:
+   [33;23;22;24;25mnsenter [0m[-t|--target][33;23;22;24;25m [0mpid[33;23;22;24;25m [0m[-u|--uts][33;23;22;24;25m [0m[-T|--time][33;23;22;24;25m [0m[-i|--ipc][33;23;22;24;25m -- [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m
+ - [0m[32;23;22;24;25mRun a specific command in an existing process's namespace by referencing procfs:
+   [33;23;22;24;25mnsenter [0m[-p|--pid=][33;23;22;24;25m/proc/[0mpid[33;23;22;24;25m/pid/net -- [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m[0m

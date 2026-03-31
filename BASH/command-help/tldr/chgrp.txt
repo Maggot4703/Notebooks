@@ -1,0 +1,17 @@
+chgrp
+
+[0m[0mChange group ownership of files and directories.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/chgrp-invocation.html.
+
+ - [0m[32;23;22;24;25mChange the owner group of a file/directory:
+   [33;23;22;24;25mchgrp [0mgroup[33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mRecursively change the owner group of a directory and its contents:
+   [33;23;22;24;25mchgrp [0m[-R|--recursive][33;23;22;24;25m [0mgroup[33;23;22;24;25m [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mChange the owner group of a symbolic link:
+   [33;23;22;24;25mchgrp [0m[-h|--no-dereference][33;23;22;24;25m [0mgroup[33;23;22;24;25m [0mpath/to/symlink
+[0m
+ - [0m[32;23;22;24;25mChange the owner group of a file/directory to match a reference file:
+   [33;23;22;24;25mchgrp --reference [0mpath/to/reference_file[33;23;22;24;25m [0mpath/to/file_or_directory
+[0m[0m

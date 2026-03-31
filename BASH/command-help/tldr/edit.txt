@@ -1,0 +1,12 @@
+edit
+
+[0m[0mAn alias to a run-mailcap's action edit.
+Originally run-mailcap is used to process/edit mime-type/file.
+More information: https://www.computerhope.com/unix/uedit.htm.
+
+ - [0m[32;23;22;24;25mEdit action can be used to view any file on default mailcap explorer:
+   [33;23;22;24;25medit [0mfilename
+[0m
+ - [0m[32;23;22;24;25mWith run-mailcap:
+   [33;23;22;24;25mrun-mailcap --action=edit [0mfilename
+[0m[0m

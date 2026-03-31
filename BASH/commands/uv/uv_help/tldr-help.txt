@@ -1,0 +1,23 @@
+tldr - Simplified and community-driven man pages
+
+Usage: tldr [-v|--version] 
+            ((-u|--update) | [-p|--platform PLATFORM] [-L|--language LOCALE]
+              COMMAND |
+              (-a|--about)) [--auto-update-interval DAYS] [--color | --no-color]
+  tldr Client program
+
+Available options:
+  -h,--help                Show this help text
+  -v,--version             Show version
+  -u,--update              Update offline cache of tldr pages
+  -p,--platform PLATFORM   Prioritize a specific platform while searching. Valid
+                           values include linux, osx, windows, sunos
+  -L,--language LOCALE     Preferred language for the page returned
+  COMMAND                  name of the command
+  -a,--about               About this program
+  --auto-update-interval DAYS
+                           Perform an automatic update if the cache is older
+                           than DAYS
+  --color                  Force colored output, overriding the NO_COLOR
+                           environment variable
+  --no-color               Disable colored output

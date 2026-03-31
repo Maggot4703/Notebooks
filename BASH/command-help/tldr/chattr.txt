@@ -1,0 +1,20 @@
+chattr
+
+[0m[0mChange attributes of files or directories.
+More information: https://manned.org/chattr.
+
+ - [0m[32;23;22;24;25mMake a file or directory [i]mmutable to changes and deletion, even by superuser:
+   [33;23;22;24;25mchattr +i [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mMake a file or directory mutable:
+   [33;23;22;24;25mchattr -i [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25m[R]ecursively make an entire directory and contents immutable:
+   [33;23;22;24;25mchattr -R +i [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mMark a directory and its files to be interpreted in a case-insensitive manner:
+   [33;23;22;24;25mchattr +F [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mSet a file to only allow [a]ppending:
+   [33;23;22;24;25mchattr +a [0mpath/to/file
+[0m[0m

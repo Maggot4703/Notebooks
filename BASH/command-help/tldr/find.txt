@@ -1,0 +1,29 @@
+find
+
+[0m[0mFind files or directories under a directory tree, recursively.
+More information: https://manned.org/find.
+
+ - [0m[32;23;22;24;25mFind files by extension:
+   [33;23;22;24;25mfind [0mroot_path[33;23;22;24;25m -name '[0m*.ext[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mFind files matching multiple path/name patterns:
+   [33;23;22;24;25mfind [0mroot_path[33;23;22;24;25m -path '[0m*/path/*/*.ext[33;23;22;24;25m' -or -name '[0m*pattern*[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mFind directories matching a given name, in case-insensitive mode:
+   [33;23;22;24;25mfind [0mroot_path[33;23;22;24;25m -type d -iname '[0m*lib*[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mFind files matching a given pattern, excluding specific paths:
+   [33;23;22;24;25mfind [0mroot_path[33;23;22;24;25m -name '[0m*.py[33;23;22;24;25m' -not -path '[0m*/site-packages/*[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mFind files matching a given size range, limiting the recursive depth to "1":
+   [33;23;22;24;25mfind [0mroot_path[33;23;22;24;25m -maxdepth 1 -size [0m+500k[33;23;22;24;25m -size [0m-10M
+[0m
+ - [0m[32;23;22;24;25mRun a command for each file (use {} within the command to access the filename):
+   [33;23;22;24;25mfind [0mroot_path[33;23;22;24;25m -name '[0m*.ext[33;23;22;24;25m' -exec [0mwc -l[33;23;22;24;25m {} \;[0m
+[0m
+ - [0m[32;23;22;24;25mFind all files modified today and pass the results to a single command as arguments:
+   [33;23;22;24;25mfind [0mroot_path[33;23;22;24;25m -daystart -mtime [0m-1[33;23;22;24;25m -exec [0mtar -cvf archive.tar[33;23;22;24;25m {} \+[0m
+[0m
+ - [0m[32;23;22;24;25mSearch for either empty files or directories and delete them verbosely:
+   [33;23;22;24;25mfind [0mroot_path[33;23;22;24;25m -type [0mf|d[33;23;22;24;25m -empty -delete -print[0m
+[0m[0m

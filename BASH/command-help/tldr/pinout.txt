@@ -1,0 +1,11 @@
+pinout
+
+[0m[0mView the current Raspberry Pi's GPIO pin-out information on the terminal with an ASCII diagram.
+More information: https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#view-a-gpio-pinout-for-your-raspberry-pi.
+
+ - [0m[32;23;22;24;25mView the pinout information and GPIO header diagram for the current Raspberry Pi:
+   [33;23;22;24;25mpinout[0m
+[0m
+ - [0m[32;23;22;24;25mOpen https://pinout.xyz/ in the default browser:
+   [33;23;22;24;25mpinout [0m[-x|--xyz]
+[0m[0m

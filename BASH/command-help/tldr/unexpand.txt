@@ -1,0 +1,20 @@
+unexpand
+
+[0m[0mConvert spaces to tabs.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/unexpand-invocation.html.
+
+ - [0m[32;23;22;24;25mConvert blanks in each file to tabs, writing to stdout:
+   [33;23;22;24;25munexpand [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mConvert blanks to tabs, reading from stdout:
+   [33;23;22;24;25munexpand[0m
+[0m
+ - [0m[32;23;22;24;25mConvert all blanks, instead of just initial blanks:
+   [33;23;22;24;25munexpand [0m[-a|--all][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mConvert only leading sequences of blanks (overrides -a):
+   [33;23;22;24;25munexpand --first-only [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mHave tabs a certain number of characters apart, not 8 (enables -a):
+   [33;23;22;24;25munexpand [0m[-t|--tabs][33;23;22;24;25m [0mnumber[33;23;22;24;25m [0mpath/to/file
+[0m[0m

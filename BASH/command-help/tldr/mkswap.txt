@@ -1,0 +1,21 @@
+mkswap
+
+[0m[0mSet up a Linux swap area on a device or in a file.
+Note: path/to/file can either point to a regular file or a swap partition.
+More information: https://manned.org/mkswap.
+
+ - [0m[32;23;22;24;25mSet up a given swap area:
+   [33;23;22;24;25msudo mkswap [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCheck a partition for bad blocks before creating the swap area:
+   [33;23;22;24;25msudo mkswap [0m[-c|--check][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSpecify a label for the partition (to allow swapon to use the label):
+   [33;23;22;24;25msudo mkswap [0m[-L|--label][33;23;22;24;25m [0mlabel[33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mUse the specified UUID:
+   [33;23;22;24;25msudo mkswap [0m[-U|--uuid][33;23;22;24;25m [0mclear|random|time|UUID_value
+[0m
+ - [0m[32;23;22;24;25mSet up a swap file (for btrfs, see tldr btrfs filesystem instead):
+   [33;23;22;24;25msudo mkswap [0m[-s|--size][33;23;22;24;25m [0mfile_size[33;23;22;24;25m [0m[-F|--file][33;23;22;24;25m [0mpath/to/swapfile
+[0m[0m

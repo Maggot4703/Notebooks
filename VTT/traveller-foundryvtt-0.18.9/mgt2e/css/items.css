@@ -1,0 +1,421 @@
+
+
+section.item-sheet .shadow {
+    border: 2px solid #202040;
+}
+
+.actor-items {
+    padding-bottom: 12px;
+}
+
+.actor-items .item {
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #202020;
+    padding: 2px;
+    text-align: left;
+    margin-bottom: 2px;
+    background-color: #E0E0E0;
+    position: relative;
+}
+
+.actor-crew-list .actor-crew {
+    border: 1px solid black;
+    border-radius: 10px 10px 3px 3px;
+    box-shadow: 2px 2px 2px #202020;
+    padding: 2px;
+    text-align: left;
+    margin-bottom: 2px;
+    background-color: #E0E0E0;
+    position: relative;
+}
+
+.actor-crew-list .actor-crew img {
+    width: 48px;
+    height: 48px;
+    border: none;
+    float: left;
+    padding-right: 3px;
+}
+
+.actor-crew-list .actor-crew h4 {
+    margin: -2px -2px 2px -2px;
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid black;
+    background-color: #f1511b;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.actor-crew .item-controls {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.actor-items .item img {
+    width: 48px;
+    height: 48px;
+    border: none;
+    float: left;
+    padding-right: 3px;
+}
+
+.actor-items .item img.small {
+    width: 32px;
+    height: 32px;
+}
+
+.actor-items .item h4 {
+    margin: -2px -2px 2px -2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid black;
+    background-color: #C0C0C0;
+    color: black;
+    font-weight: bold;
+}
+
+.actor-items li.item-weapon h4 {
+    background-color: #e0c0b0;
+}
+
+.actor-items .item-armour h4 {
+    background-color: #c5d3b4;
+}
+
+.actor-items .item-controls {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.incdec i {
+    font-size: larger;
+}
+
+.incdec input {
+    width: 5em;
+}
+
+input.item-tons {
+    width: 7em;
+}
+
+
+.ship-cargo h4 {
+    margin: -2px -2px 0px -2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid black;
+    background-color: #C0C0C0;
+    color: black;
+}
+
+.effects-list {
+    position: relative;
+}
+
+div.resource .expand {
+    width: 100%;
+}
+
+form.career {
+    _background-color: #eff0f0;
+    background-color: #a5a7a9;
+}
+
+img.career {
+    width: 128px;
+    height: 128px;
+    float: left;
+}
+
+.item-sheet h1.charname {
+    position: relative;
+    background-color: #72bce8;
+}
+
+h1.item-software {
+    background-image: url("item-software.svg");
+}
+
+h1.career {
+    margin-left: 128px;
+    padding-left: 8px;
+    background-color: #f1511b;
+    height: 40px;
+    border: none;
+}
+
+h1.career input {
+    height: 100%;
+    color: white;
+    border: 0px;
+    vertical-align: middle;
+}
+
+form.career div.grid {
+    margin-left: 132px;
+}
+
+form.career div.grid input {
+    background-color: #eff0f0;
+}
+
+form.career section.history-description {
+    clear: both;
+    margin-top: 8px;
+    width: 100%;
+    bottom: 0px;
+    background-color: #eff0f0;
+}
+
+.role-action .item-controls {
+    float: right;
+}
+
+li.vaccsuit {
+    box-shadow: 0px 4px 4px #FF0000 !important;
+}
+
+.pill-container {
+    clear: right;
+    width: 100%;
+    min-height: 26px;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: #D8D8D8;
+    text-align: left;
+}
+
+.pill-container .pill {
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 2px;
+    margin-right: 0.5em;
+}
+
+.pill-container .pill .fas {
+    display: inline-block;
+    height: 100%;
+    padding: 3px 5px 3px 5px;
+    margin: -3px 0 -3px 0;
+    background-color: #36a0de;
+}
+
+.energy-pill {
+    background-color: #36a0de;
+    color: white;
+}
+
+.weapon-pill {
+    background-color: #36a0de;
+    color: white;
+}
+
+.error-pill {
+    color: red;
+    font-style: italic;
+}
+
+.adv-pill {
+    background-color: #36a0de;
+    color: white;
+}
+
+.disad-pill {
+    background-color: #a090ee;
+    color: black;
+}
+
+.cargo-pill {
+    background-color: #36a0de;
+    color: white;
+}
+
+.comma-list li {
+    display: inline;
+}
+
+.comma-list li:after {
+    content: ", ";
+}
+
+.comma-list li:last-child:after {
+    content: "";
+}
+
+.small-text {
+    font-size: smaller;
+    font-style: italic;
+}
+
+
+
+/* Associate Items */
+.associate form {
+  background-color: #404040;
+  background-image: url(traveller-hexes.png);
+}
+
+.associate-sheet {
+  display: flex;
+  align-items: flex-start;
+}
+
+.associate-sheet h1 {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.associate-sheet h1 select.relationship-type {
+  float: left;
+  display: inline-block;
+  width: 120px;
+  height: 48px;
+  font-size: smaller;
+}
+
+.associate-sheet h1 input.associate-name {
+  display: inline;
+  width: auto;
+  height: 48px;
+  overflow: hidden;
+  margin-left: 16px;
+}
+
+.associate-sheet .randomiseRelationship {
+  text-align: right;
+}
+
+div.item-status {
+  color: #00D000;
+  font: Anton;
+  font-family: Anton;
+  font-weight: bold;
+  font-size: 16pt;
+  text-align: center;
+  width: 140px;
+  display: block;
+  background-color: black;
+  border: 3px solid blue;
+  margin-bottom: 8px;
+}
+
+div.item-status-ACTIVE {
+  color: #00D000;
+}
+
+div.item-status-INACTIVE {
+  color: #606060;
+}
+
+div.item-status-DAMAGED {
+
+}
+
+div.item-status-DESTROYED {
+
+}
+
+div.span.item-status-RUNNING {
+  color: #00D000;
+}
+
+/* World Data Items */
+.world-data form {
+  background-color: #404040;
+  background-image: url(traveller-hexes.png);
+}
+
+.world-data-sheet {
+  display: flex;
+  align-items: flex-start;
+}
+
+.world-data-sheet h1 {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.world-data-sheet h1 select.world-data-type {
+  float: left;
+  display: inline-block;
+  width: 150px;
+  height: 48px;
+  font-size: smaller;
+}
+
+.world-data-sheet h1 input.world-data-name {
+  display: inline;
+  width: auto;
+  height: 48px;
+  overflow: hidden;
+  margin-left: 16px;
+}
+
+textarea.culture {
+  height: 10em;
+  overflow: auto;
+}
+
+.world-block {
+  border: 2px solid black;
+  border-radius: 5px;
+  min-width: 180px;
+}
+
+.cargo-data label {
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+.cargo-data .value-box {
+  margin-bottom: 10px;
+}
+
+.world-block label {
+  display: block;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.world-block img.world {
+  width: 64px;
+}
+
+.freight-data .freight-arrow {
+  font-size: xxx-large;
+}
+
+.freight-data .resource label {
+  text-transform: uppercase;
+}
+
+.item-to-chat {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  cursor: pointer;
+}

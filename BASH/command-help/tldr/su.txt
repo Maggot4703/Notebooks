@@ -1,0 +1,17 @@
+su
+
+[0m[0mSwitch shell to another user.
+More information: https://manned.org/su.
+
+ - [0m[32;23;22;24;25mSwitch to superuser (requires the root password):
+   [33;23;22;24;25msu[0m
+[0m
+ - [0m[32;23;22;24;25mSwitch to a given user (requires the user's password):
+   [33;23;22;24;25msu [0musername
+[0m
+ - [0m[32;23;22;24;25mSwitch to a given user and simulate a full login shell:
+   [33;23;22;24;25msu - [0musername
+[0m
+ - [0m[32;23;22;24;25mExecute a command as another user:
+   [33;23;22;24;25msu - [0musername[33;23;22;24;25m [0m[-c|--command][33;23;22;24;25m "[0mcommand[33;23;22;24;25m"[0m
+[0m[0m

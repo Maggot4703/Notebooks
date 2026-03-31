@@ -1,0 +1,14 @@
+fusermount
+
+[0m[0mMount and unmount FUSE filesystems.
+More information: https://manned.org/fusermount.
+
+ - [0m[32;23;22;24;25mUnmount a FUSE filesystem:
+   [33;23;22;24;25mfusermount -u [0mpath/to/mount_point
+[0m
+ - [0m[32;23;22;24;25mUnmount a FUSE filesystem as soon as it becomes unused:
+   [33;23;22;24;25mfusermount -z [0mpath/to/mount_point
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mfusermount --version[0m
+[0m[0m

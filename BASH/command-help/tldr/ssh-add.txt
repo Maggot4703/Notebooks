@@ -1,0 +1,24 @@
+ssh-add
+
+[0m[0mManage loaded SSH keys in the ssh-agent.
+Ensure that ssh-agent is up and running for the keys to be loaded in it.
+More information: https://man.openbsd.org/ssh-add.
+
+ - [0m[32;23;22;24;25mAdd the default SSH keys in ~/.ssh to the ssh-agent:
+   [33;23;22;24;25mssh-add[0m
+[0m
+ - [0m[32;23;22;24;25mAdd a specific key to the ssh-agent:
+   [33;23;22;24;25mssh-add [0mpath/to/private_key
+[0m
+ - [0m[32;23;22;24;25mList fingerprints of currently loaded keys:
+   [33;23;22;24;25mssh-add -l[0m
+[0m
+ - [0m[32;23;22;24;25mDelete a key from the ssh-agent:
+   [33;23;22;24;25mssh-add -d [0mpath/to/private_key
+[0m
+ - [0m[32;23;22;24;25mDelete all currently loaded keys from the ssh-agent:
+   [33;23;22;24;25mssh-add -D[0m
+[0m
+ - [0m[32;23;22;24;25mAdd a key to the ssh-agent and the keychain:
+   [33;23;22;24;25mssh-add -K [0mpath/to/private_key
+[0m[0m

@@ -1,0 +1,70 @@
+Skills Reference for This Workspace
+===================================
+
+Below is a comprehensive list of all available skills, their descriptions, usage, and integration notes.
+
+---
+
+**api-design**
+- Use when: designing, reviewing, or troubleshooting REST APIs, HTTP endpoints, or web service integrations. Covers OpenAPI, endpoint structure, parameter conventions, error handling, and best practices for API usability and reliability.
+- Usage: Designing/reviewing RESTful APIs, troubleshooting HTTP requests/responses, explaining OpenAPI/Swagger specs, endpoint naming/versioning, diagnosing CORS/auth issues.
+
+---
+
+data-parsing
+- Use when: parsing, transforming, or validating structured data (JSON, XML, CSV, tabular, or custom formats), map rendering, or coordinate conversion. Covers data extraction, schema validation, coordinate math, and map visualization.
+- Usage: Parsing/validating API responses, transforming data, extracting/converting map coordinates, rendering map data, schema validation.
+
+---
+
+nearest-base
+- Use when: searching for the nearest base to a world in any Traveller sector. Covers user-driven or automatic (ANY) base type selection, sector/world lookup, and base distance calculation.
+- Usage: Find nearest base to a world, prompt for base type, parse sector/world data, search for bases, calculate distances, return nearest base(s).
+- Standard Base Codes: N (Naval), S (Scout), M (Marine), W (Way Station), K (Corsair), B (Generic), F (Fleet), D (Depot), A (Army)
+- Agent Integration: Use the `find_nearest_base_kesali` tool or agent with parameters: sector, world, [base type].
+
+---
+
+rpg-data
+- Use when: modeling, searching, or analyzing RPG sector/world data, including Traveller, sector files, UWP, and world attributes. Covers data modeling, search queries, and RPG-specific conventions.
+- Usage: Modeling RPG sector/world data, searching/filtering worlds/sectors, explaining RPG data conventions, building/troubleshooting search queries.
+
+---
+
+agent-customization
+- **WORKFLOW SKILL** — Create, update, review, fix, or debug VS Code agent customization files (.instructions.md, .prompt.md, .agent.md, SKILL.md, copilot-instructions.md, AGENTS.md). Use for: saving coding preferences, troubleshooting ignored instructions/skills/agents, configuring applyTo patterns, defining tool restrictions, creating custom agent modes, packaging domain knowledge, fixing YAML frontmatter syntax.
+- Usage: Workspace/file instructions, prompts, hooks, custom agents, skills. See reference docs for templates and advanced options.
+
+---
+
+summarize-github-issue-pr-notification
+- Summarizes the content of a GitHub issue, pull request (PR), or notification, providing a concise overview of the main points and key details. ALWAYS use the skill when asked to summarize an issue, PR, or notification.
+- Usage: Provide a JSON representation of a GitHub issue/PR/notification to generate a summary. Tips: summarize textually, preserve images, reference issues/PRs as Markdown links, summarize comments with author first.
+
+---
+
+suggest-fix-issue
+- Given the details of an issue, suggests a fix for the issue.
+- Usage: Provide issue details (description, comments, context) to generate a suggested fix. Tips: read the issue fully, output code-blocks and reference real files, address root cause directly.
+
+---
+
+form-github-search-query
+- Forms a GitHub search query based on a natural language query and the type of search (issue or PR). Helps create effective search queries for GitHub issues/PRs.
+- Usage: Provide a natural language query and specify issue/PR. Converts to GitHub search syntax. Tips: identify repo, fetch labels, follow search syntax overview.
+
+---
+
+show-github-search-result
+- Summarizes the results of a GitHub search query in a human-friendly markdown table. ALWAYS use this skill when displaying the results of a GitHub search query.
+- Usage: Pass raw search results to generate a markdown table summarizing key information (title, author, labels, state, etc.).
+
+---
+
+address-pr-comments
+- Address review comments (including Copilot comments) on the active pull request. Use when: responding to PR feedback, fixing review comments, resolving PR threads, implementing requested changes from reviewers, addressing code review, fixing PR issues.
+- Usage: Read the active PR, identify unresolved comments, plan changes, implement and resolve threads.
+
+---
+
+For more details, see the SKILL.md files in `.github/skills/` or the VS Code extension skills directory.

@@ -1,0 +1,21 @@
+tac
+
+[0m[0mDisplay and concatenate files with lines in reversed order.
+See also: cat.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/tac-invocation.html.
+
+ - [0m[32;23;22;24;25mConcatenate specific files in reversed order:
+   [33;23;22;24;25mtac [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mDisplay stdin in reversed order:
+   cat path/to/file[33;23;22;24;25m | tac[0m
+[0m
+ - [0m[32;23;22;24;25mUse a specific separator:
+   [33;23;22;24;25mtac [0m[-s|--separator][33;23;22;24;25m [0mseparator[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mUse a specific regex as a separator:
+   [33;23;22;24;25mtac [0m[-r|--regex][33;23;22;24;25m [0m[-s|--separator][33;23;22;24;25m [0mseparator[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mUse a separator before each file:
+   [33;23;22;24;25mtac [0m[-b|--before][33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m[0m

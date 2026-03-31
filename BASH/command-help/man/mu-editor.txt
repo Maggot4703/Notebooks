@@ -1,0 +1,51 @@
+MU-EDITOR(1)                     User Commands                    MU-EDITOR(1)
+
+NAME
+       mu-editor - a simple Python code editor
+
+SYNOPSIS
+       mu-editor [file]
+
+ARGUMENTS
+       file   the source file to edit
+
+DESCRIPTION
+       mu-editor is a simple code editor for beginner programmers based on ex‐
+       tensive feedback from teachers and learners.  Having said that, mu-edi‐
+       tor is for anyone who wants to use a simple “no frills” editor.
+
+       mu-editor is a modal editor with modes for:
+
+       • Adafruit’s CircuitPython
+
+       • the micro:bit’s version of MicroPython
+
+       • PyGame Zero
+
+       • standard Python 3 (including a graphical debugger)
+
+       Some of the modes make available a REPL (either running on the connect‐
+       ed CircuitPython or MicroPython device, or as a  Jupyter-based  iPython
+       session in Python3 mode).
+
+REPORTING BUGS
+       Upstream bug tracker: https://github.com/mu-editor/mu/issues
+
+COPYRIGHT
+       Copyright 2015 Nicholas H.Tollervey <ntoll@ntoll.org>
+
+AUTHOR
+       This  manual  page is based on the Mu documentation.  It was created by
+       Nick Morrott <knowledgejunkie@gmail.com> for the Debian GNU/Linux  sys‐
+       tem, but may be used by others
+
+SEE ALSO
+       uflash(1)
+
+       Project homepage: https://codewith.mu/
+
+       Projects using Mu: https://madewith.mu/
+
+       Online developer documentation: https://mu.readthedocs.io/
+
+1.0.3+dfsg                       December 2018                    MU-EDITOR(1)

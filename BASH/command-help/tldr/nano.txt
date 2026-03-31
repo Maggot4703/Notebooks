@@ -1,0 +1,30 @@
+nano
+
+[0m[0mText editor. An enhanced pico clone.
+See also: pico, rnano.
+More information: https://nano-editor.org/dist/latest/nano.html.
+
+ - [0m[32;23;22;24;25mOpen specific files, moving to the next file after closing the previous one:
+   [33;23;22;24;25mnano [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mStart the editor without using configuration files:
+   [33;23;22;24;25mnano [0m[-I|--ignorercfiles]
+[0m
+ - [0m[32;23;22;24;25mOpen a file and position the cursor at a specific line and column:
+   [33;23;22;24;25mnano +[0mline[33;23;22;24;25m,[0mcolumn[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOpen a file and enable soft wrapping:
+   [33;23;22;24;25mnano [0m[-S|--softwrap][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOpen a file and indent new lines to the previous line's indentation:
+   [33;23;22;24;25mnano [0m[-i|--autoindent][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOpen a file and create a backup file (path/to/file~) on save:
+   [33;23;22;24;25mnano [0m[-B|--backup][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOpen a file in restricted mode (i.e. don't read/write to files not specified on the command-line):
+   [33;23;22;24;25mnano [0m[-R|--restricted][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mExit nano:
+   [33;23;22;24;25m<Ctrl x>[0m
+[0m[0m

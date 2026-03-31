@@ -1,0 +1,26 @@
+udevadm
+
+[0m[0mLinux udev management tool.
+More information: https://www.freedesktop.org/software/systemd/man/udevadm.html.
+
+ - [0m[32;23;22;24;25mMonitor all device events:
+   [33;23;22;24;25msudo udevadm monitor[0m
+[0m
+ - [0m[32;23;22;24;25mPrint uevents sent out by the kernel:
+   [33;23;22;24;25msudo udevadm monitor [0m[-k|--kernel]
+[0m
+ - [0m[32;23;22;24;25mPrint device events after being processed by udev:
+   [33;23;22;24;25msudo udevadm monitor [0m[-u|--udev]
+[0m
+ - [0m[32;23;22;24;25mList attributes of device /dev/sda:
+   [33;23;22;24;25msudo udevadm info [0m[-a|--attribute-walk][33;23;22;24;25m [0m/dev/sda
+[0m
+ - [0m[32;23;22;24;25mReload all udev rules:
+   [33;23;22;24;25msudo udevadm control [0m[-R|--reload]
+[0m
+ - [0m[32;23;22;24;25mTrigger all udev rules to run:
+   [33;23;22;24;25msudo udevadm trigger[0m
+[0m
+ - [0m[32;23;22;24;25mTest an event run by simulating loading of /dev/sda:
+   [33;23;22;24;25msudo udevadm test [0m/dev/sda
+[0m[0m

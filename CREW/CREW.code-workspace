@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "${workspaceFolder}/Crew/.venv/bin/python",
+		"python.terminal.activateEnvironment": true,
+		"workbench.browser.enableChatTools": true
+	}
+}

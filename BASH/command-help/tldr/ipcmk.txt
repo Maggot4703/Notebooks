@@ -1,0 +1,17 @@
+ipcmk
+
+[0m[0mCreate IPC (Inter-process Communication) resources.
+More information: https://manned.org/ipcmk.
+
+ - [0m[32;23;22;24;25mCreate a shared memory segment:
+   [33;23;22;24;25mipcmk [0m[-M|--shmem][33;23;22;24;25m [0msegment_size_in_bytes
+[0m
+ - [0m[32;23;22;24;25mCreate a semaphore:
+   [33;23;22;24;25mipcmk [0m[-S|--semaphore][33;23;22;24;25m [0melement_size
+[0m
+ - [0m[32;23;22;24;25mCreate a message queue:
+   [33;23;22;24;25mipcmk [0m[-Q|--queue]
+[0m
+ - [0m[32;23;22;24;25mCreate a shared memory segment with specific permissions (default is 0644):
+   [33;23;22;24;25mipcmk [0m[-M|--shmem][33;23;22;24;25m [0msegment_size_in_bytes[33;23;22;24;25m [0moctal_permissions
+[0m[0m

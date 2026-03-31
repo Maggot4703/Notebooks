@@ -1,0 +1,14 @@
+laptop-detect
+
+[0m[0mAttempt to determine if the script is running on a laptop or desktop.
+More information: https://gitlab.com/debiants/laptop-detect.
+
+ - [0m[32;23;22;24;25mReturn an exit status of 0 if the current device is likely a laptop, else returns 1:
+   [33;23;22;24;25mlaptop-detect[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the type of device that the current system is detected as:
+   [33;23;22;24;25mlaptop-detect --verbose[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mlaptop-detect --version[0m
+[0m[0m

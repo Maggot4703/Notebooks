@@ -1,0 +1,20 @@
+e2image
+
+[0m[0mSave critical ext2/ext3/ext4 filesystem metadata to a file.
+More information: https://manned.org/e2image.
+
+ - [0m[32;23;22;24;25mWrite metadata located on device to a specific file:
+   [33;23;22;24;25me2image [0m/dev/sdXN[33;23;22;24;25m [0mpath/to/image_file
+[0m
+ - [0m[32;23;22;24;25mPrint metadata located on device to stdout:
+   [33;23;22;24;25me2image [0m/dev/sdXN[33;23;22;24;25m -[0m
+[0m
+ - [0m[32;23;22;24;25mRestore the filesystem metadata back to the device:
+   [33;23;22;24;25me2image -I [0m/dev/sdXN[33;23;22;24;25m [0mpath/to/image_file
+[0m
+ - [0m[32;23;22;24;25mCreate a large raw sparse file with metadata at proper offsets:
+   [33;23;22;24;25me2image -r [0m/dev/sdXN[33;23;22;24;25m [0mpath/to/image_file
+[0m
+ - [0m[32;23;22;24;25mCreate a [Q]COW2 image file instead of a normal or raw image file:
+   [33;23;22;24;25me2image -Q [0m/dev/sdXN[33;23;22;24;25m [0mpath/to/image_file
+[0m[0m

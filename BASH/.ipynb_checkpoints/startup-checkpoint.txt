@@ -1,0 +1,5 @@
+deactivate
+cd /home/me/Notebooks/BASH
+source .venv/bin/activate
+#uv sync
+jupyter lab

@@ -1,0 +1,43 @@
+{
+  "name": "Radioactives",
+  "type": "cargo",
+  "img": "systems/mgt2e/icons/cargo/radioactives.svg",
+  "system": {
+    "cargo": {
+      "price": 1000000,
+      "availability": "As, De, Lo",
+      "purchaseDM": "As +2, Lo +2",
+      "saleDM": "In +3, Ni -2, Ag -3, Ht 1",
+      "tons": "1D6",
+      "illegal": false,
+      "cost": 100
+    },
+    "description": "<p>Uranium, plutonium, unobtanium, rare elements.</p>",
+    "quantity": 1,
+    "cost": 1000
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "KjVCQnLdKUJeJDZy": 3,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.mongoose-traveller-core.cargo-items.Item.WPKIBegUogVXxmw8",
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mgt2e",
+    "systemVersion": "0.13.2.0",
+    "createdTime": 1739833676234,
+    "modifiedTime": 1753212594001,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "exportSource": null
+  },
+  "folder": "nTFQBn7eKDifeKFR",
+  "_id": "SrFHWzjolq0fbml8",
+  "sort": 0,
+  "_key": "!items!SrFHWzjolq0fbml8"
+}

@@ -1,0 +1,8 @@
+pasuspender
+
+[0m[0mTemporarily suspends pulseaudio while another command is running to allow access to alsa.
+More information: https://manned.org/pasuspender.
+
+ - [0m[32;23;22;24;25mSuspend PulseAudio while running jackd:
+   [33;23;22;24;25mpasuspender -- [0mjackd --driver alsa --device hw:0
+[0m[0m

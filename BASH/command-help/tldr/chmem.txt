@@ -1,0 +1,24 @@
+chmem
+
+[0m[0mModify the state of memory blocks (online or offline) in a Linux system.
+Typically used in virtualized environments to manage memory hotplug.
+More information: https://manned.org/chmem.
+
+ - [0m[32;23;22;24;25mSet a memory block offline:
+   [33;23;22;24;25msudo chmem [0m[-b|--block][33;23;22;24;25m [0m[-d|--disable][33;23;22;24;25m [0mblock_number
+[0m
+ - [0m[32;23;22;24;25mSet a memory block online:
+   [33;23;22;24;25msudo chmem [0m[-b|--block][33;23;22;24;25m [0m[-e|--enable][33;23;22;24;25m [0mblock_number
+[0m
+ - [0m[32;23;22;24;25mSet a memory range offline using hexadecimal addresses:
+   [33;23;22;24;25msudo chmem [0m[-d|--disable][33;23;22;24;25m 0x[0mstart_address[33;23;22;24;25m-0x[0mend_address
+[0m
+ - [0m[32;23;22;24;25mSet a memory range online using hexadecimal addresses:
+   [33;23;22;24;25msudo chmem [0m[-e|--enable][33;23;22;24;25m 0x[0mstart_address[33;23;22;24;25m-0x[0mend_address
+[0m
+ - [0m[32;23;22;24;25mSet memory online and assign it to a specific zone (e.g., Movable):
+   [33;23;22;24;25msudo chmem [0m[-e|--enable][33;23;22;24;25m 0x[0mstart_address[33;23;22;24;25m [0m[-z|--zone][33;23;22;24;25m [0mMovable
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mchmem [0m[-h|--help]
+[0m[0m

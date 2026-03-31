@@ -1,0 +1,17 @@
+basenc
+
+[0m[0mEncode or decode file or stdin using a specified encoding, to stdout.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/basenc-invocation.html.
+
+ - [0m[32;23;22;24;25mEncode a file with base64 encoding:
+   [33;23;22;24;25mbasenc --base64 [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDecode a file with base64 encoding:
+   [33;23;22;24;25mbasenc [0m[-d|--decode][33;23;22;24;25m --base64 [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mEncode from stdin with base32 encoding with 42 columns:
+   command[33;23;22;24;25m | basenc --base32 [0m[-w|--wrap][33;23;22;24;25m 42[0m
+[0m
+ - [0m[32;23;22;24;25mEncode from stdin with base32 encoding:
+   command[33;23;22;24;25m | basenc --base32[0m
+[0m[0m

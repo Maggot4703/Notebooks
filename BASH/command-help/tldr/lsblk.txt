@@ -1,0 +1,29 @@
+lsblk
+
+[0m[0mList information about devices.
+More information: https://manned.org/lsblk.
+
+ - [0m[32;23;22;24;25mList all storage devices in a tree-like format:
+   [33;23;22;24;25mlsblk[0m
+[0m
+ - [0m[32;23;22;24;25mAlso list empty devices:
+   [33;23;22;24;25mlsblk [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mPrint the SIZE column in bytes rather than in a human-readable format:
+   [33;23;22;24;25mlsblk [0m[-b|--bytes]
+[0m
+ - [0m[32;23;22;24;25mOutput info about filesystems:
+   [33;23;22;24;25mlsblk [0m[-f|--fs]
+[0m
+ - [0m[32;23;22;24;25mUse ASCII characters for tree formatting:
+   [33;23;22;24;25mlsblk [0m[-i|--ascii]
+[0m
+ - [0m[32;23;22;24;25mOutput info about block-device topology:
+   [33;23;22;24;25mlsblk [0m[-t|--topology]
+[0m
+ - [0m[32;23;22;24;25mExclude the devices specified by the comma-separated list of major device numbers:
+   [33;23;22;24;25mlsblk [0m[-e|--exclude][33;23;22;24;25m [0m1,7,...
+[0m
+ - [0m[32;23;22;24;25mDisplay a customized summary using a comma-separated list of columns:
+   [33;23;22;24;25mlsblk [0m[-o|--output][33;23;22;24;25m [0mNAME,SERIAL,MODEL,TRAN,TYPE,SIZE,FSTYPE,MOUNTPOINT,...
+[0m[0m

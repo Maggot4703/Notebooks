@@ -1,0 +1,17 @@
+pathchk
+
+[0m[0mCheck the validity and portability of pathnames.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/pathchk-invocation.html.
+
+ - [0m[32;23;22;24;25mCheck pathnames for validity in the current system:
+   [33;23;22;24;25mpathchk [0mpath1 path2 ...
+[0m
+ - [0m[32;23;22;24;25mCheck pathnames for validity on a wider range of POSIX compliant systems:
+   [33;23;22;24;25mpathchk -p [0mpath1 path2 ...
+[0m
+ - [0m[32;23;22;24;25mCheck pathnames for validity on all POSIX compliant systems:
+   [33;23;22;24;25mpathchk [0m[-p -P|--portability][33;23;22;24;25m [0mpath1 path2 ...
+[0m
+ - [0m[32;23;22;24;25mOnly check for empty pathnames or leading dashes (-):
+   [33;23;22;24;25mpathchk -P [0mpath1 path2 ...
+[0m[0m

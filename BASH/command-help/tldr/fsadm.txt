@@ -1,0 +1,20 @@
+fsadm
+
+[0m[0mCheck or resize a filesystem on a device.
+More information: https://manned.org/fsadm.
+
+ - [0m[32;23;22;24;25mCheck a filesystem for errors:
+   [33;23;22;24;25mfsadm check [0m/dev/vg_name/lv_name
+[0m
+ - [0m[32;23;22;24;25mPerform a dry-run resize to a specific size (no changes made):
+   [33;23;22;24;25mfsadm [0m[-n|--dry-run][33;23;22;24;25m resize [0m/dev/vg_name/lv_name[33;23;22;24;25m [0m10G
+[0m
+ - [0m[32;23;22;24;25mGrow a filesystem to fill the entire device (omit the size):
+   [33;23;22;24;25mfsadm resize [0m/dev/vg_name/lv_name
+[0m
+ - [0m[32;23;22;24;25mResize the filesystem and the underlying logical volume together:
+   [33;23;22;24;25mfsadm [0m[-l|--lvresize][33;23;22;24;25m resize [0m/dev/vg_name/lv_name[33;23;22;24;25m [0m100G
+[0m
+ - [0m[32;23;22;24;25mFor ext2/3/4, unmount and resize offline:
+   [33;23;22;24;25mfsadm [0m[-e|--ext-offline][33;23;22;24;25m resize [0m/dev/vg_name/lv_name[33;23;22;24;25m [0m20G
+[0m[0m

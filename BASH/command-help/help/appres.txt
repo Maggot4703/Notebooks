@@ -1,0 +1,5 @@
+appres: unrecognized option '--help'
+usage:  appres  [class [instance]] [-1] [-V] [toolkitoptions]
+-1      list resources only at the specified level
+-V      print command version and exit
+The number of class and instance elements must be equal.

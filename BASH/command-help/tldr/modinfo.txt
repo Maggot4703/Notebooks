@@ -1,0 +1,12 @@
+modinfo
+
+[0m[0mExtract information about a Linux kernel module.
+See also: kmod for other module management commands.
+More information: https://manned.org/modinfo.
+
+ - [0m[32;23;22;24;25mList all attributes of a kernel module:
+   [33;23;22;24;25mmodinfo [0mkernel_module
+[0m
+ - [0m[32;23;22;24;25mList the specified attribute only:
+   [33;23;22;24;25mmodinfo [0m[-F|--field][33;23;22;24;25m [0mauthor|description|license|parm|filename|version|...[33;23;22;24;25m [0mkernel_module
+[0m[0m

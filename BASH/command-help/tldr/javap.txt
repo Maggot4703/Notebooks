@@ -1,0 +1,17 @@
+javap
+
+[0m[0mDisassemble class files and list them.
+More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/javap.html.
+
+ - [0m[32;23;22;24;25mDisassemble and list one or more .class files:
+   [33;23;22;24;25mjavap [0mpath/to/file1.class path/to/file2.class ...
+[0m
+ - [0m[32;23;22;24;25mDisassemble and list a built-in class file:
+   [33;23;22;24;25mjavap java.[0mpackage[33;23;22;24;25m.[0mclass
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mjavap -help[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mjavap -version[0m
+[0m[0m

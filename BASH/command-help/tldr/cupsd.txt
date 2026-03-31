@@ -1,0 +1,29 @@
+cupsd
+
+[0m[0mServer daemon for the CUPS print server.
+More information: https://openprinting.github.io/cups/doc/man-cupsd.html.
+
+ - [0m[32;23;22;24;25mStart cupsd in the background, aka. as a daemon:
+   [33;23;22;24;25mcupsd[0m
+[0m
+ - [0m[32;23;22;24;25mStart cupsd on the [f]oreground:
+   [33;23;22;24;25mcupsd -f[0m
+[0m
+ - [0m[32;23;22;24;25m[l]aunch cupsd on-demand (commonly used by launchd or systemd):
+   [33;23;22;24;25mcupsd -l[0m
+[0m
+ - [0m[32;23;22;24;25mStart cupsd using the specified [c]upsd.conf configuration file:
+   [33;23;22;24;25mcupsd -c [0mpath/to/cupsd.conf
+[0m
+ - [0m[32;23;22;24;25mStart cupsd using the specified cups-file[s].conf configuration file:
+   [33;23;22;24;25mcupsd -s [0mpath/to/cups-files.conf
+[0m
+ - [0m[32;23;22;24;25m[t]est the [c]upsd.conf configuration file for errors:
+   [33;23;22;24;25mcupsd -t -c [0mpath/to/cupsd.conf
+[0m
+ - [0m[32;23;22;24;25m[t]est the cups-file[s].conf configuration file for errors:
+   [33;23;22;24;25mcupsd -t -s [0mpath/to/cups-files.conf
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mcupsd -h[0m
+[0m[0m

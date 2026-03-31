@@ -1,0 +1,29 @@
+hcitool
+
+[0m[0mMonitor, configure connections, and send special commands to Bluetooth devices.
+More information: https://manned.org/hcitool.
+
+ - [0m[32;23;22;24;25mScan for Bluetooth devices:
+   [33;23;22;24;25mhcitool scan[0m
+[0m
+ - [0m[32;23;22;24;25mOutput the name of a device, returning its MAC address:
+   [33;23;22;24;25mhcitool name [0mbdaddr
+[0m
+ - [0m[32;23;22;24;25mFetch information about a remote Bluetooth device:
+   [33;23;22;24;25mhcitool info [0mbdaddr
+[0m
+ - [0m[32;23;22;24;25mCheck the link quality to a Bluetooth device:
+   [33;23;22;24;25mhcitool lq [0mbdaddr
+[0m
+ - [0m[32;23;22;24;25mModify the transmit power level:
+   [33;23;22;24;25mhcitool tpl [0mbdaddr[33;23;22;24;25m [0m0|1
+[0m
+ - [0m[32;23;22;24;25mDisplay the link policy:
+   [33;23;22;24;25mhcitool lp[0m
+[0m
+ - [0m[32;23;22;24;25mRequest authentication with a specific device:
+   [33;23;22;24;25mhcitool auth [0mbdaddr
+[0m
+ - [0m[32;23;22;24;25mDisplay local devices:
+   [33;23;22;24;25mhcitool dev[0m
+[0m[0m

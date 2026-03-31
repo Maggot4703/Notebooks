@@ -1,0 +1,20 @@
+update-alternatives
+
+[0m[0mConvenientily maintain symbolic links to determine default commands.
+More information: https://manned.org/update-alternatives.
+
+ - [0m[32;23;22;24;25mAdd a symbolic link:
+   [33;23;22;24;25msudo update-alternatives --install [0mpath/to/symlink[33;23;22;24;25m [0mcommand_name[33;23;22;24;25m [0mpath/to/command_binary[33;23;22;24;25m [0mpriority
+[0m
+ - [0m[32;23;22;24;25mConfigure a symbolic link for java:
+   [33;23;22;24;25msudo update-alternatives --config [0mjava
+[0m
+ - [0m[32;23;22;24;25mRemove a symbolic link:
+   [33;23;22;24;25msudo update-alternatives --remove [0mjava[33;23;22;24;25m [0m/opt/java/jdk1.8.0_102/bin/java
+[0m
+ - [0m[32;23;22;24;25mDisplay information about a specified command:
+   [33;23;22;24;25mupdate-alternatives --display [0mjava
+[0m
+ - [0m[32;23;22;24;25mDisplay all commands and their current selection:
+   [33;23;22;24;25mupdate-alternatives --get-selections[0m
+[0m[0m

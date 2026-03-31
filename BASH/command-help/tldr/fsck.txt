@@ -1,0 +1,14 @@
+fsck
+
+[0m[0mCheck the integrity of a filesystem or repair it. The filesystem should be unmounted at the time the command is run.
+More information: https://manned.org/fsck.
+
+ - [0m[32;23;22;24;25mCheck filesystem /dev/sdXN, reporting any damaged blocks:
+   [33;23;22;24;25msudo fsck [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mCheck filesystem /dev/sdXN, reporting any damaged blocks and interactively letting the user choose to repair each one:
+   [33;23;22;24;25msudo fsck -r [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mCheck filesystem /dev/sdXN, reporting any damaged blocks and [a]utomatically repairing them:
+   [33;23;22;24;25msudo fsck -a [0m/dev/sdXN
+[0m[0m

@@ -1,0 +1,20 @@
+shutdown
+
+[0m[0mShutdown and reboot the system.
+More information: https://manned.org/shutdown.8.
+
+ - [0m[32;23;22;24;25mPower off ([h]alt) immediately:
+   [33;23;22;24;25mshutdown -h now[0m
+[0m
+ - [0m[32;23;22;24;25mReboot immediately:
+   [33;23;22;24;25mshutdown [0m[-r|--reboot][33;23;22;24;25m now[0m
+[0m
+ - [0m[32;23;22;24;25mReboot in 5 minutes:
+   [33;23;22;24;25mshutdown [0m[-r|--reboot][33;23;22;24;25m +[0m5[33;23;22;24;25m &[0m
+[0m
+ - [0m[32;23;22;24;25mShutdown at 1:00 pm (Uses 24h clock):
+   [33;23;22;24;25mshutdown -h 13:00[0m
+[0m
+ - [0m[32;23;22;24;25mCancel a pending shutdown/reboot operation:
+   [33;23;22;24;25mshutdown -c[0m
+[0m[0m

@@ -1,0 +1,15 @@
+mount.cifs
+
+[0m[0mMount SMB (Server Message Block) or CIFS (Common Internet File System) shares.
+Note: You can also do the same thing by passing the -t cifs option to mount.
+More information: https://manned.org/mount.cifs.
+
+ - [0m[32;23;22;24;25mConnect using the specified username or $USER by default (you will be prompted for a password):
+   [33;23;22;24;25mmount.cifs -o user=[0musername[33;23;22;24;25m //[0mserver[33;23;22;24;25m/[0mshare_name[33;23;22;24;25m [0mmountpoint
+[0m
+ - [0m[32;23;22;24;25mConnect as the guest user (without a password):
+   [33;23;22;24;25mmount.cifs -o guest //[0mserver[33;23;22;24;25m/[0mshare_name[33;23;22;24;25m [0mmountpoint
+[0m
+ - [0m[32;23;22;24;25mSet ownership information for the mounted directory:
+   [33;23;22;24;25mmount.cifs -o uid=[0muser_id|username[33;23;22;24;25m,gid=[0mgroup_id|groupname[33;23;22;24;25m //[0mserver[33;23;22;24;25m/[0mshare_name[33;23;22;24;25m [0mmountpoint
+[0m[0m

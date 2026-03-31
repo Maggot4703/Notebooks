@@ -1,0 +1,20 @@
+ffprobe
+
+[0m[0mMultimedia stream analyzer.
+More information: https://ffmpeg.org/ffprobe.html.
+
+ - [0m[32;23;22;24;25mDisplay all available stream info for a media file:
+   [33;23;22;24;25mffprobe [0m[-v|-loglevel][33;23;22;24;25m error -show_streams [0minput.mp4
+[0m
+ - [0m[32;23;22;24;25mDisplay media duration:
+   [33;23;22;24;25mffprobe [0m[-v|-loglevel][33;23;22;24;25m error -show_entries format=duration [0m[-of|-output_format][33;23;22;24;25m default=noprint_wrappers=1:nokey=1 [0minput.mp4
+[0m
+ - [0m[32;23;22;24;25mDisplay the frame rate of a video:
+   [33;23;22;24;25mffprobe [0m[-v|-loglevel][33;23;22;24;25m error -select_streams v:0 -show_entries stream=avg_frame_rate [0m[-of|-output_format][33;23;22;24;25m default=noprint_wrappers=1:nokey=1 [0minput.mp4
+[0m
+ - [0m[32;23;22;24;25mDisplay the width or height of a video:
+   [33;23;22;24;25mffprobe [0m[-v|-loglevel][33;23;22;24;25m error -select_streams v:0 -show_entries stream=[0mwidth|height[33;23;22;24;25m [0m[-of|-output_format][33;23;22;24;25m default=noprint_wrappers=1:nokey=1 [0minput.mp4
+[0m
+ - [0m[32;23;22;24;25mDisplay the average bit rate of a video:
+   [33;23;22;24;25mffprobe [0m[-v|-loglevel][33;23;22;24;25m error -select_streams v:0 -show_entries stream=bit_rate [0m[-of|-output_format][33;23;22;24;25m default=noprint_wrappers=1:nokey=1 [0minput.mp4
+[0m[0m

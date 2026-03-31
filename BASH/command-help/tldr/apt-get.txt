@@ -1,0 +1,31 @@
+apt-get
+
+[0m[0mDebian and Ubuntu package management utility.
+Search for packages using apt-cache.
+It is recommended to use apt when used interactively in Ubuntu versions 16.04 and later.
+More information: https://manned.org/apt-get.8.
+
+ - [0m[32;23;22;24;25mUpdate the list of available packages and versions (it's recommended to run this before other apt-get commands):
+   [33;23;22;24;25mapt-get update[0m
+[0m
+ - [0m[32;23;22;24;25mInstall a package, or update it to the latest available version:
+   [33;23;22;24;25mapt-get install [0mpackage
+[0m
+ - [0m[32;23;22;24;25mRemove a package:
+   [33;23;22;24;25mapt-get remove [0mpackage
+[0m
+ - [0m[32;23;22;24;25mRemove a package and its configuration files:
+   [33;23;22;24;25mapt-get purge [0mpackage
+[0m
+ - [0m[32;23;22;24;25mUpgrade all installed packages to their newest available versions:
+   [33;23;22;24;25mapt-get upgrade[0m
+[0m
+ - [0m[32;23;22;24;25mClean the local repository - removing package files (.deb) from interrupted downloads that can no longer be downloaded:
+   [33;23;22;24;25mapt-get autoclean[0m
+[0m
+ - [0m[32;23;22;24;25mRemove all packages that are no longer needed:
+   [33;23;22;24;25mapt-get autoremove[0m
+[0m
+ - [0m[32;23;22;24;25mUpgrade installed packages (like upgrade), but remove obsolete packages and install additional packages to meet new dependencies:
+   [33;23;22;24;25mapt-get dist-upgrade[0m
+[0m[0m

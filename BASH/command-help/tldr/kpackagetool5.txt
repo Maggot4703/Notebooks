@@ -1,0 +1,20 @@
+kpackagetool5
+
+[0m[0mKPackage Manager: install, list, remove Plasma packages.
+More information: https://manned.org/kpackagetool5.
+
+ - [0m[32;23;22;24;25mList all known package types that can be installed:
+   [33;23;22;24;25mkpackagetool5 --list-types[0m
+[0m
+ - [0m[32;23;22;24;25mInstall the package from a directory:
+   [33;23;22;24;25mkpackagetool5 [0m[-t|--type][33;23;22;24;25m [0mpackage_type[33;23;22;24;25m [0m[-i|--install][33;23;22;24;25m [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mUpdate installed package from a directory:
+   [33;23;22;24;25mkpackagetool5 [0m[-t|--type][33;23;22;24;25m [0mpackage_type[33;23;22;24;25m [0m[-u|--upgrade][33;23;22;24;25m [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mList installed plasmoids (--global for all users):
+   [33;23;22;24;25mkpackagetool5 [0m[-t|--type][33;23;22;24;25m Plasma/Applet [0m[-l|--list][33;23;22;24;25m [0m[-g|--global]
+[0m
+ - [0m[32;23;22;24;25mRemove a plasmoid by name:
+   [33;23;22;24;25mkpackagetool5 [0m[-t|--type][33;23;22;24;25m Plasma/Applet [0m[-r|--remove][33;23;22;24;25m "[0mname[33;23;22;24;25m"[0m
+[0m[0m

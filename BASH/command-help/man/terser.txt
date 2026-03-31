@@ -1,0 +1,91 @@
+TERSER(1)                        User Commands                       TERSER(1)
+
+NAME
+       terser  - JavaScript parser and mangler/compressor and beautifier tool‐
+       kit
+
+SYNOPSIS
+       terser [options] [files...]
+
+OPTIONS
+       -V, --version
+              output the version number
+
+       -p, --parse <options>
+              Specify parser options.
+
+       -c, --compress [options]
+              Enable compressor/specify compressor options.
+
+       -m, --mangle [options]
+              Mangle names/specify mangler options.
+
+       --mangle-props [options]
+              Mangle properties/specify mangler options.
+
+       -f, --format [options]
+              Format options.
+
+       -b, --beautify [options]
+              Alias for --format.
+
+       -o, --output <file>
+              Output file (default STDOUT).
+
+       --comments [filter]
+              Preserve copyright comments in the output.
+
+       --config-file <file>
+              Read minify() options from JSON file.
+
+       -d, --define <expr>[=value]
+              Global definitions.
+
+       --ecma <version>
+              Specify ECMAScript release: 5, 2015, 2016 or 2017...
+
+       -e, --enclose [arg[,...][:value[,...]]]
+              Embed output in a big function with configurable  arguments  and
+              values.
+
+       --ie8  Support non-standard Internet Explorer 8.
+
+       --keep-classnames
+              Do not mangle/drop class names.
+
+       --keep-fnames
+              Do  not  mangle/drop  function names. Useful for code relying on
+              Function.prototype.name.
+
+       --module
+              Input is an ES6 module
+
+       --name-cache <file>
+              File to hold mangled name mappings.
+
+       --rename
+              Force symbol expansion.
+
+       --no-rename
+              Disable symbol expansion.
+
+       --safari10
+              Support non-standard Safari 10.
+
+       --source-map [options]
+              Enable source map/specify source map options.
+
+       --timings
+              Display operations run time on STDERR.
+
+       --toplevel
+              Compress and/or mangle variables in toplevel scope.
+
+       --wrap <name>
+              Embed everything as a function with ???exports???  corresponding
+              to ???name??? globally.
+
+       -h, --help
+              display help for command
+
+terser 5.16.5                      May 2023                          TERSER(1)

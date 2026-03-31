@@ -1,0 +1,17 @@
+showmount
+
+[0m[0mDisplay information about NFS filesystems on Windows Server.
+More information: https://learn.microsoft.com/windows-server/administration/windows-commands/showmount.
+
+ - [0m[32;23;22;24;25mDisplay all exported filesystems:
+   [33;23;22;24;25mshowmount -e[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay all NFS clients and their mounted directories:
+   [33;23;22;24;25mshowmount -a[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay all NFS mounted directories:
+   [33;23;22;24;25mshowmount -d[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay all exported filesystems for a remote server:
+   [33;23;22;24;25mshowmount -e [0mserver_address
+[0m[0m

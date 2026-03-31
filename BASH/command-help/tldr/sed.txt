@@ -1,0 +1,15 @@
+sed
+
+[0m[0mEdit text in a scriptable manner.
+See also: awk, ed.
+More information: https://manned.org/sed.1posix.
+
+ - [0m[32;23;22;24;25mReplace all apple (basic regex) occurrences with mango (basic regex) in all input lines and print the result to stdout:
+   command[33;23;22;24;25m | sed 's/apple/mango/g'[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a specific script [f]ile and print the result to stdout:
+   command[33;23;22;24;25m | sed -f [0mpath/to/script.sed
+[0m
+ - [0m[32;23;22;24;25mPrint just a first line to stdout:
+   command[33;23;22;24;25m | sed -n '1p'[0m
+[0m[0m

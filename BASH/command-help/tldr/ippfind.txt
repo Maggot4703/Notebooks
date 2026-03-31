@@ -1,0 +1,18 @@
+ippfind
+
+[0m[0mFind services registered with a DNS server or available through local devices.
+See also: ipptool, ippeveprinter.
+More information: https://openprinting.github.io/cups/doc/man-ippfind.html.
+
+ - [0m[32;23;22;24;25mList IPP printers registered on the network with their status:
+   [33;23;22;24;25mippfind [0m[-l|--ls]
+[0m
+ - [0m[32;23;22;24;25mSend a specific PostScript document to every PostScript printer on the network:
+   [33;23;22;24;25mippfind --txt-pdl application/postscript [0m[-x|--exec][33;23;22;24;25m ipptool -f [0mpath/to/document.ps[33;23;22;24;25m '{}' print-job.test \;[0m
+[0m
+ - [0m[32;23;22;24;25mSend a PostScript test document to every PostScript printer on the network:
+   [33;23;22;24;25mippfind --txt-pdl application/postscript [0m[-x|--exec][33;23;22;24;25m ipptool -f onepage-letter.ps '{}' print-job.test \;[0m
+[0m
+ - [0m[32;23;22;24;25mSend a PostScript test document to every PostScript printer on the network, whose name matches a regex:
+   [33;23;22;24;25mippfind --txt-pdl application/postscript [0m[-h|--host][33;23;22;24;25m [0mregex[33;23;22;24;25m [0m[-x|--exec][33;23;22;24;25m ipptool -f onepage-letter.ps '{}' print-job.test \;[0m
+[0m[0m

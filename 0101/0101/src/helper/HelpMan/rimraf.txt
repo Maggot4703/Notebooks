@@ -1,0 +1,31 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/rimraf
+rimraf (1)           - Fast deep deletion (like rm -rf)
+Usage: rimraf <path> [<path> ...]
+
+  Deletes all files and folders at "path" recursively.
+
+Options:
+
+  -h, --help     Display this usage info
+  -G, --no-glob  Do not expand glob patterns in arguments
+  -g, --glob     Expand glob patterns in arguments (default)
+RIMRAF(1)                                                                        RIMRAF(1)
+
+NAME
+       rimraf - Fast deep deletion (like rm -rf)
+
+SYNOPSIS
+       rimraf <path>
+
+DESCRIPTION
+       rimraf is fast deep deletion utility, much like rm -rf, just faster.
+
+SEE ALSO
+         • rm(1)
+
+                                        August 2013                              RIMRAF(1)

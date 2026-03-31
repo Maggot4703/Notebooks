@@ -1,0 +1,30 @@
+xmlstarlet
+
+[0m[0mA XML/XSLT toolkit.
+Note: You will likely need to know XPath: https://developer.mozilla.org/en-US/docs/Web/XPath.
+More information: https://xmlstar.sourceforge.net/docs.php.
+
+ - [0m[32;23;22;24;25mFormat an XML document and print to stdout:
+   [33;23;22;24;25mxmlstarlet format [0mpath/to/file.xml
+[0m
+ - [0m[32;23;22;24;25mXML document can also be piped from stdin:
+   cat path/to/file.xml[33;23;22;24;25m | xmlstarlet format[0m
+[0m
+ - [0m[32;23;22;24;25mPrint all nodes that match a given XPath:
+   [33;23;22;24;25mxmlstarlet select --template --copy-of [0mxpath[33;23;22;24;25m [0mpath/to/file.xml
+[0m
+ - [0m[32;23;22;24;25mInsert an attribute to all matching nodes, and print to stdout (source file is unchanged):
+   [33;23;22;24;25mxmlstarlet edit --insert [0mxpath[33;23;22;24;25m --type attr --name [0mattribute_name[33;23;22;24;25m --value [0mattribute_value[33;23;22;24;25m [0mpath/to/file.xml
+[0m
+ - [0m[32;23;22;24;25mUpdate the value of all matching nodes in place (source file is changed):
+   [33;23;22;24;25mxmlstarlet edit --inplace --update [0mxpath[33;23;22;24;25m --value [0mnew_value[33;23;22;24;25m [0mfile.xml
+[0m
+ - [0m[32;23;22;24;25mDelete all matching nodes in place (source file is changed):
+   [33;23;22;24;25mxmlstarlet edit --inplace --delete [0mxpath[33;23;22;24;25m [0mfile.xml
+[0m
+ - [0m[32;23;22;24;25mEscape or unescape special XML characters in a given string:
+   [33;23;22;24;25mxmlstarlet [un]escape [0mstring
+[0m
+ - [0m[32;23;22;24;25mList a given directory as XML (omit argument to list current directory):
+   [33;23;22;24;25mxmlstarlet ls [0mpath/to/directory
+[0m[0m

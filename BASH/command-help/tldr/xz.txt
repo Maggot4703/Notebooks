@@ -1,0 +1,29 @@
+xz
+
+[0m[0mCompress or decompress XZ and LZMA files.
+More information: https://manned.org/xz.
+
+ - [0m[32;23;22;24;25mCompress a file using xz:
+   [33;23;22;24;25mxz [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDecompress an XZ file:
+   [33;23;22;24;25mxz [0m[-d|--decompress][33;23;22;24;25m [0mpath/to/file.xz
+[0m
+ - [0m[32;23;22;24;25mCompress a file using lzma:
+   [33;23;22;24;25mxz [0m[-F|--format][33;23;22;24;25m lzma [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDecompress an LZMA file:
+   [33;23;22;24;25mxz [0m[-d|--decompress][33;23;22;24;25m [0m[-F|--format][33;23;22;24;25m lzma [0mpath/to/file.lzma
+[0m
+ - [0m[32;23;22;24;25mDecompress a file and write to stdout (implies --keep):
+   [33;23;22;24;25mxz [0m[-d|--decompress][33;23;22;24;25m [0m[-c|--stdout][33;23;22;24;25m [0mpath/to/file.xz
+[0m
+ - [0m[32;23;22;24;25mCompress a file, but don't delete the original:
+   [33;23;22;24;25mxz [0m[-k|--keep][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCompress a file using the fastest compression:
+   [33;23;22;24;25mxz -0 [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCompress a file using the best compression:
+   [33;23;22;24;25mxz -9 [0mpath/to/file
+[0m[0m

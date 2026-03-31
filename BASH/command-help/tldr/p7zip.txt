@@ -1,0 +1,21 @@
+p7zip
+
+[0m[0mWrapper of 7-Zip file archiver with high compression ratio.
+Internally executes either 7za or 7zr command.
+More information: https://p7zip.sourceforge.net.
+
+ - [0m[32;23;22;24;25mArchive a file, replacing it with a 7zipped compressed version:
+   [33;23;22;24;25mp7zip [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mArchive a file keeping the input file:
+   [33;23;22;24;25mp7zip [0m[-k|--keep][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDecompress a file, replacing it with the original uncompressed version:
+   [33;23;22;24;25mp7zip [0m[-d|--decompress][33;23;22;24;25m [0mcompressed.ext[33;23;22;24;25m.7z[0m
+[0m
+ - [0m[32;23;22;24;25mDecompress a file keeping the input file:
+   [33;23;22;24;25mp7zip [0m[-d|--decompress][33;23;22;24;25m [0m[-k|--keep][33;23;22;24;25m [0mcompressed.ext[33;23;22;24;25m.7z[0m
+[0m
+ - [0m[32;23;22;24;25mSkip some checks and force compression or decompression:
+   [33;23;22;24;25mp7zip [0m[-f|--force][33;23;22;24;25m [0mpath/to/file
+[0m[0m

@@ -1,0 +1,11 @@
+luac
+
+[0m[0mLua bytecode compiler.
+More information: https://www.lua.org/manual/5.4/luac.html.
+
+ - [0m[32;23;22;24;25mCompile a Lua source file to Lua bytecode:
+   [33;23;22;24;25mluac -o [0mbyte_code.luac[33;23;22;24;25m [0msource.lua
+[0m
+ - [0m[32;23;22;24;25mDo not include debug symbols in the output:
+   [33;23;22;24;25mluac -s -o [0mbyte_code.luac[33;23;22;24;25m [0msource.lua
+[0m[0m

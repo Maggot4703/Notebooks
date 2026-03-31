@@ -1,0 +1,20 @@
+dpkg-query
+
+[0m[0mDisplay information about installed packages.
+More information: https://manned.org/dpkg-query.1.
+
+ - [0m[32;23;22;24;25mList all installed packages:
+   [33;23;22;24;25mdpkg-query [0m[-l|--list]
+[0m
+ - [0m[32;23;22;24;25mList installed packages matching a pattern:
+   [33;23;22;24;25mdpkg-query [0m[-l|--list][33;23;22;24;25m '[0mlibc6*[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mList all files installed by a package:
+   [33;23;22;24;25mdpkg-query [0m[-L|--listfiles][33;23;22;24;25m [0mlibc6
+[0m
+ - [0m[32;23;22;24;25mShow information about a package:
+   [33;23;22;24;25mdpkg-query [0m[-s|--status][33;23;22;24;25m [0mlibc6
+[0m
+ - [0m[32;23;22;24;25mSearch for packages that own files matching a pattern:
+   [33;23;22;24;25mdpkg-query [0m[-S|--search][33;23;22;24;25m [0m/etc/ld.so.conf.d
+[0m[0m

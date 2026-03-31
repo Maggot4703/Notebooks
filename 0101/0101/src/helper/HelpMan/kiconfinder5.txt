@@ -1,0 +1,14 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/kiconfinder5
+Usage: kiconfinder5 [options] iconname
+Finds an icon based on its name
+
+Options:
+  -h, --help  Displays this help.
+
+Arguments:
+  iconname    The icon name to look for

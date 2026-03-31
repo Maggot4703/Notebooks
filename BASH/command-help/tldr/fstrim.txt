@@ -1,0 +1,15 @@
+fstrim
+
+[0m[0mDiscard unused blocks on a mounted filesystem.
+Only supported by flash memory devices such as SSDs and microSD cards.
+More information: https://manned.org/fstrim.
+
+ - [0m[32;23;22;24;25mTrim unused blocks on all mounted partitions that support it:
+   [33;23;22;24;25msudo fstrim [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mTrim unused blocks on a specified partition:
+   [33;23;22;24;25msudo fstrim [0m/
+[0m
+ - [0m[32;23;22;24;25mDisplay statistics after trimming:
+   [33;23;22;24;25msudo fstrim [0m[-v|--verbose][33;23;22;24;25m [0m/
+[0m[0m

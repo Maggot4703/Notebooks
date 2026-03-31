@@ -1,0 +1,13 @@
+print
+
+[0m[0mprint can refer to multiple commands with the same name.
+
+ - [0m[32;23;22;24;25mView documentation for the Zsh builtin:
+   [33;23;22;24;25mtldr print.zsh[0m
+[0m
+ - [0m[32;23;22;24;25mView documentation for the print alias of run-mailcap:
+   [33;23;22;24;25mtldr [0m[-p|--platform][33;23;22;24;25m linux print.runmailcap[0m
+[0m
+ - [0m[32;23;22;24;25mView documentation for printing text files on Windows:
+   [33;23;22;24;25mtldr [0m[-p|--platform][33;23;22;24;25m windows print.win[0m
+[0m[0m

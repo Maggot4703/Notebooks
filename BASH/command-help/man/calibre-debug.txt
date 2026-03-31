@@ -1,0 +1,140 @@
+CALIBRE-DEBUG(1)                    calibre                   CALIBRE-DEBUG(1)
+
+NAME
+       calibre-debug - calibre-debug
+
+          calibre-debug [options]
+
+       Various  command  line interfaces useful for debugging calibre. With no
+       options, this command starts an embedded Python  interpreter.  You  can
+       also  run the main calibre GUI, the calibre E-book viewer and the cali‐
+       bre editor in debug mode.
+
+       It also contains interfaces to various bits of calibre that do not have
+       dedicated  command line tools, such as font subsetting, the E-book diff
+       tool and so on.
+
+       You can also use calibre-debug to run standalone scripts.  To  do  that
+       use it like this:
+          calibre-debug -e myscript.py -- --option1 --option2 file1 file2 ...
+
+       Everything after the -- is passed to the script. You can also use cali‐
+       bre-debug as a shebang in scripts, like this:
+          #!/usr/bin/env -S calibre-debug -e -- --
+
+       Whenever you pass arguments to calibre-debug that have spaces in  them,
+       enclose the arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+[OPTIONS]
+       --add-simple-plugin
+              Add a simple plugin (i.e. a plugin that consists of only  a  .py
+              file),  by  specifying  the  path  to the py file containing the
+              plugin code.
+
+       --command, -c
+              Run Python code.
+
+       --debug-device-driver, -d
+              Debug device detection
+
+       --default-programs
+              (Un)register   calibre   from    Windows    Default    Programs.
+              --default-programs = (register|unregister)
+
+       --diff Run  the  calibre  diff  tool. For example: calibre-debug --diff
+              file1 file2
+
+       --edit-book
+              Launch the calibre "Edit book" tool in debug mode.
+
+       --exec-file, -e
+              Run the Python code in file.
+
+       --explode-book, -x
+              Explode the book into the specified folder. Usage: -x  file.epub
+              output_dir  Exports  the  book as a collection of HTML files and
+              metadata, which you can edit using standard HTML editing  tools.
+              Works with EPUB, AZW3, HTMLZ and DOCX files.
+
+       --export-all-calibre-data
+              Export  all calibre data (books/settings/plugins). Normally, you
+              will be asked for the export folder and the libraries to export.
+              You  can also specify them as command line arguments to skip the
+              questions. Use absolute paths for  the  export  folder  and  li‐
+              braries. The special keyword "all" can be used to export all li‐
+              braries. Examples:    calibre-debug --export-all-calibre-data  #
+              for  interactive  use    calibre-debug --export-all-calibre-data
+              /path/to/empty/export/folder            /path/to/library/folder1
+              /path/to/library2   calibre-debug --export-all-calibre-data /ex‐
+              port/folder all  # export all known libraries
+
+       --fix-multiprocessing
+              For internal use
+
+       --gui, -g
+              Run the GUI with debugging enabled. Debug output is  printed  to
+              stdout and stderr.
+
+       --gui-debug
+              Run the GUI with a debug console, logging to the specified path.
+              For internal use only, use the -g option to run the GUI in debug
+              mode
+
+       --help, -h
+              show this help message and exit
+
+       --implode-book, -i
+              Implode   a  previously  exploded  book.  Usage:  -i  output_dir
+              file.epub Imports the book from the files  in  output_dir  which
+              must  have been created by a previous call to --explode-book. Be
+              sure to specify the same file type as was used when exploding.
+
+       --import-calibre-data
+              Import previously exported calibre data
+
+       --inspect-mobi, -m
+              Inspect the MOBI file(s) at the specified path(s)
+
+       --paths
+              Output the paths necessary to setup the calibre environment
+
+       --run-plugin, -r
+              Run a plugin that provides a command line interface.  For  exam‐
+              ple:  calibre-debug  -r  "Plugin name" -- file1 --option1 Every‐
+              thing after the -- will be passed to the plugin as arguments.
+
+       --run-test, -t
+              Run the named test(s). Use the special value "all"  to  run  all
+              tests. If the test name starts with a period it is assumed to be
+              a module name. If the test name starts with @ it is  assumed  to
+              be a category name.
+
+       --run-without-debug
+              Don't run with the DEBUG flag set
+
+       --shutdown-running-calibre, -s
+              Cause  a  running calibre instance, if any, to be shutdown. Note
+              that if there are running jobs, they will be  silently  aborted,
+              so use with care.
+
+       --subset-font, -f
+              Subset  the specified font. Use -- after this option to pass op‐
+              tion to the font subsetting program.
+
+       --test-build
+              Test binary modules in build
+
+       --version
+              show program's version number and exit
+
+       --viewer, -w
+              Run the E-book viewer in debug mode
+
+AUTHOR
+       Kovid Goyal
+
+COPYRIGHT
+       Kovid Goyal
+
+6.13.0                         February 17, 2023              CALIBRE-DEBUG(1)

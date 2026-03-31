@@ -1,0 +1,29 @@
+shasum
+
+[0m[0mCalculate SHA cryptographic checksums.
+More information: https://manned.org/shasum.
+
+ - [0m[32;23;22;24;25mCalculate the SHA1 checksum for one or more files:
+   [33;23;22;24;25mshasum [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mCalculate the SHA checksum for one or more files with the specified algorithm:
+   [33;23;22;24;25mshasum --algorithm [0m1|224|256|384|512|512224|512256[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mCalculate a SHA1 checksum from stdin:
+   command[33;23;22;24;25m | shasum[0m
+[0m
+ - [0m[32;23;22;24;25mCalculate and save the list of SHA256 checksums to a file:
+   [33;23;22;24;25mshasum --algorithm 256 [0mpath/to/file1 path/to/file2 ...[33;23;22;24;25m > [0mpath/to/file.sha256
+[0m
+ - [0m[32;23;22;24;25mRead a file of SHA checksums and filenames and verify all files have matching checksums (the algorithm will be automatically detected):
+   [33;23;22;24;25mshasum [0m[-c|--check][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOnly show a message for missing files or when verification fails:
+   [33;23;22;24;25mshasum [0m[-c|--check][33;23;22;24;25m --quiet [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOnly show a message when verification fails, ignoring missing files:
+   [33;23;22;24;25mshasum --ignore-missing [0m[-c|--check][33;23;22;24;25m --quiet [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCheck a known SHA checksum of a file:
+   [33;23;22;24;25mecho [0mknown_sha_checksum_of_the_file[33;23;22;24;25m [0mpath/to/file[33;23;22;24;25m | shasum [0m[-c|--check]
+[0m[0m

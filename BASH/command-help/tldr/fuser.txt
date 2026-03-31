@@ -1,0 +1,23 @@
+fuser
+
+[0m[0mDisplay process IDs currently using files or sockets.
+More information: https://manned.org/fuser.
+
+ - [0m[32;23;22;24;25mFind which processes are accessing a file or directory:
+   [33;23;22;24;25mfuser [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mShow more fields (USER, PID, ACCESS and COMMAND):
+   [33;23;22;24;25mfuser [0m[-v|--verbose][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mIdentify processes using a TCP socket:
+   [33;23;22;24;25mfuser [0m[-n|--namespace][33;23;22;24;25m tcp [0mport
+[0m
+ - [0m[32;23;22;24;25mKill all processes accessing a file or directory (sends the SIGKILL signal):
+   [33;23;22;24;25mfuser [0m[-k|--kill][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mFind which processes are accessing the filesystem containing a specific file or directory:
+   [33;23;22;24;25mfuser [0m[-m|--mount][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mKill all processes with a TCP connection on a specific port:
+   [33;23;22;24;25mfuser [0m[-k|--kill][33;23;22;24;25m [0mport[33;23;22;24;25m/tcp[0m
+[0m[0m

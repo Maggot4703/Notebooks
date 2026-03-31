@@ -1,0 +1,23 @@
+dircolors
+
+[0m[0mOutput commands to set the LS_COLOR environment variable and style ls, dir, etc.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html.
+
+ - [0m[32;23;22;24;25mOutput commands to set LS_COLOR using default colors:
+   [33;23;22;24;25mdircolors[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay each filetype with the color they would appear in ls:
+   [33;23;22;24;25mdircolors --print-ls-colors[0m
+[0m
+ - [0m[32;23;22;24;25mOutput commands to set LS_COLOR using colors from a file:
+   [33;23;22;24;25mdircolors [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOutput commands for Bourne shell:
+   [33;23;22;24;25mdircolors [0m[-b|--bourne-shell]
+[0m
+ - [0m[32;23;22;24;25mOutput commands for C shell:
+   [33;23;22;24;25mdircolors [0m[-c|--c-shell]
+[0m
+ - [0m[32;23;22;24;25mView the default colors for file types and extensions:
+   [33;23;22;24;25mdircolors [0m[-p|--print-database]
+[0m[0m

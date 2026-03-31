@@ -1,0 +1,17 @@
+scanimage
+
+[0m[0mScan images with the Scanner Access Now Easy API.
+More information: http://sane-project.org/man/scanimage.1.html.
+
+ - [0m[32;23;22;24;25mList available scanners to ensure the target device is connected and recognized:
+   [33;23;22;24;25mscanimage [0m[-L|--list-devices]
+[0m
+ - [0m[32;23;22;24;25mScan an image and save it to a file:
+   [33;23;22;24;25mscanimage --format [0mpnm|tiff|png|jpeg|pdf|...[33;23;22;24;25m > [0mpath/to/new_image
+[0m
+ - [0m[32;23;22;24;25mSpecify the device to scan from:
+   [33;23;22;24;25mscanimage [0m[-d|--device][33;23;22;24;25m [0mdevice_name[33;23;22;24;25m > [0mpath/to/new_image
+[0m
+ - [0m[32;23;22;24;25mSpecify resolution for the scanned image (default resolution is 75dpi):
+   [33;23;22;24;25mscanimage --resolution [0m300[33;23;22;24;25m > [0mpath/to/new_image
+[0m[0m

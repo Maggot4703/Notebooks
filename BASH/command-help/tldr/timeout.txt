@@ -1,0 +1,20 @@
+timeout
+
+[0m[0mRun a command with a time limit.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/timeout-invocation.html.
+
+ - [0m[32;23;22;24;25mRun sleep 10 and terminate it after 3 seconds:
+   [33;23;22;24;25mtimeout 3s sleep 10[0m
+[0m
+ - [0m[32;23;22;24;25mSend a signal to the command after the time limit expires (TERM by default, kill -l to list all signals):
+   [33;23;22;24;25mtimeout [0m[-s|--signal][33;23;22;24;25m [0mINT|HUP|KILL|...[33;23;22;24;25m [0m5s[33;23;22;24;25m [0msleep 10
+[0m
+ - [0m[32;23;22;24;25mSend verbose output to stderr showing signal sent upon timeout:
+   [33;23;22;24;25mtimeout [0m[-v|--verbose][33;23;22;24;25m [0m0.5s|1m|1h|1d|...[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mPreserve the exit status of the command regardless of timing out:
+   [33;23;22;24;25mtimeout [0m[-p|--preserve-status][33;23;22;24;25m [0m1s|1m|1h|1d|...[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mSend a forceful KILL signal after certain duration if the command ignores initial signal upon timeout:
+   [33;23;22;24;25mtimeout [0m[-k|--kill-after][33;23;22;24;25m [0m5m[33;23;22;24;25m [0m30s[33;23;22;24;25m [0mcommand
+[0m[0m

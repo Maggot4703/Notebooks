@@ -1,0 +1,18 @@
+sh
+
+[0m[0mBourne shell, the standard command language interpreter.
+See also: histexpand for history expansion.
+More information: https://manned.org/sh.
+
+ - [0m[32;23;22;24;25mStart an interactive shell session:
+   [33;23;22;24;25msh[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a command and then exit:
+   [33;23;22;24;25msh -c "[0mcommand[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a script:
+   [33;23;22;24;25msh [0mpath/to/script.sh
+[0m
+ - [0m[32;23;22;24;25mRead and execute commands from stdin:
+   [33;23;22;24;25msh -s[0m
+[0m[0m

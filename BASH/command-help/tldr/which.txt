@@ -1,0 +1,11 @@
+which
+
+[0m[0mLocate a program in the user's path.
+More information: https://manned.org/which.
+
+ - [0m[32;23;22;24;25mSearch the PATH environment variable and display the location of any matching executables:
+   [33;23;22;24;25mwhich [0mexecutable
+[0m
+ - [0m[32;23;22;24;25mIf there are multiple executables which match, display all:
+   [33;23;22;24;25mwhich [0m[-a|--all][33;23;22;24;25m [0mexecutable
+[0m[0m

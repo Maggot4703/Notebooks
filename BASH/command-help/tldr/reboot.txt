@@ -1,0 +1,20 @@
+reboot
+
+[0m[0mReboot the system.
+More information: https://manned.org/reboot.8.
+
+ - [0m[32;23;22;24;25mReboot the system:
+   [33;23;22;24;25mreboot[0m
+[0m
+ - [0m[32;23;22;24;25mPower off the system (same as poweroff):
+   [33;23;22;24;25mreboot [0m[-p|--poweroff]
+[0m
+ - [0m[32;23;22;24;25mHalt (terminates all processes and shuts down the CPU) the system (same as halt):
+   [33;23;22;24;25mreboot --halt[0m
+[0m
+ - [0m[32;23;22;24;25mReboot immediately without contacting the system manager:
+   [33;23;22;24;25mreboot [0m[-f|--force]
+[0m
+ - [0m[32;23;22;24;25mWrite the wtmp shutdown entry without rebooting the system:
+   [33;23;22;24;25mreboot [0m[-w|--wtmp-only]
+[0m[0m

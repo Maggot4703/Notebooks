@@ -1,0 +1,19 @@
+lxpolkit(1)                 General Commands Manual                lxpolkit(1)
+
+NAME
+       lxpolkit - PolicyKit agent for LXDE
+
+SYNOPSIS
+       lxpolkit
+
+DESCRIPTION
+       lxpolkit  is a PolicyKit agent which interacts with PolicyKit daemon to
+       provide extended privileges to applications.
+
+OPTIONS
+       lxpolkit does not support any options.
+
+AUTHORS
+       This manual page is written by Andriy Grytsenko <andrej@rep.kiev.ua>.
+
+                                                                   lxpolkit(1)

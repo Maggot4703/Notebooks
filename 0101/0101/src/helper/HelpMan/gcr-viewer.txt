@@ -1,0 +1,18 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/gcr-viewer
+Usage:
+  gcr-viewer [OPTION…] [file…] - View certificate and key files
+
+Help Options:
+  -h, --help               Show help options
+  --help-all               Show all help options
+  --help-gtk               Show GTK+ Options
+
+Application Options:
+  --version                Show the  version of the application
+  --display=DISPLAY        X display to use
+

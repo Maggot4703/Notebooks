@@ -1,0 +1,17 @@
+mcookie
+
+[0m[0mGenerate random 128-bit hexadecimal numbers.
+More information: https://manned.org/mcookie.
+
+ - [0m[32;23;22;24;25mGenerate a random number:
+   [33;23;22;24;25mmcookie[0m
+[0m
+ - [0m[32;23;22;24;25mGenerate a random number, using the contents of a file as a seed for the randomness:
+   [33;23;22;24;25mmcookie [0m[-f|--file][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGenerate a random number, using a specific number of bytes from a file as a seed for the randomness:
+   [33;23;22;24;25mmcookie [0m[-f|--file][33;23;22;24;25m [0mpath/to/file[33;23;22;24;25m [0m[-m|--max-size][33;23;22;24;25m [0mnumber_of_bytes
+[0m
+ - [0m[32;23;22;24;25mPrint the details of the randomness used, such as the origin and seed for each source:
+   [33;23;22;24;25mmcookie [0m[-v|--verbose]
+[0m[0m

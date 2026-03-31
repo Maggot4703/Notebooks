@@ -1,0 +1,31 @@
+<div>
+    <div>
+        <h2>{{salvoActor.name}}</h2>
+
+        <div class="grid-2col">
+            <div>
+                <h4>{{localize 'MGT2.Source'}}</h4>
+
+                <img src="{{salvoActor.img}}" width="64" height="64"/>
+
+            </div>
+
+            <div data-action="selectTarget">
+                <h4>{{localize 'MGT2.Target'}}</h4>
+                <img src="{{targetActor.img}}" width="64" height="64"/>
+
+            </div>
+        </div>
+
+        <p>
+            <b>{{localize 'MGT2.Damage'}}: </b> {{DAMAGE}}
+        </p>
+        <p>
+            <b>{{localize 'MGT2.Swarm.SalvoSize'}}: </b> {{SIZE}}
+        </p>
+        <p>
+            <b>{{localize 'MGT2.DM'}}: </b> <input name="DM" value="{{DM}}"/>
+        </p>
+
+    </div>
+</div>

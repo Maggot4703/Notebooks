@@ -1,0 +1,20 @@
+semver
+
+[0m[0mSemantic version string parser.
+More information: https://github.com/npm/node-semver.
+
+ - [0m[32;23;22;24;25mCheck if a version string respects the semantic versioning format (prints an empty string if it does not match):
+   [33;23;22;24;25msemver [0m1.2
+[0m
+ - [0m[32;23;22;24;25mConvert a version string to the semantic versioning format:
+   [33;23;22;24;25msemver --coerce [0m1.2
+[0m
+ - [0m[32;23;22;24;25mTest if 1.2.3 matches the ^1.0 range (prints an empty string if it does not match):
+   [33;23;22;24;25msemver [0m1.2.3[33;23;22;24;25m --range "[0m^1.0[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mTest with multiple ranges:
+   [33;23;22;24;25msemver [0m1.2.3[33;23;22;24;25m --range "[0m>=1.0[33;23;22;24;25m" "[0m<2.0[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mTest multiple version strings and return only the ones that match:
+   [33;23;22;24;25msemver [0m1.2.3[33;23;22;24;25m [0m2.0.0[33;23;22;24;25m --range "[0m^1.0[33;23;22;24;25m"[0m
+[0m[0m

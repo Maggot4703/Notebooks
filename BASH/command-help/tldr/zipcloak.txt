@@ -1,0 +1,14 @@
+zipcloak
+
+[0m[0mEncrypt the contents within a Zip archive.
+More information: https://manned.org/zipcloak.
+
+ - [0m[32;23;22;24;25mEncrypt the contents of a Zip archive:
+   [33;23;22;24;25mzipcloak [0mpath/to/archive.zip
+[0m
+ - [0m[32;23;22;24;25mDecrypt the contents of a Zip archive:
+   [33;23;22;24;25mzipcloak [0m[-d|--decrypt][33;23;22;24;25m [0mpath/to/archive.zip
+[0m
+ - [0m[32;23;22;24;25mOutput the encrypted contents into a new Zip archive:
+   [33;23;22;24;25mzipcloak [0mpath/to/archive.zip[33;23;22;24;25m [0m[-O|--output-file][33;23;22;24;25m [0mpath/to/encrypted.zip
+[0m[0m

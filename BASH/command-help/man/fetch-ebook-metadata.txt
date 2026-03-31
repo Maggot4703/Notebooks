@@ -1,0 +1,63 @@
+FETCH-EBOOK-METADATA(1)             calibre            FETCH-EBOOK-METADATA(1)
+
+NAME
+       fetch-ebook-metadata - fetch-ebook-metadata
+
+          fetch-ebook-metadata [options]
+
+       Fetch  book metadata from online sources. You must specify at least one
+       of title, authors or ISBN.
+
+       Whenever you pass arguments to fetch-ebook-metadata that have spaces in
+       them,  enclose  the  arguments  in quotation marks. For example: "/some
+       path/with spaces"
+
+[OPTIONS]
+       --allowed-plugin, -p
+              Specify the name of a metadata download plugin to  use.  By  de‐
+              fault,  all metadata plugins will be used. Can be specified mul‐
+              tiple times for multiple  plugins.  All  plugin  names:  Google,
+              Google  Images,  Amazon.com,  Edelweiss,  Open Library, Big Book
+              Search
+
+       --authors, -a
+              Book author(s)
+
+       --cover, -c
+              Specify a filename. The cover, if available, will  be  saved  to
+              it. Without this option, no cover will be downloaded.
+
+       --help, -h
+              show this help message and exit
+
+       --identifier, -I
+              Identifiers such as ASIN/Goodreads id etc. Can be specified mul‐
+              tiple times for multiple identifiers. For example:  --identifier
+              asin:B0082BAJA0
+
+       --isbn, -i
+              Book ISBN
+
+       --opf, -o
+              Output  the  metadata  in  OPF  format instead of human readable
+              text.
+
+       --timeout, -d
+              Timeout in seconds. Default is 30
+
+       --title, -t
+              Book title
+
+       --verbose, -v
+              Print the log to the console (stderr)
+
+       --version
+              show program's version number and exit
+
+AUTHOR
+       Kovid Goyal
+
+COPYRIGHT
+       Kovid Goyal
+
+6.13.0                         February 17, 2023       FETCH-EBOOK-METADATA(1)

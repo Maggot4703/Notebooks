@@ -1,0 +1,14 @@
+CALIBRE-CPMPLETE(1)              User Commands             CALIBRE-CPMPLETE(1)
+
+NAME
+       calibre-complete  -  run-time  command  line  completion  generator for
+       ebook-convert(1)
+
+DESCRIPTION
+       This is run-time command line completion generator for ebook-convert(1)
+       on bash(1).  There is no needs to invoke this command by hand.
+
+SEE ALSO
+       ebook-convert(1), bash(1)
+
+calibre-complete                  August 2021              CALIBRE-CPMPLETE(1)

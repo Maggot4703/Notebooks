@@ -1,0 +1,29 @@
+crontab
+
+[0m[0mSchedule cron jobs to run on a time interval for the current user.
+More information: https://manned.org/crontab.
+
+ - [0m[32;23;22;24;25mEdit the crontab file for the current user:
+   [33;23;22;24;25mcrontab -e[0m
+[0m
+ - [0m[32;23;22;24;25mEdit the crontab file for a specific user:
+   [33;23;22;24;25msudo crontab -e -u [0muser
+[0m
+ - [0m[32;23;22;24;25mReplace the current crontab with the contents of the given file:
+   [33;23;22;24;25mcrontab [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mView a list of existing cron jobs for current user:
+   [33;23;22;24;25mcrontab -l[0m
+[0m
+ - [0m[32;23;22;24;25mRemove all cron jobs for the current user:
+   [33;23;22;24;25mcrontab -r[0m
+[0m
+ - [0m[32;23;22;24;25mSample job which runs at 10:00 every day (* means any value):
+   [33;23;22;24;25m0 10 * * * [0mcommand_to_execute
+[0m
+ - [0m[32;23;22;24;25mSample crontab entry, which runs a command every 10 minutes:
+   [33;23;22;24;25m*/10 * * * * [0mcommand_to_execute
+[0m
+ - [0m[32;23;22;24;25mSample crontab entry, which runs a certain script at 02:30 every Friday:
+   [33;23;22;24;25m30 2 * * Fri /[0mpath/to/script.sh
+[0m[0m

@@ -1,0 +1,14 @@
+iconv
+
+[0m[0mConvert text from one encoding to another.
+More information: https://manned.org/iconv.
+
+ - [0m[32;23;22;24;25mConvert file to a specific encoding, and print to stdout:
+   [33;23;22;24;25miconv [0m[-f|--from-code][33;23;22;24;25m [0mfrom_encoding[33;23;22;24;25m [0m[-t|--to-code][33;23;22;24;25m [0mto_encoding[33;23;22;24;25m [0minput_file
+[0m
+ - [0m[32;23;22;24;25mConvert file to the current locale's encoding, and output to a file:
+   [33;23;22;24;25miconv [0m[-f|--from-code][33;23;22;24;25m [0mfrom_encoding[33;23;22;24;25m [0minput_file[33;23;22;24;25m > [0moutput_file
+[0m
+ - [0m[32;23;22;24;25mList supported encodings:
+   [33;23;22;24;25miconv [0m[-l|--list]
+[0m[0m

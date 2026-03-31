@@ -1,0 +1,23 @@
+help
+
+[0m[0mDisplay information about Bash builtin commands.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-help.
+
+ - [0m[32;23;22;24;25mDisplay the full list of builtin commands:
+   [33;23;22;24;25mhelp[0m
+[0m
+ - [0m[32;23;22;24;25mPrint instructions on how to use the while loop construct:
+   [33;23;22;24;25mhelp while[0m
+[0m
+ - [0m[32;23;22;24;25mPrint instructions on how to use the for loop construct:
+   [33;23;22;24;25mhelp for[0m
+[0m
+ - [0m[32;23;22;24;25mPrint instructions on how to use [[ ]] for conditional commands:
+   [33;23;22;24;25mhelp [[ ]][0m
+[0m
+ - [0m[32;23;22;24;25mPrint instruction on how to use (( )) to evaluate arithmetic expressions:
+   [33;23;22;24;25mhelp \( \)[0m
+[0m
+ - [0m[32;23;22;24;25mPrint instructions on how to use the cd command:
+   [33;23;22;24;25mhelp cd[0m
+[0m[0m

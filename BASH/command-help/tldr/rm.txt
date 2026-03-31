@@ -1,0 +1,24 @@
+rm
+
+[0m[0mRemove files or directories.
+See also: rmdir.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html.
+
+ - [0m[32;23;22;24;25mRemove specific files:
+   [33;23;22;24;25mrm [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mRemove specific files ignoring nonexistent ones:
+   [33;23;22;24;25mrm [0m[-f|--force][33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mRemove specific files interactively prompting before each removal:
+   [33;23;22;24;25mrm [0m[-i|--interactive][33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mRemove specific files printing info about each removal:
+   [33;23;22;24;25mrm [0m[-v|--verbose][33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mRemove specific files and directories recursively:
+   [33;23;22;24;25mrm [0m[-r|--recursive][33;23;22;24;25m [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...
+[0m
+ - [0m[32;23;22;24;25mRemove empty directories (this is considered the safe method):
+   [33;23;22;24;25mrm [0m[-d|--dir][33;23;22;24;25m [0mpath/to/directory
+[0m[0m

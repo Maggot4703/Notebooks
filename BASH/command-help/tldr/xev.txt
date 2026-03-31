@@ -1,0 +1,17 @@
+xev
+
+[0m[0mPrint contents of X events.
+More information: https://gitlab.freedesktop.org/xorg/app/xev.
+
+ - [0m[32;23;22;24;25mMonitor all occurring X events:
+   [33;23;22;24;25mxev[0m
+[0m
+ - [0m[32;23;22;24;25mMonitor all X events of the root window instead of creating a new one:
+   [33;23;22;24;25mxev -root[0m
+[0m
+ - [0m[32;23;22;24;25mMonitor all X events of a particular window:
+   [33;23;22;24;25mxev -id [0mwindow_id
+[0m
+ - [0m[32;23;22;24;25mMonitor X events from a given category (can be specified multiple times):
+   [33;23;22;24;25mxev -event [0mevent_category
+[0m[0m

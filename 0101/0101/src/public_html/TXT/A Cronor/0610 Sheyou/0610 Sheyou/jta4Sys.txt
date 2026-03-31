@@ -1,0 +1,14 @@
+Hex = 0610
+Name = Sheyou
+UWP = B756779-A
+Remarks = Ag Ga
+{Ix} = { 4 }
+(Ex) = (B6D+5)
+[Cx] = [8B6B]
+N = -
+B = KM
+Z = -
+PBG = 111
+W = 13
+A = ZhIN
+Stellar = F4 V M0 V

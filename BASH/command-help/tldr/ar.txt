@@ -1,0 +1,21 @@
+ar
+
+[0m[0mCreate, modify, and extract from Unix archives. Typically used for static libraries (.a) and Debian packages (.deb).
+See also: tar.
+More information: https://manned.org/ar.
+
+ - [0m[32;23;22;24;25mE[x]tract all members from an archive:
+   [33;23;22;24;25mar x [0mpath/to/file.a
+[0m
+ - [0m[32;23;22;24;25mLis[t] contents in a specific archive:
+   [33;23;22;24;25mar t [0mpath/to/file.ar
+[0m
+ - [0m[32;23;22;24;25m[r]eplace or add specific files to an archive:
+   [33;23;22;24;25mar r [0mpath/to/file.deb[33;23;22;24;25m [0mpath/to/debian-binary path/to/control.tar.gz path/to/data.tar.xz ...
+[0m
+ - [0m[32;23;22;24;25mIn[s]ert an object file index (equivalent to using ranlib):
+   [33;23;22;24;25mar s [0mpath/to/file.a
+[0m
+ - [0m[32;23;22;24;25mCreate an archive with specific files and an accompanying object file index:
+   [33;23;22;24;25mar rs [0mpath/to/file.a[33;23;22;24;25m [0mpath/to/file1.o path/to/file2.o ...
+[0m[0m

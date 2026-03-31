@@ -1,0 +1,4 @@
+deactivate
+cd /home/me/Notebooks
+source .venv/bin/activate
+#jupyter lab

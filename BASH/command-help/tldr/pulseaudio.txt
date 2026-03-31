@@ -1,0 +1,20 @@
+pulseaudio
+
+[0m[0mThe PulseAudio sound system daemon and manager.
+More information: https://manned.org/pulseaudio.
+
+ - [0m[32;23;22;24;25mCheck if PulseAudio is running (a non-zero exit code means it is not running):
+   [33;23;22;24;25mpulseaudio --check[0m
+[0m
+ - [0m[32;23;22;24;25mStart the PulseAudio daemon in the background:
+   [33;23;22;24;25mpulseaudio --start[0m
+[0m
+ - [0m[32;23;22;24;25mKill the running PulseAudio daemon:
+   [33;23;22;24;25mpulseaudio [0m[-k|--kill]
+[0m
+ - [0m[32;23;22;24;25mList available modules:
+   [33;23;22;24;25mpulseaudio --dump-modules[0m
+[0m
+ - [0m[32;23;22;24;25mLoad a module into the currently running daemon with the specified arguments:
+   [33;23;22;24;25mpulseaudio [0m[-L|--load][33;23;22;24;25m "[0mmodule_name[33;23;22;24;25m [0marguments[33;23;22;24;25m"[0m
+[0m[0m

@@ -1,0 +1,20 @@
+hash
+
+[0m[0mView cached executable locations.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-hash.
+
+ - [0m[32;23;22;24;25mView cached command locations for the current shell:
+   [33;23;22;24;25mhash[0m
+[0m
+ - [0m[32;23;22;24;25mClear the hash table:
+   [33;23;22;24;25mhash -r[0m
+[0m
+ - [0m[32;23;22;24;25mDelete a specific command from the hash table:
+   [33;23;22;24;25mhash -d [0mcommand
+[0m
+ - [0m[32;23;22;24;25mPrint the full path of command:
+   [33;23;22;24;25mhash -t [0mcommand
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mhash --help[0m
+[0m[0m

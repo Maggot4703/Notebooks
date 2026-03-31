@@ -1,0 +1,30 @@
+if
+
+[0m[0mPerforms conditional processing in shell scripts.
+See also: test, [.
+More information: https://www.gnu.org/software/bash/manual/bash.html#Conditional-Constructs.
+
+ - [0m[32;23;22;24;25mExecute the specified commands if the condition command's exit status is zero:
+   [33;23;22;24;25mif [0mcondition_command[33;23;22;24;25m; then [0mecho "Condition is true"[33;23;22;24;25m; fi[0m
+[0m
+ - [0m[32;23;22;24;25mExecute the specified commands if the condition command's exit status is not zero:
+   [33;23;22;24;25mif ! [0mcondition_command[33;23;22;24;25m; then [0mecho "Condition is true"[33;23;22;24;25m; fi[0m
+[0m
+ - [0m[32;23;22;24;25mExecute the first specified commands if the condition command's exit status is zero otherwise execute the second specified commands:
+   [33;23;22;24;25mif [0mcondition_command[33;23;22;24;25m; then [0mecho "Condition is true"[33;23;22;24;25m; else [0mecho "Condition is false"[33;23;22;24;25m; fi[0m
+[0m
+ - [0m[32;23;22;24;25mCheck whether a [f]ile exists:
+   [33;23;22;24;25mif [[ -f [0mpath/to/file[33;23;22;24;25m ]]; then [0mecho "Condition is true"[33;23;22;24;25m; fi[0m
+[0m
+ - [0m[32;23;22;24;25mCheck whether a [d]irectory exists:
+   [33;23;22;24;25mif [[ -d [0mpath/to/directory[33;23;22;24;25m ]]; then [0mecho "Condition is true"[33;23;22;24;25m; fi[0m
+[0m
+ - [0m[32;23;22;24;25mCheck whether a file or directory [e]xists:
+   [33;23;22;24;25mif [[ -e [0mpath/to/file_or_directory[33;23;22;24;25m ]]; then [0mecho "Condition is true"[33;23;22;24;25m; fi[0m
+[0m
+ - [0m[32;23;22;24;25mCheck whether a variable is defined:
+   [33;23;22;24;25mif [[ -n "$[0mvariable[33;23;22;24;25m" ]]; then [0mecho "Condition is true"[33;23;22;24;25m; fi[0m
+[0m
+ - [0m[32;23;22;24;25mList all possible conditions (test is an alias to [; both are commonly used with if):
+   [33;23;22;24;25mman test[0m
+[0m[0m

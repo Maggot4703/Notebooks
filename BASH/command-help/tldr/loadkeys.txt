@@ -1,0 +1,30 @@
+loadkeys
+
+[0m[0mLoad the kernel keymap for the console.
+See also: localectl.
+More information: https://manned.org/loadkeys.
+
+ - [0m[32;23;22;24;25mLoad a specific keyboard layout for the current console:
+   [33;23;22;24;25msudo loadkeys [0men|de|fi|dvorak|defkeymap|...
+[0m
+ - [0m[32;23;22;24;25mLoad a default keymap:
+   [33;23;22;24;25msudo loadkeys [0m[-d|--default]
+[0m
+ - [0m[32;23;22;24;25mCreate a kernel source table:
+   [33;23;22;24;25mloadkeys [0m[-m|--mktable]
+[0m
+ - [0m[32;23;22;24;25mCreate a binary keymap:
+   [33;23;22;24;25mloadkeys [0m[-b|--bkeymap]
+[0m
+ - [0m[32;23;22;24;25mSearch and parse keymap without action:
+   [33;23;22;24;25mloadkeys [0m[-p|--parse]
+[0m
+ - [0m[32;23;22;24;25mLoad the keymap suppressing all output:
+   [33;23;22;24;25mloadkeys [0m[-q|--quiet]
+[0m
+ - [0m[32;23;22;24;25mSet a keymap for a specific console:
+   [33;23;22;24;25msudo loadkeys [0m[-C|--console][33;23;22;24;25m [0m/dev/ttyN[33;23;22;24;25m [0muk
+[0m
+ - [0m[32;23;22;24;25mLoad a keymap from the specified file for the console:
+   [33;23;22;24;25mloadkeys [0m[-C|--console][33;23;22;24;25m [0m/dev/ttyN[33;23;22;24;25m /[0mpath/to/file
+[0m[0m

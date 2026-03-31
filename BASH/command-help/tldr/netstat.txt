@@ -1,0 +1,27 @@
+netstat
+
+[0m[0mDisplay network-related information such as open connections, open socket ports, etc.
+See also: ss.
+More information: https://manned.org/netstat.
+
+ - [0m[32;23;22;24;25mList all ports:
+   [33;23;22;24;25mnetstat [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mList all listening ports:
+   [33;23;22;24;25mnetstat [0m[-l|--listening]
+[0m
+ - [0m[32;23;22;24;25mList listening TCP ports:
+   [33;23;22;24;25mnetstat [0m[-t|--tcp]
+[0m
+ - [0m[32;23;22;24;25mDisplay PID and program names:
+   [33;23;22;24;25mnetstat [0m[-p|--program]
+[0m
+ - [0m[32;23;22;24;25mList information continuously:
+   [33;23;22;24;25mnetstat [0m[-c|--continuous]
+[0m
+ - [0m[32;23;22;24;25mList routes and do not resolve IP addresses to hostnames:
+   [33;23;22;24;25mnetstat [0m[-rn|--route --numeric]
+[0m
+ - [0m[32;23;22;24;25mList listening TCP and UDP ports (+ user and process if you're root):
+   [33;23;22;24;25mnetstat [0m[-tulpne|--tcp --udp --listening --program --numeric --extend]
+[0m[0m

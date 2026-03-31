@@ -1,0 +1,11 @@
+reset
+
+[0m[0mReinitialize the current terminal. Clears the entire terminal screen.
+More information: https://manned.org/reset.
+
+ - [0m[32;23;22;24;25mReinitialize the current terminal:
+   [33;23;22;24;25mreset[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the terminal type instead:
+   [33;23;22;24;25mreset -q[0m
+[0m[0m

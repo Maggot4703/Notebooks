@@ -1,0 +1,21 @@
+wireplumber
+
+[0m[0mA modular session/policy manager for PipeWire and a GObject-based high-level library that wraps PipeWire's API.
+See also: wpctl, pipewire.
+More information: https://pipewire.pages.freedesktop.org/wireplumber/.
+
+ - [0m[32;23;22;24;25mMake WirePlumber start with the user session immediately (for systemd systems):
+   [33;23;22;24;25msystemctl --user --now enable wireplumber[0m
+[0m
+ - [0m[32;23;22;24;25mRun WirePlumber, after pipewire is started (for non-systemd systems):
+   [33;23;22;24;25mwireplumber[0m
+[0m
+ - [0m[32;23;22;24;25mSpecify a different context configuration file:
+   [33;23;22;24;25mwireplumber --config-file [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mwireplumber --help[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mwireplumber --version[0m
+[0m[0m

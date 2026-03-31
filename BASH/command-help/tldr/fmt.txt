@@ -1,0 +1,17 @@
+fmt
+
+[0m[0mReformat a text file by joining its paragraphs and limiting the line width to a number of characters (75 by default).
+More information: https://www.gnu.org/software/coreutils/manual/html_node/fmt-invocation.html.
+
+ - [0m[32;23;22;24;25mReformat a file:
+   [33;23;22;24;25mfmt [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mReformat a file producing output lines of (at most) n characters:
+   [33;23;22;24;25mfmt [0m[-w|--width][33;23;22;24;25m [0mn[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mReformat a file without joining lines shorter than the given width together:
+   [33;23;22;24;25mfmt [0m[-s|--split-only][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mReformat a file with uniform spacing (1 space between words and 2 spaces between paragraphs):
+   [33;23;22;24;25mfmt [0m[-u|--uniform-spacing][33;23;22;24;25m [0mpath/to/file
+[0m[0m

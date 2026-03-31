@@ -1,0 +1,35 @@
+EBOOK-EDIT(1)                       calibre                      EBOOK-EDIT(1)
+
+NAME
+       ebook-edit - ebook-edit
+
+          ebook-edit [opts] [path_to_ebook] [name_of_file_inside_book ...]
+
+       Launch  the calibre Edit book tool. You can optionally also specify the
+       names of files inside the book which will be opened for  editing  auto‐
+       matically.
+
+       Whenever you pass arguments to ebook-edit that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+[OPTIONS]
+       --detach
+              Detach from the controlling terminal, if any (Linux only)
+
+       --help, -h
+              show this help message and exit
+
+       --select-text
+              The text to select in the book when it is opened for editing
+
+       --version
+              show program's version number and exit
+
+AUTHOR
+       Kovid Goyal
+
+COPYRIGHT
+       Kovid Goyal
+
+6.13.0                         February 17, 2023                 EBOOK-EDIT(1)

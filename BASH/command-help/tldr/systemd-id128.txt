@@ -1,0 +1,20 @@
+systemd-id128
+
+[0m[0mGenerate and print sd-128 identifiers.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-id128.html.
+
+ - [0m[32;23;22;24;25mGenerate a new random identifier:
+   [33;23;22;24;25msystemd-id128 new[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the identifier of the current machine:
+   [33;23;22;24;25msystemd-id128 machine-id[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the identifier of the current boot:
+   [33;23;22;24;25msystemd-id128 boot-id[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the identifier of the current service invocation (this is available in systemd services):
+   [33;23;22;24;25msystemd-id128 invocation-id[0m
+[0m
+ - [0m[32;23;22;24;25mGenerate a new random identifier and print it as a UUID (five groups of digits separated by hyphens):
+   [33;23;22;24;25msystemd-id128 new [0m[-u|--uuid]
+[0m[0m

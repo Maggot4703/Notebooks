@@ -1,0 +1,14 @@
+Hex = 0101
+Name = Zeycude
+UWP = C430698-9
+Remarks = De Na Ni Po
+{Ix} = { -1 }
+(Ex) = (C53-1)
+[Cx] = [6559]
+N = -
+B = -
+Z = -
+PBG = 613
+W = 8
+A = ZhIN
+Stellar = K9 V

@@ -1,0 +1,23 @@
+fakeroot
+
+[0m[0mRun a command in an environment faking root privileges for file manipulation.
+More information: https://manned.org/fakeroot.1.
+
+ - [0m[32;23;22;24;25mStart the default shell as fakeroot:
+   [33;23;22;24;25mfakeroot[0m
+[0m
+ - [0m[32;23;22;24;25mRun a command as fakeroot:
+   [33;23;22;24;25mfakeroot -- [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m
+ - [0m[32;23;22;24;25mRun a command as fakeroot and [s]ave the environment to a file on exit:
+   [33;23;22;24;25mfakeroot -s [0mpath/to/file[33;23;22;24;25m -- [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m
+ - [0m[32;23;22;24;25mLoad a fakeroot environment and run a command as fakeroot:
+   [33;23;22;24;25mfakeroot -i [0mpath/to/file[33;23;22;24;25m -- [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m
+ - [0m[32;23;22;24;25mRun a command keeping the real ownership of files instead of pretending they are owned by root:
+   [33;23;22;24;25mfakeroot [0m[-u|--unknown-is-real][33;23;22;24;25m -- [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mfakeroot [0m[-h|--help]
+[0m[0m

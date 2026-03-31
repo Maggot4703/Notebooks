@@ -1,0 +1,23 @@
+stat
+
+[0m[0mDisplay file and filesystem information.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/stat-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay properties about a specific file such as size, permissions, creation and access dates among others:
+   [33;23;22;24;25mstat [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay properties about a specific file such as size, permissions, creation and access dates among others without labels:
+   [33;23;22;24;25mstat [0m[-t|--terse][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay information about the filesystem where a specific file is located:
+   [33;23;22;24;25mstat [0m[-f|--file-system][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mShow only octal file permissions:
+   [33;23;22;24;25mstat [0m[-c|--format][33;23;22;24;25m "%a %n" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mShow the owner and group of a specific file:
+   [33;23;22;24;25mstat [0m[-c|--format][33;23;22;24;25m "%U %G" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mShow the size of a specific file in bytes:
+   [33;23;22;24;25mstat [0m[-c|--format][33;23;22;24;25m "%s %n" [0mpath/to/file
+[0m[0m

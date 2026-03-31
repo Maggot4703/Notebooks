@@ -1,0 +1,20 @@
+zstd
+
+[0m[0mCompress or decompress files with Zstandard compression.
+More information: https://github.com/facebook/zstd.
+
+ - [0m[32;23;22;24;25mCompress a file into a new file with the .zst suffix:
+   [33;23;22;24;25mzstd [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDecompress a file:
+   [33;23;22;24;25mzstd --decompress [0mpath/to/file.zst
+[0m
+ - [0m[32;23;22;24;25mDecompress to stdout:
+   [33;23;22;24;25mzstd --decompress --stdout [0mpath/to/file.zst
+[0m
+ - [0m[32;23;22;24;25mCompress a file specifying the compression level, where 1=fastest, 19=slowest and 3=default:
+   [33;23;22;24;25mzstd -[0mlevel[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mUnlock higher compression levels (up to 22) using more memory (both for compression and decompression):
+   [33;23;22;24;25mzstd --ultra -[0mlevel[33;23;22;24;25m [0mpath/to/file
+[0m[0m

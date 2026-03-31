@@ -1,0 +1,17 @@
+pipewire
+
+[0m[0mStart the PipeWire daemon.
+More information: https://docs.pipewire.org/page_man_pipewire_1.html.
+
+ - [0m[32;23;22;24;25mStart the PipeWire daemon:
+   [33;23;22;24;25mpipewire[0m
+[0m
+ - [0m[32;23;22;24;25mUse a different configuration file:
+   [33;23;22;24;25mpipewire --config [0mpath/to/file.conf
+[0m
+ - [0m[32;23;22;24;25mSet the verbosity level (error, warn, info, debug or trace):
+   [33;23;22;24;25mpipewire -[0mv|vv|...|vvvvv
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpipewire --help[0m
+[0m[0m

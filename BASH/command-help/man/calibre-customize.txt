@@ -1,0 +1,52 @@
+CALIBRE-CUSTOMIZE(1)                calibre               CALIBRE-CUSTOMIZE(1)
+
+NAME
+       calibre-customize - calibre-customize
+
+          calibre-customize options
+
+       Customize calibre by loading external plugins.
+
+       Whenever  you  pass  arguments to calibre-customize that have spaces in
+       them, enclose the arguments in quotation  marks.  For  example:  "/some
+       path/with spaces"
+
+[OPTIONS]
+       --add-plugin, -a
+              Add  a  plugin by specifying the path to the ZIP file containing
+              it.
+
+       --build-plugin, -b
+              For plugin developers: Path to the folder where you are develop‐
+              ing  the  plugin.  This  command  will  automatically zip up the
+              plugin and update it in calibre.
+
+       --customize-plugin
+              Customize plugin.  Specify  name  of  plugin  and  customization
+              string separated by a comma.
+
+       --disable-plugin
+              Disable the named plugin
+
+       --enable-plugin
+              Enable the named plugin
+
+       --help, -h
+              show this help message and exit
+
+       --list-plugins, -l
+              List all installed plugins
+
+       --remove-plugin, -r
+              Remove a custom plugin by name. Has no effect on builtin plugins
+
+       --version
+              show program's version number and exit
+
+AUTHOR
+       Kovid Goyal
+
+COPYRIGHT
+       Kovid Goyal
+
+6.13.0                         February 17, 2023          CALIBRE-CUSTOMIZE(1)

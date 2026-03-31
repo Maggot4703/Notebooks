@@ -1,0 +1,9 @@
+arch
+
+[0m[0mDisplay the name of the system architecture.
+See also: uname.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/arch-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay the system's architecture:
+   [33;23;22;24;25march[0m
+[0m[0m

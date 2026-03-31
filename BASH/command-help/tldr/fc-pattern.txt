@@ -1,0 +1,11 @@
+fc-pattern
+
+[0m[0mShows information about a font matching a pattern.
+More information: https://manned.org/fc-pattern.
+
+ - [0m[32;23;22;24;25mDisplay default information about a font:
+   [33;23;22;24;25mfc-pattern [0m[-d|--default][33;23;22;24;25m '[0mDejaVu Serif[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay configuration information about a font:
+   [33;23;22;24;25mfc-pattern [0m[-c|--config][33;23;22;24;25m '[0mDejaVu Serif[33;23;22;24;25m'[0m
+[0m[0m

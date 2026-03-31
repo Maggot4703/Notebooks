@@ -1,0 +1,21 @@
+vulkaninfo(1)               General Commands Manual              vulkaninfo(1)
+
+NAME
+       vulkaninfo - show Vulkan information
+
+SYNOPSIS
+       vulkaninfo
+
+DESCRIPTION
+       The vulkaninfo program shows information about the supported Vulkan ca‐
+       pabilities. It lists not only device properties and features, but  also
+       supported Vulkan layers and extensions.
+
+AUTHOR
+       vulkaninfo was originally written by LunarG, Inc.
+
+       This    manual    page    was    written    by    Andreas   Boll   <an‐
+       dreas.boll.dev@gmail.com>, for the Debian project (but may be  used  by
+       others).
+
+                                  2018-01-25                     vulkaninfo(1)

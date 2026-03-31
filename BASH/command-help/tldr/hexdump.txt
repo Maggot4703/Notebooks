@@ -1,0 +1,22 @@
+hexdump
+
+[0m[0mDisplay file contents in hexadecimal, decimal, octal, or ASCII.
+Useful for inspecting dump file, binary data, or debug output.
+See also: hexyl, od, xxd.
+More information: https://manned.org/man/freebsd/hexdump.1.
+
+ - [0m[32;23;22;24;25mPrint the hexadecimal representation of a file, replacing duplicate lines by *:
+   [33;23;22;24;25mhexdump [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay the input offset in hexadecimal and its ASCII representation in two columns:
+   [33;23;22;24;25mhexdump -C [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay the hexadecimal representation of a file, but interpret only a specific number of bytes of the input:
+   [33;23;22;24;25mhexdump -C -n [0mnumber_of_bytes[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mVerbose - no suppression by * on duplicate lines:
+   [33;23;22;24;25mhexdump -v [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mFormat output using printf-like format string:
+   [33;23;22;24;25mhexdump -e '[0melement_format .. end_format[33;23;22;24;25m' [0mpath/to/file
+[0m[0m

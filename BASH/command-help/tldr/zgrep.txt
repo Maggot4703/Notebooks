@@ -1,0 +1,26 @@
+zgrep
+
+[0m[0mGrep text patterns from files within compressed file (equivalent to grep -Z).
+More information: https://manned.org/zgrep.
+
+ - [0m[32;23;22;24;25mGrep a pattern in a compressed file (case-sensitive):
+   [33;23;22;24;25mzgrep [0mpattern[33;23;22;24;25m [0mpath/to/compressed/file
+[0m
+ - [0m[32;23;22;24;25mGrep a pattern in a compressed file (case-insensitive):
+   [33;23;22;24;25mzgrep [0m[-i|--ignore-case][33;23;22;24;25m [0mpattern[33;23;22;24;25m [0mpath/to/compressed/file
+[0m
+ - [0m[32;23;22;24;25mOutput count of lines containing matched pattern in a compressed file:
+   [33;23;22;24;25mzgrep [0m[-c|--count][33;23;22;24;25m [0mpattern[33;23;22;24;25m [0mpath/to/compressed/file
+[0m
+ - [0m[32;23;22;24;25mDisplay the lines which don't have the pattern present (Invert the search function):
+   [33;23;22;24;25mzgrep [0m[-v|--invert-match][33;23;22;24;25m [0mpattern[33;23;22;24;25m [0mpath/to/compressed/file
+[0m
+ - [0m[32;23;22;24;25mGrep a compressed file for multiple patterns:
+   [33;23;22;24;25mzgrep [0m[-e|--regexp][33;23;22;24;25m "[0mpattern_1[33;23;22;24;25m" [0m[-e|--regexp][33;23;22;24;25m "[0mpattern_2[33;23;22;24;25m" [0mpath/to/compressed/file
+[0m
+ - [0m[32;23;22;24;25mUse extended regex (supporting ?, +, {}, () and |):
+   [33;23;22;24;25mzgrep [0m[-E|--extended-regexp][33;23;22;24;25m [0mregex[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint 3 lines of [C]ontext around, [B]efore, or [A]fter each match:
+   [33;23;22;24;25mzgrep --[0mcontext|before-context|after-context[33;23;22;24;25m 3 [0mpattern[33;23;22;24;25m [0mpath/to/compressed/file
+[0m[0m

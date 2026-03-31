@@ -1,0 +1,91 @@
+<form class="flexcol skilldialog">
+
+    <div class="shadow">
+        {{#if showEdit}}
+            <span class="edit-skill">{{localize "MGT2.Edit"}}</span>
+        {{/if}}
+
+        <h3 class="skill-dialog-title">
+            {{#if chaOnly}}
+                {{characteristic}}
+            {{else}}
+                {{#if showCha}}
+                    <select class="skillDialogCha" name="characteristic">
+                        {{selectOptions CHA_SELECT selected=characteristic}}
+                    </select>
+                    <span> + </span>
+                {{/if}}
+                {{#if spec}}
+                    {{skillText}}
+                    {{#if spec.augmented}}
+                        [{{spec.augmented}}<sup>*</sup>]
+                    {{else}}
+                        [{{value}}]
+                    {{/if}}
+                {{else}}
+                    {{#if skill}}
+                        {{skillText}} [{{value}}]
+                    {{else}}
+                        <i>untrained</i> [{{value}}]
+                    {{/if}}
+                {{/if}}
+            {{/if}}
+        </h3>
+
+        {{#if description}}
+            <p>{{description}}</p>
+        {{/if}}
+
+
+        {{#if showCha}}
+            <label class="skillDialogRemember">
+                <input class="rememberChaCheck" type="checkbox" name="remember" value="false"/>
+                <span>{{localize "MGT2.Dialog.RememberCharacteristic"}}</span>
+            </label>
+        {{/if}}
+
+        {{{augmentedSkill skill spec}}}
+
+        {{#if physicalDM includeZero=false}}
+            <p>
+                Physical DM {{physicalDM}}
+            </p>
+        {{/if}}
+
+        <div class="grid grid-3col">
+            <div class="skill-boon">
+                <label for="rollmode" class="skillDialogLabel">{{localize "MGT2.Dialog.RollMode"}}</label>
+                <br/>
+                <select class="skillDialogRollMode" name="rollmode">
+                    {{selectOptions MODE_SELECT selected=mode}}
+                </select>
+            </div>
+
+            <div class="skill-difficulty grid-span-2">
+                <label for="difficulty" class="skillDialogLabel">{{localize "MGT2.Difficulty"}}</label>
+                <br/>
+                <select class="skillDialogDifficulty" name="difficulty">
+                    {{selectOptions TARGET_SELECT selected=target}}
+                </select>
+            </div>
+
+            <div class="skill-boon">
+                <label for="dicetype" class="skillDialogLabel">{{localize "MGT2.Dialog.RollType"}}</label>
+                <br/>
+                <select class="skillDialogRollType" name="dicetype">
+                    {{selectOptions BOON_SELECT selected=boonBane}}
+                </select>
+            </div>
+
+            <div class="skill-dm">
+                <label for="dm" class="skillDialogLabel">{{localize "MGT2.DM"}}</label>
+                <br/>
+                <input class="skillDialogDM" name="dm" type="text" data-dtype="Number" value="{{dm}}"/>
+            </div>
+        </div>
+    </div>
+    <footer class="sheet-footer flexrow">
+        <button type="submit" name="submit" class="skillRoll">{{localize "MGT2.Roll"}} <i class="fas fa-dice"></i></button>
+    </footer>
+
+</form>

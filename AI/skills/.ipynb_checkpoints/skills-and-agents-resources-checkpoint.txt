@@ -1,0 +1,65 @@
+SKILLS AND AGENTS - RECOMMENDED WEBSITES
+==========================================
+
+VS CODE COPILOT & EXTENSIONS
+=============================
+- VS Code Extension Marketplace
+  https://marketplace.visualstudio.com/
+  Official source for VS Code extensions, including Copilot-related tools
+
+- GitHub Copilot Docs
+  https://docs.github.com/en/copilot
+  Official documentation for Copilot features and customization
+
+- Cursor.sh
+  https://www.cursor.sh/
+  AI-first code editor with advanced agent capabilities
+
+
+AI AGENTS & FRAMEWORKS
+======================
+- CrewAI Docs
+  https://docs.crewai.com/
+  Official CrewAI framework documentation (relevant to CREW/ workspace)
+
+- LangChain Docs
+  https://python.langchain.com/
+  Popular framework for building LLM applications and agents
+
+- AutoGen by Microsoft
+  https://microsoft.github.io/autogen/
+  Multi-agent conversation framework
+
+- OpenAI Cookbook
+  https://github.com/openai/openai-cookbook
+  Practical examples and patterns for LLM applications
+
+
+SKILL LIBRARIES & TOOLS
+=======================
+- Hugging Face Hub
+  https://huggingface.co/
+  Models, datasets, and community resources
+
+- Semantic Kernel
+  https://learn.microsoft.com/en-us/semantic-kernel/overview/
+  Microsoft's framework for integrating AI into apps
+
+- Pydantic Docs
+  https://docs.pydantic.dev/
+  Essential for schema validation in CrewAI tools
+
+
+LEARNING & COMMUNITY
+====================
+- GitHub Skills
+  https://skills.github.com/
+  Interactive learning paths
+
+- Dev.to
+  https://dev.to/
+  Community-written articles on agents, automation, and development
+
+- Towards Data Science (Medium)
+  https://towardsdatascience.com/
+  Deep dives into AI/ML topics

@@ -1,0 +1,31 @@
+awk
+
+[0m[0mA versatile programming language for working on files.
+Note: Different implementations of AWK often make this a symlink of their binary.
+See also: gawk.
+More information: https://github.com/onetrueawk/awk.
+
+ - [0m[32;23;22;24;25mPrint the fifth column (a.k.a. field) in a space-separated file:
+   [33;23;22;24;25mawk '{print $5}' [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint the second column of the lines containing "foo" in a space-separated file:
+   [33;23;22;24;25mawk '/[0mfoo[33;23;22;24;25m/ {print $2}' [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint the last column of each line in a file, using a comma (instead of space) as a field separator:
+   [33;23;22;24;25mawk -F ',' '{print $NF}' [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSum the values in the first column of a file and print the total:
+   [33;23;22;24;25mawk '{s+=$1} END {print s}' [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint every third line starting from the first line:
+   [33;23;22;24;25mawk 'NR%3==1' [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint different values based on conditions:
+   [33;23;22;24;25mawk '{if ($1 == "foo") print "Exact match foo"; else if ($1 ~ "bar") print "Partial match bar"; else print "Baz"}' [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint all the lines which the 10th column value is between a min and a max:
+   [33;23;22;24;25mawk '($10 >= [0mmin_value[33;23;22;24;25m && $10 <= [0mmax_value[33;23;22;24;25m)'[0m
+[0m
+ - [0m[32;23;22;24;25mPrint table of users with UID >=1000 with header and formatted output, using colon as separator (%-20s mean: 20 left-align string characters, %6s means: 6 right-align string characters):
+   [33;23;22;24;25mawk 'BEGIN {FS=":";printf "%-20s %6s %25s\n", "Name", "UID", "Shell"} $4 >= 1000 {printf "%-20s %6d %25s\n", $1, $4, $7}' /etc/passwd[0m
+[0m[0m

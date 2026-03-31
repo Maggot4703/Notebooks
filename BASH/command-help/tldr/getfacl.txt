@@ -1,0 +1,14 @@
+getfacl
+
+[0m[0mGet file access control lists (ACL).
+More information: https://manned.org/getfacl.
+
+ - [0m[32;23;22;24;25mDisplay the file access control list:
+   [33;23;22;24;25mgetfacl [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mDisplay the file access control list with numeric user and group IDs:
+   [33;23;22;24;25mgetfacl [0m[-n|--numeric][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mDisplay the file access control list with tabular output format:
+   [33;23;22;24;25mgetfacl [0m[-t|--tabular][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m[0m

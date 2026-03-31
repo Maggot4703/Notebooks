@@ -1,0 +1,12 @@
+vgcreate
+
+[0m[0mCreate volume groups combining multiple mass-storage devices.
+See also: lvm.
+More information: https://manned.org/vgcreate.
+
+ - [0m[32;23;22;24;25mCreate a new volume group called vg1 using the /dev/sda1 device:
+   [33;23;22;24;25mvgcreate [0mvg1[33;23;22;24;25m [0m/dev/sda1
+[0m
+ - [0m[32;23;22;24;25mCreate a new volume group called vg1 using multiple devices:
+   [33;23;22;24;25mvgcreate [0mvg1[33;23;22;24;25m [0m/dev/sda1[33;23;22;24;25m [0m/dev/sdb1[33;23;22;24;25m [0m/dev/sdc1
+[0m[0m

@@ -1,0 +1,14 @@
+route
+
+[0m[0mShow and manipulate the route table.
+More information: https://manned.org/route.
+
+ - [0m[32;23;22;24;25mDisplay the information of route table:
+   [33;23;22;24;25mroute -n[0m
+[0m
+ - [0m[32;23;22;24;25mAdd route rule:
+   [33;23;22;24;25msudo route add -net [0mip_address[33;23;22;24;25m netmask [0mnetmask_address[33;23;22;24;25m gw [0mgw_address
+[0m
+ - [0m[32;23;22;24;25mDelete route rule:
+   [33;23;22;24;25msudo route del -net [0mip_address[33;23;22;24;25m netmask [0mnetmask_address[33;23;22;24;25m dev [0mgw_address
+[0m[0m

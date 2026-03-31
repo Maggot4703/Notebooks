@@ -1,0 +1,11 @@
+pdfunite
+
+[0m[0mPDF merging utility.
+More information: https://github.com/mtgrosser/pdfunite.
+
+ - [0m[32;23;22;24;25mMerge 2 PDFs into a single PDF:
+   [33;23;22;24;25mpdfunite [0mpath/to/fileA.pdf[33;23;22;24;25m [0mpath/to/fileB.pdf[33;23;22;24;25m [0mpath/to/merged_output.pdf
+[0m
+ - [0m[32;23;22;24;25mMerge a directory of PDFs into a single PDF:
+   [33;23;22;24;25mpdfunite [0mpath/to/directory/*.pdf[33;23;22;24;25m [0mpath/to/merged_output.pdf
+[0m[0m

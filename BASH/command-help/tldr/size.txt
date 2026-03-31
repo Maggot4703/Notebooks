@@ -1,0 +1,17 @@
+size
+
+[0m[0mDisplay the sizes of sections inside binary files.
+More information: https://sourceware.org/binutils/docs/binutils/size.html.
+
+ - [0m[32;23;22;24;25mDisplay the size of sections in a given object or executable file:
+   [33;23;22;24;25msize [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay the size of sections in a given object or executable file in [o]ctal:
+   [33;23;22;24;25msize [0m[-o|--radix=8][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay the size of sections in a given object or executable file in [d]ecimal:
+   [33;23;22;24;25msize [0m[-d|--radix=10][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay the size of sections in a given object or executable file in he[x]adecimal:
+   [33;23;22;24;25msize [0m[-x|--radix=16][33;23;22;24;25m [0mpath/to/file
+[0m[0m

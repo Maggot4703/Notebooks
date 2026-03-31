@@ -1,0 +1,20 @@
+bind
+
+[0m[0mBash builtin to manage bash hotkeys and variables.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-bind.
+
+ - [0m[32;23;22;24;25mList all bound commands and their hotkeys:
+   [33;23;22;24;25mbind [0m-p|-P
+[0m
+ - [0m[32;23;22;24;25mQuery a command for its hotkey:
+   [33;23;22;24;25mbind -q [0mcommand
+[0m
+ - [0m[32;23;22;24;25mBind a key:
+   [33;23;22;24;25mbind -x '"[0mkey_sequence[33;23;22;24;25m":[0mcommand[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mList user defined bindings:
+   [33;23;22;24;25mbind -X[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mhelp bind[0m
+[0m[0m

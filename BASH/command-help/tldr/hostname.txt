@@ -1,0 +1,17 @@
+hostname
+
+[0m[0mShow or set the system's host name.
+More information: https://manned.org/hostname.
+
+ - [0m[32;23;22;24;25mShow current host name:
+   [33;23;22;24;25mhostname[0m
+[0m
+ - [0m[32;23;22;24;25mShow the network address of the host name:
+   [33;23;22;24;25mhostname [0m[-i|--ip-address]
+[0m
+ - [0m[32;23;22;24;25mShow the FQDN (Fully Qualified Domain Name):
+   [33;23;22;24;25mhostname [0m[-f|--fqdn]
+[0m
+ - [0m[32;23;22;24;25mSet current host name:
+   [33;23;22;24;25mhostname [0mnew_hostname
+[0m[0m

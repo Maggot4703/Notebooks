@@ -1,0 +1,30 @@
+virsh
+
+[0m[0mManage virsh guest domains. (Note: guest_id can be the ID, name or UUID of the guest).
+Some subcommands such as list have their own usage documentation.
+More information: https://libvirt.org/manpages/virsh.html.
+
+ - [0m[32;23;22;24;25mConnect to a hypervisor session:
+   [33;23;22;24;25mvirsh connect [0mqemu:///system
+[0m
+ - [0m[32;23;22;24;25mActivate a network named default:
+   [33;23;22;24;25msudo virsh net-start [0mdefault
+[0m
+ - [0m[32;23;22;24;25mList all domains:
+   [33;23;22;24;25mvirsh list --all[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a guest from a configuration file:
+   [33;23;22;24;25mvirsh create [0mpath/to/config_file.xml
+[0m
+ - [0m[32;23;22;24;25mEdit a guest's configuration file (editor can be changed with $EDITOR):
+   [33;23;22;24;25mvirsh edit [0mguest_id
+[0m
+ - [0m[32;23;22;24;25mStart/reboot/shutdown/suspend/resume a guest:
+   [33;23;22;24;25mvirsh [0mcommand[33;23;22;24;25m [0mguest_id
+[0m
+ - [0m[32;23;22;24;25mSave the current state of a guest to a file:
+   [33;23;22;24;25mvirsh save [0mguest_id[33;23;22;24;25m [0mfilename
+[0m
+ - [0m[32;23;22;24;25mDelete a running guest:
+   [33;23;22;24;25mvirsh destroy [0mguest_id[33;23;22;24;25m && virsh undefine [0mguest_id
+[0m[0m

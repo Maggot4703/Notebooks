@@ -1,0 +1,18 @@
+chsh
+
+[0m[0mChange user's login shell.
+Part of util-linux.
+More information: https://manned.org/chsh.
+
+ - [0m[32;23;22;24;25mSet a specific login shell for the current user interactively:
+   [33;23;22;24;25mchsh[0m
+[0m
+ - [0m[32;23;22;24;25mList available shells:
+   [33;23;22;24;25mchsh [0m[-l|--list-shells]
+[0m
+ - [0m[32;23;22;24;25mSet a specific login shell for the current user:
+   [33;23;22;24;25mchsh [0m[-s|--shell][33;23;22;24;25m [0mpath/to/shell
+[0m
+ - [0m[32;23;22;24;25mSet a login shell for a specific user:
+   [33;23;22;24;25msudo chsh [0m[-s|--shell][33;23;22;24;25m [0mpath/to/shell[33;23;22;24;25m [0musername
+[0m[0m

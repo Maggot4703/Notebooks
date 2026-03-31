@@ -1,0 +1,17 @@
+logsave
+
+[0m[0mSave the output of a command in a logfile.
+More information: https://manned.org/logsave.
+
+ - [0m[32;23;22;24;25mExecute command with specified argument(s) and save its output to log file:
+   [33;23;22;24;25mlogsave [0mpath/to/logfile[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mTake input from stdin and save it in a log file:
+   [33;23;22;24;25mlogsave [0mlogfile[33;23;22;24;25m -[0m
+[0m
+ - [0m[32;23;22;24;25mAppend the output to a log file, instead of replacing its current contents:
+   [33;23;22;24;25mlogsave -a [0mlogfile[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mShow verbose output:
+   [33;23;22;24;25mlogsave -v [0mlogfile[33;23;22;24;25m [0mcommand
+[0m[0m

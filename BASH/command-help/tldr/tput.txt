@@ -1,0 +1,29 @@
+tput
+
+[0m[0mView and modify terminal settings and capabilities.
+More information: https://manned.org/tput.
+
+ - [0m[32;23;22;24;25mMove the cursor to a screen location:
+   [33;23;22;24;25mtput cup [0mrow[33;23;22;24;25m [0mcolumn
+[0m
+ - [0m[32;23;22;24;25mSet foreground (af) or background (ab) color:
+   [33;23;22;24;25mtput [0msetaf|setab[33;23;22;24;25m [0mansi_color_code
+[0m
+ - [0m[32;23;22;24;25mReverse text and background colors:
+   [33;23;22;24;25mtput rev[0m
+[0m
+ - [0m[32;23;22;24;25mReset all terminal text attributes:
+   [33;23;22;24;25mtput sgr0[0m
+[0m
+ - [0m[32;23;22;24;25mShow number of columns, lines, or colors:
+   [33;23;22;24;25mtput [0mcols|lines|colors
+[0m
+ - [0m[32;23;22;24;25mEnable or disable word wrap:
+   [33;23;22;24;25mtput [0msmam|rmam
+[0m
+ - [0m[32;23;22;24;25mHide or show the terminal cursor:
+   [33;23;22;24;25mtput [0mcivis|cnorm
+[0m
+ - [0m[32;23;22;24;25mSave or restore terminal text status (smcup also captures scroll wheel events):
+   [33;23;22;24;25mtput [0msmcup|rmcup
+[0m[0m

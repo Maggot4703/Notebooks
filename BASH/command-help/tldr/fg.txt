@@ -1,0 +1,12 @@
+fg
+
+[0m[0mRun jobs in foreground.
+See also: jobs, bg, disown.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-fg.
+
+ - [0m[32;23;22;24;25mBring most recently suspended or running background job to foreground:
+   [33;23;22;24;25mfg[0m
+[0m
+ - [0m[32;23;22;24;25mBring a specific job to foreground (run jobs to find the job number):
+   [33;23;22;24;25mfg %[0mjob_number
+[0m[0m

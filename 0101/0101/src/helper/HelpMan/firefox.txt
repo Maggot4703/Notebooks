@@ -1,0 +1,136 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/firefox
+firefox (1)          - a free and open source web browser from Mozilla
+Usage: firefox [ options ... ] [URL]
+       where options include:
+
+X11 options
+  --display=DISPLAY  X display to use
+  --sync             Make X calls synchronous
+  --g-fatal-warnings Make all warnings fatal
+
+Firefox options
+  -h or --help       Print this message.
+  -v or --version    Print Firefox version.
+  --full-version     Print Firefox version, build and platform build ids.
+  -P <profile>       Start with <profile>.
+  --profile <path>   Start with profile at <path>.
+  --migration        Start with migration wizard.
+  --ProfileManager   Start with ProfileManager.
+  --no-remote        Do not accept or send remote commands; implies
+                     --new-instance.
+  --new-instance     Open new instance, not a new window in running instance.
+  --UILocale <locale> Start with <locale> resources as UI Locale.
+  --safe-mode        Disables extensions and themes for this session.
+  --allow-downgrade  Allows downgrading a profile.
+  --MOZ_LOG=<modules> Treated as MOZ_LOG=<modules> environment variable,
+                     overrides it.
+  --MOZ_LOG_FILE=<file> Treated as MOZ_LOG_FILE=<file> environment variable,
+                     overrides it. If MOZ_LOG_FILE is not specified as an
+                     argument or as an environment variable, logging will be
+                     written to stdout.
+  --headless         Run without a GUI.
+  --ssb <uri>        Open a site specific browser for <uri>.
+  --browser          Open a browser window.
+  --new-window <url> Open <url> in a new window.
+  --new-tab <url>    Open <url> in a new tab.
+  --private-window <url> Open <url> in a new private window.
+  --preferences      Open Preferences dialog.
+  --screenshot [<path>] Save screenshot to <path> or in working directory.
+  --window-size width[,height] Width and optionally height of screenshot.
+  --search <term>    Search <term> with your default search engine.
+  --setDefaultBrowser Set this app as the default browser.
+  --first-startup    Run post-install actions before opening a new window.
+  --kiosk Start the browser in kiosk mode.
+  --jsconsole        Open the Browser Console.
+  --jsdebugger [<path>] Open the Browser Toolbox. Defaults to the local build
+                     but can be overridden by a firefox path.
+  --wait-for-jsdebugger Spin event loop until JS debugger connects.
+                     Enables debugging (some) application startup code paths.
+                     Only has an effect when `--jsdebugger` is also supplied.
+  --devtools         Open DevTools on initial load.
+  --start-debugger-server [ws:][ <port> | <path> ] Start the devtools server on
+                     a TCP port or Unix domain socket path. Defaults to TCP port
+                     6000. Use WebSocket protocol if ws: prefix is specified.
+  --recording <file> Record drawing for a given URL.
+  --recording-output <file> Specify destination file for a drawing recording.
+
+      -g or --debug          Start within debugger
+      -d or --debugger       Specify debugger to start with (eg, gdb or valgrind)
+      -a or --debugger-args  Specify arguments for debugger
+FIREFOX(1)                                    General Commands Manual                                   FIREFOX(1)
+
+NAME
+       firefox - a free and open source web browser from Mozilla
+
+SYNOPSIS
+       firefox [OPTIONS] [url]
+
+DESCRIPTION
+       See http://support.mozilla.com/ for help using the browser.  This manpage only describes how to run it.
+
+OPTIONS
+       -h, --help
+              Prints the command line options.
+
+       -g, --debug
+              Starts firefox in a debugger.
+
+       -d, --debugger
+              Specify the debugger in which to start firefox. The default is gdb. Used in conjunction with -g.
+
+       -a, --debugger-args
+              Specify arguments to pass to the debugger. Used in conjunction with -g.
+
+       -no-remote
+              Don't  connect  to any other running instances of firefox. Use this if you want to run firefox in an
+              entirely new process. By default, firefox will delegate a command to an already running instance.
+
+       -ProfileManager
+              Start the profilemanager. Use this to choose the profile you would like to  run  firefox  with.  You
+              will need to also use -no-remote if there is already a running firefox instance.
+
+       -P profile
+              Start firefox with the profile named profile. Will start the profile manager if a valid profile name
+              is not specified. You will need to also use -no-remote if there is already  a  running  firefox  in‐
+              stance.
+
+       -safe-mode
+              Start  firefox  in  safe-mode. This disables all third-party extensions, and may be necessary if you
+              are having problems with an extension you installed.
+
+       -new-tab url
+              Open url in a new tab.
+
+       -new-window url
+              Open url in a new window.
+
+       -v, -version
+              Print the current version of firefox.
+
+       -UILocale locale
+              Start firefox with the specified locale locale. Use this to override your environment
+
+       -preferences
+              Open the preferences dialog.
+
+       -private
+              Start firefox in private browsing mode
+
+       -private-toggle
+              Toggle private browsing mode
+
+       -setDefaultBrowser
+              Set firefox as the default web browser
+
+       -search term
+              Search for term with your default search engine
+
+       -jsconsole
+              Open the Error console. If firefox is not already running, this will open a new browser window too
+
+firefox                                             2011-02-09                                          FIREFOX(1)

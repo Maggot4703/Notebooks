@@ -1,0 +1,27 @@
+nmcli
+
+[0m[0mManage the network configuration using NetworkManager.
+See also: nmtui.
+More information: https://networkmanager.pages.freedesktop.org/NetworkManager/NetworkManager/nmcli.html.
+
+ - [0m[32;23;22;24;25mView documentation for managing network interfaces and establishing new Wi-Fi connections:
+   [33;23;22;24;25mtldr nmcli device[0m
+[0m
+ - [0m[32;23;22;24;25mView documentation for managing network connections:
+   [33;23;22;24;25mtldr nmcli connection[0m
+[0m
+ - [0m[32;23;22;24;25mView documentation for running nmcli as a NetworkManager secret/polkit agent:
+   [33;23;22;24;25mtldr nmcli agent[0m
+[0m
+ - [0m[32;23;22;24;25mView documentation for managing general settings of NetworkManager:
+   [33;23;22;24;25mtldr nmcli general[0m
+[0m
+ - [0m[32;23;22;24;25mView documentation for NetworkManager's activity monitor:
+   [33;23;22;24;25mtldr nmcli monitor[0m
+[0m
+ - [0m[32;23;22;24;25mView documentation for enabling/disabling and checking the status of networking:
+   [33;23;22;24;25mtldr nmcli networking[0m
+[0m
+ - [0m[32;23;22;24;25mView documentation for managing radio switches:
+   [33;23;22;24;25mtldr nmcli radio[0m
+[0m[0m

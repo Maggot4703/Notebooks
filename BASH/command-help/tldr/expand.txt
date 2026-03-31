@@ -1,0 +1,20 @@
+expand
+
+[0m[0mConvert tabs to spaces.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/expand-invocation.html.
+
+ - [0m[32;23;22;24;25mConvert tabs in each file to spaces, writing to stdout:
+   [33;23;22;24;25mexpand [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mConvert tabs to spaces, reading from stdin:
+   [33;23;22;24;25mexpand[0m
+[0m
+ - [0m[32;23;22;24;25mDo not convert tabs after non blanks:
+   [33;23;22;24;25mexpand [0m[-i|--initial][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mHave tabs a certain number of characters apart, not 8:
+   [33;23;22;24;25mexpand [0m[-t|--tabs][33;23;22;24;25m [0mnumber[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mUse a comma separated list of explicit tab positions:
+   [33;23;22;24;25mexpand [0m[-t|--tabs][33;23;22;24;25m [0m1,4,6
+[0m[0m

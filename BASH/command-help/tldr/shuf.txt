@@ -1,0 +1,17 @@
+shuf
+
+[0m[0mGenerate random permutations.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/shuf-invocation.html.
+
+ - [0m[32;23;22;24;25mRandomize the order of lines in a file and output the result:
+   [33;23;22;24;25mshuf [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOnly output the first 5 entries of the result:
+   [33;23;22;24;25mshuf [0m[-n|--head-count][33;23;22;24;25m 5 [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mWrite the output to another file:
+   [33;23;22;24;25mshuf [0mpath/to/input_file[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output_file
+[0m
+ - [0m[32;23;22;24;25mGenerate 3 random numbers in the range 1-10 (inclusive):
+   [33;23;22;24;25mshuf [0m[-n|--head-count][33;23;22;24;25m 3 [0m[-i|--input-range][33;23;22;24;25m 1-10 [0m[-r|--repeat]
+[0m[0m

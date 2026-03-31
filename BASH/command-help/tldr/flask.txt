@@ -1,0 +1,14 @@
+flask
+
+[0m[0mA general utility script for Flask applications. Loads the application defined in the FLASK_APP environment variable.
+More information: https://flask.palletsprojects.com/en/stable/cli/.
+
+ - [0m[32;23;22;24;25mRun a development server:
+   [33;23;22;24;25mflask run[0m
+[0m
+ - [0m[32;23;22;24;25mShow the routes for the app:
+   [33;23;22;24;25mflask routes[0m
+[0m
+ - [0m[32;23;22;24;25mRun a Python interactive shell in the app's context:
+   [33;23;22;24;25mflask shell[0m
+[0m[0m

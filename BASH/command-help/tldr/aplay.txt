@@ -1,0 +1,17 @@
+aplay
+
+[0m[0mSound player for ALSA soundcard driver.
+More information: https://manned.org/aplay.
+
+ - [0m[32;23;22;24;25mPlay a specific file (sampling rate, bit depth, etc. will be automatically determined for the file format):
+   [33;23;22;24;25maplay [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPlay the first 10 seconds of a specific file at 2500 Hz:
+   [33;23;22;24;25maplay [0m[-d|--duration][33;23;22;24;25m [0m10[33;23;22;24;25m [0m[-r|--rate][33;23;22;24;25m [0m2500[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPlay the raw file as a 22050 Hz, mono, 8-bit, Mu-Law .au file:
+   [33;23;22;24;25maplay [0m[-c|--channels][33;23;22;24;25m [0m1[33;23;22;24;25m [0m[-t|--file-type][33;23;22;24;25m [0mraw[33;23;22;24;25m [0m[-r|--rate][33;23;22;24;25m [0m22050[33;23;22;24;25m [0m[-f|--format][33;23;22;24;25m [0mmu_law[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mList available audio devices:
+   [33;23;22;24;25maplay [0m[-l|--list-devices]
+[0m[0m

@@ -1,0 +1,28 @@
+DTC(1)                      General Commands Manual                     DTC(1)
+
+NAME
+       convert-dtsv0 - Device Tree Compiler -- Conversion to Version 1
+
+SYNOPSIS
+       /usr/bin/convert-dtsv0 [<input_filename ... >]
+
+DESCRIPTION
+       convert-dtsv0 is a small utility program which converts (DTS)
+
+       Device Tree Source from the obsolete version 0 to version 1.  Version 1
+       DTS files are marked by line "/dts-v1/;" at the top of the file.
+
+       Each file passed will be converted to the new /dts-v1/ version by  cre‐
+       ating a new file with a "v1" appended the filename.
+
+       Comments, empty lines, etc. are preserved.
+
+AUTHOR
+       convert-dtsv0   was   written   by   David  Gibson  <david@gibson.drop‐
+       bear.id.au>. Since April 1, 2006, Jon  Loeliger  <jdl@jdl.com>  assumes
+       maintainership.
+
+       This manual page was written by Héctor Orón <zumbi@debian.org>, for the
+       Debian project (but may be used by others).
+
+Linux                           30 January 2012                         DTC(1)

@@ -1,0 +1,16 @@
+write
+
+[0m[0mWrite a message on the terminal of a specified logged in user (<Ctrl c> to stop writing messages).
+Use the who command to find out all terminal_ids of all active users active on the system.
+See also: mesg.
+More information: https://manned.org/write.1p.
+
+ - [0m[32;23;22;24;25mSend a message to a given user on a given terminal ID:
+   [33;23;22;24;25mwrite [0musername[33;23;22;24;25m [0mterminal_id
+[0m
+ - [0m[32;23;22;24;25mSend message to "testuser" on terminal /dev/tty/5:
+   [33;23;22;24;25mwrite [0mtestuser[33;23;22;24;25m [0mtty/5
+[0m
+ - [0m[32;23;22;24;25mSend message to "johndoe" on pseudo terminal /dev/pts/5:
+   [33;23;22;24;25mwrite [0mjohndoe[33;23;22;24;25m [0mpts/5
+[0m[0m

@@ -1,0 +1,14 @@
+keytool
+
+[0m[0mA certificate management utility included with Java.
+More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/keytool.html.
+
+ - [0m[32;23;22;24;25mCreate a keystore:
+   [33;23;22;24;25mkeytool -genkeypair -v -keystore [0mpath/to/file.keystore[33;23;22;24;25m -alias [0mkey_name
+[0m
+ - [0m[32;23;22;24;25mChange a keystore password:
+   [33;23;22;24;25mkeytool -storepasswd -keystore [0mpath/to/file.keystore
+[0m
+ - [0m[32;23;22;24;25mChange a key's password inside a specific keystore:
+   [33;23;22;24;25mkeytool -keypasswd -alias [0mkey_name[33;23;22;24;25m -keystore [0mpath/to/file.keystore
+[0m[0m

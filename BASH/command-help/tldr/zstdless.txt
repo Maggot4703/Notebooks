@@ -1,0 +1,9 @@
+zstdless
+
+[0m[0mOpen a zstd compressed file for interactive reading, allowing scrolling and search.
+See also: zstd, less.
+More information: https://manned.org/zstdless.
+
+ - [0m[32;23;22;24;25mOpen a zstd compressed file:
+   [33;23;22;24;25mzstdless [0mpath/to/file.zst
+[0m[0m

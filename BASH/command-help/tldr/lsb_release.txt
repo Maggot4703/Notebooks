@@ -1,0 +1,17 @@
+lsb_release
+
+[0m[0mGet LSB (Linux Standard Base) and distribution-specific information.
+More information: https://manned.org/lsb_release.
+
+ - [0m[32;23;22;24;25mPrint all available information:
+   [33;23;22;24;25mlsb_release [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mPrint a description (usually the full name) of the operating system:
+   [33;23;22;24;25mlsb_release [0m[-d|--description]
+[0m
+ - [0m[32;23;22;24;25mPrint only the operating system name (ID), suppressing the field name:
+   [33;23;22;24;25mlsb_release [0m[-is|--id --short]
+[0m
+ - [0m[32;23;22;24;25mPrint the release number and codename of the distribution, suppressing the field names:
+   [33;23;22;24;25mlsb_release [0m[-rcs|--release --codename --short]
+[0m[0m

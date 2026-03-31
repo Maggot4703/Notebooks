@@ -1,0 +1,1 @@
+No tldr entry for lua5.1

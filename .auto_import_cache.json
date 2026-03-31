@@ -1,0 +1,195 @@
+{
+  "workspace_root": "/home/me/Notebooks",
+  "imported_modules": [
+    "AI.skills.create_links.create_links",
+    "AI.skills.list_agents.list_agents",
+    "AI.skills.lister.lister",
+    "AI.skills.pdf_to_txt.pdf_to_txt",
+    "AI.skills.skills_main.skills.docx.scripts.office.helpers.merge_runs",
+    "AI.skills.skills_main.skills.docx.scripts.office.helpers.simplify_redlines",
+    "AI.skills.skills_main.skills.docx.scripts.office.validators.redlining",
+    "AI.skills.skills_main.skills.pdf.scripts.check_bounding_boxes",
+    "AI.skills.skills_main.skills.pdf.scripts.create_validation_image",
+    "AI.skills.skills_main.skills.pptx.scripts.add_slide",
+    "AI.skills.skills_main.skills.pptx.scripts.clean",
+    "AI.skills.skills_main.skills.pptx.scripts.office.helpers.merge_runs",
+    "AI.skills.skills_main.skills.pptx.scripts.office.helpers.simplify_redlines",
+    "AI.skills.skills_main.skills.pptx.scripts.office.validators.redlining",
+    "AI.skills.skills_main.skills.skill_creator.scripts.aggregate_benchmark",
+    "AI.skills.skills_main.skills.skill_creator.scripts.quick_validate",
+    "AI.skills.skills_main.skills.skill_creator.scripts.utils",
+    "AI.skills.skills_main.skills.slack_gif_creator.core.easing",
+    "AI.skills.skills_main.skills.slack_gif_creator.core.frame_composer",
+    "AI.skills.skills_main.skills.slack_gif_creator.core.validators",
+    "AI.skills.skills_main.skills.webapp_testing.scripts.with_server",
+    "AI.skills.skills_main.skills.xlsx.scripts.office.helpers.merge_runs",
+    "AI.skills.skills_main.skills.xlsx.scripts.office.helpers.simplify_redlines",
+    "AI.skills.skills_main.skills.xlsx.scripts.office.validators.redlining",
+    "BASH.commands.uv.uv",
+    "CARDCUTTER.CardCutter..ipynb_checkpoints.card_cutter_checkpoint",
+    "CREW.Crew..ipynb_checkpoints.__init___checkpoint",
+    "CREW.Crew..ipynb_checkpoints.cache_checkpoint",
+    "CREW.Crew..ipynb_checkpoints.config_checkpoint",
+    "CREW.Crew..ipynb_checkpoints.data_manager_checkpoint",
+    "CREW.Crew..ipynb_checkpoints.enhanced_features_checkpoint",
+    "CREW.Crew..ipynb_checkpoints.state_manager_checkpoint",
+    "CREW.Crew..ipynb_checkpoints.storySearch_checkpoint",
+    "CREW.Crew..ipynb_checkpoints.untitled_checkpoint",
+    "CREW.Crew.ReadMine_completion_report",
+    "CREW.Crew.cache",
+    "CREW.Crew.data.HTML.html",
+    "CREW.Crew.data.arcs.arcs",
+    "CREW.Crew.data.clones.clones",
+    "CREW.Crew.data.columns.columns",
+    "CREW.Crew.data.encounters.encounters",
+    "CREW.Crew.data.links.JSON.json",
+    "CREW.Crew.data.locations.locations",
+    "CREW.Crew.data.music.music",
+    "CREW.Crew.data.npcs.npcs",
+    "CREW.Crew.data.schedules.schedules",
+    "CREW.Crew.data.scratch.scratch",
+    "CREW.Crew.data.sequences.sequences",
+    "CREW.Crew.data.tlinks.tlinks",
+    "CREW.Crew.data_manager",
+    "CREW.Crew.database_manager",
+    "CREW.Crew.error_handler",
+    "CREW.Crew.errors",
+    "CREW.Crew.event_manager",
+    "CREW.Crew.events",
+    "CREW.Crew.file_manager",
+    "CREW.Crew.get_pip",
+    "CREW.Crew.gui_copy",
+    "CREW.Crew.gui_copy (cached)",
+    "CREW.Crew.gui_main_function",
+    "CREW.Crew.layout",
+    "CREW.Crew.log_analyzer",
+    "CREW.Crew.logic",
+    "CREW.Crew.mcp",
+    "CREW.Crew.mcp_service",
+    "CREW.Crew.read_use_file",
+    "CREW.Crew.refactoring_verification",
+    "CREW.Crew.script_manager",
+    "CREW.Crew.scripts..ipynb_checkpoints.fetch_docs_checkpoint",
+    "CREW.Crew.scripts.any_month",
+    "CREW.Crew.scripts.bmp2png",
+    "CREW.Crew.scripts.fetch_docs",
+    "CREW.Crew.state_manager",
+    "CREW.Crew.storySearch",
+    "CREW.Crew.traveller5_scraper",
+    "CREW.Crew.tts_manager",
+    "CREW.Crew.ui_manager",
+    "CREW.Crew.untitled",
+    "CREW.Crew.utils",
+    "TRAVELLERMAP.check_travellermap_data_schema",
+    "TRAVELLERMAP.count_military_bases",
+    "TRAVELLERMAP.scripts.advanced_search_filter",
+    "TRAVELLERMAP.scripts.find_nearest_base_to",
+    "TRAVELLERMAP.scripts.load_sector_file",
+    "TRAVELLERMAP.scripts.load_sector_file_with_travellerrpg",
+    "TRAVELLERMAP.scripts.utils.sector_utils",
+    "TRAVELLERMAP.scripts.watch_travellermap_github"
+  ],
+  "failed_imports": [
+    [
+      "AI/skills/detect-lines/detect_lines.py",
+      "Import error: No module named 'cv2'"
+    ],
+    [
+      "AI/skills/skills-main/skills/docx/scripts/office/validators/base.py",
+      "Import error: No module named 'lxml'"
+    ],
+    [
+      "AI/skills/skills-main/skills/docx/scripts/office/validators/docx.py",
+      "Import error: No module named 'lxml'"
+    ],
+    [
+      "AI/skills/skills-main/skills/docx/scripts/office/validators/pptx.py",
+      "Import error: cannot import name 'BaseSchemaValidator' from 'AI.skills.skills_main.skills.docx.scripts.office.vali"
+    ],
+    [
+      "AI/skills/skills-main/skills/mcp-builder/scripts/connections.py",
+      "Import error: cannot import name 'ClientSession' from 'mcp' (/home/me/Notebooks/CREW/Crew/mcp.py)"
+    ],
+    [
+      "AI/skills/skills-main/skills/pdf/scripts/convert_pdf_to_images.py",
+      "Import error: No module named 'pdf2image'"
+    ],
+    [
+      "AI/skills/skills-main/skills/pdf/scripts/extract_form_field_info.py",
+      "Import error: No module named 'pypdf'"
+    ],
+    [
+      "AI/skills/skills-main/skills/pdf/scripts/extract_form_structure.py",
+      "Import error: No module named 'pdfplumber'"
+    ],
+    [
+      "AI/skills/skills-main/skills/pdf/scripts/fill_fillable_fields.py",
+      "Import error: No module named 'pypdf'"
+    ],
+    [
+      "AI/skills/skills-main/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+      "Import error: No module named 'pypdf'"
+    ],
+    [
+      "AI/skills/skills-main/skills/pptx/scripts/office/validators/base.py",
+      "Import error: No module named 'lxml'"
+    ],
+    [
+      "AI/skills/skills-main/skills/pptx/scripts/office/validators/docx.py",
+      "Import error: No module named 'lxml'"
+    ],
+    [
+      "AI/skills/skills-main/skills/pptx/scripts/office/validators/pptx.py",
+      "Import error: cannot import name 'BaseSchemaValidator' from 'AI.skills.skills_main.skills.pptx.scripts.office.vali"
+    ],
+    [
+      "AI/skills/skills-main/skills/skill-creator/scripts/package_skill.py",
+      "Import error: No module named 'scripts.quick_validate'"
+    ],
+    [
+      "AI/skills/skills-main/skills/slack-gif-creator/core/gif_builder.py",
+      "Import error: No module named 'imageio'"
+    ],
+    [
+      "AI/skills/skills-main/skills/webapp-testing/examples/console_logging.py",
+      "Import error: No module named 'playwright'"
+    ],
+    [
+      "AI/skills/skills-main/skills/webapp-testing/examples/element_discovery.py",
+      "Import error: No module named 'playwright'"
+    ],
+    [
+      "AI/skills/skills-main/skills/webapp-testing/examples/static_html_automation.py",
+      "Import error: No module named 'playwright'"
+    ],
+    [
+      "AI/skills/skills-main/skills/xlsx/scripts/office/validators/base.py",
+      "Import error: No module named 'lxml'"
+    ],
+    [
+      "AI/skills/skills-main/skills/xlsx/scripts/office/validators/docx.py",
+      "Import error: No module named 'lxml'"
+    ],
+    [
+      "AI/skills/skills-main/skills/xlsx/scripts/office/validators/pptx.py",
+      "Import error: cannot import name 'BaseSchemaValidator' from 'AI.skills.skills_main.skills.xlsx.scripts.office.vali"
+    ],
+    [
+      "AI/skills/skills-main/skills/xlsx/scripts/recalc.py",
+      "Import error: No module named 'office'"
+    ],
+    [
+      "CARDCUTTER/CardCutter/detect_black_lines.py",
+      "Import error: No module named 'cv2'"
+    ],
+    [
+      "TRAVELLERMAP/scripts/plot_sector_worlds_plotly.py",
+      "Import error: No module named 'plotly'"
+    ],
+    [
+      "export_markdown_to_pdf.py",
+      "Import error: No module named 'fpdf'"
+    ]
+  ],
+  "timestamp": 1774950615.0864542
+}

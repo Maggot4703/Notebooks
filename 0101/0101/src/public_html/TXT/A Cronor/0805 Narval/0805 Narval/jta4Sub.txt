@@ -1,0 +1,7 @@
+A CRONOR
+
+	WORLDS IN SUBSECTOR = 24
+	CsIm: "Client state, Third Imperium" = 2 worlds
+	CsZh: "Client state, Zhodani Consulate" = 1 worlds
+	NaHu: "Non-Aligned, Human-dominated" = 10 worlds
+	ZhIN: "Zhodani Consulate, Iadr Nsobl Province" = 11 worlds

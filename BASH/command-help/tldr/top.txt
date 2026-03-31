@@ -1,0 +1,26 @@
+top
+
+[0m[0mDisplay dynamic real-time information about running processes.
+More information: https://manned.org/top.
+
+ - [0m[32;23;22;24;25mStart top:
+   [33;23;22;24;25mtop[0m
+[0m
+ - [0m[32;23;22;24;25mDo not show any idle or zombie processes:
+   [33;23;22;24;25mtop [0m[-i|--idle-toggle]
+[0m
+ - [0m[32;23;22;24;25mShow only processes owned by given user:
+   [33;23;22;24;25mtop [0m[-u|--filter-only-euser][33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mSort processes by a field:
+   [33;23;22;24;25mtop [0m[-o|--sort-override][33;23;22;24;25m [0mfield_name
+[0m
+ - [0m[32;23;22;24;25mShow the individual threads of a given process:
+   [33;23;22;24;25mtop [0m[-Hp|--threads-show --pid][33;23;22;24;25m [0mprocess_id
+[0m
+ - [0m[32;23;22;24;25mShow only the processes with the given PID(s), passed as a comma-separated list. (Normally you wouldn't know PIDs off hand. This example picks the PIDs from the process name):
+   [33;23;22;24;25mtop [0m[-p|--pid][33;23;22;24;25m $(pgrep [0m[-d|--delimiter][33;23;22;24;25m ',' [0mprocess_name[33;23;22;24;25m)[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help about interactive commands:
+   [33;23;22;24;25m<?>[0m
+[0m[0m

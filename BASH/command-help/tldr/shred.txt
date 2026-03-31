@@ -1,0 +1,23 @@
+shred
+
+[0m[0mOverwrite files to securely delete data.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/shred-invocation.html.
+
+ - [0m[32;23;22;24;25mOverwrite a file:
+   [33;23;22;24;25mshred [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOverwrite a file and show progress on the screen:
+   [33;23;22;24;25mshred [0m[-v|--verbose][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOverwrite a file, leaving zeros instead of random data:
+   [33;23;22;24;25mshred [0m[-z|--zero][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOverwrite a file a specific number of times:
+   [33;23;22;24;25mshred [0m[-n|--iterations][33;23;22;24;25m [0m25[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOverwrite a file and remove it:
+   [33;23;22;24;25mshred [0m[-u|--remove][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOverwrite a file 100 times, add a final overwrite with zeros, remove the file after overwriting it and show verbose progress on the screen:
+   [33;23;22;24;25mshred [0m[-vzun|--verbose --zero --remove --iterations][33;23;22;24;25m 100 [0mpath/to/file
+[0m[0m

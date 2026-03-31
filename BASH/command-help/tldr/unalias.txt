@@ -1,0 +1,12 @@
+unalias
+
+[0m[0mRemove aliases.
+See also: alias.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-unalias.
+
+ - [0m[32;23;22;24;25mRemove an alias:
+   [33;23;22;24;25munalias [0malias_name
+[0m
+ - [0m[32;23;22;24;25mRemove all aliases:
+   [33;23;22;24;25munalias -a[0m
+[0m[0m

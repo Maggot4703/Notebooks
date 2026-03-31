@@ -1,0 +1,34 @@
+THONNY(1)                   General Commands Manual                  THONNY(1)
+
+NAME
+       thonny - Python IDE for beginners
+
+SYNOPSIS
+       thonny [FILE...]
+
+DESCRIPTION
+       Thonny is a Python IDE for learning and teaching programming.
+
+BASIC USAGE
+       On the first run you see a code editor and the Python shell.
+
+       Enter some Python code (eg.  print("Hello world") ) into the editor and
+       save the file with Ctrl+S.
+
+       Now run the code by pressing F5. You should see the output of the  pro‐
+       gram in the Python shell.
+
+       You can also enter Python code directly into the shell.
+
+USING THE DEBUGGER
+       You can see the steps Python takes to run your code.  For this you need
+       to press Ctrl+F5 to run the program in debug mode.  In  this  mode  you
+       can advance the program either with big steps (F6) or small steps (F7).
+       If you want to see how the steps affect program  variables,  then  open
+       global variables pane (View => Variables).
+
+MORE INFORMATION
+       You  can find more information, screenshots and a walk-through video at
+       https://thonny.org.
+
+                                                                     THONNY(1)

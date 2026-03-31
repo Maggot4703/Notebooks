@@ -1,0 +1,20 @@
+kvm(1)                              Debian                              kvm(1)
+
+NAME
+       kvm - kvm-enabling link for qemu-system-aarch64
+
+DESCRIPTION
+       When  executed  as  kvm,  qemu-system  is run with preference to native
+       hardware-based virtualization, instead of relying solely on  emulation.
+       Essentially  kvm  is  equivalent  to  qemu-system-aarch64  -machine ac‐
+       cel=kvm:tcg so when the host CPU support the kvm mode, native  hardware
+       virtualization is enabled, or qemu-system-aarch64 falls back to the em‐
+       ulation (TCG) mode.
+
+SEE ALSO
+       qemu-system-aarch64(1).
+
+AUTHOR
+       This manual page was written by Michael Tokarev <mjt@tls.msk.ru>.
+
+5.0                                 2020-07                             kvm(1)

@@ -1,0 +1,24 @@
+echo
+
+[0m[0mPrint given arguments.
+See also: printf.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/echo-invocation.html.
+
+ - [0m[32;23;22;24;25mPrint a text message. Note: Quotes are optional:
+   [33;23;22;24;25mecho "[0mHello World[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mPrint a message with environment variables:
+   [33;23;22;24;25mecho "[0mMy path is $PATH[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mPrint a message without the trailing newline:
+   [33;23;22;24;25mecho -n "[0mHello World[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mAppend a message to the file:
+   [33;23;22;24;25mecho "[0mHello World[33;23;22;24;25m" >> [0mfile.txt
+[0m
+ - [0m[32;23;22;24;25mEnable interpretation of backslash escapes (special characters):
+   [33;23;22;24;25mecho -e "[0mColumn 1\tColumn 2[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the exit status of the last executed command (Note: In Windows Command Prompt and PowerShell the equivalent commands are echo %errorlevel% and $lastexitcode respectively):
+   [33;23;22;24;25mecho $?[0m
+[0m[0m

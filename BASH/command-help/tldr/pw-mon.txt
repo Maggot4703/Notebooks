@@ -1,0 +1,17 @@
+pw-mon
+
+[0m[0mMonitor objects on the PipeWire instance.
+More information: https://docs.pipewire.org/page_man_pw-mon_1.html.
+
+ - [0m[32;23;22;24;25mMonitor the default PipeWire instance:
+   [33;23;22;24;25mpw-mon[0m
+[0m
+ - [0m[32;23;22;24;25mMonitor a specific remote instance:
+   [33;23;22;24;25mpw-mon [0m[-r|--remote][33;23;22;24;25m [0mremote_name
+[0m
+ - [0m[32;23;22;24;25mMonitor the default instance specifying a color configuration:
+   [33;23;22;24;25mpw-mon [0m[-N|--color][33;23;22;24;25m [0mnever|always|auto
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpw-mon [0m[-h|--help]
+[0m[0m

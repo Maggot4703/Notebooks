@@ -1,0 +1,20 @@
+lastb
+
+[0m[0mList last logged in users.
+More information: https://manned.org/lastb.
+
+ - [0m[32;23;22;24;25mList last logged in users:
+   [33;23;22;24;25msudo lastb[0m
+[0m
+ - [0m[32;23;22;24;25mList all last logged in users since a given time:
+   [33;23;22;24;25msudo lastb [0m[-s|--since][33;23;22;24;25m [0mYYYY-MM-DD
+[0m
+ - [0m[32;23;22;24;25mList all last logged in users until a given time:
+   [33;23;22;24;25msudo lastb [0m[-t|--until][33;23;22;24;25m [0mYYYY-MM-DD
+[0m
+ - [0m[32;23;22;24;25mList all logged in users at a specific time:
+   [33;23;22;24;25msudo lastb [0m[-p|--present][33;23;22;24;25m [0mhh:mm
+[0m
+ - [0m[32;23;22;24;25mList all last logged in users and translate the IP into a hostname:
+   [33;23;22;24;25msudo lastb [0m[-d|--dns]
+[0m[0m

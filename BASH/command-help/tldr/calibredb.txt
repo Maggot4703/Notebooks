@@ -1,0 +1,24 @@
+calibredb
+
+[0m[0mManipulate an e-book database.
+Part of the Calibre e-book library.
+More information: https://manual.calibre-ebook.com/generated/en/calibredb.html.
+
+ - [0m[32;23;22;24;25mList e-books in the library with additional information:
+   [33;23;22;24;25mcalibredb list[0m
+[0m
+ - [0m[32;23;22;24;25mSearch for e-books displaying additional information:
+   [33;23;22;24;25mcalibredb list --search [0msearch_term
+[0m
+ - [0m[32;23;22;24;25mSearch for just ids of e-books:
+   [33;23;22;24;25mcalibredb search [0msearch_term
+[0m
+ - [0m[32;23;22;24;25mAdd one or more e-books to the library:
+   [33;23;22;24;25mcalibredb add [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mRecursively add all e-books under a directory to the library:
+   [33;23;22;24;25mcalibredb add [0m[-r|--recurse][33;23;22;24;25m [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mRemove one or more e-books from the library. You need the e-book IDs (see above):
+   [33;23;22;24;25mcalibredb remove [0mid1 id2 ...
+[0m[0m

@@ -1,0 +1,18 @@
+lvscan
+
+[0m[0mScan (list) all logical volumes in the system.
+Part of the LVM (Logical Volume Manager) suite.
+More information: https://manned.org/lvscan.
+
+ - [0m[32;23;22;24;25mList all logical volumes:
+   [33;23;22;24;25mlvscan[0m
+[0m
+ - [0m[32;23;22;24;25mList only active logical volumes:
+   [33;23;22;24;25mlvscan --active[0m
+[0m
+ - [0m[32;23;22;24;25mList only inactive logical volumes:
+   [33;23;22;24;25mlvscan --inactive[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay logical volumes in JSON format:
+   [33;23;22;24;25mlvscan --reportformat json[0m
+[0m[0m

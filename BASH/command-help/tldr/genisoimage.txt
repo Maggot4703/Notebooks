@@ -1,0 +1,11 @@
+genisoimage
+
+[0m[0mPre-mastering program to generate ISO9660/Joliet/HFS hybrid filesystems.
+More information: https://manned.org/genisoimage.1.
+
+ - [0m[32;23;22;24;25mCreate an ISO image from the given source directory:
+   [33;23;22;24;25mgenisoimage -o [0mmyimage.iso[33;23;22;24;25m [0mpath/to/source_directory
+[0m
+ - [0m[32;23;22;24;25mCreate an ISO image with files larger than 2GiB by reporting a smaller apparent size for ISO9660 filesystems:
+   [33;23;22;24;25mgenisoimage -o -allow-limited-size [0mmyimage.iso[33;23;22;24;25m [0mpath/to/source_directory
+[0m[0m

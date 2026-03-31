@@ -1,0 +1,29 @@
+less
+
+[0m[0mOpen a file for interactive reading, allowing scrolling and search.
+More information: https://greenwoodsoftware.com/less/.
+
+ - [0m[32;23;22;24;25mOpen a file:
+   [33;23;22;24;25mless [0msource_file
+[0m
+ - [0m[32;23;22;24;25mPage down/up:
+   <Space>|<b>
+[0m
+ - [0m[32;23;22;24;25mGo to end/start of file:
+   <G>|<g>
+[0m
+ - [0m[32;23;22;24;25mForward search for a string (press <n>/<N> to go to next/previous match):
+   [33;23;22;24;25m</>[0msomething
+[0m
+ - [0m[32;23;22;24;25mBackward search for a string (press <n>/<N> to go to next/previous match):
+   [33;23;22;24;25m<?>[0msomething
+[0m
+ - [0m[32;23;22;24;25mFollow the output of the currently opened file:
+   [33;23;22;24;25m<F>[0m
+[0m
+ - [0m[32;23;22;24;25mOpen the current file in an editor:
+   [33;23;22;24;25m<v>[0m
+[0m
+ - [0m[32;23;22;24;25mExit:
+   [33;23;22;24;25m<q>[0m
+[0m[0m

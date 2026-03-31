@@ -1,0 +1,17 @@
+perl
+
+[0m[0mThe Perl 5 language interpreter.
+More information: https://www.perl.org.
+
+ - [0m[32;23;22;24;25mPrint lines from stdin [m/] matching regex1 and case insensitive [/i] regex2:
+   [33;23;22;24;25mperl -n -e 'print if m/[0mregex1[33;23;22;24;25m/ and m/[0mregex2[33;23;22;24;25m/i'[0m
+[0m
+ - [0m[32;23;22;24;25mSay [-E] first match group, using a regex, ignoring space in regex [/x]:
+   [33;23;22;24;25mperl -n -E 'say $1 if m/[0mbefore[33;23;22;24;25m ( [0mgroup_regex[33;23;22;24;25m ) [0mafter[33;23;22;24;25m/x'[0m
+[0m
+ - [0m[32;23;22;24;25m[-i]n-place, with backup, [s/] substitute all occurrence [/g] of regex with replacement:
+   [33;23;22;24;25mperl -i'.bak' -p -e 's/[0mregex[33;23;22;24;25m/[0mreplacement[33;23;22;24;25m/g' [0mpath/to/files
+[0m
+ - [0m[32;23;22;24;25mUse perl's inline documentation, some pages also available via manual pages on Linux:
+   [33;23;22;24;25mperldoc perlrun ; perldoc module ; perldoc -f splice; perldoc -q perlfaq1[0m
+[0m[0m

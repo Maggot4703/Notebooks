@@ -1,0 +1,20 @@
+pylint
+
+[0m[0mA Python code linter.
+More information: https://pylint.pycqa.org/en/latest/.
+
+ - [0m[32;23;22;24;25mShow lint errors in a file:
+   [33;23;22;24;25mpylint [0mpath/to/file.py
+[0m
+ - [0m[32;23;22;24;25mLint a package or module (must be importable; no .py suffix):
+   [33;23;22;24;25mpylint [0mpackage_or_module
+[0m
+ - [0m[32;23;22;24;25mLint a package from a directory path (must contain an __init__.py file):
+   [33;23;22;24;25mpylint [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mLint a file and use a configuration file (usually named pylintrc):
+   [33;23;22;24;25mpylint --rcfile [0mpath/to/pylintrc[33;23;22;24;25m [0mpath/to/file.py
+[0m
+ - [0m[32;23;22;24;25mLint a file and disable a specific error code:
+   [33;23;22;24;25mpylint --disable [0mC,W,no-error,design[33;23;22;24;25m [0mpath/to/file
+[0m[0m

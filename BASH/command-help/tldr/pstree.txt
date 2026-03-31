@@ -1,0 +1,23 @@
+pstree
+
+[0m[0mA convenient tool to show running processes as a tree.
+More information: https://manned.org/pstree.
+
+ - [0m[32;23;22;24;25mDisplay a tree of all processes (rooted at init):
+   [33;23;22;24;25mpstree[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay a tree of processes with PIDs:
+   [33;23;22;24;25mpstree [0m[-p|--show-pids]
+[0m
+ - [0m[32;23;22;24;25mDisplay all process trees rooted at processes owned by specified user:
+   [33;23;22;24;25mpstree [0muser
+[0m
+ - [0m[32;23;22;24;25mDisplay command line arguments:
+   [33;23;22;24;25mpstree [0m[-a|--arguments]
+[0m
+ - [0m[32;23;22;24;25mDisplay children of a specified process:
+   [33;23;22;24;25mpstree [0mpid
+[0m
+ - [0m[32;23;22;24;25mDisplay parents of a specified process:
+   [33;23;22;24;25mpstree [0m[-s|--show-parents][33;23;22;24;25m [0mpid
+[0m[0m

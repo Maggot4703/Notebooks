@@ -1,0 +1,858 @@
+CALIBREDB(1)                        calibre                       CALIBREDB(1)
+
+NAME
+       calibredb - calibredb
+
+          calibredb command [options] [arguments]
+
+       calibredb is the command line interface to the calibre database. It has
+       several sub-commands, documented below.
+
+       calibredb can be used to manipulate either a calibre database specified
+       by path or a calibre Content server running either on the local machine
+       or over the internet. You can start a calibre Content server using  ei‐
+       ther  the  calibre-server  program or in the main calibre program click
+       Connect/share  →   Start  Content  server.  Since  calibredb  can  make
+       changes to your calibre libraries, you must setup authentication on the
+       server first. There are two ways to do that:
+
+          • If you plan to connect only to a server running on the  same  com‐
+            puter,  you  can simply use the --enable-local-write option of the
+            Content server, to allow any program, including calibredb, running
+            on  the  local computer to make changes to your calibre data. When
+            running the server from the main calibre program, this  option  is
+            in Preferences → Sharing over the net → Advanced.
+
+          • If  you  want  to enable access over the internet, then you should
+            setup user accounts on the  server  and  use  the  --username  and
+            --password  options  to calibredb to give it access. You can setup
+            user authentication for calibre-server by using the  --enable-auth
+            option  and  using --manage-users to create the user accounts.  If
+            you are running the server from  the  main  calibre  program,  use
+            Preferences → Sharing over the net → Require username/password.
+
+       To  connect  to a running Content server, pass the URL of the server to
+       the --with-library option, see the documentation of that option for de‐
+       tails and examples.
+
+       • Global Options
+
+       • list
+
+       • add
+
+         • Adding From Folders
+
+       • remove
+
+       • add_format
+
+       • remove_format
+
+       • show_metadata
+
+       • set_metadata
+
+       • export
+
+       • catalog
+
+         • Epub Options
+
+       • saved_searches
+
+       • add_custom_column
+
+       • custom_columns
+
+       • remove_custom_column
+
+       • set_custom
+
+       • restore_database
+
+       • check_library
+
+       • list_categories
+
+       • backup_metadata
+
+       • clone
+
+       • embed_metadata
+
+       • search
+
+       • fts_index
+
+       • fts_search
+
+GLOBAL OPTIONS
+       --help, -h
+              show this help message and exit
+
+       --library-path, --with-library
+              Path  to  the calibre library. Default is to use the path stored
+              in the settings. You can  also  connect  to  a  calibre  Content
+              server  to  perform  actions on remote libraries. To do so use a
+              URL of the form: http://hostname:port/#library_id  for  example,
+              http://localhost:8080/#mylibrary.  library_id  is the library id
+              of the library you want to connect to on the Content server. You
+              can  use  the special library_id value of - to get a list of li‐
+              brary ids available on the server. For details on how  to  setup
+              access        via        a       Content       server,       see
+              https://manual.calibre-ebook.com/generated/en/calibredb.html.
+
+       --password
+              Password for connecting to a calibre Content server. To read the
+              password from standard input, use the special value: <stdin>. To
+              read the password from a file, use: <f:/path/to/file> (i.e.  <f:
+              followed by the full path to the file and a trailing >). The an‐
+              gle brackets in the above are required, remember to escape  them
+              or use quotes for your shell.
+
+       --timeout
+              The  timeout,  in  seconds, when connecting to a calibre library
+              over the network. The default is two minutes.
+
+       --username
+              Username for connecting to a calibre Content server
+
+       --version
+              show program's version number and exit
+
+LIST
+          calibredb list [options]
+
+       List the books available in the calibre database.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --ascending
+              Sort results in ascending order
+
+       --fields, -f
+              The fields to display when listing books in the database. Should
+              be  a  comma  separated  list  of  fields. Available fields: au‐
+              thor_sort, authors, comments, cover, formats, identifiers, isbn,
+              languages,  last_modified,  pubdate,  publisher, rating, series,
+              series_index, size, tags, template, timestamp, title,  uuid  De‐
+              fault: title,authors. The special field "all" can be used to se‐
+              lect all fields. In addition to the builtin fields above, custom
+              fields  are  also  available  as *field_name, for example, for a
+              custom field #rating, use the name: *rating
+
+       --for-machine
+              Generate output in JSON format, which is more suitable  for  ma‐
+              chine parsing. Causes the line width and separator options to be
+              ignored.
+
+       --limit
+              The maximum number of results to display. Default: all
+
+       --line-width, -w
+              The maximum width of a single line in the  output.  Defaults  to
+              detecting screen size.
+
+       --prefix
+              The  prefix  for all file paths. Default is the absolute path to
+              the library folder.
+
+       --search, -s
+              Filter the results by the search query. For the  format  of  the
+              search query, please see the search related documentation in the
+              User Manual. Default is to do no filtering.
+
+       --separator
+              The string used to separate fields. Default is a space.
+
+       --sort-by
+              The field by which to sort the results. You can specify multiple
+              fields  by  separating  them  with commas. Available fields: au‐
+              thor_sort, authors, comments, cover, formats, identifiers, isbn,
+              languages,  last_modified,  pubdate,  publisher, rating, series,
+              series_index, size, tags, template, timestamp, title,  uuid  De‐
+              fault: id
+
+       --template
+              The template to run if "template" is in the field list. Default:
+              None
+
+       --template_file, -t
+              Path to a file containing the template to run if  "template"  is
+              in the field list. Default: None
+
+       --template_heading
+              Heading  for the template column. Default: template. This option
+              is ignored if the option --for-machine is set
+
+ADD
+          calibredb add [options] file1 file2 file3 ...
+
+       Add the specified files as books to the database. You can also  specify
+       folders, see the folder related options below.
+
+       Whenever  you pass arguments to calibredb that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+       --authors, -a
+              Set the authors of the added book(s)
+
+       --automerge, -m
+              If  books  with  similar titles and authors are found, merge the
+              incoming  formats  (files)  automatically  into  existing   book
+              records.  A  value  of "ignore" means duplicate formats are dis‐
+              carded. A value of "overwrite" means duplicate  formats  in  the
+              library  are  overwritten with the newly added files. A value of
+              "new_record" means duplicate formats are placed into a new  book
+              record.
+
+       --cover, -c
+              Path to the cover to use for the added book
+
+       --duplicates, -d
+              Add  books to database even if they already exist. Comparison is
+              done based on book titles and authors. Note that the --automerge
+              option takes precedence.
+
+       --empty, -e
+              Add an empty book (a book with no formats)
+
+       --identifier, -I
+              Set the identifiers for this book, e.g. -I asin:XXX -I isbn:YYY
+
+       --isbn, -i
+              Set the ISBN of the added book(s)
+
+       --languages, -l
+              A comma separated list of languages (best to use ISO639 language
+              codes, though some language names may also be recognized)
+
+       --series, -s
+              Set the series of the added book(s)
+
+       --series-index, -S
+              Set the series number of the added book(s)
+
+       --tags, -T
+              Set the tags of the added book(s)
+
+       --title, -t
+              Set the title of the added book(s)
+
+   Adding From Folders
+       Options to control the adding of books from folders.  By  default  only
+       files that have extensions of known e-book file types are added.
+
+       --add  A  filename  (glob) pattern, files matching this pattern will be
+              added when scanning folders for files, even if they are not of a
+              known e-book file type. Can be specified multiple times for mul‐
+              tiple patterns.
+
+       --ignore
+              A filename (glob) pattern, files matching this pattern  will  be
+              ignored when scanning folders for files. Can be specified multi‐
+              ple times for multiple patterns. For example: *.pdf will  ignore
+              all PDF files
+
+       --one-book-per-directory, -1
+              Assume  that each folder has only a single logical book and that
+              all files in it are different e-book formats of that book
+
+       --recurse, -r
+              Process folders recursively
+
+REMOVE
+          calibredb remove ids
+
+       Remove the books identified by ids from the database. ids should  be  a
+       comma separated list of id numbers (you can get id numbers by using the
+       search command). For example, 23,34,57-85 (when specifying a range, the
+       last number in the range is not included).
+
+       Whenever  you pass arguments to calibredb that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+       --permanent
+              Do not use the Recycle Bin
+
+ADD_FORMAT
+          calibredb add_format [options] id ebook_file
+
+       Add  the  e-book in ebook_file to the available formats for the logical
+       book identified by id. You can get id by using the search  command.  If
+       the  format  already  exists, it is replaced, unless the do not replace
+       option is specified.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --dont-replace
+              Do not replace the format if it already exists
+
+REMOVE_FORMAT
+          calibredb remove_format [options] id fmt
+
+       Remove the format fmt from the logical book identified by id.  You  can
+       get id by using the search command. fmt should be a file extension like
+       LRF or TXT or EPUB. If the logical book does not have fmt available, do
+       nothing.
+
+       Whenever  you pass arguments to calibredb that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+SHOW_METADATA
+          calibredb show_metadata [options] id
+
+       Show  the  metadata stored in the calibre database for the book identi‐
+       fied by id.  id is an id number from the search command.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --as-opf
+              Print metadata in OPF form (XML)
+
+SET_METADATA
+          calibredb set_metadata [options] book_id [/path/to/metadata.opf]
+
+       Set the metadata stored in the calibre database for the book identified
+       by  book_id from the OPF file metadata.opf. book_id is a book id number
+       from the search command. You can get a quick feel for the OPF format by
+       using  the  --as-opf  switch to the show_metadata command. You can also
+       set the metadata of individual fields with the --field option.  If  you
+       use the --field option, there is no need to specify an OPF file.
+
+       Whenever  you pass arguments to calibredb that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+       --field, -f
+              The  field  to  set.  Format  is  field_name:value, for example:
+              --field tags:tag1,tag2. Use --list-fields to get a list  of  all
+              field  names.  You can specify this option multiple times to set
+              multiple fields. Note: For languages you  must  use  the  ISO639
+              language  codes  (e.g. en for English, fr for French and so on).
+              For    identifiers,    the    syntax    is    --field    identi‐
+              fiers:isbn:XXXX,doi:YYYYY.  For boolean (yes/no) fields use true
+              and false or yes and no.
+
+       --list-fields, -l
+              List the metadata field names that can be used with the  --field
+              option
+
+EXPORT
+          calibredb export [options] ids
+
+       Export  the  books  specified  by  ids  (a comma separated list) to the
+       filesystem.  The export operation saves all formats of  the  book,  its
+       cover  and  metadata  (in an opf file). You can get id numbers from the
+       search command.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --all  Export all books in database, ignoring the list of ids.
+
+       --dont-asciiize
+              Have calibre convert all non  English  characters  into  English
+              equivalents  for  the  file names. This is useful if saving to a
+              legacy filesystem without full support  for  Unicode  filenames.
+              Specifying this switch will turn this behavior off.
+
+       --dont-save-cover
+              Normally,  calibre  will save the cover in a separate file along
+              with the actual e-book files. Specifying this switch  will  turn
+              this behavior off.
+
+       --dont-update-metadata
+              Normally,  calibre  will  update the metadata in the saved files
+              from what is in  the  calibre  library.  Makes  saving  to  disk
+              slower. Specifying this switch will turn this behavior off.
+
+       --dont-write-opf
+              Normally,  calibre  will  write the metadata into a separate OPF
+              file along with the actual e-book files. Specifying this  switch
+              will turn this behavior off.
+
+       --formats
+              Comma  separated  list  of formats to save for each book. By de‐
+              fault all available formats are saved.
+
+       --progress
+              Report progress
+
+       --replace-whitespace
+              Replace whitespace with underscores.
+
+       --single-dir
+              Export all books into a single folder
+
+       --template
+              The template to control the filename and folder structure of the
+              saved  files.  Default  is "{author_sort}/{title}/{title} - {au‐
+              thors}" which will save books into a per-author  subfolder  with
+              filenames  containing  title and author. Available controls are:
+              {author_sort, authors, id, isbn, languages, last_modified,  pub‐
+              date,  publisher, rating, series, series_index, tags, timestamp,
+              title}
+
+       --timefmt
+              The format in which to display dates. %d - day, %b - month, %m -
+              month number, %Y - year. Default is: %b, %Y
+
+       --to-dir
+              Export books to the specified folder. Default is .
+
+       --to-lowercase
+              Convert paths to lowercase.
+
+CATALOG
+          calibredb catalog /path/to/destination.(csv|epub|mobi|xml...) [options]
+
+       Export  a catalog in format specified by path/to/destination extension.
+       Options control how entries are displayed in the generated catalog out‐
+       put.  Note that different catalog formats support different sets of op‐
+       tions. To see the different options, specify the  name  of  the  output
+       file and then the --help option.
+
+       Whenever  you pass arguments to calibredb that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+       --ids, -i
+              Comma-separated  list  of  database IDs to catalog. If declared,
+              --search is ignored. Default: all
+
+       --search, -s
+              Filter the results by the search query. For the  format  of  the
+              search query, please see the search-related documentation in the
+              User Manual. Default: no filtering
+
+       --verbose, -v
+              Show detailed output information. Useful for debugging
+
+   Epub Options
+       --catalog-title
+              Title of generated catalog used as title in  metadata.  Default:
+              'My Books' Applies to: AZW3, EPUB, MOBI output formats
+
+       --cross-reference-authors
+              Create cross-references in Authors section for books with multi‐
+              ple authors. Default: 'False' Applies to: AZW3, EPUB, MOBI  out‐
+              put formats
+
+       --debug-pipeline
+              Save the output from different stages of the conversion pipeline
+              to the specified folder. Useful if you are unsure at which stage
+              of  the  conversion  process a bug is occurring. Default: 'None'
+              Applies to: AZW3, EPUB, MOBI output formats
+
+       --exclude-genre
+              Regex describing tags to exclude as genres. Default:  '[.+]|^+$'
+              excludes  bracketed  tags,  e.g. '[Project Gutenberg]', and '+',
+              the default tag for read books. Applies  to:  AZW3,  EPUB,  MOBI
+              output formats
+
+       --exclusion-rules
+              Specifies  the  rules  used  to exclude books from the generated
+              catalog. The model for  an  exclusion  rule  is  either  ('<rule
+              name>','Tags','<comma-separated   list  of  tags>')  or  ('<rule
+              name>','<custom column>','<pattern>'). For example:  (('Archived
+              books','#status','Archived'),)  will exclude a book with a value
+              of 'Archived' in the custom column 'status'. When multiple rules
+              are  defined,  all  rules  will  be applied. Default:  "(('Cata‐
+              logs','Tags','Catalog'),)" Applies to: AZW3, EPUB,  MOBI  output
+              formats
+
+       --generate-authors
+              Include  'Authors'  section in catalog. Default: 'False' Applies
+              to: AZW3, EPUB, MOBI output formats
+
+       --generate-descriptions
+              Include 'Descriptions' section in catalog. Default: 'False'  Ap‐
+              plies to: AZW3, EPUB, MOBI output formats
+
+       --generate-genres
+              Include  'Genres'  section  in catalog. Default: 'False' Applies
+              to: AZW3, EPUB, MOBI output formats
+
+       --generate-recently-added
+              Include 'Recently Added' section in  catalog.  Default:  'False'
+              Applies to: AZW3, EPUB, MOBI output formats
+
+       --generate-series
+              Include  'Series'  section  in catalog. Default: 'False' Applies
+              to: AZW3, EPUB, MOBI output formats
+
+       --generate-titles
+              Include 'Titles' section in catalog.  Default:  'False'  Applies
+              to: AZW3, EPUB, MOBI output formats
+
+       --genre-source-field
+              Source  field  for 'Genres' section. Default: 'Tags' Applies to:
+              AZW3, EPUB, MOBI output formats
+
+       --header-note-source-field
+              Custom field containing  note  text  to  insert  in  Description
+              header. Default: '' Applies to: AZW3, EPUB, MOBI output formats
+
+       --merge-comments-rule
+              #<custom field>:[before|after]:[True|False] specifying:  <custom
+              field> Custom field containing  notes  to  merge  with  comments
+              [before|after]  Placement  of  notes  with  respect  to comments
+              [True|False] - A horizontal rule is inserted between  notes  and
+              comments  Default: '::' Applies to: AZW3, EPUB, MOBI output for‐
+              mats
+
+       --output-profile
+              Specifies the output profile. In some cases, an  output  profile
+              is required to optimize the catalog for the device. For example,
+              'kindle' or 'kindle_dx' creates a structured Table  of  Contents
+              with  Sections  and  Articles. Default: 'None' Applies to: AZW3,
+              EPUB, MOBI output formats
+
+       --prefix-rules
+              Specifies the rules used to  include  prefixes  indicating  read
+              books,  wishlist  items  and  other user-specified prefixes. The
+              model   for   a   prefix   rule   is   ('<rule   name>','<source
+              field>','<pattern>','<prefix>').  When  multiple  rules  are de‐
+              fined, the first matching rule will be used.  Default:  "(('Read
+              books','tags','+','✓'),('Wishlist item','tags','Wishlist','×'))"
+              Applies to: AZW3, EPUB, MOBI output formats
+
+       --preset
+              Use a named preset created with the GUI catalog builder. A  pre‐
+              set  specifies  all  settings  for  building a catalog. Default:
+              'None' Applies to: AZW3, EPUB, MOBI output formats
+
+       --thumb-width
+              Size hint (in inches) for book covers in catalog. Range:  1.0  -
+              2.0 Default: '1.0' Applies to: AZW3, EPUB, MOBI output formats
+
+       --use-existing-cover
+              Replace  existing  cover  when  generating the catalog. Default:
+              'False' Applies to: AZW3, EPUB, MOBI output formats
+
+SAVED_SEARCHES
+          calibredb saved_searches [options] (list|add|remove)
+
+       Manage the saved searches stored in this database.  If you try to add a
+       query with a name that already exists, it will be replaced.
+
+       Syntax for adding:
+
+       calibredb saved_searches add search_name search_expression
+
+       Syntax for removing:
+
+       calibredb saved_searches remove search_name
+
+       Whenever  you pass arguments to calibredb that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+ADD_CUSTOM_COLUMN
+          calibredb add_custom_column [options] label name datatype
+
+       Create  a custom column. label is the machine friendly name of the col‐
+       umn. Should not contain spaces or colons. name is  the  human  friendly
+       name  of  the  column.   datatype is one of: bool, comments, composite,
+       datetime, enumeration, float, int, rating, series, text
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --display
+              A dictionary of options to customize how the data in this column
+              will  be  interpreted.  This  is a JSON  string. For enumeration
+              columns, use --display"{\ "enum_values\ ":[\ "val1\ ", \  "val2\
+              "]}"  There  are many options that can go into the display vari‐
+              able.The options by column type are:  composite:  composite_tem‐
+              plate,  composite_sort, make_category,contains_html, use_decora‐
+              tions datetime: date_format enumeration: enum_values,  enum_col‐
+              ors,  use_decorations  int, float: number_format text: is_names,
+              use_decorations  The best way to find legal combinations  is  to
+              create  a  custom column of the appropriate type in the GUI then
+              look at the backup OPF for a book (ensure that  a  new  OPF  has
+              been  created since the column was added). You will see the JSON
+              for the "display" for the new column in the OPF.
+
+       --is-multiple
+              This column stores tag like data (i.e. multiple comma  separated
+              values). Only applies if datatype is text.
+
+CUSTOM_COLUMNS
+          calibredb custom_columns [options]
+
+       List available custom columns. Shows column labels and ids.
+
+       Whenever  you pass arguments to calibredb that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+       --details, -d
+              Show details for each column.
+
+REMOVE_CUSTOM_COLUMN
+          calibredb remove_custom_column [options] label
+
+       Remove  the  custom  column  identified by label. You can see available
+       columns with the custom_columns command.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --force, -f
+              Do not ask for confirmation
+
+SET_CUSTOM
+          calibredb set_custom [options] column id value
+
+       Set the value of a custom column for the book identified  by  id.   You
+       can  get a list of ids using the search command.  You can get a list of
+       custom column names using the custom_columns command.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --append, -a
+              If the column stores multiple values, append the specified  val‐
+              ues to the existing ones, instead of replacing them.
+
+RESTORE_DATABASE
+          calibredb restore_database [options]
+
+       Restore  this  database  from  the metadata stored in OPF files in each
+       folder of the calibre library. This is useful if your metadata.db  file
+       has been corrupted.
+
+       WARNING:  This  command  completely regenerates your database. You will
+       lose all saved searches, user categories, plugboards,  stored  per-book
+       conversion settings, and custom recipes. Restored metadata will only be
+       as accurate as what is found in the OPF files.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --really-do-it, -r
+              Really do the recovery. The command will not run unless this op‐
+              tion is specified.
+
+CHECK_LIBRARY
+          calibredb check_library [options]
+
+       Perform  some  checks on the filesystem representing a library. Reports
+       are invalid_titles, extra_titles, invalid_authors, extra_authors, miss‐
+       ing_formats,  extra_formats, extra_files, missing_covers, extra_covers,
+       failed_folders
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --csv, -c
+              Output in CSV
+
+       --ignore_extensions, -e
+              Comma-separated list of extensions to ignore. Default: all
+
+       --ignore_names, -n
+              Comma-separated list of names to ignore. Default: all
+
+       --report, -r
+              Comma-separated list of reports. Default: all
+
+       --vacuum-fts-db
+              Vacuum the full text search database. This can be very slow  and
+              memory intensive, depending on the size of the database.
+
+LIST_CATEGORIES
+          calibredb list_categories [options]
+
+       Produce  a  report of the category information in the database. The in‐
+       formation is the equivalent of what is shown in the Tag browser.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --categories, -r
+              Comma-separated list of category lookup names. Default: all
+
+       --csv, -c
+              Output in CSV
+
+       --dialect
+              The type of CSV file to produce. Choices: excel, excel-tab, unix
+
+       --item_count, -i
+              Output only the number of items in a  category  instead  of  the
+              counts per item within the category
+
+       --width, -w
+              The  maximum  width  of a single line in the output. Defaults to
+              detecting screen size.
+
+BACKUP_METADATA
+          calibredb backup_metadata [options]
+
+       Backup the metadata stored in the database into individual OPF files in
+       each books folder. This normally happens automatically, but you can run
+       this command to force re-generation of the OPF files,  with  the  --all
+       option.
+
+       Note  that  there  is normally no need to do this, as the OPF files are
+       backed up automatically, every time metadata is changed.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --all  Normally, this command only operates on books that have  out  of
+              date OPF files. This option makes it operate on all books.
+
+CLONE
+          calibredb clone path/to/new/library
+
+       Create  a  clone  of the current library. This creates a new, empty li‐
+       brary that has all the same custom columns, Virtual libraries and other
+       settings as the current library.
+
+       The  cloned library will contain no books. If you want to create a full
+       duplicate, including all books, then simply use your  filesystem  tools
+       to copy the library folder.
+
+       Whenever  you pass arguments to calibredb that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+EMBED_METADATA
+          calibredb embed_metadata [options] book_id
+
+       Update  the metadata in the actual book files stored in the calibre li‐
+       brary from the metadata in the calibre database.  Normally, metadata is
+       updated  only when exporting files from calibre, this command is useful
+       if you want the files to be updated in place. Note that different  file
+       formats  support different amounts of metadata. You can use the special
+       value 'all' for book_id to update metadata in all books. You  can  also
+       specify  many  book  ids separated by spaces and id ranges separated by
+       hyphens. For example: calibredb embed_metadata 1 2 10-15 23
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --only-formats, -f
+              Only update metadata in files of the specified  format.  Specify
+              it  multiple times for multiple formats. By default, all formats
+              are updated.
+
+SEARCH
+          calibredb search [options] search expression
+
+       Search the library for the specified search  term,  returning  a  comma
+       separated  list  of book ids matching the search expression. The output
+       format is useful to feed into other commands that accept a list of  ids
+       as input.
+
+       The  search  expression  can be anything from calibre's powerful search
+       query language, for example: calibredb search  author:asimov  'title:"i
+       robot"'
+
+       Whenever  you pass arguments to calibredb that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+       --limit, -l
+              The maximum number of results to return. Default is all results.
+
+FTS_INDEX
+          calibredb fts_index [options] enable/disable/status/reindex
+
+       Control the Full text search indexing process.
+
+       enable Turns on FTS indexing for this library
+
+       disable
+              Turns off FTS indexing for this library
+
+       status Shows the current indexing status
+
+       reindex
+              Can  be  used  to re-index either particular books or the entire
+              library. To re-index particular books specify the  book  ids  as
+              additional  arguments  after the reindex command. If no book ids
+              are specified the entire library is re-indexed.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --indexing-speed
+              The speed of indexing. Use fast for fast indexing using all your
+              computers  resources and slow for less resource intensive index‐
+              ing. Note that the speed is reset to slow  after  every  invoca‐
+              tion.
+
+       --wait-for-completion
+              Wait till all books are indexed, showing indexing progress peri‐
+              odically
+
+FTS_SEARCH
+          calibredb fts_search [options] search expression
+
+       Do a full text search on the entire library or a subset of it.
+
+       Whenever you pass arguments to calibredb that have spaces in them,  en‐
+       close  the  arguments in quotation marks. For example: "/some path/with
+       spaces"
+
+       --do-not-match-on-related-words
+              Only match on exact words not related words. So correction  will
+              not match correcting.
+
+       --include-snippets
+              Include  snippets  of the text surrounding each match. Note that
+              this makes searching much slower.
+
+       --indexing-threshold
+              How much of the library must be indexed before searching is  al‐
+              lowed, as a percentage. Defaults to 90
+
+       --match-end-marker
+              The  marker  used to indicate the end of a matched word inside a
+              snippet
+
+       --match-start-marker
+              The marker used to indicate the start of a matched word inside a
+              snippet
+
+       --output-format
+              The  format  to  output the search results in. Either "text" for
+              plain text or "json" for JSON output.
+
+       --restrict-to
+              Restrict the searched books, either using a search expression or
+              ids. For example: ids:1,2,3 to restrict by ids or search:tag:foo
+              to restrict to books having the tag foo.
+
+AUTHOR
+       Kovid Goyal
+
+COPYRIGHT
+       Kovid Goyal
+
+6.13.0                         February 17, 2023                  CALIBREDB(1)

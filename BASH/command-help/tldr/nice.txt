@@ -1,0 +1,12 @@
+nice
+
+[0m[0mExecute a program with a custom scheduling priority (niceness).
+Niceness values range from -20 (the highest priority) to 19 (the lowest).
+More information: https://www.gnu.org/software/coreutils/manual/html_node/nice-invocation.html.
+
+ - [0m[32;23;22;24;25mLaunch a program with altered priority:
+   [33;23;22;24;25mnice -[0mniceness_value[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mDefine the priority with an explicit option:
+   [33;23;22;24;25mnice [0m[-n|--adjustment][33;23;22;24;25m [0mniceness_value[33;23;22;24;25m [0mcommand
+[0m[0m

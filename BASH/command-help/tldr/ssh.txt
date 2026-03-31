@@ -1,0 +1,30 @@
+ssh
+
+[0m[0mSecure Shell is a protocol used to securely log onto remote systems.
+It can be used for logging or executing commands on a remote server.
+More information: https://man.openbsd.org/ssh.
+
+ - [0m[32;23;22;24;25mConnect to a remote server:
+   [33;23;22;24;25mssh [0musername[33;23;22;24;25m@[0mremote_host
+[0m
+ - [0m[32;23;22;24;25mConnect to a remote server with a specific identity (private key):
+   [33;23;22;24;25mssh -i [0mpath/to/key_file[33;23;22;24;25m [0musername[33;23;22;24;25m@[0mremote_host
+[0m
+ - [0m[32;23;22;24;25mConnect to a remote server with IP 10.0.0.1 and using a specific [p]ort (Note: 10.0.0.1 can be shortened to 10.1):
+   [33;23;22;24;25mssh [0musername[33;23;22;24;25m@10.0.0.1 -p [0m2222
+[0m
+ - [0m[32;23;22;24;25mRun a command on a remote server with a [t]ty allocation allowing interaction with the remote command:
+   [33;23;22;24;25mssh [0musername[33;23;22;24;25m@[0mremote_host[33;23;22;24;25m -t [0mcommand[33;23;22;24;25m [0mcommand_arguments
+[0m
+ - [0m[32;23;22;24;25mSSH tunneling: [D]ynamic port forwarding (SOCKS proxy on localhost:1080):
+   [33;23;22;24;25mssh -D [0m1080[33;23;22;24;25m [0musername[33;23;22;24;25m@[0mremote_host
+[0m
+ - [0m[32;23;22;24;25mSSH tunneling: Forward a specific port (localhost:9999 to example.org:80) along with disabling pseudo-[T]ty allocation and executio[N] of remote commands:
+   [33;23;22;24;25mssh -L [0m9999[33;23;22;24;25m:[0mexample.org[33;23;22;24;25m:[0m80[33;23;22;24;25m -N -T [0musername[33;23;22;24;25m@[0mremote_host
+[0m
+ - [0m[32;23;22;24;25mSSH [J]umping: Connect through a jumphost to a remote server (Multiple jump hops may be specified separated by comma characters):
+   [33;23;22;24;25mssh -J [0musername[33;23;22;24;25m@[0mjump_host[33;23;22;24;25m [0musername[33;23;22;24;25m@[0mremote_host
+[0m
+ - [0m[32;23;22;24;25mClose a hanged session:
+   [33;23;22;24;25m<Enter><~><.>[0m
+[0m[0m

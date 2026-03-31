@@ -1,0 +1,17 @@
+chpasswd
+
+[0m[0mChange the passwords for multiple users by using stdin.
+More information: https://manned.org/chpasswd.8.
+
+ - [0m[32;23;22;24;25mChange the password for a specific user:
+   [33;23;22;24;25mprintf "[0musername[33;23;22;24;25m:[0mnew_password[33;23;22;24;25m" | sudo chpasswd[0m
+[0m
+ - [0m[32;23;22;24;25mChange the passwords for multiple users (The input text must not contain any spaces.):
+   [33;23;22;24;25mprintf "[0musername_1[33;23;22;24;25m:[0mnew_password_1[33;23;22;24;25m\n[0musername_2[33;23;22;24;25m:[0mnew_password_2[33;23;22;24;25m" | sudo chpasswd[0m
+[0m
+ - [0m[32;23;22;24;25mChange the password for a specific user, and specify it in encrypted form:
+   [33;23;22;24;25mprintf "[0musername[33;23;22;24;25m:[0mnew_encrypted_password[33;23;22;24;25m" | sudo chpasswd --encrypted[0m
+[0m
+ - [0m[32;23;22;24;25mChange the password for a specific user, and use a specific encryption for the stored password:
+   [33;23;22;24;25mprintf "[0musername[33;23;22;24;25m:[0mnew_password[33;23;22;24;25m" | sudo chpasswd --crypt-method [0mNONE|DES|MD5|SHA256|SHA512
+[0m[0m

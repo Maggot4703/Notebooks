@@ -1,0 +1,46 @@
+{
+  "name": "Common Manufactured Goods",
+  "type": "cargo",
+  "img": "systems/mgt2e/icons/cargo/common_manufactured_goods.svg",
+  "system": {
+    "cargo": {
+      "price": 20000,
+      "availability": "All",
+      "purchaseDM": "Na +2, In +5",
+      "saleDM": "Ni +3, Hi +2",
+      "tons": "2D6 * 10",
+      "illegal": false,
+      "cost": 100
+    },
+    "description": "<p>Household appliances, clothing and so forth.</p>",
+    "quantity": 70,
+    "cost": 1000
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "KjVCQnLdKUJeJDZy": 3,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": null
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.mongoose-traveller-core.cargo-items.Item.T3ybozgvG4NGBH74",
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mgt2e",
+    "systemVersion": "0.11.6.13-DEV",
+    "createdTime": 1739833676234,
+    "modifiedTime": 1739833676234,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "exportSource": null
+  },
+  "folder": "nTFQBn7eKDifeKFR",
+  "_id": "5ulGF8chnM93p1QD",
+  "sort": 0,
+  "_key": "!items!5ulGF8chnM93p1QD"
+}

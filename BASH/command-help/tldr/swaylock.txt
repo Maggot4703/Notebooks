@@ -1,0 +1,29 @@
+swaylock
+
+[0m[0mScreen locking utility for Wayland compositors.
+More information: https://manned.org/swaylock.
+
+ - [0m[32;23;22;24;25mLock the screen using the config in $HOME/.swaylock/config or $XDG_CONFIG_HOME/swaylock/config:
+   [33;23;22;24;25mswaylock[0m
+[0m
+ - [0m[32;23;22;24;25mLock the screen with a simple color background (rrggbb format):
+   [33;23;22;24;25mswaylock [0m[-c|--color][33;23;22;24;25m [0m0000ff
+[0m
+ - [0m[32;23;22;24;25mLock the screen with a background image:
+   [33;23;22;24;25mswaylock [0m[-i|--image][33;23;22;24;25m [0mpath/to/image
+[0m
+ - [0m[32;23;22;24;25mLock the screen and disable the unlock indicator (removes feedback on keypress):
+   [33;23;22;24;25mswaylock [0m[-u|--no-unlock-indicator]
+[0m
+ - [0m[32;23;22;24;25mDetach from the controlling terminal after locking (like i3lock):
+   [33;23;22;24;25mswaylock [0m[-f|--daemonize]
+[0m
+ - [0m[32;23;22;24;25mLock the screen with a background image tiled over all monitors:
+   [33;23;22;24;25mswaylock [0m[-i|--image][33;23;22;24;25m [0mpath/to/image[33;23;22;24;25m [0m[-t|--tiling]
+[0m
+ - [0m[32;23;22;24;25mLock the screen and show the number of failed login attempts:
+   [33;23;22;24;25mswaylock [0m[-F|--show-failed-attempts]
+[0m
+ - [0m[32;23;22;24;25mLoad the configuration from a specific file:
+   [33;23;22;24;25mswaylock [0m[-C|--config][33;23;22;24;25m [0mpath/to/config
+[0m[0m

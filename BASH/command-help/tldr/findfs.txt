@@ -1,0 +1,17 @@
+findfs
+
+[0m[0mFinds a filesystem by label or UUID.
+More information: https://manned.org/findfs.
+
+ - [0m[32;23;22;24;25mSearch block devices by filesystem label:
+   [33;23;22;24;25mfindfs LABEL=[0mlabel
+[0m
+ - [0m[32;23;22;24;25mSearch by filesystem UUID:
+   [33;23;22;24;25mfindfs UUID=[0muuid
+[0m
+ - [0m[32;23;22;24;25mSearch by partition label (GPT or MAC partition table):
+   [33;23;22;24;25mfindfs PARTLABEL=[0mpartition_label
+[0m
+ - [0m[32;23;22;24;25mSearch by partition UUID (GPT partition table only):
+   [33;23;22;24;25mfindfs PARTUUID=[0mpartition_uuid
+[0m[0m

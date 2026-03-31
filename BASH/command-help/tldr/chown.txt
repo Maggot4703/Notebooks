@@ -1,0 +1,23 @@
+chown
+
+[0m[0mChange user and group ownership of files and directories.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html.
+
+ - [0m[32;23;22;24;25mChange the owner user of a file/directory:
+   [33;23;22;24;25mchown [0muser[33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mChange the owner user and group of a file/directory:
+   [33;23;22;24;25mchown [0muser[33;23;22;24;25m:[0mgroup[33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mChange the owner user and group to both have the name user:
+   [33;23;22;24;25mchown [0muser[33;23;22;24;25m: [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mRecursively change the owner of a directory and its contents:
+   [33;23;22;24;25mchown [0m[-R|--recursive][33;23;22;24;25m [0muser[33;23;22;24;25m [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mChange the owner of a symbolic link:
+   [33;23;22;24;25mchown [0m[-h|--no-dereference][33;23;22;24;25m [0muser[33;23;22;24;25m [0mpath/to/symlink
+[0m
+ - [0m[32;23;22;24;25mChange the owner of a file/directory to match a reference file:
+   [33;23;22;24;25mchown --reference [0mpath/to/reference_file[33;23;22;24;25m [0mpath/to/file_or_directory
+[0m[0m

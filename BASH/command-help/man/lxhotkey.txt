@@ -1,0 +1,38 @@
+LXHotkey(1)                      User Manuals                      LXHotkey(1)
+
+NAME
+       LXHotkey - A lightweight global keyboard shortcuts configurator
+
+SYNOPSIS
+       lxhotkey [ command ]
+
+DESCRIPTION
+       LXHotkey  is  an  universal application for the Lightweight X11 Desktop
+       Environment (LXDE) which allows view and change global keyboard  short‐
+       cuts for Window Manager actions, including ones to start applications.
+
+OPTIONS
+   Command line interface:
+       global [action]     show keys bound to action(s)
+
+       global action key   bind a key to the action
+
+       app [exec]          show keys bound to exec line
+
+       app exec key        bind a key to some exec line
+
+       app exec --         unbind all keys from exec line
+
+       show key            show the action bound to a key
+
+   Graphic interface:
+       --gui= type         start with GUI of type
+
+SUPPORTED WINDOW MANAGERS
+       Openbox
+
+AUTHOR
+       Initial  version  of  LXHotkey  is  written  by  Andriy  Grytsenko <an‐
+       drej@rep.kiev.ua>.
+
+lxhotkey 0.1.1                    March 2016                       LXHotkey(1)

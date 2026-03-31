@@ -1,0 +1,23 @@
+lvmconfig
+
+[0m[0mDisplay and manipulate LVM configuration information.
+More information: https://manned.org/lvmconfig.
+
+ - [0m[32;23;22;24;25mDisplay the effective configuration in use (after merging all config sources):
+   [33;23;22;24;25mlvmconfig --typeconfig current --mergedconfig[0m
+[0m
+ - [0m[32;23;22;24;25mShow only settings that differ from their defaults:
+   [33;23;22;24;25mlvmconfig --typeconfig diff[0m
+[0m
+ - [0m[32;23;22;24;25mList all configuration keys:
+   [33;23;22;24;25mlvmconfig [0m[-l|--list]
+[0m
+ - [0m[32;23;22;24;25mPrint the default configuration with full comments and extra spacing:
+   [33;23;22;24;25mlvmconfig --typeconfig default --withcomments --withspaces[0m
+[0m
+ - [0m[32;23;22;24;25mValidate the full merged configuration and report errors:
+   [33;23;22;24;25mlvmconfig --mergedconfig --validate[0m
+[0m
+ - [0m[32;23;22;24;25mWrite the current effective configuration to a file:
+   [33;23;22;24;25mlvmconfig --typeconfig current [0m[-f|--file][33;23;22;24;25m [0mpath/to/output.conf
+[0m[0m

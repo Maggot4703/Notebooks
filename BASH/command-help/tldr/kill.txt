@@ -1,0 +1,27 @@
+kill
+
+[0m[0mSends a signal to a process, usually related to stopping the process.
+All signals except for SIGKILL and SIGSTOP can be intercepted by the process to perform a clean exit.
+More information: https://manned.org/kill.1posix.
+
+ - [0m[32;23;22;24;25mTerminate a program using the default SIGTERM (terminate) signal:
+   [33;23;22;24;25mkill [0mprocess_id
+[0m
+ - [0m[32;23;22;24;25mList available signal names (to be used without the SIG prefix):
+   [33;23;22;24;25mkill -l[0m
+[0m
+ - [0m[32;23;22;24;25mTerminate a program using the SIGHUP (hang up) signal. Many daemons will reload instead of terminating:
+   [33;23;22;24;25mkill -[0m1|HUP[33;23;22;24;25m [0mprocess_id
+[0m
+ - [0m[32;23;22;24;25mTerminate a program using the SIGINT (interrupt) signal. This is typically initiated by the user pressing <Ctrl c>:
+   [33;23;22;24;25mkill -[0m2|INT[33;23;22;24;25m [0mprocess_id
+[0m
+ - [0m[32;23;22;24;25mSignal the operating system to immediately terminate a program (which gets no chance to capture the signal):
+   [33;23;22;24;25mkill -[0m9|KILL[33;23;22;24;25m [0mprocess_id
+[0m
+ - [0m[32;23;22;24;25mSignal the operating system to pause a program until a SIGCONT ("continue") signal is received:
+   [33;23;22;24;25mkill -[0m17|STOP[33;23;22;24;25m [0mprocess_id
+[0m
+ - [0m[32;23;22;24;25mSend a SIGUSR1 signal to all processes with the given GID (group id):
+   [33;23;22;24;25mkill -[0mSIGUSR1[33;23;22;24;25m -[0mgroup_id
+[0m[0m

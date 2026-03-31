@@ -1,0 +1,23 @@
+json5
+
+[0m[0mConvert JSON5 files to JSON.
+More information: https://json5.org.
+
+ - [0m[32;23;22;24;25mConvert JSON5 stdin to JSON stdout:
+   [33;23;22;24;25mecho [0minput[33;23;22;24;25m | json5[0m
+[0m
+ - [0m[32;23;22;24;25mConvert a JSON5 file to JSON and output to stdout:
+   [33;23;22;24;25mjson5 [0mpath/to/input_file.json5
+[0m
+ - [0m[32;23;22;24;25mConvert a JSON5 file to the specified JSON file:
+   [33;23;22;24;25mjson5 [0mpath/to/input_file.json5[33;23;22;24;25m --out-file [0mpath/to/output_file.json
+[0m
+ - [0m[32;23;22;24;25mValidate a JSON5 file:
+   [33;23;22;24;25mjson5 [0mpath/to/input_file.json5[33;23;22;24;25m --validate[0m
+[0m
+ - [0m[32;23;22;24;25mSpecify the number of spaces to indent by (or "t" for tabs):
+   [33;23;22;24;25mjson5 --space [0mindent_amount
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mjson5 --help[0m
+[0m[0m

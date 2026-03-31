@@ -1,0 +1,23 @@
+pygmentize
+
+[0m[0mPython-based syntax highlighter.
+More information: https://pygments.org/docs/cmdline/.
+
+ - [0m[32;23;22;24;25mHighlight file syntax and print to stdout (language is inferred from the file extension):
+   [33;23;22;24;25mpygmentize [0mfile.py
+[0m
+ - [0m[32;23;22;24;25mExplicitly set the language for syntax highlighting:
+   [33;23;22;24;25mpygmentize -l [0mjavascript[33;23;22;24;25m [0minput_file
+[0m
+ - [0m[32;23;22;24;25mList available lexers (processors for input languages):
+   [33;23;22;24;25mpygmentize -L lexers[0m
+[0m
+ - [0m[32;23;22;24;25mSave output to a file in HTML format:
+   [33;23;22;24;25mpygmentize -f html -o [0moutput_file.html[33;23;22;24;25m [0minput_file.py
+[0m
+ - [0m[32;23;22;24;25mList available output formats:
+   [33;23;22;24;25mpygmentize -L formatters[0m
+[0m
+ - [0m[32;23;22;24;25mOutput an HTML file, with additional formatter options (full page, with line numbers):
+   [33;23;22;24;25mpygmentize -f html -O "full,linenos=True" -o [0moutput_file.html[33;23;22;24;25m [0minput_file
+[0m[0m

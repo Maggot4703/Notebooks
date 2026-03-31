@@ -1,0 +1,26 @@
+ipcrm
+
+[0m[0mDelete IPC (Inter-process Communication) resources.
+More information: https://manned.org/ipcrm.
+
+ - [0m[32;23;22;24;25mDelete a shared memory segment by ID:
+   [33;23;22;24;25mipcrm [0m[-m|--shmem-id][33;23;22;24;25m [0mshmem_id
+[0m
+ - [0m[32;23;22;24;25mDelete a shared memory segment by key:
+   [33;23;22;24;25mipcrm [0m[-M|--shmem-key][33;23;22;24;25m [0mshmem_key
+[0m
+ - [0m[32;23;22;24;25mDelete an IPC queue by ID:
+   [33;23;22;24;25mipcrm [0m[-q|--queue-id][33;23;22;24;25m [0mipc_queue_id
+[0m
+ - [0m[32;23;22;24;25mDelete an IPC queue by key:
+   [33;23;22;24;25mipcrm [0m[-Q|--queue-key][33;23;22;24;25m [0mipc_queue_key
+[0m
+ - [0m[32;23;22;24;25mDelete a semaphore by ID:
+   [33;23;22;24;25mipcrm [0m[-s|--semaphore-id][33;23;22;24;25m [0msemaphore_id
+[0m
+ - [0m[32;23;22;24;25mDelete a semaphore by key:
+   [33;23;22;24;25mipcrm [0m[-S|--semaphore-key][33;23;22;24;25m [0msemaphore_key
+[0m
+ - [0m[32;23;22;24;25mDelete all IPC resources:
+   [33;23;22;24;25mipcrm [0m[-a|--all]
+[0m[0m

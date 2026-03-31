@@ -1,0 +1,27 @@
+ex
+
+[0m[0mText editor.
+See also: vim.
+More information: https://www.vim.org.
+
+ - [0m[32;23;22;24;25mOpen a file:
+   [33;23;22;24;25mex [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSave and Quit:
+   [33;23;22;24;25mwq<Enter>[0m
+[0m
+ - [0m[32;23;22;24;25mUndo the last operation:
+   [33;23;22;24;25mundo<Enter>[0m
+[0m
+ - [0m[32;23;22;24;25mSearch for a pattern in the file:
+   [33;23;22;24;25m/[0msearch_pattern[33;23;22;24;25m<Enter>[0m
+[0m
+ - [0m[32;23;22;24;25mPerform a regex substitution in the whole file:
+   [33;23;22;24;25m%s/[0mregex[33;23;22;24;25m/[0mreplacement[33;23;22;24;25m/g<Enter>[0m
+[0m
+ - [0m[32;23;22;24;25mInsert text:
+   [33;23;22;24;25mi<Enter>[0mtext[33;23;22;24;25m<Ctrl c>[0m
+[0m
+ - [0m[32;23;22;24;25mSwitch to Vim:
+   [33;23;22;24;25mvisual<Enter>[0m
+[0m[0m

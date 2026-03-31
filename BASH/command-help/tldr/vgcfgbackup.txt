@@ -1,0 +1,20 @@
+vgcfgbackup
+
+[0m[0mBack up volume group configuration metadata to files (not user data).
+More information: https://manned.org/vgcfgbackup.
+
+ - [0m[32;23;22;24;25mBack up metadata for all volume groups (to /etc/lvm/backup/ by default):
+   [33;23;22;24;25mvgcfgbackup[0m
+[0m
+ - [0m[32;23;22;24;25mBack up metadata for a specific volume group:
+   [33;23;22;24;25mvgcfgbackup [0mvg_name
+[0m
+ - [0m[32;23;22;24;25mWrite the backup to a specific file:
+   [33;23;22;24;25mvgcfgbackup [0m[-f|--file][33;23;22;24;25m [0mpath/to/backup[33;23;22;24;25m [0mvg_name
+[0m
+ - [0m[32;23;22;24;25mBack up multiple VGs using a filename template (%s becomes the VG name):
+   [33;23;22;24;25mvgcfgbackup [0m[-f|--file][33;23;22;24;25m [0m/tmp/vg-backup-%s[33;23;22;24;25m [0mvg1 vg2 ...
+[0m
+ - [0m[32;23;22;24;25mIncrease verbosity (repeat -v for more detail):
+   [33;23;22;24;25mvgcfgbackup [0m[-v|--verbose][33;23;22;24;25m [0mvg_name
+[0m[0m

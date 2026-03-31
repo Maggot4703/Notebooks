@@ -1,0 +1,23 @@
+findmnt
+
+[0m[0mFind your filesystem.
+More information: https://manned.org/findmnt.
+
+ - [0m[32;23;22;24;25mList all mounted filesystems:
+   [33;23;22;24;25mfindmnt[0m
+[0m
+ - [0m[32;23;22;24;25mSearch for a device:
+   [33;23;22;24;25mfindmnt [0m/dev/sdb1
+[0m
+ - [0m[32;23;22;24;25mSearch for a mountpoint:
+   [33;23;22;24;25mfindmnt [0m/
+[0m
+ - [0m[32;23;22;24;25mFind filesystems in specific type:
+   [33;23;22;24;25mfindmnt [0m[-t|--types][33;23;22;24;25m [0mext4,virtiofs,btrfs,...
+[0m
+ - [0m[32;23;22;24;25mFind filesystems with specific label:
+   [33;23;22;24;25mfindmnt LABEL=[0mBigStorage
+[0m
+ - [0m[32;23;22;24;25mCheck mount table content in detail and verify /etc/fstab:
+   [33;23;22;24;25mfindmnt [0m[-x|--verify][33;23;22;24;25m --verbose[0m
+[0m[0m

@@ -1,0 +1,149 @@
+VIRTUALENV(1)               General Commands Manual              VIRTUALENV(1)
+
+NAME
+       virtualenv - Python virtual environment creator
+
+SYNOPSIS
+       virtualenv   [--version]   [--with-traceback]  [-v  |  -q]  [--app-data
+       APP_DATA] [--clear-app-data] [--discovery {builtin}] [-p py] [--creator
+       {builtin,cpython3-posix,venv}]  [--seeder  {app-data,pip}]  [--no-seed]
+       [--activators   comma_sep_list]   [--clear]    [--system-site-packages]
+       [--symlinks   |   --copies]   [--no-download   |   --download]   [--ex‐
+       tra-search-dir  d  [d  ...]]  [--pip  version]  [--setuptools  version]
+       [--wheel  version]  [--no-pip]  [--no-setuptools]  [--no-wheel] [--sym‐
+       link-app-data] [--prompt prompt] [-h] dest
+
+DESCRIPTION
+       The virtualenv utility creates virtual Python instances, each invokable
+       with  its own Python executable.  Each instance can have different sets
+       of modules, installable via easy_install.  Virtual Python instances can
+       also be created without root access.
+
+   optional arguments:
+       --version
+              display the version of the virtualenv package and it's location,
+              then exit
+
+       --with-traceback
+              on failure also display the stacktrace internals  of  virtualenv
+              (default: False)
+
+       --app-data APP_DATA
+              a  data  folder  used as cache by the virtualenv (default: <temp
+              folder>)
+
+       --clear-app-data
+              start with empty app data folder (default: False)
+
+       -h, --help
+              show this help message and exit
+
+   verbosity:
+              verbosity = verbose - quiet, default  INFO,  mapping  =>  CRITI‐
+              CAL=0, ERROR=1, WARNING=2, INFO=3, DEBUG=4, NOTSET=5
+
+       -v, --verbose
+              increase verbosity (default: 2)
+
+       -q, --quiet
+              decrease verbosity (default: 0)
+
+   discovery:
+              discover and provide a target interpreter
+
+       --discovery {builtin}
+              interpreter discovery method (default: builtin)
+
+       -p py, --python py
+              target  interpreter  for which to create a virtual (either abso‐
+              lute path or identifier string) (default: /usr/bin/python3)
+
+   creator:
+              options for creator builtin
+
+       --creator {builtin,cpython3-posix,venv}
+              create environment  via  (builtin  =  cpython3-posix)  (default:
+              builtin)
+
+       dest   directory to create virtualenv at
+
+       --clear
+              remove  the destination directory if exist before starting (will
+              overwrite files otherwise) (default: False)
+
+       --system-site-packages
+              give the virtual environment access to the system  site-packages
+              dir (default: False)
+
+       --symlinks
+              try  to  use  symlinks rather than copies, when symlinks are not
+              the default for the platform (default: True)
+
+       --copies, --always-copy
+              try to use copies rather than symlinks, even when  symlinks  are
+              the default for the platform (default: False)
+
+   seeder:
+              options for seeder app-data
+
+       --seeder {app-data,pip}
+              seed packages install method (default: app-data)
+
+       --no-seed, --without-pip
+              do not install seed packages (default: False)
+
+       --download
+              pass to enable download of the latest pip, setuptools, and wheel
+              from PyPI (default: False)
+
+       --no-download, --never-download
+              pass to disable download of  the  latest  pip,  setuptools,  and
+              wheel from PyPI (default: True)
+
+       --extra-search-dir d [d ...]
+              a  path containing wheels the seeder may also use beside bundled
+              (can be set 1+ times) (default: [])
+
+       --pip version
+              pip version to install, bundle for bundled (default: latest)
+
+       --setuptools version
+              setuptools version to install, bundle for bundled (default: lat‐
+              est)
+
+       --wheel version
+              wheel version to install, bundle for bundled (default: latest)
+
+       --no-pip
+              do not install pip (default: False)
+
+       --no-setuptools
+              do not install setuptools (default: False)
+
+       --no-wheel
+              do not install wheel (default: False)
+
+       --symlink-app-data
+              symlink  the  python packages from the app-data folder (requires
+              seed pip>=19.3) (default: False)
+
+   activators:
+              options for activation scripts
+
+       --activators comma_sep_list
+              activators to generate -  default  is  all  supported  (default:
+              bash,cshell,fish,powershell,python,xonsh)
+
+       --prompt prompt
+              provides  an alternative prompt prefix for this environment (de‐
+              fault: None)
+
+       config file $HOME/.config/virtualenv/virtualenv.ini (change via env var
+       VIRTUALENV_CONFIG_FILE)
+
+AUTHORS
+       This man-page was created using help2man and then updated by Scott Kit‐
+       terman <scott@kitterman.com> and is licensed under the  same  terms  as
+       virtualenv.
+
+                                                                 VIRTUALENV(1)

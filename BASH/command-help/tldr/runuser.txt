@@ -1,0 +1,20 @@
+runuser
+
+[0m[0mRun commands as a user and group without asking for password (needs root privileges).
+More information: https://manned.org/runuser.
+
+ - [0m[32;23;22;24;25mRun command as a different user:
+   [33;23;22;24;25mrunuser [0muser[33;23;22;24;25m [0m[-c|--command][33;23;22;24;25m '[0mcommand[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mRun command as a different user and group:
+   [33;23;22;24;25mrunuser [0muser[33;23;22;24;25m [0m[-g|--group][33;23;22;24;25m [0mgroup[33;23;22;24;25m [0m[-c|--command][33;23;22;24;25m '[0mcommand[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mStart a login shell as a specific user:
+   [33;23;22;24;25mrunuser [0muser[33;23;22;24;25m [0m[-l|--login]
+[0m
+ - [0m[32;23;22;24;25mSpecify a shell for running instead of the default shell (also works for login):
+   [33;23;22;24;25mrunuser [0muser[33;23;22;24;25m [0m[-s|--shell][33;23;22;24;25m [0m/bin/sh
+[0m
+ - [0m[32;23;22;24;25mPreserve the entire environment of root (only if --login is not specified):
+   [33;23;22;24;25mrunuser [0muser[33;23;22;24;25m [0m[-p|--preserve-environment][33;23;22;24;25m [0m[-c|--command][33;23;22;24;25m '[0mcommand[33;23;22;24;25m'[0m
+[0m[0m

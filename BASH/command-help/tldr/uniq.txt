@@ -1,0 +1,21 @@
+uniq
+
+[0m[0mOutput the unique lines from a input or file.
+Since it does not detect repeated lines unless they are adjacent, we need to sort them first.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/uniq-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay each line once:
+   [33;23;22;24;25msort [0mpath/to/file[33;23;22;24;25m | uniq[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay only unique lines:
+   [33;23;22;24;25msort [0mpath/to/file[33;23;22;24;25m | uniq [0m[-u|--unique]
+[0m
+ - [0m[32;23;22;24;25mDisplay only duplicate lines:
+   [33;23;22;24;25msort [0mpath/to/file[33;23;22;24;25m | uniq [0m[-d|--repeated]
+[0m
+ - [0m[32;23;22;24;25mDisplay number of occurrences of each line along with that line:
+   [33;23;22;24;25msort [0mpath/to/file[33;23;22;24;25m | uniq [0m[-c|--count]
+[0m
+ - [0m[32;23;22;24;25mDisplay number of occurrences of each line, sorted by the most frequent:
+   [33;23;22;24;25msort [0mpath/to/file[33;23;22;24;25m | uniq [0m[-c|--count][33;23;22;24;25m | sort [0m[-nr|--numeric-sort --reverse]
+[0m[0m

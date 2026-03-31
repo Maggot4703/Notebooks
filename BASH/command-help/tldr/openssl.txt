@@ -1,0 +1,15 @@
+openssl
+
+[0m[0mOpenSSL cryptographic toolkit.
+Some subcommands such as req have their own usage documentation.
+More information: https://www.openssl.org.
+
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mopenssl help[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help for a specific subcommand:
+   [33;23;22;24;25mopenssl help [0mx509
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mopenssl version[0m
+[0m[0m

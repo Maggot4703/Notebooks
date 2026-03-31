@@ -1,0 +1,29 @@
+apparmor_parser
+
+[0m[0mLoad, compile, and manage AppArmor security profiles.
+More information: https://gitlab.com/apparmor/apparmor/-/wikis/manpage_apparmor_parser.8.
+
+ - [0m[32;23;22;24;25mLoad a profile into the kernel:
+   [33;23;22;24;25msudo apparmor_parser [0m[-a|--add][33;23;22;24;25m [0mprofile_file
+[0m
+ - [0m[32;23;22;24;25mReplace an existing profile:
+   [33;23;22;24;25msudo apparmor_parser [0m[-r|--replace][33;23;22;24;25m [0mprofile_file
+[0m
+ - [0m[32;23;22;24;25mRemove a profile from the kernel:
+   [33;23;22;24;25msudo apparmor_parser [0m[-R|--remove][33;23;22;24;25m [0mprofile_name
+[0m
+ - [0m[32;23;22;24;25mLoad a profile in complain mode (logs violations but doesn't block):
+   [33;23;22;24;25msudo apparmor_parser [0m[-C|--complain][33;23;22;24;25m [0m[-r|--replace][33;23;22;24;25m [0mpath/to/profile
+[0m
+ - [0m[32;23;22;24;25mPreprocess a profile (resolve includes) and write binary cache to file:
+   [33;23;22;24;25mapparmor_parser [0m[-p|--preprocess][33;23;22;24;25m [0m[-o|--ofile][33;23;22;24;25m [0mpath/to/output.cache[33;23;22;24;25m [0m[-Q|--skip-kernel-load][33;23;22;24;25m [0mpath/to/profile
+[0m
+ - [0m[32;23;22;24;25mPreprocess and print binary profile to stdout without loading:
+   [33;23;22;24;25mapparmor_parser [0m[-p|--preprocess][33;23;22;24;25m [0m[-S|--stdout][33;23;22;24;25m [0m[-Q|--skip-kernel-load][33;23;22;24;25m [0mpath/to/profile
+[0m
+ - [0m[32;23;22;24;25mReplace a profile while skipping cache reads:
+   [33;23;22;24;25msudo apparmor_parser [0m[-r|--replace][33;23;22;24;25m [0m[-T|--skip-read-cache][33;23;22;24;25m [0mpath/to/profile
+[0m
+ - [0m[32;23;22;24;25mReplace a profile, rebuild cache, and write it to a custom directory:
+   [33;23;22;24;25msudo apparmor_parser [0m[-r|--replace][33;23;22;24;25m [0m[-W|--write-cache][33;23;22;24;25m [0m[-L|--cache-loc][33;23;22;24;25m /[0mpath/to/cache[33;23;22;24;25m [0mpath/to/profile
+[0m[0m

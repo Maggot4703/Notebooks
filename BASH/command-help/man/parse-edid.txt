@@ -1,0 +1,64 @@
+get-edid(1)                 General Commands Manual                get-edid(1)
+
+NAME
+       get-edid,  parse-edid - read-edid tools to retrieve and interpret moni‐
+       tor specifications using the VESA VBE DDC protocol
+
+SYNOPSIS
+       get-edid [OPTIONS] | parse-edid
+       get-edid [OPTIONS] > filename
+       parse-edid < filename
+
+DESCRIPTION
+       The read-edid utility comprises two tools: get-edid and parse-edid.
+
+       get-edid uses real mode calls to perform  Data  Display  Channel  (DDC)
+       transfers,  or Linux i2c calls to perform Enhanced DDC transfers to re‐
+       trieve information from  monitors,  including  identification  strings,
+       supported  sync  ranges,  available video modes, and video mode parame‐
+       ters. Such information can be useful for configuring  X  Window  System
+       servers in certain cases.
+
+       get-edid  returns  the  raw Extended Display Identification Data (EDID)
+       block directly from the monitor, so the parse-edid command is available
+       to interpret it and generate a human-readable block of text information
+       that can also be included in a X11 xorg.conf file.
+
+       Generally the output of get-edid is piped directly to parse-edid.
+
+       New in version 3.0.0, get-edid takes a few options.
+
+       -b BUS, --bus BUS
+              only scan the i2c bus BUS (if built with i2c support)
+
+       -c, --classiconly
+              only use the older VBE interface (if built with i2c and VBE sup‐
+              port)
+
+       -h, --help
+              display a basic help message
+
+       -i, --i2conly
+              only use the newer i2c interface (if built with i2c and VBE sup‐
+              port)
+
+       -m NUM, --monitor NUM
+              try to return information about monitor number NUM (VBE only)
+
+       -q, --quiet
+              do not output messages over stderr
+
+       parse-edid still does not take any options. --help will show you  which
+       options your build of read-edid supports.
+
+AUTHOR
+       read-edid  is  originally  the  work  of John Fremlin and others. Since
+       1.4.2, the new maintainer and programmer has been Matthew Kern.  Nearly
+       all of the code for this project, as well as this manual page, has been
+       rewritten for 3.0.0 by Matthew Kern. See AUTHORS for more details.
+
+SEE ALSO
+       Matthew Kern's read-edid website at  <http://polypux.org/projects/read-
+       edid>
+
+                                  2013-08-29                       get-edid(1)

@@ -1,0 +1,11 @@
+exit
+
+[0m[0mExit the shell.
+More information: https://manned.org/exit.1posix.
+
+ - [0m[32;23;22;24;25mExit with the exit status of the most recently executed command:
+   [33;23;22;24;25mexit[0m
+[0m
+ - [0m[32;23;22;24;25mExit with a specific exit status:
+   [33;23;22;24;25mexit [0mexit_code
+[0m[0m

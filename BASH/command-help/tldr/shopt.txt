@@ -1,0 +1,21 @@
+shopt
+
+[0m[0mManage Bash shell options: variables (stored in $BASHOPTS) that control behavior specific to the Bash shell.
+Generic POSIX shell variables (stored in $SHELLOPTS) are managed with the set command instead.
+More information: https://www.gnu.org/software/bash/manual/bash.html#The-Shopt-Builtin.
+
+ - [0m[32;23;22;24;25mList of all settable options and whether they are set:
+   [33;23;22;24;25mshopt[0m
+[0m
+ - [0m[32;23;22;24;25mSet an option:
+   [33;23;22;24;25mshopt -s [0moption_name
+[0m
+ - [0m[32;23;22;24;25mUnset an option:
+   [33;23;22;24;25mshopt -u [0moption_name
+[0m
+ - [0m[32;23;22;24;25mPrint a list of all options and their status formatted as runnable shopt commands:
+   [33;23;22;24;25mshopt -p[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mhelp shopt[0m
+[0m[0m

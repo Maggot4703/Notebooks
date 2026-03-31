@@ -1,0 +1,17 @@
+ssh-keyscan
+
+[0m[0mGet the public SSH keys of remote hosts.
+More information: https://man.openbsd.org/ssh-keyscan.
+
+ - [0m[32;23;22;24;25mRetrieve all public SSH keys of a remote host:
+   [33;23;22;24;25mssh-keyscan [0mhostname
+[0m
+ - [0m[32;23;22;24;25mRetrieve all public SSH keys of a remote host listening on a specific port:
+   [33;23;22;24;25mssh-keyscan -p [0mport[33;23;22;24;25m [0mhostname
+[0m
+ - [0m[32;23;22;24;25mRetrieve certain types of public SSH keys of a remote host:
+   [33;23;22;24;25mssh-keyscan -t [0mrsa,dsa,ecdsa,ed25519[33;23;22;24;25m [0mhostname
+[0m
+ - [0m[32;23;22;24;25mManually update the SSH known_hosts file with the fingerprint of a given host:
+   [33;23;22;24;25mssh-keyscan -H [0mhostname[33;23;22;24;25m >> ~/.ssh/known_hosts[0m
+[0m[0m

@@ -1,0 +1,11 @@
+nfsstat
+
+[0m[0mDisplay or reset the number of calls made to the NFS server.
+More information: https://learn.microsoft.com/windows-server/administration/windows-commands/nfsstat.
+
+ - [0m[32;23;22;24;25mDisplay the recorded number of calls made to the NFS server:
+   [33;23;22;24;25mnfsstat[0m
+[0m
+ - [0m[32;23;22;24;25mReset the recorded number of calls made to the NFS server:
+   [33;23;22;24;25mnfsstat -z[0m
+[0m[0m

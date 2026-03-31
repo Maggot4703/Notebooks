@@ -1,0 +1,21 @@
+apt-key
+
+[0m[0mKey management utility for the APT Package Manager on Debian and Ubuntu.
+Note: apt-key is now deprecated (except for the use of apt-key del in maintainer scripts).
+More information: https://manned.org/apt-key.8.
+
+ - [0m[32;23;22;24;25mList trusted keys:
+   [33;23;22;24;25mapt-key list[0m
+[0m
+ - [0m[32;23;22;24;25mAdd a key to the trusted keystore:
+   [33;23;22;24;25mapt-key add [0mpublic_key_file.asc
+[0m
+ - [0m[32;23;22;24;25mDelete a key from the trusted keystore:
+   [33;23;22;24;25mapt-key del [0mkey_id
+[0m
+ - [0m[32;23;22;24;25mAdd a remote key to the trusted keystore:
+   [33;23;22;24;25mwget [0m[-qO|--quiet --output-document][33;23;22;24;25m - [0mhttps://host.tld/filename.key[33;23;22;24;25m | apt-key add -[0m
+[0m
+ - [0m[32;23;22;24;25mAdd a key from keyserver with only key ID:
+   [33;23;22;24;25mapt-key adv --keyserver [0mpgp.mit.edu[33;23;22;24;25m --recv [0mKEYID
+[0m[0m

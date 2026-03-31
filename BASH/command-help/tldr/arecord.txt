@@ -1,0 +1,23 @@
+arecord
+
+[0m[0mSound recorder for ALSA soundcard driver.
+More information: https://manned.org/arecord.
+
+ - [0m[32;23;22;24;25mRecord a snippet in "CD" quality (finish with <Ctrl c> when done):
+   [33;23;22;24;25marecord [0m[-vv|--verbose --verbose][33;23;22;24;25m [0m[-f|--format][33;23;22;24;25m cd [0mpath/to/file.wav
+[0m
+ - [0m[32;23;22;24;25mRecord a snippet in "CD" quality, with a fixed duration of 10 seconds:
+   [33;23;22;24;25marecord [0m[-vv|--verbose --verbose][33;23;22;24;25m [0m[-f|--format][33;23;22;24;25m cd [0m[-d|--duration][33;23;22;24;25m [0m10[33;23;22;24;25m [0mpath/to/file.wav
+[0m
+ - [0m[32;23;22;24;25mRecord a snippet and save it as an MP3 (finish with <Ctrl c> when done):
+   [33;23;22;24;25marecord [0m[-vv|--verbose --verbose][33;23;22;24;25m [0m[-f|--format][33;23;22;24;25m cd [0m[-t|--file-type][33;23;22;24;25m raw | lame -r - [0mpath/to/file.mp3
+[0m
+ - [0m[32;23;22;24;25mList all sound cards and digital audio devices:
+   [33;23;22;24;25marecord [0m[-l|--list-devices]
+[0m
+ - [0m[32;23;22;24;25mAllow interactive interface (e.g. use <Space> or <Enter> to play or pause):
+   [33;23;22;24;25marecord [0m[-i|--interactive]
+[0m
+ - [0m[32;23;22;24;25mTest your microphone by recording a 5 second sample and playing it back:
+   [33;23;22;24;25marecord [0m[-d|--duration][33;23;22;24;25m 5 test-mic.wav && aplay test-mic.wav && rm test-mic.wav[0m
+[0m[0m

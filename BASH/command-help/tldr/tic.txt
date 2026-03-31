@@ -1,0 +1,14 @@
+tic
+
+[0m[0mCompile terminfo and install for ncurses.
+More information: https://manned.org/tic.
+
+ - [0m[32;23;22;24;25mCompile and install terminfo for a terminal:
+   [33;23;22;24;25mtic -xe [0mterminal[33;23;22;24;25m [0mpath/to/terminal.info
+[0m
+ - [0m[32;23;22;24;25mCheck terminfo file for errors:
+   [33;23;22;24;25mtic -c [0mpath/to/terminal.info
+[0m
+ - [0m[32;23;22;24;25mPrint database locations:
+   [33;23;22;24;25mtic -D[0m
+[0m[0m

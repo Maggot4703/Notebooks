@@ -1,0 +1,25 @@
+ionice
+
+[0m[0mGet or set program I/O scheduling class and priority.
+Scheduling classes: 1 (realtime), 2 (best-effort), 3 (idle).
+Priority levels: 0 (the highest) - 7 (the lowest).
+More information: https://manned.org/ionice.
+
+ - [0m[32;23;22;24;25mRun a command with the given scheduling class and priority:
+   [33;23;22;24;25mionice [0m[-c|--class][33;23;22;24;25m [0mscheduling_class[33;23;22;24;25m [0m[-n|--classdata][33;23;22;24;25m [0mpriority[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mSet I/O scheduling class of a running process with a specific [p]id, [P]gid or [u]id:
+   [33;23;22;24;25mionice [0m[-c|--class][33;23;22;24;25m [0mscheduling_class[33;23;22;24;25m -[0mp|P|u[33;23;22;24;25m [0mid
+[0m
+ - [0m[32;23;22;24;25mRun a command with custom I/O scheduling class and priority:
+   [33;23;22;24;25mionice [0m[-c|--class][33;23;22;24;25m [0mscheduling_class[33;23;22;24;25m [0m[-n|--classdata][33;23;22;24;25m [0mpriority[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mIgnore failure to set the requested priority:
+   [33;23;22;24;25mionice [0m[-t|--ignore][33;23;22;24;25m [0m[-n|--classdata][33;23;22;24;25m [0mpriority[33;23;22;24;25m [0m[-p|--pid][33;23;22;24;25m [0mpid
+[0m
+ - [0m[32;23;22;24;25mRun the command even in case it was not possible to set the desired priority (this can happen due to insufficient privileges or an old kernel version):
+   [33;23;22;24;25mionice [0m[-t|--ignore][33;23;22;24;25m [0m[-n|--classdata][33;23;22;24;25m [0mpriority[33;23;22;24;25m [0m[-p|--pid][33;23;22;24;25m [0mpid
+[0m
+ - [0m[32;23;22;24;25mPrint the I/O scheduling class and priority of a running process:
+   [33;23;22;24;25mionice [0m[-p|--pid][33;23;22;24;25m [0mpid
+[0m[0m

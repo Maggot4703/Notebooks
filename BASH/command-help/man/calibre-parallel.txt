@@ -1,0 +1,13 @@
+CALIBRE-PARALLEL(1)              User Commands             CALIBRE-PARALLEL(1)
+
+NAME
+       calibre-parallel - internal used command by calibre(1)
+
+DESCRIPTION
+       This  is internal used command by calibre(1).  There is no needs to in‐
+       voke this command by hand.
+
+SEE ALSO
+       calibre(1)
+
+calibre-parallel                  August 2021              CALIBRE-PARALLEL(1)

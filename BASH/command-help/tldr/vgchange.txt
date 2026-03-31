@@ -1,0 +1,12 @@
+vgchange
+
+[0m[0mChange the attributes of a Logical Volume Manager (LVM) volume group.
+See also: lvm.
+More information: https://manned.org/vgchange.
+
+ - [0m[32;23;22;24;25mChange the activation status of logical volumes in all volume groups:
+   [33;23;22;24;25msudo vgchange [0m[-a|--activate][33;23;22;24;25m [0my|n
+[0m
+ - [0m[32;23;22;24;25mChange the activation status of logical volumes in the specified volume group (determine with vgscan):
+   [33;23;22;24;25msudo vgchange [0m[-a|--activate][33;23;22;24;25m [0my|n[33;23;22;24;25m [0mvolume_group
+[0m[0m

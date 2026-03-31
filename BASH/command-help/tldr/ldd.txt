@@ -1,0 +1,21 @@
+ldd
+
+[0m[0mDisplay shared library dependencies of a binary.
+Do not use on an untrusted binary, use objdump for that instead.
+More information: https://manned.org/ldd.
+
+ - [0m[32;23;22;24;25mDisplay shared library dependencies of a binary:
+   [33;23;22;24;25mldd [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay all information about dependencies:
+   [33;23;22;24;25mldd [0m[-v|--verbose][33;23;22;24;25m [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mDisplay unused direct dependencies:
+   [33;23;22;24;25mldd [0m[-u|--unused][33;23;22;24;25m [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mReport missing data objects and perform data relocations:
+   [33;23;22;24;25mldd [0m[-d|--data-relocs][33;23;22;24;25m [0mpath/to/binary
+[0m
+ - [0m[32;23;22;24;25mReport missing data objects and functions, and perform relocations for both:
+   [33;23;22;24;25mldd [0m[-r|--function-relocs][33;23;22;24;25m [0mpath/to/binary
+[0m[0m

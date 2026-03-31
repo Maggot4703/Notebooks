@@ -1,0 +1,26 @@
+touch
+
+[0m[0mCreate files and set access/modification times.
+More information: https://manned.org/touch.
+
+ - [0m[32;23;22;24;25mCreate specific files:
+   [33;23;22;24;25mtouch [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mSet the file [a]ccess or [m]odification times to the current one and don't create file if it doesn't exist:
+   [33;23;22;24;25mtouch [0m[-c|--no-create][33;23;22;24;25m -[0ma|m[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mSet the file [t]ime to a specific value and don't create file if it doesn't exist:
+   [33;23;22;24;25mtouch [0m[-c|--no-create][33;23;22;24;25m -t [0mYYYYMMDDHHMM.SS[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mSet the files' timestamp to the reference file's timestamp, and do not create the file if it does not exist:
+   [33;23;22;24;25mtouch [0m[-c|--no-create][33;23;22;24;25m [0m[-r|--reference][33;23;22;24;25m [0mpath/to/reference_file[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mSet the timestamp by parsing a string:
+   [33;23;22;24;25mtouch [0m[-d|--date][33;23;22;24;25m "[0mlast year|5 hours|next thursday|nov 14|...[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCreate multiple files with an increasing number:
+   [33;23;22;24;25mtouch [0mpath/to/file{1..10}
+[0m
+ - [0m[32;23;22;24;25mCreate multiple files with a letter range:
+   [33;23;22;24;25mtouch [0mpath/to/file{a..z}
+[0m[0m

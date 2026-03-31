@@ -1,0 +1,39 @@
+A311666-C
+Starport = A
+	Quality = Excellent
+	Yards = Starships
+	Repairs = Overhaul
+	Fuel = Both
+	Downport = Yes
+	Highport = No
+	possBases = NS
+
+Size = 3
+	DIGIT	DIA(MI)	DIA(KM)
+	3	3,000	4,800
+
+Atmosphere = 1
+	DIGIT	DESCRIPTION	EFFECTS
+	1	Trace	S3
+
+Hydrosphere = 1
+	DIGIT	DESCRIPTION
+	1	10%
+
+Population = 6
+	POPULATION UNDER 4,000,000
+	DIGIT	DESCRIPTION	VALUE
+	6	Million	,000,000
+
+Government = 6
+	DIGIT	DESCRIPTION	NOTE
+	6	Captive Government/Colony	Rule by a leadership answerable to an outside group
+
+Law Level = 6
+	DIGIT	DESCRIPTION	NOTE
+	6	Moderate Law	Pohibition of Machineguns
+
+Tech Level = C
+	DIGIT		
+	C		
+

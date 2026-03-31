@@ -1,0 +1,24 @@
+getopts
+
+[0m[0mParse shell options from arguments.
+This command does not support longform options and thus using getopt is recommended instead.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-getopts.
+
+ - [0m[32;23;22;24;25mCheck if an option is the first set option in the current context:
+   [33;23;22;24;25mgetopts [0mx[33;23;22;24;25m [0mopt[33;23;22;24;25m; echo $[0mopt
+[0m
+ - [0m[32;23;22;24;25mCheck if an option is set in a string (specified option must be the first element of the string):
+   [33;23;22;24;25mgetopts [0mx[33;23;22;24;25m [0mopt[33;23;22;24;25m "[0mstring text[33;23;22;24;25m"; echo $[0mopt
+[0m
+ - [0m[32;23;22;24;25mSet an option to require an argument and print them:
+   [33;23;22;24;25mgetopts [0mx[33;23;22;24;25m: [0mopt[33;23;22;24;25m; echo $[0mopt[33;23;22;24;25m $OPTARG[0m
+[0m
+ - [0m[32;23;22;24;25mCheck for multiple options:
+   [33;23;22;24;25mwhile getopts [0mxyz[33;23;22;24;25m [0mopt[33;23;22;24;25m; do case $[0mopt[33;23;22;24;25m in x) [0mecho x is set[33;23;22;24;25m;; y) [0mecho y is set[33;23;22;24;25m;; z) [0mecho z is set[33;23;22;24;25m;; esac; done[0m
+[0m
+ - [0m[32;23;22;24;25mSet getopts to silent mode and handle option errors:
+   [33;23;22;24;25mwhile getopts :[0mx:[33;23;22;24;25m [0mopt[33;23;22;24;25m; do case $[0mopt[33;23;22;24;25m in x) ;; :) [0mecho "Argument required"[33;23;22;24;25m;; ?) [0mecho "Invalid argument"[33;23;22;24;25m esac;; done[0m
+[0m
+ - [0m[32;23;22;24;25mReset getopts:
+   [33;23;22;24;25mOPTIND=1[0m
+[0m[0m

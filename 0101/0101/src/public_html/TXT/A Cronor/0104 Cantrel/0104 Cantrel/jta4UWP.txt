@@ -1,0 +1,39 @@
+C566243-9
+Starport = C
+	Quality = Routine
+	Yards = No
+	Repairs = Major damage
+	Fuel = Unrefined
+	Downport = Yes
+	Highport = No
+	possBases = S
+
+Size = 5
+	DIGIT	DIA(MI)	DIA(KM)
+	5	5,000	8,000
+
+Atmosphere = 6
+	DIGIT	DESCRIPTION	EFFECTS
+	6	Standard	
+
+Hydrosphere = 6
+	DIGIT	DESCRIPTION
+	6	60%
+
+Population = 2
+	POPULATION UNDER 500
+	DIGIT	DESCRIPTION	VALUE
+	2	Hundred	00
+
+Government = 4
+	DIGIT	DESCRIPTION	NOTE
+	4	Representative Democracy	Government by proxy
+
+Law Level = 3
+	DIGIT	DESCRIPTION	NOTE
+	3	Low Law	Prohibition of Acid, Fire, Gas weapons
+
+Tech Level = 9
+	DIGIT		
+	9		
+

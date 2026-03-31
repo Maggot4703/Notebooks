@@ -1,0 +1,18 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/sbin/alsabat-test
+*******************************************
+                BAT Test                   
+-------------------------------------------
+usage:
+  /usr/sbin/alsabat-test <sound card>
+  /usr/sbin/alsabat-test <device-playback> <device-capture>
+current setting:
+  /usr/sbin/alsabat-test --help --help
+============================================
+0: ALSA generate mono wav file with default params
+-------------------------------------------
+alsabat -c1 --saveplay default_mono.wav --log=tmp/0.log

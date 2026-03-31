@@ -1,0 +1,9 @@
+xzmore
+
+[0m[0mDisplay text from xz or lzma compressed files.
+Almost equivalent to xzless, except it respects the PAGER environment variable, uses more by default and you cannot pass options to the pager.
+More information: https://manned.org/xzmore.
+
+ - [0m[32;23;22;24;25mView a compressed file:
+   [33;23;22;24;25mxzmore [0mpath/to/file
+[0m[0m

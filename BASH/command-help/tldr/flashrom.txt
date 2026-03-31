@@ -1,0 +1,20 @@
+flashrom
+
+[0m[0mRead, write, verify and erase flash chips.
+More information: https://manned.org/flashrom.
+
+ - [0m[32;23;22;24;25mProbe the chip, ensuring the wiring is correct:
+   [33;23;22;24;25mflashrom [0m[-p|--programmer][33;23;22;24;25m [0mprogrammer
+[0m
+ - [0m[32;23;22;24;25mRead flash and save it to a file:
+   [33;23;22;24;25mflashrom [0m[-p|--programmer][33;23;22;24;25m [0mprogrammer[33;23;22;24;25m [0m[-r|--read][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mWrite a file to the flash:
+   [33;23;22;24;25mflashrom [0m[-p|--programmer][33;23;22;24;25m [0mprogrammer[33;23;22;24;25m [0m[-w|--write][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mVerify the flash against a file:
+   [33;23;22;24;25mflashrom [0m[-p|--programmer][33;23;22;24;25m [0mprogrammer[33;23;22;24;25m [0m[-v|--verify][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mProbe the chip using Raspberry Pi:
+   [33;23;22;24;25mflashrom [0m[-p|--programmer][33;23;22;24;25m [0mlinux_spi:dev=/dev/spidev0.0
+[0m[0m

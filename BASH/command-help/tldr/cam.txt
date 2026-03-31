@@ -1,0 +1,17 @@
+cam
+
+[0m[0mFrontend tool for libcamera.
+More information: https://libcamera.org/docs.html.
+
+ - [0m[32;23;22;24;25mList available cameras:
+   [33;23;22;24;25mcam [0m[-l|--list]
+[0m
+ - [0m[32;23;22;24;25mList controls of a camera:
+   [33;23;22;24;25mcam [0m[-c|--camera][33;23;22;24;25m [0mcamera_index[33;23;22;24;25m --list-controls[0m
+[0m
+ - [0m[32;23;22;24;25mWrite frames to a folder:
+   [33;23;22;24;25mcam [0m[-c|--camera][33;23;22;24;25m [0mcamera_index[33;23;22;24;25m [0m[-C|--capture=]frames_to_capture[33;23;22;24;25m [0m[-F|--file]
+[0m
+ - [0m[32;23;22;24;25mDisplay camera feed in a window:
+   [33;23;22;24;25mcam [0m[-c|--camera][33;23;22;24;25m [0mcamera_index[33;23;22;24;25m [0m[-C|--capture][33;23;22;24;25m [0m[-S|--sdl]
+[0m[0m

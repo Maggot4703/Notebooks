@@ -1,0 +1,21 @@
+zenity
+
+[0m[0mDisplay dialogs from the command-line/shell scripts.
+Return user-inserted values or 1 if error.
+More information: https://manned.org/zenity.
+
+ - [0m[32;23;22;24;25mDisplay the default question dialog:
+   [33;23;22;24;25mzenity --question[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay an info dialog displaying the text "Hello!":
+   [33;23;22;24;25mzenity --info --text="[0mHello![33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay a name/password form and output the data separated by ";":
+   [33;23;22;24;25mzenity --forms --add-entry="[0mName[33;23;22;24;25m" --add-password="[0mPassword[33;23;22;24;25m" --separator="[0m;[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay a file selection form in which the user can only select directories:
+   [33;23;22;24;25mzenity --file-selection --directory[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay a progress bar which updates its message every second and show a progress percent:
+   (echo "#1"; sleep 1; echo "50"; echo "#2"; sleep 1; echo "100")[33;23;22;24;25m | zenity --progress[0m
+[0m[0m

@@ -1,0 +1,20 @@
+pdftoppm
+
+[0m[0mConvert PDF document pages to portable Pixmap (image formats).
+More information: https://manned.org/pdftoppm.
+
+ - [0m[32;23;22;24;25mSpecify the range of pages to convert (n - first page, m - last page):
+   [33;23;22;24;25mpdftoppm -f [0mn[33;23;22;24;25m -l [0mm[33;23;22;24;25m [0mpath/to/file.pdf[33;23;22;24;25m [0mimage_name_prefix
+[0m
+ - [0m[32;23;22;24;25mConvert only the first page of a PDF:
+   [33;23;22;24;25mpdftoppm -singlefile [0mpath/to/file.pdf[33;23;22;24;25m [0mimage_name_prefix
+[0m
+ - [0m[32;23;22;24;25mGenerate a monochrome PBM file (instead of a color PPM file):
+   [33;23;22;24;25mpdftoppm -mono [0mpath/to/file.pdf[33;23;22;24;25m [0mimage_name_prefix
+[0m
+ - [0m[32;23;22;24;25mGenerate a grayscale PGM file (instead of a color PPM file):
+   [33;23;22;24;25mpdftoppm -gray [0mpath/to/file.pdf[33;23;22;24;25m [0mimage_name_prefix
+[0m
+ - [0m[32;23;22;24;25mGenerate a PNG file instead a PPM file:
+   [33;23;22;24;25mpdftoppm -png [0mpath/to/file.pdf[33;23;22;24;25m [0mimage_name_prefix
+[0m[0m

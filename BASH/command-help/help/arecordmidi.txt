@@ -1,0 +1,14 @@
+Usage: arecordmidi [options] outputfile
+
+Available options:
+  -h,--help                  this help
+  -V,--version               show version
+  -l,--list                  list input ports
+  -p,--port=client:port,...  source port(s)
+  -b,--bpm=beats             tempo in beats per minute
+  -f,--fps=frames            resolution in frames per second (SMPTE)
+  -t,--ticks=ticks           resolution in ticks per beat or frame
+  -s,--split-channels        create a track for each channel
+  -m,--metronome=client:port play a metronome signal
+  -i,--timesig=nn:dd         time signature
+  -n,--num-events=events     fixed number of events to record, then exit

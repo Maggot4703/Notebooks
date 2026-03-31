@@ -1,0 +1,14 @@
+systemd-cgls
+
+[0m[0mShow the contents of the selected Linux control group hierarchy in a tree.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-cgls.html.
+
+ - [0m[32;23;22;24;25mDisplay the whole control group hierarchy on your system:
+   [33;23;22;24;25msystemd-cgls[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay a control group tree of a specific resource controller:
+   [33;23;22;24;25msystemd-cgls [0mcpu|memory|io
+[0m
+ - [0m[32;23;22;24;25mDisplay the control group hierarchy of one or more systemd units:
+   [33;23;22;24;25msystemd-cgls [0m[-u|--unit][33;23;22;24;25m [0munit1 unit2 ...
+[0m[0m

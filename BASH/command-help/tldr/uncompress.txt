@@ -1,0 +1,17 @@
+uncompress
+
+[0m[0mUncompress files compressed using the Unix compress command.
+More information: https://manned.org/uncompress.1.
+
+ - [0m[32;23;22;24;25mUncompress specific files:
+   [33;23;22;24;25muncompress [0mpath/to/file1.Z path/to/file2.Z ...
+[0m
+ - [0m[32;23;22;24;25mUncompress specific files while ignoring non-existent ones:
+   [33;23;22;24;25muncompress -f [0mpath/to/file1.Z path/to/file2.Z ...
+[0m
+ - [0m[32;23;22;24;25mWrite to stdout (no files are changed and no .Z files are created):
+   [33;23;22;24;25muncompress -c [0mpath/to/file1.Z path/to/file2.Z ...
+[0m
+ - [0m[32;23;22;24;25mVerbose mode (write to stderr about percentage reduction or expansion):
+   [33;23;22;24;25muncompress -v [0mpath/to/file1.Z path/to/file2.Z ...
+[0m[0m

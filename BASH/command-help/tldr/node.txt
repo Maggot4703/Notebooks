@@ -1,0 +1,23 @@
+node
+
+[0m[0mServer-side JavaScript platform (Node.js).
+More information: https://nodejs.org.
+
+ - [0m[32;23;22;24;25mRun a JavaScript file:
+   [33;23;22;24;25mnode [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mStart a REPL (interactive shell):
+   [33;23;22;24;25mnode[0m
+[0m
+ - [0m[32;23;22;24;25mExecute the specified file restarting the process when an imported file is changed (requires Node.js version 18.11+):
+   [33;23;22;24;25mnode --watch [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mEvaluate JavaScript code by passing it as an argument:
+   [33;23;22;24;25mnode [0m[-e|--eval][33;23;22;24;25m "[0mcode[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mEvaluate and print the result, useful to print node's dependencies versions:
+   [33;23;22;24;25mnode [0m[-p|--print][33;23;22;24;25m "process.versions"[0m
+[0m
+ - [0m[32;23;22;24;25mActivate inspector, pausing execution until a debugger is connected once source code is fully parsed:
+   [33;23;22;24;25mnode --no-lazy --inspect-brk [0mpath/to/file
+[0m[0m

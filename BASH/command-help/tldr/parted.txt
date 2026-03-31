@@ -1,0 +1,24 @@
+parted
+
+[0m[0mA partition manipulation program.
+See also: parted.interactive, partprobe.
+More information: https://www.gnu.org/software/parted/manual/parted.html#Invoking-Parted.
+
+ - [0m[32;23;22;24;25mList partitions on all block devices:
+   [33;23;22;24;25msudo parted [0m[-l|--list]
+[0m
+ - [0m[32;23;22;24;25mCreate a new partition table of the specified label-type:
+   [33;23;22;24;25msudo parted [0m/dev/sdX[33;23;22;24;25m mklabel [0maix|amiga|bsd|dvh|gpt|loop|mac|msdos|pc98|sun
+[0m
+ - [0m[32;23;22;24;25mCreate a new gpt partition table with a 500MiB boot partition and give the rest for the system partition (--script skips user intervention prompts):
+   [33;23;22;24;25msudo parted [0m/dev/sdX[33;23;22;24;25m [0m[-s|--script][33;23;22;24;25m mklabel gpt mkpart "[0mboot_partition_name[33;23;22;24;25m" 0% 500MiB mkpart "[0msystem_partition_name[33;23;22;24;25m" 500MiB 100%[0m
+[0m
+ - [0m[32;23;22;24;25mSet a partition to have its boot flag turned on:
+   [33;23;22;24;25msudo parted [0m/dev/sdX[33;23;22;24;25m set [0m1[33;23;22;24;25m boot on[0m
+[0m
+ - [0m[32;23;22;24;25mStart interactive mode with the specified disk selected:
+   [33;23;22;24;25msudo parted [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mparted [0m[-h|--help]
+[0m[0m

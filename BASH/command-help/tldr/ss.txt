@@ -1,0 +1,29 @@
+ss
+
+[0m[0mUtility to investigate sockets.
+More information: https://manned.org/ss.8.
+
+ - [0m[32;23;22;24;25mShow all TCP/UDP/RAW/UNIX sockets:
+   [33;23;22;24;25mss [0m[-a|--all][33;23;22;24;25m [0m-t|-u|-w|-x
+[0m
+ - [0m[32;23;22;24;25mFilter TCP sockets by states, only/exclude:
+   [33;23;22;24;25mss [0mstate|exclude[33;23;22;24;25m [0mbucket|big|connected|synchronized|...
+[0m
+ - [0m[32;23;22;24;25mShow all TCP sockets connected to the local HTTPS port (443):
+   [33;23;22;24;25mss [0m[-t|--tcp][33;23;22;24;25m src :[0m443
+[0m
+ - [0m[32;23;22;24;25mShow all TCP sockets listening on the local 8080 port:
+   [33;23;22;24;25mss [0m[-lt|--listening --tcp][33;23;22;24;25m src :[0m8080
+[0m
+ - [0m[32;23;22;24;25mShow all TCP sockets along with processes connected to a remote SSH port:
+   [33;23;22;24;25mss [0m[-pt|--processes --tcp][33;23;22;24;25m dst :[0mssh
+[0m
+ - [0m[32;23;22;24;25mShow all UDP sockets connected on specific source and destination ports:
+   [33;23;22;24;25mss [0m[-u|--udp][33;23;22;24;25m 'sport == :[0msource_port[33;23;22;24;25m and dport == :[0mdestination_port[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mShow all TCP IPv4 sockets locally connected on the subnet 192.168.0.0/16:
+   [33;23;22;24;25mss [0m[-4t|--ipv4 --tcp][33;23;22;24;25m src [0m192.168/16
+[0m
+ - [0m[32;23;22;24;25mKill IPv4 or IPv6 Socket Connection with destination IP 192.168.1.17 and destination port 8080:
+   [33;23;22;24;25mss [0m[-K|--kill][33;23;22;24;25m dst [0m192.168.1.17[33;23;22;24;25m dport = [0m8080
+[0m[0m

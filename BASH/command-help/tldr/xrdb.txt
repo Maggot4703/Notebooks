@@ -1,0 +1,14 @@
+xrdb
+
+[0m[0mX window server's resource database utility for Unix-like systems.
+More information: https://www.x.org/releases/current/doc/man/man1/xrdb.1.xhtml.
+
+ - [0m[32;23;22;24;25mStart xrdb in interactive mode:
+   [33;23;22;24;25mxrdb[0m
+[0m
+ - [0m[32;23;22;24;25mLoad values (e.g. style rules) from a resource file:
+   [33;23;22;24;25mxrdb -load [0m~/.Xresources
+[0m
+ - [0m[32;23;22;24;25mQuery the resource database and print currently set values:
+   [33;23;22;24;25mxrdb -query[0m
+[0m[0m

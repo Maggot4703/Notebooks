@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html onclick="clickChange()" onchange="clickChange()" id="starter" onload="Startup()" >
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>0101</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    METADATA   -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en-UK" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="Sat, 18 Sep 2021 12:13:54 BST" />
+    <link rel="stylesheet" href="./0101_files/w3.css">
+    <!-- Set CSS -->
+    <style>
+      body {
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        background-color: black;
+        color: red;
+        text-align: center;
+        font-family: verdana;
+        font-size: 48px;
+      }
+      h2 {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-family: verdana;
+        font-size: 24px;
+      }
+      .w3-center, .w3-row {
+        max-width: 100vw;
+        overflow-x: auto;
+      }
+      #pic0, .w3-col img {
+        max-width: 100%;
+        height: auto;
+      }
+      @media (max-width: 700px) {
+        h1 { font-size: 28px; }
+        h2 { font-size: 16px; }
+        #infoPanel { max-width: 95vw; }
+        .w3-row, .w3-center { flex-direction: column; }
+        .w3-col { width: 100% !important; display: block; margin-bottom: 8px; }
+      }
+    </style>
+    <!-- SCRIPTS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="./0101_files/w3.js.download"></script>
+    <script src="file:///C:/T5/Spinward%20Marches/TravellerScripts.js"></script>
+  </head>
+  <body onbeforeunload="return myFunction()">
+    <!-- Set Location -->
+    <div class="w3-center">
+      <div style="margin:12px 0;">
+        <input id="systemSearch" type="text" placeholder="Search system (hex code)..." style="padding:4px 8px;max-width:180px;" onkeydown="if(event.key==='Enter'){searchSystem();}">
+        <button onclick="searchSystem()" class="w3-button w3-blue">Search</button>
+      </div>
+          <script>
+            function searchSystem() {
+              var search = document.getElementById('systemSearch').value.trim();
+              if (!search) return;
+              var sysSelect = document.getElementById('Sys');
+              for (var i = 0; i < sysSelect.options.length; i++) {
+                if (sysSelect.options[i].value.toLowerCase() === search.toLowerCase()) {
+                  sysSelect.selectedIndex = i;
+                  SysChange();
+                  return;
+                }
+              }
+              alert('System not found: ' + search);
+            }
+          </script>
+      <a id="demo" onclick="LinkClick()" href="0-Stellar.html">Stellar Data</a>
+      <select id="Sector" name="Sector" onchange="SecChange()" aria-label="Sector Selection">
+        <option>Spinward Marches</option>
+        <option>Vland</option>
+      </select> / 
+      <select id="Subsector" name="Subsectors" onchange="SubChange()" aria-label="Subsector Selection">
+        <option>A Cronor</option>
+        <option>B Jewell</option>
+        <option>C Regina</option>
+        <option>D Aramis</option>
+        <option>E Querion</option>
+        <option>F Vilis</option>
+        <option>G Lanth</option>
+        <option>H Rhylanor</option>
+        <option>I Darrian</option>
+        <option>J Sword Worlds</option>
+        <option>K Lunion</option>
+        <option>L Mora</option>
+        <option>M Five Sisters</option>
+        <option>N District 268</option>
+        <option>O Glisten</option>
+        <option>P Trin's Veil</option>
+      </select> /  
+      <select id="Sys" name="System" size="1"  onchange="SysChange()" autofocus="true" aria-label="System Selection" tabindex="0">
+        <option>0101</option>
+        <option>0102</option>
+        <option>0103</option>
+        <option>0104</option>
+        <option>0108</option>
+        <option>0202</option>
+        <option>0301</option>
+        <option>0303</option>
+        <option>0304</option>
+        <option>0307</option>
+        <option>0503</option>
+        <option>0601</option>
+        <option>0605</option>
+        <option>0607</option>
+        <option>0608</option>
+        <option>0610</option>
+        <option>0703</option>
+        <option>0704</option>
+        <option>0705</option>
+        <option>0710</option>
+        <option>0805</option>
+        <option>0807</option>
+        <option>0808</option>
+        <option>0810</option>
+      </select> 
+    </div>
+    <!-- Info Panel -->
+    <div id="infoPanel" class="w3-panel w3-border" style="max-width:400px;margin:16px auto;display:none;background:#fff;color:#111;border-color:#333;">
+      <h3>System Info</h3>
+      <div id="systemInfo">Select a system to view details.</div>
+      <div style="margin-top:12px;">
+        <button onclick="exportSystemData()" class="w3-button w3-blue" style="margin-right:8px;">Export JSON</button>
+        <label class="w3-button w3-green" style="margin-right:8px;">
+          Import Overlay<input type="file" id="importOverlay" style="display:none;" onchange="importOverlayFile(event)">
+        </label>
+      </div>
+    </div>
+        <script>
+          function exportSystemData() {
+            var sys = document.getElementById("Sys").value;
+            var data = { system: sys, info: "(details to be loaded here)" };
+            var blob = new Blob([JSON.stringify(data, null, 2)], {type: "application/json"});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = sys + "_info.json";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+          }
+
+          function importOverlayFile(event) {
+            var file = event.target.files[0];
+            if (!file) return;
+            var reader = new FileReader();
+            reader.onload = function(e) {
+              try {
+                var data = JSON.parse(e.target.result);
+                alert("Overlay imported (placeholder): " + JSON.stringify(data));
+              } catch (err) {
+                alert("Invalid JSON file.");
+              }
+            };
+            reader.readAsText(file);
+          }
+        </script>
+    <!-- Startup -->
+    <script onkeypress="keyPress()" id="SELECTION" onloadeddata="save()" onload="save()" >
+      var sec = "Spinward Marches";
+      var sub = "A Cronor";
+      var sys = "0101-Mainworld";
+      function Startup() {
+        console.log("Startup()");
+        // Restore system from URL if present
+        const params = new URLSearchParams(window.location.search);
+        const sysParam = params.get('sys');
+        if (sysParam) {
+          var sysSelect = document.getElementById("Sys");
+          for (var i = 0; i < sysSelect.options.length; i++) {
+            if (sysSelect.options[i].value === sysParam) {
+              sysSelect.selectedIndex = i;
+              break;
+            }
+          }
+        }
+        save();
+        // Trigger SysChange to update info panel if sys param present
+        if (sysParam) SysChange();
+      }
+    </script>
+    <!-- clickChange -->
+    <script>
+      function clickChange() {
+        console.log("clickChange()");
+      }
+    </script>    
+    <!-- Main Map -->
+    <div class="w3-center">
+      <img id="pic0" src="./0101_files/0101-Maps.gif" usemap="#Maps" onclick="picClickMain()" width="600" height="600" alt="eh?" style="border: 4px solid #ccc; transition: border 0.2s;">
+      <map accesskey="h" id="hexnum" name="Maps">
+        <!-- SUBSECTOR MAP -->
+        <area shape="rect" coords="400,0,600,255" alt="SubsectorMap" href="Subsector.html" title="View Subsector Map">
+        <!-- FIFTH FRONTIER WAR MAP -->
+        <area shape="rect" coords="400,275,600,470" alt="FFWMap" href="System.html" title="View Fifth Frontier War Map">
+        <!-- UWP MAP -->
+        <area shape="rect" coords="215,490,600,600" alt="UWPMap" href="8-Mainworld.html" onclick="Info()" title="View UWP Map">
+        <!-- SECTOR -->
+        <area shape="rect" coords="0,500,200,600" alt="SystemMap" href="Sector.html" title="View Sector Map">
+        <!-- DISTANCE KEY -->
+        <area shape="rect" coords="0,0,400,50" alt="show Key" href="key.html" title="Show Distance Key">
+      </map>
+    </div>
+    <!-- Offensive Capability -->
+    <div class="w3-row">
+      <div class="w3-col s4 w3-center">
+        <a id="sdb" onclick="LinkClick()" href="1-Scout.html">Scouts/SDBs</a>
+        <img id="pic1" src="./0101_files/0101-SDBs.gif" width="200" height="100" alt="eh?" onclick="picClick('sdb')">
+      </div>
+      <div class="w3-col s4 w3-center">
+        <a id="ron" onclick="LinkClick()" href="2-Navy.html">Navy/Rons</a>
+        <img id="pic2" src="./0101_files/0101-Squadrons.gif" width="200" height="100" alt="eh?" onclick="picClick('ron')">
+      </div>
+      <div class="w3-col s4 w3-center">
+        <a id="troop" onclick="LinkClick()" href="3-Marine.html">Marine/Troops</a>
+        <img id="pic3" src="./0101_files/0101-Troops.gif" width="200" height="100" alt="eh?" onclick="picClick('troop')">
+      </div>
+    </div>
+    <!-- Defensive Capability -->
+    <div class="w3-row">
+      <div class="w3-col s4 w3-center">
+        <a id="defence" onclick="LinkClick(id)" href="4-Army.html">Army/Defences</a>
+        <img id="pic4" src="./0101_files/0101-Defences.gif" width="200" height="100" alt="eh?" onclick="picClick('defence')">
+      </div>
+      <div class="w3-col s4 w3-center">
+        <a id="population" onclick="LinkClick(id)" href="5-Other.html">Other/Pop</a>
+        <img id="pic5" src="./0101_files/0101-Population.gif" width="200" height="100" alt="eh?" onclick="picClick('population')">
+      </div>
+      <div class="w3-col s4 w3-center">
+        <a id="belt"  onclick="LinkClick(id)"href="6-Merchant.html">Merchant/Belts</a>
+        <img id="pic6" src="./0101_files/0101-Belts.gif" width="200" height="100" alt="eh?" onclick="picClick('belt')">
+      </div>
+    </div>
+    <!-- Commerce Capability -->
+    <div class="w3-row">
+      <div class="w3-col s4 w3-center">
+        <a id="giant" onclick="LinkClick(id)" href="7-Giants.html">Merchant/Giants</a>
+        <img id="pic7" src="./0101_files/0101-Gas Giants.gif" width="200" height="100" alt="eh?" onclick="picClick('giant')">
+      </div>
+      <div class="w3-col s4 w3-center">
+        <a id="world" onclick="LinkClick(id)" href="8-Mainworld.html">Mainworld Data</a>
+        <img id="pic8" src="./0101_files/0101-Mainworld.gif" width="200" height="100" alt="eh?" onclick="picClick('world')">
+      </div>
+      <div class="w3-col s4 w3-center">
+        <a id="worlds" onclick="LinkClick(id)" href="9-Worlds.html">Merchant/Worlds</a>
+        <img id="pic9" src="./0101_files/0101-Worlds.gif" width="200" height="100" alt="eh?" onclick="picClick('worlds')">
+      </div>
+    </div>
+    <!-- Commerce Capability -->
+    <div class="w3-row">
+      <div class="w3-col s4 w3-center">
+        <a id="giant1a" onclick="LinkClick(id)" href="10-Invader.html">Merchant/Giants</a>
+        <img id="pic7a" src="./0101_files/0101-Gas Giants.gif" width="200" height="100" alt="eh?" onclick="picClick('giant')">
+      </div>
+      <div class="w3-col s4 w3-center">
+        <a id="world1a" onclick="LinkClick(id)" href="11-Defender.html">Mainworld Data</a>
+        <img id="pic8a" src="./0101_files/0101-Mainworld.gif" width="200" height="100" alt="eh?" onclick="picClick('world')">
+      </div>
+      <div class="w3-col s4 w3-center">
+        <a id="worlds1a" onclick="LinkClick(id)" href="12-Time.html">Merchant/Worlds</a>
+        <img id="pic9a" src="./0101_files/0101-Worlds.gif" width="200" height="100" alt="eh?" onclick="picClick('worlds')">
+      </div>
+    </div>
+    <!-- picClickMain -->
+    <script>
+      function picClickMain() {
+        console.log("picClickMain()");
+        var x = document.getElementById("demo");
+        //console.log("x = " + x);
+        col = "white";
+        document.body.style.backgroundColor = col;
+        console.log("col = " + col);
+        console.log("x.toString() = " + x.toString());
+        console.log("SHOW <SEC><SUB><SYS>jta4All3.html");
+        
+        
+        
+      }
+    </script>
+    <!-- Counter Clicks -->
+    <script>
+      function picClick(s) {
+        var x = document.getElementById(s);
+        col = "white";
+        console.log("picClick(" + s + ")");
+        switch (s) {
+          case "":
+          {
+            break;
+          }
+          case "main":
+          {
+            x = document.getElementById("demo");
+            col = "white";
+            break;
+          }
+
+          case "sdb":
+          {
+            x = document.getElementById("sdb");
+            col = "yellow";
+            break;
+          }
+          case "ron":
+          {
+            x = document.getElementById("ron");
+            col = "cyan";
+            break;
+          }
+          case "troop":
+          {
+            x = document.getElementById("troop");
+            col = "red";
+            break;
+          }
+
+          case "defence":
+          {
+            x = document.getElementById("defence");
+            col = "green";
+            break;
+          }
+          case "population":
+          {
+            x = document.getElementById("population");
+            col = "white";
+            break;
+          }
+          case "belt":
+          {
+            x = document.getElementById("belt");
+            col = "grey";
+            break;
+          }
+
+          case "giant":
+          {
+            x = document.getElementById("giant");
+            col = "dark grey";
+            break;
+          }
+          case "world":
+          {
+            x = document.getElementById("world");
+            col = "white";
+            break;
+          }
+          case "worlds":
+          {
+            x = document.getElementById("worlds");
+            col = "dark grey";
+            break;
+          }
+
+          case "giant1":
+          {
+            x = document.getElementById("giant");
+            col = "dark grey";
+            break;
+          }
+          case "world1":
+          {
+            x = document.getElementById("world");
+            col = "white";
+            break;
+          }
+          case "worlds1":
+          {
+            x = document.getElementById("worlds");
+            col = "dark grey";
+            break;
+          }
+        }
+        //console.log("  " + "x = " + x);
+        console.log("" + "col = " + col);
+        document.body.style.backgroundColor = col;
+      }
+    </script> 
+    <!-- Sector Change -->
+    <script>
+      function SecChange() {
+        console.log("SecChange()");
+        console.log("  sec = " + sec);
+        SubChange();
+      }
+    </script>
+    <!-- Subsector Change -->
+    <script>
+      function SubChange() {
+        console.log("SubChange()");
+        console.log("  sub = " + sub);
+        SysChange();
+      }
+    </script>
+    <!-- System Change -->
+    <script>
+      function SysChange() {
+        var x = document.getElementById("Sys").value;
+        console.log("SysChange()");
+        sys = x;
+        console.log("sys = " + x);
+        save();
+        load();
+        save();
+        // Show info panel with selected system (placeholder for dynamic data)
+        var infoPanel = document.getElementById("infoPanel");
+        var systemInfo = document.getElementById("systemInfo");
+        infoPanel.style.display = "block";
+        systemInfo.textContent = "Selected System: " + x + " (details to be loaded here)";
+        // Highlight map border for selected system
+        var mapImg = document.getElementById("pic0");
+        mapImg.style.border = "4px solid #2196F3";
+        setTimeout(function() { mapImg.style.border = "4px solid #ccc"; }, 1000);
+        // Update URL with selected system for bookmarking
+        const params = new URLSearchParams(window.location.search);
+        params.set('sys', x);
+        window.history.replaceState({}, '', `${window.location.pathname}?${params}`);
+      }
+
+      var p, path0, path1, path2, path3, path4, path5, path6, path7, path8, path9;
+      function load() {
+        console.log("load()");
+        sec = document.getElementById("Sector").value;
+        //console.log("sec = " + sec);
+        sub = document.getElementById("Subsector").value;
+        //console.log("sub = " + sub);
+        sys = document.getElementById("Sys").value;
+        //console.log("sys = " + sys);
+        p = "./0101_files/" + sys;
+        path0 = p + "-Maps.gif";
+        path1 = p + "-SDBs.gif";
+        path2 = p + "-Squadrons.gif";
+        path3 = p + "-Troops.gif";
+        path4 = p + "-Defences.gif";
+        path5 = p + "-Population.gif";
+        path6 = p + "-Belts.gif";
+        path7 = p + "-Gas Giants.gif";
+        path8 = p + "-Mainworld.gif";
+        path9 = p + "-Worlds.gif";
+        document.getElementById("pic0").src = path0;
+        document.getElementById("pic1").src = path1;
+        document.getElementById("pic2").src = path2;
+        document.getElementById("pic3").src = path3;
+        document.getElementById("pic4").src = path4;
+        document.getElementById("pic5").src = path5;
+        document.getElementById("pic6").src = path6;
+        document.getElementById("pic7").src = path7;
+        document.getElementById("pic8").src = path8;
+        document.getElementById("pic9").src = path9;
+        save();
+      }
+
+      function save() {
+        console.log("save()");
+        hexx = document.getElementById("Sys").value;
+        hex = {hex: "" + hexx};
+        hexJSON = JSON.stringify(hex);
+        localStorage.setItem("hexJSON", hexJSON);
+
+        // Retrieving data:
+        text = localStorage.getItem("hexJSON");
+        json = JSON.parse(text);
+        //console.log(json);
+      }
+    </script>
+    <!-- onbeforeunload -->
+    <script>
+      function myFunction() {
+        console.log("ONBEFOREUNLOAD - Time to save!");
+        save();
+        //return "CALLED BY ...";
+      }
+    </script>
+    <!-- Link Click -->
+    <script>
+      function LinkClick(id) {
+        console.log("LinkClick()");
+        console.log("id = " + id);
+      }
+    </script>
+    <!-- Blank - COPY ME -->
+    <script>
+    </script>
+    <!-- Info -->
+    <script id="info">
+      function showInfo() {
+        // <a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Info.txt" target="_blank">Info</a>
+      }
+    </script>
+    <!-- -->
+  </body>
+</html>

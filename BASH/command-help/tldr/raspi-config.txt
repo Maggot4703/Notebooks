@@ -1,0 +1,8 @@
+raspi-config
+
+[0m[0mAn ncurses terminal GUI to config a Raspberry Pi.
+More information: https://www.raspberrypi.com/documentation/computers/configuration.html.
+
+ - [0m[32;23;22;24;25mStart raspi-config:
+   [33;23;22;24;25msudo raspi-config[0m
+[0m[0m

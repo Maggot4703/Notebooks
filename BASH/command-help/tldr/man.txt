@@ -1,0 +1,29 @@
+man
+
+[0m[0mFormat and display manual pages.
+More information: https://manned.org/man.
+
+ - [0m[32;23;22;24;25mDisplay the man page for a command:
+   [33;23;22;24;25mman [0mcommand
+[0m
+ - [0m[32;23;22;24;25mOpen the man page for a command in a browser (BROWSER environment variable can replace =browser_name):
+   [33;23;22;24;25mman [0m[-H|--html=]browser_name[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mDisplay the man page for a command from section 7:
+   [33;23;22;24;25mman 7 [0mcommand
+[0m
+ - [0m[32;23;22;24;25mList all available sections for a command:
+   [33;23;22;24;25mman [0m[-f|--whatis][33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mDisplay the path searched for manpages:
+   [33;23;22;24;25mman [0m[-w|--path]
+[0m
+ - [0m[32;23;22;24;25mDisplay the location of a manpage rather than the manpage itself:
+   [33;23;22;24;25mman [0m[-w|--where][33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mDisplay the man page using a specific locale:
+   [33;23;22;24;25mman [0m[-L|--locale][33;23;22;24;25m [0mlocale[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mSearch for manpages containing a search string:
+   [33;23;22;24;25mman [0m[-k|--apropos][33;23;22;24;25m "[0msearch_string[33;23;22;24;25m"[0m
+[0m[0m

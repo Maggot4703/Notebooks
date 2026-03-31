@@ -1,0 +1,23 @@
+grim
+
+[0m[0mGrab images (Screenshots) from a Wayland compositor.
+More information: https://sr.ht/~emersion/grim.
+
+ - [0m[32;23;22;24;25mScreenshot all outputs:
+   [33;23;22;24;25mgrim[0m
+[0m
+ - [0m[32;23;22;24;25mScreenshot a specific output:
+   [33;23;22;24;25mgrim -o [0mpath/to/output_file
+[0m
+ - [0m[32;23;22;24;25mScreenshot a specific region:
+   [33;23;22;24;25mgrim -g "[0mx_position[33;23;22;24;25m,[0my_position[33;23;22;24;25m [0mwidth[33;23;22;24;25mx[0mheight[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mSelect a specific region and screenshot it, (using slurp):
+   [33;23;22;24;25mgrim -g "[0m$(slurp)[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mUse a custom filename:
+   [33;23;22;24;25mgrim "[0mpath/to/file.png[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mScreenshot and copy to clipboard:
+   [33;23;22;24;25mgrim - | [0mclipboard_manager
+[0m[0m

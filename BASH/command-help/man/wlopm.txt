@@ -1,0 +1,49 @@
+WLOPM(1)                    General Commands Manual                   WLOPM(1)
+
+NAME
+       wlopm - Wayland output power management
+
+SYNOPSIS
+       wlopm [-j] [--json] [--on output-name] [--off output-name]
+             [--toggle output-name]
+
+       wlopm [-h] [--help]
+
+       wlopm [-v] [--version]
+
+DESCRIPTION
+       wlopm is a simple client implementing zwlr-output-power-management-v1.
+
+       If no operations are defined, wlopm will list all outputs and their
+       current power modes.
+
+OPTIONS
+       -h, --help
+              Print help and exit.
+
+       -v, --version
+              Print version and exit.
+
+       -j, --json
+              Enable JSON formatting for listing outputs and errors
+              encountered while trying to set their power modes.
+
+       --on output-name
+              Set the power mode of the output to on.
+
+       --off output-name
+              Set the power mode of the output to off.
+
+       --toggle output-name
+              Toggle the power mode of the output
+
+OUTPUT NAMES
+       Output names are compositor dependand.
+
+       If instead of an output name * is given as parameter to an operation,
+       wlopm will do the operation for all discovered outputs.
+
+AUTHOR
+       Leon Henrik Plickat ⟨leonhenrik.plickat@stud.uni-goettingen.de⟩
+
+git.sr.ht/~leon_plickat/wlopm     2021-07-17                          WLOPM(1)

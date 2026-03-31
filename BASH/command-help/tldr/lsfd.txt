@@ -1,0 +1,20 @@
+lsfd
+
+[0m[0mList open files and the corresponding processes in Linux.
+More information: https://manned.org/lsfd.
+
+ - [0m[32;23;22;24;25mList all open file descriptors:
+   [33;23;22;24;25mlsfd[0m
+[0m
+ - [0m[32;23;22;24;25mList all files kept open by a specific program:
+   [33;23;22;24;25mlsfd [0m[-Q|--filter][33;23;22;24;25m 'PID == [0mprocess_ID[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mCheck what program has a specific file open:
+   [33;23;22;24;25mlsfd [0m[-Q|--filter][33;23;22;24;25m "NAME == '[0mpath/to/file[33;23;22;24;25m'"[0m
+[0m
+ - [0m[32;23;22;24;25mList open IPv4 or IPv6 sockets:
+   [33;23;22;24;25mlsfd [0m-i4|-i6
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mlsfd [0m[-h|--help]
+[0m[0m

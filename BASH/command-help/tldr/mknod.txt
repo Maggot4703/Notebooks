@@ -1,0 +1,17 @@
+mknod
+
+[0m[0mCreate block or character device special files.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/mknod-invocation.html.
+
+ - [0m[32;23;22;24;25mCreate a block device:
+   [33;23;22;24;25msudo mknod [0mpath/to/device_file[33;23;22;24;25m b [0mmajor_device_number[33;23;22;24;25m [0mminor_device_number
+[0m
+ - [0m[32;23;22;24;25mCreate a character device:
+   [33;23;22;24;25msudo mknod [0mpath/to/device_file[33;23;22;24;25m c [0mmajor_device_number[33;23;22;24;25m [0mminor_device_number
+[0m
+ - [0m[32;23;22;24;25mCreate a FIFO (queue) device:
+   [33;23;22;24;25msudo mknod [0mpath/to/device_file[33;23;22;24;25m p[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a device file with default SELinux security context:
+   [33;23;22;24;25msudo mknod [0m[-Z |--context=]path/to/device_file[33;23;22;24;25m [0mtype[33;23;22;24;25m [0mmajor_device_number[33;23;22;24;25m [0mminor_device_number
+[0m[0m

@@ -1,0 +1,21 @@
+pw-cat
+
+[0m[0mPlay and record audio files through PipeWire.
+See also: wpctl, pw-cli.
+More information: https://docs.pipewire.org/page_man_pw-cat_1.html.
+
+ - [0m[32;23;22;24;25mPlay a WAV file over the default target:
+   [33;23;22;24;25mpw-cat [0m[-p|--playback][33;23;22;24;25m [0mpath/to/file.wav
+[0m
+ - [0m[32;23;22;24;25mPlay a WAV file with a specified resampler quality (4 by default):
+   [33;23;22;24;25mpw-cat [0m[-q|--quality][33;23;22;24;25m [0m0..15[33;23;22;24;25m [0m[-p|--playback][33;23;22;24;25m [0mpath/to/file.wav
+[0m
+ - [0m[32;23;22;24;25mRecord a sample recording at a volume level of 125%:
+   [33;23;22;24;25mpw-cat [0m[-r|--record][33;23;22;24;25m --volume [0m1.25[33;23;22;24;25m [0mpath/to/file.wav
+[0m
+ - [0m[32;23;22;24;25mRecord a sample recording using a different sample rate:
+   [33;23;22;24;25mpw-cat [0m[-r|--record][33;23;22;24;25m --rate [0m6000[33;23;22;24;25m [0mpath/to/file.wav
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpw-cat [0m[-h|--help]
+[0m[0m

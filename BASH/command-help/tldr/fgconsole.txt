@@ -1,0 +1,11 @@
+fgconsole
+
+[0m[0mPrint the number of the foreground virtual terminal.
+More information: https://manned.org/fgconsole.
+
+ - [0m[32;23;22;24;25mPrint current terminal number or serial if the terminal is serial:
+   [33;23;22;24;25mfgconsole[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the next unallocated virtual terminal:
+   [33;23;22;24;25mfgconsole [0m[-n|--next-available]
+[0m[0m

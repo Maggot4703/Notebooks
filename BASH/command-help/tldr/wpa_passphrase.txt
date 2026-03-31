@@ -1,0 +1,11 @@
+wpa_passphrase
+
+[0m[0mGenerate a WPA-PSK key from an ASCII passphrase for a SSID.
+More information: https://manned.org/wpa_passphrase.1.
+
+ - [0m[32;23;22;24;25mCompute and display the WPA-PSK key for a given SSID reading the passphrase from stdin:
+   [33;23;22;24;25mwpa_passphrase [0mSSID
+[0m
+ - [0m[32;23;22;24;25mCompute and display WPA-PSK key for a given SSID specifying the passphrase as an argument:
+   [33;23;22;24;25mwpa_passphrase [0mSSID[33;23;22;24;25m [0mpassphrase
+[0m[0m

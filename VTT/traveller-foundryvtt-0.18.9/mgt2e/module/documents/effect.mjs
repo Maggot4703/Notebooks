@@ -1,0 +1,69 @@
+/**
+ * Designed to be part of items, provides bonuses to actors.
+ */
+import {MgT2Item} from "./item.mjs";
+
+export class MgT2Effect extends ActiveEffect {
+    apply(actor, change) {
+        if (this.isSuppressed) return null;
+
+        return super.apply(actor, change);
+    }
+
+    get isSuppressed() {
+        if (this.parent instanceof Item) {
+            if (this.parent.system.status === MgT2Item.EQUIPPED) {
+                return false;
+            } else if (this.parent.system?.component?.linkedTo) {
+                // If this is a component, and the item it is linked to is equipped,
+                // then this component is also equipped.
+                let linkedId = this.parent.system.component.linkedTo;
+                let parent = this.parent?.parent?.items?.get(linkedId);
+                return parent.system.status !== MgT2Item.EQUIPPED;
+            }
+            return true;
+        }
+
+        // Needed for legacy item effects.
+        if (this.origin) {
+            let origin = fromUuidSync(this.origin);
+            if (origin) {
+                if (origin.system.status !== MgT2Item.EQUIPPED) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    static onManageActiveEffect(event, owner) {
+        event.preventDefault();
+        const a = event.currentTarget;
+
+        const li = a.closest("li");
+        const effect = li.dataset.effectId ? owner.effects.get(li.dataset.effectId) : null;
+        switch ( a.dataset.action ) {
+            case "create":
+                return owner.createEmbeddedDocuments("ActiveEffect", [{
+                    label: game.i18n.localize("MGT2.Effects.Create"),
+                    name: game.i18n.localize("MGT2.Effects.Create"),
+                    icon: "icons/svg/aura.svg",
+                    origin: owner.uuid,
+                    isSuppressed: false,
+                    isTemporary: false,
+                    "type": "none",
+                    "target": "DEX",
+                    "value": 0,
+                    transfer: true,
+                    disabled: true
+                }]);
+            case "edit":
+                return effect.sheet.render(true);
+            case "delete":
+                return effect.delete();
+            case "toggle":
+                return effect.update({disabled: !effect.data.disabled});
+        }
+    }
+}

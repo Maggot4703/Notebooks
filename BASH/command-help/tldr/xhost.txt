@@ -1,0 +1,23 @@
+xhost
+
+[0m[0mManage access control lists for X server connections.
+More information: https://manned.org/xhost.
+
+ - [0m[32;23;22;24;25mDisplay the current access control list:
+   [33;23;22;24;25mxhost[0m
+[0m
+ - [0m[32;23;22;24;25mAllow a specific host to connect to the X server:
+   [33;23;22;24;25mxhost +[0mhostname
+[0m
+ - [0m[32;23;22;24;25mDeny a specific host from connecting to the X server:
+   [33;23;22;24;25mxhost -[0mhostname
+[0m
+ - [0m[32;23;22;24;25mAllow all hosts to connect (disable access control - insecure):
+   [33;23;22;24;25mxhost +[0m
+[0m
+ - [0m[32;23;22;24;25mDeny all hosts except those explicitly allowed (enable access control):
+   [33;23;22;24;25mxhost -[0m
+[0m
+ - [0m[32;23;22;24;25mRemove a specific user or address using a family prefix (like inet:hostname or si:localuser:username):
+   [33;23;22;24;25mxhost -[0mfamily:name
+[0m[0m

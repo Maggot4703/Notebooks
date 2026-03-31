@@ -1,0 +1,15 @@
+gvcolor
+
+[0m[0mColorize a ranked digraph with a range of colors.
+Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten.
+More information: https://graphviz.org/pdf/gvcolor.1.pdf.
+
+ - [0m[32;23;22;24;25mColorize one or more ranked digraph (that were already processed by dot):
+   [33;23;22;24;25mgvcolor [0mpath/to/layout1.gv path/to/layout2.gv ...[33;23;22;24;25m > [0mpath/to/output.gv
+[0m
+ - [0m[32;23;22;24;25mLay out a graph and colorize it, then convert to a PNG image:
+   [33;23;22;24;25mdot [0mpath/to/input.gv[33;23;22;24;25m | gvcolor | dot -T [0mpng[33;23;22;24;25m > [0mpath/to/output.png
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mgvcolor -?[0m
+[0m[0m

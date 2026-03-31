@@ -1,0 +1,487 @@
+MESON(1)                         User Commands                        MESON(1)
+
+NAME
+       meson - a high productivity build system
+
+DESCRIPTION
+       Meson  is  a build system designed to optimize programmer productivity.
+       It aims to do this by providing simple, out-of-the-box support for mod‐
+       ern  software development tools and practices, such as unit tests, cov‐
+       erage reports, Valgrind, Ccache and the like.
+
+       The main Meson executable provides many subcommands to access  all  the
+       functionality.
+
+The setup command
+       Using  Meson is simple and follows the common two-phase process of most
+       build systems. First you run Meson to configure your build:
+
+       meson setup [ options ] [ build directory ] [ source directory ]
+
+       Note that the build directory must be different from the source  direc‐
+       tory.  Meson  does not support building inside the source directory and
+       attempting to do that leads to an error.
+
+       After a successful configuration step you can build the source by  run‐
+       ning the actual build command in the build directory. The default back‐
+       end of Meson is Ninja, which can be invoked like this.
+
+       ninja [ target ]
+
+       You only need to run the Meson command once: when you  first  configure
+       your  build  dir. After that you just run the build command. Meson will
+       autodetect changes in your source tree and regenerate all files  needed
+       to build the project.
+
+       The  setup  command  is  the default operation. If no actual command is
+       specified, Meson will assume you meant to do a setup. That  means  that
+       you can set up a build directory without the setup command like this:
+
+       meson [ options ] [ build directory ] [ source directory ]
+
+   options:
+       --version
+              print version number
+
+       --help print command line help
+
+The configure command
+       meson  configure  provides  a way to configure a Meson project from the
+       command line.  Its usage is simple:
+
+       meson configure [ build directory ] [ options to set ]
+
+       If build directory is omitted, the current directory is used instead.
+
+       If no parameters are set, meson configure will print the value  of  all
+       build options to the console.
+
+       To set values, use the -D command line argument like this.
+
+       meson configure -Dopt1=value1 -Dopt2=value2
+
+The dist command
+       meson dist generates a release archive.
+
+       meson dist [ options ]
+
+   options:
+       -h, --help
+              show this help message and exit
+
+       -C WD  directory to cd into before running
+
+       --allow-dirty
+              Allow even when repository contains uncommitted changes.
+
+       --formats FORMATS
+              Comma separated list of archive types to create.  Supports xztar
+              (default), gztar, and zip.
+
+       --include-subprojects
+              Include source code of subprojects that have been used  for  the
+              build.
+
+       --no-tests
+              Do not build and test generated packages.
+
+The install command
+       meson install installs the project.
+
+       meson install [ options ]
+
+   options:
+       -h, --help
+              show this help message and exit
+
+       -C WD  directory to cd into before running
+
+       --no-rebuild
+              Do not rebuild before installing.
+
+       --only-changed
+              Only overwrite files that are older than the copied file.
+
+       --quiet
+              Do not print every file that was installed.
+
+       --destdir DESTDIR
+              Sets or overrides DESTDIR environment.  (Since 0.57.0)
+
+       --dry-run, -n
+              Doesn't actually install, but print logs. (Since 0.57.0)
+
+       --skip-subprojects [SKIP_SUBPROJECTS]
+              Do not install files from given subprojects. (Since 0.58.0)
+
+       --tags TAGS
+              Install  only  targets  having  one  of  the  given tags. (Since
+              0.60.0)
+
+       --strip
+              Strip targets even if strip option was not set during configure.
+              (Since 0.62.0)
+
+The introspect command
+       Meson  introspect is a command designed to make it simple to  integrate
+       with other tools, such as IDEs. The output of this command is in JSON.
+
+       meson introspect [ build directory ] [ option ]
+
+       If build directory is omitted, the current directory is used instead.
+
+   options:
+       --targets
+              print all top level targets (executables, libraries, etc)
+
+       --target-files
+              print the source files of the given target
+
+       --buildsystem-files
+              print all files that make up the build system (meson.build,  me‐
+              son.options, meson_options.txt etc)
+
+       --tests
+              print all unit tests
+
+       --help print command line help
+
+The init command
+       meson init creates a new project
+
+       meson init [ options ] [ sourcefile...  ]
+
+   positional arguments:
+       sourcefile...
+              source files. default: all recognized files in current directory
+
+   options:
+       -h, --help
+              show this help message and exit
+
+       -C WD  directory to cd into before running
+
+       -n NAME, --name NAME
+              project name. default: name of current directory
+
+       -e EXECUTABLE, --executable EXECUTABLE
+              executable name. default: project name
+
+       -d DEPS, --deps DEPS
+              dependencies, comma-separated
+
+       -l   {c,cpp,cs,cuda,d,fortran,java,objc,objcpp,rust,vala},   --language
+       {c,cpp,cs,cuda,d,fortran,java,objc,objcpp,rust,vala}
+              project language. default: autodetected based on source files
+
+       -b, --build
+              build after generation
+
+       --builddir BUILDDIR
+              directory for build
+
+       -f, --force
+              force overwrite of existing files and directories.
+
+       --type {executable,library}
+              project type. default: executable based project
+
+       --version VERSION
+              project version. default: 0.1
+
+The test command
+       meson test is a helper tool for running test suites of  projects  using
+       Meson.  The default way of running tests is to invoke the default build
+       command:
+
+       ninja [ test ]
+
+       meson test provides a richer set of tools for invoking tests.
+
+       meson test automatically rebuilds the necessary targets  to  run  tests
+       when  used with the Ninja backend.  Upon build failure, meson test will
+       return an exit code of 125.  This return code tells git bisect  run  to
+       skip  the  current commit.  Thus bisecting using git can be done conve‐
+       niently like this.
+
+       git bisect run meson test -C build_dir
+
+   options:
+       --repeat
+              run tests as many times as specified
+
+       --gdb  run tests under gdb
+
+       --list list all available tests
+
+       --wrapper
+              invoke all tests via the given wrapper (e.g. valgrind)
+
+       -C     Change into the given directory before running  tests  (must  be
+              root of build directory).
+
+       --suite
+              run tests in this suite
+
+       --no-suite
+              do not run tests in this suite
+
+       --no-stdsplit
+              do not split stderr and stdout in test logs
+
+       --benchmark
+              run benchmarks instead of tests
+
+       --logbase
+              base of file name to use for writing test logs
+
+       --num-processes
+              how many parallel processes to use to run tests
+
+       --verbose
+              do not redirect stdout and stderr
+
+       -t     a  multiplier  to use for test timeout values (usually something
+              like 100 for Valgrind)
+
+       --setup
+              use the specified test setup
+
+The wrap command
+       Wraptool is a helper utility to manage source  dependencies  using  the
+       online wrapdb service.
+
+       meson wrap < command > [ options ]
+
+       You  should  run this command in the top level source directory of your
+       project.
+
+   Commands:
+       list   list all available projects
+
+       search search projects by name
+
+       install
+              install a project with the given name
+
+       update update the specified project to latest available version
+
+       info   show available versions of the specified project
+
+       status show installed and available versions of currently used  subpro‐
+              jects
+
+The subprojects command
+       meson subprojects is used to manage subprojects.
+
+       meson subprojects [ options ] [ command ]
+
+   options:
+       -h, --help
+              show this help message and exit
+
+   commands:
+       update Update all subprojects from wrap files
+
+       checkout
+              Checkout a branch (git only)
+
+       download
+              Ensure  subprojects  are  fetched,  even  if not in use. Already
+              downloaded subprojects are not modified. This  can  be  used  to
+              pre-fetch all subprojects and avoid downloads during configure.
+
+       foreach
+              Execute a command in each subproject directory.
+
+       purge  Remove all wrap-based subproject artifacts
+
+       packagefiles
+              Manage the packagefiles overlay
+
+The rewrite command
+       meson rewrite modifies the project definition.
+
+       meson rewrite [ options ] [ command ]
+
+   options:
+       -h, --help
+              show this help message and exit
+
+       -s SRCDIR, --sourcedir SRCDIR
+              Path to source directory.
+
+       -V, --verbose
+              Enable verbose output
+
+       -S, --skip-errors
+              Skip errors instead of aborting
+
+   commands:
+       target (tgt)
+              Modify a target
+
+       kwargs Modify keyword arguments
+
+       default-options (def)
+              Modify the project default options
+
+       command (cmd)
+              Execute a JSON array of commands
+
+The compile command
+       meson compile builds the project.
+
+       meson compile [ options ] [ TARGET...  ]
+
+   positional arguments:
+       TARGET Targets to build. Target has the following format: [PATH_TO_TAR‐
+              GET/]TARGET_NAME.TARGET_SUFFIX[:TARGET_TYPE].
+
+   options:
+       -h, --help
+              show this help message and exit
+
+       --clean
+              Clean the build directory.
+
+       -C WD  directory to cd into before running
+
+       -j JOBS, --jobs JOBS
+              The number of worker jobs to run (if supported). If the value is
+              less than 1 the build program will guess.
+
+       -l LOAD_AVERAGE, --load-average LOAD_AVERAGE
+              The system load average to try to maintain (if supported).
+
+       -v, --verbose
+              Show more verbose output.
+
+       --ninja-args NINJA_ARGS
+              Arguments to pass to `ninja` (applied only on `ninja` backend).
+
+       --vs-args VS_ARGS
+              Arguments to pass to `msbuild` (applied only on `vs` backend).
+
+       --xcode-args XCODE_ARGS
+              Arguments to pass to `xcodebuild` (applied only on `xcode` back‐
+              end).
+
+The devenv command
+       meson devenv runs commands in the developer environment.
+
+       meson devenv [ options ] [ command ]
+
+   positional arguments:
+       command
+              Command to run in developer  environment  (default:  interactive
+              shell)
+
+   options:
+       -h, --help
+              show this help message and exit
+
+       -C BUILDDIR
+              Path to build directory
+
+       --workdir WORKDIR, -w WORKDIR
+              Directory  to  cd  into before running (default: builddir, Since
+              1.0.0)
+
+       --dump [DUMP]
+              Only print required environment (Since 0.62.0) Takes an optional
+              file path (Since 1.1.0)
+
+       --dump-format {sh,export,vscode}
+              Format used with --dump (Since 1.1.0)
+
+The env2mfile command
+       meson  env2mfile  converts the current environment to a cross or native
+       file.
+
+       meson env2mfile [ options ]
+
+   options:
+       -h, --help
+              show this help message and exit
+
+       --debarch DEBARCH
+              The dpkg architecture to generate.
+
+       --gccsuffix GCCSUFFIX
+              A particular gcc version suffix if necessary.
+
+       -o OUTFILE
+              The output file.
+
+       --cross
+              Generate a cross compilation file.
+
+       --native
+              Generate a native compilation file.
+
+       --system SYSTEM
+              Define system for cross compilation.
+
+       --subsystem SUBSYSTEM
+              Define subsystem for cross compilation.
+
+       --kernel KERNEL
+              Define kernel for cross compilation.
+
+       --cpu CPU
+              Define cpu for cross compilation.
+
+       --cpu-family CPU_FAMILY
+              Define cpu family for cross compilation.
+
+       --endian {big,little}
+              Define endianness for cross compilation.
+
+The format command
+       meson format formats a meson source file.
+
+       meson format [ options ] [ sources...  ]
+
+   positional arguments:
+       sources...
+              meson source files
+
+   options:
+       -h, --help
+              show this help message and exit
+
+       -q, --check-only
+              exit with 1 if files would be modified by meson format
+
+       -i, --inplace
+              format files in-place
+
+       -r, --recursive
+              recurse subdirs (requires --check-only or --inplace option)
+
+       -c meson.format, --configuration meson.format
+              read configuration from meson.format
+
+       -e, --editor-config
+              try to read configuration from .editorconfig
+
+       -o OUTPUT, --output OUTPUT
+              output file (implies having exactly one input)
+
+EXIT STATUS
+       0      Successful.
+
+       1      Usage error, or an error parsing or executing meson.build.
+
+       2      Internal error.
+
+       125    meson test could not rebuild the required targets.
+
+       SEE ALSO
+
+              http://mesonbuild.com/
+
+              https://wrapdb.mesonbuild.com/
+
+meson 1.5.1                        July 2024                          MESON(1)

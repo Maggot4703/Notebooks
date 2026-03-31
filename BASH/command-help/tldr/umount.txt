@@ -1,0 +1,15 @@
+umount
+
+[0m[0mUnlink a filesystem from its mount point, making it no longer accessible.
+A filesystem cannot be unmounted when it is busy.
+More information: https://man.openbsd.org/umount.
+
+ - [0m[32;23;22;24;25mUnmount a filesystem, by passing the path to the source it is mounted from:
+   [33;23;22;24;25mumount [0mpath/to/device_file
+[0m
+ - [0m[32;23;22;24;25mUnmount a filesystem, by passing the path to the target where it is mounted:
+   [33;23;22;24;25mumount [0mpath/to/mounted_directory
+[0m
+ - [0m[32;23;22;24;25mUnmount all mounted filesystems (except the proc filesystem):
+   [33;23;22;24;25mumount -a[0m
+[0m[0m

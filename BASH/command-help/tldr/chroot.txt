@@ -1,0 +1,11 @@
+chroot
+
+[0m[0mRun command or interactive shell with special root directory.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/chroot-invocation.html.
+
+ - [0m[32;23;22;24;25mRun command as new root directory:
+   [33;23;22;24;25msudo chroot [0mpath/to/new/root[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mUse a specific user and group:
+   [33;23;22;24;25msudo chroot --userspec [0musername_or_id:group_name_or_id
+[0m[0m

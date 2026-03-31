@@ -1,0 +1,30 @@
+pipenv
+
+[0m[0mSimple and unified Python development workflow.
+Manage packages and the virtual environment for a project.
+More information: https://pypi.org/project/pipenv.
+
+ - [0m[32;23;22;24;25mCreate a new project:
+   [33;23;22;24;25mpipenv[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a new project using Python 3:
+   [33;23;22;24;25mpipenv --three[0m
+[0m
+ - [0m[32;23;22;24;25mInstall a package:
+   [33;23;22;24;25mpipenv install [0mpackage
+[0m
+ - [0m[32;23;22;24;25mInstall all the dependencies for a project:
+   [33;23;22;24;25mpipenv install[0m
+[0m
+ - [0m[32;23;22;24;25mInstall all the dependencies for a project (including dev packages):
+   [33;23;22;24;25mpipenv install --dev[0m
+[0m
+ - [0m[32;23;22;24;25mUninstall a package:
+   [33;23;22;24;25mpipenv uninstall [0mpackage
+[0m
+ - [0m[32;23;22;24;25mStart a shell within the created virtual environment:
+   [33;23;22;24;25mpipenv shell[0m
+[0m
+ - [0m[32;23;22;24;25mGenerate a requirements.txt (list of dependencies) for a project:
+   [33;23;22;24;25mpipenv lock --requirements[0m
+[0m[0m

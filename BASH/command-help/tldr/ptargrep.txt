@@ -1,0 +1,14 @@
+ptargrep
+
+[0m[0mFind regex patterns in tar archive files.
+More information: https://manned.org/ptargrep.
+
+ - [0m[32;23;22;24;25mSearch for a pattern within one or more tar archives:
+   [33;23;22;24;25mptargrep "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mExtract to the current directory using the basename of the file from the archive:
+   [33;23;22;24;25mptargrep [0m[-b|--basename][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for a case-insensitive pattern matching within a tar archive:
+   [33;23;22;24;25mptargrep [0m[-i|--ignore-case][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m[0m

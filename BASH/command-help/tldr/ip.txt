@@ -1,0 +1,30 @@
+ip
+
+[0m[0mShow/manipulate routing, devices, policy routing and tunnels.
+Some subcommands such as address have their own usage documentation.
+More information: https://www.manned.org/ip.8.
+
+ - [0m[32;23;22;24;25mList interfaces with detailed info:
+   [33;23;22;24;25mip [0m[a|address]
+[0m
+ - [0m[32;23;22;24;25mList interfaces with brief network layer info:
+   [33;23;22;24;25mip [0m[-br|-brief][33;23;22;24;25m [0m[a|address]
+[0m
+ - [0m[32;23;22;24;25mList interfaces with brief link layer info:
+   [33;23;22;24;25mip [0m[-br|-brief][33;23;22;24;25m [0m[l|link]
+[0m
+ - [0m[32;23;22;24;25mDisplay the routing table:
+   [33;23;22;24;25mip [0m[r|route]
+[0m
+ - [0m[32;23;22;24;25mShow neighbors (ARP table):
+   [33;23;22;24;25mip [0m[n|neighbour]
+[0m
+ - [0m[32;23;22;24;25mMake an interface up/down:
+   [33;23;22;24;25msudo ip [0m[l|link][33;23;22;24;25m [0m[s|set][33;23;22;24;25m [0methX[33;23;22;24;25m [0mup|down
+[0m
+ - [0m[32;23;22;24;25mAdd/Delete an IP address to an interface:
+   [33;23;22;24;25msudo ip [0m[a|address][33;23;22;24;25m [0madd|delete[33;23;22;24;25m [0mip[33;23;22;24;25m/[0mmask[33;23;22;24;25m dev [0methX
+[0m
+ - [0m[32;23;22;24;25mAdd a default route:
+   [33;23;22;24;25msudo ip [0m[r|route][33;23;22;24;25m [0m[a|add][33;23;22;24;25m default via [0mip[33;23;22;24;25m dev [0methX
+[0m[0m

@@ -1,0 +1,15 @@
+lvmsar
+
+[0m[0mLVM system activity reporter.
+Not supported under LVM2; prefer dmstats.
+More information: https://manned.org/lvmsar.
+
+ - [0m[32;23;22;24;25mRun the legacy reporter (LVM1 systems only):
+   [33;23;22;24;25mlvmsar[0m
+[0m
+ - [0m[32;23;22;24;25mReport I/O statistics for a device using device-mapper stats:
+   [33;23;22;24;25mdmstats report [0m/dev/mapper/device
+[0m
+ - [0m[32;23;22;24;25mList statistics regions for a device:
+   [33;23;22;24;25mdmstats list [0m/dev/mapper/device
+[0m[0m

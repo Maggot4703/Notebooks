@@ -1,0 +1,15 @@
+rmdir
+
+[0m[0mRemove directories without files.
+See also: rm.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/rmdir-invocation.html.
+
+ - [0m[32;23;22;24;25mRemove specific directories:
+   [33;23;22;24;25mrmdir [0mpath/to/directory1 path/to/directory2 ...
+[0m
+ - [0m[32;23;22;24;25mRemove specific nested directories recursively:
+   [33;23;22;24;25mrmdir [0m[-p|--parents][33;23;22;24;25m [0mpath/to/directory1 path/to/directory2 ...
+[0m
+ - [0m[32;23;22;24;25mClean a directory of empty directories:
+   [33;23;22;24;25mrmdir *[0m
+[0m[0m

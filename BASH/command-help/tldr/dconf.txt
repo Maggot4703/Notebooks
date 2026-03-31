@@ -1,0 +1,24 @@
+dconf
+
+[0m[0mManage dconf databases.
+See also: dconf-read, dconf-reset, dconf-write, gsettings.
+More information: https://manned.org/dconf.
+
+ - [0m[32;23;22;24;25mPrint a specific key value:
+   [33;23;22;24;25mdconf read /[0mpath/to/key
+[0m
+ - [0m[32;23;22;24;25mPrint a specific path sub-directories and sub-keys:
+   [33;23;22;24;25mdconf list /[0mpath/to/directory[33;23;22;24;25m/[0m
+[0m
+ - [0m[32;23;22;24;25mWrite a specific key value:
+   [33;23;22;24;25mdconf write /[0mpath/to/key[33;23;22;24;25m "[0mvalue[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mReset a specific key value:
+   [33;23;22;24;25mdconf reset /[0mpath/to/key
+[0m
+ - [0m[32;23;22;24;25mWatch a specific key/directory for changes:
+   [33;23;22;24;25mdconf watch /[0mpath/to/key|/path/to/directory[33;23;22;24;25m/[0m
+[0m
+ - [0m[32;23;22;24;25mDump a specific directory in INI file format:
+   [33;23;22;24;25mdconf dump /[0mpath/to/directory[33;23;22;24;25m/[0m
+[0m[0m

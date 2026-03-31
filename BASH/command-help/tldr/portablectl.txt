@@ -1,0 +1,20 @@
+portablectl
+
+[0m[0mA systemd utility for managing and deploying portable service images on Linux systems.
+More information: https://www.freedesktop.org/software/systemd/man/portablectl.html.
+
+ - [0m[32;23;22;24;25mList available portable service images discovered in the portable image search paths:
+   [33;23;22;24;25mportablectl list[0m
+[0m
+ - [0m[32;23;22;24;25mAttach a portable service image to the host system:
+   [33;23;22;24;25mportablectl attach [0mpath/to/image
+[0m
+ - [0m[32;23;22;24;25mDetach a portable service image from the host system:
+   [33;23;22;24;25mportablectl detach [0mpath/to/image|image_name
+[0m
+ - [0m[32;23;22;24;25mDisplay details and metadata about a specified portable service image:
+   [33;23;22;24;25mportablectl inspect [0mpath/to/image
+[0m
+ - [0m[32;23;22;24;25mCheck if a portable service image is attached to the host system:
+   [33;23;22;24;25mportablectl is-attached [0mpath/to/image|image_name
+[0m[0m

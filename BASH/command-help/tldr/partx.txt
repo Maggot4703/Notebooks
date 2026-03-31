@@ -1,0 +1,14 @@
+partx
+
+[0m[0mParse a partition table and tell the kernel about it.
+More information: https://manned.org/partx.
+
+ - [0m[32;23;22;24;25mList the partitions on a block device or disk image:
+   [33;23;22;24;25msudo partx [0m[-l|--list][33;23;22;24;25m [0mpath/to/device_or_disk_image
+[0m
+ - [0m[32;23;22;24;25mAdd all the partitions found in a given block device to the kernel:
+   [33;23;22;24;25msudo partx [0m[-a|--add][33;23;22;24;25m [0m[-v|--verbose][33;23;22;24;25m [0mpath/to/device_or_disk_image
+[0m
+ - [0m[32;23;22;24;25mDelete all the partitions found from the kernel (does not alter partitions on disk):
+   [33;23;22;24;25msudo partx [0m[-d|--delete][33;23;22;24;25m [0mpath/to/device_or_disk_image
+[0m[0m

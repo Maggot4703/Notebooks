@@ -1,0 +1,21 @@
+init
+
+[0m[0mLinux run level manager.
+Requires the SYSVINIT compile-time option to be enabled if using systemd.
+More information: https://manned.org/init.8.
+
+ - [0m[32;23;22;24;25mSet the system to run a graphical environment:
+   [33;23;22;24;25msudo init 5[0m
+[0m
+ - [0m[32;23;22;24;25mSet the system to run multiuser terminal:
+   [33;23;22;24;25msudo init 3[0m
+[0m
+ - [0m[32;23;22;24;25mShut down the system:
+   [33;23;22;24;25minit 0[0m
+[0m
+ - [0m[32;23;22;24;25mReboot the system:
+   [33;23;22;24;25minit 6[0m
+[0m
+ - [0m[32;23;22;24;25mSet the system to run on terminal with only root user allowed and no networking:
+   [33;23;22;24;25msudo init 1[0m
+[0m[0m

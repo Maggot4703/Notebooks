@@ -1,0 +1,29 @@
+eject
+
+[0m[0mEject CDs, floppy disks, tape drives, and USB sticks.
+More information: https://manned.org/eject.
+
+ - [0m[32;23;22;24;25mDisplay the default device:
+   [33;23;22;24;25meject [0m[-d|--default]
+[0m
+ - [0m[32;23;22;24;25mEject the default device:
+   [33;23;22;24;25meject[0m
+[0m
+ - [0m[32;23;22;24;25mEject a specific device (the default order is cd-rom, scsi, floppy and tape):
+   [33;23;22;24;25meject [0m/dev/cdrom
+[0m
+ - [0m[32;23;22;24;25mToggle whether a device's tray is open or closed:
+   [33;23;22;24;25meject [0m[-T|--traytoggle][33;23;22;24;25m [0m/dev/cdrom
+[0m
+ - [0m[32;23;22;24;25mEject a cd drive:
+   [33;23;22;24;25meject [0m[-r|--cdrom][33;23;22;24;25m [0m/dev/cdrom
+[0m
+ - [0m[32;23;22;24;25mEject a floppy drive:
+   [33;23;22;24;25meject [0m[-f|--floppy][33;23;22;24;25m [0m/mnt/floppy
+[0m
+ - [0m[32;23;22;24;25mEject a tape drive:
+   [33;23;22;24;25meject [0m[-q|--tape][33;23;22;24;25m [0m/mnt/tape
+[0m
+ - [0m[32;23;22;24;25mSet whether the physical eject button is [i]gnored (on prevents ejecting):
+   [33;23;22;24;25meject [0m[-i|--manualeject][33;23;22;24;25m [0mon|off
+[0m[0m

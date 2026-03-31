@@ -1,0 +1,20 @@
+mkfs.fat
+
+[0m[0mCreate an MS-DOS filesystem inside a partition.
+More information: https://manned.org/mkfs.fat.
+
+ - [0m[32;23;22;24;25mCreate a fat filesystem inside partition Y on device X:
+   [33;23;22;24;25mmkfs.fat [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mCreate filesystem with a volume-name:
+   [33;23;22;24;25mmkfs.fat -n [0mvolume_name[33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mCreate filesystem with a volume-id:
+   [33;23;22;24;25mmkfs.fat -i [0mvolume_id[33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mUse 5 instead of 2 file allocation tables:
+   [33;23;22;24;25mmkfs.fat -f 5 [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mSpecify filesystem type:
+   [33;23;22;24;25mmkfs.fat -F [0m12|16|32[33;23;22;24;25m [0m/dev/sdXY
+[0m[0m

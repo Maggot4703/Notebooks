@@ -1,0 +1,8 @@
+pwdx
+
+[0m[0mPrint working directory of a process.
+More information: https://manned.org/pwdx.
+
+ - [0m[32;23;22;24;25mPrint current working directory of a process:
+   [33;23;22;24;25mpwdx [0mprocess_id
+[0m[0m

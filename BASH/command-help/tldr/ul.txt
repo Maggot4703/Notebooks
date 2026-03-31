@@ -1,0 +1,12 @@
+ul
+
+[0m[0mUnderline a text.
+Each character in a string must be underlined separately.
+More information: https://manned.org/ul.
+
+ - [0m[32;23;22;24;25mDisplay the contents of the file with underlines where applicable:
+   [33;23;22;24;25mul [0mfile.txt
+[0m
+ - [0m[32;23;22;24;25mDisplay the contents of the file with underlines made of dashes -:
+   [33;23;22;24;25mul [0m[-i|--indicated][33;23;22;24;25m [0mfile.txt
+[0m[0m

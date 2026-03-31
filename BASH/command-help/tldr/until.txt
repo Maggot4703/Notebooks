@@ -1,0 +1,11 @@
+until
+
+[0m[0mSimple shell loop that repeats until it receives zero as return value.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-until.
+
+ - [0m[32;23;22;24;25mExecute a command until it succeeds:
+   [33;23;22;24;25muntil [0mcommand[33;23;22;24;25m; do :; done[0m
+[0m
+ - [0m[32;23;22;24;25mWait for a systemd service to be active:
+   [33;23;22;24;25muntil systemctl is-active [0m[-q|--quiet][33;23;22;24;25m [0mnginx[33;23;22;24;25m; do [0mecho "Waiting..."[33;23;22;24;25m; sleep 1; done; [0mecho "Launched!"
+[0m[0m

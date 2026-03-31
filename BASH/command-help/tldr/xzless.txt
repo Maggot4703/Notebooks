@@ -1,0 +1,15 @@
+xzless
+
+[0m[0mDisplay text from xz and lzma compressed files.
+See also: less.
+More information: https://manned.org/xzless.
+
+ - [0m[32;23;22;24;25mView a compressed file:
+   [33;23;22;24;25mxzless [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mView a compressed file and display line numbers:
+   [33;23;22;24;25mxzless --LINE-NUMBERS [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mView a compressed file and quit if the entire file can be displayed on the first screen:
+   [33;23;22;24;25mxzless --quit-if-one-screen [0mpath/to/file
+[0m[0m

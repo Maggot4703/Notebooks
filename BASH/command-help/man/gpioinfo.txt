@@ -1,0 +1,33 @@
+GPIOINFO(1)                      User Commands                     GPIOINFO(1)
+
+NAME
+       gpioinfo - manual page for gpioinfo v1.6.3
+
+SYNOPSIS
+       gpioinfo [OPTIONS] <gpiochip1> ...
+
+DESCRIPTION
+       Print information about all lines of the specified GPIO chip(s) (or all
+       gpiochips if none are specified).
+
+OPTIONS
+       -h, --help:
+              display this message and exit
+
+       -v, --version:
+              display the version and exit
+
+AUTHOR
+       Bartosz Golaszewski <bartekgola@gmail.com>
+
+REPORTING BUGS
+       Report bugs to:
+           Bartosz Golaszewski <bartekgola@gmail.com>
+           linux-gpio <linux-gpio@vger.kernel.org>
+
+COPYRIGHT
+       Copyright © 2017-2018 Bartosz Golaszewski License: LGPLv2.1
+       This is free software: you are free  to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
+
+libgpiod v1.6.3                  January 2023                      GPIOINFO(1)

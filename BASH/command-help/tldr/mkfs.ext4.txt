@@ -1,0 +1,11 @@
+mkfs.ext4
+
+[0m[0mCreate an ext4 filesystem inside a partition.
+More information: https://manned.org/mkfs.ext4.
+
+ - [0m[32;23;22;24;25mCreate an ext4 filesystem inside partition Y on device X:
+   [33;23;22;24;25msudo mkfs.ext4 [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mCreate an ext4 filesystem with a volume-label:
+   [33;23;22;24;25msudo mkfs.ext4 -L [0mvolume_label[33;23;22;24;25m [0m/dev/sdXY
+[0m[0m

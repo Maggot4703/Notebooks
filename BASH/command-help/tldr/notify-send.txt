@@ -1,0 +1,20 @@
+notify-send
+
+[0m[0mUse the current desktop environment's notification system to create a notification.
+More information: https://manned.org/notify-send.
+
+ - [0m[32;23;22;24;25mShow a notification with the title "Test" and the content "This is a test":
+   [33;23;22;24;25mnotify-send "[0mTest[33;23;22;24;25m" "[0mThis is a test[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mShow a notification with a custom icon:
+   [33;23;22;24;25mnotify-send [0m[-i|--icon][33;23;22;24;25m [0micon.png[33;23;22;24;25m "[0mTest[33;23;22;24;25m" "[0mThis is a test[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mShow a notification for 5 seconds:
+   [33;23;22;24;25mnotify-send [0m[-t|--expire-time][33;23;22;24;25m 5000 "[0mTest[33;23;22;24;25m" "[0mThis is a test[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mShow a notification with the specified urgency level (default: normal):
+   [33;23;22;24;25mnotify-send [0m[-u|--urgency][33;23;22;24;25m [0mlow|normal|critical[33;23;22;24;25m "[0mTest[33;23;22;24;25m" "[0mThis is a test[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mShow a notification with an app's icon and name:
+   [33;23;22;24;25mnotify-send "[0mTest[33;23;22;24;25m" [0m[-i|--icon][33;23;22;24;25m [0mgoogle-chrome[33;23;22;24;25m [0m[-a|--app-name][33;23;22;24;25m "[0mGoogle Chrome[33;23;22;24;25m"[0m
+[0m[0m

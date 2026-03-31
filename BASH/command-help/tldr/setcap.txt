@@ -1,0 +1,21 @@
+setcap
+
+[0m[0mSet capabilities of specified file.
+See also: getcap.
+More information: https://manned.org/setcap.
+
+ - [0m[32;23;22;24;25mSet capability cap_net_raw (to use RAW and PACKET sockets) for a given file:
+   [33;23;22;24;25msetcap '[0mcap_net_raw[33;23;22;24;25m' [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSet multiple capabilities on a file (ep behind the capability means "effective permitted"):
+   [33;23;22;24;25msetcap '[0mcap_dac_read_search,cap_sys_tty_config+ep[33;23;22;24;25m' [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mRemove all capabilities from a file:
+   [33;23;22;24;25msetcap -r [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mVerify that the specified capabilities are currently associated with the specified file:
+   [33;23;22;24;25msetcap -v '[0mcap_net_raw[33;23;22;24;25m' [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mThe optional -n root_uid argument can be used to set the file capability for use only in a user namespace with this root user ID owner:
+   [33;23;22;24;25msetcap -n [0mroot_uid[33;23;22;24;25m '[0mcap_net_admin[33;23;22;24;25m' [0mpath/to/file
+[0m[0m

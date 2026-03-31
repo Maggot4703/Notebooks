@@ -1,0 +1,29 @@
+read
+
+[0m[0mShell builtin for retrieving data from stdin.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-read.
+
+ - [0m[32;23;22;24;25mStore data that you type from the keyboard:
+   [33;23;22;24;25mread [0mvariable
+[0m
+ - [0m[32;23;22;24;25mStore each of the next lines you enter as values of an array:
+   [33;23;22;24;25mread -a [0marray
+[0m
+ - [0m[32;23;22;24;25mSpecify the number of maximum characters to be read:
+   [33;23;22;24;25mread -n [0mcharacter_count[33;23;22;24;25m [0mvariable
+[0m
+ - [0m[32;23;22;24;25mAssign multiple values to multiple variables:
+   [33;23;22;24;25mread [0m_ variable1 _ variable2[33;23;22;24;25m <<< "[0mThe surname is Bond[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mDo not let backslash (\) act as an escape character:
+   [33;23;22;24;25mread -r [0mvariable
+[0m
+ - [0m[32;23;22;24;25mDisplay a prompt before the input:
+   [33;23;22;24;25mread -p "[0mEnter your input here: [33;23;22;24;25m" [0mvariable
+[0m
+ - [0m[32;23;22;24;25mDo not echo typed characters (silent mode):
+   [33;23;22;24;25mread -s [0mvariable
+[0m
+ - [0m[32;23;22;24;25mRead stdin and perform an action on every line:
+   [33;23;22;24;25mwhile read line; do [0mecho|ls|rm|...[33;23;22;24;25m "$line"; done < [0m/dev/stdin|path/to/file|...
+[0m[0m

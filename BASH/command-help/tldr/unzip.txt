@@ -1,0 +1,24 @@
+unzip
+
+[0m[0mExtract files/directories from Zip archives.
+See also: zip.
+More information: https://manned.org/unzip.
+
+ - [0m[32;23;22;24;25mExtract all files/directories from specific archives into the current directory:
+   [33;23;22;24;25munzip [0mpath/to/archive1.zip path/to/archive2.zip ...
+[0m
+ - [0m[32;23;22;24;25mExtract files/directories from archives to a specific path:
+   [33;23;22;24;25munzip [0mpath/to/archive1.zip path/to/archive2.zip ...[33;23;22;24;25m -d [0mpath/to/output
+[0m
+ - [0m[32;23;22;24;25mExtract files/directories from archives to stdout alongside the extracted file names:
+   [33;23;22;24;25munzip -c [0mpath/to/archive1.zip path/to/archive2.zip ...
+[0m
+ - [0m[32;23;22;24;25mExtract an archive created on Windows, containing files with non-ASCII (e.g. Chinese or Japanese characters) filenames:
+   [33;23;22;24;25munzip -O [0mgbk[33;23;22;24;25m [0mpath/to/archive1.zip path/to/archive2.zip ...
+[0m
+ - [0m[32;23;22;24;25mList the contents of a specific archive without extracting them:
+   [33;23;22;24;25munzip -l [0mpath/to/archive.zip
+[0m
+ - [0m[32;23;22;24;25mExtract a specific file from an archive:
+   [33;23;22;24;25munzip -j [0mpath/to/archive.zip[33;23;22;24;25m [0mpath/to/file1_in_archive path/to/file2_in_archive ...
+[0m[0m

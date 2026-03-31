@@ -1,0 +1,20 @@
+systemd-hwdb
+
+[0m[0mHardware database management tool.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-hwdb.html.
+
+ - [0m[32;23;22;24;25mUpdate the binary hardware database in /etc/udev:
+   [33;23;22;24;25msystemd-hwdb update[0m
+[0m
+ - [0m[32;23;22;24;25mQuery the hardware database and print the result for a specific modalias:
+   [33;23;22;24;25msystemd-hwdb query [0mmodalias
+[0m
+ - [0m[32;23;22;24;25mUpdate the binary hardware database, returning a non-zero exit value on any parsing error:
+   [33;23;22;24;25msystemd-hwdb [0m[-s|--strict][33;23;22;24;25m update[0m
+[0m
+ - [0m[32;23;22;24;25mUpdate the binary hardware database in /usr/lib/udev:
+   [33;23;22;24;25msystemd-hwdb --usr update[0m
+[0m
+ - [0m[32;23;22;24;25mUpdate the binary hardware database in the specified root path:
+   [33;23;22;24;25msystemd-hwdb [0m[-r|--root][33;23;22;24;25m [0mpath/to/root[33;23;22;24;25m update[0m
+[0m[0m

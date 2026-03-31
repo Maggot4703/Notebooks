@@ -1,0 +1,14 @@
+isosize
+
+[0m[0mDisplay the size of an ISO file.
+More information: https://manned.org/isosize.
+
+ - [0m[32;23;22;24;25mDisplay the size of an ISO file:
+   [33;23;22;24;25misosize [0mpath/to/file.iso
+[0m
+ - [0m[32;23;22;24;25mDisplay the block count and block size of an ISO file:
+   [33;23;22;24;25misosize [0m[-x|--sectors][33;23;22;24;25m [0mpath/to/file.iso
+[0m
+ - [0m[32;23;22;24;25mDisplay the size of an ISO file divided by a given number (only usable when --sectors is not given):
+   [33;23;22;24;25misosize [0m[-d|--divisor][33;23;22;24;25m [0mnumber[33;23;22;24;25m [0mpath/to/file.iso
+[0m[0m

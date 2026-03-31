@@ -1,0 +1,17 @@
+systemd-delta
+
+[0m[0mFind overridden systemd-related configuration files.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-delta.html.
+
+ - [0m[32;23;22;24;25mShow all overridden configuration files:
+   [33;23;22;24;25msystemd-delta[0m
+[0m
+ - [0m[32;23;22;24;25mShow only files of specific types (comma-separated list):
+   [33;23;22;24;25msystemd-delta [0m[-t|--type][33;23;22;24;25m [0mmasked|equivalent|redirected|overridden|extended|unchanged
+[0m
+ - [0m[32;23;22;24;25mShow only files whose path starts with the specified prefix (Note: A prefix is a directory containing subdirectories with systemd configuration files):
+   [33;23;22;24;25msystemd-delta [0m/etc|/run|/usr/lib|...
+[0m
+ - [0m[32;23;22;24;25mFurther restrict the search path by adding a suffix (the prefix is optional):
+   [33;23;22;24;25msystemd-delta [0mprefix[33;23;22;24;25m/[0mtmpfiles.d|sysctl.d|systemd/system|...
+[0m[0m

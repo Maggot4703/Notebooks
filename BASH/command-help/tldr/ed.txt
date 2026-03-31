@@ -1,0 +1,30 @@
+ed
+
+[0m[0mThe original Unix text editor.
+See also: awk, sed.
+More information: https://www.gnu.org/software/ed/manual/ed_manual.html.
+
+ - [0m[32;23;22;24;25mStart an interactive editor session with an empty document:
+   [33;23;22;24;25med[0m
+[0m
+ - [0m[32;23;22;24;25mStart an interactive editor session with an empty document and a specific prompt:
+   [33;23;22;24;25med [0m[-p|--prompt][33;23;22;24;25m '[0m> [33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mStart an interactive editor session with user-friendly errors:
+   [33;23;22;24;25med [0m[-v|--verbose]
+[0m
+ - [0m[32;23;22;24;25mStart an interactive editor session with an empty document and without diagnostics, byte counts and '!' prompt:
+   [33;23;22;24;25med [0m[-q|--quiet][33;23;22;24;25m [0m[-s|--script]
+[0m
+ - [0m[32;23;22;24;25mStart an interactive editor session without exit status change when command fails:
+   [33;23;22;24;25med [0m[-l|--loose-exit-status]
+[0m
+ - [0m[32;23;22;24;25mEdit a specific file (this shows the byte count of the loaded file):
+   [33;23;22;24;25med [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mReplace a string with a specific replacement for all lines:
+   [33;23;22;24;25m,s/[0mregex[33;23;22;24;25m/[0mreplacement[33;23;22;24;25m/g<Enter>[0m
+[0m
+ - [0m[32;23;22;24;25mExit ed:
+   [33;23;22;24;25mq<Enter>[0m
+[0m[0m

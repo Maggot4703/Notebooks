@@ -1,0 +1,17 @@
+uptime
+
+[0m[0mTell how long the system has been running and other information.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/uptime-invocation.html.
+
+ - [0m[32;23;22;24;25mPrint current time, uptime, number of logged-in users and other information:
+   [33;23;22;24;25muptime[0m
+[0m
+ - [0m[32;23;22;24;25mShow only the amount of time the system has been booted for:
+   [33;23;22;24;25muptime [0m[-p|--pretty]
+[0m
+ - [0m[32;23;22;24;25mPrint the date and time the system booted up at:
+   [33;23;22;24;25muptime [0m[-s|--since]
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25muptime [0m[-V|--version]
+[0m[0m

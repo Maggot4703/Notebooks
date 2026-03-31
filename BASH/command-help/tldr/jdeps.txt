@@ -1,0 +1,20 @@
+jdeps
+
+[0m[0mJava class dependency analyzer.
+More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/jdeps.html.
+
+ - [0m[32;23;22;24;25mAnalyze the dependencies of a .jar or .class file:
+   [33;23;22;24;25mjdeps [0mpath/to/filename.class
+[0m
+ - [0m[32;23;22;24;25mPrint a summary of all dependencies of a specific .jar file:
+   [33;23;22;24;25mjdeps [0mpath/to/filename.jar[33;23;22;24;25m -summary[0m
+[0m
+ - [0m[32;23;22;24;25mPrint all class-level dependencies of a .jar file:
+   [33;23;22;24;25mjdeps [0mpath/to/filename.jar[33;23;22;24;25m -verbose[0m
+[0m
+ - [0m[32;23;22;24;25mOutput the results of the analysis in a DOT file into a specific directory:
+   [33;23;22;24;25mjdeps [0mpath/to/filename.jar[33;23;22;24;25m -dotoutput [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mjdeps --help[0m
+[0m[0m

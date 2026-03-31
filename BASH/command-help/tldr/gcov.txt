@@ -1,0 +1,24 @@
+gcov
+
+[0m[0mCode coverage analysis and profiling tool that discovers untested parts of a program.
+Also displays a copy of source code annotated with execution frequencies of code segments.
+More information: https://gcc.gnu.org/onlinedocs/gcc/Invoking-Gcov.html.
+
+ - [0m[32;23;22;24;25mGenerate a coverage report named file.cpp.gcov:
+   [33;23;22;24;25mgcov [0mpath/to/file.cpp
+[0m
+ - [0m[32;23;22;24;25mWrite individual execution counts for every basic block:
+   [33;23;22;24;25mgcov [0m[-a|--all-blocks][33;23;22;24;25m [0mpath/to/file.cpp
+[0m
+ - [0m[32;23;22;24;25mWrite branch frequencies to the output file and print summary information to stdout as a percentage:
+   [33;23;22;24;25mgcov [0m[-b|--branch-probabilities][33;23;22;24;25m [0mpath/to/file.cpp
+[0m
+ - [0m[32;23;22;24;25mWrite branch frequencies as the number of branches taken, rather than the percentage:
+   [33;23;22;24;25mgcov [0m[-c|--branch-counts][33;23;22;24;25m [0mpath/to/file.cpp
+[0m
+ - [0m[32;23;22;24;25mDo not create a gcov output file:
+   [33;23;22;24;25mgcov [0m[-n|--no-output][33;23;22;24;25m [0mpath/to/file.cpp
+[0m
+ - [0m[32;23;22;24;25mWrite file level as well as function level summaries:
+   [33;23;22;24;25mgcov [0m[-f|--function-summaries][33;23;22;24;25m [0mpath/to/file.cpp
+[0m[0m

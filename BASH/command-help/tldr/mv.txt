@@ -1,0 +1,29 @@
+mv
+
+[0m[0mMove or rename files and directories.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html.
+
+ - [0m[32;23;22;24;25mRename a file or directory when the target is not an existing directory:
+   [33;23;22;24;25mmv [0mpath/to/source[33;23;22;24;25m [0mpath/to/target
+[0m
+ - [0m[32;23;22;24;25mMove a file or directory into an existing directory:
+   [33;23;22;24;25mmv [0mpath/to/source[33;23;22;24;25m [0mpath/to/existing_directory
+[0m
+ - [0m[32;23;22;24;25mMove multiple files into an existing directory, keeping the filenames unchanged:
+   [33;23;22;24;25mmv [0mpath/to/source1 path/to/source2 ...[33;23;22;24;25m [0mpath/to/existing_directory
+[0m
+ - [0m[32;23;22;24;25mDo not prompt for confirmation before overwriting existing files:
+   [33;23;22;24;25mmv [0m[-f|--force][33;23;22;24;25m [0mpath/to/source[33;23;22;24;25m [0mpath/to/target
+[0m
+ - [0m[32;23;22;24;25mPrompt for confirmation interactively before overwriting existing files, regardless of file permissions:
+   [33;23;22;24;25mmv [0m[-i|--interactive][33;23;22;24;25m [0mpath/to/source[33;23;22;24;25m [0mpath/to/target
+[0m
+ - [0m[32;23;22;24;25mDo not overwrite existing files at the target:
+   [33;23;22;24;25mmv [0m[-n|--no-clobber][33;23;22;24;25m [0mpath/to/source[33;23;22;24;25m [0mpath/to/target
+[0m
+ - [0m[32;23;22;24;25mMove files in verbose mode, showing files after they are moved:
+   [33;23;22;24;25mmv [0m[-v|--verbose][33;23;22;24;25m [0mpath/to/source[33;23;22;24;25m [0mpath/to/target
+[0m
+ - [0m[32;23;22;24;25mSpecify target directory so that you can use external tools to gather movable files:
+   find /var/log -type f -name '*.log' -print0[33;23;22;24;25m | [0mxargs -0[33;23;22;24;25m mv [0m[-t|--target-directory][33;23;22;24;25m [0mpath/to/target_directory
+[0m[0m

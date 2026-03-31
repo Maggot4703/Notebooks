@@ -1,0 +1,27 @@
+uuid
+
+[0m[0mGenerate and decode Universally Unique Identifiers (UUID).
+See also: uuidgen.
+More information: https://manned.org/uuid.
+
+ - [0m[32;23;22;24;25mGenerate a UUIDv1 (based on time and system's hardware address, if present):
+   [33;23;22;24;25muuid[0m
+[0m
+ - [0m[32;23;22;24;25mGenerate a UUIDv4 (based on random data):
+   [33;23;22;24;25muuid -v [0m4
+[0m
+ - [0m[32;23;22;24;25mGenerate multiple UUIDv4 identifiers at once:
+   [33;23;22;24;25muuid -v [0m4[33;23;22;24;25m -n [0mnumber_of_uuids
+[0m
+ - [0m[32;23;22;24;25mGenerate a UUIDv4 and specify the output format:
+   [33;23;22;24;25muuid -v [0m4[33;23;22;24;25m -F [0mBIN|STR|SIV
+[0m
+ - [0m[32;23;22;24;25mGenerate a UUIDv4 and write the output to a file:
+   [33;23;22;24;25muuid -v [0m4[33;23;22;24;25m -o [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGenerate a UUIDv5 (based on the supplied object name) with a specified namespace prefix:
+   [33;23;22;24;25muuid -v [0m5[33;23;22;24;25m ns:[0mDNS|URL|OID|X500[33;23;22;24;25m [0mobject_name
+[0m
+ - [0m[32;23;22;24;25mDecode a given UUID:
+   [33;23;22;24;25muuid -d [0muuid
+[0m[0m

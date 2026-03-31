@@ -1,0 +1,29 @@
+last
+
+[0m[0mView the last logged in users.
+More information: https://manned.org/last.
+
+ - [0m[32;23;22;24;25mView last login infromation (e.g., username, terminal, boot time, kernel) of all users as read from /var/log/wtmp:
+   [33;23;22;24;25mlast[0m
+[0m
+ - [0m[32;23;22;24;25mList login information of a specific user:
+   [33;23;22;24;25mlast [0musername
+[0m
+ - [0m[32;23;22;24;25mSpecify how many of the last logins to show:
+   [33;23;22;24;25mlast [0m[-n|--limit][33;23;22;24;25m [0mlogin_count
+[0m
+ - [0m[32;23;22;24;25mPrint the full date and time for entries and then display the hostname column last to prevent truncation:
+   [33;23;22;24;25mlast [0m[-F|--fulltimes][33;23;22;24;25m [0m[-a|--hostlast]
+[0m
+ - [0m[32;23;22;24;25mView all logins by a specific user and show the IP address instead of the hostname:
+   [33;23;22;24;25mlast [0musername[33;23;22;24;25m [0m[-i|--ip]
+[0m
+ - [0m[32;23;22;24;25mList information since a specific time and date:
+   [33;23;22;24;25mlast [0m[-s|--since][33;23;22;24;25m [0m-7days
+[0m
+ - [0m[32;23;22;24;25mView all recorded reboots (i.e., the last logins of the pseudo user "reboot"):
+   [33;23;22;24;25mlast reboot[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mlast [0m[-h|--help]
+[0m[0m

@@ -1,0 +1,23 @@
+xmllint
+
+[0m[0mXML parser and linter that supports XPath, a syntax for navigating XML trees.
+More information: https://manned.org/xmllint.
+
+ - [0m[32;23;22;24;25mReturn all nodes (tags) named "foo":
+   [33;23;22;24;25mxmllint --xpath "//[0mfoo[33;23;22;24;25m" [0msource_file.xml
+[0m
+ - [0m[32;23;22;24;25mReturn the contents of the first node named "foo" as a string:
+   [33;23;22;24;25mxmllint --xpath "string(//[0mfoo[33;23;22;24;25m)" [0msource_file.xml
+[0m
+ - [0m[32;23;22;24;25mReturn the href attribute of the second anchor element in an HTML file:
+   [33;23;22;24;25mxmllint --html --xpath "string(//a[2]/@href)" webpage.xhtml[0m
+[0m
+ - [0m[32;23;22;24;25mReturn human-readable (indented) XML from file:
+   [33;23;22;24;25mxmllint --format [0msource_file.xml
+[0m
+ - [0m[32;23;22;24;25mCheck that an XML file meets the requirements of its DOCTYPE declaration:
+   [33;23;22;24;25mxmllint --valid [0msource_file.xml
+[0m
+ - [0m[32;23;22;24;25mValidate XML against DTD schema hosted online:
+   [33;23;22;24;25mxmllint --dtdvalid [0mURL[33;23;22;24;25m [0msource_file.xml
+[0m[0m

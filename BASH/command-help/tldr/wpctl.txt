@@ -1,0 +1,31 @@
+wpctl
+
+[0m[0mManage WirePlumber, a session and policy manager for PipeWire.
+Note: You can use the special name @DEFAULT_SINK@ in place of id to operate on the default sink.
+See also: pw-cli.
+More information: https://pipewire.pages.freedesktop.org/wireplumber/.
+
+ - [0m[32;23;22;24;25mList all objects managed by WirePlumber:
+   [33;23;22;24;25mwpctl status[0m
+[0m
+ - [0m[32;23;22;24;25mPrint all properties of an object:
+   [33;23;22;24;25mwpctl inspect [0mid
+[0m
+ - [0m[32;23;22;24;25mSet an object to be the default in its group:
+   [33;23;22;24;25mwpctl set-default [0mid
+[0m
+ - [0m[32;23;22;24;25mGet the volume of a sink:
+   [33;23;22;24;25mwpctl get-volume [0mid
+[0m
+ - [0m[32;23;22;24;25mSet the volume of a sink to n percent:
+   [33;23;22;24;25mwpctl set-volume [0mid[33;23;22;24;25m [0mn[33;23;22;24;25m%[0m
+[0m
+ - [0m[32;23;22;24;25mIncrease/Decrease the volume of a sink by n percent:
+   [33;23;22;24;25mwpctl set-volume [0mid[33;23;22;24;25m [0mn[33;23;22;24;25m%[0m+|-
+[0m
+ - [0m[32;23;22;24;25mIncrease the volume of a sink by n percent but limit the volume below 100%:
+   [33;23;22;24;25mwpctl set-volume [0m[-l|--limit][33;23;22;24;25m 1 [0mid[33;23;22;24;25m [0mn[33;23;22;24;25m%-[0m
+[0m
+ - [0m[32;23;22;24;25mMute/Unmute a sink (1 is mute, 0 is unmute):
+   [33;23;22;24;25mwpctl set-mute [0mid[33;23;22;24;25m [0m1|0|toggle
+[0m[0m

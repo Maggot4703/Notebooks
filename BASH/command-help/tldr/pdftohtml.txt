@@ -1,0 +1,17 @@
+pdftohtml
+
+[0m[0mConvert PDF files into HTML, XML and PNG images.
+More information: https://manned.org/pdftohtml.
+
+ - [0m[32;23;22;24;25mConvert a PDF file to an HTML file:
+   [33;23;22;24;25mpdftohtml [0mpath/to/file.pdf[33;23;22;24;25m [0mpath/to/output_file.html
+[0m
+ - [0m[32;23;22;24;25mIgnore images in the PDF file:
+   [33;23;22;24;25mpdftohtml -i [0mpath/to/file.pdf[33;23;22;24;25m [0mpath/to/output_file.html
+[0m
+ - [0m[32;23;22;24;25mGenerate a single HTML file that includes all PDF pages:
+   [33;23;22;24;25mpdftohtml -s [0mpath/to/file.pdf[33;23;22;24;25m [0mpath/to/output_file.html
+[0m
+ - [0m[32;23;22;24;25mConvert a PDF file to an XML file:
+   [33;23;22;24;25mpdftohtml -xml [0mpath/to/file.pdf[33;23;22;24;25m [0mpath/to/output_file.xml
+[0m[0m

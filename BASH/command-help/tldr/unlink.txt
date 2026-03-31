@@ -1,0 +1,9 @@
+unlink
+
+[0m[0mRemove a link to a file from the filesystem.
+The file contents is lost if the link is the last one to the file.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/unlink-invocation.html.
+
+ - [0m[32;23;22;24;25mRemove the specified file if it is the last link:
+   [33;23;22;24;25munlink [0mpath/to/file
+[0m[0m

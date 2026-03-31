@@ -1,0 +1,25 @@
+iptables
+
+[0m[0mConfigure tables, chains and rules of the Linux kernel IPv4 firewall.
+Use ip6tables to set rules for IPv6 traffic.
+See also: iptables-save, iptables-restore.
+More information: https://manned.org/iptables.
+
+ - [0m[32;23;22;24;25mView chains, rules, packet/byte counters and line numbers for the filter table:
+   [33;23;22;24;25msudo iptables [0m[-vnL --line-numbers|--verbose --numeric --list --line-numbers]
+[0m
+ - [0m[32;23;22;24;25mSet chain policy rule:
+   [33;23;22;24;25msudo iptables [0m[-P|--policy][33;23;22;24;25m [0mchain[33;23;22;24;25m [0mrule
+[0m
+ - [0m[32;23;22;24;25mAppend rule to chain policy for IP:
+   [33;23;22;24;25msudo iptables [0m[-A|--append][33;23;22;24;25m [0mchain[33;23;22;24;25m [0m[-s|--source][33;23;22;24;25m [0mip[33;23;22;24;25m [0m[-j|--jump][33;23;22;24;25m [0mrule
+[0m
+ - [0m[32;23;22;24;25mAppend rule to chain policy for IP considering protocol and port:
+   [33;23;22;24;25msudo iptables [0m[-A|--append][33;23;22;24;25m [0mchain[33;23;22;24;25m [0m[-s|--source][33;23;22;24;25m [0mip[33;23;22;24;25m [0m[-p|--protocol][33;23;22;24;25m [0mtcp|udp|icmp|...[33;23;22;24;25m --dport [0mport[33;23;22;24;25m [0m[-j|--jump][33;23;22;24;25m [0mrule
+[0m
+ - [0m[32;23;22;24;25mAdd a NAT rule to translate all traffic from the 192.168.0.0/24 subnet to the host's public IP:
+   [33;23;22;24;25msudo iptables [0m[-t|--table][33;23;22;24;25m [0mnat[33;23;22;24;25m [0m[-A|--append][33;23;22;24;25m [0mPOSTROUTING[33;23;22;24;25m [0m[-s|--source][33;23;22;24;25m [0m192.168.0.0/24[33;23;22;24;25m [0m[-j|--jump][33;23;22;24;25m [0mMASQUERADE
+[0m
+ - [0m[32;23;22;24;25mDelete chain rule:
+   [33;23;22;24;25msudo iptables [0m[-D|--delete][33;23;22;24;25m [0mchain[33;23;22;24;25m [0mrule_line_number
+[0m[0m

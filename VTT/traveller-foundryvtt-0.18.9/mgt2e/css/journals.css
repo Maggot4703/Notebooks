@@ -1,0 +1,744 @@
+
+
+
+/* Journal Entries */
+
+/*
+.journal-sheet {
+}
+
+.sheet.journal-entry section.journal-entry-content {
+    background: #a5a7a9;
+}
+
+.journal-sheet .window-content .editable {
+    background-color: #eff0f0;
+}
+.journal-entry-content .locked {
+}
+.journal-entry-content {
+}
+*/
+
+.journal-sheet :is(section.journal-entry-content.flexcol, form.editable.flexcol) {
+  background: var(--mongoose-page);
+  color: var(--mongoose-text);
+}
+
+.editor-content {
+  background: var(--mongoose-page);
+  color: var(--mongoose-text);
+}
+
+img {
+  border: none;
+}
+
+img.drop-shadow {
+  border: none;
+  filter: drop-shadow(10px 10px 4px #404040);
+}
+
+div.two-columns {
+  columns: 2;
+}
+
+div.two-columns img {
+  border: none;
+  filter: drop-shadow(10px 10px 4px #404040);
+  width: 50%;
+  break-before: avoid;
+}
+
+a.inline-mgt2e-execution {
+}
+
+caption {
+  font-weight: bold;
+  font-size: large;
+  caption-side: top;
+  text-align: left;
+}
+
+.journal-sheet table {
+  border-collapse: collapse;
+}
+
+.journal-sheet table td,th {
+  _border: 1px solid black;
+  padding: 3px;
+  min-width: 3em;
+}
+
+.mgorange {
+  color: var(--mongoose-orange);
+}
+
+.journal-sheet .skill-package {
+  border: 1px solid black;
+  break-inside: avoid;
+}
+
+.journal-sheet .box-border {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 6px 6px 6px #40404080;
+}
+
+/* Documentation */
+
+.journal-sheet :is(section.journal-entry-content.flexcol, form.editable.flexcol, .editor-content) h1 {
+    color: var(--mongoose-orange);
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--mongoose-orange);
+    font-weight: bold;
+    font-size: 24pt;
+}
+
+.journal-sheet :is(section.journal-entry-content.flexcol, form.editable.flexcol, .editor-content) h2 {
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.journal-sheet :is(section.journal-entry-content.flexcol, form.editable.flexcol, .editor-content) h3 {
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.journal-sheet :is(section.journal-entry-content.flexcol, form.editable.flexcol, .editor-content) h4 {
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: 16pt
+}
+
+.journal-sheet :is(section.journal-entry-content.flexcol, form.editable.flexcol, .editor-content) h5 {
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14pt;
+  margin-bottom: 0px;
+}
+
+.journal-sheet :is(section.journal-entry-content.flexcol, form.editable.flexcol, .editor-content) h6 {
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12pt;
+  margin-bottom: 0px;
+}
+
+
+.journal-sheet .callout {
+    background-color: var(--mongoose-blue);
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0;
+    float: right;
+    width: 45%;
+    margin-left: 0.5em;
+}
+
+.journal-sheet .callout h4 {
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    color: black;
+}
+
+.journal-sheet .callout p {
+    margin: 0.5em;
+    color: black;
+}
+
+.journal-sheet .callout-wide {
+  background-color: var(--mongoose-blue);
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 0.5em;
+  color: black;
+}
+
+.journal-sheet .two-columns .callout {
+  float: none;
+  width: auto;
+  margin-left: 0;
+}
+
+
+/* Career Definitions */
+
+div.journal-career {
+    background-color: #eff0f0;
+    padding: 0.25em;
+    color: black;
+}
+
+div.journal-career table {
+  background-color: white;
+}
+
+.journal-sheet form.journal-header input.title {
+    font-family: Anton;
+    text-transform: uppercase;
+    background-color: var(--mongoose-orange);
+    color: white;
+}
+
+div.journal-career div.career-intro {
+    padding-bottom: 1em;
+}
+
+div.journal-career div.career-aside {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    box-shadow: 5px 5px 5px #a0bfbf;
+    border: 1px solid black;
+    float: left;
+    width: 300px;
+    font-size: larger;
+}
+
+div.journal-career div.career-right {
+    margin-left: 300px;
+}
+
+div.journal-career div.career-right h2 {
+  color: white;
+}
+
+
+div.journal-career div.career-right table {
+    margin-left: 1em;
+    margin-right: 1em;
+    width: auto;
+}
+
+div.journal-career div.career-right table td {
+    padding: 2px;
+}
+
+div.journal-career th {
+    text-align: left;
+    color: var(--mongoose-orange);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    vertical-align: bottom;
+}
+
+div.journal-career td {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+div.journal-career table {
+    border: 1px solid var(--mongoose-orange);
+    margin-left: 1em;
+    margin-right: 1em;
+    box-shadow: 5px 5px 5px #a0bfbf;
+    width: 90%;
+}
+
+div.journal-career h1 {
+    clear: both;
+    font-family: Anton;
+    font-weight: normal;
+    color: white;
+    background: #67696f;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 1em;
+    margin-left: 0.5em;
+    margin-right: 1em;
+    width: 90%;
+}
+
+div.journal-career h1:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    border-top: 16px solid #eff0f0;
+    border-right: 16px solid #67696f;
+    width: 0;
+}
+
+div.journal-career h1:after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 16px solid #eff0f0;
+    border-left: 16px solid #67696f;
+    width: 0;
+}
+
+
+div.journal-career .career-hdr {
+  font-weight: bold;
+  font-family: Anton;
+  font-size: 16pt;
+}
+
+div.journal-career p.career-h1 {
+  font-size: 20pt;
+}
+
+div.journal-career p.career-h1 {
+  clear: both;
+  font-family: Anton;
+  font-weight: normal;
+  color: white;
+  background: #67696f;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 1em;
+  margin-left: 0.5em;
+  margin-right: 1em;
+  width: 90%;
+}
+
+div.journal-career p.career-h1:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  border-top: 16px solid #eff0f0;
+  border-right: 16px solid #67696f;
+  width: 0;
+}
+
+div.journal-career p.career-h1:after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  border-top: 16px solid #eff0f0;
+  border-left: 16px solid #67696f;
+  width: 0;
+}
+
+div.journal-career p.career-h2 {
+  font-family: Anton;
+  color: white;
+  background-color: #67696f;
+  position: relative;
+  padding-left: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  text-transform: uppercase;
+}
+
+div.journal-career p.career-h2:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  border-top: 12px solid #eff0f0;
+  border-right: 12px solid #67696f;
+  width: 0;
+}
+
+div.journal-career p.career-h2:after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  border-top: 12px solid #eff0f0;
+  border-left: 12px solid #67696f;
+  width: 0;
+}
+
+
+
+div.journal-career h2 {
+    font-family: Anton;
+    color: white;
+    background-color: #67696f;
+    position: relative;
+    padding-left: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    text-transform: uppercase;
+}
+
+div.journal-career h2:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    border-top: 12px solid #eff0f0;
+    border-right: 12px solid #67696f;
+    width: 0;
+}
+
+div.journal-career h2:after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 12px solid #eff0f0;
+    border-left: 12px solid #67696f;
+    width: 0;
+}
+
+div.journal-career h3 {
+    font-family: Anton;
+    text-transform: uppercase;
+}
+
+div.inline-actor {
+    margin: 1em;
+    background-color: #303030;
+    color: white;
+    padding: 0.5em;
+    border-radius: 15px solid #4b4a44;
+    width: 500px;
+}
+
+div.inline-actor img.portrait {
+    float: left;
+    width: 64px;
+}
+
+div.inline-actor .name {
+    display: block;
+    color: var(--mongoose-orange);
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    margin-left:72px;
+}
+
+div.inline-actor .profession {
+    display: block;
+    color: var(--mongoose-orange);
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 72px;
+}
+
+div.inline-actor div.actor-body-container {
+
+}
+
+div.inline-actor .actor-cha-list {
+    width: 200px;
+    float: left;
+}
+
+div.inline-actor .actor-skill-list {
+    margin-left: 210px;
+}
+
+div.inline-actor .actor-equipment-list {
+    clear: left;
+}
+
+div.inline-actor .species-title {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    background-color: var(--mongoose-orange);
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+div.inline-actor .species-data {
+    display: inline-block;
+    color: white;
+}
+
+div.inline-actor .skill-list {
+    display: inline;
+}
+
+.inline-creature {
+    margin-left: 0.25em;
+    width: 400px;
+}
+
+.inline-creature img {
+    width: 40%;
+    float: left;
+    border: none;
+    padding-right: 4px;
+    padding-bottom: 4px;
+}
+
+table {
+  background: none;
+}
+
+table.creature-stats {
+    text-align: left;
+    width: 400px;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: #303030;
+    clear: left;
+}
+
+table.creature-stats th {
+    width: 33%;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+table.creature-stats tr {
+    background-color: var(--mongoose-orange);
+}
+
+table.creature-stats td {
+    padding: 4px;
+    background-color: var(--mongoose-dark);
+    color: white;
+}
+
+table.creature-stats tr.noborder td {
+    border: none;
+}
+
+table.creature-stats tr.noborder {
+    border-left: none;
+    border-right: none;
+}
+
+span.internal-macro {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+span.internal-macro img {
+    border: none;
+    width: 16px;
+}
+
+
+div.traveller-credits {
+    background-color: #eed4c5;
+    border: 2px solid #f37021;
+    color: black;
+    float: left;
+    width: 49%;
+    padding: 1em;
+}
+
+div.traveller-credits p {
+  color: black;
+}
+
+div.traveller-contents {
+    background-color: #eed4c5;
+    border: 2px solid #f37021;
+    float: right;
+    width: 49%;
+    padding: 1em;
+}
+
+div.traveller-copyright {
+    background-color: #eed4c5;
+    border: 2px solid #f37021;
+    clear: both;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+div.foundry-hint {
+    border: 5px solid var(--mongoose-orange);
+    border-radius: 15px;
+    background-color: #D0D0D0;
+    margin: 3px;
+}
+
+div.foundry-hint h4 {
+  background-color: var(--mongoose-orange);
+  margin: 0 0 5px 0;
+  padding: 3px;
+  text-transform: uppercase;
+  color: white;
+}
+
+div.foundry-hint p {
+  margin: 5px;
+}
+
+table.mongoose-equipment td {
+  vertical-align: top;
+}
+
+.equipment-header td {
+  background-color: #606060;
+  color: white;
+  border: 2px groove #eeede0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: larger;
+  padding: 0;
+}
+
+.inline-spacecraft {
+  background-color: #a9bbc8;
+}
+
+.inline-spacecraft .spacecraft-header {
+  background-color: var(--mongoose-orange);
+  padding-left: 1em;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.inline-spacecraft h3 {
+  color: black;
+  font-size: 18pt;
+  text-transform: uppercase;
+  float: left;
+}
+
+.inline-spacecraft .type {
+  text-transform: uppercase;
+  background-color: #00000040;
+  color: white;
+  float: right;
+  font-size: 14pt;
+  margin-right: 1em;
+  padding: 4px;
+}
+
+.inline-spacecraft .spacecraft-description {
+  column-count: 2;
+  column-gap: 2em;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.inline-spacecraft table {
+  background-color: #cdd7df;
+  width: 70%;
+  border-collapse: collapse;
+  margin-left: 1em;
+}
+
+.inline-spacecraft table td {
+  text-align: left;
+  border: 1px solid black;
+  padding-left: 3px;
+}
+
+.inline-spacecraft table th {
+  text-align: left;
+  border: 1px solid black;
+  padding-right: 5px;
+}
+
+.inline-spacecraft table tr.header th {
+  font-size: larger;
+  border: none;
+}
+
+.inline-spacecraft .spacecraft-right {
+  float: right;
+  width: 25%;
+}
+
+.spacecraft-right {
+  text-align: center;
+}
+
+.spacecraft-right .title {
+  background-color: var(--mongoose-orange);
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 14pt;
+}
+
+.inline-vehicle {
+  break-inside: avoid;
+}
+
+.inline-vehicle table {
+  text-align: left;
+}
+
+.inline-vehicle h4 {
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.inline-vehicle span.armour-header {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.inline-vehicle dl {
+  border-top: 1px solid black;
+}
+
+.inline-vehicle dt {
+  display: inline-block;
+  border-right: 1px solid black;
+  padding-right: 0.5em;
+  text-transform: uppercase;
+}
+
+.inline-vehicle dd {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+.inline-vehicle img {
+  border: none;
+  filter: drop-shadow(10px 10px 4px #40404080);
+}
+
+.inline-item {
+  border: 1px solid black;
+  padding: 2px;
+  margin: 2px;
+}
+
+.inline-item .item-name {
+  font-weight: bold;
+  font-size: larger;
+  float: left;
+}
+
+.simple-table {
+  background-color: transparent;
+}
+
+.simple-table th {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.simple-table td {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid black;
+}
+
+div.inline-package h2 span.actor-link {
+  color: var(--mongoose-orange);
+}
+
+.inline-package h3 {
+  color: black;
+  background-color: var(--mongoose-orange);
+  margin-left: 40%;
+}

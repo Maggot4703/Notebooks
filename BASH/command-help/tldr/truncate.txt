@@ -1,0 +1,20 @@
+truncate
+
+[0m[0mShrink or extend the size of a file to the specified size.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/truncate-invocation.html.
+
+ - [0m[32;23;22;24;25mSet a size of 10 GB to an existing file, or create a new file with the specified size:
+   [33;23;22;24;25mtruncate [0m[-s|--size][33;23;22;24;25m 10G [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mExtend the file size by 50 MiB, fill with holes (which reads as zero bytes):
+   [33;23;22;24;25mtruncate [0m[-s|--size][33;23;22;24;25m +50M [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mShrink the file by 2 GiB, by removing data from the end of file:
+   [33;23;22;24;25mtruncate [0m[-s|--size][33;23;22;24;25m -2G [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mEmpty the file's content:
+   [33;23;22;24;25mtruncate [0m[-s|--size][33;23;22;24;25m 0 [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mEmpty the file's content, but do not create the file if it does not exist:
+   [33;23;22;24;25mtruncate [0m[-cs|--no-create --size][33;23;22;24;25m 0 [0mpath/to/file
+[0m[0m

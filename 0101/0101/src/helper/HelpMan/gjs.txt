@@ -1,0 +1,22 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/gjs
+Usage:
+  gjs [OPTION…]
+
+Help Options:
+  -h, --help                       Show help options
+
+Application Options:
+  --version                        Print GJS version and exit
+  --jsversion                      Print version of the JS engine and exit
+  -c, --command=COMMAND            Program passed in as a string
+  -C, --coverage-prefix=PREFIX     Add the prefix PREFIX to the list of files to generate coverage info for
+  --coverage-output=DIR            Write coverage output to a directory DIR. This option is mandatory when using --coverage-path
+  -I, --include-path=DIR           Add the directory DIR to the list of directories to search for js files.
+  --profile=FILE                   Enable the profiler and write output to FILE (default: gjs-$PID.syscap)
+  -d, --debugger                   Start in debug mode
+

@@ -1,0 +1,20 @@
+getconf
+
+[0m[0mGet configuration values from your Linux system.
+More information: https://manned.org/getconf.1.
+
+ - [0m[32;23;22;24;25mList [a]ll configuration values available:
+   [33;23;22;24;25mgetconf -a[0m
+[0m
+ - [0m[32;23;22;24;25mList the configuration values for a specific directory:
+   [33;23;22;24;25mgetconf -a [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mCheck if the system is 32-bit or 64-bit:
+   [33;23;22;24;25mgetconf LONG_BIT[0m
+[0m
+ - [0m[32;23;22;24;25mCheck how many processes the current user can run at once:
+   [33;23;22;24;25mgetconf CHILD_MAX[0m
+[0m
+ - [0m[32;23;22;24;25mList every configuration value and then find patterns with the grep command (i.e every value with MAX in it):
+   [33;23;22;24;25mgetconf -a | grep MAX[0m
+[0m[0m

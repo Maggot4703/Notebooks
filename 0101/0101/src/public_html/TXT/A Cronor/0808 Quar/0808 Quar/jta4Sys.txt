@@ -1,0 +1,14 @@
+Hex = 0808
+Name = Quar
+UWP = B532720-B
+Remarks = Na Po Pz
+{Ix} = { 2 }
+(Ex) = (A6C-2)
+[Cx] = [2916]
+N = -
+B = N
+Z = A
+PBG = 401
+W = 9
+A = CsIm
+Stellar = M2 V

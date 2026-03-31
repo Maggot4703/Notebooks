@@ -1,0 +1,5 @@
+deactivate
+cd /home/me/Notebooks/AI
+source .venv/bin/activate
+#uv sync
+#uv run jupyter lab

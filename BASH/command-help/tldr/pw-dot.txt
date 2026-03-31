@@ -1,0 +1,30 @@
+pw-dot
+
+[0m[0mCreate .dot files of the PipeWire graph.
+See also: dot for rendering graph.
+More information: https://docs.pipewire.org/page_man_pw-dot_1.html.
+
+ - [0m[32;23;22;24;25mGenerate a graph to pw.dot file:
+   [33;23;22;24;25mpw-dot[0m
+[0m
+ - [0m[32;23;22;24;25mRead objects from pw-dump JSON file:
+   [33;23;22;24;25mpw-dot [0m[-j|--json][33;23;22;24;25m [0mpath/to/file.json
+[0m
+ - [0m[32;23;22;24;25mSpecify an output file, showing all object types:
+   [33;23;22;24;25mpw-dot [0m[-o|--output][33;23;22;24;25m [0mpath/to/file.dot[33;23;22;24;25m [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mPrint .dot graph to stdout, showing all object properties:
+   [33;23;22;24;25mpw-dot [0m[-o|--output][33;23;22;24;25m - [0m[-d|--detail]
+[0m
+ - [0m[32;23;22;24;25mGenerate a graph from a remote instance, showing only linked objects:
+   [33;23;22;24;25mpw-dot [0m[-r|--remote][33;23;22;24;25m [0mremote_name[33;23;22;24;25m [0m[-s|--smart]
+[0m
+ - [0m[32;23;22;24;25mLay the graph from left to right, instead of dot's default top to bottom:
+   [33;23;22;24;25mpw-dot [0m[-L|--lr]
+[0m
+ - [0m[32;23;22;24;25mLay the graph using 90-degree angles in edges:
+   [33;23;22;24;25mpw-dot [0m[-9|--90]
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpw-dot [0m[-h|--help]
+[0m[0m

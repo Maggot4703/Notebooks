@@ -1,0 +1,14 @@
+apropos
+
+[0m[0mSearch the manual pages for names and descriptions.
+More information: https://manned.org/apropos.
+
+ - [0m[32;23;22;24;25mSearch for a keyword using a regex:
+   [33;23;22;24;25mapropos [0mregex
+[0m
+ - [0m[32;23;22;24;25mSearch without restricting the output to the terminal width ([l]ong output):
+   [33;23;22;24;25mapropos [0m[-l|--long][33;23;22;24;25m [0mregex
+[0m
+ - [0m[32;23;22;24;25mSearch for pages that match all the regex given:
+   [33;23;22;24;25mapropos [0mregex_1[33;23;22;24;25m [0m[-a|--and][33;23;22;24;25m [0mregex_2[33;23;22;24;25m [0m[-a|--and][33;23;22;24;25m [0mregex_3
+[0m[0m

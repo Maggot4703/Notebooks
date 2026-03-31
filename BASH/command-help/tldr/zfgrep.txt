@@ -1,0 +1,21 @@
+zfgrep
+
+[0m[0mMatches fixed strings in possibly compressed files.
+Equivalent to grep --fixed-strings with input decompressed first if necessary.
+More information: https://manned.org/zfgrep.
+
+ - [0m[32;23;22;24;25mSearch for an exact string in a file:
+   [33;23;22;24;25mzfgrep [0msearch_string[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCount the number of lines that match the given string in a file:
+   [33;23;22;24;25mzfgrep [0m[-c|--count][33;23;22;24;25m [0msearch_string[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mShow the line number in the file along with the matching lines:
+   [33;23;22;24;25mzfgrep [0m[-n|--line-number][33;23;22;24;25m [0msearch_string[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay all lines except those that contain the search string:
+   [33;23;22;24;25mzfgrep [0m[-v|--invert-match][33;23;22;24;25m [0msearch_string[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mList only filenames whose content matches the search string at least once:
+   [33;23;22;24;25mzfgrep [0m[-l|--files-with-matches][33;23;22;24;25m [0msearch_string[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m[0m

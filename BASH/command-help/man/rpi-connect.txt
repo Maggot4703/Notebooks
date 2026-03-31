@@ -1,0 +1,56 @@
+RPI-CONNECT(1)              General Commands Manual             RPI-CONNECT(1)
+
+NAME
+       rpi-connect - control Raspberry Pi Connect
+
+SYNOPSIS
+       rpi-connect command
+
+DESCRIPTION
+       rpi-connect  controls Raspberry Pi Connect, allowing users to start and
+       stop it for the current user, sign in and out of their  account,  allow
+       and  disallow  both  screen sharing (if available) and remote shell ac‐
+       cess, and check the current status and version of the service.
+
+COMMANDS
+       Each aspect of Raspberry Pi Connect is controlled by a  dedicated  com‐
+       mand:
+
+       rpi-connect-on(1)
+              Enable and start Raspberry Pi Connect for the current user
+
+       rpi-connect-off(1)
+              Stop and disable Raspberry Pi Connect for the current user
+
+       rpi-connect-restart(1)
+              Restart Raspberry Pi Connect for the current user
+
+       rpi-connect-signin(1)
+              Sign in to Raspberry Pi Connect
+
+       rpi-connect-signout(1)
+              Sign out of Raspberry Pi Connect
+
+       rpi-connect-vnc(1)
+              Manage screen sharing via Raspberry Pi Connect
+
+       rpi-connect-shell(1)
+              Manage remote shell access via Raspberry Pi Connect
+
+       rpi-connect-status(1)
+              Show the current status of Raspberry Pi Connect
+
+       rpi-connect-doctor(1)
+              Check  your  system for potential issues using Raspberry Pi Con‐
+              nect
+
+       rpi-connect-version(1)
+              Show the current version of Raspberry Pi Connect
+
+SEE ALSO
+       rpi-connect-on(1), rpi-connect-off(1), rpi-connect-restart(1), rpi-con‐
+       nect-signin(1),  rpi-connect-signout(1),  rpi-connect-vnc(1),  rpi-con‐
+       nect-shell(1), rpi-connect-status(1),  rpi-connect-doctor(1),  rpi-con‐
+       nect-version(1), rpi-connectd(8)
+
+                                 February 2026                  RPI-CONNECT(1)

@@ -1,0 +1,23 @@
+for
+
+[0m[0mPerform a command several times.
+More information: https://www.gnu.org/software/bash/manual/bash.html#Looping-Constructs.
+
+ - [0m[32;23;22;24;25mIterate through command line arguments:
+   [33;23;22;24;25mfor [0mvariable[33;23;22;24;25m; do [0mecho $variable[33;23;22;24;25m; done[0m
+[0m
+ - [0m[32;23;22;24;25mExecute the given commands for each of the specified items:
+   [33;23;22;24;25mfor [0mvariable[33;23;22;24;25m in [0mitem1 item2 ...[33;23;22;24;25m; do [0mecho "Loop is executed"[33;23;22;24;25m; done[0m
+[0m
+ - [0m[32;23;22;24;25mIterate over a given range of numbers:
+   [33;23;22;24;25mfor [0mvariable[33;23;22;24;25m in [0m{from..to..step}[33;23;22;24;25m; do [0mecho "Loop is executed"[33;23;22;24;25m; done[0m
+[0m
+ - [0m[32;23;22;24;25mIterate over a given list of files:
+   [33;23;22;24;25mfor [0mvariable[33;23;22;24;25m in [0mpath/to/file1 path/to/file2 ...[33;23;22;24;25m; do [0mecho "Loop is executed"[33;23;22;24;25m; done[0m
+[0m
+ - [0m[32;23;22;24;25mIterate over a given list of directories:
+   [33;23;22;24;25mfor [0mvariable[33;23;22;24;25m in [0mpath/to/directory1/ path/to/directory2/ ...[33;23;22;24;25m; do [0mecho "Loop is executed"[33;23;22;24;25m; done[0m
+[0m
+ - [0m[32;23;22;24;25mPerform a given command in every directory:
+   [33;23;22;24;25mfor [0mvariable[33;23;22;24;25m in */; do (cd "$[0mvariable[33;23;22;24;25m" || continue; [0mecho "Loop is executed"[33;23;22;24;25m) done[0m
+[0m[0m

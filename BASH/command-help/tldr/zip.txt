@@ -1,0 +1,27 @@
+zip
+
+[0m[0mPackage and compress (archive) files into a Zip archive.
+See also: unzip.
+More information: https://manned.org/zip.
+
+ - [0m[32;23;22;24;25mAdd files/directories to a specific archive:
+   [33;23;22;24;25mzip [0m[-r|--recurse-paths][33;23;22;24;25m [0mpath/to/compressed.zip[33;23;22;24;25m [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...
+[0m
+ - [0m[32;23;22;24;25mRemove files/directories from a specific archive:
+   [33;23;22;24;25mzip [0m[-d|--delete][33;23;22;24;25m [0mpath/to/compressed.zip[33;23;22;24;25m [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...
+[0m
+ - [0m[32;23;22;24;25mArchive files/directories excluding specified ones:
+   [33;23;22;24;25mzip [0m[-r|--recurse-paths][33;23;22;24;25m [0mpath/to/compressed.zip[33;23;22;24;25m [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...[33;23;22;24;25m [0m[-x|--exclude][33;23;22;24;25m [0mpath/to/excluded_files_or_directories
+[0m
+ - [0m[32;23;22;24;25mArchive files/directories with a specific compression level (0 - the lowest, 9 - the highest):
+   [33;23;22;24;25mzip [0m[-r|--recurse-paths][33;23;22;24;25m -[0m0..9[33;23;22;24;25m [0mpath/to/compressed.zip[33;23;22;24;25m [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...
+[0m
+ - [0m[32;23;22;24;25mCreate an encrypted archive with a specific password:
+   [33;23;22;24;25mzip [0m[-re|--recurse-paths --encrypt][33;23;22;24;25m [0mpath/to/compressed.zip[33;23;22;24;25m [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...
+[0m
+ - [0m[32;23;22;24;25mArchive files/directories to a multi-part split Zip archive (e.g. 3 GB parts):
+   [33;23;22;24;25mzip [0m[-rs|--recurse-paths --split-size][33;23;22;24;25m [0m3g[33;23;22;24;25m [0mpath/to/compressed.zip[33;23;22;24;25m [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...
+[0m
+ - [0m[32;23;22;24;25mPrint a specific archive contents:
+   [33;23;22;24;25mzip [0m[-sf|--split-size --freshen][33;23;22;24;25m [0mpath/to/compressed.zip
+[0m[0m

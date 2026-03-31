@@ -1,0 +1,119 @@
+UFLASH(1)                        User Commands                       UFLASH(1)
+
+NAME
+       uflash - utility for flashing the BBC micro:bit with Python scripts and
+       the MicroPython runtime
+
+SYNOPSIS
+       uflash [--runtime RUNTIME] [--watch] [--minify] [source] [target  [tar‐
+       get...]]
+
+       uflash --extract HEXFILE [source]
+
+       uflash --version
+
+       uflash --help
+
+DESCRIPTION
+       uflash  flashes  Python  onto a BBC micro:bit or extracts Python source
+       from a .hex file.  If no path to the micro:bit is provided, uflash will
+       attempt  to  autodetect  the correct path to the device.  If no path to
+       the Python script is provided, uflash will flash an unmodified MicroPy‐
+       thon firmware onto the device.
+
+OPTIONS
+       uflash supports the following options:
+
+       -r, --runtime RUNTIME
+              use the specified MicroPython runtime file
+
+       -w, --watch
+              watch the source file for changes
+
+       -m, --minify
+              minify the source
+
+       -e, --extract HEXFILE
+              extract Python source from given hex file
+
+       source the Python source file to flash or extract to
+
+       target path to one or more mounted micro:bit devices
+
+       -h, --help
+              display usage information and exit
+
+       --version
+              display current version and exit
+
+EXAMPLES
+       If  you  type the command on its own then uflash will attempt to find a
+       connected BBC micro:bit and flash an unmodified default version of  the
+       MicroPython runtime onto it:
+
+              $ uflash
+              Flashing Python to: /media/ntoll/MICROBIT/micropython.hex
+
+       To  flash  a version of the MicroPython runtime with a specified script
+       embedded within it (so that script is run when the BBC micro:bit  boots
+       up) then pass the path to the Python script in as the first argument to
+       the command:
+
+              $ uflash my_script.py
+              Flashing Python to: /media/ntoll/MICROBIT/micropython.hex
+
+       You can let uflash watch for  changes  of  your  script.   It  will  be
+       flashed automatically every time you save it:
+
+              $ uflash --watch my_script.py
+
+       At  this  point uflash will try to automatically detect the path to the
+       device.  However, if you have several devices plugged  in  and/or  know
+       what  the  path  on the filesystem to the BBC micro:bit already is, you
+       can specify this as a second argument to the command:
+
+              $ uflash myscript.py /media/ntoll/MICROBIT
+              Flashing Python to: /media/ntoll/MICROBIT/micropython.hex
+
+       You can even flash multiple devices at once:
+
+              $ uflash myscript.py /media/ntoll/MICROBIT /media/ntoll/MICROBIT1
+              Flashing Python to: /media/ntoll/MICROBIT/micropython.hex
+              Flashing Python to: /media/ntoll/MICROBIT1/micropython.hex
+
+       To extract a Python script from a hex file use the “–extract” flag like
+       this:
+
+              $ uflash --extract something.hex myscript.py
+
+       This  will  save  the Python script recovered from “something.hex” into
+       the file “myscript.py”.  If you don’t supply  a  target  the  recovered
+       script will emit to STDOUT.
+
+       If you’re developing MicroPython and have a custom runtime hex file you
+       can specify that uflash use it instead of the default  version  of  Mi‐
+       croPython in the following way:
+
+              $ uflash --runtime=firmware.hex
+
+FILES
+       The    default    MicroPython    firmware    file    is    located   in
+       /usr/share/firmware-microbit-micropython/firmware.hex.
+
+REPORTING BUGS
+       Upstream bug tracker: https://github.com/ntoll/uflash/issues
+
+COPYRIGHT
+       Copyright 2015-2018 Nicholas H.Tollervey and others.
+
+AUTHOR
+       This manual page is based on the uflash documentation.  It was  created
+       by Nick Morrott <nickm@debian.org> for the Debian GNU/Linux system, but
+       may be used by others
+
+SEE ALSO
+       mu-editor(1)
+
+       https://uflash.readthedocs.io/en/latest/
+
+1.2.4+dfsg                       December 2018                       UFLASH(1)

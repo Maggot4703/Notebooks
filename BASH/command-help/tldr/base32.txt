@@ -1,0 +1,20 @@
+base32
+
+[0m[0mEncode or decode file or stdin to/from Base32, to stdout.
+More information: https://manned.org/base32.
+
+ - [0m[32;23;22;24;25mEncode a file:
+   [33;23;22;24;25mbase32 [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mWrap encoded output at a specific width (0 disables wrapping):
+   [33;23;22;24;25mbase32 [0m[-w|--wrap][33;23;22;24;25m [0m0|76|...[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDecode a file:
+   [33;23;22;24;25mbase32 [0m[-d|--decode][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mEncode from stdin:
+   command[33;23;22;24;25m | base32[0m
+[0m
+ - [0m[32;23;22;24;25mDecode from stdin:
+   command[33;23;22;24;25m | base32 [0m[-d|--decode]
+[0m[0m

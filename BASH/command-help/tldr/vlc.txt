@@ -1,0 +1,21 @@
+vlc
+
+[0m[0mCross-platform multimedia player.
+See also: mpv, mplayer, ytfzf.
+More information: https://wiki.videolan.org/Documentation:Command_line/.
+
+ - [0m[32;23;22;24;25mPlay a file:
+   [33;23;22;24;25mvlc [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPlay in fullscreen:
+   [33;23;22;24;25mvlc --fullscreen [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPlay muted:
+   [33;23;22;24;25mvlc --no-audio [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPlay repeatedly:
+   [33;23;22;24;25mvlc --loop [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPlay video from a URL:
+   [33;23;22;24;25mvlc [0mhttps://www.youtube.com/watch?v=oHg5SJYRHA0
+[0m[0m

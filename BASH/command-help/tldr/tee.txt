@@ -1,0 +1,17 @@
+tee
+
+[0m[0mRead from stdin and write to stdout and files (or commands).
+More information: https://www.gnu.org/software/coreutils/manual/html_node/tee-invocation.html.
+
+ - [0m[32;23;22;24;25mCopy stdin to each file, and also to stdout:
+   [33;23;22;24;25mecho "example" | tee [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mAppend to the given files, do not overwrite:
+   [33;23;22;24;25mecho "example" | tee [0m[-a|--append][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint stdin to the terminal, and also pipe it into another program for further processing:
+   [33;23;22;24;25mecho "example" | tee [0m/dev/tty[33;23;22;24;25m | [0mxargs printf "[%s]"
+[0m
+ - [0m[32;23;22;24;25mCreate a directory called "example", count the number of characters in "example" and write "example" to the terminal:
+   [33;23;22;24;25mecho "example" | tee >(xargs mkdir) >(wc [0m[-c|--bytes][33;23;22;24;25m)[0m
+[0m[0m

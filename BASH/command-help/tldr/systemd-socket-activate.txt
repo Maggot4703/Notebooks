@@ -1,0 +1,20 @@
+systemd-socket-activate
+
+[0m[0mSocket activation for systemd services.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-socket-activate.html.
+
+ - [0m[32;23;22;24;25mActivate a service when a specific socket is connected:
+   [33;23;22;24;25msystemd-socket-activate [0mpath/to/socket.service
+[0m
+ - [0m[32;23;22;24;25mActivate multiple sockets for a service:
+   [33;23;22;24;25msystemd-socket-activate [0mpath/to/socket1.service[33;23;22;24;25m [0mpath/to/socket2.service
+[0m
+ - [0m[32;23;22;24;25mPass environment variables to the service being activated:
+   SYSTEMD_SOCKET_ACTIVATION=1[33;23;22;24;25m systemd-socket-activate [0mpath/to/socket.service
+[0m
+ - [0m[32;23;22;24;25mActivate a service along with a notification socket:
+   [33;23;22;24;25msystemd-socket-activate [0mpath/to/socket.socket[33;23;22;24;25m [0mpath/to/service.service
+[0m
+ - [0m[32;23;22;24;25mActivate a service with a specified port:
+   [33;23;22;24;25msystemd-socket-activate [0mpath/to/socket.service[33;23;22;24;25m [0m[-l|--listen][33;23;22;24;25m [0m8080
+[0m[0m

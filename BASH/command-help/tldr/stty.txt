@@ -1,0 +1,29 @@
+stty
+
+[0m[0mSet options for a terminal device interface.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/stty-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay current terminal size:
+   [33;23;22;24;25mstty size[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay all settings for the current terminal:
+   [33;23;22;24;25mstty [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mSet the number of rows or columns:
+   [33;23;22;24;25mstty [0mrows|cols[33;23;22;24;25m [0mcount
+[0m
+ - [0m[32;23;22;24;25mGet the actual transfer speed of a device:
+   [33;23;22;24;25mstty [0m[-F|--file][33;23;22;24;25m [0mpath/to/device_file[33;23;22;24;25m speed[0m
+[0m
+ - [0m[32;23;22;24;25mReset all modes to reasonable values for the current terminal:
+   [33;23;22;24;25mstty sane[0m
+[0m
+ - [0m[32;23;22;24;25mSwitch between raw and normal mode:
+   [33;23;22;24;25mstty [0mraw|cooked
+[0m
+ - [0m[32;23;22;24;25mTurn character echoing off or on:
+   [33;23;22;24;25mstty [0m-echo|echo
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mstty --help[0m
+[0m[0m

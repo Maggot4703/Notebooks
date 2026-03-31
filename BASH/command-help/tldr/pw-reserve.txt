@@ -1,0 +1,14 @@
+pw-reserve
+
+[0m[0mReserve a device for PipeWire.
+More information: https://docs.pipewire.org/page_man_pw-reserve_1.html.
+
+ - [0m[32;23;22;24;25mReserve a device (currently only supports audio devices):
+   [33;23;22;24;25mpw-reserve [0m[-n|--name][33;23;22;24;25m [0maudioN
+[0m
+ - [0m[32;23;22;24;25mMonitor a device instead of reserving it:
+   [33;23;22;24;25mpw-reserve [0m[-n|--name][33;23;22;24;25m [0maudioN[33;23;22;24;25m [0m[-m|--monitor]
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpw-reserve [0m[-h|--help]
+[0m[0m

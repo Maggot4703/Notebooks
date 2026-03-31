@@ -1,0 +1,14 @@
+pgrep
+
+[0m[0mFind or signal processes by name.
+More information: https://www.manned.org/pgrep.
+
+ - [0m[32;23;22;24;25mReturn PIDs of any running processes with a matching command string:
+   [33;23;22;24;25mpgrep [0mprocess_name
+[0m
+ - [0m[32;23;22;24;25mSearch for processes including their command-line options:
+   [33;23;22;24;25mpgrep [0m[-f|--full][33;23;22;24;25m "[0mprocess_name[33;23;22;24;25m [0mparameter[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mSearch for processes run by a specific user:
+   [33;23;22;24;25mpgrep [0m[-u|--euid][33;23;22;24;25m root [0mprocess_name
+[0m[0m

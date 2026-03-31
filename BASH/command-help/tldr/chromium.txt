@@ -1,0 +1,30 @@
+chromium
+
+[0m[0mOpen-source web browser principally developed and maintained by Google.
+Note: You may need to replace the chromium command with your desired web browser, such as brave, google-chrome, opera, or vivaldi.
+More information: https://www.chromium.org/developers/how-tos/run-chromium-with-flags/.
+
+ - [0m[32;23;22;24;25mOpen a specific URL or file:
+   [33;23;22;24;25mchromium [0mhttps://example.com|path/to/file.html
+[0m
+ - [0m[32;23;22;24;25mOpen in incognito mode:
+   [33;23;22;24;25mchromium --incognito [0mexample.com
+[0m
+ - [0m[32;23;22;24;25mOpen in a new window:
+   [33;23;22;24;25mchromium --new-window [0mexample.com
+[0m
+ - [0m[32;23;22;24;25mOpen in application mode (without toolbars, URL bar, buttons, etc.):
+   [33;23;22;24;25mchromium --app=[0mhttps://example.com
+[0m
+ - [0m[32;23;22;24;25mUse a proxy server:
+   [33;23;22;24;25mchromium --proxy-server="[0msocks5://hostname:66[33;23;22;24;25m" [0mexample.com
+[0m
+ - [0m[32;23;22;24;25mOpen with a custom profile directory:
+   [33;23;22;24;25mchromium --user-data-dir=[0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mOpen without CORS validation (useful to test an API):
+   [33;23;22;24;25mchromium --user-data-dir=[0mpath/to/directory[33;23;22;24;25m --disable-web-security[0m
+[0m
+ - [0m[32;23;22;24;25mOpen with a DevTools window for each tab opened:
+   [33;23;22;24;25mchromium --auto-open-devtools-for-tabs[0m
+[0m[0m

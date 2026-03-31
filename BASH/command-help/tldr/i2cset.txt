@@ -1,0 +1,16 @@
+i2cset
+
+[0m[0mSet the value of a register of an I2C device.
+See also: i2cdetect, i2cdump, i2cget.
+Note: All addresses should be specified in hexadecimal.
+More information: https://manned.org/i2cset.
+
+ - [0m[32;23;22;24;25mWrite to a register of an I2C device:
+   [33;23;22;24;25mi2cset [0mi2cbus[33;23;22;24;25m [0mdevice_address[33;23;22;24;25m [0mregister_address[33;23;22;24;25m [0mvalue
+[0m
+ - [0m[32;23;22;24;25mWrite to a register of an I2C device without asking for confirmation:
+   [33;23;22;24;25mi2cset -y [0mi2cbus[33;23;22;24;25m [0mdevice_address[33;23;22;24;25m [0mregister_address[33;23;22;24;25m [0mvalue
+[0m
+ - [0m[32;23;22;24;25mWrite to a register of an I2C device using a specific mode:
+   [33;23;22;24;25mi2cset [0mi2cbus[33;23;22;24;25m [0mdevice_address[33;23;22;24;25m [0mregister_address[33;23;22;24;25m [0mvalue[33;23;22;24;25m [0mb|w|c|s|i
+[0m[0m

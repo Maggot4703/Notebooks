@@ -1,0 +1,13 @@
+busybox
+
+[0m[0mA collection of small system utilities in a single executable.
+Executing busybox via a symlink is equivalent to running busybox symlink_name.
+Linux distributions that use BusyBox will usually provide symlinks for all programs.
+More information: https://www.busybox.net/downloads/BusyBox.html.
+
+ - [0m[32;23;22;24;25mExecute a BusyBox function:
+   [33;23;22;24;25mbusybox [0mls|rm|mkdir|cat|...[33;23;22;24;25m [0margs
+[0m
+ - [0m[32;23;22;24;25mDisplay help and a list of functions:
+   [33;23;22;24;25mbusybox --help[0m
+[0m[0m

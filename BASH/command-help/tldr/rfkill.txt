@@ -1,0 +1,20 @@
+rfkill
+
+[0m[0mEnable and disable wireless devices.
+More information: https://manned.org/rfkill.
+
+ - [0m[32;23;22;24;25mList devices:
+   [33;23;22;24;25mrfkill[0m
+[0m
+ - [0m[32;23;22;24;25mFilter by columns:
+   [33;23;22;24;25mrfkill [0m[-o|--output][33;23;22;24;25m [0mID,TYPE,DEVICE
+[0m
+ - [0m[32;23;22;24;25mBlock devices by type (e.g. bluetooth, wlan):
+   [33;23;22;24;25mrfkill block [0mbluetooth
+[0m
+ - [0m[32;23;22;24;25mUnblock devices by type (e.g. bluetooth, wlan):
+   [33;23;22;24;25mrfkill unblock [0mwlan
+[0m
+ - [0m[32;23;22;24;25mOutput in JSON format:
+   [33;23;22;24;25mrfkill [0m[-J|--json]
+[0m[0m

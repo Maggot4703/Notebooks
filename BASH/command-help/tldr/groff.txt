@@ -1,0 +1,20 @@
+groff
+
+[0m[0mGNU replacement for the troff and nroff typesetting utilities.
+More information: https://www.gnu.org/software/groff/manual/groff.html.node/Groff-Options.html.
+
+ - [0m[32;23;22;24;25mFormat output for a PostScript printer, saving the output to a file:
+   [33;23;22;24;25mgroff [0mpath/to/input.roff[33;23;22;24;25m > [0mpath/to/output.ps
+[0m
+ - [0m[32;23;22;24;25mRender a man page using the ASCII output device, and display it using a pager:
+   [33;23;22;24;25mgroff -man -T ascii [0mpath/to/manpage.1[33;23;22;24;25m | less --RAW-CONTROL-CHARS[0m
+[0m
+ - [0m[32;23;22;24;25mRender a man page into an HTML file:
+   [33;23;22;24;25mgroff -man -T html [0mpath/to/manpage.1[33;23;22;24;25m > [0mpath/to/manpage.html
+[0m
+ - [0m[32;23;22;24;25mTypeset a roff file containing [t]ables and [p]ictures, using the [me] macro set, to PDF, saving the output:
+   [33;23;22;24;25mgroff [0m-t[33;23;22;24;25m [0m-p[33;23;22;24;25m -[0mme[33;23;22;24;25m -T [0mpdf[33;23;22;24;25m [0mpath/to/input.me[33;23;22;24;25m > [0mpath/to/output.pdf
+[0m
+ - [0m[32;23;22;24;25mRun a groff command with preprocessor and macro options guessed by the grog utility:
+   [33;23;22;24;25meval "$(grog -T utf8 [0mpath/to/input.me[33;23;22;24;25m)"[0m
+[0m[0m

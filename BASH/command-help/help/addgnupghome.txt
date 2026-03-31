@@ -1,0 +1,1 @@
+addgnupghome: skeleton directory `/etc/skel/.gnupg' does not exist

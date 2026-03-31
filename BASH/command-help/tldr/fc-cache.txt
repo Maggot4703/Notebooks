@@ -1,0 +1,26 @@
+fc-cache
+
+[0m[0mScan font directories to build font cache files.
+More information: https://manned.org/fc-cache.
+
+ - [0m[32;23;22;24;25mGenerate font cache files:
+   [33;23;22;24;25mfc-cache[0m
+[0m
+ - [0m[32;23;22;24;25mGenerate font cache files verbosely:
+   [33;23;22;24;25mfc-cache [0m[-v|--verbose]
+[0m
+ - [0m[32;23;22;24;25mForce a rebuild of all font cache files, without checking if cache is up-to-date:
+   [33;23;22;24;25mfc-cache [0m[-f|--force]
+[0m
+ - [0m[32;23;22;24;25mErase font cache files, then generate new font cache files:
+   [33;23;22;24;25mfc-cache [0m[-r|--really-force]
+[0m
+ - [0m[32;23;22;24;25mScan a specific directory:
+   [33;23;22;24;25mfc-cache [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mScan system-wide directories, skipping the user's home directory:
+   [33;23;22;24;25mfc-cache [0m[-s|--system-only]
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mfc-cache [0m[-V|--version]
+[0m[0m

@@ -1,0 +1,17 @@
+cpan
+
+[0m[0mQuery, download and build perl modules from CPAN sites.
+More information: https://manned.org/cpan.
+
+ - [0m[32;23;22;24;25mInstall a module (-i is optional):
+   [33;23;22;24;25mcpan [0m-i[33;23;22;24;25m [0mmodule_name
+[0m
+ - [0m[32;23;22;24;25mForce install a module (-i is not optional):
+   [33;23;22;24;25mcpan -fi [0mmodule_name
+[0m
+ - [0m[32;23;22;24;25mUpgrade all installed modules:
+   [33;23;22;24;25mcpan -u[0m
+[0m
+ - [0m[32;23;22;24;25mRecompile modules:
+   [33;23;22;24;25mcpan -r[0m
+[0m[0m

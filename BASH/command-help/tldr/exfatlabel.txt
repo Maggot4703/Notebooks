@@ -1,0 +1,11 @@
+exfatlabel
+
+[0m[0mGet or set an exFAT filesystem label.
+More information: https://manned.org/exfatlabel.
+
+ - [0m[32;23;22;24;25mDisplay the current filesystem label:
+   [33;23;22;24;25mexfatlabel [0m/dev/sda
+[0m
+ - [0m[32;23;22;24;25mSet the filesystem label:
+   [33;23;22;24;25mexfatlabel [0m/dev/sda[33;23;22;24;25m [0mnew_label
+[0m[0m

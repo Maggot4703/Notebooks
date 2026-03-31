@@ -1,0 +1,14 @@
+jstack
+
+[0m[0mJava stack trace tool.
+More information: https://manned.org/jstack.
+
+ - [0m[32;23;22;24;25mPrint Java stack traces for all threads in a Java process:
+   [33;23;22;24;25mjstack [0mjava_pid
+[0m
+ - [0m[32;23;22;24;25mPrint mixed mode (Java/C++) stack traces for all threads in a Java process:
+   [33;23;22;24;25mjstack -m [0mjava_pid
+[0m
+ - [0m[32;23;22;24;25mPrint stack traces from Java core dump:
+   [33;23;22;24;25mjstack [0m/usr/bin/java[33;23;22;24;25m [0mfile.core
+[0m[0m

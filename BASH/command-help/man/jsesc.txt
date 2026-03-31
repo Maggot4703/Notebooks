@@ -1,0 +1,92 @@
+jsesc(1)                  BSD General Commands Manual                 jsesc(1)
+
+NAME
+     jsesc — escape strings for use in JavaScript string literals
+
+SYNOPSIS
+     jsesc [-s | --single-quotes string]
+           [-d | --double-quotes string]
+           [-w | --wrap string]
+           [-e | --escape-everything string]
+           [-6 | --es6 string]
+           [-l | --lowercase-hex string]
+           [-j | --json string]
+           [-p | --object string]
+           [-p | --pretty string]
+           [-v | --version]
+           [-h | --help]
+
+DESCRIPTION
+     jsesc escapes strings for use in JavaScript string literals while gener‐
+     ating the shortest possible valid ASCII-only output.
+
+OPTIONS
+     -s, --single-quotes
+     Escape any occurrences of ' in the input string as \', so that the output
+     can be used in a JavaScript string literal wrapped in single quotes.
+
+     -d, --double-quotes
+     Escape any occurrences of " in the input string as \", so that the output
+     can be used in a JavaScript string literal wrapped in double quotes.
+
+     -w, --wrap
+     Make sure the output is a valid JavaScript string literal wrapped in
+     quotes. The type of quotes can be specified using the -s |
+     --single-quotes or -d | --double-quotes settings.
+
+     -6, --es6
+     Escape any astral Unicode symbols using ECMAScript 6 Unicode code point
+     escape sequences.
+
+     -e, --escape-everything
+     Escape all the symbols in the output, even printable ASCII symbols.
+
+     -j, --json
+     Make sure the output is valid JSON. Hexadecimal character escape se‐
+     quences and the \v or \0 escape sequences will not be used. Setting this
+     flag enables the -d | --double-quotes and -w | --wrap settings.
+
+     -o, --object
+     Treat the input as a JavaScript object rather than a string. Accepted
+     values are flat arrays containing only string values, and flat objects
+     containing only string values.
+
+     -p, --pretty
+     Pretty-print the output for objects, using whitespace to make it more
+     readable. Setting this flag enables the
+
+     -l, --lowercase-hex
+     Use lowercase for alphabetical hexadecimal digits in escape sequences.
+     -o | --object setting.
+
+     -v, --version
+     Print jsesc's version.
+
+     -h, --help
+     Show the help screen.
+
+EXIT STATUS
+     The jsesc utility exits with one of the following values:
+
+     0     jsesc successfully escaped the given string and printed the result.
+     1     jsesc wasn't instructed to escape anything (for example, the --help
+           flag was set); or, an error occurred.
+
+EXAMPLES
+     jsesc 'foo bar baz'
+     Print an escaped version of the given string.
+
+     echo 'foo bar baz' | jsesc
+     Print an escaped version of the string that gets piped in.
+
+BUGS
+     jsesc's bug tracker is located at <https://github.com/mathiasbynens/js‐
+     esc/issues>.
+
+AUTHOR
+     Mathias Bynens <https://mathiasbynens.be/>
+
+WWW
+     <https://mths.be/jsesc>
+
+                                 May 13, 2016

@@ -1,0 +1,20 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/kwallet-query
+Usage: kwallet-query [options] wallet
+
+Options:
+  -h, --help                    Displays this help.
+  -l, --list-entries            list password entries
+  -r, --read-password <Entry>   reads the secrets from the given <entry>
+  -w, --write-password <Entry>  write secrets to the given <entry>. The values
+                                are read from the standard input. IMPORTANT:
+                                previous wallet entry value will be overwritten!
+  -f, --folder <Folder>         specify the folder in the wallet <folder>
+  -v, --verbose                 verbose output
+
+Arguments:
+  wallet                        The wallet to query

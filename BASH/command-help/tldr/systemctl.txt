@@ -1,0 +1,30 @@
+systemctl
+
+[0m[0mControl the systemd system and service manager.
+Some subcommands such as disable, status, reboot etc. have their own usage documentation.
+More information: https://www.freedesktop.org/software/systemd/man/systemctl.html.
+
+ - [0m[32;23;22;24;25mShow all running services:
+   [33;23;22;24;25msystemctl status[0m
+[0m
+ - [0m[32;23;22;24;25mList failed units:
+   [33;23;22;24;25msystemctl --failed[0m
+[0m
+ - [0m[32;23;22;24;25mStart/Stop/Restart/Reload/Show the status a service:
+   [33;23;22;24;25msystemctl [0mstart|stop|restart|reload|status[33;23;22;24;25m [0munit
+[0m
+ - [0m[32;23;22;24;25mEnable/Disable a unit to be started on bootup:
+   [33;23;22;24;25msystemctl [0menable|disable[33;23;22;24;25m [0munit
+[0m
+ - [0m[32;23;22;24;25mReload systemd, scan for new or changed units:
+   [33;23;22;24;25msystemctl daemon-reload[0m
+[0m
+ - [0m[32;23;22;24;25mCheck if a unit is active/enabled/failed:
+   [33;23;22;24;25msystemctl [0mis-active|is-enabled|is-failed[33;23;22;24;25m [0munit
+[0m
+ - [0m[32;23;22;24;25mList all service/socket/automount units filtering by running/failed state:
+   [33;23;22;24;25msystemctl list-units [0m[-t|--type][33;23;22;24;25m [0mservice|socket|automount[33;23;22;24;25m --state [0mfailed|running
+[0m
+ - [0m[32;23;22;24;25mShow the contents & absolute path of a unit file or edit it:
+   [33;23;22;24;25msystemctl [0mcat|edit[33;23;22;24;25m [0munit
+[0m[0m

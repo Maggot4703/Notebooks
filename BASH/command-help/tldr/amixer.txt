@@ -1,0 +1,11 @@
+amixer
+
+[0m[0mMixer for ALSA soundcard driver.
+More information: https://manned.org/amixer.
+
+ - [0m[32;23;22;24;25mTurn up the master volume by 10%:
+   [33;23;22;24;25mamixer -D pulse sset Master [0m10%+
+[0m
+ - [0m[32;23;22;24;25mTurn down the master volume by 10%:
+   [33;23;22;24;25mamixer -D pulse sset Master [0m10%-
+[0m[0m

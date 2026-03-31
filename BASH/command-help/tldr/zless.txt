@@ -1,0 +1,8 @@
+zless
+
+[0m[0mView gzip and xz compressed files.
+More information: https://manned.org/zless.
+
+ - [0m[32;23;22;24;25mPage through a gzip compressed file with less:
+   [33;23;22;24;25mzless [0mfile.txt.gz
+[0m[0m

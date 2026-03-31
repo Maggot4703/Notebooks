@@ -1,0 +1,29 @@
+spa-inspect(1)              General Commands Manual             spa-inspect(1)
+
+NAME
+       spa-inspect - spa-inspect
+        The PipeWire SPA plugin information utility
+
+SYNOPSIS
+       spa-inspect FILE
+
+DESCRIPTION
+       Displays information about a SPA plugin.
+
+       Lists the SPA factories contained, and tries to instantiate them.
+
+EXAMPLES
+       spa-inspect /usr/lib/aarch64-linux-gnu/spa-0.2/bluez5/libspa-codec-
+       bluez5-sbc.so
+
+       Display information about a plugin.
+
+AUTHORS
+       The PipeWire Developers
+       <https://gitlab.freedesktop.org/pipewire/pipewire/issues>; PipeWire is
+       available from <https://pipewire.org>
+
+SEE ALSO
+       pipewire(1)
+
+PipeWire                             1.2.7                      spa-inspect(1)

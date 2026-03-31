@@ -1,0 +1,112 @@
+GPRE(1)                     Firebird documentation                     GPRE(1)
+
+NAME
+       gpre - Firebird source pre-processor
+
+SYNOPSIS
+       gpre [option...] input output
+
+DESCRIPTION
+       gpre is a source pre-processor for easier writing of programs working
+       with the raw Firebird API. It supports multiple source languages. Using
+       gpre, you can mix special SQL-like language with the normal program
+       source.
+
+OPTIONS
+       -ada
+           Source is an Ada program.
+
+       -handles package name
+           Ada only. Specifies the handles package.
+
+       -c  Source is a C program.
+
+       -cxx | -cplusplus
+           Source is a C++ program.
+
+       -database name
+           Pre-define database connection.
+
+       -d_float
+           Generate "blr_d_float" for doubles.
+
+       -either_case
+           Accept upper or lower case DML in C.
+
+       -fetch_password
+           Fetch password from file.
+
+       -charset string
+           Default character set & format.
+
+       -lang_internal
+           Set some variables to defaults usable for internal Firebird use.
+
+       -manual
+           Do not automatically ATTACH to a database.
+
+       -no_lines
+           Do not generate C debug lines.
+
+       -output
+           Send output to standard out
+
+       -password string
+           Default password.
+
+       -raw
+           Generate unformatted binary BLR.
+
+       -sql_dialect value
+           SQL dialect to use.
+
+       -sqlda N
+           Deprecated feature.
+
+       -user name
+           Default user name.
+
+       -verbose
+           Verbose output to stderr.
+
+       -x  External database (used with -database).
+
+       -cob
+           Source is a COBOL program.
+
+       -ansi
+           Generate ANSI85 compatible COBOL code.
+
+       -rmc
+           RM/Cobol
+
+       -z  Print software version.
+
+       -base dir
+           Base directory for compile-time database.
+
+       -dfm format
+           COBOL date format
+
+       -noqli
+           Suppress QLI syntax.
+
+       -fortran
+           Source is a FORTRAN program.
+
+       -pascal
+           Source is a Pascal program.
+
+       -trusted
+           Use trusted authentication.
+
+COPYRIGHT & LICENSE
+       Copyright (C) Damyan Ivanov, 2009.
+
+       This manpage was written by Damyan Ivanov for the Debian project but
+       may be used by others. Permission is granted to use this document, with
+       or without modifications, provided that this notice is retained. If we
+       meet some day, and you think this stuff is worth it, you can buy me a
+       beer in return.
+
+Firebird 3.0                      2025-08-25                           GPRE(1)

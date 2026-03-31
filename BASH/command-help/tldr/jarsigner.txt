@@ -1,0 +1,14 @@
+jarsigner
+
+[0m[0mSign and verify Java archive (JAR) files.
+More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/jarsigner.html.
+
+ - [0m[32;23;22;24;25mSign a JAR file:
+   [33;23;22;24;25mjarsigner [0mpath/to/file.jar[33;23;22;24;25m [0mkeystore_alias
+[0m
+ - [0m[32;23;22;24;25mSign a JAR file with a specific algorithm:
+   [33;23;22;24;25mjarsigner -sigalg [0malgorithm[33;23;22;24;25m [0mpath/to/file.jar[33;23;22;24;25m [0mkeystore_alias
+[0m
+ - [0m[32;23;22;24;25mVerify the signature of a JAR file:
+   [33;23;22;24;25mjarsigner -verify [0mpath/to/file.jar
+[0m[0m

@@ -1,0 +1,18 @@
+scriptlive
+
+[0m[0mExecute a typescript created by the script command in real-time.
+See also: script.
+More information: https://manned.org/scriptlive.
+
+ - [0m[32;23;22;24;25mExecute a typescript in real-time:
+   [33;23;22;24;25mscriptlive [0mpath/to/timing_file[33;23;22;24;25m [0mpath/to/typescript
+[0m
+ - [0m[32;23;22;24;25mExecute a typescript at double the original speed:
+   [33;23;22;24;25mscriptlive [0mpath/to/timing_file[33;23;22;24;25m [0mpath/to/typescript[33;23;22;24;25m --divisor 2[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a typescript created using --log-in option of script:
+   [33;23;22;24;25mscriptlive --log-in [0mpath/to/stdin_log_file[33;23;22;24;25m [0mpath/to/typescript
+[0m
+ - [0m[32;23;22;24;25mExecute a typescript waiting at most 2 seconds between each command:
+   [33;23;22;24;25mscriptlive [0mpath/to/timing_file[33;23;22;24;25m [0mpath/to/typescript[33;23;22;24;25m --maxdelay 2[0m
+[0m[0m

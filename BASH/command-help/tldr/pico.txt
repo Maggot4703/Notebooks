@@ -1,0 +1,29 @@
+pico
+
+[0m[0mText editor styled after the Alpine Composer.
+More information: https://manned.org/pico.
+
+ - [0m[32;23;22;24;25mStart the editor:
+   [33;23;22;24;25mpico [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mStart the editor with the cursor located n lines into the file:
+   [33;23;22;24;25mpico +[0mn[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mStart the editor with the cursor shown before the current selection:
+   [33;23;22;24;25mpico -g [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDefine the quote string for files such as email:
+   [33;23;22;24;25mpico -Q "[0mquotestring[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mEnable mouse functionality when run within an xterm window:
+   [33;23;22;24;25mpico -m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSet the operating directory for pico:
+   [33;23;22;24;25mpico -o [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mEnable "view only" mode, which disallows any edits:
+   [33;23;22;24;25mpico -v [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay all files including those beginning with a period:
+   [33;23;22;24;25mpico -a[0m
+[0m[0m

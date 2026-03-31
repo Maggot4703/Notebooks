@@ -1,0 +1,18 @@
+pdfattach
+
+[0m[0mAdd a new attachment (embedded file) to an existing PDF file.
+See also: pdfdetach, pdfimages, pdfinfo.
+More information: https://manned.org/pdfattach.
+
+ - [0m[32;23;22;24;25mAdd a new attachment to an existing PDF file:
+   [33;23;22;24;25mpdfattach [0mpath/to/input.pdf[33;23;22;24;25m [0mpath/to/file_to_attach[33;23;22;24;25m [0mpath/to/output.pdf
+[0m
+ - [0m[32;23;22;24;25mReplace attachment with same name if it exists:
+   [33;23;22;24;25mpdfattach -replace [0mpath/to/input.pdf[33;23;22;24;25m [0mpath/to/file_to_attach[33;23;22;24;25m [0mpath/to/output.pdf
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpdfattach [0m[-h|--help]
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mpdfattach -v[0m
+[0m[0m

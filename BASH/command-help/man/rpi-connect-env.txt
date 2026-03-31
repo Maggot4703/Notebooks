@@ -1,0 +1,30 @@
+RPI-CONNECT-ENV(1)          General Commands Manual         RPI-CONNECT-ENV(1)
+
+NAME
+       rpi-connect-env - Raspberry Pi Connect WayVNC wrapper
+
+SYNOPSIS
+       rpi-connect-env /usr/bin/wayvnc flags
+
+DESCRIPTION
+       rpi-connect-env  executes the given WayVNC command and options, setting
+       the environment variables  necessary  for  Raspberry  Pi  Connect  from
+       /etc/default/keyboard.
+
+       It is only intended to be run by the rpi-connect-wayvnc.service systemd
+       service unit.
+
+ENVIRONMENT
+       XKBMODEL
+              The current keyboard model.
+
+       XKBLAYOUT
+              The current keyboard layout.
+
+       XKBVARIANT
+              The current keyboard variant.
+
+SEE ALSO
+       wayvnc(1), rpi-connect(1), rpi-connectd(8)
+
+                                 February 2026              RPI-CONNECT-ENV(1)

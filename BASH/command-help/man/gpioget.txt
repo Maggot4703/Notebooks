@@ -1,0 +1,51 @@
+GPIOGET(1)                       User Commands                      GPIOGET(1)
+
+NAME
+       gpioget - manual page for gpioget v1.6.3
+
+SYNOPSIS
+       gpioget [OPTIONS] <chip name/number> <offset 1> <offset 2> ...
+
+DESCRIPTION
+       Read line value(s) from a GPIO chip
+
+OPTIONS
+       -h, --help:
+              display this message and exit
+
+       -v, --version:
+              display the version and exit
+
+       -l, --active-low:
+              set the line active state to low
+
+       -B, --bias=[as-is|disable|pull-down|pull-up] (defaults to 'as-is'):
+
+              set the line bias
+
+   Biases:
+       as-is: leave bias unchanged
+
+       disable:
+              disable bias
+
+       pull-up:
+              enable pull-up
+
+       pull-down:
+              enable pull-down
+
+AUTHOR
+       Bartosz Golaszewski <bartekgola@gmail.com>
+
+REPORTING BUGS
+       Report bugs to:
+           Bartosz Golaszewski <bartekgola@gmail.com>
+           linux-gpio <linux-gpio@vger.kernel.org>
+
+COPYRIGHT
+       Copyright © 2017-2018 Bartosz Golaszewski License: LGPLv2.1
+       This  is  free  software:  you  are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
+
+libgpiod v1.6.3                  January 2023                       GPIOGET(1)

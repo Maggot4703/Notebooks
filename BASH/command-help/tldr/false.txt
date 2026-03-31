@@ -1,0 +1,8 @@
+false
+
+[0m[0mReturns a non-zero exit code.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/false-invocation.html.
+
+ - [0m[32;23;22;24;25mReturn a non-zero exit code:
+   [33;23;22;24;25mfalse[0m
+[0m[0m

@@ -1,0 +1,21 @@
+rgrep
+
+[0m[0mRecursively find patterns in files using regex.
+Equivalent to grep -r.
+More information: https://www.gnu.org/software/grep/manual/grep.html#Command_002dline-Options.
+
+ - [0m[32;23;22;24;25mRecursively search for a pattern in the current working directory:
+   [33;23;22;24;25mrgrep "[0msearch_pattern[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mRecursively search for a case-insensitive pattern in the current working directory:
+   [33;23;22;24;25mrgrep [0m[-i|--ignore-case][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mRecursively search for an extended regex pattern (supports ?, +, {}, () and |) in the current working directory:
+   [33;23;22;24;25mrgrep [0m[-E|--extended-regexp][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mRecursively search for an exact string (disables regex) in the current working directory:
+   [33;23;22;24;25mrgrep [0m[-F|--fixed-strings][33;23;22;24;25m "[0mexact_string[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mRecursively search for a pattern in a specified directory (or file):
+   [33;23;22;24;25mrgrep "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file_or_directory
+[0m[0m

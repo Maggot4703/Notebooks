@@ -1,0 +1,11 @@
+nologin
+
+[0m[0mAlternative shell that prevents a user from logging in.
+More information: https://manned.org/nologin.5.
+
+ - [0m[32;23;22;24;25mSet a user's login shell to nologin to prevent the user from logging in:
+   [33;23;22;24;25mchsh [0m[-s|--shell][33;23;22;24;25m [0muser[33;23;22;24;25m nologin[0m
+[0m
+ - [0m[32;23;22;24;25mCustomize message for users with the login shell of nologin:
+   [33;23;22;24;25mecho "[0mdeclined_login_message[33;23;22;24;25m" > /etc/nologin.txt[0m
+[0m[0m

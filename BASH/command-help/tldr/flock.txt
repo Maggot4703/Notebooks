@@ -1,0 +1,21 @@
+flock
+
+[0m[0mManage file locks from shell scripts.
+It can be used to ensure that only one instance of a command is running.
+More information: https://manned.org/flock.
+
+ - [0m[32;23;22;24;25mRun a command with a file lock as soon as the lock is available:
+   [33;23;22;24;25mflock [0mpath/to/lock.lock[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mRun a command with a file lock, or exit if the lock is currently being held (with exit code 1):
+   [33;23;22;24;25mflock [0mpath/to/lock.lock[33;23;22;24;25m [0m[-n|--nonblock][33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mRun a command with a file lock, or exit with a specific error code if the lock is currently being held:
+   [33;23;22;24;25mflock [0mpath/to/lock.lock[33;23;22;24;25m [0m[-n|--nonblock][33;23;22;24;25m [0m[-E|--conflict-exit-code][33;23;22;24;25m [0m123[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mRun a command with a file lock, waiting up to 10 seconds for the lock to be available before giving up:
+   [33;23;22;24;25mflock [0mpath/to/lock.lock[33;23;22;24;25m [0m[-w|--timeout][33;23;22;24;25m 10 [0mcommand
+[0m
+ - [0m[32;23;22;24;25mBackup a bunch of files, waiting for the previous tar command to finish if it's still running elsewhere and holding the same lock file (can be used in a cron job that runs often):
+   [33;23;22;24;25mflock [0mpath/to/backup.lock[33;23;22;24;25m [0mtar -cvf path/to/backup.tar path/to/data/
+[0m[0m

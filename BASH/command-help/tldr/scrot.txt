@@ -1,0 +1,26 @@
+scrot
+
+[0m[0mScreen capture utility.
+More information: https://github.com/resurrecting-open-source-projects/scrot.
+
+ - [0m[32;23;22;24;25mCapture a screenshot and save it to the current directory with the current date as the filename:
+   [33;23;22;24;25mscrot[0m
+[0m
+ - [0m[32;23;22;24;25mCapture a screenshot and save it as capture.png:
+   [33;23;22;24;25mscrot [0mcapture.png
+[0m
+ - [0m[32;23;22;24;25mCapture a screenshot interactively:
+   [33;23;22;24;25mscrot --select[0m
+[0m
+ - [0m[32;23;22;24;25mCapture a screenshot interactively without exiting on keyboard input, press <Esc> to exit:
+   [33;23;22;24;25mscrot --select --ignorekeyboard[0m
+[0m
+ - [0m[32;23;22;24;25mCapture a screenshot interactively delimiting the region with a colored line:
+   [33;23;22;24;25mscrot --select --line color=[0mx11_color|rgb_color
+[0m
+ - [0m[32;23;22;24;25mCapture a screenshot from the currently focused window:
+   [33;23;22;24;25mscrot --focused[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay a countdown of 10 seconds before taking a screenshot:
+   [33;23;22;24;25mscrot --count --delay [0m10
+[0m[0m

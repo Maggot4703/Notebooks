@@ -1,0 +1,28 @@
+lxsession-edit(1)           General Commands Manual          lxsession-edit(1)
+
+NAME
+       lxsession-edit - a simple session editor GUI for LXDE which follows au‐
+       tostart specs from FreeDesktop.Org
+
+SYNOPSIS
+       lxsession-edit [ DE ]
+
+DESCRIPTION
+       lxsession-edit is an application to change list of  applications  which
+       will  be  ran on session start. Session name may be retrieved from com‐
+       mand line, from  environment  variables  XDG_CURRENT_DESKTOP  or  DESK‐
+       TOP_SESSION, otherwise "LXDE" is assumed.
+
+OPTIONS
+       DE        provide desktop session name to edit autostart list
+
+ENVIRONMENT
+       XDG_CURRENT_DESKTOP
+              default variable to get session name
+       DESKTOP_SESSION
+              fallback variable to get session name
+
+AUTHORS
+       This manual page is written by Andriy Grytsenko <andrej@rep.kiev.ua>.
+
+                                                             lxsession-edit(1)

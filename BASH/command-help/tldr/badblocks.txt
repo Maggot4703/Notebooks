@@ -1,0 +1,24 @@
+badblocks
+
+[0m[0mSearch a device for bad blocks.
+Some usages of badblocks can cause destructive actions, such as erasing all data on a disk, including the partition table.
+More information: https://manned.org/badblocks.
+
+ - [0m[32;23;22;24;25mSearch a disk for bad blocks by using a non-destructive read-only test:
+   [33;23;22;24;25msudo badblocks [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mSearch an unmounted disk for bad blocks with a [n]on-destructive read-write test:
+   [33;23;22;24;25msudo badblocks -n [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mSearch an unmounted disk for bad blocks with a destructive [w]rite test:
+   [33;23;22;24;25msudo badblocks -w [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mUse the destructive [w]rite test and [s]how [v]erbose progress:
+   [33;23;22;24;25msudo badblocks -svw [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mIn destructive mode, [o]utput found blocks to a file:
+   [33;23;22;24;25msudo badblocks -o [0mpath/to/file[33;23;22;24;25m -w [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mUse the destructive mode with improved speed using 4K [b]lock size and 64K block [c]ount:
+   [33;23;22;24;25msudo badblocks -w -b [0m4096[33;23;22;24;25m -c [0m65536[33;23;22;24;25m [0m/dev/sdX
+[0m[0m

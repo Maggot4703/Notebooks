@@ -1,0 +1,23 @@
+cd
+
+[0m[0mChange the current working directory.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-cd.
+
+ - [0m[32;23;22;24;25mGo to the specified directory:
+   [33;23;22;24;25mcd [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mGo up to the parent of the current directory:
+   [33;23;22;24;25mcd ..[0m
+[0m
+ - [0m[32;23;22;24;25mGo to the home directory of the current user:
+   [33;23;22;24;25mcd[0m
+[0m
+ - [0m[32;23;22;24;25mGo to the home directory of the specified user:
+   [33;23;22;24;25mcd ~[0musername
+[0m
+ - [0m[32;23;22;24;25mGo to the previously chosen directory:
+   [33;23;22;24;25mcd -[0m
+[0m
+ - [0m[32;23;22;24;25mGo to the root directory:
+   [33;23;22;24;25mcd /[0m
+[0m[0m

@@ -1,0 +1,26 @@
+pandoc
+
+[0m[0mConvert documents between various formats.
+More information: https://pandoc.org/MANUAL.html.
+
+ - [0m[32;23;22;24;25mConvert a Markdown file to PDF using pdflatex (the formats are determined by file extensions):
+   [33;23;22;24;25mpandoc [0mpath/to/input.md[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output.pdf
+[0m
+ - [0m[32;23;22;24;25mConvert a Markdown file to PDF using the specified PDF engine:
+   [33;23;22;24;25mpandoc [0mpath/to/input.md[33;23;22;24;25m --pdf-engine [0mtectonic|weasyprint|typst|...[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output.pdf
+[0m
+ - [0m[32;23;22;24;25mConvert to a standalone file with the appropriate headers/footers (for LaTeX, HTML, etc.):
+   [33;23;22;24;25mpandoc [0mpath/to/input.md[33;23;22;24;25m [0m[-s|--standalone][33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output.html
+[0m
+ - [0m[32;23;22;24;25mManually specify formats (overriding automatic format detection using the filename extension, or when there is no extension):
+   [33;23;22;24;25mpandoc [0m[-f|--from][33;23;22;24;25m [0mdocx|...[33;23;22;24;25m [0mpath/to/input[33;23;22;24;25m [0m[-t|--to][33;23;22;24;25m [0mpdf|...[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output
+[0m
+ - [0m[32;23;22;24;25mTransform a document using a Lua script (see https://pandoc.org/lua-filters.html for more information):
+   [33;23;22;24;25mpandoc [0mpath/to/input[33;23;22;24;25m [0m[-L|--lua-filter][33;23;22;24;25m [0mpath/to/filter.lua[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output
+[0m
+ - [0m[32;23;22;24;25mList all supported input formats:
+   [33;23;22;24;25mpandoc --list-input-formats[0m
+[0m
+ - [0m[32;23;22;24;25mList all supported output formats:
+   [33;23;22;24;25mpandoc --list-output-formats[0m
+[0m[0m

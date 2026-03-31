@@ -1,0 +1,14 @@
+Hex = 0503
+Name = Whenge
+UWP = D648500-8
+Remarks = Ag Ni
+{Ix} = { -2 }
+(Ex) = (842-5)
+[Cx] = [1313]
+N = -
+B = -
+Z = -
+PBG = 610
+W = 13
+A = NaHu
+Stellar = F8 V

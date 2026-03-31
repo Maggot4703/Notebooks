@@ -1,0 +1,8 @@
+fc-match
+
+[0m[0mMatch available fonts.
+More information: https://manned.org/fc-match.
+
+ - [0m[32;23;22;24;25mReturn a sorted list of best matching fonts:
+   [33;23;22;24;25mfc-match [0m[-s|--sort][33;23;22;24;25m '[0mDejaVu Serif[33;23;22;24;25m'[0m
+[0m[0m

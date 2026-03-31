@@ -1,0 +1,43 @@
+{
+  "name": "Wood",
+  "type": "cargo",
+  "img": "systems/mgt2e/icons/cargo/wood.svg",
+  "system": {
+    "cargo": {
+      "price": 1000,
+      "availability": "Ag, Ga",
+      "purchaseDM": "Ag +6",
+      "saleDM": "Ri +2, In +1",
+      "tons": "1D6 * 20",
+      "illegal": false,
+      "cost": 100
+    },
+    "description": "<p>Hard or beautiful woods and plant extracts.</p>",
+    "quantity": 1,
+    "cost": 1000
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "KjVCQnLdKUJeJDZy": 3,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.mongoose-traveller-core.cargo-items.Item.0sU1MFsReVnbtWMx",
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mgt2e",
+    "systemVersion": "0.11.6.13-DEV",
+    "createdTime": 1739833676234,
+    "modifiedTime": 1739833676234,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "exportSource": null
+  },
+  "folder": "nTFQBn7eKDifeKFR",
+  "_id": "X6bmJbfSmiLxLVUW",
+  "sort": 0,
+  "_key": "!items!X6bmJbfSmiLxLVUW"
+}

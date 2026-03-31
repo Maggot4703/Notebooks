@@ -1,0 +1,83 @@
+<form class="flexcol skilldialog">
+
+    <div class="shadow">
+        <b>{{weapon.name}}</b> {{damage}}<br/>
+        {{#if cha}}
+            <i>{{cha}} + {{skill}}{{#if speciality}} ({{speciality}}){{/if}} at {{score}}</i>
+        {{else}}
+            <i>{{skill}}{{#if speciality}} ({{speciality}}){{/if}} at {{score}}</i>
+        {{/if}}
+        {{#if attackBonus}} + {{attackBonus}}{{/if}}
+    </div>
+
+    {{#if PSI}}
+        <div class="shadow">
+            <b>{{localize "MGT2.Attack.PsionicPower" dm=PSI_DM}}</b>
+            {{#if psiDmgBonus}}
+                <p>{{localize "MGT2.Attack.PsionicDamage" pp=psiDmgBonus dmg=PSI_BONUS_DMG}}</p>
+            {{/if}}
+            {{#if psiApBonus}}
+                <p>{{localize "MGT2.Attack.PsionicAP" pp=psiApBonus ap=PSI_BONUS_AP}}</p>
+            {{/if}}
+            <p>
+                <select class="attackDialogPsi" name="psiPoints">
+                    {{selectOptions PSI selected=0}}
+                </select>
+            </p>
+        </div>
+    {{/if}}
+
+    {{#if TARGETS}}
+        <div class="shadow">
+            <h4>Targets for {{attackerName}}</h4>
+
+            <ul class="targets">
+                {{#each TARGETS as |target|}}
+                    <li>{{target.distance}}m - {{target.name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    {{/if}}
+
+    <div class="shadow grid grid-2col">
+        <div class="boon-selection">
+            <label for="dicetype" class="skillDialogLabel">Roll Type</label>
+            <select class="skillDialogRollType" name="dicetype">
+                {{selectOptions ROLLTYPES selected="normal"}}
+            </select>
+        </div>
+
+        <div class="bonus-selection">
+            <label for="dm" class="skillDialogLabel">DM</label>
+            <input class="skillDialogDM" name="dm" type="text" data-dtype="Number" value="{{dm}}"/>
+        </div>
+
+        {{#if melee}}
+        {{else}}
+            <div class="range">
+                <label for="range" class="skillDialogLabel">Range</label>
+                <select class="attackDialogRange" name="difficulty">
+                    {{selectOptions RANGES selected="+0"}}
+                </select>
+            </div>
+        {{/if}}
+
+        {{#if hasAuto}}
+            <div class="auto">
+                <label for="auto" class="skillDialogLabel">Auto Fire</label>
+                <select class="attackDialogAuto" name="autoFire">
+                    {{selectOptions AUTO}}
+                </select>
+            </div>
+        {{/if}}
+
+    </div>
+
+    <footer class="sheet-footer flexrow">
+        {{#if parryBonus includeZero=true}}
+            <button type="submit" name="submit" class="parryRoll">Parry (+{{parryBonus}})</button>
+        {{/if}}
+        <button type="submit" name="submit" class="attackRoll">Attack</button>
+    </footer>
+
+</form>

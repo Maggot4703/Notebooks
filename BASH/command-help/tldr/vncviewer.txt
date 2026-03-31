@@ -1,0 +1,17 @@
+vncviewer
+
+[0m[0mLaunches a VNC (Virtual Network Computing) client.
+More information: https://manned.org/vncviewer.
+
+ - [0m[32;23;22;24;25mLaunch a VNC client which connects to a host on a given display:
+   [33;23;22;24;25mvncviewer [0mhost[33;23;22;24;25m:[0mdisplay_number
+[0m
+ - [0m[32;23;22;24;25mLaunch in full-screen mode:
+   [33;23;22;24;25mvncviewer -FullScreen [0mhost[33;23;22;24;25m:[0mdisplay_number
+[0m
+ - [0m[32;23;22;24;25mLaunch a VNC client with a specific screen geometry:
+   [33;23;22;24;25mvncviewer --geometry [0mwidth[33;23;22;24;25mx[0mheight[33;23;22;24;25m [0mhost[33;23;22;24;25m:[0mdisplay_number
+[0m
+ - [0m[32;23;22;24;25mLaunch a VNC client which connects to a host on a given port:
+   [33;23;22;24;25mvncviewer [0mhost[33;23;22;24;25m::[0mport
+[0m[0m

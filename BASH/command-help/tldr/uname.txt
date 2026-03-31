@@ -1,0 +1,30 @@
+uname
+
+[0m[0mPrint details about the current machine and the operating system running on it.
+See also: lsb_release.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/uname-invocation.html.
+
+ - [0m[32;23;22;24;25mPrint kernel name:
+   [33;23;22;24;25muname[0m
+[0m
+ - [0m[32;23;22;24;25mPrint all available system information:
+   [33;23;22;24;25muname [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mPrint system architecture and processor information:
+   [33;23;22;24;25muname [0m[-mp|--machine --processor]
+[0m
+ - [0m[32;23;22;24;25mPrint kernel name, kernel release and kernel version:
+   [33;23;22;24;25muname [0m[-srv|--kernel-name --kernel-release --kernel-version]
+[0m
+ - [0m[32;23;22;24;25mPrint system hostname:
+   [33;23;22;24;25muname [0m[-n|--nodename]
+[0m
+ - [0m[32;23;22;24;25mPrint the current operating system name:
+   [33;23;22;24;25muname [0m[-o|--operating-system]
+[0m
+ - [0m[32;23;22;24;25mPrint the current network node host name:
+   [33;23;22;24;25muname [0m[-n|--nodename]
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25muname --help[0m
+[0m[0m

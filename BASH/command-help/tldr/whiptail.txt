@@ -1,0 +1,24 @@
+whiptail
+
+[0m[0mDisplay text-based dialog boxes from shell scripts.
+See also: dialog, gum.
+More information: https://manned.org/whiptail.
+
+ - [0m[32;23;22;24;25mDisplay a simple message:
+   [33;23;22;24;25mwhiptail --title "[0mtitle[33;23;22;24;25m" --msgbox "[0mmessage[33;23;22;24;25m" [0mheight_in_chars[33;23;22;24;25m [0mwidth_in_chars
+[0m
+ - [0m[32;23;22;24;25mDisplay a boolean choice, returning the result through the exit code:
+   [33;23;22;24;25mwhiptail --title "[0mtitle[33;23;22;24;25m" --yesno "[0mmessage[33;23;22;24;25m" [0mheight_in_chars[33;23;22;24;25m [0mwidth_in_chars
+[0m
+ - [0m[32;23;22;24;25mCustomise the text on the yes/no buttons:
+   [33;23;22;24;25mwhiptail --title "[0mtitle[33;23;22;24;25m" --yes-button "[0mtext[33;23;22;24;25m" --no-button "[0mtext[33;23;22;24;25m" --yesno "[0mmessage[33;23;22;24;25m" [0mheight_in_chars[33;23;22;24;25m [0mwidth_in_chars
+[0m
+ - [0m[32;23;22;24;25mDisplay a text input box:
+   result_variable_name[33;23;22;24;25m="$(whiptail --title "[0mtitle[33;23;22;24;25m" --inputbox "[0mmessage[33;23;22;24;25m" [0mheight_in_chars[33;23;22;24;25m [0mwidth_in_chars[33;23;22;24;25m [0mdefault_text[33;23;22;24;25m 3>&1 1>&2 2>&3)"[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay a password input box:
+   result_variable_name[33;23;22;24;25m="$(whiptail --title "[0mtitle[33;23;22;24;25m" --passwordbox "[0mmessage[33;23;22;24;25m" [0mheight_in_chars[33;23;22;24;25m [0mwidth_in_chars[33;23;22;24;25m 3>&1 1>&2 2>&3)"[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay a multiple-choice menu:
+   result_variable_name[33;23;22;24;25m=$(whiptail --title "[0mtitle[33;23;22;24;25m" --menu "[0mmessage[33;23;22;24;25m" [0mheight_in_chars[33;23;22;24;25m [0mwidth_in_chars[33;23;22;24;25m [0mmenu_display_height[33;23;22;24;25m [0m"value_1" "display_text_1" "value_2" "display_text_2" ...[33;23;22;24;25m 3>&1 1>&2 2>&3)[0m
+[0m[0m

@@ -1,0 +1,30 @@
+scp
+
+[0m[0mSecure copy.
+Copy files between hosts using Secure Copy Protocol over SSH.
+More information: https://man.openbsd.org/scp.
+
+ - [0m[32;23;22;24;25mCopy a local file to a remote host:
+   [33;23;22;24;25mscp [0mpath/to/local_file[33;23;22;24;25m [0mremote_host[33;23;22;24;25m:[0mpath/to/remote_file
+[0m
+ - [0m[32;23;22;24;25mUse a specific port when connecting to the remote host:
+   [33;23;22;24;25mscp -P [0mport[33;23;22;24;25m [0mpath/to/local_file[33;23;22;24;25m [0mremote_host[33;23;22;24;25m:[0mpath/to/remote_file
+[0m
+ - [0m[32;23;22;24;25mCopy a file from a remote host to a local directory:
+   [33;23;22;24;25mscp [0mremote_host[33;23;22;24;25m:[0mpath/to/remote_file[33;23;22;24;25m [0mpath/to/local_directory
+[0m
+ - [0m[32;23;22;24;25mRecursively copy the contents of a directory from a remote host to a local directory:
+   [33;23;22;24;25mscp -r [0mremote_host[33;23;22;24;25m:[0mpath/to/remote_directory[33;23;22;24;25m [0mpath/to/local_directory
+[0m
+ - [0m[32;23;22;24;25mCopy a file between two remote hosts transferring through the local host:
+   [33;23;22;24;25mscp -3 [0mhost1[33;23;22;24;25m:[0mpath/to/remote_file[33;23;22;24;25m [0mhost2[33;23;22;24;25m:[0mpath/to/remote_directory
+[0m
+ - [0m[32;23;22;24;25mUse a specific username when connecting to the remote host:
+   [33;23;22;24;25mscp [0mpath/to/local_file[33;23;22;24;25m [0mremote_username[33;23;22;24;25m@[0mremote_host[33;23;22;24;25m:[0mpath/to/remote_directory
+[0m
+ - [0m[32;23;22;24;25mUse a specific SSH private key for authentication with the remote host:
+   [33;23;22;24;25mscp -i [0m~/.ssh/private_key[33;23;22;24;25m [0mpath/to/local_file[33;23;22;24;25m [0mremote_host[33;23;22;24;25m:[0mpath/to/remote_file
+[0m
+ - [0m[32;23;22;24;25mUse a specific proxy when connecting to the remote host:
+   [33;23;22;24;25mscp -J [0mproxy_username[33;23;22;24;25m@[0mproxy_host[33;23;22;24;25m [0mpath/to/local_file[33;23;22;24;25m [0mremote_host[33;23;22;24;25m:[0mpath/to/remote_file
+[0m[0m

@@ -1,0 +1,17 @@
+xmodmap
+
+[0m[0mUtility for modifying keymaps and pointer button mappings in X.
+More information: https://manned.org/xmodmap.
+
+ - [0m[32;23;22;24;25mSwap <LeftClick> and <RightCLick> on the pointer:
+   [33;23;22;24;25mxmodmap -e 'pointer = 3 2 1'[0m
+[0m
+ - [0m[32;23;22;24;25mReassign a key on the keyboard to another key:
+   [33;23;22;24;25mxmodmap -e 'keycode [0mkeycode[33;23;22;24;25m = [0mkeyname[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mDisable a key on the keyboard:
+   [33;23;22;24;25mxmodmap -e 'keycode [0mkeycode[33;23;22;24;25m ='[0m
+[0m
+ - [0m[32;23;22;24;25mExecute all xmodmap expressions in the specified file:
+   [33;23;22;24;25mxmodmap [0mpath/to/file
+[0m[0m

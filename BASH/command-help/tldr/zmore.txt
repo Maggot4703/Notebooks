@@ -1,0 +1,20 @@
+zmore
+
+[0m[0mView gzip compressed files with more.
+More information: https://manned.org/zmore.
+
+ - [0m[32;23;22;24;25mOpen a compressed file:
+   [33;23;22;24;25mzmore [0mpath/to/file.txt.gz
+[0m
+ - [0m[32;23;22;24;25mDisplay the next page of the file:
+   [33;23;22;24;25m<Space>[0m
+[0m
+ - [0m[32;23;22;24;25mSearch for a pattern in the file (press <n> to go to next match):
+   [33;23;22;24;25m</>[0mregex
+[0m
+ - [0m[32;23;22;24;25mExit:
+   [33;23;22;24;25m<q>[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay interactive command help:
+   [33;23;22;24;25m<h>[0m
+[0m[0m

@@ -1,0 +1,29 @@
+bluetoothctl
+
+[0m[0mManage Bluetooth devices.
+More information: https://manned.org/bluetoothctl.
+
+ - [0m[32;23;22;24;25mEnter the bluetoothctl shell:
+   [33;23;22;24;25mbluetoothctl[0m
+[0m
+ - [0m[32;23;22;24;25mList all known devices:
+   [33;23;22;24;25mbluetoothctl devices[0m
+[0m
+ - [0m[32;23;22;24;25mPower the Bluetooth controller on or off:
+   [33;23;22;24;25mbluetoothctl power [0mon|off
+[0m
+ - [0m[32;23;22;24;25mPair with a device:
+   [33;23;22;24;25mbluetoothctl pair [0mmac_address
+[0m
+ - [0m[32;23;22;24;25mRemove a device:
+   [33;23;22;24;25mbluetoothctl remove [0mmac_address
+[0m
+ - [0m[32;23;22;24;25mConnect to a paired device:
+   [33;23;22;24;25mbluetoothctl connect [0mmac_address
+[0m
+ - [0m[32;23;22;24;25mDisconnect from a paired device:
+   [33;23;22;24;25mbluetoothctl disconnect [0mmac_address
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mbluetoothctl help[0m
+[0m[0m

@@ -1,0 +1,14 @@
+rpi-imager
+
+[0m[0mFlash images onto storage devices.
+More information: https://github.com/raspberrypi/rpi-imager.
+
+ - [0m[32;23;22;24;25mWrite a specific image to a specific block device:
+   [33;23;22;24;25mrpi-imager --cli [0mpath/to/image.zip[33;23;22;24;25m [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mWrite a specific image to a block device, disabling the checksum verification:
+   [33;23;22;24;25mrpi-imager --cli --disable-verify [0mpath/to/image.zip[33;23;22;24;25m [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mWrite a specific image to a block device, which will expect a specific checksum when running the verification:
+   [33;23;22;24;25mrpi-imager --cli --sha256 [0mexpected_hash[33;23;22;24;25m [0mpath/to/image.zip[33;23;22;24;25m [0m/dev/sdX
+[0m[0m

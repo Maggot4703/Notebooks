@@ -1,0 +1,13 @@
+ssh-agent
+
+[0m[0mSpawn an SSH Agent process.
+An SSH Agent holds SSH keys decrypted in memory until removed or the process is killed.
+See also: ssh-add, which can add and manage keys held by an SSH Agent.
+More information: https://man.openbsd.org/ssh-agent.
+
+ - [0m[32;23;22;24;25mStart an SSH Agent for the current shell:
+   [33;23;22;24;25meval $(ssh-agent)[0m
+[0m
+ - [0m[32;23;22;24;25mKill the currently running agent:
+   [33;23;22;24;25mssh-agent -k[0m
+[0m[0m

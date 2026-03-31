@@ -1,0 +1,30 @@
+tar
+
+[0m[0mArchiving utility.
+Often combined with a compression method, such as gzip or bzip2.
+More information: https://www.gnu.org/software/tar/manual/tar.html.
+
+ - [0m[32;23;22;24;25m[c]reate an archive and write it to a [f]ile:
+   [33;23;22;24;25mtar cf [0mpath/to/target.tar[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25m[c]reate a g[z]ipped archive and write it to a [f]ile:
+   [33;23;22;24;25mtar czf [0mpath/to/target.tar.gz[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25m[c]reate a g[z]ipped (compressed) archive from a directory using relative paths:
+   [33;23;22;24;25mtar czf [0mpath/to/target.tar.gz[33;23;22;24;25m [0m[-C|--directory][33;23;22;24;25m [0mpath/to/directory[33;23;22;24;25m .[0m
+[0m
+ - [0m[32;23;22;24;25mE[x]tract a (compressed) archive [f]ile into the current directory [v]erbosely:
+   [33;23;22;24;25mtar xvf [0mpath/to/source.tar[.gz|.bz2|.xz]
+[0m
+ - [0m[32;23;22;24;25mE[x]tract a (compressed) archive [f]ile into the target directory:
+   [33;23;22;24;25mtar xf [0mpath/to/source.tar[.gz|.bz2|.xz][33;23;22;24;25m [0m[-C|--directory][33;23;22;24;25m [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25m[c]reate a compressed archive and write it to a [f]ile, using the file extension to [a]utomatically determine the compression program:
+   [33;23;22;24;25mtar caf [0mpath/to/target.tar.xz[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mLis[t] the contents of a tar [f]ile [v]erbosely:
+   [33;23;22;24;25mtar tvf [0mpath/to/source.tar
+[0m
+ - [0m[32;23;22;24;25mE[x]tract files matching a pattern from an archive [f]ile:
+   [33;23;22;24;25mtar xf [0mpath/to/source.tar[33;23;22;24;25m --wildcards "[0m*.html[33;23;22;24;25m"[0m
+[0m[0m

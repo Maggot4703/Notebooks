@@ -1,0 +1,26 @@
+dillo
+
+[0m[0mA lightweight web browser intended for slow computers.
+More information: https://manned.org/dillo.
+
+ - [0m[32;23;22;24;25mLaunch Dillo:
+   [33;23;22;24;25mdillo[0m
+[0m
+ - [0m[32;23;22;24;25mLaunch Dillo with a specific window size and screen location:
+   [33;23;22;24;25mdillo [0m[-g|--geometry][33;23;22;24;25m [0mwidth[33;23;22;24;25mx[0mheight[33;23;22;24;25m+[0mx_position[33;23;22;24;25m+[0my_position
+[0m
+ - [0m[32;23;22;24;25mLaunch Dillo and open a specific URL:
+   [33;23;22;24;25mdillo [0mduckduckgo.com
+[0m
+ - [0m[32;23;22;24;25mLaunch Dillo and open a file or directory:
+   [33;23;22;24;25mdillo [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mLaunch Dillo in full-screen mode:
+   [33;23;22;24;25mdillo [0m[-f|--fullwindow]
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mdillo [0m[-v|--version]
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mdillo [0m[-h|--help]
+[0m[0m

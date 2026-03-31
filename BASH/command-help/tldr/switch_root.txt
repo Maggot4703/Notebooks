@@ -1,0 +1,13 @@
+switch_root
+
+[0m[0mUse a different filesystem as the root of the mount tree.
+Note: switch_root will fail to function if the new root is not the root of a mount. Use bind-mounting as a workaround.
+See also: chroot, mount.
+More information: https://manned.org/switch_root.8.
+
+ - [0m[32;23;22;24;25mMove /proc, /dev, /sys and /run to the specified filesystem, use this filesystem as the new root and start the specified init process:
+   [33;23;22;24;25mswitch_root [0mnew_root[33;23;22;24;25m [0m/sbin/init
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mswitch_root [0m[-h|--help]
+[0m[0m

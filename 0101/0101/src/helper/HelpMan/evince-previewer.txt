@@ -1,0 +1,7 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/evince-previewer
+evince-previewer (1) - show a printing preview of PostScript and PDF documents

@@ -1,0 +1,33 @@
+GPIOFIND(1)                      User Commands                     GPIOFIND(1)
+
+NAME
+       gpiofind - manual page for gpiofind v1.6.3
+
+SYNOPSIS
+       gpiofind [OPTIONS] <name>
+
+DESCRIPTION
+       Find a GPIO line by name. The output of this command can be used as in‐
+       put for gpioget/set.
+
+OPTIONS
+       -h, --help:
+              display this message and exit
+
+       -v, --version:
+              display the version and exit
+
+AUTHOR
+       Bartosz Golaszewski <bartekgola@gmail.com>
+
+REPORTING BUGS
+       Report bugs to:
+           Bartosz Golaszewski <bartekgola@gmail.com>
+           linux-gpio <linux-gpio@vger.kernel.org>
+
+COPYRIGHT
+       Copyright © 2017-2018 Bartosz Golaszewski License: LGPLv2.1
+       This is free software: you are free  to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
+
+libgpiod v1.6.3                  January 2023                      GPIOFIND(1)

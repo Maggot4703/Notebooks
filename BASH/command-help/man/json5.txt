@@ -1,0 +1,28 @@
+CLI.JS(1)                        User Commands                       CLI.JS(1)
+
+NAME
+       cli.js - Command line for the JSON5 Data Interchange Format (JSON5)
+
+DESCRIPTION
+              Usage: json5 [options] <file>
+
+              If <file> is not provided, then STDIN is used.
+
+              Options:
+
+       -s, --space
+              The number of spaces to indent or 't' for tabs
+
+       -o, --out-file [file]
+              Output to the specified file, otherwise STDOUT
+
+       -v, --validate
+              Validate JSON5 but do not output JSON
+
+       -V, --version
+              Output the version number
+
+       -h, --help
+              Output usage information
+
+cli.js 2.2.3                     January 2023                        CLI.JS(1)

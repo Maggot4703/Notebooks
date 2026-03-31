@@ -1,0 +1,14 @@
+lvmdiskscan
+
+[0m[0mScan for devices that may be used as physical volumes by LVM (deprecated; prefer pvs).
+More information: https://manned.org/lvmdiskscan.
+
+ - [0m[32;23;22;24;25mScan all devices:
+   [33;23;22;24;25mlvmdiskscan[0m
+[0m
+ - [0m[32;23;22;24;25mShow only physical volumes (PVs):
+   [33;23;22;24;25mlvmdiskscan [0m[-l|--lvmpartition]
+[0m
+ - [0m[32;23;22;24;25mIncrease verbosity (repeat for more detail):
+   [33;23;22;24;25mlvmdiskscan [0m[-v|--verbose]
+[0m[0m

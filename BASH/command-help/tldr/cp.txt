@@ -1,0 +1,29 @@
+cp
+
+[0m[0mCopy files and directories.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html.
+
+ - [0m[32;23;22;24;25mCopy a file to another location:
+   [33;23;22;24;25mcp [0mpath/to/source_file.ext[33;23;22;24;25m [0mpath/to/target_file.ext
+[0m
+ - [0m[32;23;22;24;25mCopy a file into another directory, keeping the filename:
+   [33;23;22;24;25mcp [0mpath/to/source_file.ext[33;23;22;24;25m [0mpath/to/target_parent_directory
+[0m
+ - [0m[32;23;22;24;25mRecursively copy a directory's contents to another location (if the destination exists, the directory is copied inside it):
+   [33;23;22;24;25mcp [0m[-r|--recursive][33;23;22;24;25m [0mpath/to/source_directory[33;23;22;24;25m [0mpath/to/target_directory
+[0m
+ - [0m[32;23;22;24;25mCopy a directory recursively, in verbose mode (shows files as they are copied):
+   [33;23;22;24;25mcp [0m[-vr|--verbose --recursive][33;23;22;24;25m [0mpath/to/source_directory[33;23;22;24;25m [0mpath/to/target_directory
+[0m
+ - [0m[32;23;22;24;25mCopy multiple files at once to a directory:
+   [33;23;22;24;25mcp [0m[-t|--target-directory][33;23;22;24;25m [0mpath/to/destination_directory[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mCopy all files with a specific extension to another location, in interactive mode (prompts user before overwriting):
+   [33;23;22;24;25mcp [0m[-i|--interactive][33;23;22;24;25m [0m*.ext[33;23;22;24;25m [0mpath/to/target_directory
+[0m
+ - [0m[32;23;22;24;25mFollow symbolic links before copying:
+   [33;23;22;24;25mcp [0m[-L|--dereference][33;23;22;24;25m [0mlink[33;23;22;24;25m [0mpath/to/target_directory
+[0m
+ - [0m[32;23;22;24;25mUse the full path of source files, creating any missing intermediate directories when copying:
+   [33;23;22;24;25mcp --parents [0msource/path/to/file[33;23;22;24;25m [0mpath/to/target_file
+[0m[0m

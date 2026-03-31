@@ -1,0 +1,21 @@
+gprof
+
+[0m[0mPerformance analysis tool for many programming languages.
+It profiles the function executions of a program.
+More information: https://ftp.gnu.org/old-gnu/Manuals/gprof/html_mono/gprof.html.
+
+ - [0m[32;23;22;24;25mCompile binary to default a.out with gprof information and run it to get gmon.out:
+   [33;23;22;24;25mgcc [0m[-p|-pg][33;23;22;24;25m [0mprogram.c[33;23;22;24;25m && ./a.out[0m
+[0m
+ - [0m[32;23;22;24;25mRun gprof on default a.out and gmon.out to obtain profile output:
+   [33;23;22;24;25mgprof[0m
+[0m
+ - [0m[32;23;22;24;25mRun gprof on a named binary:
+   [33;23;22;24;25mgprof [0mpath/to/binary[33;23;22;24;25m [0mpath/to/gmon.out
+[0m
+ - [0m[32;23;22;24;25mSuppress profile field's description:
+   [33;23;22;24;25mgprof [0m[-b|--brief]
+[0m
+ - [0m[32;23;22;24;25mDisplay routines that have zero usage:
+   [33;23;22;24;25mgprof [0m[-bz|--brief --display-unused-functions]
+[0m[0m

@@ -1,0 +1,14 @@
+check-language-support
+
+[0m[0mDisplay a list of missing language packages on Ubuntu.
+More information: https://manned.org/check-language-support.
+
+ - [0m[32;23;22;24;25mDisplay a list of missing language packages based on installed software and enabled locales:
+   [33;23;22;24;25mcheck-language-support[0m
+[0m
+ - [0m[32;23;22;24;25mList packages for a specific locale:
+   [33;23;22;24;25mcheck-language-support [0m[-l|--language][33;23;22;24;25m [0men
+[0m
+ - [0m[32;23;22;24;25mDisplay installed packages as well as missing ones:
+   [33;23;22;24;25mcheck-language-support --show-installed[0m
+[0m[0m

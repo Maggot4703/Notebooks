@@ -1,0 +1,20 @@
+realpath
+
+[0m[0mDisplay the resolved absolute path for a file or directory.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/realpath-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay the absolute path for a file or directory:
+   [33;23;22;24;25mrealpath [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mRequire all path components to exist:
+   [33;23;22;24;25mrealpath [0m[-e|--canonicalize-existing][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mResolve ".." components before symlinks:
+   [33;23;22;24;25mrealpath [0m[-L|--logical][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mDisable symlink expansion:
+   [33;23;22;24;25mrealpath [0m[-s|--no-symlinks][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mSuppress error messages:
+   [33;23;22;24;25mrealpath [0m[-q|--quiet][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m[0m

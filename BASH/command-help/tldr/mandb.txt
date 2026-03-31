@@ -1,0 +1,23 @@
+mandb
+
+[0m[0mManage the pre-formatted manual page database.
+More information: https://manned.org/mandb.
+
+ - [0m[32;23;22;24;25mPurge and process manual pages:
+   [33;23;22;24;25mmandb[0m
+[0m
+ - [0m[32;23;22;24;25mUpdate a single entry:
+   [33;23;22;24;25mmandb --filename [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCreate entries from scratch instead of updating:
+   [33;23;22;24;25mmandb --create[0m
+[0m
+ - [0m[32;23;22;24;25mOnly process user databases:
+   [33;23;22;24;25mmandb --user-db[0m
+[0m
+ - [0m[32;23;22;24;25mDo not purge obsolete entries:
+   [33;23;22;24;25mmandb --no-purge[0m
+[0m
+ - [0m[32;23;22;24;25mCheck the validity of manual pages:
+   [33;23;22;24;25mmandb --test[0m
+[0m[0m

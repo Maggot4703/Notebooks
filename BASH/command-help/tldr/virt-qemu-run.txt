@@ -1,0 +1,17 @@
+virt-qemu-run
+
+[0m[0mExperimental tool to run a QEMU Guest VM independent of libvirtd.
+More information: https://libvirt.org/manpages/virt-qemu-run.html.
+
+ - [0m[32;23;22;24;25mRun a QEMU virtual machine:
+   [33;23;22;24;25mvirt-qemu-run [0mpath/to/guest.xml
+[0m
+ - [0m[32;23;22;24;25mRun a QEMU virtual machine and store the state in a specific directory:
+   [33;23;22;24;25mvirt-qemu-run [0m[-r|--root][33;23;22;24;25m [0mpath/to/directory[33;23;22;24;25m [0mpath/to/guest.xml
+[0m
+ - [0m[32;23;22;24;25mRun a QEMU virtual machine and display verbose information about the startup:
+   [33;23;22;24;25mvirt-qemu-run [0m[-v|--verbose][33;23;22;24;25m [0mpath/to/guest.xml
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mvirt-qemu-run [0m[-h|--help]
+[0m[0m

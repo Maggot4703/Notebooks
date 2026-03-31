@@ -1,0 +1,15 @@
+swapoff
+
+[0m[0mDisable devices and files for swapping.
+Note: path/to/file can either point to a regular file or a swap partition.
+More information: https://manned.org/swapoff.8.
+
+ - [0m[32;23;22;24;25mDisable a given swap area:
+   [33;23;22;24;25mswapoff [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisable all swap areas in /proc/swaps:
+   [33;23;22;24;25mswapoff [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mDisable a swap partition by its label:
+   [33;23;22;24;25mswapoff -L [0mlabel
+[0m[0m

@@ -1,0 +1,17 @@
+javac
+
+[0m[0mJava application compiler.
+More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/javac.html.
+
+ - [0m[32;23;22;24;25mCompile a .java file:
+   [33;23;22;24;25mjavac [0mpath/to/file.java
+[0m
+ - [0m[32;23;22;24;25mCompile several .java files:
+   [33;23;22;24;25mjavac [0mpath/to/file1.java path/to/file2.java ...
+[0m
+ - [0m[32;23;22;24;25mCompile all .java files in current directory:
+   [33;23;22;24;25mjavac [0m*.java
+[0m
+ - [0m[32;23;22;24;25mCompile a .java file and place the resulting class file in a specific directory:
+   [33;23;22;24;25mjavac -d [0mpath/to/directory[33;23;22;24;25m [0mpath/to/file.java
+[0m[0m

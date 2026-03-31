@@ -1,0 +1,19 @@
+mac2unix
+
+[0m[0mChange macOS-style line endings to Unix-style.
+Replaces CR with LF.
+See also: unix2dos, unix2mac, dos2unix.
+More information: https://manned.org/mac2unix.
+
+ - [0m[32;23;22;24;25mChange the line endings of a file:
+   [33;23;22;24;25mmac2unix [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCreate a copy with Unix-style line endings:
+   [33;23;22;24;25mmac2unix [0m[-n|--newfile][33;23;22;24;25m [0mpath/to/file[33;23;22;24;25m [0mpath/to/new_file
+[0m
+ - [0m[32;23;22;24;25mDisplay file information:
+   [33;23;22;24;25mmac2unix [0m[-i|--info][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mKeep/add/remove Byte Order Mark:
+   [33;23;22;24;25mmac2unix --[0mkeep-bom|add-bom|remove-bom[33;23;22;24;25m [0mpath/to/file
+[0m[0m

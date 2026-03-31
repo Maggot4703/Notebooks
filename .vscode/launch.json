@@ -1,0 +1,66 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Debugpy Old: Current File",
+            "type": "debugpy-old",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Crew: GUI",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/CREW/Crew/Crew.py",
+            "cwd": "${workspaceFolder}/CREW/Crew",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Crew: CLI grid-image",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/CREW/Crew/Crew.py",
+            "cwd": "${workspaceFolder}/CREW/Crew",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "grid-image",
+                "input.png",
+                "output.png",
+                "--grid-width",
+                "42",
+                "--grid-height",
+                "32",
+                "--grid-color",
+                "lightgrey",
+                "--quality",
+                "95"
+            ]
+        },
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

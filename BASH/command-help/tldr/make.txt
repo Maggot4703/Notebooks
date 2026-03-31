@@ -1,0 +1,30 @@
+make
+
+[0m[0mTask runner for targets described in Makefile.
+Mostly used to control the compilation of an executable from source code.
+More information: https://www.gnu.org/software/make/manual/make.html.
+
+ - [0m[32;23;22;24;25mCall the first target specified in the Makefile (usually named "all"):
+   [33;23;22;24;25mmake[0m
+[0m
+ - [0m[32;23;22;24;25mCall a specific target:
+   [33;23;22;24;25mmake [0mtarget
+[0m
+ - [0m[32;23;22;24;25mCall a specific target, executing 4 jobs at a time in parallel:
+   [33;23;22;24;25mmake [0m[-j|--jobs][33;23;22;24;25m 4 [0mtarget
+[0m
+ - [0m[32;23;22;24;25mUse a specific Makefile:
+   [33;23;22;24;25mmake [0m[-f|--file][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mExecute make from another directory:
+   [33;23;22;24;25mmake [0m[-C|--directory][33;23;22;24;25m [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mForce making of a target, even if source files are unchanged:
+   [33;23;22;24;25mmake [0m[-B|--always-make][33;23;22;24;25m [0mtarget
+[0m
+ - [0m[32;23;22;24;25mOverride a variable defined in the Makefile:
+   [33;23;22;24;25mmake [0mtarget[33;23;22;24;25m [0mvariable[33;23;22;24;25m=[0mnew_value
+[0m
+ - [0m[32;23;22;24;25mOverride variables defined in the Makefile by the environment:
+   [33;23;22;24;25mmake [0m[-e|--environment-overrides][33;23;22;24;25m [0mtarget
+[0m[0m

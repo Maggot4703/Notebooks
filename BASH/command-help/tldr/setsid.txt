@@ -1,0 +1,21 @@
+setsid
+
+[0m[0mRun a program in a new session if the calling process is not a process group leader.
+The created session is by default not controlled by the current terminal.
+More information: https://manned.org/setsid.
+
+ - [0m[32;23;22;24;25mRun a program in a new session:
+   [33;23;22;24;25msetsid [0mprogram
+[0m
+ - [0m[32;23;22;24;25mRun a program in a new session discarding the resulting output and error:
+   [33;23;22;24;25msetsid [0mprogram[33;23;22;24;25m > /dev/null 2>&1[0m
+[0m
+ - [0m[32;23;22;24;25mRun a program creating a new process:
+   [33;23;22;24;25msetsid [0m[-f|--fork][33;23;22;24;25m [0mprogram
+[0m
+ - [0m[32;23;22;24;25mReturn the exit code of a program as the exit code of setsid when the program exits:
+   [33;23;22;24;25msetsid [0m[-w|--wait][33;23;22;24;25m [0mprogram
+[0m
+ - [0m[32;23;22;24;25mRun a program in a new session setting the current terminal as the controlling terminal:
+   [33;23;22;24;25msetsid [0m[-c|--ctty][33;23;22;24;25m [0mprogram
+[0m[0m

@@ -1,0 +1,20 @@
+virtualenv
+
+[0m[0mCreate virtual isolated Python environments.
+More information: https://virtualenv.pypa.io/en/latest/cli_interface.html.
+
+ - [0m[32;23;22;24;25mCreate a new environment:
+   [33;23;22;24;25mvirtualenv [0mpath/to/venv
+[0m
+ - [0m[32;23;22;24;25mCustomize the prompt prefix:
+   [33;23;22;24;25mvirtualenv --prompt [0mprompt_prefix[33;23;22;24;25m [0mpath/to/venv
+[0m
+ - [0m[32;23;22;24;25mUse a different version of Python with virtualenv:
+   [33;23;22;24;25mvirtualenv [0m[-p|--python][33;23;22;24;25m [0mpath/to/pythonbin[33;23;22;24;25m [0mpath/to/venv
+[0m
+ - [0m[32;23;22;24;25mStart (select) the environment:
+   [33;23;22;24;25msource [0mpath/to/venv[33;23;22;24;25m/bin/activate[0m
+[0m
+ - [0m[32;23;22;24;25mStop the environment:
+   [33;23;22;24;25mdeactivate[0m
+[0m[0m

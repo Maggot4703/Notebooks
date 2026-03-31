@@ -1,0 +1,14 @@
+vulkaninfo
+
+[0m[0mPrint system Vulkan information.
+More information: https://vulkan.lunarg.com/doc/view/latest/linux/vulkaninfo.html.
+
+ - [0m[32;23;22;24;25mPrint full Vulkan information:
+   [33;23;22;24;25mvulkaninfo[0m
+[0m
+ - [0m[32;23;22;24;25mPrint a summary:
+   [33;23;22;24;25mvulkaninfo --summary[0m
+[0m
+ - [0m[32;23;22;24;25mMake a HTML document of the full Vulkan information:
+   [33;23;22;24;25mvulkaninfo --html[0m
+[0m[0m

@@ -1,0 +1,108 @@
+{
+  "folder": "t85YBjArVegjKBuG",
+  "name": "Name Vilani Female",
+  "img": "systems/mgt2e/icons/misc/text.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 2,
+      "range": [
+        1,
+        2
+      ],
+      "drawn": false,
+      "_id": "pZm7ZBPtXOp2dqgk",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "!Name_Vilani_First_Female !Name_Vilani_Family",
+      "name": "",
+      "_key": "!tables.results!YTRbQmJjaE0S9vky.pZm7ZBPtXOp2dqgk"
+    },
+    {
+      "type": "text",
+      "weight": 3,
+      "range": [
+        3,
+        5
+      ],
+      "drawn": false,
+      "_id": "C6kP5d8igkKLO1vb",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "!Name_Vilani_First_Female !Name_Vilani_Lineage !Name_Vilani_Family",
+      "name": "",
+      "_key": "!tables.results!YTRbQmJjaE0S9vky.C6kP5d8igkKLO1vb"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_id": "aMMSTgfAIo4WxrY0",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "!Name_Vilani_Solomani_Female !Name_Vilani_Lineage !Name_Vilani_Family",
+      "name": "",
+      "_key": "!tables.results!YTRbQmJjaE0S9vky.aMMSTgfAIo4WxrY0"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": "RollTable.5owj8oYQocC6lNGa",
+    "coreVersion": "13.351",
+    "systemId": "mgt2e",
+    "systemVersion": "0.15.4.1-DEV",
+    "createdTime": 1762622372585,
+    "modifiedTime": 1763127366747,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "exportSource": null
+  },
+  "formula": "1d6",
+  "_id": "YTRbQmJjaE0S9vky",
+  "_key": "!tables!YTRbQmJjaE0S9vky"
+}

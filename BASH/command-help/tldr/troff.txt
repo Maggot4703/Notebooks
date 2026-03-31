@@ -1,0 +1,18 @@
+troff
+
+[0m[0mTypesetting processor for the groff (GNU Troff) document formatting system.
+See also: groff.
+More information: https://manned.org/troff.
+
+ - [0m[32;23;22;24;25mFormat output for a PostScript printer, saving the output to a file:
+   [33;23;22;24;25mtroff [0mpath/to/input.roff[33;23;22;24;25m | grops > [0mpath/to/output.ps
+[0m
+ - [0m[32;23;22;24;25mFormat output for a PostScript printer using the me macro package, saving the output to a file:
+   [33;23;22;24;25mtroff -[0mme[33;23;22;24;25m [0mpath/to/input.roff[33;23;22;24;25m | grops > [0mpath/to/output.ps
+[0m
+ - [0m[32;23;22;24;25mFormat output as ASCII text using the man macro package:
+   [33;23;22;24;25mtroff -T [0mascii[33;23;22;24;25m -[0mman[33;23;22;24;25m [0mpath/to/input.roff[33;23;22;24;25m | grotty[0m
+[0m
+ - [0m[32;23;22;24;25mFormat output as a pdf file, saving the output to a file:
+   [33;23;22;24;25mtroff -T [0mpdf[33;23;22;24;25m [0mpath/to/input.roff[33;23;22;24;25m | gropdf > [0mpath/to/output.pdf
+[0m[0m

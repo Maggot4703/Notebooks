@@ -1,0 +1,18 @@
+popd
+
+[0m[0mRemove a directory placed on the directory stack via the pushd shell built-in.
+See also: pushd to place a directory on the stack and dirs to display directory stack contents.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-popd.
+
+ - [0m[32;23;22;24;25mRemove the top directory from the stack and cd to it:
+   [33;23;22;24;25mpopd[0m
+[0m
+ - [0m[32;23;22;24;25mRemove the Nth directory (starting from zero to the left from the list printed with dirs):
+   [33;23;22;24;25mpopd +N[0m
+[0m
+ - [0m[32;23;22;24;25mRemove the Nth directory (starting from zero to the right from the list printed with dirs):
+   [33;23;22;24;25mpopd -N[0m
+[0m
+ - [0m[32;23;22;24;25mRemove the 1st directory (starting from zero to the left from the list printed with dirs):
+   [33;23;22;24;25mpopd -n[0m
+[0m[0m

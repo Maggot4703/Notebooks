@@ -1,0 +1,26 @@
+pw-config
+
+[0m[0mList configuration paths and sections that will be used by the PipeWire server and clients.
+More information: https://docs.pipewire.org/page_man_pw-config_1.html.
+
+ - [0m[32;23;22;24;25mList all configuration files that will be used:
+   [33;23;22;24;25mpw-config[0m
+[0m
+ - [0m[32;23;22;24;25mList all configuration files that will be used by the PipeWire PulseAudio server:
+   [33;23;22;24;25mpw-config [0m[-n|--name][33;23;22;24;25m pipewire-pulse.conf[0m
+[0m
+ - [0m[32;23;22;24;25mList all configuration sections used by the PipeWire PulseAudio server:
+   [33;23;22;24;25mpw-config [0m[-n|--name][33;23;22;24;25m pipewire-pulse.conf list[0m
+[0m
+ - [0m[32;23;22;24;25mList the context.properties fragments used by the JACK clients:
+   [33;23;22;24;25mpw-config [0m[-n|--name][33;23;22;24;25m jack.conf list context.properties[0m
+[0m
+ - [0m[32;23;22;24;25mList the merged context.properties used by the JACK clients:
+   [33;23;22;24;25mpw-config [0m[-n|--name][33;23;22;24;25m jack.conf merge context.properties[0m
+[0m
+ - [0m[32;23;22;24;25mList the merged context.modules used by the PipeWire server and reformat:
+   [33;23;22;24;25mpw-config [0m[-n|--name][33;23;22;24;25m pipewire.conf [0m[-r|--recurse][33;23;22;24;25m merge context.modules[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpw-config [0m[-h|--help]
+[0m[0m

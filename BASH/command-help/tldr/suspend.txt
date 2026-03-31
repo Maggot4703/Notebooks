@@ -1,0 +1,14 @@
+suspend
+
+[0m[0mSuspend the execution of the current shell.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-suspend.
+
+ - [0m[32;23;22;24;25mSuspend the current shell (useful for when you are in nested shells like su):
+   bash[33;23;22;24;25m <Enter> suspend[0m
+[0m
+ - [0m[32;23;22;24;25mContinue from suspension if suspend was used in a non-nested shell (run this in a separate terminal):
+   [33;23;22;24;25mpkill -CONT [0mbash
+[0m
+ - [0m[32;23;22;24;25mForce suspension even if this would lock you out of the system:
+   [33;23;22;24;25msuspend -f[0m
+[0m[0m

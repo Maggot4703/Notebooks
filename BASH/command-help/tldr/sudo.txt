@@ -1,0 +1,29 @@
+sudo
+
+[0m[0mExecute a single command as the superuser or another user.
+More information: https://www.sudo.ws/sudo.html.
+
+ - [0m[32;23;22;24;25mRun a command as the superuser:
+   [33;23;22;24;25msudo [0mless /var/log/syslog
+[0m
+ - [0m[32;23;22;24;25mEdit a file as the superuser with your default editor:
+   [33;23;22;24;25msudo [0m[-e|--edit][33;23;22;24;25m [0m/etc/fstab
+[0m
+ - [0m[32;23;22;24;25mRun a command as another user and/or group:
+   [33;23;22;24;25msudo [0m[-u|--user][33;23;22;24;25m [0muser[33;23;22;24;25m [0m[-g|--group][33;23;22;24;25m [0mgroup[33;23;22;24;25m [0mid -a
+[0m
+ - [0m[32;23;22;24;25mRepeat the last command prefixed with sudo (only in Bash, Zsh, etc.):
+   [33;23;22;24;25msudo !![0m
+[0m
+ - [0m[32;23;22;24;25mLaunch the default shell with superuser privileges and run login-specific files (.profile, .bash_profile, etc.):
+   [33;23;22;24;25msudo [0m[-i|--login]
+[0m
+ - [0m[32;23;22;24;25mLaunch the default shell with superuser privileges without changing the environment:
+   [33;23;22;24;25msudo [0m[-s|--shell]
+[0m
+ - [0m[32;23;22;24;25mLaunch the default shell as the specified user, loading the user's environment and reading login-specific files (.profile, .bash_profile, etc.):
+   [33;23;22;24;25msudo [0m[-i|--login][33;23;22;24;25m [0m[-u|--user][33;23;22;24;25m [0muser
+[0m
+ - [0m[32;23;22;24;25mList the allowed (and forbidden) commands for the invoking user:
+   [33;23;22;24;25msudo [0m[-ll|--list --list]
+[0m[0m
