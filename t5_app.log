@@ -95,3 +95,10 @@
 2026-03-31 10:54:37,884 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
 2026-03-31 10:54:47,879 - root - INFO - Starting TTS playback for all details.
 2026-03-31 10:54:47,897 - root - INFO - TTS playback completed for all details.
+2026-03-31 20:12:42,051 - root - INFO - Status: Auto-importing workspace modules...
+2026-03-31 20:12:58,124 - root - INFO - Auto-imported 87 modules successfully
+2026-03-31 20:12:58,124 - root - INFO - Skipped 25 modules (expected for script files)
+2026-03-31 20:12:58,125 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39582 skipped, 39694 total files processed
+2026-03-31 20:12:58,154 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-03-31 20:12:58,268 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-03-31 20:12:58,270 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
