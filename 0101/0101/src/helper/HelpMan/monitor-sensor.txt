@@ -1,2 +1,0 @@
-/usr/bin/monitor-sensor
-    Waiting for iio-sensor-proxy to appear

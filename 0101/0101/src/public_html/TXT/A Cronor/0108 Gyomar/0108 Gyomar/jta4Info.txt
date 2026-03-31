@@ -1,78 +1,0 @@
-Hex = 0108
-Name = Gyomar
-UWP = C8B2889-8
-Starport = C
-	Quality = Routine
-	Yards = No
-	Repairs = Major damage
-	Fuel = Unrefined
-	Downport = Yes
-	Highport = No
-	possBases = S
-Size = 8
-	DIGIT	DIA(MI)	DIA(KM)
-	8	8,000	13,800
-Atmosphere = B
-	DIGIT	DESCRIPTION	EFFECTS
-	B	Corrosive	C1 P1
-Hydrosphere = 2
-	DIGIT	DESCRIPTION
-	2	20%
-Population = 8
-	POPULATION UNDER 800,000,000
-	DIGIT	DESCRIPTION	VALUE
-	8	Hundred million	00,000,000
-Government = 8
-	DIGIT	DESCRIPTION	NOTE
-	8	Civil Service Bureaucracy	Rule by agencies employing individuals selected by merit
-Law Level = 9
-	DIGIT	DESCRIPTION	NOTE
-	9	High Law	Weapons outside the home prohibited
-Tech Level = 8
-	DIGIT		
-	8		
-Remarks = Fl He Ph (Tethmari)
-	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
-	Fl		ABC	123456789A				Fluid	
-	He	3459ABC	2479ABC	012				Hell World	
-	Ph				8			Pre High	
-	Minor Race 	Native Intelligent Life = Tethmari
-No details
-	POP	ATM	TL	COMMENT	NOTE
-	7+	A+	1+	Local intelligent life incompatible with human enviroments	Exotics
-{Ix} = { -1 }
-	Importance = Unimportant (0)+-1=-1
-(Ex) = (G77+1)
-	Resources =  16
-	Labour =  7
-	Infrastructure =  7
-	Efficiency =  1
-	RU = 784
-[Cx] = [9769]
-	Homogeneity = 9
-	Acceptance = 7
-	Strangeness = 6
-	Symbols = 9
-N = -
-	No Imperial Nobles
-B = -
-	DIGIT	DESCRIPTION	ALLEG
-Z = -
-	CODE	DESCRIPTION
-	-	Green - Unrestricted.  Imperial.
-PBG = 824
-	Population Multiplier = 8
-	POPULATION UNDER 800,000,000
-	Planetoid Belts = 2
-	Gas Giants = 4
-W = 14
-	Non Stars In System = 14
-	-1 (mainworld)
-	-2 (planetoid belts)
-	-4 (gas giants)
-	 = 7 other worlds
-A = NaHu
-	CODE	DESCRIPTION
-	NaHu	Non-Aligned, Human-dominated
-Stellar = A8 V
-	Stars = 1
