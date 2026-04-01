@@ -161,3 +161,4 @@ To convert all `.md` files in `/home/me/Notebooks` (recursively) to PDF with ful
 **Troubleshooting Unicode/Emoji Issues:**
 - If you see LaTeX errors about missing Unicode characters, make sure you are using `--pdf-engine=xelatex` and a Unicode font (like DejaVu or Noto).
 - For other font issues, try `-V mainfont="Noto Sans" -V monofont="Noto Sans Mono"` if those fonts are installed.
+=======
