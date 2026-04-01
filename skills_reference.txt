@@ -31,6 +31,12 @@ rpg-data
 
 ---
 
+piman
+- Use when: working on Raspberry Pi 5 setup, diagnostics, optimization, service reliability, or recovery. Covers power/thermal checks, network/service audits, and secure operations checklists.
+- Usage: Run baseline diagnostics, validate throttling and thermals, troubleshoot startup/service failures, and apply hardened deployment practices for Pi 5 workloads.
+
+---
+
 agent-customization
 - **WORKFLOW SKILL** — Create, update, review, fix, or debug VS Code agent customization files (.instructions.md, .prompt.md, .agent.md, SKILL.md, copilot-instructions.md, AGENTS.md). Use for: saving coding preferences, troubleshooting ignored instructions/skills/agents, configuring applyTo patterns, defining tool restrictions, creating custom agent modes, packaging domain knowledge, fixing YAML frontmatter syntax.
 - Usage: Workspace/file instructions, prompts, hooks, custom agents, skills. See reference docs for templates and advanced options.

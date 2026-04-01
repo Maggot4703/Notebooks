@@ -1,0 +1,16 @@
+[Unit]
+Description=Python application on Raspberry Pi boot
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/myapp
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/pi/myapp/.venv/bin/python /home/pi/myapp/main.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
