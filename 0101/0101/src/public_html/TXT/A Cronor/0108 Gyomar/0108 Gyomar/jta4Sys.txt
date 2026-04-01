@@ -1,0 +1,14 @@
+Hex = 0108
+Name = Gyomar
+UWP = C8B2889-8
+Remarks = Fl He Ph (Tethmari)
+{Ix} = { -1 }
+(Ex) = (G77+1)
+[Cx] = [9769]
+N = -
+B = -
+Z = -
+PBG = 824
+W = 14
+A = NaHu
+Stellar = A8 V

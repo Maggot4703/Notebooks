@@ -1,0 +1,77 @@
+Hex = 0808
+Name = Quar
+UWP = B532720-B
+Starport = B
+	Quality = Good
+	Yards = Spaceships
+	Repairs = Overhaul
+	Fuel = Both
+	Downport = Yes
+	Highport = No
+	possBases = NS
+Size = 5
+	DIGIT	DIA(MI)	DIA(KM)
+	5	5,000	8,000
+Atmosphere = 3
+	DIGIT	DESCRIPTION	EFFECTS
+	3	VThin	S2
+Hydrosphere = 2
+	DIGIT	DESCRIPTION
+	2	20%
+Population = 7
+	POPULATION UNDER 40,000,000
+	DIGIT	DESCRIPTION	VALUE
+	7	Ten million	0,000,000
+Government = 2
+	DIGIT	DESCRIPTION	NOTE
+	2	Participating Democracy	Rule by popular vote
+Law Level = 0
+	DIGIT	DESCRIPTION	NOTE
+	0	No Law	No prohibitions
+Tech Level = B
+	DIGIT		
+	B		
+Remarks = Na Po Pz
+	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
+	Na		0123	0123	6789ABC			Non Agricultural	
+	Po		2345	0123				Poor	
+	Pz				789ABC			Puzzle	Amber Zone
+{Ix} = { 2 }
+	Starport B = +1
+	TL 11 = +1
+	Importance = Normal (2)+0=2
+(Ex) = (A6C-2)
+	Resources =  10
+	Labour =  6
+	Infrastructure =  12
+	Efficiency =  -2
+	RU = -1440
+[Cx] = [2916]
+	Homogeneity = 2
+	Acceptance = 9
+	Strangeness = 1
+	Symbols = 6
+N = -
+	No Imperial Nobles
+B = N
+	DIGIT	DESCRIPTION	ALLEG
+	N	Naval Base	Imperial
+Z = A
+	CODE	DESCRIPTION
+	A	Amber - Potentially dangerous.  Caution advised.  Imperial.
+PBG = 401
+	Population Multiplier = 4
+	POPULATION UNDER 40,000,000
+	Planetoid Belts = 0
+	Gas Giants = 1
+W = 9
+	Non Stars In System = 9
+	-1 (mainworld)
+	-0 (planetoid belts)
+	-1 (gas giants)
+	 = 7 other worlds
+A = CsIm
+	CODE	DESCRIPTION
+	CsIm	Client State, Third Imperium
+Stellar = M2 V
+	Stars = 1

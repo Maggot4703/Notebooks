@@ -1,0 +1,14 @@
+Hex = 0104
+Name = Cantrel
+UWP = C566243-9
+Remarks = Lo
+{Ix} = { -1 }
+(Ex) = (611-4)
+[Cx] = [1126]
+N = -
+B = -
+Z = -
+PBG = 520
+W = 12
+A = ZhIN
+Stellar = F1 V

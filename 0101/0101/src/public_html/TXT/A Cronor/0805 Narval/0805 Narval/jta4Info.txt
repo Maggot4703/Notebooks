@@ -1,0 +1,77 @@
+Hex = 0805
+Name = Narval
+UWP = D525688-7
+Starport = D
+	Quality = Poor
+	Yards = No
+	Repairs = Minor damage
+	Fuel = Unrefined
+	Downport = Yes
+	Highport = No
+	possBases = S
+Size = 5
+	DIGIT	DIA(MI)	DIA(KM)
+	5	5,000	8,000
+Atmosphere = 2
+	DIGIT	DESCRIPTION	EFFECTS
+	2	VThin, Tainted	P1, S2
+Hydrosphere = 5
+	DIGIT	DESCRIPTION
+	5	50%
+Population = 6
+	POPULATION UNDER 6,000,000
+	DIGIT	DESCRIPTION	VALUE
+	6	Million	,000,000
+Government = 8
+	DIGIT	DESCRIPTION	NOTE
+	8	Civil Service Bureaucracy	Rule by agencies employing individuals selected by merit
+Law Level = 8
+	DIGIT	DESCRIPTION	NOTE
+	8	High Law	Open display of weapons prohibited
+Tech Level = 7
+	DIGIT		
+	7		
+Remarks = Ni Da
+	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
+	Ni				456			Non Industrial	
+	Da				0123456			Dangerous	Amber Zone
+{Ix} = { -3 }
+	Starport D = -1
+	TL 7 = -1
+	Pop < 7 = -1
+	Importance = Unimportant (-3)+0=-3
+(Ex) = (851-3)
+	Resources =  8
+	Labour =  5
+	Infrastructure =  1
+	Efficiency =  -3
+	RU = -120
+[Cx] = [6357]
+	Homogeneity = 6
+	Acceptance = 3
+	Strangeness = 5
+	Symbols = 7
+N = -
+	No Imperial Nobles
+B = M
+	DIGIT	DESCRIPTION	ALLEG
+	M	Military Base	Any
+Z = A
+	CODE	DESCRIPTION
+	A	Amber - Potentially dangerous.  Caution advised.  Imperial.
+PBG = 603
+	Population Multiplier = 6
+	POPULATION UNDER 6,000,000
+	Planetoid Belts = 0
+	Gas Giants = 3
+W = 10
+	Non Stars In System = 10
+	-1 (mainworld)
+	-0 (planetoid belts)
+	-3 (gas giants)
+	 = 6 other worlds
+A = CsZh
+	CODE	DESCRIPTION
+	CsZh	Client State, Zhodani Consulate
+Stellar = G4 V M6 V
+	Stars = 2

@@ -1,0 +1,75 @@
+Hex = 0704
+Name = Nerewhon
+UWP = E738475-7
+Starport = E
+	Quality = Frontier
+	Yards = No
+	Repairs = No
+	Fuel = No
+	Downport = Beacon
+	Highport = No
+	possBases = No
+Size = 7
+	DIGIT	DIA(MI)	DIA(KM)
+	7	7,000	12,200
+Atmosphere = 3
+	DIGIT	DESCRIPTION	EFFECTS
+	3	VThin	S2
+Hydrosphere = 8
+	DIGIT	DESCRIPTION
+	8	80%
+Population = 4
+	POPULATION UNDER 80,000
+	DIGIT	DESCRIPTION	VALUE
+	4	Ten thousand	0,000
+Government = 7
+	DIGIT	DESCRIPTION	NOTE
+	7	Balkanization	Rival governments continually compete for control of the world
+Law Level = 5
+	DIGIT	DESCRIPTION	NOTE
+	5	Moderate Law	Shock, EMP, Rad, Mag, Grav weapons prohibited
+Tech Level = 7
+	DIGIT		
+	7		
+Remarks = Ni
+	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
+	Ni				456			Non Industrial	
+{Ix} = { -3 }
+	Starport E = -1
+	TL 7 = -1
+	Pop < 7 = -1
+	Importance = Unimportant (-3)+0=-3
+(Ex) = (631-5)
+	Resources =  6
+	Labour =  3
+	Infrastructure =  1
+	Efficiency =  -5
+	RU = -90
+[Cx] = [2135]
+	Homogeneity = 2
+	Acceptance = 1
+	Strangeness = 3
+	Symbols = 5
+N = -
+	No Imperial Nobles
+B = -
+	DIGIT	DESCRIPTION	ALLEG
+Z = -
+	CODE	DESCRIPTION
+	-	Green - Unrestricted.  Imperial.
+PBG = 820
+	Population Multiplier = 8
+	POPULATION UNDER 80,000
+	Planetoid Belts = 2
+	Gas Giants = 0
+W = 10
+	Non Stars In System = 10
+	-1 (mainworld)
+	-2 (planetoid belts)
+	-0 (gas giants)
+	 = 7 other worlds
+A = NaHu
+	CODE	DESCRIPTION
+	NaHu	Non-Aligned, Human-dominated
+Stellar = K5 V
+	Stars = 1

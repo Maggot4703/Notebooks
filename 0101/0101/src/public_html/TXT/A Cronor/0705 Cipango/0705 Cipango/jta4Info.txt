@@ -1,0 +1,80 @@
+Hex = 0705
+Name = Cipango
+UWP = A886865-C
+Starport = A
+	Quality = Excellent
+	Yards = Starships
+	Repairs = Overhaul
+	Fuel = Both
+	Downport = Yes
+	Highport = Yes
+	possBases = NS
+Size = 8
+	DIGIT	DIA(MI)	DIA(KM)
+	8	8,000	13,800
+Atmosphere = 8
+	DIGIT	DESCRIPTION	EFFECTS
+	8	Dense	
+Hydrosphere = 6
+	DIGIT	DESCRIPTION
+	6	60%
+Population = 8
+	POPULATION UNDER 100,000,000
+	DIGIT	DESCRIPTION	VALUE
+	8	Hundred million	00,000,000
+Government = 6
+	DIGIT	DESCRIPTION	NOTE
+	6	Captive Government/Colony	Rule by a leadership answerable to an outside group
+Law Level = 5
+	DIGIT	DESCRIPTION	NOTE
+	5	Moderate Law	Shock, EMP, Rad, Mag, Grav weapons prohibited
+Tech Level = C
+	DIGIT		
+	C		
+Remarks = Ga Ri Pa Ph O:0304
+	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
+	Ga	678	568	567				Garden World	
+	Ri		68		678			Rich	
+	Pa		456789	45678	48			Pre Agricultural	
+	Ph				8			Pre High	
+	Ruled by 0304 Chronor
+{Ix} = { 4 }
+	Starport A = +1
+	TL 12 = +1
+	Ri  = +1
+	Importance = Important (3)+1=4
+(Ex) = (D7E+2)
+	Resources =  13
+	Labour =  7
+	Infrastructure =  14
+	Efficiency =  2
+	RU = 2548
+[Cx] = [6C3A]
+	Homogeneity = 6
+	Acceptance = 12
+	Strangeness = 3
+	Symbols = 10
+N = -
+	No Imperial Nobles
+B = KM
+	DIGIT	DESCRIPTION	ALLEG
+	K	Naval Base	Any
+	M	Military Base	Any
+Z = -
+	CODE	DESCRIPTION
+	-	Green - Unrestricted.  Imperial.
+PBG = 121
+	Population Multiplier = 1
+	POPULATION UNDER 100,000,000
+	Planetoid Belts = 2
+	Gas Giants = 1
+W = 10
+	Non Stars In System = 10
+	-1 (mainworld)
+	-2 (planetoid belts)
+	-1 (gas giants)
+	 = 6 other worlds
+A = ZhIN
+	CODE	DESCRIPTION
+Stellar = G2 V
+	Stars = 1

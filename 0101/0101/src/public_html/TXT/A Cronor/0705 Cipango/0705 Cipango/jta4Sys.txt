@@ -1,0 +1,14 @@
+Hex = 0705
+Name = Cipango
+UWP = A886865-C
+Remarks = Ga Ri Pa Ph O:0304
+{Ix} = { 4 }
+(Ex) = (D7E+2)
+[Cx] = [6C3A]
+N = -
+B = KM
+Z = -
+PBG = 121
+W = 10
+A = ZhIN
+Stellar = G2 V
