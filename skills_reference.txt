@@ -37,6 +37,12 @@ piman
 
 ---
 
+play-song
+- Use when: playing a random or specified song from /home/me/Music with VLC in minimized mode on a local desktop session.
+- Usage: Play audio with VLC from the local library for quick playback workflows.
+
+---
+
 agent-customization
 - **WORKFLOW SKILL** — Create, update, review, fix, or debug VS Code agent customization files (.instructions.md, .prompt.md, .agent.md, SKILL.md, copilot-instructions.md, AGENTS.md). Use for: saving coding preferences, troubleshooting ignored instructions/skills/agents, configuring applyTo patterns, defining tool restrictions, creating custom agent modes, packaging domain knowledge, fixing YAML frontmatter syntax.
 - Usage: Workspace/file instructions, prompts, hooks, custom agents, skills. See reference docs for templates and advanced options.

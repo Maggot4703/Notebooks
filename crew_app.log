@@ -214,3 +214,23 @@
 2026-03-31 10:50:18,375 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
 2026-03-31 10:50:18,393 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
 2026-03-31 10:50:18,393 - __main__ - INFO - Main application script finished.
+2026-04-01 13:58:28,455 - __main__ - INFO - Main application script started.
+2026-04-01 13:58:34,887 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-01 13:58:39,715 - root - INFO - Auto-imported 87 modules successfully
+2026-04-01 13:58:39,715 - root - INFO - Skipped 25 modules (expected for script files)
+2026-04-01 13:58:39,716 - root - INFO - Auto-import summary: 87 imported, 25 failed, 12300 skipped, 12412 total files processed
+2026-04-01 13:58:39,750 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-01 13:58:39,818 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-01 13:58:39,820 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
+2026-04-01 13:59:11,360 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-01 13:59:11,363 - __main__ - INFO - Main application script finished.
+2026-04-01 14:59:19,923 - __main__ - INFO - Main application script started.
+2026-04-01 14:59:22,672 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-01 14:59:25,492 - root - INFO - Auto-imported 89 modules successfully
+2026-04-01 14:59:25,493 - root - INFO - Skipped 25 modules (expected for script files)
+2026-04-01 14:59:25,493 - root - INFO - Auto-import summary: 89 imported, 25 failed, 12303 skipped, 12417 total files processed
+2026-04-01 14:59:25,503 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-01 14:59:25,621 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-01 14:59:25,625 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-01 14:59:26,928 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-01 14:59:26,930 - __main__ - INFO - Main application script finished.

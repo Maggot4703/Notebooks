@@ -1,0 +1,68 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/cd-fix-profile
+cd-fix-profile (1)   - Color Manager Testing Tool
+Usage:
+  cd-fix-profile [OPTION…]
+
+  export-tag-data       Export the tag data
+  extract-vcgt          Generate the VCGT calibration of a given size
+  md-add                Add a metadata item to the profile
+  md-clear              Clear any metadata in the profile
+  md-fix                Automatically fix metadata in the profile
+  md-init               Initialise any metadata for the profile
+  md-remove             Remove a metadata item from the profile
+  set-copyright         Sets the copyright string
+  set-description       Sets the description string
+  set-manufacturer      Sets the manufacturer string
+  set-model             Sets the model string
+  set-version           Set the ICC profile version
+
+Help Options:
+  -h, --help        Show help options
+
+Application Options:
+  -v, --verbose     Show extra debugging information
+  --locale          The locale to use when setting localized text
+
+CD-FIX-PROFILE(1)                                User Commands                               CD-FIX-PROFILE(1)
+
+NAME
+       cd-fix-profile - Color Manager Testing Tool
+
+SYNOPSIS
+       cd-fix-profile [--verbose]
+
+DESCRIPTION
+       This manual page documents briefly the cd-fix-profile command.
+
+       cd-fix-profile allows an administrator to modify and fix ICC profiles on their system.
+
+       The program will also repair common errors found in profiles.
+
+OPTIONS
+       This program follows the usual GNU command line syntax, with long options starting with two dashes
+       (‘-’). A summary of options is included below.
+
+       --help
+           Show summary of options.
+
+       --description
+           Sets the profile description.
+
+       --copyright
+           Sets the profile copyright.
+
+       --model
+           Sets the profile model.
+
+       --manufacturer
+           Sets the profile manufacturer.
+
+AUTHOR
+       This manual page was written by Richard Hughes <richard@hughsie.com>.
+
+User Commands                                                                                CD-FIX-PROFILE(1)

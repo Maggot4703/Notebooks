@@ -1,0 +1,15 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/racc2y2.7
+Usage: racc2y2.7 [-AHIF] [-oFILENAME] GRAMMARFILE
+    -o, --output=FILENAME            output file name [<input>.yacc]
+    -A, --without-action             Does not include actions.
+    -H, --with-header                Includes header part.
+    -I, --with-inner                 Includes inner part.
+    -F, --with-footer                Includes footer part.
+        --version                    Prints version and quit.
+        --copyright                  Prints copyright and quit.
+        --help                       Prints this message and quit.

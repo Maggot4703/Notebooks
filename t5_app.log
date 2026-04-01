@@ -102,3 +102,10 @@
 2026-03-31 20:12:58,154 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
 2026-03-31 20:12:58,268 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
 2026-03-31 20:12:58,270 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
+2026-04-01 18:49:24,891 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-01 18:49:31,289 - root - INFO - Auto-imported 89 modules successfully
+2026-04-01 18:49:31,290 - root - INFO - Skipped 25 modules (expected for script files)
+2026-04-01 18:49:31,290 - root - INFO - Auto-import summary: 89 imported, 25 failed, 12303 skipped, 12417 total files processed
+2026-04-01 18:49:31,347 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-01 18:49:31,531 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-01 18:49:31,560 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)

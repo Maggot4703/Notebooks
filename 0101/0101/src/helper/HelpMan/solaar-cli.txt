@@ -1,0 +1,72 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/solaar-cli
+solaar-cli (1)       - wireless Logitech device manager
+WARNING: solaar-cli is deprecated; use solaar with the usual arguments
+solaar-cli(1)                     General Commands Manual                    solaar-cli(1)
+
+NAME
+       solaar-cli - wireless Logitech device manager
+
+SYNOPSIS
+       solaar-cli [options] show|config|pair|unpair
+
+DESCRIPTION
+       solaar-cli  is  a  command-line  device manager for Logitech wireless devices (key‐
+       boards and mice). It supports many recent Unifying devices, allows pairing and  un‐
+       pairing  devices, querying the battery level, and configuring various features such
+       as smooth scrolling, side scrolling...
+
+OPTIONS
+       solaar-cli accepts the following options:
+
+       -h, --help
+              Displays a brief help message and quits. (This option is also  available  on
+              all commands.)
+
+       -d, --debug
+              Starts  the graphical device manager and prints logging messages during exe‐
+              cution.
+
+       -V, --version
+              Displays the program's version number and quits.
+
+       -D <path>, --hidraw <path>
+              Specifies the Unifying receiver to use; by default the  first  detected  re‐
+              ceiver is used. path will typically be of the form /dev/hidraw2.
+
+COMMANDS
+       show [-h] [-v] [device]
+              Displays  the  available  information on the given device (or all if none is
+              specified). -v displays all the available information, verbosely. device can
+              be receiver to display information on the receivers, all to display informa‐
+              tion about all devices, a device number (as indicated in the list of all de‐
+              vices),  a  device  serial  number, or at least three characters of a device
+              name.
+
+       config [-h] device [setting [value]]
+              Displays or modifies configuration settings on the give device.  device  can
+              be  a device number (as indicated in the list of all devices given by show),
+              a device serial number, or at least three characters of a device name. If no
+              configuration  setting  is  specified,  all settings for the device are dis‐
+              played, along with possible values.
+
+       pair [-h]
+              Pairs a new device to an attached receiver.
+
+       unpair [-h] device
+              Unpairs the given device. device can be a device number (as indicated in the
+              list  of  all  devices  given  by show), a device serial number, or at least
+              three characters of a device name.
+
+AUTHORS
+       solaar-cli was written by Daniel Pavel.
+
+       This manual page was written by Stephen Kitt  <skitt@debian.org>,  for  the  Debian
+       GNU/Linux  system (but may be used by others). It was last modified for solaar ver‐
+       sion 0.9.2.
+
+solaar                                 June 06, 2014                         solaar-cli(1)

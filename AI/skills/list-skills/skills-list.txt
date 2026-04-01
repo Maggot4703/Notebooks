@@ -15,6 +15,8 @@ Available Copilot Skills:
 - nearest-base: /home/me/Notebooks/.github/skills/nearest-base/SKILL.md
 - pdf: /home/me/Notebooks/AI/skills/skills-main/skills/pdf/SKILL.md
 - pdf-work: /home/me/Notebooks/AI/skills/skills-main/skills/pdf-work/SKILL.md
+- piman: /home/me/Notebooks/.github/skills/piman/SKILL.md
+- play-song: /home/me/Notebooks/.github/skills/play-song/SKILL.md
 - pptx: /home/me/Notebooks/AI/skills/skills-main/skills/pptx/SKILL.md
 - rpg-data: /home/me/Notebooks/.github/skills/rpg-data/SKILL.md
 - skill-creator: /home/me/Notebooks/AI/skills/skills-main/skills/skill-creator/SKILL.md

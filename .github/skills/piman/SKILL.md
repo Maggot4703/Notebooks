@@ -1,6 +1,6 @@
 ---
 name: piman
-description: "Use when: working on Raspberry Pi 5 setup, diagnostics, optimization, and recovery playbooks."
+description: "Use when: working on Raspberry Pi 5 setup, diagnostics, optimization, day to day use and recovery playbooks."
 ---
 
 # piman Skill

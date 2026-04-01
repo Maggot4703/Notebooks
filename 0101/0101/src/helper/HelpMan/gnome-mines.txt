@@ -1,0 +1,59 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/games/gnome-mines
+gnome-mines (6)      - The popular logic puzzle minesweeper
+Usage:
+  gnome-mines [OPTION…]
+
+Help Options:
+  -h, --help                 Show help options
+  --help-all                 Show all help options
+  --help-gapplication        Show GApplication options
+  --help-gtk                 Show GTK+ Options
+
+Application Options:
+  -v, --version              Print release version and exit
+  --small                    Small game
+  --medium                   Medium game
+  --big                      Big game:
+  --display=DISPLAY          X display to use
+
+gnome-mines(6)                                     Games Manual                                     gnome-mines(6)
+
+NAME
+       Mines - The popular logic puzzle minesweeper
+
+SYNOPSIS
+       gnome-mines [OPTION...]
+
+DESCRIPTION
+       gnome-mines is a puzzle game where you locate mines floating in an ocean using only your brain and a little
+       bit of luck.
+
+OPTIONS
+       -v, --version
+              Print release version and exit
+
+       --small
+       --medium
+       --big
+              Start the game with a small (8 by 8), medium (16 by 16) or big (30 by 16) board.  If more  than  one
+              of these options is given, the biggest size is selected.
+
+       This program also accepts the standard GNOME and GTK options.
+
+AUTHORS
+       gnome-mines was written by Szekeres Istvan and others.
+
+       This  manual  page  was  written by Sven Arvidsson <sa@whiz.se>, for the Debian project (but may be used by
+       others).
+
+SEE ALSO
+       gtk-options(7), gnome-options(7)
+
+       The online documentation available through the program's Help menu.
+
+GNOME                                               2007-06-09                                      gnome-mines(6)

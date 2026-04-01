@@ -1,0 +1,95 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/thunderbird
+thunderbird (1)      - thunderbird - Mail User Agent (MUA) and newsgroup/RSS client for...
+Usage: thunderbird [ options ... ] [URL]
+       where options include:
+
+X11 options
+  --display=DISPLAY  X display to use
+  --sync             Make X calls synchronous
+  --g-fatal-warnings Make all warnings fatal
+
+Thunderbird options
+  -h or --help       Print this message.
+  -v or --version    Print Thunderbird version.
+  -P <profile>       Start with <profile>.
+  --profile <path>   Start with profile at <path>.
+  --migration        Start with migration wizard.
+  --ProfileManager   Start with ProfileManager.
+  --no-remote        Do not accept or send remote commands; implies
+                     --new-instance.
+  --new-instance     Open new instance, not a new window in running instance.
+  --UILocale <locale> Start with <locale> resources as UI Locale.
+  --safe-mode        Disables extensions and themes for this session.
+  --allow-downgrade  Allows downgrading a profile.
+  --MOZ_LOG=<modules> Treated as MOZ_LOG=<modules> environment variable,
+                     overrides it.
+  --MOZ_LOG_FILE=<file> Treated as MOZ_LOG_FILE=<file> environment variable,
+                     overrides it. If MOZ_LOG_FILE is not specified as an
+                     argument or as an environment variable, logging will be
+                     written to stdout.
+  --headless         Run without a GUI.
+  --save-recordings  Save recordings for all content processes to a directory.
+  -addressbook       Open the address book at startup.
+  -compose [ <options> ] Compose a mail or news message. Options are specified
+                     as string "option='value,...',option=value,..." and
+                     include: from, to, cc, bcc, newsgroups, subject, body,
+                     message (file), attachment (file), format (html | text).
+                     Example: "to=john@example.com,subject='Dinner tonight?'"
+  --jsconsole        Open the Browser Console.
+  --jsdebugger       Open the Browser Toolbox.
+  --wait-for-jsdebugger Spin event loop until JS debugger connects.
+                     Enables debugging (some) application startup code paths.
+                     Only has an effect when `--jsdebugger` is also supplied.
+  --devtools         Open DevTools on initial load.
+  --start-debugger-server [ws:][ <port> | <path> ] Start the debugger server on
+                     a TCP port or Unix domain socket path. Defaults to TCP port
+                     6000. Use WebSocket protocol if ws: prefix is specified.
+  -mail              Open the mail folder view.
+  -mail <URL>        Open the message specified by this URL.
+  -news              Open the news client.
+  --recording <file> Record drawing for a given URL.
+  --recording-output <file> Specify destination file for a drawing recording.
+  -setDefaultMail    Set this app as the default mail client.
+  -options           Open the options dialog.
+  -file              Open the specified email file.
+
+      -g or --debug          Start within debugger
+      -d or --debugger       Specify debugger to start with (eg, gdb or valgrind)
+      -a or --debugger-args  Specify arguments for debugger
+THUNDERBIRD(1)                  General Commands Manual                  THUNDERBIRD(1)
+
+NAME
+       thunderbird  —  thunderbird - Mail User Agent (MUA) and newsgroup/RSS client for
+       X11 derived from the Mozilla suite.
+
+SYNOPSIS
+       thunderbird [-P profile]
+
+DESCRIPTION
+       Thunderbird provides IMAP/POP support, a built-in RSS reader, support  for  HTML
+       mail,  powerful  quick search, saved search folders, advanced message filtering,
+       junk mail controls, message grouping, labels,  return  receipts,  smart  address
+       book  LDAP  address completion, import tools, and the ability to manage multiple
+       identities in email and newsgroup accounts.  Thunderbird provides enterprise and
+       government  grade  security such as S/MIME, digital signing, message encryption,
+       and support for certificates and security devices.
+
+OPTIONS
+       -P profile
+                 If  no profile is given to the -P option,  the  profile  manager  will
+                 pop-up.  You  will be allowed to create or select a profile.  Thunder‐
+                 bird then launches with the selected profile.
+
+SEE ALSO
+       The Thunderbird Homepage:
+       http://www.mozilla.org/projects/thunderbird/
+
+       The Debian Thunderbird FAQ:
+       http://www.jwsdot.com/debian/faq.html
+
+                                                                         THUNDERBIRD(1)

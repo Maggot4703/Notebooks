@@ -80,6 +80,8 @@
     "CREW.Crew.ui_manager",
     "CREW.Crew.untitled",
     "CREW.Crew.utils",
+    "CREW.src.crewai_skill_demo.tools.grid_overlay_tool",
+    "CREW.src.crewai_skill_demo.tools.world_lookup_tool",
     "TRAVELLERMAP.check_travellermap_data_schema",
     "TRAVELLERMAP.count_military_bases",
     "TRAVELLERMAP.scripts.advanced_search_filter",
@@ -191,5 +193,5 @@
       "Import error: No module named 'fpdf'"
     ]
   ],
-  "timestamp": 1774984362.0734036
+  "timestamp": 1775065764.892646
 }

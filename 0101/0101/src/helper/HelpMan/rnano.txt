@@ -1,0 +1,96 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/rnano
+rnano (1)            - a restricted nano
+Usage: nano [OPTIONS] [[+LINE[,COLUMN]] FILE]...
+
+To place the cursor on a specific line of a file, put the line number with
+a '+' before the filename.  The column number can be added after a comma.
+When a filename is '-', nano reads data from standard input.
+
+ Option         Long option             Meaning
+ -A             --smarthome             Enable smart home key
+ -D             --boldtext              Use bold instead of reverse video text
+ -E             --tabstospaces          Convert typed tabs to spaces
+ -G             --locking               Use (vim-style) lock files
+ -I             --ignorercfiles         Don't look at nanorc files
+ -J <number>    --guidestripe=<number>  Show a guiding bar at this column
+ -K             --rawsequences          Fix numeric keypad key confusion problem
+ -L             --nonewlines            Don't add an automatic newline
+ -M             --trimblanks            Trim tail spaces when hard-wrapping
+ -N             --noconvert             Don't convert files from DOS/Mac format
+ -Q <regex>     --quotestr=<regex>      Regular expression to match quoting
+ -T <#cols>     --tabsize=<#cols>       Set width of a tab to #cols columns
+ -U             --quickblank            Wipe status bar upon next keystroke
+ -V             --version               Print version information and exit
+ -W             --wordbounds            Detect word boundaries more accurately
+ -X <str>       --wordchars=<str>       Which other characters are word parts
+ -Z             --zap                   Let Bsp and Del erase a marked region
+ -a             --atblanks              When soft-wrapping, do it at whitespace
+ -b             --breaklonglines        Automatically hard-wrap overlong lines
+ -c             --constantshow          Constantly show cursor position
+ -d             --rebinddelete          Fix Backspace/Delete confusion problem
+ -e             --emptyline             Keep the line below the title bar empty
+ -f <file>      --rcfile=<file>         Use only this file for configuring nano
+ -g             --showcursor            Show cursor in file browser & help text
+ -h             --help                  Show this help text and exit
+ -i             --autoindent            Automatically indent new lines
+ -j             --jumpyscrolling        Scroll per half-screen, not per line
+ -k             --cutfromcursor         Cut from cursor to end of line
+ -l             --linenumbers           Show line numbers in front of the text
+ -m             --mouse                 Enable the use of the mouse
+ -n             --noread                Do not read the file (only write it)
+ -o <dir>       --operatingdir=<dir>    Set operating directory
+ -p             --preserve              Preserve XON (^Q) and XOFF (^S) keys
+ -r <#cols>     --fill=<#cols>          Set width for hard-wrap and justify
+ -t             --tempfile              Auto save on exit, don't prompt
+ -u             --unix                  Save a file by default in Unix format
+ -v             --view                  View mode (read-only)
+ -w             --nowrap                Don't hard-wrap long lines [default]
+ -x             --nohelp                Don't show the two help lines
+ -y             --afterends             Make Ctrl+Right stop at word ends
+ -$             --softwrap              Enable soft line wrapping
+RNANO(1)                          General Commands Manual                         RNANO(1)
+
+NAME
+       rnano - a restricted nano
+
+SYNOPSIS
+       rnano [options] [[+line[,column]] file]...
+
+DESCRIPTION
+       rnano runs the nano editor in restricted mode.  This allows editing only the speci‐
+       fied file or files, and doesn't allow the user access to the filesystem  nor  to  a
+       command shell.
+
+       In restricted mode, nano will:
+
+       • not allow suspending;
+
+       • not allow saving the current buffer under a different name;
+
+       • not allow inserting another file or opening a new buffer;
+
+       • not allow appending or prepending to any file;
+
+       • not make backup files nor do spell checking.
+
+OPTIONS
+       -h, --help
+              Show the available command-line options and exit.
+
+       For all existing options, see the nano(1) man page.
+
+BUGS
+       Please report bugs via https://savannah.gnu.org/bugs/?group=nano.
+
+HOMEPAGE
+       https://nano-editor.org/
+
+SEE ALSO
+       nano(1)
+
+February 2020                           version 4.8                               RNANO(1)

@@ -1,0 +1,50 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/fwupdagent
+fwupdagent (1)       - Firmware updating agent
+Usage:
+  fwupdagent [OPTION…]
+
+  get-devices                       Get all devices and possible releases
+  get-updates                       Gets the list of updates for connected hardware
+  get-upgrades                      Alias to get-updates
+
+Help Options:
+  -h, --help        Show help options
+
+Application Options:
+  -v, --verbose     Show extra debugging information
+
+This tool can be used from other tools and from shell scripts.
+FWUPDAGENT(1)                                      User Commands                                     FWUPDAGENT(1)
+
+NAME
+       fwupdagent - Firmware updating agent
+
+DESCRIPTION
+   Usage:
+              fwupdagent [OPTION?]
+
+       get-devices
+              Get all devices and possible releases
+
+       get-updates
+              Gets the list of updates for connected hardware
+
+       get-upgrades
+              Alias to get-updates
+
+   Help Options:
+       -h, --help
+              Show help options
+
+   Application Options:
+       -v, --verbose
+              Show extra debugging information
+
+       This tool can be used from other tools and from shell scripts.
+
+fwupdagent 1.3.9                                     June 2020                                       FWUPDAGENT(1)

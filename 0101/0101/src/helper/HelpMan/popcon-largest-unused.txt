@@ -1,0 +1,31 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/sbin/popcon-largest-unused
+popcon-largest-unused (8) - List size of unused packages
+warning: Missing required file /var/log/popularity-contest.
+info:    Run 'popularity-contest > /var/log/popularity-contest' to generate it.
+popcon-largest-unused(8)                                               popcon-largest-unused(8)
+
+NAME
+       popcon-largest-unused - List size of unused packages
+
+SYNTAX
+       popcon-largest-unused
+
+DESCRIPTION
+       Based  on  the  list of unused packages reported by popularity-contest, this program ex‐
+       tract the package size from the APT cache, and list the unused packages sorted by size.
+
+FILES
+       /var/log/popularity-contest
+
+AUTHORS
+       Yann Dirson <dirson@debian.org>
+
+SEE ALSO
+       popularity-contest(8)
+
+Yann Dirson                                                            popcon-largest-unused(8)
