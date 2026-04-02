@@ -109,3 +109,53 @@
 2026-04-01 18:49:31,347 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
 2026-04-01 18:49:31,531 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
 2026-04-01 18:49:31,560 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-01 22:28:28,717 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-01 22:30:54,876 - root - INFO - Auto-imported 89 modules successfully
+2026-04-01 22:30:54,876 - root - INFO - Skipped 25 modules (expected for script files)
+2026-04-01 22:30:54,876 - root - INFO - Auto-import summary: 89 imported, 25 failed, 12303 skipped, 12417 total files processed
+2026-04-01 22:30:55,577 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-01 22:30:56,017 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-01 22:30:56,019 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-01 22:31:43,062 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-01 22:31:43,062 - root - INFO - Using cached auto-import results
+2026-04-01 22:31:43,064 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-01 22:31:43,170 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-01 22:31:43,199 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-01 23:42:03,068 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-01 23:42:20,129 - root - INFO - Auto-imported 89 modules successfully
+2026-04-01 23:42:20,129 - root - INFO - Skipped 25 modules (expected for script files)
+2026-04-01 23:42:20,132 - root - INFO - Auto-import summary: 89 imported, 25 failed, 12303 skipped, 12417 total files processed
+2026-04-01 23:42:20,195 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-01 23:42:20,409 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-01 23:42:20,427 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-02 00:03:53,945 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-02 00:04:07,472 - root - INFO - Auto-imported 89 modules successfully
+2026-04-02 00:04:07,473 - root - INFO - Skipped 25 modules (expected for script files)
+2026-04-02 00:04:07,473 - root - INFO - Auto-import summary: 89 imported, 25 failed, 12303 skipped, 12417 total files processed
+2026-04-02 00:04:07,488 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-02 00:04:07,643 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-02 00:04:07,646 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-02 00:10:27,310 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-02 00:10:28,290 - root - INFO - Auto-imported 89 modules successfully
+2026-04-02 00:10:28,290 - root - INFO - Skipped 25 modules (expected for script files)
+2026-04-02 00:10:28,290 - root - INFO - Auto-import summary: 89 imported, 25 failed, 12303 skipped, 12417 total files processed
+2026-04-02 00:10:28,294 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-02 00:10:28,388 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-02 00:10:28,399 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-02 00:10:37,202 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-02 00:10:37,203 - root - INFO - Using cached auto-import results
+2026-04-02 00:10:37,224 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-02 00:10:37,380 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-02 00:10:37,386 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-02 11:12:38,700 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-02 11:12:39,719 - root - INFO - Auto-imported 89 modules successfully
+2026-04-02 11:12:39,719 - root - INFO - Skipped 25 modules (expected for script files)
+2026-04-02 11:12:39,719 - root - INFO - Auto-import summary: 89 imported, 25 failed, 12303 skipped, 12417 total files processed
+2026-04-02 11:12:39,727 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-02 11:12:39,800 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-02 11:12:39,817 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-02 11:13:42,094 - root - INFO - Status: Filters cleared
+2026-04-02 11:13:43,424 - root - INFO - Status: Filters cleared
+2026-04-02 11:14:16,112 - root - INFO - Status: Speech saved to: test.wav
+2026-04-02 11:14:27,239 - root - INFO - Starting TTS playback for all details.
+2026-04-02 11:14:27,280 - root - INFO - TTS playback completed for all details.
