@@ -1,0 +1,49 @@
+# Page 40
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 1711 Extolay
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: e's
+  TF: TF 45
+  TL: TL 13
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 2311 Treece
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: e's
+  TF: TF 45
+  TL: TL 8
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 2417 POuUs
+  Code: 000?
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 10
+  TF: TF 5
+  TL: TL 11
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 2420 Skull
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL &

@@ -1,0 +1,85 @@
+# Page 39
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 3029 Palique
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-3
+  Streamlining: USL
+  DF: DF 7
+  AF: AF 3
+  BF: BF 0
+  TF: TF 7
+  TL: TL 14
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 3029 Palique
+  Ship Code: C00?
+  Squadron Type: Cruiser
+  Jump: J-3
+  Streamlining: USL
+  DF: DF 7
+  AF: AF 3
+  BF: BF 0
+  TF: TF 7
+  TL: TL 14
+
+--- R1C3 | NAVY | X12.png ---
+  Unit ID: 3029 Palique
+  Ship Code: C0gs
+  Squadron Type: Cruiser
+  Jump: J-3
+  Streamlining: USL
+  DF: DF 7
+  AF: AF 3
+  BF: BF 0
+  TF: TF 7
+  TL: TL 14
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 3025 Fornice
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 8
+  AF: AF 4
+  BF: BF 0
+  TF: TF 8
+  TL: TL 12
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 3025 Fornice
+  Ship Code: C00?
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 8
+  AF: AF 4
+  BF: BF 0
+  TF: TF 8
+  TL: TL 12
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 3025 Fornice
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 8
+  AF: AF 4
+  BF: BF 0
+  TF: TF 8
+  TL: TL 12
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 3025 Fornice
+  Ship Code: C004
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 8
+  AF: AF 4
+  BF: BF 0
+  TF: TF 8
+  TL: TL 12

@@ -159,3 +159,22 @@
 2026-04-02 11:14:16,112 - root - INFO - Status: Speech saved to: test.wav
 2026-04-02 11:14:27,239 - root - INFO - Starting TTS playback for all details.
 2026-04-02 11:14:27,280 - root - INFO - TTS playback completed for all details.
+2026-04-02 13:15:27,743 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-02 13:15:42,746 - root - INFO - Auto-imported 89 modules successfully
+2026-04-02 13:15:42,746 - root - INFO - Skipped 25 modules (expected for script files)
+2026-04-02 13:15:42,746 - root - INFO - Auto-import summary: 89 imported, 25 failed, 12303 skipped, 12417 total files processed
+2026-04-02 13:15:42,755 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-02 13:15:42,921 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-02 13:15:42,940 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-02 20:48:06,765 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-02 20:48:09,682 - root - INFO - Auto-imported 89 modules successfully
+2026-04-02 20:48:09,682 - root - INFO - Skipped 25 modules (expected for script files)
+2026-04-02 20:48:09,682 - root - INFO - Auto-import summary: 89 imported, 25 failed, 12316 skipped, 12430 total files processed
+2026-04-02 20:48:09,689 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-02 20:48:09,920 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-02 20:48:09,953 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
+2026-04-02 20:51:56,525 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-02 20:51:56,526 - root - INFO - Using cached auto-import results
+2026-04-02 20:51:56,572 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-02 20:51:56,734 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-02 20:51:56,748 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)

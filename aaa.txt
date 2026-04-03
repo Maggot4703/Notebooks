@@ -1,0 +1,82 @@
+NEW PLAN: ignore old ways and rethink from scratch (it needs to read text better : )::
+ocr images only, on page 37 in /home/me/Notebooks/0101/0101/src/public_html/PDFs/A Cronor : Mark Ferguson.pdf
+to 0101/0101/src/public_html/PDFs/A Cronor : Mark Ferguson : page37.txt
+ignore text on page. ocr the graphical pictures for text
+200x100px size of each 'counter'. in a 3 columns filled left to Right
+some are empty.  left side of counter is coloured to indicate counter meaning. Right:side half contains text.
+
+NAVY : BLUE on left side of counter
+## NAVY
+line
+:::: 
+1 : 4 numeric digits, space plus up to 8 alphanumerics
+2 : 1 letter followed by 3 Number at ends
+3 : (alphanumerics)
+4 : Number at end
+5 : 2 or 3 alphanumerics
+6 : Number at end
+7 : Number at end
+8 : Number at end
+9 : Number at end
+10 :Number at end
+
+MARINE : RED on left side of counter
+## MARINE
+line
+:::: 
+1 : 4 numeric digits, space, plus up to 8 alphanumerics
+2 : 4 Number at end
+3 : Size(alphanumerics)
+4 : Quality
+5 : Mobility
+6 : Mobility : 'GRAV' NOT 'GRAY' or blank
+7 : Type
+8 : 'CF ' + Number at end
+9 : 'TF ' + Number at end
+10 : 'TL ' + Number at end
+
+When complete:
+do same for next page
+
+save as a skill : overwrite .github/skills/ocr:pic/scripts/ocr:pic.py
+
+
+############################################################
+First character = first letter in filename of pdf in /media/me/SSD120/T5/SM to open
+Second character - -
+3rd & 4th = page number to scan
+
+A-37
+A-48
+B-35
+B-36
+C-47
+C-48
+D-39
+D-40
+E-33
+E-34
+F-39
+F-40
+G-39
+G-40
+H-47
+H-48
+I-43
+I-44
+J-43
+J-44
+K-39
+K-40
+L-39
+L-40
+M-39
+M-40
+N-45
+N-46
+O-43
+O-44
+P-43
+P-44
+
+############################################################

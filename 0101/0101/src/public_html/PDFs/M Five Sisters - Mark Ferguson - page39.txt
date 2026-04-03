@@ -1,0 +1,13 @@
+# Page 39
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 0333 Mirriarm
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 6
+  AF: AF 3
+  BF: BF 0
+  TF: TF 6
+  TL: TL 13

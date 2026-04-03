@@ -1,0 +1,37 @@
+# Page 34
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 0416 Retinae
+  Code: 0001
+  Size: 2-Realment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 20
+  TF: TF 5
+  TL: TI
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 0614 Querion
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL &
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 0720 Entrope
+  Code: 0001
+  Size: ?-Army Group
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 500
+  TF: TF 500
+  TL: TL 11

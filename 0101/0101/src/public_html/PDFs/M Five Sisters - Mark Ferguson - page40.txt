@@ -1,0 +1,85 @@
+# Page 40
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 0632 Gohature
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL ?
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 0637 Quhaiathat
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL &
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 0732 Iderati
+  Code: 0001
+  Size: 1-Battalion
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 2
+  TF: TF 2
+  TL: TL 12
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 0236 Andor
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL &
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 0333 Mirriarm
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 5
+  TF: TF 5
+  TL: TL 13
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 0534 Karin
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 2
+  TF: TF 1
+  TL: TL 12
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 0538 VYonstar
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL ?
