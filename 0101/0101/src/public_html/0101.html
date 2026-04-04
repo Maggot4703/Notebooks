@@ -476,6 +476,7 @@
       var sec = "Spinward Marches";
       var sub = "A Cronor";
       var sys = "0101";
+      var _fetchGen = 0;
 
       // worldsCache["sector:subsector"] -> [{hex, name}, ...]
       var worldsCache = {};
@@ -649,7 +650,7 @@
         console.log("picClickMain()");
         var x = document.getElementById("demo");
         //console.log("x = " + x);
-        col = "white";
+        var col = "white";
         document.body.style.backgroundColor = col;
         console.log("col = " + col);
         console.log("x.toString() = " + x.toString());
@@ -663,7 +664,7 @@
     <script>
       function picClick(s) {
         var x = document.getElementById(s);
-        col = "white";
+        var col = "white";
         console.log("picClick(" + s + ")");
         switch (s) {
           case "":
@@ -734,21 +735,21 @@
             break;
           }
 
-          case "giant1":
+          case "giant1a":
           {
-            x = document.getElementById("giant");
+            x = document.getElementById("giant1a");
             col = "dark grey";
             break;
           }
-          case "world1":
+          case "world1a":
           {
-            x = document.getElementById("world");
+            x = document.getElementById("world1a");
             col = "white";
             break;
           }
-          case "worlds1":
+          case "worlds1a":
           {
-            x = document.getElementById("worlds");
+            x = document.getElementById("worlds1a");
             col = "dark grey";
             break;
           }
@@ -772,9 +773,11 @@
       // Subsector dropdown, then trigger SubChange.
       // restoreSub: if provided and found in new list, pre-select it.
       function fetchAndLoadSubsectors(sector, restoreSub) {
+        var myGen = ++_fetchGen;
         fetch('https://travellermap.com/api/metadata?sector=' + encodeURIComponent(sector))
           .then(function(r) { return r.json(); })
           .then(function(data) {
+            if (myGen !== _fetchGen) return;
             var subs = (data.Subsectors || []).slice().sort(function(a, b) {
               return a.Index < b.Index ? -1 : 1;
             });
@@ -795,6 +798,7 @@
             SubChange();
           })
           .catch(function(err) {
+            if (myGen !== _fetchGen) return;
             console.warn('fetchAndLoadSubsectors failed:', err);
             SubChange();
           });
@@ -818,15 +822,18 @@
         var letter = subsectorLetters[cacheKey] || sub.charAt(0);
         var url = 'https://travellermap.com/api/sec?sector=' + encodeURIComponent(sec)
                   + '&subsector=' + encodeURIComponent(letter) + '&type=TabDelimited';
+        var myGen = _fetchGen;
         fetch(url)
           .then(function(r) { return r.text(); })
           .then(function(text) {
+            if (myGen !== _fetchGen) return;
             worldsCache[cacheKey] = parseSecTabDelimited(text);
             console.log('Fetched', worldsCache[cacheKey].length, 'worlds for', cacheKey);
             populateSysList(sec, sub);
             SysChange();
           })
           .catch(function(err) {
+            if (myGen !== _fetchGen) return;
             console.warn('SubChange: world fetch failed:', err);
             populateSysList(sec, sub);
             SysChange();
@@ -860,9 +867,7 @@
         console.log("SysChange()");
         sys = x;
         console.log("sys = " + x);
-        save();
-        load();
-        save();
+        load();  // load() calls save() at end
       }
 
       var p, path0, path1, path2, path3, path4, path5, path6, path7, path8, path9;
@@ -901,20 +906,17 @@
         setImg('pic7', path7);
         setImg('pic8', path8);
         setImg('pic9', path9);
+        setImg('pic7a', path7);
+        setImg('pic8a', path8);
+        setImg('pic9a', path9);
         save();
       }
 
       function save() {
         console.log("save()");
-        hexx = document.getElementById("Sys").value;
-        hex = {hex: "" + hexx};
-        hexJSON = JSON.stringify(hex);
+        var hexx = document.getElementById("Sys").value;
+        var hexJSON = JSON.stringify({hex: "" + hexx});
         localStorage.setItem("hexJSON", hexJSON);
-
-        // Retrieving data:
-        text = localStorage.getItem("hexJSON");
-        json = JSON.parse(text);
-        //console.log(json);
       }
     </script>
     <!-- onbeforeunload -->
