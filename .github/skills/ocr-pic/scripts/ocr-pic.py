@@ -3,10 +3,10 @@
 ocr-pic.py — OCR wargame counter images embedded on PDF pages.
 
 Counter structure (200x100px):
-  Left half  (x 0–99):  solid colour identifying counter type
+  Left half  (x 0 to 99):  solid colour identifying counter type
                          NAVY = cyan (R≈0, G≈255, B≈255)
                          MARINE = red (R≈255, G≈0, B≈0)
-  Right half (x 100–199): white background with black text, 10 lines
+  Right half (x 100 to 199): white background with black text, 10 lines
 
 Usage:
     python ocr-pic.py <pdf_path> <page1> [page2 ...] <output_dir>
@@ -30,6 +30,7 @@ Verify flagged positions manually against the original PDF.
 
 from __future__ import annotations
 
+import argparse
 import io
 import os
 import re
@@ -73,11 +74,13 @@ MARINE_FIELDS = [
 
 GRID_COLS = 3
 
+
 # ---------------------------------------------------------------------------
 # Counter type detection
 # ---------------------------------------------------------------------------
 
-def detect_counter_type(img_data: bytes) -> str:
+
+def detect_counter_type(img: Image.Image) -> str:
     """Return 'NAVY', 'MARINE', or 'EMPTY' from left-half colour.
 
     Samples the left ~22% of the image (the solid colour indicator strip),
@@ -86,7 +89,6 @@ def detect_counter_type(img_data: bytes) -> str:
         NAVY:   cyan  — R≈0, G≈255, B≈255  (HSV hue ≈ 128/255)
         MARINE: red   — R≈255, G≈0,   B≈0  (HSV hue ≈ 0 or 255)
     """
-    img = Image.open(io.BytesIO(img_data)).convert("RGB")
     w, h = img.size
     left = img.crop((0, int(h * 0.1), max(1, int(w * 0.22)), int(h * 0.9)))
     arr = np.array(left)
@@ -100,15 +102,19 @@ def detect_counter_type(img_data: bytes) -> str:
     if (b > r + 20 and b > g + 10) or (120 <= hue <= 190 and sat >= 35):
         return "NAVY"
     # MARINE: red — red dominant, or HSV hue at red extremes
-    if (r > b + 20 and r > g + 10) or ((hue <= 15 or hue >= 240) and sat >= 35):
+    if (r > b + 20 and r > g + 10) or (
+        (hue <= 15 or hue >= 240) and sat >= 35
+    ):
         return "MARINE"
     return "EMPTY"
+
 
 # ---------------------------------------------------------------------------
 # Preprocessing
 # ---------------------------------------------------------------------------
 
-def preprocess_counter(img_data: bytes, upscale: int = 6) -> Image.Image:
+
+def preprocess_counter(img: Image.Image, upscale: int = 6) -> Image.Image:
     """Crop the coloured left half, upscale, and prepare for Tesseract.
 
     The text content is always in the right half of the counter
@@ -118,11 +124,10 @@ def preprocess_counter(img_data: bytes, upscale: int = 6) -> Image.Image:
     No colour inversion is applied — text is already dark on light.
 
     Args:
-        img_data: Raw image bytes from the PDF.
+        img:      PIL Image (RGB) of the counter.
         upscale:  Integer scale factor before OCR (default 6).
                   Aim for at least 800px wide after scaling.
     """
-    img = Image.open(io.BytesIO(img_data)).convert("RGB")
     w, h = img.size
     # Crop to right half, inset 1px from each frame border
     right = img.crop((w // 2 + 1, 1, w - 1, h - 1))
@@ -134,9 +139,11 @@ def preprocess_counter(img_data: bytes, upscale: int = 6) -> Image.Image:
     gray = ImageOps.expand(gray, border=30, fill=255)
     return gray
 
+
 # ---------------------------------------------------------------------------
 # OCR
 # ---------------------------------------------------------------------------
+
 
 def ocr_image(img: Image.Image, psm: int = 6) -> str:
     """Run Tesseract on a preprocessed image and return stripped text."""
@@ -145,16 +152,23 @@ def ocr_image(img: Image.Image, psm: int = 6) -> str:
 
 
 def clean_ocr_lines(text: str) -> list[str]:
-    """Return non-blank lines with internal whitespace normalised."""
-    return [
-        re.sub(r"\s+", " ", line.strip())
-        for line in text.splitlines()
-        if line.strip()
-    ]
+    """Return lines with internal whitespace normalised.
+
+    Leading and trailing blank lines are stripped; interior blank lines are
+    preserved as empty strings to maintain 10-line field alignment.
+    """
+    lines = [re.sub(r"\s+", " ", line.strip()) for line in text.splitlines()]
+    while lines and not lines[0]:
+        lines.pop(0)
+    while lines and not lines[-1]:
+        lines.pop()
+    return lines
+
 
 # ---------------------------------------------------------------------------
 # Grid slot helpers
 # ---------------------------------------------------------------------------
+
 
 def parse_slot_from_name(name: str) -> int | None:
     """Extract a grid slot index (1–9) from image names such as X5.png."""
@@ -171,9 +185,11 @@ def slot_to_label(slot: int) -> str:
     col = ((slot - 1) % GRID_COLS) + 1
     return f"R{row}C{col}"
 
+
 # ---------------------------------------------------------------------------
 # Formatting
 # ---------------------------------------------------------------------------
+
 
 def postprocess_line(label: str, value: str) -> str:
     """Apply confirmed Tesseract font confusion corrections by field label.
@@ -207,7 +223,7 @@ def postprocess_line(label: str, value: str) -> str:
             value = m.group(1).upper() + digits
 
     elif label == "Code":
-        # MARINE line 2: exactly 4 digits. Strip non-digit noise; flag if unreadable.
+        # MARINE line 2: 4 digits. Strip non-digit noise; flag if unreadable.
         stripped = re.sub(r"\D", "", value)
         if len(stripped) >= 4:
             value = stripped[:4]
@@ -257,9 +273,11 @@ def format_counter(
 
     return header + "\n" + "\n".join(rows)
 
+
 # ---------------------------------------------------------------------------
 # Per-page processing
 # ---------------------------------------------------------------------------
+
 
 def is_counter_candidate(img: Image.Image) -> bool:
     """Return True if image dimensions look like a wargame counter."""
@@ -288,7 +306,7 @@ def process_page(
         if not is_counter_candidate(raw):
             continue
 
-        ctype = detect_counter_type(img_obj.data)
+        ctype = detect_counter_type(raw)
         if ctype == "EMPTY":
             continue
 
@@ -297,7 +315,7 @@ def process_page(
             slot = next_auto_slot
             next_auto_slot += 1
 
-        processed = preprocess_counter(img_obj.data, upscale)
+        processed = preprocess_counter(raw, upscale)
         raw_text = ocr_image(processed)
         lines = clean_ocr_lines(raw_text)
         results.append((slot, img_obj.name, ctype, lines))
@@ -314,9 +332,11 @@ def process_page(
 
     return "\n".join(sections)
 
+
 # ---------------------------------------------------------------------------
 # Interactive helpers (file picker + page prompt)
 # ---------------------------------------------------------------------------
+
 
 def pick_pdf_gui() -> str:
     """Open a Tk file-chooser dialog and return the selected PDF path.
@@ -353,18 +373,13 @@ def prompt_pages(total_pages: int) -> list[int]:
     """
     print(f"PDF has {total_pages} page(s).")
     raw = input("Pages to OCR (e.g. 37  or  37,38  or  37-40): ").strip()
-    pages: set[int] = set()
-    for part in raw.replace(" ", "").split(","):
-        if "-" in part:
-            lo, hi = part.split("-", 1)
-            pages.update(range(int(lo), int(hi) + 1))
-        elif part:
-            pages.add(int(part))
-    return sorted(pages)
+    return parse_page_args([raw])
+
 
 # ---------------------------------------------------------------------------
 # Batch mode helpers
 # ---------------------------------------------------------------------------
+
 
 def resolve_pdf_for_letter(letter: str, pdf_dir: str) -> str:
     """Return the path of the unique PDF in pdf_dir starting with letter.
@@ -399,14 +414,15 @@ def run_batch(
     and NN is the 1-indexed page number.  PDFs are opened once per unique path
     and reused across pages.
     """
-    # Parse all tokens first so we catch format errors before touching any files
+    # Parse tokens first so we catch format errors before touching any files
     jobs: list[tuple[str, int]] = []  # (pdf_path, page_number)
     for token in tokens:
         token = token.strip()
         m = re.fullmatch(r"([A-Za-z])-?(\d+)", token)
         if not m:
             raise ValueError(
-                f"Batch token {token!r} is not in LETTER-PAGE format (e.g. A-37)"
+                f"Batch token {token!r} is not in LETTER-PAGE format "
+                "(e.g. A-37)"
             )
         letter, page_str = m.group(1), m.group(2)
         pdf_path = resolve_pdf_for_letter(letter, pdf_dir)
@@ -414,37 +430,40 @@ def run_batch(
 
     # Group pages by PDF so we only open each file once
     readers: dict[str, PdfReader] = {}
-    for pdf_path, page_number in jobs:
-        if pdf_path not in readers:
-            readers[pdf_path] = PdfReader(pdf_path)
+    try:
+        for pdf_path, page_number in jobs:
+            if pdf_path not in readers:
+                readers[pdf_path] = PdfReader(pdf_path)
 
-    for pdf_path, page_number in jobs:
-        reader = readers[pdf_path]
-        total = len(reader.pages)
-        if page_number < 1 or page_number > total:
-            print(
-                f"  [SKIP] Page {page_number} out of range "
-                f"({pdf_path!r} has {total} pages)."
-            )
-            continue
-        out_dir = output_dir or str(Path(pdf_path).parent)
-        os.makedirs(out_dir, exist_ok=True)
-        pdf_stem = Path(pdf_path).stem
-        output_path = os.path.join(out_dir, f"{pdf_stem} - page{page_number}.txt")
-        output = process_page(reader, page_number)
-        with open(output_path, "w", encoding="utf-8") as f:
-            f.write(output)
-        print(f"Page {page_number} → {output_path}")
-        print(output)
+        for pdf_path, page_number in jobs:
+            reader = readers[pdf_path]
+            total = len(reader.pages)
+            if page_number < 1 or page_number > total:
+                print(
+                    f"  [SKIP] Page {page_number} out of range "
+                    f"({pdf_path!r} has {total} pages)."
+                )
+                continue
+            out_dir = output_dir or str(Path(pdf_path).parent)
+            os.makedirs(out_dir, exist_ok=True)
+            pdf_stem = Path(pdf_path).stem
+            out_name = f"{pdf_stem} - page{page_number}.txt"
+            output_path = os.path.join(out_dir, out_name)
+            output = process_page(reader, page_number)
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write(output)
+            print(f"Page {page_number} → {output_path}")
+            print(output)
+    finally:
+        for r in readers.values():
+            r.stream.close()
 
 
 # ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 
-def build_arg_parser() -> "argparse.ArgumentParser":
-    import argparse
-
+def build_arg_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="ocr-pic",
         description=(
@@ -469,8 +488,9 @@ def build_arg_parser() -> "argparse.ArgumentParser":
         "--pages", nargs="+", metavar="N",
         help=(
             "Page number(s) to process (1-indexed). "
-            "Accepts individual numbers, comma-separated lists, and N-M ranges "
-            "(e.g. --pages 37 38  or  --pages 37-40  or  --pages 37,39-41)."
+            "Accepts individual numbers, comma-separated lists, and "
+            "N-M ranges (e.g. --pages 37 38  or  --pages 37-40  or  "
+            "--pages 37,39-41)."
         ),
     )
     p.add_argument(
@@ -484,8 +504,8 @@ def build_arg_parser() -> "argparse.ArgumentParser":
         "--batch", nargs="+", metavar="LETTER-PAGE",
         help=(
             "Batch mode: one or more LETTER-PAGE tokens (e.g. A-37 B-35). "
-            "Each letter is matched to the first PDF in --pdf-dir whose filename "
-            "starts with that letter (case-insensitive). "
+            "Each letter is matched to the first PDF in --pdf-dir whose "
+            "filename starts with that letter (case-insensitive). "
             "Requires --pdf-dir."
         ),
     )
@@ -493,7 +513,8 @@ def build_arg_parser() -> "argparse.ArgumentParser":
         "--pdf-dir", metavar="DIR", default=None,
         help=(
             "Directory to search for PDFs when using --batch. "
-            "Output .txt files are written here unless --output-dir is also given."
+            "Output .txt files are written here unless --output-dir is "
+            "also given."
         ),
     )
     return p
@@ -518,13 +539,12 @@ def parse_page_args(page_args: list[str]) -> list[int]:
 
 
 def main() -> None:
-    import argparse
-
     parser = build_arg_parser()
+    reader: PdfReader | None = None
 
     # Legacy positional mode: ocr-pic.py <pdf> <page1> [page2 ...] <output_dir>
-    # Detect: first arg exists, is not a flag, and last arg looks like a directory
-    # (not a digit).  Preserve backward compatibility without breaking --help.
+    # Detect: first arg is not a flag and last arg looks like a directory
+    # (not a digit). Preserves backward compatibility without breaking --help.
     if (
         len(sys.argv) >= 4
         and not sys.argv[1].startswith("-")
@@ -552,8 +572,8 @@ def main() -> None:
         if args.pages:
             page_numbers = parse_page_args(args.pages)
         else:
-            reader_check = PdfReader(pdf_path)
-            page_numbers = prompt_pages(len(reader_check.pages))
+            reader = PdfReader(pdf_path)
+            page_numbers = prompt_pages(len(reader.pages))
 
         # --- Output dir ---
         output_dir = args.output_dir or str(Path(pdf_path).parent)
@@ -564,21 +584,28 @@ def main() -> None:
 
     pdf_stem = Path(pdf_path).stem
     os.makedirs(output_dir, exist_ok=True)
-    reader = PdfReader(pdf_path)
+    if reader is None:
+        reader = PdfReader(pdf_path)
     total = len(reader.pages)
 
-    for page_number in page_numbers:
-        if page_number < 1 or page_number > total:
-            print(f"  [SKIP] Page {page_number} out of range (PDF has {total} pages).")
-            continue
-        output_path = os.path.join(
-            output_dir, f"{pdf_stem} - page{page_number}.txt"
-        )
-        output = process_page(reader, page_number)
-        with open(output_path, "w", encoding="utf-8") as f:
-            f.write(output)
-        print(f"Page {page_number} → {output_path}")
-        print(output)
+    try:
+        for page_number in page_numbers:
+            if page_number < 1 or page_number > total:
+                print(
+                    f"  [SKIP] Page {page_number} out of range "
+                    f"(PDF has {total} pages)."
+                )
+                continue
+            output_path = os.path.join(
+                output_dir, f"{pdf_stem} - page{page_number}.txt"
+            )
+            output = process_page(reader, page_number)
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write(output)
+            print(f"Page {page_number} → {output_path}")
+            print(output)
+    finally:
+        reader.stream.close()
 
 
 if __name__ == "__main__":

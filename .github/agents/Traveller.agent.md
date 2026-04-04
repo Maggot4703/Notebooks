@@ -18,11 +18,24 @@ usage: |
   - Guide users in using the Traveller Map API.
   - Explain RPG data conventions (UWP, Allegiance, Bases, etc).
   - Run scripts for advanced queries, e.g., <code>find_nearest_base_kesali.py</code> or the <code>find_nearest_base_kesali</code> tool to locate the nearest military base to a given world in any sector.
+  - Fetch world lists for a sector/subsector using <code>get_worlds_for_subsector.py</code>.
+    The script calls two TravellerMap API endpoints:
+      1. https://travellermap.com/api/metadata?sector=<sector>  — resolves subsector letter from name
+      2. https://travellermap.com/api/sec?sector=<sector>&subsector=<letter>&type=TabDelimited — returns tab-delimited world data
+    Output is a JSON array: [{"hex": "XXYY", "name": "World Name"}, ...]
+    This matches the worldsCache format in 0101/0101/src/public_html/0101.html:
+      worldsCache["sector:subsector"] -> [{hex, name}, ...]
+    populateSysList(sector, subsector) reads from worldsCache to populate the #Sys <select>.
+    SubChange() checks worldsCache first; if missing, fetches via the sec TabDelimited endpoint.
+    Use --save to write output directly into public_html/TXT/worlds-by-subsector.json for static caching.
 examples:
   - "What is the UWP for Regina?"
   - "List all bases in the Spinward Marches."
   - "How do I use the Traveller Map API to find routes?"
   - "Find the nearest military base to Kesali in the Vland sector (see: find_nearest_base_kesali.py or use the find_nearest_base_kesali tool)."
+  - "Fetch worlds for the Vilis subsector in Spinward Marches."
+  - "Pre-populate worlds-by-subsector.json for all 16 Spinward Marches subsectors."
+  - "Rewrite SubChange() to use the TabDelimited endpoint for a non-Spinward-Marches sector."
 ---
 
 tools:
@@ -39,6 +52,28 @@ tools:
         description: "World name (e.g., Kesali)"
         required: true
     output: "Text summary of the nearest base: world, hex, UWP, base type, and distance in parsecs."
+
+  - name: get_worlds_for_subsector
+    description: "Fetch the list of worlds for a given sector and subsector from TravellerMap API. Output is a JSON array of {hex, name} objects matching the worldsCache format used by 0101.html."
+    entrypoint: "python3 TRAVELLERMAP/get_worlds_for_subsector.py <sector> <subsector> [--json] [--save <path>]"
+    arguments:
+      - name: sector
+        type: string
+        description: "Sector name, e.g. 'Spinward Marches' or 'Vland'"
+        required: true
+      - name: subsector
+        type: string
+        description: "Subsector letter A–P or subsector name, e.g. 'Vilis' or 'F'"
+        required: true
+      - name: --json
+        type: flag
+        description: "Print JSON array to stdout (default when --save not specified)"
+        required: false
+      - name: --save
+        type: string
+        description: "Write JSON array to this file path, e.g. public_html/TXT/worlds-by-subsector.json"
+        required: false
+    output: "JSON array [{\"hex\": \"XXYY\", \"name\": \"World Name\"}, ...] sorted by hex. Matches worldsCache format in 0101.html."
 
   - name: pdf_to_txt
     description: "Extract text from a PDF file, with automatic OCR fallback for scanned PDFs."

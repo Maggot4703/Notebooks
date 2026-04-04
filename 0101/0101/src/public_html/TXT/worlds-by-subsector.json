@@ -1,0 +1,1790 @@
+{
+  "A Cronor": [
+    {
+      "hex": "0101",
+      "name": "Zeycude"
+    },
+    {
+      "hex": "0102",
+      "name": "Reno"
+    },
+    {
+      "hex": "0103",
+      "name": "Errere"
+    },
+    {
+      "hex": "0104",
+      "name": "Cantrel"
+    },
+    {
+      "hex": "0108",
+      "name": "Gyomar"
+    },
+    {
+      "hex": "0202",
+      "name": "Thengo"
+    },
+    {
+      "hex": "0301",
+      "name": "Rio"
+    },
+    {
+      "hex": "0303",
+      "name": "Gesentown"
+    },
+    {
+      "hex": "0304",
+      "name": "Chronor"
+    },
+    {
+      "hex": "0307",
+      "name": "Atsa"
+    },
+    {
+      "hex": "0503",
+      "name": "Whenge"
+    },
+    {
+      "hex": "0601",
+      "name": "Enlas-du"
+    },
+    {
+      "hex": "0605",
+      "name": "Algebaster"
+    },
+    {
+      "hex": "0607",
+      "name": "Rasatt"
+    },
+    {
+      "hex": "0608",
+      "name": "Ninjar"
+    },
+    {
+      "hex": "0610",
+      "name": "Sheyou"
+    },
+    {
+      "hex": "0703",
+      "name": "Indo"
+    },
+    {
+      "hex": "0704",
+      "name": "Nerewhon"
+    },
+    {
+      "hex": "0705",
+      "name": "Cipango"
+    },
+    {
+      "hex": "0710",
+      "name": "Stave"
+    },
+    {
+      "hex": "0805",
+      "name": "Narval"
+    },
+    {
+      "hex": "0807",
+      "name": "Plaven"
+    },
+    {
+      "hex": "0808",
+      "name": "Quar"
+    },
+    {
+      "hex": "0810",
+      "name": "Frond"
+    }
+  ],
+  "B Jewell": [
+    {
+      "hex": "0901",
+      "name": "Condyole"
+    },
+    {
+      "hex": "0902",
+      "name": "Puparkin"
+    },
+    {
+      "hex": "0904",
+      "name": "Chwistyoch"
+    },
+    {
+      "hex": "0909",
+      "name": "Gougeste"
+    },
+    {
+      "hex": "1004",
+      "name": "Esalin"
+    },
+    {
+      "hex": "1005",
+      "name": "Ruby"
+    },
+    {
+      "hex": "1006",
+      "name": "Emerald"
+    },
+    {
+      "hex": "1010",
+      "name": "Zenopit"
+    },
+    {
+      "hex": "1102",
+      "name": "Riverland"
+    },
+    {
+      "hex": "1103",
+      "name": "Clan"
+    },
+    {
+      "hex": "1106",
+      "name": "Jewell"
+    },
+    {
+      "hex": "1110",
+      "name": "Zircon"
+    },
+    {
+      "hex": "1201",
+      "name": "Ao-dai"
+    },
+    {
+      "hex": "1204",
+      "name": "Mongo"
+    },
+    {
+      "hex": "1209",
+      "name": "Utoland"
+    },
+    {
+      "hex": "1210",
+      "name": "Pequan"
+    },
+    {
+      "hex": "1305",
+      "name": "Nakege"
+    },
+    {
+      "hex": "1307",
+      "name": "Lysen"
+    },
+    {
+      "hex": "1401",
+      "name": "Foelen"
+    },
+    {
+      "hex": "1402",
+      "name": "Farreach"
+    },
+    {
+      "hex": "1510",
+      "name": "871-438"
+    },
+    {
+      "hex": "1604",
+      "name": "Louzy"
+    },
+    {
+      "hex": "1607",
+      "name": "Grant"
+    }
+  ],
+  "C Regina": [
+    {
+      "hex": "1705",
+      "name": "Efate"
+    },
+    {
+      "hex": "1706",
+      "name": "Alell"
+    },
+    {
+      "hex": "1802",
+      "name": "Yres"
+    },
+    {
+      "hex": "1803",
+      "name": "Menorb"
+    },
+    {
+      "hex": "1805",
+      "name": "Uakye"
+    },
+    {
+      "hex": "1806",
+      "name": "Whanga"
+    },
+    {
+      "hex": "1807",
+      "name": "Knorbes"
+    },
+    {
+      "hex": "1808",
+      "name": "Forboldn"
+    },
+    {
+      "hex": "1809",
+      "name": "Ruie"
+    },
+    {
+      "hex": "1810",
+      "name": "Jenghe"
+    },
+    {
+      "hex": "1903",
+      "name": "Pixie"
+    },
+    {
+      "hex": "1904",
+      "name": "Boughene"
+    },
+    {
+      "hex": "1909",
+      "name": "Hefry"
+    },
+    {
+      "hex": "1910",
+      "name": "Regina"
+    },
+    {
+      "hex": "2005",
+      "name": "Feri"
+    },
+    {
+      "hex": "2007",
+      "name": "Roup"
+    },
+    {
+      "hex": "2106",
+      "name": "Pscias"
+    },
+    {
+      "hex": "2110",
+      "name": "Yori"
+    },
+    {
+      "hex": "2201",
+      "name": "Dentus"
+    },
+    {
+      "hex": "2202",
+      "name": "Kinorb"
+    },
+    {
+      "hex": "2204",
+      "name": "Beck's World"
+    },
+    {
+      "hex": "2205",
+      "name": "Enope"
+    },
+    {
+      "hex": "2207",
+      "name": "Wochiers"
+    },
+    {
+      "hex": "2303",
+      "name": "Yorbund"
+    },
+    {
+      "hex": "2306",
+      "name": "Shionthy"
+    },
+    {
+      "hex": "2308",
+      "name": "Algine"
+    },
+    {
+      "hex": "2309",
+      "name": "Yurst"
+    },
+    {
+      "hex": "2402",
+      "name": "Heya"
+    },
+    {
+      "hex": "2405",
+      "name": "Keng"
+    },
+    {
+      "hex": "2406",
+      "name": "Moughas"
+    },
+    {
+      "hex": "2408",
+      "name": "Rethe"
+    },
+    {
+      "hex": "2410",
+      "name": "Inthe"
+    }
+  ],
+  "D Aramis": [
+    {
+      "hex": "2509",
+      "name": "Paya"
+    },
+    {
+      "hex": "2510",
+      "name": "Dhian"
+    },
+    {
+      "hex": "2602",
+      "name": "Corfu"
+    },
+    {
+      "hex": "2607",
+      "name": "Focaline"
+    },
+    {
+      "hex": "2701",
+      "name": "Lablon"
+    },
+    {
+      "hex": "2706",
+      "name": "Heguz"
+    },
+    {
+      "hex": "2708",
+      "name": "Violante"
+    },
+    {
+      "hex": "2905",
+      "name": "Pavanne"
+    },
+    {
+      "hex": "2906",
+      "name": "Carsten"
+    },
+    {
+      "hex": "2908",
+      "name": "Zila"
+    },
+    {
+      "hex": "3001",
+      "name": "Jesedipere"
+    },
+    {
+      "hex": "3002",
+      "name": "Yebab"
+    },
+    {
+      "hex": "3003",
+      "name": "Nasemin"
+    },
+    {
+      "hex": "3004",
+      "name": "Zykoca"
+    },
+    {
+      "hex": "3005",
+      "name": "Aramanx"
+    },
+    {
+      "hex": "3008",
+      "name": "Pysadi"
+    },
+    {
+      "hex": "3010",
+      "name": "L'oeul d'Dieu"
+    },
+    {
+      "hex": "3102",
+      "name": "Rugbird"
+    },
+    {
+      "hex": "3103",
+      "name": "Towers"
+    },
+    {
+      "hex": "3104",
+      "name": "Feneteman"
+    },
+    {
+      "hex": "3107",
+      "name": "Lewis"
+    },
+    {
+      "hex": "3110",
+      "name": "Aramis"
+    },
+    {
+      "hex": "3202",
+      "name": "Junidy"
+    },
+    {
+      "hex": "3207",
+      "name": "Patinir"
+    },
+    {
+      "hex": "3209",
+      "name": "Natoko"
+    },
+    {
+      "hex": "3210",
+      "name": "Reacher"
+    }
+  ],
+  "E Querion": [
+    {
+      "hex": "0111",
+      "name": "Atson"
+    },
+    {
+      "hex": "0114",
+      "name": "Yiktor"
+    },
+    {
+      "hex": "0115",
+      "name": "Xhosa"
+    },
+    {
+      "hex": "0212",
+      "name": "Prinx"
+    },
+    {
+      "hex": "0215",
+      "name": "Rushu"
+    },
+    {
+      "hex": "0218",
+      "name": "Bael"
+    },
+    {
+      "hex": "0311",
+      "name": "Mizan-fel"
+    },
+    {
+      "hex": "0412",
+      "name": "Sansibar"
+    },
+    {
+      "hex": "0414",
+      "name": "Attica"
+    },
+    {
+      "hex": "0416",
+      "name": "Retinae"
+    },
+    {
+      "hex": "0511",
+      "name": "Terra Nova"
+    },
+    {
+      "hex": "0512",
+      "name": "Asmodeus"
+    },
+    {
+      "hex": "0518",
+      "name": "Faisal"
+    },
+    {
+      "hex": "0613",
+      "name": "Lebeau"
+    },
+    {
+      "hex": "0614",
+      "name": "Querion"
+    },
+    {
+      "hex": "0618",
+      "name": "Dekalb"
+    },
+    {
+      "hex": "0620",
+      "name": "Winston"
+    },
+    {
+      "hex": "0712",
+      "name": "Rapp's World"
+    },
+    {
+      "hex": "0717",
+      "name": "Thanber"
+    },
+    {
+      "hex": "0720",
+      "name": "Entrope"
+    },
+    {
+      "hex": "0820",
+      "name": "Anselhome"
+    }
+  ],
+  "F Vilis": [
+    {
+      "hex": "0911",
+      "name": "Caloran"
+    },
+    {
+      "hex": "0912",
+      "name": "899-076"
+    },
+    {
+      "hex": "0915",
+      "name": "Quare"
+    },
+    {
+      "hex": "0919",
+      "name": "Zeta 2"
+    },
+    {
+      "hex": "1011",
+      "name": "Arden"
+    },
+    {
+      "hex": "1018",
+      "name": "Choleosti"
+    },
+    {
+      "hex": "1020",
+      "name": "Margesi"
+    },
+    {
+      "hex": "1116",
+      "name": "Frenzie"
+    },
+    {
+      "hex": "1118",
+      "name": "Garda-Vilis"
+    },
+    {
+      "hex": "1119",
+      "name": "Vilis"
+    },
+    {
+      "hex": "1212",
+      "name": "Digitis"
+    },
+    {
+      "hex": "1213",
+      "name": "Edinina"
+    },
+    {
+      "hex": "1214",
+      "name": "728-907"
+    },
+    {
+      "hex": "1216",
+      "name": "Stellatio"
+    },
+    {
+      "hex": "1217",
+      "name": "Arkadia"
+    },
+    {
+      "hex": "1311",
+      "name": "Tremous Dex"
+    },
+    {
+      "hex": "1315",
+      "name": "Mirriam"
+    },
+    {
+      "hex": "1320",
+      "name": "Saurus"
+    },
+    {
+      "hex": "1411",
+      "name": "Rangent"
+    },
+    {
+      "hex": "1413",
+      "name": "Denotam"
+    },
+    {
+      "hex": "1417",
+      "name": "Ficant"
+    },
+    {
+      "hex": "1511",
+      "name": "Tionale"
+    },
+    {
+      "hex": "1515",
+      "name": "Calit"
+    },
+    {
+      "hex": "1519",
+      "name": "Asgard"
+    },
+    {
+      "hex": "1520",
+      "name": "Tavonni"
+    },
+    {
+      "hex": "1611",
+      "name": "Phlume"
+    }
+  ],
+  "G Lanth": [
+    {
+      "hex": "1711",
+      "name": "Extolay"
+    },
+    {
+      "hex": "1719",
+      "name": "Lanth"
+    },
+    {
+      "hex": "1811",
+      "name": "Dinom"
+    },
+    {
+      "hex": "1815",
+      "name": "Ghandi"
+    },
+    {
+      "hex": "1817",
+      "name": "Victoria"
+    },
+    {
+      "hex": "1912",
+      "name": "Dinomn"
+    },
+    {
+      "hex": "1916",
+      "name": "Ylaven"
+    },
+    {
+      "hex": "1918",
+      "name": "Sonthert"
+    },
+    {
+      "hex": "1920",
+      "name": "D'Ganzio"
+    },
+    {
+      "hex": "2011",
+      "name": "Wypoc"
+    },
+    {
+      "hex": "2111",
+      "name": "Djinni"
+    },
+    {
+      "hex": "2112",
+      "name": "Rech"
+    },
+    {
+      "hex": "2212",
+      "name": "K'Kirka"
+    },
+    {
+      "hex": "2215",
+      "name": "Quopist"
+    },
+    {
+      "hex": "2311",
+      "name": "Treece"
+    },
+    {
+      "hex": "2313",
+      "name": "Echiste"
+    },
+    {
+      "hex": "2314",
+      "name": "Pirema"
+    },
+    {
+      "hex": "2317",
+      "name": "Rhise"
+    },
+    {
+      "hex": "2319",
+      "name": "Ivendo"
+    },
+    {
+      "hex": "2411",
+      "name": "Keanou"
+    },
+    {
+      "hex": "2414",
+      "name": "Tureded"
+    },
+    {
+      "hex": "2415",
+      "name": "Vreibefger"
+    },
+    {
+      "hex": "2416",
+      "name": "La'Belle"
+    },
+    {
+      "hex": "2417",
+      "name": "Equus"
+    },
+    {
+      "hex": "2418",
+      "name": "Icetina"
+    },
+    {
+      "hex": "2419",
+      "name": "Cogri"
+    },
+    {
+      "hex": "2420",
+      "name": "Skull"
+    }
+  ],
+  "H Rhylanor": [
+    {
+      "hex": "2512",
+      "name": "Kinorb"
+    },
+    {
+      "hex": "2514",
+      "name": "Gileden"
+    },
+    {
+      "hex": "2519",
+      "name": "Pannet"
+    },
+    {
+      "hex": "2520",
+      "name": "Garrincski"
+    },
+    {
+      "hex": "2612",
+      "name": "Macene"
+    },
+    {
+      "hex": "2613",
+      "name": "Fulacin"
+    },
+    {
+      "hex": "2620",
+      "name": "Natoko"
+    },
+    {
+      "hex": "2712",
+      "name": "Risek"
+    },
+    {
+      "hex": "2715",
+      "name": "Porozlo"
+    },
+    {
+      "hex": "2716",
+      "name": "Rhylanor"
+    },
+    {
+      "hex": "2720",
+      "name": "Loneseda"
+    },
+    {
+      "hex": "2811",
+      "name": "Valhalla"
+    },
+    {
+      "hex": "2812",
+      "name": "Zivije"
+    },
+    {
+      "hex": "2814",
+      "name": "Jae Tellona"
+    },
+    {
+      "hex": "2818",
+      "name": "Gerome"
+    },
+    {
+      "hex": "2912",
+      "name": "Henoz"
+    },
+    {
+      "hex": "2913",
+      "name": "Celepina"
+    },
+    {
+      "hex": "2918",
+      "name": "Gitosy"
+    },
+    {
+      "hex": "3015",
+      "name": "Belizo"
+    },
+    {
+      "hex": "3016",
+      "name": "Kegena"
+    },
+    {
+      "hex": "3017",
+      "name": "Heroni"
+    },
+    {
+      "hex": "3019",
+      "name": "457-973"
+    },
+    {
+      "hex": "3020",
+      "name": "Somem"
+    },
+    {
+      "hex": "3111",
+      "name": "Vinorian"
+    },
+    {
+      "hex": "3112",
+      "name": "Nutema"
+    },
+    {
+      "hex": "3114",
+      "name": "Huderu"
+    },
+    {
+      "hex": "3118",
+      "name": "Cipatwe"
+    },
+    {
+      "hex": "3119",
+      "name": "Vanejen"
+    },
+    {
+      "hex": "3212",
+      "name": "Margesi"
+    },
+    {
+      "hex": "3216",
+      "name": "Bevey"
+    },
+    {
+      "hex": "3218",
+      "name": "Tacaxeb"
+    },
+    {
+      "hex": "3220",
+      "name": "Powaza"
+    }
+  ],
+  "I Darrian": [
+    {
+      "hex": "0122",
+      "name": "Junction"
+    },
+    {
+      "hex": "0129",
+      "name": "Uniqua"
+    },
+    {
+      "hex": "0130",
+      "name": "Garoo"
+    },
+    {
+      "hex": "0223",
+      "name": "Stern-Stern"
+    },
+    {
+      "hex": "0230",
+      "name": "886-945"
+    },
+    {
+      "hex": "0321",
+      "name": "Nonym"
+    },
+    {
+      "hex": "0325",
+      "name": "Laberv"
+    },
+    {
+      "hex": "0326",
+      "name": "Ektron"
+    },
+    {
+      "hex": "0421",
+      "name": "Zamine"
+    },
+    {
+      "hex": "0425",
+      "name": "Engrange"
+    },
+    {
+      "hex": "0426",
+      "name": "Ilium"
+    },
+    {
+      "hex": "0427",
+      "name": "Roget"
+    },
+    {
+      "hex": "0429",
+      "name": "Kardin"
+    },
+    {
+      "hex": "0430",
+      "name": "Bularia"
+    },
+    {
+      "hex": "0526",
+      "name": "Rorre"
+    },
+    {
+      "hex": "0527",
+      "name": "Mire"
+    },
+    {
+      "hex": "0528",
+      "name": "Condaria"
+    },
+    {
+      "hex": "0530",
+      "name": "Dorannia"
+    },
+    {
+      "hex": "0622",
+      "name": "Terant 340"
+    },
+    {
+      "hex": "0624",
+      "name": "Jacent"
+    },
+    {
+      "hex": "0625",
+      "name": "494-908"
+    },
+    {
+      "hex": "0627",
+      "name": "Darrian"
+    },
+    {
+      "hex": "0721",
+      "name": "Torment"
+    },
+    {
+      "hex": "0723",
+      "name": "Trifuge"
+    },
+    {
+      "hex": "0724",
+      "name": "Nosea"
+    },
+    {
+      "hex": "0727",
+      "name": "Spume"
+    },
+    {
+      "hex": "0729",
+      "name": "Ator"
+    },
+    {
+      "hex": "0822",
+      "name": "Cunnonic"
+    },
+    {
+      "hex": "0830",
+      "name": "Debarre"
+    }
+  ],
+  "J Sword Worlds": [
+    {
+      "hex": "0921",
+      "name": "Hrunting"
+    },
+    {
+      "hex": "0922",
+      "name": "Tizon"
+    },
+    {
+      "hex": "0927",
+      "name": "Narsil"
+    },
+    {
+      "hex": "0930",
+      "name": "Flammarion"
+    },
+    {
+      "hex": "1022",
+      "name": "Colada"
+    },
+    {
+      "hex": "1026",
+      "name": "Anduril"
+    },
+    {
+      "hex": "1121",
+      "name": "Mjolnir"
+    },
+    {
+      "hex": "1123",
+      "name": "Joyeuse"
+    },
+    {
+      "hex": "1126",
+      "name": "Orcrist"
+    },
+    {
+      "hex": "1130",
+      "name": "Enos"
+    },
+    {
+      "hex": "1221",
+      "name": "Gungnir"
+    },
+    {
+      "hex": "1223",
+      "name": "Gram"
+    },
+    {
+      "hex": "1225",
+      "name": "Excalibur"
+    },
+    {
+      "hex": "1324",
+      "name": "Tyrfing"
+    },
+    {
+      "hex": "1325",
+      "name": "Sacnoth"
+    },
+    {
+      "hex": "1329",
+      "name": "Caladbolg"
+    },
+    {
+      "hex": "1424",
+      "name": "Beater"
+    },
+    {
+      "hex": "1429",
+      "name": "Gunn"
+    },
+    {
+      "hex": "1430",
+      "name": "Caliburn"
+    },
+    {
+      "hex": "1522",
+      "name": "Dyrnwyn"
+    },
+    {
+      "hex": "1523",
+      "name": "Durendal"
+    },
+    {
+      "hex": "1524",
+      "name": "Hofud"
+    },
+    {
+      "hex": "1525",
+      "name": "Sting"
+    },
+    {
+      "hex": "1526",
+      "name": "Biter"
+    },
+    {
+      "hex": "1529",
+      "name": "Steel"
+    },
+    {
+      "hex": "1626",
+      "name": "Iron"
+    },
+    {
+      "hex": "1627",
+      "name": "Bronze"
+    },
+    {
+      "hex": "1628",
+      "name": "Mithril"
+    }
+  ],
+  "K Lunion": [
+    {
+      "hex": "1721",
+      "name": "Arba"
+    },
+    {
+      "hex": "1727",
+      "name": "Wardn"
+    },
+    {
+      "hex": "1728",
+      "name": "Olympia"
+    },
+    {
+      "hex": "1729",
+      "name": "Smoug"
+    },
+    {
+      "hex": "1822",
+      "name": "Rabwhar"
+    },
+    {
+      "hex": "1824",
+      "name": "Adabicci"
+    },
+    {
+      "hex": "1825",
+      "name": "Zaibon"
+    },
+    {
+      "hex": "1826",
+      "name": "Tenalphi"
+    },
+    {
+      "hex": "1924",
+      "name": "Ianic"
+    },
+    {
+      "hex": "1927",
+      "name": "Spirelle"
+    },
+    {
+      "hex": "2024",
+      "name": "Derchon"
+    },
+    {
+      "hex": "2124",
+      "name": "Lunion"
+    },
+    {
+      "hex": "2125",
+      "name": "Shirene"
+    },
+    {
+      "hex": "2128",
+      "name": "Penkwhar"
+    },
+    {
+      "hex": "2129",
+      "name": "Harvosette"
+    },
+    {
+      "hex": "2224",
+      "name": "Carse"
+    },
+    {
+      "hex": "2228",
+      "name": "Persephone"
+    },
+    {
+      "hex": "2321",
+      "name": "Quiru"
+    },
+    {
+      "hex": "2322",
+      "name": "Gorram"
+    },
+    {
+      "hex": "2323",
+      "name": "Resten"
+    },
+    {
+      "hex": "2324",
+      "name": "Capon"
+    },
+    {
+      "hex": "2325",
+      "name": "Sharrip"
+    },
+    {
+      "hex": "2327",
+      "name": "Strouden"
+    },
+    {
+      "hex": "2425",
+      "name": "Gandr"
+    },
+    {
+      "hex": "2426",
+      "name": "Drolraw"
+    }
+  ],
+  "L Mora": [
+    {
+      "hex": "2521",
+      "name": "Heroni"
+    },
+    {
+      "hex": "2523",
+      "name": "Byret"
+    },
+    {
+      "hex": "2527",
+      "name": "Pimane"
+    },
+    {
+      "hex": "2621",
+      "name": "Fosey"
+    },
+    {
+      "hex": "2624",
+      "name": "Mercury"
+    },
+    {
+      "hex": "2627",
+      "name": "Tivid"
+    },
+    {
+      "hex": "2726",
+      "name": "Carey"
+    },
+    {
+      "hex": "2728",
+      "name": "Duale"
+    },
+    {
+      "hex": "2824",
+      "name": "Catuz"
+    },
+    {
+      "hex": "2827",
+      "name": "Meleto"
+    },
+    {
+      "hex": "2828",
+      "name": "Hexos"
+    },
+    {
+      "hex": "2830",
+      "name": "Pedase"
+    },
+    {
+      "hex": "2924",
+      "name": "Moran"
+    },
+    {
+      "hex": "2927",
+      "name": "Maitz"
+    },
+    {
+      "hex": "2930",
+      "name": "Mainz"
+    },
+    {
+      "hex": "3021",
+      "name": "Brodie"
+    },
+    {
+      "hex": "3022",
+      "name": "Rorise"
+    },
+    {
+      "hex": "3024",
+      "name": "Jokotre"
+    },
+    {
+      "hex": "3025",
+      "name": "Fornice"
+    },
+    {
+      "hex": "3026",
+      "name": "Grille"
+    },
+    {
+      "hex": "3029",
+      "name": "Palique"
+    },
+    {
+      "hex": "3030",
+      "name": "Nexine"
+    },
+    {
+      "hex": "3123",
+      "name": "Nadrin"
+    },
+    {
+      "hex": "3124",
+      "name": "Mora"
+    },
+    {
+      "hex": "3223",
+      "name": "Dojodo"
+    },
+    {
+      "hex": "3228",
+      "name": "Fenl's Gren"
+    }
+  ],
+  "M Five Sisters": [
+    {
+      "hex": "0133",
+      "name": "Emape"
+    },
+    {
+      "hex": "0139",
+      "name": "Raweh"
+    },
+    {
+      "hex": "0140",
+      "name": "876-574"
+    },
+    {
+      "hex": "0231",
+      "name": "Saxe"
+    },
+    {
+      "hex": "0236",
+      "name": "Andor"
+    },
+    {
+      "hex": "0240",
+      "name": "769-422"
+    },
+    {
+      "hex": "0332",
+      "name": "Gothe"
+    },
+    {
+      "hex": "0333",
+      "name": "Mirriam"
+    },
+    {
+      "hex": "0336",
+      "name": "Candory"
+    },
+    {
+      "hex": "0340",
+      "name": "Wonderay"
+    },
+    {
+      "hex": "0433",
+      "name": "Jone"
+    },
+    {
+      "hex": "0440",
+      "name": "Jinx"
+    },
+    {
+      "hex": "0532",
+      "name": "Ucella"
+    },
+    {
+      "hex": "0533",
+      "name": "Penelope"
+    },
+    {
+      "hex": "0534",
+      "name": "Karin"
+    },
+    {
+      "hex": "0538",
+      "name": "Wonstar"
+    },
+    {
+      "hex": "0539",
+      "name": "Froin"
+    },
+    {
+      "hex": "0632",
+      "name": "Gohature"
+    },
+    {
+      "hex": "0637",
+      "name": "Quhaiathat"
+    },
+    {
+      "hex": "0638",
+      "name": "Lakou"
+    },
+    {
+      "hex": "0731",
+      "name": "Ralhe"
+    },
+    {
+      "hex": "0732",
+      "name": "Iderati"
+    },
+    {
+      "hex": "0739",
+      "name": "Tondoul"
+    },
+    {
+      "hex": "0834",
+      "name": "875-496"
+    },
+    {
+      "hex": "0837",
+      "name": "Ochecate"
+    },
+    {
+      "hex": "0838",
+      "name": "Mewey"
+    },
+    {
+      "hex": "0840",
+      "name": "975-452"
+    }
+  ],
+  "N District 268": [
+    {
+      "hex": "0931",
+      "name": "Asteltine"
+    },
+    {
+      "hex": "0938",
+      "name": "Inchin"
+    },
+    {
+      "hex": "0940",
+      "name": "Singer"
+    },
+    {
+      "hex": "1031",
+      "name": "567-908"
+    },
+    {
+      "hex": "1037",
+      "name": "Avastan"
+    },
+    {
+      "hex": "1040",
+      "name": "Kuai Qing"
+    },
+    {
+      "hex": "1131",
+      "name": "Faldor"
+    },
+    {
+      "hex": "1132",
+      "name": "Bowman"
+    },
+    {
+      "hex": "1133",
+      "name": "Squallia"
+    },
+    {
+      "hex": "1138",
+      "name": "Tarsus"
+    },
+    {
+      "hex": "1232",
+      "name": "Walston"
+    },
+    {
+      "hex": "1233",
+      "name": "Flexos"
+    },
+    {
+      "hex": "1237",
+      "name": "Collace"
+    },
+    {
+      "hex": "1238",
+      "name": "Pavabid"
+    },
+    {
+      "hex": "1331",
+      "name": "Datrillian"
+    },
+    {
+      "hex": "1332",
+      "name": "Nirton"
+    },
+    {
+      "hex": "1337",
+      "name": "Judice"
+    },
+    {
+      "hex": "1339",
+      "name": "Trexalon"
+    },
+    {
+      "hex": "1340",
+      "name": "Motmos"
+    },
+    {
+      "hex": "1433",
+      "name": "Noctocol"
+    },
+    {
+      "hex": "1434",
+      "name": "Tarkine"
+    },
+    {
+      "hex": "1435",
+      "name": "Dallia"
+    },
+    {
+      "hex": "1436",
+      "name": "Talos"
+    },
+    {
+      "hex": "1531",
+      "name": "Dawnworld"
+    },
+    {
+      "hex": "1532",
+      "name": "Elixabeth"
+    },
+    {
+      "hex": "1533",
+      "name": "Forine"
+    },
+    {
+      "hex": "1537",
+      "name": "Mertactor"
+    },
+    {
+      "hex": "1631",
+      "name": "Talchek"
+    },
+    {
+      "hex": "1632",
+      "name": "Milagro"
+    },
+    {
+      "hex": "1634",
+      "name": "Pagaton"
+    },
+    {
+      "hex": "1635",
+      "name": "Binges"
+    },
+    {
+      "hex": "1637",
+      "name": "Mille Falcs"
+    }
+  ],
+  "O Glisten": [
+    {
+      "hex": "1731",
+      "name": "Grote"
+    },
+    {
+      "hex": "1733",
+      "name": "Lydia"
+    },
+    {
+      "hex": "1736",
+      "name": "Melior"
+    },
+    {
+      "hex": "1737",
+      "name": "Egypt"
+    },
+    {
+      "hex": "1739",
+      "name": "Aster"
+    },
+    {
+      "hex": "1836",
+      "name": "Callia"
+    },
+    {
+      "hex": "1932",
+      "name": "Mithras"
+    },
+    {
+      "hex": "1934",
+      "name": "Weiss"
+    },
+    {
+      "hex": "1935",
+      "name": "Windsor"
+    },
+    {
+      "hex": "1937",
+      "name": "Overnale"
+    },
+    {
+      "hex": "1938",
+      "name": "New Rome"
+    },
+    {
+      "hex": "1939",
+      "name": "Craw"
+    },
+    {
+      "hex": "2035",
+      "name": "Aki"
+    },
+    {
+      "hex": "2036",
+      "name": "Glisten"
+    },
+    {
+      "hex": "2038",
+      "name": "Trane"
+    },
+    {
+      "hex": "2132",
+      "name": "Centry"
+    },
+    {
+      "hex": "2134",
+      "name": "Caledonia"
+    },
+    {
+      "hex": "2137",
+      "name": "Sorel"
+    },
+    {
+      "hex": "2138",
+      "name": "Horosho"
+    },
+    {
+      "hex": "2140",
+      "name": "Romar"
+    },
+    {
+      "hex": "2231",
+      "name": "Marastan"
+    },
+    {
+      "hex": "2232",
+      "name": "Crout"
+    },
+    {
+      "hex": "2233",
+      "name": "Tirem"
+    },
+    {
+      "hex": "2234",
+      "name": "Inthe"
+    },
+    {
+      "hex": "2236",
+      "name": "Tsarina"
+    },
+    {
+      "hex": "2237",
+      "name": "Wurzburg"
+    },
+    {
+      "hex": "2331",
+      "name": "Bicornn"
+    },
+    {
+      "hex": "2334",
+      "name": "Ffudn"
+    },
+    {
+      "hex": "2336",
+      "name": "Bendor"
+    }
+  ],
+  "P Trin's Veil": [
+    {
+      "hex": "2534",
+      "name": "Burtson"
+    },
+    {
+      "hex": "2536",
+      "name": "Squanine"
+    },
+    {
+      "hex": "2537",
+      "name": "Dobham"
+    },
+    {
+      "hex": "2538",
+      "name": "Pyramus"
+    },
+    {
+      "hex": "2539",
+      "name": "Thisbe"
+    },
+    {
+      "hex": "2540",
+      "name": "Aramis"
+    },
+    {
+      "hex": "2637",
+      "name": "Robin"
+    },
+    {
+      "hex": "2638",
+      "name": "D'Mara"
+    },
+    {
+      "hex": "2639",
+      "name": "Keltchner"
+    },
+    {
+      "hex": "2731",
+      "name": "Tussinian"
+    },
+    {
+      "hex": "2733",
+      "name": "Edenelt"
+    },
+    {
+      "hex": "2735",
+      "name": "Conway"
+    },
+    {
+      "hex": "2739",
+      "name": "Dodds"
+    },
+    {
+      "hex": "2832",
+      "name": "Leander"
+    },
+    {
+      "hex": "2833",
+      "name": "Pepernium"
+    },
+    {
+      "hex": "2834",
+      "name": "Traltha"
+    },
+    {
+      "hex": "2839",
+      "name": "Farquahar"
+    },
+    {
+      "hex": "2933",
+      "name": "Raydrad"
+    },
+    {
+      "hex": "2934",
+      "name": "Zyra"
+    },
+    {
+      "hex": "2935",
+      "name": "Murchison"
+    },
+    {
+      "hex": "2936",
+      "name": "Hammermium"
+    },
+    {
+      "hex": "2940",
+      "name": "Thornnastor"
+    },
+    {
+      "hex": "3032",
+      "name": "Katarulu"
+    },
+    {
+      "hex": "3035",
+      "name": "Prilissa"
+    },
+    {
+      "hex": "3038",
+      "name": "Tee-Tee-Tee"
+    },
+    {
+      "hex": "3039",
+      "name": "Youghal"
+    },
+    {
+      "hex": "3040",
+      "name": "Tenelphi"
+    },
+    {
+      "hex": "3138",
+      "name": "Zephyr"
+    },
+    {
+      "hex": "3139",
+      "name": "Chamois"
+    },
+    {
+      "hex": "3233",
+      "name": "Ramiva"
+    },
+    {
+      "hex": "3235",
+      "name": "Trin"
+    },
+    {
+      "hex": "3236",
+      "name": "Hazel"
+    }
+  ]
+}

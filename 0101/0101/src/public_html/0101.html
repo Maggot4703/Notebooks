@@ -35,13 +35,13 @@
     <!-- SCRIPTS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="./0101_files/w3.js.download"></script>
-    <script src="file:///C:/T5/Spinward%20Marches/TravellerScripts.js"></script>
+    <!-- TravellerScripts.js not yet ported from C:/T5/Spinward Marches/ -->
   </head>
   <body onbeforeunload="return myFunction()">
     <!-- Set Location -->
     <div class="w3-center">
       <a id="demo" onclick="LinkClick()" href="0-Stellar.html">Stellar Data</a>
-      <select id="Sector" name="Sector" onchange="SecChange()" disabled="true">
+      <select id="Sector" name="Sector" onchange="SecChange()">
         <option>Spinward Marches</option>
         <option>A'yosea</option>
         <option>Ablaz</option>
@@ -384,8 +384,49 @@
         <option>Vietrienzhits</option>
         <option>Vikrvidrvria</option>
         <option>Vland</option>
+        <option>Vlofrkla</option>
+        <option>Voblezitl</option>
+        <option>Vravrzha</option>
+        <option>Waroatahe</option>
+        <option>Windhorn</option>
+        <option>Wrence</option>
+        <option>Wrenton</option>
+        <option>X'kug</option>
+        <option>Xaagr</option>
+        <option>Xeeleer</option>
+        <option>Yahehwe</option>
+        <option>Yejiariebr</option>
+        <option>Yiklerzdanzh</option>
+        <option>Yikvrior</option>
+        <option>Zabrziklezh</option>
+        <option>Zao Kfeng Ig Grilokh</option>
+        <option>Zarushagar</option>
+        <option>Zdafeflzadr</option>
+        <option>Zdechrebrvle</option>
+        <option>Zdiedeiant</option>
+        <option>Zdielbeppria</option>
+        <option>Zdienzfiaia</option>
+        <option>Zdietablie</option>
+        <option>Ze'shavrav</option>
+        <option>Zentse</option>
+        <option>Zenzhej</option>
+        <option>Zhechinje</option>
+        <option>Zhejnzhiikl</option>
+        <option>Zhenzhbrivtlo</option>
+        <option>Zhetsefr</option>
+        <option>Zhevreklnchi</option>
+        <option>Zhiaqrqiats</option>
+        <option>Zhiatienjiaz</option>
+        <option>Zhiejqrinzho</option>
+        <option>Zhiensh</option>
+        <option>Zhodane</option>
+        <option>Ziafrplians</option>
+        <option>Zietsebl</option>
+        <option>Zietssha</option>
+        <option>Zii</option>
+        <option>Zortakh</option>
       </select> / 
-      <select id="Subsector" name="Subsectors" onchange="SubChange()" disabled="true">
+      <select id="Subsector" name="Subsectors" onchange="SubChange()">
         <option>A Cronor</option>
         <option>B Jewell</option>
         <option>C Regina</option>
@@ -434,9 +475,89 @@
     <script onkeypress="keyPress()" id="SELECTION" onloadeddata="save()" onload="save()" >
       var sec = "Spinward Marches";
       var sub = "A Cronor";
-      var sys = "0101-Mainworld";
+      var sys = "0101";
+
+      // worldsCache["sector:subsector"] -> [{hex, name}, ...]
+      var worldsCache = {};
+      // subsectorLetters["sector:subsector"] -> letter ("A".."P")
+      var subsectorLetters = {};
+
+      // Pre-seed Spinward Marches subsector letter map
+      var SM_SUBS = [
+        {l:"A",n:"Cronor"},{l:"B",n:"Jewell"},{l:"C",n:"Regina"},{l:"D",n:"Aramis"},
+        {l:"E",n:"Querion"},{l:"F",n:"Vilis"},{l:"G",n:"Lanth"},{l:"H",n:"Rhylanor"},
+        {l:"I",n:"Darrian"},{l:"J",n:"Sword Worlds"},{l:"K",n:"Lunion"},
+        {l:"L",n:"Mora"},{l:"M",n:"Five Sisters"},{l:"N",n:"District 268"},
+        {l:"O",n:"Glisten"},{l:"P",n:"Trin's Veil"}
+      ];
+      SM_SUBS.forEach(function(s) {
+        subsectorLetters["Spinward Marches:" + s.l + " " + s.n] = s.l;
+      });
+
+      // Parse tab-delimited sec data (Sector, SS, Hex, Name, ...)
+      function parseSecTabDelimited(text) {
+        var worlds = [];
+        text.split('\n').forEach(function(line) {
+          line = line.trim();
+          if (!line || line.charAt(0) === '#') return;
+          var parts = line.split('\t');
+          if (parts.length < 4) return;
+          var hex = parts[2].trim();
+          var name = parts[3].trim();
+          if (hex === 'Hex' || !/^\d+$/.test(hex)) return;
+          worlds.push({hex: hex, name: name});
+        });
+        return worlds;
+      }
+
+      // Load Spinward Marches world list from static JSON, then initialise display
+      fetch('./TXT/worlds-by-subsector.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          Object.keys(data).forEach(function(label) {
+            worldsCache['Spinward Marches:' + label] = data[label];
+          });
+          console.log('worldsCache seeded for Spinward Marches');
+          _restoreState();
+        })
+        .catch(function(err) {
+          console.warn('worlds-by-subsector.json not found, will fetch on demand:', err);
+          _restoreState();
+        });
+
+      function _restoreState() {
+        var savedSec = localStorage.getItem('sec');
+        var savedSub = localStorage.getItem('sub');
+        if (savedSec) {
+          document.getElementById('Sector').value = savedSec;
+          sec = savedSec;
+        }
+        // If saved sector differs from Spinward Marches, the subsector list
+        // needs refreshing — let SecChange handle it via fetchAndLoadSubsectors.
+        // Otherwise just restore sub directly.
+        if (sec !== 'Spinward Marches') {
+          fetchAndLoadSubsectors(sec, savedSub);
+          return;
+        }
+        if (savedSub) {
+          document.getElementById('Subsector').value = savedSub;
+          sub = savedSub;
+        }
+        populateSysList(sec, sub);
+        var savedHexJSON = localStorage.getItem('hexJSON');
+        var savedHex = savedHexJSON ? JSON.parse(savedHexJSON).hex : null;
+        if (savedHex) {
+          var sysEl = document.getElementById('Sys');
+          for (var i = 0; i < sysEl.options.length; i++) {
+            if (sysEl.options[i].value === savedHex) { sysEl.selectedIndex = i; break; }
+          }
+        }
+        save();
+        load();
+      }
+
       function Startup() {
-        console.log("Startup()");
+        console.log('Startup()');
         save();
       }
     </script>
@@ -448,7 +569,7 @@
     </script>    
     <!-- Main Map -->
     <div class="w3-center">
-      <img id="pic0" src="./0101_files/0101-Maps.gif" usemap="#Maps" onclick="picClickMain()" width="600" height="600" alt="eh?">
+      <img id="pic0" src="./JPG/0101-Maps.jpg" usemap="#Maps" onclick="picClickMain()" width="600" height="600" alt="eh?">
       <map accesskey="h" id="hexnum" name="Maps">
         <!-- SUBSECTOR MAP -->
         <area shape="rect" coords="400,0,600,255" alt="SubsectorMap" href="Subsector.html">
@@ -466,60 +587,60 @@
     <div class="w3-row">
       <div class="w3-col s4 w3-center">
         <a id="sdb" onclick="LinkClick()" href="1-Scout.html">Scouts/SDBs</a>
-        <img id="pic1" src="./0101_files/0101-SDBs.gif" width="200" height="100" alt="eh?" onclick="picClick('sdb')">
+        <img id="pic1" src="./JPG/0101-SDBs.jpg" width="200" height="100" alt="eh?" onclick="picClick('sdb')">
       </div>
       <div class="w3-col s4 w3-center">
         <a id="ron" onclick="LinkClick()" href="2-Navy.html">Navy/Rons</a>
-        <img id="pic2" src="./0101_files/0101-Squadrons.gif" width="200" height="100" alt="eh?" onclick="picClick('ron')">
+        <img id="pic2" src="./JPG/0101-Squadrons.jpg" width="200" height="100" alt="eh?" onclick="picClick('ron')">
       </div>
       <div class="w3-col s4 w3-center">
         <a id="troop" onclick="LinkClick()" href="3-Marine.html">Marine/Troops</a>
-        <img id="pic3" src="./0101_files/0101-Troops.gif" width="200" height="100" alt="eh?" onclick="picClick('troop')">
+        <img id="pic3" src="./JPG/0101-Troops.jpg" width="200" height="100" alt="eh?" onclick="picClick('troop')">
       </div>
     </div>
     <!-- Defensive Capability -->
     <div class="w3-row">
       <div class="w3-col s4 w3-center">
         <a id="defence" onclick="LinkClick(id)" href="4-Army.html">Army/Defences</a>
-        <img id="pic4" src="./0101_files/0101-Defences.gif" width="200" height="100" alt="eh?" onclick="picClick('defence')">
+        <img id="pic4" src="./JPG/0101-Defences.jpg" width="200" height="100" alt="eh?" onclick="picClick('defence')">
       </div>
       <div class="w3-col s4 w3-center">
         <a id="population" onclick="LinkClick(id)" href="5-Other.html">Other/Pop</a>
-        <img id="pic5" src="./0101_files/0101-Population.gif" width="200" height="100" alt="eh?" onclick="picClick('population')">
+        <img id="pic5" src="./JPG/0101-Population.jpg" width="200" height="100" alt="eh?" onclick="picClick('population')">
       </div>
       <div class="w3-col s4 w3-center">
         <a id="belt"  onclick="LinkClick(id)"href="6-Merchant.html">Merchant/Belts</a>
-        <img id="pic6" src="./0101_files/0101-Belts.gif" width="200" height="100" alt="eh?" onclick="picClick('belt')">
+        <img id="pic6" src="./JPG/0101-Belts.jpg" width="200" height="100" alt="eh?" onclick="picClick('belt')">
       </div>
     </div>
     <!-- Commerce Capability -->
     <div class="w3-row">
       <div class="w3-col s4 w3-center">
         <a id="giant" onclick="LinkClick(id)" href="7-Giants.html">Merchant/Giants</a>
-        <img id="pic7" src="./0101_files/0101-Gas Giants.gif" width="200" height="100" alt="eh?" onclick="picClick('giant')">
+        <img id="pic7" src="./JPG/0101-Gas Giants.jpg" width="200" height="100" alt="eh?" onclick="picClick('giant')">
       </div>
       <div class="w3-col s4 w3-center">
         <a id="world" onclick="LinkClick(id)" href="8-Mainworld.html">Mainworld Data</a>
-        <img id="pic8" src="./0101_files/0101-Mainworld.gif" width="200" height="100" alt="eh?" onclick="picClick('world')">
+        <img id="pic8" src="./JPG/0101-Mainworld.jpg" width="200" height="100" alt="eh?" onclick="picClick('world')">
       </div>
       <div class="w3-col s4 w3-center">
         <a id="worlds" onclick="LinkClick(id)" href="9-Worlds.html">Merchant/Worlds</a>
-        <img id="pic9" src="./0101_files/0101-Worlds.gif" width="200" height="100" alt="eh?" onclick="picClick('worlds')">
+        <img id="pic9" src="./JPG/0101-Worlds.jpg" width="200" height="100" alt="eh?" onclick="picClick('worlds')">
       </div>
     </div>
     <!-- Commerce Capability -->
     <div class="w3-row">
       <div class="w3-col s4 w3-center">
         <a id="giant1a" onclick="LinkClick(id)" href="10-Invader.html">Merchant/Giants</a>
-        <img id="pic7a" src="./0101_files/0101-Gas Giants.gif" width="200" height="100" alt="eh?" onclick="picClick('giant')">
+        <img id="pic7a" src="./JPG/0101-Gas Giants.jpg" width="200" height="100" alt="eh?" onclick="picClick('giant')">
       </div>
       <div class="w3-col s4 w3-center">
         <a id="world1a" onclick="LinkClick(id)" href="11-Defender.html">Mainworld Data</a>
-        <img id="pic8a" src="./0101_files/0101-Mainworld.gif" width="200" height="100" alt="eh?" onclick="picClick('world')">
+        <img id="pic8a" src="./JPG/0101-Mainworld.jpg" width="200" height="100" alt="eh?" onclick="picClick('world')">
       </div>
       <div class="w3-col s4 w3-center">
         <a id="worlds1a" onclick="LinkClick(id)" href="12-Time.html">Merchant/Worlds</a>
-        <img id="pic9a" src="./0101_files/0101-Worlds.gif" width="200" height="100" alt="eh?" onclick="picClick('worlds')">
+        <img id="pic9a" src="./JPG/0101-Worlds.jpg" width="200" height="100" alt="eh?" onclick="picClick('worlds')">
       </div>
     </div>
     <!-- picClickMain -->
@@ -640,17 +761,96 @@
     <!-- Sector Change -->
     <script>
       function SecChange() {
-        console.log("SecChange()");
-        console.log("  sec = " + sec);
-        SubChange();
+        sec = document.getElementById('Sector').value;
+        console.log('SecChange() sec =', sec);
+        localStorage.setItem('sec', sec);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        fetchAndLoadSubsectors(sec, null);
+      }
+
+      // Fetch subsector names from TravellerMap metadata API, repopulate
+      // Subsector dropdown, then trigger SubChange.
+      // restoreSub: if provided and found in new list, pre-select it.
+      function fetchAndLoadSubsectors(sector, restoreSub) {
+        fetch('https://travellermap.com/api/metadata?sector=' + encodeURIComponent(sector))
+          .then(function(r) { return r.json(); })
+          .then(function(data) {
+            var subs = (data.Subsectors || []).slice().sort(function(a, b) {
+              return a.Index < b.Index ? -1 : 1;
+            });
+            var subEl = document.getElementById('Subsector');
+            subEl.innerHTML = '';
+            subs.forEach(function(s) {
+              var label = s.Index + ' ' + s.Name;
+              subsectorLetters[sector + ':' + label] = s.Index;
+              var opt = document.createElement('option');
+              opt.value = label;
+              opt.text = label;
+              subEl.appendChild(opt);
+            });
+            console.log('Subsector list loaded for', sector, ':', subs.length, 'subsectors');
+            if (restoreSub && subEl.querySelector('option[value="' + restoreSub + '"]')) {
+              subEl.value = restoreSub;
+            }
+            SubChange();
+          })
+          .catch(function(err) {
+            console.warn('fetchAndLoadSubsectors failed:', err);
+            SubChange();
+          });
       }
     </script>
     <!-- Subsector Change -->
     <script>
       function SubChange() {
-        console.log("SubChange()");
-        console.log("  sub = " + sub);
-        SysChange();
+        sub = document.getElementById('Subsector').value;
+        console.log('SubChange() sub =', sub);
+        localStorage.setItem('sub', sub);
+
+        var cacheKey = sec + ':' + sub;
+        if (worldsCache[cacheKey]) {
+          populateSysList(sec, sub);
+          SysChange();
+          return;
+        }
+
+        // Fetch from TravellerMap API (async)
+        var letter = subsectorLetters[cacheKey] || sub.charAt(0);
+        var url = 'https://travellermap.com/api/sec?sector=' + encodeURIComponent(sec)
+                  + '&subsector=' + encodeURIComponent(letter) + '&type=TabDelimited';
+        fetch(url)
+          .then(function(r) { return r.text(); })
+          .then(function(text) {
+            worldsCache[cacheKey] = parseSecTabDelimited(text);
+            console.log('Fetched', worldsCache[cacheKey].length, 'worlds for', cacheKey);
+            populateSysList(sec, sub);
+            SysChange();
+          })
+          .catch(function(err) {
+            console.warn('SubChange: world fetch failed:', err);
+            populateSysList(sec, sub);
+            SysChange();
+          });
+      }
+
+      function populateSysList(sector, subsectorLabel) {
+        var sysEl = document.getElementById('Sys');
+        var worlds = worldsCache[sector + ':' + subsectorLabel];
+        sysEl.innerHTML = '';
+        if (!worlds || worlds.length === 0) {
+          var opt = document.createElement('option');
+          opt.value = '';
+          opt.text = '(loading...)';
+          sysEl.appendChild(opt);
+          return;
+        }
+        worlds.forEach(function(w) {
+          var opt = document.createElement('option');
+          opt.value = w.hex;
+          opt.text = w.hex + ' ' + w.name;
+          sysEl.appendChild(opt);
+        });
+        console.log('populateSysList:', sector, subsectorLabel, worlds.length, 'worlds');
       }
     </script>
     <!-- System Change -->
@@ -674,27 +874,33 @@
         //console.log("sub = " + sub);
         sys = document.getElementById("Sys").value;
         //console.log("sys = " + sys);
-        p = "./0101_files/" + sys;
-        path0 = p + "-Maps.gif";
-        path1 = p + "-SDBs.gif";
-        path2 = p + "-Squadrons.gif";
-        path3 = p + "-Troops.gif";
-        path4 = p + "-Defences.gif";
-        path5 = p + "-Population.gif";
-        path6 = p + "-Belts.gif";
-        path7 = p + "-Gas Giants.gif";
-        path8 = p + "-Mainworld.gif";
-        path9 = p + "-Worlds.gif";
-        document.getElementById("pic0").src = path0;
-        document.getElementById("pic1").src = path1;
-        document.getElementById("pic2").src = path2;
-        document.getElementById("pic3").src = path3;
-        document.getElementById("pic4").src = path4;
-        document.getElementById("pic5").src = path5;
-        document.getElementById("pic6").src = path6;
-        document.getElementById("pic7").src = path7;
-        document.getElementById("pic8").src = path8;
-        document.getElementById("pic9").src = path9;
+        p = "./JPG/" + sys;
+        path0 = p + "-Maps.jpg";
+        path1 = p + "-SDBs.jpg";
+        path2 = p + "-Squadrons.jpg";
+        path3 = p + "-Troops.jpg";
+        path4 = p + "-Defences.jpg";
+        path5 = p + "-Population.jpg";
+        path6 = p + "-Belts.jpg";
+        path7 = p + "-Gas Giants.jpg";
+        path8 = p + "-Mainworld.jpg";
+        path9 = p + "-Worlds.jpg";
+        var fallback = './JPG/placeholder.jpg';
+        function setImg(id, src) {
+          var el = document.getElementById(id);
+          el.onerror = function() { if (this.src !== fallback) this.src = fallback; };
+          el.src = src;
+        }
+        setImg('pic0', path0);
+        setImg('pic1', path1);
+        setImg('pic2', path2);
+        setImg('pic3', path3);
+        setImg('pic4', path4);
+        setImg('pic5', path5);
+        setImg('pic6', path6);
+        setImg('pic7', path7);
+        setImg('pic8', path8);
+        setImg('pic9', path9);
         save();
       }
 
