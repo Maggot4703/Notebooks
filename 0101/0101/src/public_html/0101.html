@@ -476,7 +476,7 @@
       var sec = "Spinward Marches";
       var sub = "A Cronor";
       var sys = "0101";
-      var _fetchGen = 0;  // incremented on each SecChange to cancel stale fetches
+      var _fetchGen = 0;
 
       // worldsCache["sector:subsector"] -> [{hex, name}, ...]
       var worldsCache = {};
@@ -650,7 +650,7 @@
         console.log("picClickMain()");
         var x = document.getElementById("demo");
         //console.log("x = " + x);
-        col = "white";
+        var col = "white";
         document.body.style.backgroundColor = col;
         console.log("col = " + col);
         console.log("x.toString() = " + x.toString());
@@ -819,10 +819,10 @@
         }
 
         // Fetch from TravellerMap API (async)
-        var myGen = _fetchGen;
         var letter = subsectorLetters[cacheKey] || sub.charAt(0);
         var url = 'https://travellermap.com/api/sec?sector=' + encodeURIComponent(sec)
                   + '&subsector=' + encodeURIComponent(letter) + '&type=TabDelimited';
+        var myGen = _fetchGen;
         fetch(url)
           .then(function(r) { return r.text(); })
           .then(function(text) {
@@ -904,10 +904,10 @@
         setImg('pic5', path5);
         setImg('pic6', path6);
         setImg('pic7', path7);
-        setImg('pic7a', path7);
         setImg('pic8', path8);
-        setImg('pic8a', path8);
         setImg('pic9', path9);
+        setImg('pic7a', path7);
+        setImg('pic8a', path8);
         setImg('pic9a', path9);
         save();
       }
