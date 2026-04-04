@@ -769,29 +769,33 @@
         fetchAndLoadSubsectors(sec, null);
       }
 
-      // Fetch subsector names from TravellerMap metadata API, repopulate
-      // Subsector dropdown, then trigger SubChange.
-      // restoreSub: if provided and found in new list, pre-select it.
+      // Rebuild Subsector dropdown from a sorted subs array.
+      function _buildSubsectorOptions(sector, subs) {
+        var subEl = document.getElementById('Subsector');
+        subEl.innerHTML = '';
+        subs.forEach(function(s) {
+          var label = s.Index + ' ' + s.Name;
+          subsectorLetters[sector + ':' + label] = s.Index;
+          subEl.add(new Option(label, label));
+        });
+        console.log('Subsector list loaded for', sector, ':', subs.length, 'subsectors');
+      }
+
+      // Fetch subsector list from TravellerMap, rebuild dropdown, trigger SubChange.
       function fetchAndLoadSubsectors(sector, restoreSub) {
         var myGen = ++_fetchGen;
         fetch('https://travellermap.com/api/metadata?sector=' + encodeURIComponent(sector))
-          .then(function(r) { return r.json(); })
+          .then(function(r) {
+            if (!r.ok) throw new Error('HTTP ' + r.status + ' for sector: ' + sector);
+            return r.json();
+          })
           .then(function(data) {
             if (myGen !== _fetchGen) return;
             var subs = (data.Subsectors || []).slice().sort(function(a, b) {
               return a.Index < b.Index ? -1 : 1;
             });
+            _buildSubsectorOptions(sector, subs);
             var subEl = document.getElementById('Subsector');
-            subEl.innerHTML = '';
-            subs.forEach(function(s) {
-              var label = s.Index + ' ' + s.Name;
-              subsectorLetters[sector + ':' + label] = s.Index;
-              var opt = document.createElement('option');
-              opt.value = label;
-              opt.text = label;
-              subEl.appendChild(opt);
-            });
-            console.log('Subsector list loaded for', sector, ':', subs.length, 'subsectors');
             if (restoreSub && subEl.querySelector('option[value="' + restoreSub + '"]')) {
               subEl.value = restoreSub;
             }
@@ -799,8 +803,10 @@
           })
           .catch(function(err) {
             if (myGen !== _fetchGen) return;
-            console.warn('fetchAndLoadSubsectors failed:', err);
-            SubChange();
+            console.warn('fetchAndLoadSubsectors failed:', err.message || String(err));
+            var subEl = document.getElementById('Subsector');
+            subEl.innerHTML = '';
+            subEl.add(new Option('(error: ' + (err.message || err) + ')', ''));
           });
       }
     </script>
