@@ -6,7 +6,7 @@ Serves static files as before, plus two REST endpoints to persist textarea text:
   POST /api/text/<key>  ->  saves request body to saved/<key>.txt
 
 Run: python server.py
-Then open: http://localhost:8080/1-Scout.html
+Then open: http://localhost:8080/0101.html
 """
 import http.server
 import os
@@ -112,6 +112,6 @@ if __name__ == "__main__":
     with http.server.ThreadingHTTPServer(("", PORT), Handler) as httpd:
         print(f"Serving on http://localhost:{PORT}/")
         threading.Thread(target=_watchdog, args=(httpd,), daemon=True).start()
-        threading.Timer(1.0, webbrowser.open, args=(f"http://localhost:{PORT}/1-Scout.html",)).start()
+        threading.Timer(1.0, webbrowser.open, args=(f"http://localhost:{PORT}/0101.html",)).start()
         httpd.serve_forever()
     print("Server stopped.")
