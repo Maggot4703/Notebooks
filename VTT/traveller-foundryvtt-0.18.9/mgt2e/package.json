@@ -16,8 +16,9 @@
   "private": true,
   "dependencies": {
     "gulp": "^4",
-    "gulp-autoprefixer": "^8",
-    "gulp-sass": "^4",
-    "gulp-sourcemaps": "^3"
+    "gulp-autoprefixer": "^9",
+    "gulp-sass": "^5",
+    "gulp-sourcemaps": "^3",
+    "sass": "^1"
   }
 }
