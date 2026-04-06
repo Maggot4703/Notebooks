@@ -3,7 +3,7 @@ from CREW import Crew
 
 def main():
     print("Hello from crew!")
-    python /home/me/Notebooks/CREW/Crew/Crew.py
+    # To run Crew.py, use subprocess or run it directly from the terminal.
 
 
 if __name__ == "__main__":
