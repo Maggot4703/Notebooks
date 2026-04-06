@@ -43,7 +43,7 @@
 
 --- R3C3 | NAVY | X9.png ---
   Unit ID: 0705 Cipango
-  Ship Code: C0ut
+  Ship Code: C001
   Squadron Type: Cruiser
   Jump: J-1
   Streamlining: USL

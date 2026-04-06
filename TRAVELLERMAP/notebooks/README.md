@@ -13,3 +13,12 @@ This folder contains Jupyter notebooks for TravellerMap data analysis, visualiza
 - Name notebooks by topic or workflow
 - Keep notebooks organized for easy reference
 # This file marks the notebooks directory for Jupyter notebooks.
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/TRAVELLERMAP/notebooks
+uv sync
+uv run jupyter lab
+```

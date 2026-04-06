@@ -23,8 +23,6 @@ Root-level convenience notebooks mirror key workspace notebooks (for example `ai
 - `uv` (primary dependency/environment tool)
 - JupyterLab
 
-Optional fallback workflow is available with `pipenv` in workspaces that include a `Pipfile`.
-
 ## Quick Start (Root)
 
 ```bash
@@ -91,7 +89,7 @@ mkdir -p "/home/me/Notebooks/${PROJECT_NAME}"
 cd "/home/me/Notebooks/${PROJECT_NAME}"
 uv venv
 source .venv/bin/activate
-uv pip install jupyterlab ipykernel pandas
+uv add jupyterlab ipykernel pandas
 uv pip freeze > requirements.txt
 cp /home/me/Notebooks/AI/startup.txt ./startup.txt
 sed -i "2s|^cd .*|cd /home/me/Notebooks/${PROJECT_NAME}|" ./startup.txt
@@ -162,3 +160,12 @@ To convert all `.md` files in `/home/me/Notebooks` (recursively) to PDF with ful
 - If you see LaTeX errors about missing Unicode characters, make sure you are using `--pdf-engine=xelatex` and a Unicode font (like DejaVu or Noto).
 - For other font issues, try `-V mainfont="Noto Sans" -V monofont="Noto Sans Mono"` if those fonts are installed.
 =======
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks
+uv sync
+uv run python main.py
+```

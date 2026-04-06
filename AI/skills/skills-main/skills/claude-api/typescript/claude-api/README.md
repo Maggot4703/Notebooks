@@ -311,3 +311,12 @@ const countResponse = await client.messages.countTokens({
 const estimatedInputCost = countResponse.input_tokens * 0.000005; // $5/1M tokens
 console.log(`Estimated input cost: $${estimatedInputCost.toFixed(4)}`);
 ```
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/AI/skills/skills-main/skills/claude-api/typescript/claude-api
+uv sync
+uv run jupyter lab
+```

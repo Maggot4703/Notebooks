@@ -6,7 +6,7 @@ This workspace now includes a minimal starter you can copy when you want to add 
 
 ## What was added
 
-- `Pipfile` now declares `crewai`
+- `pyproject.toml` declares `crewai`
 - `src/crewai_skill_demo/tools/world_lookup_tool.py` contains a custom `BaseTool`
 - `src/crewai_skill_demo/tools/grid_overlay_tool.py` wraps existing `Crew.py` grid logic
 - `src/crewai_skill_demo/demo.py` shows how to run the skill locally without wiring a full crew yet
@@ -17,13 +17,13 @@ This workspace now includes a minimal starter you can copy when you want to add 
 From `/home/me/Notebooks/CREW`:
 
 ```bash
-pipenv install --skip-lock
+uv sync
 ```
 
 If you want the optional CrewAI toolkit package as well:
 
 ```bash
-pipenv run python -m pip install "crewai[tools]"
+uv add "crewai[tools]"
 ```
 
 ## File layout
@@ -79,7 +79,7 @@ class MySkillTool(BaseTool):
 Once `crewai` is installed:
 
 ```bash
-pipenv run crewai create tool my_skill
+uv run crewai create tool my_skill
 ```
 
 That is the current CLI shortcut for generating a custom tool scaffold.
@@ -89,7 +89,7 @@ That is the current CLI shortcut for generating a custom tool scaffold.
 Run the included demo:
 
 ```bash
-PYTHONPATH=src pipenv run python -m crewai_skill_demo.demo
+PYTHONPATH=src uv run python -m crewai_skill_demo.demo
 ```
 
 Expected result: a short local lookup result for `Regina`.
@@ -169,3 +169,42 @@ researcher = Agent(
 ```
 
 For actual crew execution, copy `.env.example` to `.env` and fill in the model provider keys you plan to use.
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/CREW
+uv sync
+PYTHONPATH=src uv run python -m crewai_skill_demo.demo
+```
+
+Or, you can run the demo script directly (now safe for both styles):
+
+```bash
+cd /home/me/Notebooks/CREW
+uv sync
+uv run python src/crewai_skill_demo/demo.py
+```
+
+Both commands are supported. The first (module style) is always safe and recommended for most users. The second (direct script) works because demo.py now bootstraps sys.path automatically.
+## Troubleshooting: Missing pandas or other dependencies
+
+If you see an error like:
+
+```
+ModuleNotFoundError: No module named 'pandas'
+```
+
+it means the required package is not installed in the Python environment you are using. If you run `Crew/Crew.py` directly, make sure to install dependencies in the environment you use to launch it. For example, if you are using a virtual environment from another project (like DICTATE), install pandas there:
+
+```bash
+/path/to/venv/bin/pip install pandas
+```
+
+Or, to install in the current environment:
+
+```bash
+pip install pandas
+```
+```

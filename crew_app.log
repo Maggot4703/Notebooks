@@ -234,3 +234,39 @@
 2026-04-01 14:59:25,625 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
 2026-04-01 14:59:26,928 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
 2026-04-01 14:59:26,930 - __main__ - INFO - Main application script finished.
+2026-04-04 22:04:40,030 - __main__ - INFO - Main application script started.
+2026-04-04 22:04:41,386 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-04 22:04:44,536 - root - INFO - Auto-imported 74 modules successfully
+2026-04-04 22:04:44,536 - root - INFO - Skipped 45 modules (expected for script files)
+2026-04-04 22:04:44,536 - root - INFO - Auto-import summary: 74 imported, 45 failed, 23186 skipped, 23305 total files processed
+2026-04-04 22:04:44,546 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-04 22:04:44,730 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-04 22:04:44,731 - root - INFO - Status: Ready - Auto-imported 74 modules (45 failed)
+2026-04-04 22:05:50,337 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-04 22:05:50,338 - __main__ - INFO - Main application script finished.
+2026-04-04 22:05:51,576 - __main__ - INFO - Main application script started.
+2026-04-04 22:05:52,506 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-04 22:05:52,509 - root - INFO - Using cached auto-import results
+2026-04-04 22:05:52,514 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-04 22:05:52,811 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-04 22:05:52,820 - root - INFO - Status: Ready - Auto-imported 74 modules (45 failed)
+2026-04-04 22:06:03,265 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-04 22:06:03,265 - __main__ - INFO - Main application script finished.
+2026-04-04 22:42:43,018 - __main__ - INFO - Main application script started.
+2026-04-04 22:42:45,076 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-04 22:42:52,099 - root - INFO - Auto-imported 74 modules successfully
+2026-04-04 22:42:52,099 - root - INFO - Skipped 45 modules (expected for script files)
+2026-04-04 22:42:52,099 - root - INFO - Auto-import summary: 74 imported, 45 failed, 23186 skipped, 23305 total files processed
+2026-04-04 22:42:52,105 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-04 22:42:52,384 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-04 22:42:52,407 - root - INFO - Status: Ready - Auto-imported 74 modules (45 failed)
+2026-04-04 22:43:20,064 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-04 22:43:20,064 - __main__ - INFO - Main application script finished.
+2026-04-05 13:11:59,381 - __main__ - INFO - Main application script started.
+2026-04-05 13:12:00,515 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-05 13:12:04,000 - root - INFO - Auto-imported 74 modules successfully
+2026-04-05 13:12:04,001 - root - INFO - Skipped 45 modules (expected for script files)
+2026-04-05 13:12:04,001 - root - INFO - Auto-import summary: 74 imported, 45 failed, 23186 skipped, 23305 total files processed
+2026-04-05 13:12:04,014 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-05 13:12:04,164 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-05 13:12:04,165 - root - INFO - Status: Ready - Auto-imported 74 modules (45 failed)

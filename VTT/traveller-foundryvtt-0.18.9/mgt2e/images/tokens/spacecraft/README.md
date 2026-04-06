@@ -20,3 +20,12 @@ to fit onto the following square sizes:
 They don't have to be given these sizes, but it does give a consistent scaling
 across ship sizes, with most ships being a reasonable size. The odd big ship
 will still stand out though as something special.
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/VTT/traveller-foundryvtt-0.18.9/mgt2e/images/tokens/spacecraft
+uv sync
+uv run jupyter lab
+```

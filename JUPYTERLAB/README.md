@@ -14,3 +14,12 @@ This folder is for exploring JupyterLab extensions, configuration, and advanced 
 ## Conventions
 - Keep extension and config experiments organized by topic
 - Use markdown for documentation and code cells for demos
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/JUPYTERLAB
+uv sync
+uv run jupyter lab
+```

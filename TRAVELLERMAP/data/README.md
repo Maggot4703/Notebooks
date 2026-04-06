@@ -13,3 +13,12 @@ This folder stores sector/world data files for Traveller map tools and scripts.
 - Use clear, descriptive filenames for data files
 - Keep raw and processed data organized in subfolders if needed
 # This file marks the data directory for sector/world data files.
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/TRAVELLERMAP/data
+uv sync
+uv run jupyter lab
+```

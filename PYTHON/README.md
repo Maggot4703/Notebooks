@@ -14,3 +14,12 @@ This folder is for general Python learning, experimentation, and notebook-based 
 ## Conventions
 - Organize notebooks and scripts by topic or library
 - Use markdown for explanations and code cells for code
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/PYTHON
+uv sync
+uv run jupyter lab
+```

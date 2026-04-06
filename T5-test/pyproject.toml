@@ -1,0 +1,10 @@
+[project]
+name = "t5-test"
+version = "0.1.0"
+description = "T5-test shared helpers (CardCutter + Crew)"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.0",
+    "pillow>=10.0",
+    "openpyxl>=3.1",
+]

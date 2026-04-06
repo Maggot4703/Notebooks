@@ -14,3 +14,12 @@ This folder contains tools, notebooks, and assets for card-cutter image processi
 ## Conventions
 - Organize scripts and data by function (e.g., image processing, CSVs)
 - Document workflows in markdown and notebooks
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/CARDCUTTER
+uv sync
+uv run jupyter lab
+```

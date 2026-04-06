@@ -72,3 +72,12 @@ crontab -e
 ```
 
 See the script for more options and details.
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/TRAVELLERMAP/docs
+uv sync
+uv run jupyter lab
+```

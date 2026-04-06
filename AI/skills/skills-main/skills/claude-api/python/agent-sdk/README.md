@@ -5,7 +5,7 @@ The Claude Agent SDK provides a higher-level interface for building AI agents wi
 ## Installation
 
 ```bash
-pip install claude-agent-sdk
+uv add claude-agent-sdk
 ```
 
 ---
@@ -253,7 +253,7 @@ try:
         if isinstance(message, ResultMessage):
             print(message.result)
 except CLINotFoundError:
-    print("Claude Code CLI not found. Install with: pip install claude-agent-sdk")
+    print("Claude Code CLI not found. Install with: uv add claude-agent-sdk")
 except CLIConnectionError as e:
     print(f"Connection error: {e}")
 ```
@@ -267,3 +267,12 @@ except CLIConnectionError as e:
 3. **Use appropriate permission modes** — Start with `"default"` and only escalate when needed
 4. **Handle all message types** — Check for `ResultMessage` to get agent output
 5. **Limit max_turns** — Prevent runaway agents with reasonable limits
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/AI/skills/skills-main/skills/claude-api/python/agent-sdk
+uv sync
+uv run jupyter lab
+```

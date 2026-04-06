@@ -4,6 +4,8 @@ DICTATE — Snazzy voice-to-text dictaphone
 Records from microphone and transcribes to screen.
 """
 
+import os
+import sys
 import tkinter as tk
 from tkinter import scrolledtext
 import threading
@@ -34,7 +36,7 @@ class DictaphoneApp:
         'yellow':  '#d29922',
     }
 
-    # ── init ──────────────────────────────────────────────────────────────────
+    # ── init ─────────────────────────────────────────────────────────────────
 
     def __init__(self, root: tk.Tk):
         self.root = root
@@ -52,7 +54,12 @@ class DictaphoneApp:
         if SR_AVAILABLE:
             self.recognizer = sr.Recognizer()
             self.recognizer.dynamic_energy_threshold = True
-            self.microphone = sr.Microphone()
+            with open(os.devnull, 'w') as devnull:
+                old_stderr, sys.stderr = sys.stderr, devnull
+                try:
+                    self.microphone = sr.Microphone()
+                finally:
+                    sys.stderr = old_stderr
 
         self._build_ui()
 
@@ -64,7 +71,7 @@ class DictaphoneApp:
                 'red'
             )
 
-    # ── UI construction ───────────────────────────────────────────────────────
+    # ── UI construction ──────────────────────────────────────────────────────
 
     def _build_ui(self):
         C = self.COLORS
@@ -170,7 +177,7 @@ class DictaphoneApp:
         )
         self._last_lbl.pack(side='right')
 
-    # ── Canvas drawing ────────────────────────────────────────────────────────
+    # ── Canvas drawing ───────────────────────────────────────────────────────
 
     def _draw_mic_button(self):
         C = self.COLORS
@@ -194,11 +201,11 @@ class DictaphoneApp:
     def _draw_waveform(self):
         C = self.COLORS
         n_bars = 10
-        bar_w  = 5
-        gap    = 5
-        cx     = 250
-        r_edge = 52 + 10          # gap from mic circle edge
-        cy     = 60
+        bar_w = 5
+        gap = 5
+        cx = 250
+        r_edge = 52 + 10  # gap from mic circle edge
+        cy = 60
         self._wave_bars = []
 
         for i in range(n_bars):
@@ -220,13 +227,12 @@ class DictaphoneApp:
             )
             self._wave_bars.append(('R', br, x_r, cy))
 
-    # ── Animation ─────────────────────────────────────────────────────────────
+    # ── Animation ────────────────────────────────────────────────────────────
 
     def _animate(self):
         if not self.is_recording:
             return
-        C  = self.COLORS
-        t  = time.time()
+        t = time.time()
         cx, cy = 250, 60
 
         # Pulsing outer ring
@@ -247,7 +253,7 @@ class DictaphoneApp:
         # Animated waveform bars
         max_h = 36
         for idx, (side, bar, x, cy_bar) in enumerate(self._wave_bars):
-            freq  = 2.8 + idx * 0.35
+            freq = 2.8 + idx * 0.35
             phase = idx * 0.7
             h = max_h * (0.12 + 0.88 * abs(math.sin(t * freq + phase)))
             self._canvas.coords(
@@ -281,7 +287,7 @@ class DictaphoneApp:
             self._canvas.coords(bar, x, cy_bar, x + 5, cy_bar)
             self._canvas.itemconfig(bar, fill=C['dim'])
 
-    # ── Recording lifecycle ───────────────────────────────────────────────────
+    # ── Recording lifecycle ──────────────────────────────────────────────────
 
     def _on_canvas_click(self, event):
         cx, cy = 250, 60
@@ -369,7 +375,7 @@ class DictaphoneApp:
                     )
                 )
 
-    # ── Text helpers ──────────────────────────────────────────────────────────
+    # ── Text helpers ─────────────────────────────────────────────────────────
 
     def _append(self, text: str):
         if not text:
@@ -380,7 +386,10 @@ class DictaphoneApp:
         self._text.insert('end', sep + capitalised + '.')
         self._text.see('end')
         self._update_words()
-        preview = capitalised[:50] + '…' if len(capitalised) > 50 else capitalised
+        if len(capitalised) > 50:
+            preview = capitalised[:50] + '…'
+        else:
+            preview = capitalised
         self._last_lbl.config(text=f'Last: "{preview}"')
 
     def _update_words(self):
@@ -396,7 +405,6 @@ class DictaphoneApp:
     def _copy(self):
         self.root.clipboard_clear()
         self.root.clipboard_append(self._text.get('1.0', 'end-1c'))
-        old = self._status_lbl.cget('text')
         self._set_status("✓ Copied to clipboard", 'green')
         self.root.after(
             2500,
