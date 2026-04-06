@@ -27,5 +27,6 @@ This avoids interpreter drift from other workspace environments (for example `DI
 ```bash
 cd /home/me/Notebooks/T5-test
 uv sync
+#uv run jupyter lab
 uv run python t5_test.py
 ```

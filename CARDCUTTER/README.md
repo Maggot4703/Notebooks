@@ -21,5 +21,6 @@ This folder contains tools, notebooks, and assets for card-cutter image processi
 ```bash
 cd /home/me/Notebooks/CARDCUTTER
 uv sync
-uv run jupyter lab
+#uv run jupyter lab
+uv run /home/me/Notebooks/CARDCUTTER/CardCutter/card_cutter.py
 ```

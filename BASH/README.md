@@ -22,5 +22,6 @@ This folder contains shell command documentation, exploration notebooks, and rel
 ```bash
 cd /home/me/Notebooks/BASH
 uv sync
-uv run jupyter lab
+#uv run jupyter lab
+uv run main.py
 ```

@@ -107,7 +107,7 @@ def _watchdog(httpd):
             break
 
 
-if __name__ == "__main__":
+def main():
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     with http.server.ThreadingHTTPServer(("", PORT), Handler) as httpd:
         print(f"Serving on http://localhost:{PORT}/")
@@ -115,3 +115,6 @@ if __name__ == "__main__":
         threading.Timer(1.0, webbrowser.open, args=(f"http://localhost:{PORT}/0101.html",)).start()
         httpd.serve_forever()
     print("Server stopped.")
+
+if __name__ == "__main__":
+    main()

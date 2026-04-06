@@ -167,5 +167,6 @@ To convert all `.md` files in `/home/me/Notebooks` (recursively) to PDF with ful
 ```bash
 cd /home/me/Notebooks
 uv sync
+#uv run jupyter lab
 uv run python main.py
 ```

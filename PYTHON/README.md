@@ -21,5 +21,6 @@ This folder is for general Python learning, experimentation, and notebook-based 
 ```bash
 cd /home/me/Notebooks/PYTHON
 uv sync
-uv run jupyter lab
+#uv run jupyter lab
+uv run python main.py
 ```

@@ -1,4 +1,0 @@
-deactivate 2>/dev/null || true
-cd "/home/me/Notebooks/AI"
-uv sync --active
-uv run --active jupyter lab

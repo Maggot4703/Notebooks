@@ -55,5 +55,6 @@ The runtime checker in `main.py` validates these tools and the Python notebook d
 ```bash
 cd /home/me/Notebooks/AI
 uv sync
+#uv run jupyter lab
 uv run python main.py
 ```

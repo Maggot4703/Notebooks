@@ -46,7 +46,7 @@ def main() -> int:
     missing_modules = _check_modules()
 
     if missing_commands or missing_modules:
-        print("IDE workspace dependency check failed.")
+        print("AI workspace dependency check failed.")
 
         if missing_commands:
             print("Missing system tools:")
@@ -59,12 +59,12 @@ def main() -> int:
                 print(f"- {module_name}")
 
         print(
-            "Run `uv sync` in /home/me/Notebooks/IDE "
+            "Run `uv sync` in /home/me/Notebooks/AI "
             "to install the Python dependencies."
         )
         return 1
 
-    print("IDE workspace dependency check passed.")
+    print("AI workspace dependency check passed.")
     for command in REQUIRED_COMMANDS:
         print(f"{command}: {_get_command_version(command)}")
     print(f"python: {sys.version.split()[0]}")

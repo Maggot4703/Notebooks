@@ -10,26 +10,69 @@ from t5_shared import (
     DEFAULT_GRID_COLOR, DEFAULT_GRID_SIZE
 )
 
+
+
 # Example CLI: grid-image, read-csv, read-excel, mark-line
 
 
 def create_cli_parser():
+
     parser = argparse.ArgumentParser(
         description="T5-test CLI (CardCutter + Crew)"
     )
+    parser.add_argument('--gui', action='store_true', help='Launch GUI')
     subparsers = parser.add_subparsers(dest="command")
 
+    # TravellerMap: Worlds for Subsector
+    get_worlds_cmd = subparsers.add_parser(
+        "get-worlds-for-subsector", help="Fetch worlds for a sector/subsector from TravellerMap API"
+    )
+    get_worlds_cmd.add_argument("sector", help="Sector name, e.g. 'Spinward Marches'")
+    get_worlds_cmd.add_argument("subsector", help="Subsector letter (A–P) or name, e.g. Vilis or F")
+    get_worlds_cmd.add_argument("--json", dest="output_json", action="store_true", default=True, help="Print JSON array to stdout (default)")
+    get_worlds_cmd.add_argument("--save", dest="save_path", metavar="PATH", default=None, help="Write JSON array to this file path instead of stdout")
+
+    # TravellerMap: Count Military Bases
+    count_bases_cmd = subparsers.add_parser(
+        "count-military-bases", help="List/count military bases by allegiance in a sector"
+    )
+    count_bases_cmd.add_argument("sector", nargs="*", help="Sector name (default: prompt)")
+
+    # TravellerMap: Check API Version
+    api_version_cmd = subparsers.add_parser(
+        "check-api-version", help="Show TravellerMap API version"
+    )
+
+    # TravellerMap: Check Data Schema
+    schema_cmd = subparsers.add_parser(
+        "check-data-schema", help="Show sector .tab schema fields"
+    )
+    schema_cmd.add_argument("--sector", default="Vland", help="Sector name (default: Vland)")
+
+    travellermap_cmd = subparsers.add_parser(
+        "travellermap", help="Launch TravellerMap main module (GUI or CLI)"
+    )
+
+    # --- Microphone/audio commands ---
+    record_audio_cmd = subparsers.add_parser(
+        "record-audio", help="Record microphone input to a WAV file"
+    )
+    record_audio_cmd.add_argument("output_path", help="Output WAV file path")
+    record_audio_cmd.add_argument("--duration", type=int, default=10, help="Recording duration in seconds (default: 10)")
+
+    speech_to_text_cmd = subparsers.add_parser(
+        "speech-to-text", help="Transcribe microphone input to text"
+    )
+    speech_to_text_cmd.add_argument("--duration", type=int, default=10, help="Max duration to listen (seconds)")
+    speech_to_text_cmd.add_argument("--output", help="Optional output text file")
+
     grid_image = subparsers.add_parser(
-        "grid-image", help="Overlay a grid on one image"
+        "grid-image", help="Overlay grid on image"
     )
     grid_image.add_argument("image_path")
     grid_image.add_argument("output_path")
-    grid_image.add_argument(
-        "--grid-width", type=int, default=DEFAULT_GRID_SIZE[0]
-    )
-    grid_image.add_argument(
-        "--grid-height", type=int, default=DEFAULT_GRID_SIZE[1]
-    )
+    grid_image.add_argument("--grid-width", type=int, default=DEFAULT_GRID_SIZE[0])
+    grid_image.add_argument("--grid-height", type=int, default=DEFAULT_GRID_SIZE[1])
     grid_image.add_argument("--grid-color", default=DEFAULT_GRID_COLOR)
     grid_image.add_argument("--labels", action="store_true")
 
@@ -59,6 +102,123 @@ def create_cli_parser():
 
 
 def run_cli(args: argparse.Namespace) -> int:
+    if args.command == "get-worlds-for-subsector":
+        sys.path.append("/home/me/Notebooks/TRAVELLERMAP")
+        import get_worlds_for_subsector
+        sys_argv = ["get_worlds_for_subsector.py", args.sector, args.subsector]
+        if args.output_json:
+            sys_argv.append("--json")
+        if args.save_path:
+            sys_argv.extend(["--save", args.save_path])
+        import sys as _sys
+        old_argv = _sys.argv
+        _sys.argv = sys_argv
+        try:
+            get_worlds_for_subsector.main()
+        finally:
+            _sys.argv = old_argv
+        return 0
+
+    if args.command == "count-military-bases":
+        sys.path.append("/home/me/Notebooks/TRAVELLERMAP")
+        import count_military_bases
+        import sys as _sys
+        sys_argv = ["count_military_bases.py"] + args.sector
+        old_argv = _sys.argv
+        _sys.argv = sys_argv
+        try:
+            count_military_bases.main()
+        finally:
+            _sys.argv = old_argv
+        return 0
+
+    if args.command == "check-api-version":
+        sys.path.append("/home/me/Notebooks/TRAVELLERMAP")
+        import check_travellermap_api_version
+        check_travellermap_api_version.get_api_version()
+        return 0
+
+    if args.command == "check-data-schema":
+        sys.path.append("/home/me/Notebooks/TRAVELLERMAP")
+        import check_travellermap_data_schema
+        check_travellermap_data_schema.get_sector_schema(args.sector)
+        return 0
+
+    if args.command == "travellermap":
+        sys.path.append("/home/me/Notebooks/TRAVELLERMAP")
+        from main import main as travellermap_main
+        travellermap_main()
+        return 0
+
+    if args.command == "record-audio":
+        try:
+            import sounddevice as sd
+            import numpy as np
+            import scipy.io.wavfile as wav
+        except ImportError:
+            print("Please install sounddevice and scipy: pip install sounddevice scipy numpy")
+            return 1
+        samplerate = 16000
+        duration = args.duration
+        print(f"Recording {duration} seconds of audio...")
+        try:
+            audio = sd.rec(int(duration * samplerate), samplerate=samplerate, channels=1, dtype='int16')
+            sd.wait()
+            wav.write(args.output_path, samplerate, audio)
+            print(f"Saved recording to {args.output_path}")
+            return 0
+        except Exception as e:
+            print(f"Recording failed: {e}")
+            return 1
+
+    if args.command == "speech-to-text":
+        try:
+            import speech_recognition as sr
+        except ImportError:
+            print("Please install speechrecognition and pyaudio: pip install speechrecognition pyaudio")
+            return 1
+        recognizer = sr.Recognizer()
+        try:
+            with sr.Microphone() as source:
+                print("Speak now...")
+                audio = recognizer.listen(source, timeout=args.duration, phrase_time_limit=args.duration)
+            print("Transcribing...")
+            text = recognizer.recognize_google(audio)
+            print("Transcript:")
+            print(text)
+            if args.output:
+                with open(args.output, "w") as f:
+                    f.write(text)
+                print(f"Transcript saved to {args.output}")
+            return 0
+        except sr.WaitTimeoutError:
+            print("No speech detected (timeout). Try increasing --duration.")
+            return 1
+        except sr.UnknownValueError:
+            print("Could not understand audio.")
+            return 1
+        except sr.RequestError as e:
+            print(f"Speech recognition error: {e}")
+            return 1
+        except Exception as e:
+            print(f"Microphone or recognition error: {e}")
+            return 1
+
+    if args.command == "dictate":
+        sys.path.append("/home/me/Notebooks/DICTATE")
+        from dictate import main as dictate_main
+        dictate_main()
+        return 0
+    if args.command == "travellermap":
+        sys.path.append("/home/me/Notebooks/TRAVELLERMAP")
+        from main import main as travellermap_main
+        travellermap_main()
+        return 0
+    if args.command == "run-0101":
+        sys.path.append("/home/me/Notebooks/0101/0101/src/public_html")
+        from server import main as server_main
+        server_main()
+        return 0
     if args.command == "grid-image":
         img = overlay_grid(
             args.image_path,

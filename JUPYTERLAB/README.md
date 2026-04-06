@@ -21,5 +21,6 @@ This folder is for exploring JupyterLab extensions, configuration, and advanced 
 ```bash
 cd /home/me/Notebooks/JUPYTERLAB
 uv sync
-uv run jupyter lab
+#uv run jupyter lab
+uv run python main.py
 ```

@@ -18,7 +18,8 @@ This folder contains Jupyter notebooks for TravellerMap data analysis, visualiza
 ## Startup Code
 
 ```bash
-cd /home/me/Notebooks/TRAVELLERMAP/notebooks
+cd /home/me/Notebooks/TRAVELLERMAP
 uv sync
 #uv run jupyter lab
+uv run main.py
 ```

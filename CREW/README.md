@@ -208,3 +208,13 @@ Or, to install in the current environment:
 pip install pandas
 ```
 ```
+
+
+## STARTUP CODE
+
+```bash
+cd /home/me/Notebooks/CREW/Crew
+uv sync
+#uv run jupyter lab
+uv run python Crew.py
+'''

@@ -1,4 +1,0 @@
-deactivate 2>/dev/null || true
-cd "/home/me/Notebooks/CALIBRE"
-uv sync --active
-uv run --active jupyter lab

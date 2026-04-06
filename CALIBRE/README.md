@@ -21,5 +21,6 @@ This folder contains notebooks and scripts for working with Calibre (e-book mana
 ```bash
 cd /home/me/Notebooks/CALIBRE
 uv sync
-uv run jupyter lab
+#uv run jupyter lab
+uv run main.py
 ```
