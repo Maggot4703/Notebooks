@@ -1,0 +1,88 @@
+<div class="mgt2e-chat-message attack-box">
+    {{#if useChatIcons}}
+        {{#if actor}}
+            <img class="chat-sticker actor-uuid-link" title="{{actor.name}}"
+                 src="{{actor.img}}" data-actor-id="{{actor.uuid}}"/>
+        {{/if}}
+        {{#if weapon.img}}
+            <img class="chat-sticker attack-button" title="{{label}}"
+                 src="{{weapon.img}}" />
+        {{/if}}
+    {{/if}}
+
+    <h2>
+        {{#if actor}}
+            {{#if actor.token.name}}
+                {{actor.token.name}}
+            {{else}}
+                {{actor.name}}
+            {{/if}}
+        {{else if agent}}
+            {{agent}}
+        {{else}}
+            {{skillTitle}}
+        {{/if}}
+    </h2>
+
+    <div class="mgt2e-chat-content">
+        {{#if weapon}}
+            <h3>
+                {{weapon.name}}
+                {{#if baseRange includeZero=false}}
+                    {{#if rangeDistance includeZero=false}}
+                        @ {{rangeDistance}}{{rangeUnit}}
+                    {{/if}}
+                {{/if}}
+            </h3>
+        {{else if attackOptions.title }}
+            <h3>{{attackOptions.title}}</h3>
+        {{else}}
+            <h3>Attack</h3>
+        {{/if}}
+
+        <p>
+            <b>Skill DM: </b> {{attackOptions.skillDM}}
+            {{#if attackOptions.dm includeZero=false}}
+                + {[attackOptions.dm}}
+            {{/if}}
+        </p>
+        <p>
+            <b>Damage: </b> {{damage}}
+        </p>
+
+        {{#if attackOptions.description}}
+            <div class="skill-description">
+                {{{attackOptions.description}}}
+            </div>
+        {{/if}}
+
+        <p class="skill-text">
+            {{{checkText}}}
+            <br/>
+            {{{skillText}}}
+            {{#if skillNotes}}
+                <br/>
+                {{{skillNotes}}}
+            {{/if}}
+        </p>
+
+        <p class="roll-result">
+            <span class="skill-roll inline-roll inline-result"><i class="fas fa-dice"></i> {{total}}</span>
+            {{{effectLabel}}}
+        </p>
+
+        {{#each specialities as |spec|}}
+            <h3>{{spec.label}}</h3>
+            <p class="roll-result">
+                <span class="skill-roll inline-roll inline-result"><i class="fas fa-dice"></i> {{spec.total}}</span>
+                {{{spec.effectLabel}}}
+            </p>
+        {{/each}}
+
+        {{#if success}}
+            <div class="skill-success">{{{success}}}</div>
+        {{else if failure}}
+            <div class="skill-fail">{{{failure}}}</div>
+        {{/if}}
+    </div>
+</div>

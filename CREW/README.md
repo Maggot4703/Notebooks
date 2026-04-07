@@ -218,3 +218,5 @@ uv sync
 #uv run jupyter lab
 uv run python Crew.py
 '''
+
+- The Crew GUI now includes a Speech (TTS) menu and a Microphone (speech recognition) menu. See [Crew/Crew/README.md](Crew/Crew/README.md#speech-and-microphone-features) for details.

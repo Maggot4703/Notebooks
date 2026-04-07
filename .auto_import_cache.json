@@ -4,18 +4,28 @@
     "0101.0101.src.public_html.generate_world_data",
     "0101.0101.src.public_html.server",
     "AI.skills.create_links.create_links",
+    "AI.skills.list_agents.list_agents",
+    "AI.skills.lister.lister",
     "AI.skills.pdf_to_txt.pdf_to_txt",
+    "AI.skills.skills_main.skills.docx.scripts.office.helpers.merge_runs",
+    "AI.skills.skills_main.skills.docx.scripts.office.helpers.simplify_redlines",
     "AI.skills.skills_main.skills.docx.scripts.office.validators.redlining",
     "AI.skills.skills_main.skills.pdf.scripts.check_bounding_boxes",
     "AI.skills.skills_main.skills.pdf.scripts.create_validation_image",
     "AI.skills.skills_main.skills.pptx.scripts.add_slide",
+    "AI.skills.skills_main.skills.pptx.scripts.clean",
+    "AI.skills.skills_main.skills.pptx.scripts.office.helpers.merge_runs",
+    "AI.skills.skills_main.skills.pptx.scripts.office.helpers.simplify_redlines",
     "AI.skills.skills_main.skills.pptx.scripts.office.validators.redlining",
     "AI.skills.skills_main.skills.skill_creator.scripts.aggregate_benchmark",
+    "AI.skills.skills_main.skills.skill_creator.scripts.quick_validate",
     "AI.skills.skills_main.skills.skill_creator.scripts.utils",
     "AI.skills.skills_main.skills.slack_gif_creator.core.easing",
     "AI.skills.skills_main.skills.slack_gif_creator.core.frame_composer",
     "AI.skills.skills_main.skills.slack_gif_creator.core.validators",
     "AI.skills.skills_main.skills.webapp_testing.scripts.with_server",
+    "AI.skills.skills_main.skills.xlsx.scripts.office.helpers.merge_runs",
+    "AI.skills.skills_main.skills.xlsx.scripts.office.helpers.simplify_redlines",
     "AI.skills.skills_main.skills.xlsx.scripts.office.validators.redlining",
     "BASH.commands.uv.uv",
     "CARDCUTTER.CardCutter..ipynb_checkpoints.card_cutter_checkpoint",
@@ -27,7 +37,6 @@
     "CREW.Crew..ipynb_checkpoints.state_manager_checkpoint",
     "CREW.Crew..ipynb_checkpoints.storySearch_checkpoint",
     "CREW.Crew..ipynb_checkpoints.untitled_checkpoint",
-    "CREW.Crew.ReadMine_completion_report",
     "CREW.Crew.cache",
     "CREW.Crew.data.HTML.html",
     "CREW.Crew.data.arcs.arcs",
@@ -58,23 +67,35 @@
     "CREW.Crew.logic",
     "CREW.Crew.mcp",
     "CREW.Crew.mcp_service",
+    "CREW.Crew.microphone_manager",
+    "CREW.Crew.python_Crew",
     "CREW.Crew.read_use_file",
     "CREW.Crew.refactoring_verification",
     "CREW.Crew.script_manager",
+    "CREW.Crew.scripts..ipynb_checkpoints.fetch_docs_checkpoint",
     "CREW.Crew.scripts.any_month",
     "CREW.Crew.scripts.bmp2png",
+    "CREW.Crew.scripts.fetch_docs",
     "CREW.Crew.state_manager",
     "CREW.Crew.storySearch",
     "CREW.Crew.traveller5_scraper",
     "CREW.Crew.tts_manager",
-    "CREW.Crew.ui_manager",
     "CREW.Crew.untitled",
     "CREW.Crew.utils",
     "CREW.src.crewai_skill_demo.tools.grid_overlay_tool",
     "CREW.src.crewai_skill_demo.tools.world_lookup_tool",
     "DICTATE.dictate",
+    "TRAVELLERMAP.check_travellermap_data_schema",
+    "TRAVELLERMAP.count_military_bases",
+    "TRAVELLERMAP.get_worlds_for_subsector",
     "TRAVELLERMAP.scripts.advanced_search_filter",
-    "TRAVELLERMAP.scripts.utils.sector_utils"
+    "TRAVELLERMAP.scripts.find_nearest_base_to",
+    "TRAVELLERMAP.scripts.load_sector_file",
+    "TRAVELLERMAP.scripts.load_sector_file_with_travellerrpg",
+    "TRAVELLERMAP.scripts.utils.sector_utils",
+    "TRAVELLERMAP.scripts.watch_travellermap_github",
+    "TRAVELLERMAP.traveller_agent",
+    "skills.batch_ocr_counters.batch_ocr_counters"
   ],
   "failed_imports": [
     [
@@ -86,28 +107,12 @@
       "Import error: No module named 'cv2'"
     ],
     [
-      "AI/skills/list-agents/list_agents.py",
-      "Import error: No module named 'yaml'"
-    ],
-    [
-      "AI/skills/lister/lister.py",
-      "Import error: No module named 'yaml'"
-    ],
-    [
-      "AI/skills/skills-main/skills/docx/scripts/office/helpers/merge_runs.py",
-      "Import error: No module named 'defusedxml'"
-    ],
-    [
-      "AI/skills/skills-main/skills/docx/scripts/office/helpers/simplify_redlines.py",
-      "Import error: No module named 'defusedxml'"
-    ],
-    [
       "AI/skills/skills-main/skills/docx/scripts/office/validators/base.py",
-      "Import error: No module named 'defusedxml'"
+      "Import error: No module named 'lxml'"
     ],
     [
       "AI/skills/skills-main/skills/docx/scripts/office/validators/docx.py",
-      "Import error: No module named 'defusedxml'"
+      "Import error: No module named 'lxml'"
     ],
     [
       "AI/skills/skills-main/skills/docx/scripts/office/validators/pptx.py",
@@ -138,24 +143,12 @@
       "Import error: No module named 'pypdf'"
     ],
     [
-      "AI/skills/skills-main/skills/pptx/scripts/clean.py",
-      "Import error: No module named 'defusedxml'"
-    ],
-    [
-      "AI/skills/skills-main/skills/pptx/scripts/office/helpers/merge_runs.py",
-      "Import error: No module named 'defusedxml'"
-    ],
-    [
-      "AI/skills/skills-main/skills/pptx/scripts/office/helpers/simplify_redlines.py",
-      "Import error: No module named 'defusedxml'"
-    ],
-    [
       "AI/skills/skills-main/skills/pptx/scripts/office/validators/base.py",
-      "Import error: No module named 'defusedxml'"
+      "Import error: No module named 'lxml'"
     ],
     [
       "AI/skills/skills-main/skills/pptx/scripts/office/validators/docx.py",
-      "Import error: No module named 'defusedxml'"
+      "Import error: No module named 'lxml'"
     ],
     [
       "AI/skills/skills-main/skills/pptx/scripts/office/validators/pptx.py",
@@ -164,10 +157,6 @@
     [
       "AI/skills/skills-main/skills/skill-creator/scripts/package_skill.py",
       "Import error: No module named 'scripts.quick_validate'"
-    ],
-    [
-      "AI/skills/skills-main/skills/skill-creator/scripts/quick_validate.py",
-      "Import error: No module named 'yaml'"
     ],
     [
       "AI/skills/skills-main/skills/slack-gif-creator/core/gif_builder.py",
@@ -186,20 +175,12 @@
       "Import error: No module named 'playwright'"
     ],
     [
-      "AI/skills/skills-main/skills/xlsx/scripts/office/helpers/merge_runs.py",
-      "Import error: No module named 'defusedxml'"
-    ],
-    [
-      "AI/skills/skills-main/skills/xlsx/scripts/office/helpers/simplify_redlines.py",
-      "Import error: No module named 'defusedxml'"
-    ],
-    [
       "AI/skills/skills-main/skills/xlsx/scripts/office/validators/base.py",
-      "Import error: No module named 'defusedxml'"
+      "Import error: No module named 'lxml'"
     ],
     [
       "AI/skills/skills-main/skills/xlsx/scripts/office/validators/docx.py",
-      "Import error: No module named 'defusedxml'"
+      "Import error: No module named 'lxml'"
     ],
     [
       "AI/skills/skills-main/skills/xlsx/scripts/office/validators/pptx.py",
@@ -214,49 +195,21 @@
       "Import error: No module named 'cv2'"
     ],
     [
-      "CREW/Crew/scripts/.ipynb_checkpoints/fetch_docs-checkpoint.py",
-      "Import error: No module named 'requests'"
-    ],
-    [
-      "CREW/Crew/scripts/fetch_docs.py",
-      "Import error: No module named 'requests'"
-    ],
-    [
-      "TRAVELLERMAP/check_travellermap_data_schema.py",
-      "Import error: No module named 'requests'"
-    ],
-    [
-      "TRAVELLERMAP/count_military_bases.py",
-      "Import error: No module named 'requests'"
-    ],
-    [
-      "TRAVELLERMAP/get_worlds_for_subsector.py",
-      "Import error: No module named 'requests'"
-    ],
-    [
-      "TRAVELLERMAP/scripts/find_nearest_base_to.py",
-      "Import error: No module named 'requests'"
-    ],
-    [
-      "TRAVELLERMAP/scripts/load_sector_file.py",
-      "Import error: No module named 'requests'"
-    ],
-    [
-      "TRAVELLERMAP/scripts/load_sector_file_with_travellerrpg.py",
-      "Import error: No module named 'requests'"
+      "CREW/Crew/ui_manager.py",
+      "Import error: unexpected indent (ui_manager.py, line 158)"
     ],
     [
       "TRAVELLERMAP/scripts/plot_sector_worlds_plotly.py",
-      "Import error: No module named 'requests'"
+      "Import error: No module named 'plotly'"
     ],
     [
-      "TRAVELLERMAP/scripts/watch_travellermap_github.py",
-      "Import error: No module named 'requests'"
+      "batch_ocr_counters.py",
+      "Import error: invalid character '\u2014' (U+2014) (batch_ocr_counters.py, line 1)"
     ],
     [
       "export_markdown_to_pdf.py",
       "Import error: No module named 'fpdf'"
     ]
   ],
-  "timestamp": 1775392463.7732327
+  "timestamp": 1775580376.9468894
 }

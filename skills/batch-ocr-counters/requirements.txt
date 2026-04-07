@@ -1,0 +1,5 @@
+# skills/batch-ocr-counters/requirements.txt
+pypdf
+Pillow
+pytesseract
+numpy

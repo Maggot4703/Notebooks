@@ -1,0 +1,92 @@
+
+<script>
+    function applyDamage(cha) {
+        let actual = document.getElement();
+    }
+</script>
+
+<form class="flexcol damage-dialog">
+
+    <h1 class="charname shadow">
+        {{actor.name}}
+    </h1>
+
+    <div class="shadow grid grid-5col">
+        <div class="resource flex-group-center">
+            <label for="damage" class="resource-label">DAMAGE</label>
+            <input class="baseDamage" type="text" name="damage" value="{{damage}}" data-dtype="Number"/>
+        </div>
+        <div class="resource flex-group-center">
+            <label for="ap" class="resource-label">AP</label>
+            <input class="baseAP" type="text" name="ap" value="{{ap}}" data-dtype="Number"/>
+        </div>
+        <div class="resource flex-group-center">
+            <label for="armour" class="resource-label">
+                ARMOUR
+                {{#if armourAsPercentage}} %{{/if}}
+            </label>
+            <input type="text" name="armour" value="{{armour}}" data-dtype="Number"/>
+        </div>
+        <div class="resource flex-group-center">
+            <label for="actualDamage" class="resource-label">ACTUAL</label>
+            <input class="actualDamage" type="text" name="actualDamage" value="{{actualDamage}}" data-dtype="Number"/>
+        </div>
+        <div class="resource flex-group-center">
+            <label for="multiplier" class="resource-label">{{#if isMissile}}MISSILES{{else}}MULTIPLIER{{/if}}</label>
+            <input type="text" name="multiplier" value="{{multiplier}}" data-dtype="Number"/>
+        </div>
+    </div>
+
+    <p>
+        HITS {{hits}} / {{maxHits}}
+    </p>
+    <div class="grid grid-10col damageTrack">
+        {{#each damageTrack as | style |}}
+            <div class="{{style}}">&nbsp;</div>
+        {{/each}}
+    </div>
+
+    {{#if crits}}
+    <div class="shadow">
+        <h2>Criticals</h2>
+
+        {{#if shipCriticals}}
+            <h3>Current Criticals</h3>
+
+            <div class="grid grid-4col">
+                {{#each shipCriticals as | sev loc |}}
+                    {{#if sev includeZero=false}}
+                        <span class="currentCrit {{criticalClass sev}}">{{localize (concat "MGT2.Spacecraft.Criticals." loc)}} {{sev}}</span>
+                    {{/if}}
+                {{/each}}
+            </div>
+        {{/if}}
+
+        {{#if crits.effectCrit}}
+            <p>Severity {{crits.effectSeverity}} critical from accurate shot.</p>
+
+            <select class="criticalEffectSelect" data-idx="effect">
+                {{selectOptions criticalLabels selected=criticalEffectRoll}}
+            </select>
+        {{/if}}
+
+            {{#if crits.criticals}}
+                <h3>Sustained Damage</h3>
+
+                {{#each crits.criticals as | c i |}}
+                    {{c.sustained}}% -
+                    <select class="criticalSelect" data-idx="{{i}}">
+                        {{selectOptions ../criticalLabels selected=c.location}}
+                    </select>
+                    <br/>
+                {{/each}}
+            {{/if}}
+
+    </div>
+    {{/if}}
+
+    <footer class="sheet-footer flexrow">
+        <button type="submit" name="submit" class="damageDone">Done</button>
+    </footer>
+
+</form>
