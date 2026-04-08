@@ -330,3 +330,57 @@
 2026-04-08 17:05:35,987 - root - INFO - Status: Listening for dictation... Speak now.
 2026-04-08 17:05:37,857 - root - INFO - Status: Dictation stopped.
 2026-04-08 17:05:43,199 - root - ERROR - Status error: ❌ Dictation error: No speech detected (timeout). Try increasing duration.
+2026-04-08 18:10:40,128 - __main__ - INFO - Main application script started.
+2026-04-08 18:10:40,351 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-08 18:10:40,681 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-08 18:10:42,394 - root - INFO - Auto-imported 96 modules successfully
+2026-04-08 18:10:42,394 - root - INFO - Skipped 28 modules (expected for script files)
+2026-04-08 18:10:42,394 - root - INFO - Auto-import summary: 96 imported, 28 failed, 9016 skipped, 9140 total files processed
+2026-04-08 18:10:42,398 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-08 18:10:42,493 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-08 18:10:42,495 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
+2026-04-08 18:10:42,496 - root - ERROR - Failed to initialize GUI: 'CrewGUI' object has no attribute '_chatbot_panel'
+2026-04-08 18:12:12,464 - __main__ - INFO - Main application script started.
+2026-04-08 18:12:12,674 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-08 18:12:12,985 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-08 18:12:12,986 - root - INFO - Using cached auto-import results
+2026-04-08 18:12:12,988 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-08 18:12:13,126 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-08 18:12:13,137 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
+2026-04-08 18:12:13,138 - root - ERROR - Failed to initialize GUI: 'CrewGUI' object has no attribute '_chatbot_panel'
+2026-04-08 18:13:25,658 - __main__ - INFO - Main application script started.
+2026-04-08 18:13:25,880 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-08 18:13:26,293 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-08 18:13:26,294 - root - INFO - Using cached auto-import results
+2026-04-08 18:13:26,343 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-08 18:13:26,467 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-08 18:13:26,477 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
+2026-04-08 18:13:26,486 - root - ERROR - Failed to initialize GUI: 'CrewGUI' object has no attribute '_voice_enabled'
+2026-04-08 18:14:13,651 - __main__ - INFO - Main application script started.
+2026-04-08 18:14:13,882 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-08 18:14:14,244 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-08 18:14:14,245 - root - INFO - Using cached auto-import results
+2026-04-08 18:14:14,269 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-08 18:14:14,367 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-08 18:14:14,369 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
+2026-04-08 18:14:14,387 - root - ERROR - Failed to initialize GUI: 'CrewGUI' object has no attribute '_voice_enabled'
+2026-04-08 18:15:55,060 - __main__ - INFO - Main application script started.
+2026-04-08 18:15:55,476 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-08 18:15:55,792 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-08 18:15:57,666 - root - INFO - Auto-imported 96 modules successfully
+2026-04-08 18:15:57,666 - root - INFO - Skipped 28 modules (expected for script files)
+2026-04-08 18:15:57,666 - root - INFO - Auto-import summary: 96 imported, 28 failed, 9016 skipped, 9140 total files processed
+2026-04-08 18:15:57,673 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-08 18:15:57,814 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-08 18:15:57,829 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
+2026-04-08 18:15:57,843 - root - ERROR - Failed to initialize GUI: 'CrewGUI' object has no attribute '_history_file'
+2026-04-08 18:17:28,462 - __main__ - INFO - Main application script started.
+2026-04-08 18:17:28,687 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-08 18:17:29,259 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-08 18:17:29,259 - root - INFO - Using cached auto-import results
+2026-04-08 18:17:29,308 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-08 18:17:29,486 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-08 18:17:29,526 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
+2026-04-08 18:18:35,577 - root - INFO - Status: Listening for dictation... Speak now.
+2026-04-08 18:18:38,816 - root - INFO - Status: Dictation stopped.
+2026-04-08 18:18:42,794 - root - ERROR - Status error: ❌ Dictation error: No speech detected (timeout). Try increasing duration.
