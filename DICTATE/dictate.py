@@ -4,6 +4,7 @@ DICTATE — Snazzy voice-to-text dictaphone
 Records from microphone and transcribes to screen.
 """
 
+
 import os
 import sys
 import tkinter as tk
@@ -11,12 +12,61 @@ from tkinter import scrolledtext
 import threading
 import math
 import time
+import subprocess
 
+
+def _auto_install(module: str, package: str = None):
+    """Try to install a module via pip. Returns True if successful."""
+    try:
+        import importlib
+        importlib.import_module(module)
+        return True
+    except ImportError:
+        pass
+    if getattr(sys, 'frozen', False):
+        return False  # Don't try to pip install in a frozen app
+    try:
+        pkg = str(package) if package is not None else module
+        # Detect if in a virtualenv
+        in_venv = (
+            hasattr(sys, 'real_prefix') or
+            (hasattr(sys, 'base_prefix') and sys.base_prefix != sys.prefix)
+        )
+        pip_args = [sys.executable, '-m', 'pip', 'install']
+        if not in_venv:
+            pip_args.append('--user')
+        pip_args.append(pkg)
+        subprocess.check_call(pip_args)
+        import importlib
+        importlib.invalidate_caches()
+        importlib.import_module(module)
+        return True
+    except Exception:
+        return False
+
+# Try to import and auto-install dependencies
+SR_AVAILABLE = False
 try:
     import speech_recognition as sr
     SR_AVAILABLE = True
 except ImportError:
-    SR_AVAILABLE = False
+    if _auto_install('speech_recognition', 'SpeechRecognition'):
+        import speech_recognition as sr
+        SR_AVAILABLE = True
+    else:
+        sr = None  # type: ignore
+        SR_AVAILABLE = False
+# pyaudio is required for microphone input
+PYAUDIO_AVAILABLE = False
+try:
+    import pyaudio  # noqa: F401
+    PYAUDIO_AVAILABLE = True
+except ImportError:
+    if _auto_install('pyaudio'):
+        import pyaudio  # noqa: F401
+        PYAUDIO_AVAILABLE = True
+    else:
+        PYAUDIO_AVAILABLE = False
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -51,7 +101,11 @@ class DictaphoneApp:
         self._wave_bars: list = []
         self._rec_thread: threading.Thread | None = None
 
-        if SR_AVAILABLE:
+        # Always define these attributes to avoid attribute errors
+        self.recognizer = None
+        self.microphone = None
+
+        if SR_AVAILABLE and sr is not None and PYAUDIO_AVAILABLE:
             self.recognizer = sr.Recognizer()
             self.recognizer.dynamic_energy_threshold = True
             with open(os.devnull, 'w') as devnull:
@@ -63,11 +117,18 @@ class DictaphoneApp:
 
         self._build_ui()
 
-        if SR_AVAILABLE:
+        if SR_AVAILABLE and sr is not None and PYAUDIO_AVAILABLE:
             self._calibrate()
         else:
+            missing = []
+            if not SR_AVAILABLE:
+                missing.append('speechrecognition')
+            if not PYAUDIO_AVAILABLE:
+                missing.append('pyaudio')
             self._set_status(
-                "⚠  Run:  pip install speechrecognition pyaudio",
+                f"⚠  Missing: {', '.join(missing)}. "
+                "Tried auto-install. If still missing, run: "
+                "pip install speechrecognition pyaudio",
                 'red'
             )
 
@@ -302,13 +363,25 @@ class DictaphoneApp:
 
         def work():
             try:
-                with self.microphone as src:
-                    self.recognizer.adjust_for_ambient_noise(src, duration=1)
-                self.root.after(
-                    0, lambda: self._set_status(
-                        "Ready — click  🎤  to start recording"
+                if (
+                    self.microphone is not None and
+                    self.recognizer is not None
+                ):
+                    with self.microphone as src:
+                        self.recognizer.adjust_for_ambient_noise(
+                            src, duration=1
+                        )
+                    self.root.after(
+                        0, lambda: self._set_status(
+                            "Ready — click  🎤  to start recording"
+                        )
                     )
-                )
+                else:
+                    self.root.after(
+                        0, lambda: self._set_status(
+                            "Microphone not available", 'red'
+                        )
+                    )
             except Exception as exc:
                 self.root.after(
                     0, lambda e=exc: self._set_status(
@@ -319,7 +392,7 @@ class DictaphoneApp:
         threading.Thread(target=work, daemon=True).start()
 
     def _start(self):
-        if not SR_AVAILABLE:
+        if not SR_AVAILABLE or sr is None:
             return
         self.is_recording = True
         self._hint.config(text="click  🎤  to stop recording")
@@ -339,13 +412,26 @@ class DictaphoneApp:
     def _record_loop(self):
         while self.is_recording:
             try:
-                with self.microphone as src:
-                    audio = self.recognizer.listen(
-                        src, timeout=7, phrase_time_limit=25
+                if self.microphone is not None and self.recognizer is not None:
+                    with self.microphone as src:
+                        audio = self.recognizer.listen(
+                            src, timeout=7, phrase_time_limit=25
+                        )
+                else:
+                    self.root.after(
+                        0, lambda: self._set_status(
+                            "Microphone or recognizer not available", 'red'
+                        )
                     )
-            except sr.WaitTimeoutError:
-                continue
+                    break
             except Exception as exc:
+                if (
+                    SR_AVAILABLE and sr is not None and
+                    self.recognizer is not None and
+                    self.microphone is not None and
+                    isinstance(exc, sr.WaitTimeoutError)
+                ):
+                    continue
                 if self.is_recording:
                     self.root.after(
                         0, lambda e=exc: self._set_status(
@@ -354,24 +440,46 @@ class DictaphoneApp:
                     )
                 break
 
-            self.root.after(0, lambda: self._set_status("⟳ Transcribing…"))
+            self.root.after(0, lambda: self._set_status(
+                "⟳ Transcribing…"
+            ))
 
             try:
-                text = self.recognizer.recognize_google(audio)
+                if self.recognizer is not None:
+                    # type: ignore for recognize_google,
+                    # as it may not be detected by static analysis
+                    text = self.recognizer.recognize_google(
+                        audio
+                    )  # type: ignore
+                else:
+                    text = ""
                 self.root.after(0, lambda t=text: self._append(t))
                 self.root.after(
-                    0, lambda: self._set_status("● Recording", 'green')
-                )
-            except sr.UnknownValueError:
-                self.root.after(
                     0, lambda: self._set_status(
-                        "● (nothing recognised) — still listening…", 'dim'
+                        "● Recording", 'green'
                     )
                 )
-            except sr.RequestError as exc:
+            except Exception as exc:
+                if SR_AVAILABLE and sr is not None:
+                    if isinstance(exc, sr.UnknownValueError):
+                        self.root.after(
+                            0, lambda: self._set_status(
+                                "● (nothing recognised) — "
+                                "still listening…", 'dim'
+                            )
+                        )
+                        continue
+                    elif isinstance(exc, sr.RequestError):
+                        self.root.after(
+                            0, lambda e=exc: self._set_status(
+                                f"Network error: {e}", 'red'
+                            )
+                        )
+                        continue
+                # fallback for other exceptions
                 self.root.after(
                     0, lambda e=exc: self._set_status(
-                        f"Network error: {e}", 'red'
+                        f"Transcription error: {e}", 'red'
                     )
                 )
 

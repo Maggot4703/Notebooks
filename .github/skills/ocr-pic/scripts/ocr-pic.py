@@ -37,7 +37,7 @@ else:
 
 Usage:
     python ocr-pic.py <pdf_path> <page1> [page2 ...] <output_dir>
-
+    python ocr-pic.py '/media/me/SSD120/T5/Vland/A Voskhod.pdf' 10
     Page numbers are 1-indexed (human-facing).
     One output file is written per page:
         <output_dir>/<pdf_stem>-page<N>.txt
