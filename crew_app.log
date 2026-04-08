@@ -291,3 +291,17 @@
 2026-04-08 13:48:33,235 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
 2026-04-08 13:49:54,392 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
 2026-04-08 13:49:54,392 - __main__ - INFO - Main application script finished.
+2026-04-08 15:12:03,747 - __main__ - INFO - Main application script started.
+2026-04-08 15:12:47,782 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-08 15:12:47,783 - __main__ - INFO - Main application script finished.
+2026-04-08 15:17:46,243 - __main__ - INFO - Main application script started.
+2026-04-08 15:17:46,633 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-08 15:17:47,029 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-08 15:17:48,284 - root - INFO - Auto-imported 96 modules successfully
+2026-04-08 15:17:48,284 - root - INFO - Skipped 28 modules (expected for script files)
+2026-04-08 15:17:48,284 - root - INFO - Auto-import summary: 96 imported, 28 failed, 9016 skipped, 9140 total files processed
+2026-04-08 15:17:48,288 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-08 15:17:48,379 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-08 15:17:48,403 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
+2026-04-08 15:17:56,051 - root - INFO - Status: Listening for dictation... Speak now.
+2026-04-08 15:17:58,728 - root - INFO - Status: Dictation stopped.
