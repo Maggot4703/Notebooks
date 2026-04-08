@@ -280,3 +280,14 @@
 2026-04-06 22:32:31,165 - root - INFO - Status: Ready - Auto-imported 98 modules (21 failed)
 2026-04-06 22:44:37,061 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
 2026-04-06 22:44:37,064 - __main__ - INFO - Main application script finished.
+2026-04-08 13:48:30,623 - __main__ - INFO - Main application script started.
+2026-04-08 13:48:30,863 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-08 13:48:31,339 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-08 13:48:33,066 - root - INFO - Auto-imported 96 modules successfully
+2026-04-08 13:48:33,066 - root - INFO - Skipped 28 modules (expected for script files)
+2026-04-08 13:48:33,066 - root - INFO - Auto-import summary: 96 imported, 28 failed, 9015 skipped, 9139 total files processed
+2026-04-08 13:48:33,100 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-08 13:48:33,195 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-08 13:48:33,235 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
+2026-04-08 13:49:54,392 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-08 13:49:54,392 - __main__ - INFO - Main application script finished.

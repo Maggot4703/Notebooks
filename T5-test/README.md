@@ -1,3 +1,15 @@
+# Troubleshooting
+
+- If you see `ModuleNotFoundError: No module named 'CREW'` or similar import errors, set your PYTHONPATH to include the parent Notebooks directory:
+
+	```bash
+	export PYTHONPATH="/home/me/Notebooks"
+	uv run python t5_test.py
+	```
+
+- If you see `⚠  Run:  pip install speechrecognition pyaudio`, install the missing packages.
+- If you get microphone errors, check your audio input device and permissions.
+- For best results, use a quiet environment and a good microphone.
 # T5-test
 
 Small CLI test app for CardCutter + Crew utilities.

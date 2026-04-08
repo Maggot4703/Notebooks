@@ -95,6 +95,7 @@
     "TRAVELLERMAP.scripts.utils.sector_utils",
     "TRAVELLERMAP.scripts.watch_travellermap_github",
     "TRAVELLERMAP.traveller_agent",
+    "orchestrate_batch_ocr",
     "skills.batch_ocr_counters.batch_ocr_counters"
   ],
   "failed_imports": [
@@ -204,12 +205,12 @@
     ],
     [
       "batch_ocr_counters.py",
-      "Import error: invalid character '\u2014' (U+2014) (batch_ocr_counters.py, line 1)"
+      "Import error: No module named 'pypdf'"
     ],
     [
       "export_markdown_to_pdf.py",
       "Import error: No module named 'fpdf'"
     ]
   ],
-  "timestamp": 1775580376.9468894
+  "timestamp": 1775654934.8300846
 }
