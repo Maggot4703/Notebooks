@@ -22,10 +22,10 @@ Use `uv` as the primary workflow for this directory. The local `.venv` may be cr
 Recommended setup:
 
 ```sh
-cd /home/me/Notebooks/IDE
+cd /home/me/Notebooks/AI
 uv sync
+#uv run jupyter lab
 uv run python main.py
-uv run jupyter lab
 ```
 
 Fallback setup with a standard virtual environment:

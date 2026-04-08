@@ -305,3 +305,28 @@
 2026-04-08 15:17:48,403 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
 2026-04-08 15:17:56,051 - root - INFO - Status: Listening for dictation... Speak now.
 2026-04-08 15:17:58,728 - root - INFO - Status: Dictation stopped.
+2026-04-08 16:56:50,561 - __main__ - INFO - Main application script started.
+2026-04-08 16:57:22,753 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-08 16:57:22,754 - __main__ - INFO - Main application script finished.
+2026-04-08 16:57:33,144 - __main__ - INFO - Main application script started.
+2026-04-08 16:59:41,688 - __main__ - INFO - Main application script started.
+2026-04-08 17:01:28,609 - __main__ - INFO - Main application script started.
+2026-04-08 17:03:24,855 - __main__ - INFO - Main application script started.
+2026-04-08 17:03:25,102 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-08 17:03:25,538 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-08 17:03:28,399 - root - INFO - Auto-imported 96 modules successfully
+2026-04-08 17:03:28,399 - root - INFO - Skipped 28 modules (expected for script files)
+2026-04-08 17:03:28,399 - root - INFO - Auto-import summary: 96 imported, 28 failed, 9016 skipped, 9140 total files processed
+2026-04-08 17:03:28,408 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-08 17:03:28,555 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-08 17:03:28,573 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
+2026-04-08 17:05:02,663 - __main__ - INFO - Main application script started.
+2026-04-08 17:05:02,887 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-08 17:05:03,322 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-08 17:05:03,323 - root - INFO - Using cached auto-import results
+2026-04-08 17:05:03,327 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-08 17:05:03,488 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-08 17:05:03,498 - root - INFO - Status: Ready - Auto-imported 96 modules (28 failed)
+2026-04-08 17:05:35,987 - root - INFO - Status: Listening for dictation... Speak now.
+2026-04-08 17:05:37,857 - root - INFO - Status: Dictation stopped.
+2026-04-08 17:05:43,199 - root - ERROR - Status error: ❌ Dictation error: No speech detected (timeout). Try increasing duration.
