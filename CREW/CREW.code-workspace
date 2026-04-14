@@ -2,11 +2,21 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../0101/0101"
 		}
 	],
 	"settings": {
 		"python.defaultInterpreterPath": "${workspaceFolder}/Crew/.venv/bin/python",
 		"python.terminal.activateEnvironment": true,
-		"workbench.browser.enableChatTools": true
+		"workbench.browser.enableChatTools": true,
+		"python-envs.pythonProjects": [
+			{
+				"path": ".",
+				"envManager": "ms-python.python:system",
+				"packageManager": "ms-python.python:pip"
+			}
+		]
 	}
 }

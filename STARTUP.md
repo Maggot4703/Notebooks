@@ -1,7 +1,5 @@
-deactivate 2>/dev/null || true
-cd /home/me/Notebooks/CREW/Crew
-uv sync
-uv run python Crew.py
+# CREW/Crew
+just click in UI
 
 PROGRAM STARTUP 
 ---
@@ -51,9 +49,11 @@ uv run /home/me/Notebooks/CARDCUTTER/CardCutter/card_cutter.py
 ---
 # CREW/Crew
 deactivate 2>/dev/null || true
-cd /home/me/Notebooks/CREW/Crew
+cd /home/me/Notebooks
+# Install uv if not present
+command -v uv >/dev/null 2>&1 || (echo 'Installing uv...' && curl -LsSf https://astral.sh/uv/install.sh | sh)
 uv sync
-uv run python Crew.py
+uv run python CREW.Crew.Crew
 ---
 ---
 # DICTATE

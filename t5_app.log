@@ -292,3 +292,19 @@
 2026-04-07 17:51:21,982 - root - INFO - TTS playback completed for status.
 2026-04-07 17:51:42,177 - root - INFO - Status: Listening for dictation...
 2026-04-07 17:51:45,233 - root - INFO - Status: Listening for transcription...
+2026-04-10 15:24:37,595 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 15:24:37,595 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 15:24:37,595 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 15:24:37,595 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 15:24:37,595 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 15:24:37,595 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 15:24:37,595 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 15:24:37,595 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 15:24:38,563 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 15:24:44,785 - root - INFO - Auto-imported 535 modules successfully
+2026-04-10 15:24:44,785 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 15:24:44,785 - root - INFO - Auto-import summary: 535 imported, 29 failed, 9824 skipped, 10388 total files processed
+2026-04-10 15:24:44,787 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 15:24:44,792 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 15:24:44,984 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 15:24:44,991 - root - INFO - Status: Ready - Auto-imported 535 modules (29 failed)

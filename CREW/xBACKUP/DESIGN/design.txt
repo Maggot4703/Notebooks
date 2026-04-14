@@ -1,0 +1,25 @@
+RULES 
+#/home/me/Notebooks/CREW/DESIGN/RULES
+These should be followed at all times
+
+JOBS
+#/home/me/Notebooks/CREW/DESIGN/JOBS
+These are jobs desired to be done
+Always follow RULES
+
+PLANS
+#/home/me/Notebooks/CREW/DESIGN/PLANS
+The processes involved in completing JOBS and recorded in NOTEBOOKS
+
+AGENTS
+#/home/me/Notebooks/CREW/DESIGN/AGENTS
+The workers that attempt to complete JOBS
+
+SKILLS
+#/home/me/Notebooks/CREW/DESIGN/SKILLS
+The specific tasks/processes used by AGENTS to complete JOBS
+
+NOTEBOOKS
+#/home/me/Notebooks/CREW/DESIGN/NOTEBOOKS
+The test and use for designing/testing of all PLANS
+

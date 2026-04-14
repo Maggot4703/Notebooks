@@ -384,3 +384,1501 @@
 2026-04-08 18:18:35,577 - root - INFO - Status: Listening for dictation... Speak now.
 2026-04-08 18:18:38,816 - root - INFO - Status: Dictation stopped.
 2026-04-08 18:18:42,794 - root - ERROR - Status error: ❌ Dictation error: No speech detected (timeout). Try increasing duration.
+2026-04-09 14:45:29,788 - __main__ - INFO - Main application script started.
+2026-04-09 16:08:18,621 - __main__ - INFO - Main application script started.
+2026-04-09 16:08:18,924 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 16:08:19,399 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 16:08:22,191 - root - INFO - Auto-imported 241 modules successfully
+2026-04-09 16:08:22,191 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 16:08:22,192 - root - INFO - Auto-import summary: 241 imported, 54 failed, 12391 skipped, 12686 total files processed
+2026-04-09 16:08:22,197 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 16:08:22,318 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 16:08:22,319 - root - INFO - Status: Ready - Auto-imported 241 modules (54 failed)
+2026-04-09 16:08:27,238 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 16:08:27,239 - __main__ - INFO - Main application script finished.
+2026-04-09 17:14:52,625 - __main__ - INFO - Main application script started.
+2026-04-09 17:14:53,126 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 17:14:53,531 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 17:14:53,532 - root - INFO - Using cached auto-import results
+2026-04-09 17:14:53,534 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 17:14:53,655 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 17:14:53,689 - root - INFO - Status: Ready - Auto-imported 233 modules (66 failed)
+2026-04-09 17:14:58,794 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 17:14:58,794 - __main__ - INFO - Main application script finished.
+2026-04-09 17:15:13,492 - __main__ - INFO - Main application script started.
+2026-04-09 17:15:13,677 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 17:15:13,931 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 17:15:13,932 - root - INFO - Using cached auto-import results
+2026-04-09 17:15:13,959 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 17:15:14,004 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 17:15:14,024 - root - INFO - Status: Ready - Auto-imported 233 modules (66 failed)
+2026-04-09 17:15:19,687 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 17:15:19,688 - __main__ - INFO - Main application script finished.
+2026-04-09 17:15:40,951 - __main__ - INFO - Main application script started.
+2026-04-09 17:15:41,268 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 17:15:41,587 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 17:15:41,588 - root - INFO - Using cached auto-import results
+2026-04-09 17:15:41,619 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 17:15:41,715 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 17:15:41,721 - root - INFO - Status: Ready - Auto-imported 233 modules (66 failed)
+2026-04-09 17:16:00,710 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 17:16:00,711 - __main__ - INFO - Main application script finished.
+2026-04-09 17:23:09,010 - __main__ - INFO - Main application script started.
+2026-04-09 17:24:03,475 - __main__ - INFO - Main application script started.
+2026-04-09 17:28:55,162 - __main__ - INFO - Main application script started.
+2026-04-09 17:28:55,291 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 17:28:55,672 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 17:29:05,405 - root - INFO - Auto-imported 241 modules successfully
+2026-04-09 17:29:05,406 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 17:29:05,406 - root - INFO - Auto-import summary: 241 imported, 54 failed, 12164 skipped, 12459 total files processed
+2026-04-09 17:29:05,415 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 17:29:05,472 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 17:29:05,477 - root - INFO - Status: Ready - Auto-imported 241 modules (54 failed)
+2026-04-09 17:29:18,877 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 17:29:18,878 - __main__ - INFO - Main application script finished.
+2026-04-09 17:30:06,867 - __main__ - INFO - Main application script started.
+2026-04-09 17:32:06,173 - __main__ - INFO - Main application script started.
+2026-04-09 17:33:03,875 - __main__ - INFO - Main application script started.
+2026-04-09 17:37:08,904 - __main__ - INFO - Main application script started.
+2026-04-09 17:38:54,460 - __main__ - INFO - Main application script started.
+2026-04-09 17:39:48,718 - __main__ - INFO - Main application script started.
+2026-04-09 17:39:49,308 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 17:39:49,733 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 17:39:58,530 - root - INFO - Auto-imported 241 modules successfully
+2026-04-09 17:39:58,531 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 17:39:58,531 - root - INFO - Auto-import summary: 241 imported, 54 failed, 12164 skipped, 12459 total files processed
+2026-04-09 17:39:58,540 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 17:39:58,622 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 17:39:58,623 - root - INFO - Status: Ready - Auto-imported 241 modules (54 failed)
+2026-04-09 17:40:07,338 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 17:40:07,339 - __main__ - INFO - Main application script finished.
+2026-04-09 17:40:11,633 - __main__ - INFO - Main application script started.
+2026-04-09 17:40:11,987 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 17:40:12,323 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 17:40:12,324 - root - INFO - Using cached auto-import results
+2026-04-09 17:40:12,356 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 17:40:12,451 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 17:40:12,453 - root - INFO - Status: Ready - Auto-imported 241 modules (54 failed)
+2026-04-09 17:40:19,737 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 17:40:19,741 - __main__ - INFO - Main application script finished.
+2026-04-09 17:41:16,076 - __main__ - INFO - Main application script started.
+2026-04-09 17:41:16,280 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 17:41:16,751 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 17:41:16,751 - root - INFO - Using cached auto-import results
+2026-04-09 17:41:16,753 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 17:41:16,843 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 17:41:16,846 - root - INFO - Status: Ready - Auto-imported 241 modules (54 failed)
+2026-04-09 17:41:21,856 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 17:41:21,856 - __main__ - INFO - Main application script finished.
+2026-04-09 17:41:54,546 - __main__ - INFO - Main application script started.
+2026-04-09 17:47:12,346 - __main__ - INFO - Main application script started.
+2026-04-09 17:47:37,234 - __main__ - INFO - Main application script started.
+2026-04-09 17:50:56,394 - __main__ - INFO - Main application script started.
+2026-04-09 17:51:28,046 - __main__ - INFO - Main application script started.
+2026-04-09 17:54:18,355 - __main__ - INFO - Main application script started.
+2026-04-09 17:55:56,691 - __main__ - INFO - Main application script started.
+2026-04-09 17:55:59,964 - __main__ - INFO - Main application script started.
+2026-04-09 17:58:10,912 - __main__ - INFO - Main application script started.
+2026-04-09 17:58:11,237 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 17:58:11,590 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 17:58:20,986 - root - INFO - Auto-imported 294 modules successfully
+2026-04-09 17:58:20,986 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 17:58:20,986 - root - INFO - Auto-import summary: 294 imported, 54 failed, 12224 skipped, 12572 total files processed
+2026-04-09 17:58:20,994 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 17:58:21,080 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 17:58:21,089 - root - INFO - Status: Ready - Auto-imported 294 modules (54 failed)
+2026-04-09 17:58:28,060 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 17:58:28,066 - __main__ - INFO - Main application script finished.
+2026-04-09 17:58:48,582 - __main__ - INFO - Main application script started.
+2026-04-09 17:58:49,445 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 17:58:49,835 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 17:58:49,836 - root - INFO - Using cached auto-import results
+2026-04-09 17:58:49,868 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 17:58:49,974 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 17:58:49,979 - root - INFO - Status: Ready - Auto-imported 294 modules (54 failed)
+2026-04-09 17:58:53,504 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 17:58:53,505 - __main__ - INFO - Main application script finished.
+2026-04-09 18:04:18,482 - __main__ - INFO - Main application script started.
+2026-04-09 18:04:18,656 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 18:04:19,104 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 18:04:26,897 - root - INFO - Auto-imported 294 modules successfully
+2026-04-09 18:04:26,898 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 18:04:26,898 - root - INFO - Auto-import summary: 294 imported, 54 failed, 12224 skipped, 12572 total files processed
+2026-04-09 18:04:26,907 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 18:04:26,986 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 18:04:26,994 - root - INFO - Status: Ready - Auto-imported 294 modules (54 failed)
+2026-04-09 18:04:35,991 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 18:04:35,993 - __main__ - INFO - Main application script finished.
+2026-04-09 18:05:14,063 - __main__ - INFO - Main application script started.
+2026-04-09 18:05:14,264 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 18:05:14,574 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 18:05:14,575 - root - INFO - Using cached auto-import results
+2026-04-09 18:05:14,582 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 18:05:14,659 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 18:05:14,673 - root - INFO - Status: Ready - Auto-imported 294 modules (54 failed)
+2026-04-09 18:05:19,390 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 18:05:19,390 - __main__ - INFO - Main application script finished.
+2026-04-09 18:05:59,070 - __main__ - INFO - Main application script started.
+2026-04-09 18:05:59,197 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 18:05:59,422 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 18:05:59,423 - root - INFO - Using cached auto-import results
+2026-04-09 18:05:59,439 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 18:05:59,527 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 18:05:59,534 - root - INFO - Status: Ready - Auto-imported 294 modules (54 failed)
+2026-04-09 18:06:06,465 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 18:06:06,465 - __main__ - INFO - Main application script finished.
+2026-04-09 18:06:19,886 - __main__ - INFO - Main application script started.
+2026-04-09 18:06:20,020 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 18:06:20,401 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 18:06:20,402 - root - INFO - Using cached auto-import results
+2026-04-09 18:06:20,437 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 18:06:20,510 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 18:06:20,534 - root - INFO - Status: Ready - Auto-imported 294 modules (54 failed)
+2026-04-09 18:06:24,917 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 18:06:24,918 - __main__ - INFO - Main application script finished.
+2026-04-09 18:06:27,712 - __main__ - INFO - Main application script started.
+2026-04-09 18:06:27,881 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 18:06:28,417 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 18:06:28,418 - root - INFO - Using cached auto-import results
+2026-04-09 18:06:28,420 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 18:06:28,531 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 18:06:28,536 - root - INFO - Status: Ready - Auto-imported 294 modules (54 failed)
+2026-04-09 18:06:33,654 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 18:06:33,655 - __main__ - INFO - Main application script finished.
+2026-04-09 18:13:22,375 - __main__ - INFO - Main application script started.
+2026-04-09 18:13:24,769 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 18:13:25,164 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 18:13:31,456 - root - INFO - Auto-imported 294 modules successfully
+2026-04-09 18:13:31,457 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 18:13:31,457 - root - INFO - Auto-import summary: 294 imported, 54 failed, 12235 skipped, 12583 total files processed
+2026-04-09 18:13:31,463 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 18:13:31,554 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 18:13:31,555 - root - INFO - Status: Ready - Auto-imported 294 modules (54 failed)
+2026-04-09 18:13:40,708 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 18:13:40,709 - __main__ - INFO - Main application script finished.
+2026-04-09 18:14:33,095 - __main__ - INFO - Main application script started.
+2026-04-09 18:14:33,381 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 18:14:33,840 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 18:14:33,841 - root - INFO - Using cached auto-import results
+2026-04-09 18:14:33,876 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 18:14:33,956 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 18:14:33,981 - root - INFO - Status: Ready - Auto-imported 294 modules (54 failed)
+2026-04-09 18:14:42,863 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 18:14:42,866 - __main__ - INFO - Main application script finished.
+2026-04-09 18:29:47,980 - __main__ - INFO - Main application script started.
+2026-04-09 18:29:48,993 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 18:29:49,421 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 18:29:56,654 - root - INFO - Auto-imported 347 modules successfully
+2026-04-09 18:29:56,654 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 18:29:56,654 - root - INFO - Auto-import summary: 347 imported, 54 failed, 12318 skipped, 12719 total files processed
+2026-04-09 18:29:56,685 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 18:29:56,857 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 18:29:56,865 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 18:31:07,711 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 18:31:07,712 - __main__ - INFO - Main application script finished.
+2026-04-09 18:32:00,187 - __main__ - INFO - Main application script started.
+2026-04-09 18:32:00,924 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 18:32:01,561 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 18:32:01,564 - root - INFO - Using cached auto-import results
+2026-04-09 18:32:01,569 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 18:32:01,675 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 18:32:01,696 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 18:32:11,337 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 18:32:11,338 - __main__ - INFO - Main application script finished.
+2026-04-09 18:53:27,244 - __main__ - INFO - Main application script started.
+2026-04-09 18:53:27,509 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 18:53:27,790 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 18:53:29,396 - root - INFO - Auto-imported 347 modules successfully
+2026-04-09 18:53:29,396 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 18:53:29,396 - root - INFO - Auto-import summary: 347 imported, 54 failed, 12318 skipped, 12719 total files processed
+2026-04-09 18:53:29,405 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 18:53:29,477 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 18:53:29,479 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 18:54:23,116 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 18:54:23,116 - __main__ - INFO - Main application script finished.
+2026-04-09 19:00:49,421 - __main__ - INFO - Main application script started.
+2026-04-09 19:00:50,094 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:00:50,363 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:01:09,670 - root - INFO - Auto-imported 363 modules successfully
+2026-04-09 19:01:09,670 - root - INFO - Skipped 38 modules (expected for script files)
+2026-04-09 19:01:09,670 - root - INFO - Auto-import summary: 363 imported, 38 failed, 12318 skipped, 12719 total files processed
+2026-04-09 19:01:09,679 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:01:09,795 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:01:09,801 - root - INFO - Status: Ready - Auto-imported 363 modules (38 failed)
+2026-04-09 19:01:13,961 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:01:13,962 - __main__ - INFO - Main application script finished.
+2026-04-09 19:01:24,268 - __main__ - INFO - Main application script started.
+2026-04-09 19:01:24,537 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:01:24,891 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:01:24,891 - root - INFO - Using cached auto-import results
+2026-04-09 19:01:24,915 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:01:25,092 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:01:25,124 - root - INFO - Status: Ready - Auto-imported 363 modules (38 failed)
+2026-04-09 19:01:30,354 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:01:30,354 - __main__ - INFO - Main application script finished.
+2026-04-09 19:01:37,100 - __main__ - INFO - Main application script started.
+2026-04-09 19:01:37,344 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:01:37,908 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:01:37,908 - root - INFO - Using cached auto-import results
+2026-04-09 19:01:37,937 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:01:38,030 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:01:38,058 - root - INFO - Status: Ready - Auto-imported 363 modules (38 failed)
+2026-04-09 19:01:42,195 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
+2026-04-09 19:02:07,638 - root - INFO - Status: Recording... (Stop to finish)
+2026-04-09 19:02:14,933 - root - INFO - Status: Recording saved: /tmp/crew_recording_q5hp4rrl.wav
+2026-04-09 19:02:17,884 - root - INFO - Status: Playing last recording...
+2026-04-09 19:02:44,262 - root - INFO - Status: Recording saved as: /home/me/Notebooks/a.wav
+2026-04-09 19:03:31,031 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:03:31,031 - __main__ - INFO - Main application script finished.
+2026-04-09 19:04:21,870 - __main__ - INFO - Main application script started.
+2026-04-09 19:04:22,110 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:04:22,508 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:04:22,509 - root - INFO - Using cached auto-import results
+2026-04-09 19:04:22,540 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:04:22,643 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:04:22,667 - root - INFO - Status: Ready - Auto-imported 363 modules (38 failed)
+2026-04-09 19:04:27,016 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:04:27,017 - __main__ - INFO - Main application script finished.
+2026-04-09 19:07:22,354 - __main__ - INFO - Main application script started.
+2026-04-09 19:07:22,586 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:07:22,872 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:07:24,451 - root - INFO - Auto-imported 347 modules successfully
+2026-04-09 19:07:24,452 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 19:07:24,452 - root - INFO - Auto-import summary: 347 imported, 54 failed, 12318 skipped, 12719 total files processed
+2026-04-09 19:07:24,455 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:07:24,501 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:07:24,513 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 19:11:11,192 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:11:11,192 - __main__ - INFO - Main application script finished.
+2026-04-09 19:14:18,448 - __main__ - INFO - Main application script started.
+2026-04-09 19:14:18,690 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:14:19,265 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:14:20,791 - root - INFO - Auto-imported 347 modules successfully
+2026-04-09 19:14:20,791 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 19:14:20,791 - root - INFO - Auto-import summary: 347 imported, 54 failed, 12318 skipped, 12719 total files processed
+2026-04-09 19:14:20,795 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:14:20,896 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:14:20,898 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 19:14:24,604 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:14:24,605 - __main__ - INFO - Main application script finished.
+2026-04-09 19:24:51,762 - __main__ - INFO - Main application script started.
+2026-04-09 19:24:51,982 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:24:52,544 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:24:53,891 - root - INFO - Auto-imported 347 modules successfully
+2026-04-09 19:24:53,891 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 19:24:53,891 - root - INFO - Auto-import summary: 347 imported, 54 failed, 12318 skipped, 12719 total files processed
+2026-04-09 19:24:53,898 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:24:53,942 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:24:53,961 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 19:25:04,866 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:25:04,866 - __main__ - INFO - Main application script finished.
+2026-04-09 19:26:28,454 - __main__ - INFO - Main application script started.
+2026-04-09 19:26:28,760 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:26:29,231 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:26:29,233 - root - INFO - Using cached auto-import results
+2026-04-09 19:26:29,255 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:26:29,308 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:26:29,324 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 19:32:13,020 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:32:13,021 - __main__ - INFO - Main application script finished.
+2026-04-09 19:39:01,537 - __main__ - INFO - Main application script started.
+2026-04-09 19:39:01,852 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:39:02,340 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:39:03,576 - root - INFO - Auto-imported 347 modules successfully
+2026-04-09 19:39:03,576 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 19:39:03,576 - root - INFO - Auto-import summary: 347 imported, 54 failed, 12318 skipped, 12719 total files processed
+2026-04-09 19:39:03,583 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:39:03,634 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:39:03,654 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 19:39:10,680 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:39:10,681 - __main__ - INFO - Main application script finished.
+2026-04-09 19:39:35,898 - __main__ - INFO - Main application script started.
+2026-04-09 19:39:36,182 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:39:36,634 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:39:36,635 - root - INFO - Using cached auto-import results
+2026-04-09 19:39:36,637 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:39:36,750 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:39:36,770 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 19:40:24,626 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:40:24,626 - __main__ - INFO - Main application script finished.
+2026-04-09 19:41:26,402 - __main__ - INFO - Main application script started.
+2026-04-09 19:41:26,829 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:41:27,512 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:41:27,513 - root - INFO - Using cached auto-import results
+2026-04-09 19:41:27,549 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:41:27,681 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:41:27,683 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 19:42:38,140 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:42:38,140 - __main__ - INFO - Main application script finished.
+2026-04-09 19:44:51,751 - __main__ - INFO - Main application script started.
+2026-04-09 19:44:51,954 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:44:52,407 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:44:53,723 - root - INFO - Auto-imported 347 modules successfully
+2026-04-09 19:44:53,723 - root - INFO - Skipped 54 modules (expected for script files)
+2026-04-09 19:44:53,723 - root - INFO - Auto-import summary: 347 imported, 54 failed, 12318 skipped, 12719 total files processed
+2026-04-09 19:44:53,732 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:44:53,786 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:44:53,808 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 19:45:16,552 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:45:16,553 - __main__ - INFO - Main application script finished.
+2026-04-09 19:45:49,732 - __main__ - INFO - Main application script started.
+2026-04-09 19:45:50,016 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 19:45:50,581 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 19:45:50,582 - root - INFO - Using cached auto-import results
+2026-04-09 19:45:50,585 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 19:45:50,831 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 19:45:50,846 - root - INFO - Status: Ready - Auto-imported 347 modules (54 failed)
+2026-04-09 19:49:10,152 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 19:49:10,153 - __main__ - INFO - Main application script finished.
+2026-04-09 20:01:15,142 - __main__ - INFO - Main application script started.
+2026-04-09 20:01:15,410 - root - ERROR - Failed to initialize GUI: name 'total_imported' is not defined
+2026-04-09 20:01:36,306 - __main__ - INFO - Main application script started.
+2026-04-09 20:01:36,450 - root - ERROR - Failed to initialize GUI: name 'total_imported' is not defined
+2026-04-09 20:02:03,224 - __main__ - INFO - Main application script started.
+2026-04-09 20:02:03,378 - root - ERROR - Failed to update status: 'CrewGUI' object has no attribute 'status_var'
+2026-04-09 20:02:16,506 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:02:16,506 - __main__ - INFO - Main application script finished.
+2026-04-09 20:03:02,973 - __main__ - INFO - Main application script started.
+2026-04-09 20:03:03,158 - root - ERROR - Failed to update status: 'CrewGUI' object has no attribute 'status_var'
+2026-04-09 20:03:06,332 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:03:06,332 - __main__ - INFO - Main application script finished.
+2026-04-09 20:04:48,247 - __main__ - INFO - Main application script started.
+2026-04-09 20:04:48,477 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 20:04:48,825 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 20:04:50,000 - root - INFO - Auto-imported 255 modules successfully
+2026-04-09 20:04:50,001 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 20:04:50,001 - root - INFO - Auto-import summary: 255 imported, 27 failed, 9434 skipped, 9716 total files processed
+2026-04-09 20:04:50,007 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 20:04:50,073 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 20:04:50,090 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 20:05:04,196 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:05:04,197 - __main__ - INFO - Main application script finished.
+2026-04-09 20:08:27,894 - __main__ - INFO - Main application script started.
+2026-04-09 20:08:28,077 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 20:08:28,436 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 20:08:28,437 - root - INFO - Using cached auto-import results
+2026-04-09 20:08:28,463 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 20:08:28,555 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 20:08:28,591 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 20:08:59,339 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:08:59,340 - __main__ - INFO - Main application script finished.
+2026-04-09 20:09:06,925 - __main__ - INFO - Main application script started.
+2026-04-09 20:09:07,078 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 20:09:07,463 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 20:09:07,464 - root - INFO - Using cached auto-import results
+2026-04-09 20:09:07,467 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 20:09:07,669 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 20:09:07,682 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 20:09:11,652 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:09:11,654 - __main__ - INFO - Main application script finished.
+2026-04-09 20:11:03,362 - __main__ - INFO - Main application script started.
+2026-04-09 20:11:03,545 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 20:11:04,017 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 20:11:05,033 - root - INFO - Auto-imported 255 modules successfully
+2026-04-09 20:11:05,034 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 20:11:05,034 - root - INFO - Auto-import summary: 255 imported, 27 failed, 9434 skipped, 9716 total files processed
+2026-04-09 20:11:05,040 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 20:11:05,098 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 20:11:05,100 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 20:12:35,878 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:12:35,878 - __main__ - INFO - Main application script finished.
+2026-04-09 20:12:54,194 - __main__ - INFO - Main application script started.
+2026-04-09 20:12:54,463 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 20:12:54,829 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 20:12:54,831 - root - INFO - Using cached auto-import results
+2026-04-09 20:12:54,868 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 20:12:54,962 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 20:12:54,986 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 20:12:59,282 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:12:59,283 - __main__ - INFO - Main application script finished.
+2026-04-09 20:14:34,327 - __main__ - INFO - Main application script started.
+2026-04-09 20:14:34,567 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 20:14:34,863 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 20:14:34,863 - root - INFO - Using cached auto-import results
+2026-04-09 20:14:34,866 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 20:14:35,000 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 20:14:35,020 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 20:14:47,932 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:14:47,933 - __main__ - INFO - Main application script finished.
+2026-04-09 20:16:00,225 - __main__ - INFO - Main application script started.
+2026-04-09 20:16:00,385 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 20:16:00,670 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 20:16:00,671 - root - INFO - Using cached auto-import results
+2026-04-09 20:16:00,679 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 20:16:00,767 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 20:16:00,795 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 20:17:03,854 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:17:03,854 - __main__ - INFO - Main application script finished.
+2026-04-09 20:30:10,304 - __main__ - INFO - Main application script started.
+2026-04-09 20:30:11,064 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 20:30:11,467 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 20:30:17,361 - root - INFO - Auto-imported 255 modules successfully
+2026-04-09 20:30:17,361 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 20:30:17,361 - root - INFO - Auto-import summary: 255 imported, 27 failed, 9434 skipped, 9716 total files processed
+2026-04-09 20:30:17,395 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 20:30:17,540 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 20:30:17,542 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 20:30:32,011 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:30:32,013 - __main__ - INFO - Main application script finished.
+2026-04-09 20:40:58,278 - __main__ - INFO - Main application script started.
+2026-04-09 20:40:58,500 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 20:40:58,878 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 20:40:59,861 - root - INFO - Auto-imported 255 modules successfully
+2026-04-09 20:40:59,861 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 20:40:59,861 - root - INFO - Auto-import summary: 255 imported, 27 failed, 9434 skipped, 9716 total files processed
+2026-04-09 20:40:59,864 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 20:40:59,959 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 20:40:59,971 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 20:41:29,109 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:41:29,110 - __main__ - INFO - Main application script finished.
+2026-04-09 20:48:08,395 - __main__ - INFO - Main application script started.
+2026-04-09 20:48:08,674 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 20:48:09,137 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 20:48:10,179 - root - INFO - Auto-imported 255 modules successfully
+2026-04-09 20:48:10,179 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 20:48:10,179 - root - INFO - Auto-import summary: 255 imported, 27 failed, 9434 skipped, 9716 total files processed
+2026-04-09 20:48:10,185 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 20:48:10,231 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 20:48:10,249 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 20:48:27,962 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 20:48:27,962 - __main__ - INFO - Main application script finished.
+2026-04-09 21:00:08,166 - __main__ - INFO - Main application script started.
+2026-04-09 21:00:08,423 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:00:08,949 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:00:10,019 - root - INFO - Auto-imported 255 modules successfully
+2026-04-09 21:00:10,019 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 21:00:10,019 - root - INFO - Auto-import summary: 255 imported, 27 failed, 9434 skipped, 9716 total files processed
+2026-04-09 21:00:10,025 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:00:10,073 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:00:10,097 - root - INFO - Status: Ready - Auto-imported 255 modules (27 failed)
+2026-04-09 21:01:34,444 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 21:01:34,450 - __main__ - INFO - Main application script finished.
+2026-04-09 21:27:38,925 - data_tools - INFO - Main application script started.
+2026-04-09 21:27:39,229 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:27:39,601 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:28:05,943 - root - INFO - Auto-imported 267 modules successfully
+2026-04-09 21:28:05,943 - root - INFO - Skipped 18 modules (expected for script files)
+2026-04-09 21:28:05,943 - root - INFO - Auto-import summary: 267 imported, 18 failed, 9437 skipped, 9722 total files processed
+2026-04-09 21:28:05,951 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:28:06,012 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:28:06,038 - root - INFO - Status: Ready - Auto-imported 267 modules (18 failed)
+2026-04-09 21:28:48,255 - data_tools - INFO - Main application script finished.
+2026-04-09 21:30:55,078 - data_tools - INFO - Main application script started.
+2026-04-09 21:30:55,311 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:30:55,750 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:30:55,751 - root - INFO - Using cached auto-import results
+2026-04-09 21:30:55,756 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:30:55,946 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:30:55,958 - root - INFO - Status: Ready - Auto-imported 267 modules (18 failed)
+2026-04-09 21:32:04,176 - data_tools - INFO - Main application script finished.
+2026-04-09 21:32:12,947 - data_tools - INFO - Main application script started.
+2026-04-09 21:32:13,178 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:32:13,605 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:32:13,606 - root - INFO - Using cached auto-import results
+2026-04-09 21:32:13,608 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:32:13,734 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:32:13,744 - root - INFO - Status: Ready - Auto-imported 267 modules (18 failed)
+2026-04-09 21:32:24,562 - data_tools - INFO - Main application script finished.
+2026-04-09 21:32:55,993 - data_tools - INFO - Main application script started.
+2026-04-09 21:32:56,211 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:32:56,576 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:32:56,579 - root - INFO - Using cached auto-import results
+2026-04-09 21:32:56,627 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:32:56,907 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:32:56,909 - root - INFO - Status: Ready - Auto-imported 267 modules (18 failed)
+2026-04-09 21:33:11,000 - data_tools - INFO - Main application script finished.
+2026-04-09 21:35:39,706 - data_tools - INFO - Main application script started.
+2026-04-09 21:35:39,942 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:35:40,488 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:35:52,640 - root - INFO - Auto-imported 269 modules successfully
+2026-04-09 21:35:52,640 - root - INFO - Skipped 18 modules (expected for script files)
+2026-04-09 21:35:52,641 - root - INFO - Auto-import summary: 269 imported, 18 failed, 9437 skipped, 9724 total files processed
+2026-04-09 21:35:52,644 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:35:52,731 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:35:52,748 - root - INFO - Status: Ready - Auto-imported 269 modules (18 failed)
+2026-04-09 21:36:24,169 - root - INFO - Starting TTS playback for all details.
+2026-04-09 21:36:41,614 - root - INFO - TTS playback completed for all details.
+2026-04-09 21:37:11,362 - data_tools - INFO - Main application script finished.
+2026-04-09 21:41:32,142 - data_tools - INFO - Main application script started.
+2026-04-09 21:41:32,367 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:41:32,893 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:41:43,685 - root - INFO - Auto-imported 270 modules successfully
+2026-04-09 21:41:43,686 - root - INFO - Skipped 18 modules (expected for script files)
+2026-04-09 21:41:43,686 - root - INFO - Auto-import summary: 270 imported, 18 failed, 9437 skipped, 9725 total files processed
+2026-04-09 21:41:43,689 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:41:43,764 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:41:43,782 - root - INFO - Status: Ready - Auto-imported 270 modules (18 failed)
+2026-04-09 21:41:52,355 - data_tools - INFO - Main application script finished.
+2026-04-09 21:46:23,035 - data_tools - INFO - Main application script started.
+2026-04-09 21:46:58,069 - data_tools - INFO - Main application script started.
+2026-04-09 21:47:36,807 - data_tools - INFO - Main application script started.
+2026-04-09 21:48:04,612 - data_tools - INFO - Main application script started.
+2026-04-09 21:48:27,988 - data_tools - INFO - Main application script started.
+2026-04-09 21:48:52,037 - data_tools - INFO - Main application script started.
+2026-04-09 21:50:32,764 - data_tools - INFO - Main application script started.
+2026-04-09 21:51:23,176 - data_tools - INFO - Main application script started.
+2026-04-09 21:51:38,947 - data_tools - INFO - Main application script started.
+2026-04-09 21:51:58,097 - data_tools - INFO - Main application script started.
+2026-04-09 21:55:26,447 - __main__ - INFO - Main application script started.
+2026-04-09 21:55:26,752 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:55:27,369 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:55:28,903 - root - INFO - Auto-imported 314 modules successfully
+2026-04-09 21:55:28,903 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 21:55:28,904 - root - INFO - Auto-import summary: 314 imported, 27 failed, 9497 skipped, 9838 total files processed
+2026-04-09 21:55:28,912 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:55:29,052 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:55:29,081 - root - INFO - Status: Ready - Auto-imported 314 modules (27 failed)
+2026-04-09 21:55:34,894 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 21:55:34,894 - __main__ - INFO - Main application script finished.
+2026-04-09 21:55:45,431 - __main__ - INFO - Main application script started.
+2026-04-09 21:55:45,795 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:55:46,546 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:55:46,547 - root - INFO - Using cached auto-import results
+2026-04-09 21:55:46,587 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:55:46,829 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:55:46,839 - root - INFO - Status: Ready - Auto-imported 314 modules (27 failed)
+2026-04-09 21:55:58,579 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 21:55:58,580 - __main__ - INFO - Main application script finished.
+2026-04-09 21:56:21,133 - __main__ - INFO - Main application script started.
+2026-04-09 21:56:21,340 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:56:22,004 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:56:22,004 - root - INFO - Using cached auto-import results
+2026-04-09 21:56:22,007 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:56:22,137 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:56:22,139 - root - INFO - Status: Ready - Auto-imported 314 modules (27 failed)
+2026-04-09 21:56:26,927 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 21:56:26,929 - __main__ - INFO - Main application script finished.
+2026-04-09 21:56:31,951 - __main__ - INFO - Main application script started.
+2026-04-09 21:56:32,161 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:56:32,629 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:56:32,629 - root - INFO - Using cached auto-import results
+2026-04-09 21:56:32,679 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:56:32,935 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:56:32,945 - root - INFO - Status: Ready - Auto-imported 314 modules (27 failed)
+2026-04-09 21:57:29,931 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 21:57:29,931 - __main__ - INFO - Main application script finished.
+2026-04-09 21:57:38,623 - __main__ - INFO - Main application script started.
+2026-04-09 21:57:38,820 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 21:57:39,255 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 21:57:39,256 - root - INFO - Using cached auto-import results
+2026-04-09 21:57:39,289 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 21:57:39,391 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 21:57:39,418 - root - INFO - Status: Ready - Auto-imported 314 modules (27 failed)
+2026-04-09 21:57:44,960 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 21:57:44,962 - __main__ - INFO - Main application script finished.
+2026-04-09 22:11:06,336 - __main__ - INFO - Main application script started.
+2026-04-09 22:11:26,172 - __main__ - INFO - Main application script started.
+2026-04-09 22:11:48,272 - __main__ - INFO - Main application script started.
+2026-04-09 22:12:33,556 - __main__ - INFO - Main application script started.
+2026-04-09 22:12:33,832 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:12:34,231 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:13:31,805 - __main__ - INFO - Main application script started.
+2026-04-09 22:13:32,083 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:13:32,842 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:13:35,040 - root - INFO - Auto-imported 314 modules successfully
+2026-04-09 22:13:35,040 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 22:13:35,040 - root - INFO - Auto-import summary: 314 imported, 27 failed, 9498 skipped, 9839 total files processed
+2026-04-09 22:13:35,053 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 22:13:35,194 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 22:13:35,234 - root - INFO - Status: Ready - Auto-imported 314 modules (27 failed)
+2026-04-09 22:13:41,079 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 22:13:41,081 - __main__ - INFO - Main application script finished.
+2026-04-09 22:14:10,327 - __main__ - INFO - Main application script started.
+2026-04-09 22:14:10,521 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:14:10,955 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:14:10,955 - root - INFO - Using cached auto-import results
+2026-04-09 22:14:10,959 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 22:14:11,104 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 22:14:11,116 - root - INFO - Status: Ready - Auto-imported 314 modules (27 failed)
+2026-04-09 22:14:16,298 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 22:14:16,300 - __main__ - INFO - Main application script finished.
+2026-04-09 22:17:02,158 - __main__ - INFO - Main application script started.
+2026-04-09 22:17:02,654 - Crew - INFO - Grid overlay applied to /home/me/Notebooks/CREW/Crew/input/cars1.png with grid size (42, 32).
+2026-04-09 22:18:33,801 - __main__ - INFO - Main application script started.
+2026-04-09 22:18:34,366 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:18:34,713 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:18:34,715 - root - INFO - Using cached auto-import results
+2026-04-09 22:18:34,721 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 22:18:34,788 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 22:18:34,796 - root - INFO - Status: Ready - Auto-imported 314 modules (27 failed)
+2026-04-09 22:18:39,258 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 22:18:39,258 - __main__ - INFO - Main application script finished.
+2026-04-09 22:19:20,176 - __main__ - INFO - Main application script started.
+2026-04-09 22:19:20,375 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:19:20,827 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:19:22,516 - root - INFO - Auto-imported 314 modules successfully
+2026-04-09 22:19:22,517 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 22:19:22,517 - root - INFO - Auto-import summary: 314 imported, 27 failed, 9498 skipped, 9839 total files processed
+2026-04-09 22:19:22,519 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 22:19:22,581 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 22:19:22,606 - root - INFO - Status: Ready - Auto-imported 314 modules (27 failed)
+2026-04-09 22:19:24,885 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 22:19:24,887 - __main__ - INFO - Main application script finished.
+2026-04-09 22:23:31,513 - __main__ - INFO - Main application script started.
+2026-04-09 22:23:41,567 - __main__ - INFO - Main application script started.
+2026-04-09 22:23:41,926 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:23:42,389 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:23:42,389 - root - INFO - Using cached auto-import results
+2026-04-09 22:23:42,393 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 22:23:42,503 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 22:23:42,512 - root - INFO - Status: Ready - Auto-imported 314 modules (27 failed)
+2026-04-09 22:23:59,495 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 22:23:59,499 - __main__ - INFO - Main application script finished.
+2026-04-09 22:26:20,446 - __main__ - INFO - Main application script started.
+2026-04-09 22:26:20,660 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:26:21,081 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:26:36,780 - root - INFO - Auto-imported 377 modules successfully
+2026-04-09 22:26:36,780 - root - INFO - Skipped 18 modules (expected for script files)
+2026-04-09 22:26:36,780 - root - INFO - Auto-import summary: 377 imported, 18 failed, 9559 skipped, 9954 total files processed
+2026-04-09 22:26:36,786 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 22:26:36,913 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 22:26:36,914 - root - INFO - Status: Ready - Auto-imported 377 modules (18 failed)
+2026-04-09 22:26:49,284 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 22:26:49,285 - __main__ - INFO - Main application script finished.
+2026-04-09 22:29:21,943 - __main__ - INFO - Main application script started.
+2026-04-09 22:29:34,020 - __main__ - INFO - Main application script started.
+2026-04-09 22:29:34,303 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:29:34,709 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:29:34,710 - root - INFO - Using cached auto-import results
+2026-04-09 22:29:34,717 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 22:29:34,904 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 22:29:34,932 - root - INFO - Status: Ready - Auto-imported 377 modules (18 failed)
+2026-04-09 22:29:58,954 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 22:29:58,954 - __main__ - INFO - Main application script finished.
+2026-04-09 22:30:49,210 - __main__ - INFO - Main application script started.
+2026-04-09 22:30:49,478 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:30:49,873 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:30:49,874 - root - INFO - Using cached auto-import results
+2026-04-09 22:30:49,918 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 22:30:50,014 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 22:30:50,026 - root - INFO - Status: Ready - Auto-imported 377 modules (18 failed)
+2026-04-09 22:30:53,464 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 22:30:53,464 - __main__ - INFO - Main application script finished.
+2026-04-09 22:32:29,498 - __main__ - INFO - Main application script started.
+2026-04-09 22:32:30,339 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:32:30,896 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:32:36,154 - root - INFO - Auto-imported 371 modules successfully
+2026-04-09 22:32:36,154 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 22:32:36,155 - root - INFO - Auto-import summary: 371 imported, 27 failed, 9559 skipped, 9957 total files processed
+2026-04-09 22:32:36,165 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 22:32:36,276 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 22:32:36,297 - root - INFO - Status: Ready - Auto-imported 371 modules (27 failed)
+2026-04-09 22:32:41,365 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 22:32:41,366 - __main__ - INFO - Main application script finished.
+2026-04-09 22:37:24,269 - __main__ - INFO - Main application script started.
+2026-04-09 22:37:49,943 - __main__ - INFO - Main application script started.
+2026-04-09 22:38:54,697 - __main__ - INFO - Main application script started.
+2026-04-09 22:39:31,006 - __main__ - INFO - Main application script started.
+2026-04-09 22:39:31,009 - root - DEBUG - Verbose logging enabled (DEBUG level)
+2026-04-09 22:41:09,613 - __main__ - INFO - Main application script started.
+2026-04-09 22:41:09,878 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 22:41:10,428 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 22:41:11,516 - root - INFO - Auto-imported 371 modules successfully
+2026-04-09 22:41:11,516 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 22:41:11,516 - root - INFO - Auto-import summary: 371 imported, 27 failed, 9559 skipped, 9957 total files processed
+2026-04-09 22:41:11,519 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 22:41:11,579 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 22:41:11,587 - root - INFO - Status: Ready - Auto-imported 371 modules (27 failed)
+2026-04-09 22:41:26,318 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 22:41:26,319 - __main__ - INFO - Main application script finished.
+2026-04-09 23:04:37,386 - __main__ - INFO - Main application script started.
+2026-04-09 23:04:37,612 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 23:04:38,090 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 23:04:39,382 - root - INFO - Auto-imported 426 modules successfully
+2026-04-09 23:04:39,382 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 23:04:39,382 - root - INFO - Auto-import summary: 426 imported, 27 failed, 9620 skipped, 10073 total files processed
+2026-04-09 23:04:39,388 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 23:04:39,464 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 23:04:39,465 - root - INFO - Status: Ready - Auto-imported 426 modules (27 failed)
+2026-04-09 23:05:00,353 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 23:05:00,354 - __main__ - INFO - Main application script finished.
+2026-04-09 23:09:01,601 - __main__ - INFO - Main application script started.
+2026-04-09 23:09:02,153 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 23:09:02,722 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 23:09:02,723 - root - INFO - Using cached auto-import results
+2026-04-09 23:09:02,725 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 23:09:02,902 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 23:09:02,909 - root - INFO - Status: Ready - Auto-imported 426 modules (27 failed)
+2026-04-09 23:09:08,285 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 23:09:08,286 - __main__ - INFO - Main application script finished.
+2026-04-09 23:21:13,259 - __main__ - INFO - Main application script started.
+2026-04-09 23:21:13,463 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 23:21:13,987 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 23:21:15,256 - root - INFO - Auto-imported 426 modules successfully
+2026-04-09 23:21:15,256 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 23:21:15,256 - root - INFO - Auto-import summary: 426 imported, 27 failed, 9620 skipped, 10073 total files processed
+2026-04-09 23:21:15,259 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 23:21:15,317 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 23:21:15,325 - root - INFO - Status: Ready - Auto-imported 426 modules (27 failed)
+2026-04-09 23:21:35,681 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 23:21:35,681 - __main__ - INFO - Main application script finished.
+2026-04-09 23:25:07,539 - __main__ - INFO - Main application script started.
+2026-04-09 23:25:07,762 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 23:25:08,065 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 23:25:08,066 - root - INFO - Using cached auto-import results
+2026-04-09 23:25:08,087 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 23:25:08,213 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 23:25:08,243 - root - INFO - Status: Ready - Auto-imported 426 modules (27 failed)
+2026-04-09 23:25:25,918 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-09 23:25:30,624 - root - INFO - Status: Running script: any_month.py...
+2026-04-09 23:25:30,624 - root - INFO - Executing script: python '/home/me/Notebooks/CREW/Crew/scripts/any_month.py'
+2026-04-09 23:25:30,713 - root - INFO - Status: Script 'any_month.py' finished.
+2026-04-09 23:25:55,364 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 23:25:55,365 - __main__ - INFO - Main application script finished.
+2026-04-09 23:29:57,575 - __main__ - INFO - Main application script started.
+2026-04-09 23:29:58,071 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 23:29:58,429 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 23:30:02,337 - root - INFO - Auto-imported 481 modules successfully
+2026-04-09 23:30:02,337 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 23:30:02,337 - root - INFO - Auto-import summary: 481 imported, 27 failed, 9683 skipped, 10191 total files processed
+2026-04-09 23:30:02,346 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 23:30:02,431 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 23:30:02,444 - root - INFO - Status: Ready - Auto-imported 481 modules (27 failed)
+2026-04-09 23:30:06,556 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 23:30:06,559 - __main__ - INFO - Main application script finished.
+2026-04-09 23:42:54,194 - __main__ - INFO - Main application script started.
+2026-04-09 23:42:54,459 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 23:42:54,460 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-09 23:42:54,460 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-09 23:42:54,460 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-09 23:42:54,460 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-09 23:42:54,460 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-09 23:42:55,057 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 23:42:56,286 - root - INFO - Auto-imported 481 modules successfully
+2026-04-09 23:42:56,286 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-09 23:42:56,286 - root - INFO - Auto-import summary: 481 imported, 27 failed, 9683 skipped, 10191 total files processed
+2026-04-09 23:42:56,288 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-09 23:42:56,289 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 23:42:56,352 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 23:42:56,369 - root - INFO - Status: Ready - Auto-imported 481 modules (27 failed)
+2026-04-09 23:42:59,550 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 23:42:59,551 - __main__ - INFO - Main application script finished.
+2026-04-09 23:57:13,559 - __main__ - INFO - Main application script started.
+2026-04-09 23:57:13,908 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-09 23:57:13,908 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-09 23:57:13,908 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-09 23:57:13,908 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-09 23:57:13,908 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-09 23:57:13,908 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-09 23:57:14,438 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-09 23:57:14,439 - root - INFO - Using cached auto-import results
+2026-04-09 23:57:14,440 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-09 23:57:14,474 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-09 23:57:14,558 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-09 23:57:14,588 - root - INFO - Status: Ready - Auto-imported 490 modules (18 failed)
+2026-04-09 23:57:19,285 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-09 23:57:19,285 - __main__ - INFO - Main application script finished.
+2026-04-10 00:54:04,830 - __main__ - INFO - Main application script started.
+2026-04-10 00:54:05,408 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 00:54:05,408 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 00:54:05,408 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 00:54:05,408 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 00:54:05,408 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 00:54:05,408 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 00:54:05,728 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 00:54:07,701 - root - INFO - Auto-imported 481 modules successfully
+2026-04-10 00:54:07,701 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-10 00:54:07,701 - root - INFO - Auto-import summary: 481 imported, 27 failed, 9683 skipped, 10191 total files processed
+2026-04-10 00:54:07,703 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 00:54:07,707 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 00:54:07,767 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 00:54:07,791 - root - INFO - Status: Ready - Auto-imported 481 modules (27 failed)
+2026-04-10 00:54:20,606 - root - INFO - Status: Recording... (Stop to finish)
+2026-04-10 00:54:24,782 - root - INFO - Status: Recording saved: /tmp/crew_recording_ro6mr8e8.wav
+2026-04-10 00:54:57,811 - root - INFO - Status: Playing last recording...
+2026-04-10 00:55:34,824 - root - INFO - Starting TTS playback for all details.
+2026-04-10 00:55:49,703 - root - INFO - TTS playback completed for all details.
+2026-04-10 00:55:49,766 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 00:55:49,767 - __main__ - INFO - Main application script finished.
+2026-04-10 01:11:53,839 - __main__ - INFO - Main application script started.
+2026-04-10 01:11:54,081 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 01:11:54,081 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 01:11:54,081 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 01:11:54,082 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 01:11:54,082 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 01:11:54,082 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 01:11:54,509 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 01:11:54,511 - root - INFO - Using cached auto-import results
+2026-04-10 01:11:54,511 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 01:11:54,513 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 01:11:54,635 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 01:11:54,668 - root - INFO - Status: Ready - Auto-imported 600 modules (18 failed)
+2026-04-10 01:12:05,083 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 01:12:05,086 - __main__ - INFO - Main application script finished.
+2026-04-10 01:38:05,161 - __main__ - INFO - Main application script started.
+2026-04-10 01:38:08,168 - __main__ - INFO - Main application script started.
+2026-04-10 01:43:19,348 - __main__ - INFO - Main application script started.
+2026-04-10 01:44:40,248 - __main__ - INFO - Main application script started.
+2026-04-10 01:45:07,124 - __main__ - INFO - Main application script started.
+2026-04-10 01:45:41,200 - __main__ - INFO - Main application script started.
+2026-04-10 01:46:17,188 - __main__ - INFO - Main application script started.
+2026-04-10 01:46:45,597 - __main__ - INFO - Main application script started.
+2026-04-10 01:47:05,952 - __main__ - INFO - Main application script started.
+2026-04-10 01:48:22,728 - __main__ - INFO - Main application script started.
+2026-04-10 01:48:43,143 - __main__ - INFO - Main application script started.
+2026-04-10 01:49:07,196 - __main__ - INFO - Main application script started.
+2026-04-10 01:49:30,555 - __main__ - INFO - Main application script started.
+2026-04-10 01:50:03,519 - __main__ - INFO - Main application script started.
+2026-04-10 01:50:22,280 - __main__ - INFO - Main application script started.
+2026-04-10 01:50:58,087 - __main__ - INFO - Main application script started.
+2026-04-10 01:51:15,680 - __main__ - INFO - Main application script started.
+2026-04-10 01:51:30,343 - __main__ - INFO - Main application script started.
+2026-04-10 01:51:50,930 - __main__ - INFO - Main application script started.
+2026-04-10 01:52:06,510 - __main__ - INFO - Main application script started.
+2026-04-10 01:52:22,067 - __main__ - INFO - Main application script started.
+2026-04-10 01:52:39,160 - __main__ - INFO - Main application script started.
+2026-04-10 01:52:58,114 - __main__ - INFO - Main application script started.
+2026-04-10 01:53:14,628 - __main__ - INFO - Main application script started.
+2026-04-10 01:53:37,112 - __main__ - INFO - Main application script started.
+2026-04-10 01:53:55,545 - __main__ - INFO - Main application script started.
+2026-04-10 01:53:56,670 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 01:53:56,672 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 01:53:56,672 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 01:53:56,673 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 01:53:56,673 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 01:53:56,673 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 01:53:57,246 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 01:54:17,406 - root - INFO - Auto-imported 604 modules successfully
+2026-04-10 01:54:17,406 - root - INFO - Skipped 18 modules (expected for script files)
+2026-04-10 01:54:17,406 - root - INFO - Auto-import summary: 604 imported, 18 failed, 9807 skipped, 10429 total files processed
+2026-04-10 01:54:17,409 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 01:54:17,424 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 01:54:17,606 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 01:54:17,623 - root - INFO - Status: Ready - Auto-imported 604 modules (18 failed)
+2026-04-10 01:54:58,966 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 01:54:58,968 - __main__ - INFO - Main application script finished.
+2026-04-10 01:55:29,858 - __main__ - INFO - Main application script started.
+2026-04-10 01:55:30,136 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 01:55:30,136 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 01:55:30,136 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 01:55:30,136 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 01:55:30,137 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 01:55:30,137 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 01:55:30,509 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 01:55:30,512 - root - INFO - Using cached auto-import results
+2026-04-10 01:55:30,513 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 01:55:30,516 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 01:55:30,642 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 01:55:30,657 - root - INFO - Status: Ready - Auto-imported 604 modules (18 failed)
+2026-04-10 01:57:14,264 - __main__ - INFO - Main application script started.
+2026-04-10 01:57:14,562 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 01:57:14,562 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 01:57:14,562 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 01:57:14,562 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 01:57:14,562 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 01:57:14,562 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 01:57:14,767 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 01:57:14,767 - root - INFO - Using cached auto-import results
+2026-04-10 01:57:14,768 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 01:57:14,769 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 01:57:14,944 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 01:57:14,960 - root - INFO - Status: Ready - Auto-imported 604 modules (18 failed)
+2026-04-10 01:58:21,153 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 01:58:21,154 - __main__ - INFO - Main application script finished.
+2026-04-10 02:02:01,754 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 02:02:01,755 - __main__ - INFO - Main application script finished.
+2026-04-10 02:03:50,160 - __main__ - INFO - Main application script started.
+2026-04-10 02:03:50,402 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 02:03:50,403 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 02:03:50,403 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 02:03:50,403 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 02:03:50,403 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 02:03:50,403 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 02:03:50,824 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 02:03:56,110 - root - INFO - Auto-imported 595 modules successfully
+2026-04-10 02:03:56,111 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-10 02:03:56,111 - root - INFO - Auto-import summary: 595 imported, 27 failed, 9807 skipped, 10429 total files processed
+2026-04-10 02:03:56,117 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 02:03:56,121 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 02:03:56,217 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 02:03:56,219 - root - INFO - Status: Ready - Auto-imported 595 modules (27 failed)
+2026-04-10 02:05:12,576 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 02:05:12,576 - __main__ - INFO - Main application script finished.
+2026-04-10 02:05:47,360 - __main__ - INFO - Main application script started.
+2026-04-10 02:05:47,552 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 02:05:47,552 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 02:05:47,552 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 02:05:47,553 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 02:05:47,553 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 02:05:47,553 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 02:05:47,975 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 02:05:47,976 - root - INFO - Using cached auto-import results
+2026-04-10 02:05:47,977 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 02:05:48,047 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 02:05:48,199 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 02:05:48,214 - root - INFO - Status: Ready - Auto-imported 595 modules (27 failed)
+2026-04-10 02:06:12,657 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 02:06:12,657 - __main__ - INFO - Main application script finished.
+2026-04-10 02:24:53,160 - __main__ - INFO - Main application script started.
+2026-04-10 02:24:53,553 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 02:24:53,554 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 02:24:53,554 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 02:24:53,554 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 02:24:53,554 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 02:24:53,554 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 02:24:54,205 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 02:24:55,747 - root - INFO - Auto-imported 595 modules successfully
+2026-04-10 02:24:55,747 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-10 02:24:55,747 - root - INFO - Auto-import summary: 595 imported, 27 failed, 9807 skipped, 10429 total files processed
+2026-04-10 02:24:55,750 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 02:24:55,755 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 02:24:55,807 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 02:24:55,833 - root - INFO - Status: Ready - Auto-imported 595 modules (27 failed)
+2026-04-10 02:26:50,213 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 02:26:50,213 - __main__ - INFO - Main application script finished.
+2026-04-10 02:37:33,754 - __main__ - INFO - Main application script started.
+2026-04-10 02:37:34,021 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 02:37:34,021 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 02:37:34,022 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 02:37:34,022 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 02:37:34,022 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 02:37:34,022 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 02:37:34,023 - root - ERROR - Failed to initialize GUI: name 'ThemeManager' is not defined
+2026-04-10 15:51:38,249 - __main__ - INFO - Main application script started.
+2026-04-10 15:51:40,716 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 15:51:40,716 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 15:51:40,716 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 15:51:40,716 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 15:51:40,716 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 15:51:40,716 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 15:51:40,716 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 15:51:40,716 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 15:51:41,290 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 15:51:50,799 - root - INFO - Auto-imported 532 modules successfully
+2026-04-10 15:51:50,799 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-10 15:51:50,799 - root - INFO - Auto-import summary: 532 imported, 27 failed, 9744 skipped, 10303 total files processed
+2026-04-10 15:51:50,810 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 15:51:50,824 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 15:51:50,991 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 15:51:50,992 - root - INFO - Status: Ready - Auto-imported 532 modules (27 failed)
+2026-04-10 15:51:54,980 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 15:51:54,980 - __main__ - INFO - Main application script finished.
+2026-04-10 15:51:58,694 - __main__ - INFO - Main application script started.
+2026-04-10 15:51:58,896 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 15:51:58,897 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 15:51:58,897 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 15:51:58,897 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 15:51:58,897 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 15:51:58,897 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 15:51:58,897 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 15:51:58,897 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 15:51:59,200 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 15:51:59,201 - root - INFO - Using cached auto-import results
+2026-04-10 15:51:59,201 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 15:51:59,224 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 15:51:59,462 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 15:51:59,472 - root - INFO - Status: Ready - Auto-imported 532 modules (27 failed)
+2026-04-10 15:57:21,883 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 15:57:21,885 - __main__ - INFO - Main application script finished.
+2026-04-10 16:17:12,372 - __main__ - INFO - Main application script started.
+2026-04-10 16:17:15,420 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 16:17:15,420 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 16:17:15,420 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 16:17:15,420 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 16:17:15,420 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 16:17:15,420 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 16:17:15,420 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 16:17:15,420 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 16:17:15,693 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 16:17:30,039 - root - INFO - Auto-imported 533 modules successfully
+2026-04-10 16:17:30,040 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-10 16:17:30,040 - root - INFO - Auto-import summary: 533 imported, 27 failed, 9744 skipped, 10304 total files processed
+2026-04-10 16:17:30,067 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 16:17:30,075 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 16:17:30,245 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 16:17:30,254 - root - INFO - Status: Ready - Auto-imported 533 modules (27 failed)
+2026-04-10 16:17:38,033 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 16:17:38,033 - __main__ - INFO - Main application script finished.
+2026-04-10 16:25:30,027 - __main__ - INFO - Main application script started.
+2026-04-10 16:25:39,656 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 16:25:39,656 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 16:25:39,656 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 16:25:39,656 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 16:25:39,656 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 16:25:39,656 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 16:25:39,656 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 16:25:39,656 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 16:25:40,287 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 16:26:22,037 - root - INFO - Auto-imported 534 modules successfully
+2026-04-10 16:26:22,037 - root - INFO - Skipped 27 modules (expected for script files)
+2026-04-10 16:26:22,038 - root - INFO - Auto-import summary: 534 imported, 27 failed, 9744 skipped, 10305 total files processed
+2026-04-10 16:26:22,039 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 16:26:22,047 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 16:26:22,154 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 16:26:22,156 - root - INFO - Status: Ready - Auto-imported 534 modules (27 failed)
+2026-04-10 16:27:41,998 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 16:27:42,138 - __main__ - INFO - Main application script finished.
+2026-04-10 17:10:14,835 - __main__ - INFO - Main application script started.
+2026-04-10 17:10:25,426 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 17:10:25,427 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 17:10:25,427 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 17:10:25,427 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 17:10:25,427 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 17:10:25,427 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 17:10:25,427 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 17:10:25,427 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 17:10:26,018 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 17:11:54,389 - root - INFO - Auto-imported 594 modules successfully
+2026-04-10 17:11:54,441 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 17:11:54,441 - root - INFO - Auto-import summary: 594 imported, 29 failed, 9886 skipped, 10509 total files processed
+2026-04-10 17:11:54,487 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 17:11:54,525 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 17:11:54,768 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 17:11:54,770 - root - INFO - Status: Ready - Auto-imported 594 modules (29 failed)
+2026-04-10 17:12:35,581 - CrewMessageRouter - INFO - All messages cleared.
+2026-04-10 17:12:44,704 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 17:12:44,705 - __main__ - INFO - Main application script finished.
+2026-04-10 17:32:25,920 - __main__ - INFO - Main application script started.
+2026-04-10 17:34:18,712 - __main__ - INFO - Main application script started.
+2026-04-10 17:34:24,560 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 17:34:24,560 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 17:34:24,560 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 17:34:24,560 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 17:34:24,560 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 17:34:24,560 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 17:34:24,560 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 17:34:24,560 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 17:34:24,961 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 17:34:55,839 - root - INFO - Auto-imported 605 modules successfully
+2026-04-10 17:34:55,839 - root - INFO - Skipped 18 modules (expected for script files)
+2026-04-10 17:34:55,840 - root - INFO - Auto-import summary: 605 imported, 18 failed, 9886 skipped, 10509 total files processed
+2026-04-10 17:34:55,879 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 17:34:55,914 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 17:34:56,015 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 17:34:56,026 - root - INFO - Status: Ready - Auto-imported 605 modules (18 failed)
+2026-04-10 17:37:47,670 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 17:37:47,671 - __main__ - INFO - Main application script finished.
+2026-04-10 17:41:57,816 - __main__ - INFO - Main application script started.
+2026-04-10 17:42:07,526 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 17:42:07,526 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 17:42:07,526 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 17:42:07,526 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 17:42:07,526 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 17:42:07,526 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 17:42:07,526 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 17:42:07,526 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 17:42:08,010 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 17:42:41,343 - root - INFO - Auto-imported 594 modules successfully
+2026-04-10 17:42:41,343 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 17:42:41,344 - root - INFO - Auto-import summary: 594 imported, 29 failed, 9886 skipped, 10509 total files processed
+2026-04-10 17:42:41,353 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 17:42:41,359 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 17:42:41,503 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 17:42:41,526 - root - INFO - Status: Ready - Auto-imported 594 modules (29 failed)
+2026-04-10 17:42:58,225 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 17:42:58,226 - __main__ - INFO - Main application script finished.
+2026-04-10 18:28:15,784 - __main__ - INFO - Main application script started.
+2026-04-10 18:28:15,983 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 18:28:15,984 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 18:28:15,984 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 18:28:15,984 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 18:28:15,984 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 18:28:15,984 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 18:28:15,984 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 18:28:15,984 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 18:28:16,453 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 18:28:16,454 - root - INFO - Using cached auto-import results
+2026-04-10 18:28:16,454 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 18:28:16,456 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 18:28:16,595 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 18:28:16,602 - root - INFO - Status: Ready - Auto-imported 594 modules (29 failed)
+2026-04-10 18:28:51,979 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 18:28:51,981 - __main__ - INFO - Main application script finished.
+2026-04-10 18:30:40,299 - __main__ - INFO - Main application script started.
+2026-04-10 18:30:40,461 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 18:30:40,461 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 18:30:40,461 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 18:30:40,461 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 18:30:40,461 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 18:30:40,462 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 18:30:40,462 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 18:30:40,462 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 18:30:40,732 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 18:30:42,122 - root - INFO - Auto-imported 594 modules successfully
+2026-04-10 18:30:42,122 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 18:30:42,123 - root - INFO - Auto-import summary: 594 imported, 29 failed, 10492 skipped, 11115 total files processed
+2026-04-10 18:30:42,126 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 18:30:42,129 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 18:30:42,245 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 18:30:42,270 - root - INFO - Status: Ready - Auto-imported 594 modules (29 failed)
+2026-04-10 18:31:15,345 - root - INFO - Status: Filters cleared
+2026-04-10 18:31:15,578 - root - INFO - Status: Filters cleared
+2026-04-10 18:31:16,699 - root - INFO - Status: Filters cleared
+2026-04-10 18:31:38,010 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 18:31:38,010 - __main__ - INFO - Main application script finished.
+2026-04-10 18:52:30,977 - __main__ - INFO - Main application script started.
+2026-04-10 18:52:31,132 - root - ERROR - Failed to initialize GUI: name 'login_user_menu' is not defined
+2026-04-10 18:53:04,777 - __main__ - INFO - Main application script started.
+2026-04-10 18:53:04,933 - root - ERROR - Failed to initialize GUI: name 'login_user_menu' is not defined
+2026-04-10 19:03:04,727 - __main__ - INFO - Main application script started.
+2026-04-10 19:03:04,879 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 19:03:04,879 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 19:03:04,879 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 19:03:04,879 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 19:03:04,879 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 19:03:04,879 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 19:03:04,879 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 19:03:04,879 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 19:03:05,232 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 19:03:06,647 - root - INFO - Auto-imported 651 modules successfully
+2026-04-10 19:03:06,647 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 19:03:06,647 - root - INFO - Auto-import summary: 651 imported, 29 failed, 10554 skipped, 11234 total files processed
+2026-04-10 19:03:06,649 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 19:03:06,654 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 19:03:06,701 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 19:03:06,714 - root - INFO - Status: Ready - Auto-imported 651 modules (29 failed)
+2026-04-10 19:03:20,568 - CrewMessageRouter - INFO - Message from Captain to ['Captain']: help 
+2026-04-10 19:03:41,857 - CrewMessageRouter - INFO - Message from Captain to ['Captain']: help 
+2026-04-10 19:04:02,804 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 19:04:02,805 - __main__ - INFO - Main application script finished.
+2026-04-10 19:07:13,041 - __main__ - INFO - Main application script started.
+2026-04-10 19:07:13,198 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 19:07:13,198 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 19:07:13,198 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 19:07:13,198 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 19:07:13,198 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 19:07:13,198 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 19:07:13,198 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 19:07:13,198 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 19:07:13,532 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 19:07:13,533 - root - INFO - Using cached auto-import results
+2026-04-10 19:07:13,533 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 19:07:13,534 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 19:07:13,637 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 19:07:13,650 - root - INFO - Status: Ready - Auto-imported 651 modules (29 failed)
+2026-04-10 19:07:22,787 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 19:07:22,791 - __main__ - INFO - Main application script finished.
+2026-04-10 19:57:54,336 - __main__ - INFO - Main application script started.
+2026-04-10 19:57:57,922 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 19:57:57,922 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 19:57:57,923 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 19:57:57,923 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 19:57:57,923 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 19:57:57,923 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 19:57:57,923 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 19:57:57,923 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 19:57:58,378 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 19:58:07,766 - root - INFO - Auto-imported 651 modules successfully
+2026-04-10 19:58:07,766 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 19:58:07,766 - root - INFO - Auto-import summary: 651 imported, 29 failed, 10554 skipped, 11234 total files processed
+2026-04-10 19:58:07,796 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 19:58:07,804 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 19:58:07,945 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 19:58:07,974 - root - INFO - Status: Ready - Auto-imported 651 modules (29 failed)
+2026-04-10 19:59:06,046 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 19:59:06,048 - __main__ - INFO - Main application script finished.
+2026-04-10 20:16:22,249 - __main__ - INFO - Main application script started.
+2026-04-10 20:16:27,398 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 20:16:27,398 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 20:16:27,398 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 20:16:27,398 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 20:16:27,398 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 20:16:27,398 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 20:16:27,398 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 20:16:27,398 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 20:16:27,890 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 20:16:38,483 - root - INFO - Auto-imported 708 modules successfully
+2026-04-10 20:16:38,483 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 20:16:38,483 - root - INFO - Auto-import summary: 708 imported, 29 failed, 10618 skipped, 11355 total files processed
+2026-04-10 20:16:38,486 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 20:16:38,495 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 20:16:38,602 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 20:16:38,625 - root - INFO - Status: Ready - Auto-imported 708 modules (29 failed)
+2026-04-10 20:16:56,042 - CrewMessageRouter - INFO - Message from Captain to ['Captain']: no help here 
+2026-04-10 20:17:09,092 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 20:17:09,093 - __main__ - INFO - Main application script finished.
+2026-04-10 20:17:32,830 - __main__ - INFO - Main application script started.
+2026-04-10 20:17:32,977 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 20:17:32,978 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 20:17:32,978 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 20:17:32,978 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 20:17:32,978 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 20:17:32,978 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 20:17:32,978 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 20:17:32,978 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 20:17:33,301 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 20:17:33,301 - root - INFO - Using cached auto-import results
+2026-04-10 20:17:33,303 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 20:17:33,304 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 20:17:33,368 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 20:17:33,408 - root - INFO - Status: Ready - Auto-imported 708 modules (29 failed)
+2026-04-10 20:19:21,554 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 20:19:21,555 - __main__ - INFO - Main application script finished.
+2026-04-10 20:34:17,571 - __main__ - INFO - Main application script started.
+2026-04-10 20:34:32,209 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 20:34:32,209 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 20:34:32,209 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 20:34:32,209 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 20:34:32,209 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 20:34:32,209 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 20:34:32,209 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 20:34:32,209 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 20:34:32,739 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 21:25:20,572 - __main__ - INFO - Main application script started.
+2026-04-10 21:25:23,507 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 21:25:23,507 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 21:25:23,507 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 21:25:23,507 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 21:25:23,507 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 21:25:23,507 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 21:25:23,507 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 21:25:23,507 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 21:25:24,049 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 21:25:33,077 - root - INFO - Auto-imported 765 modules successfully
+2026-04-10 21:25:33,077 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 21:25:33,077 - root - INFO - Auto-import summary: 765 imported, 29 failed, 10682 skipped, 11476 total files processed
+2026-04-10 21:25:33,081 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 21:25:33,092 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 21:25:33,336 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 21:25:33,342 - root - INFO - Status: Ready - Auto-imported 765 modules (29 failed)
+2026-04-10 21:25:39,871 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 21:25:39,872 - __main__ - INFO - Main application script finished.
+2026-04-10 21:31:02,781 - __main__ - INFO - Main application script started.
+2026-04-10 21:31:03,550 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 21:31:03,550 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 21:31:03,551 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 21:31:03,551 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 21:31:03,551 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 21:31:03,551 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 21:31:03,551 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 21:31:03,551 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 21:31:03,922 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 21:31:08,039 - root - INFO - Auto-imported 765 modules successfully
+2026-04-10 21:31:08,040 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 21:31:08,040 - root - INFO - Auto-import summary: 765 imported, 29 failed, 10682 skipped, 11476 total files processed
+2026-04-10 21:31:08,042 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 21:31:08,049 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 21:31:08,134 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 21:31:08,142 - root - INFO - Status: Ready - Auto-imported 765 modules (29 failed)
+2026-04-10 21:31:15,495 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 21:31:15,499 - __main__ - INFO - Main application script finished.
+2026-04-10 21:40:01,585 - __main__ - INFO - Main application script started.
+2026-04-10 21:40:01,820 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 21:40:01,820 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 21:40:01,820 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 21:40:01,820 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 21:40:01,820 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 21:40:01,820 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 21:40:01,820 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 21:40:01,820 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 21:40:02,315 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 21:40:06,454 - root - INFO - Auto-imported 765 modules successfully
+2026-04-10 21:40:06,454 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 21:40:06,454 - root - INFO - Auto-import summary: 765 imported, 29 failed, 10682 skipped, 11476 total files processed
+2026-04-10 21:40:06,456 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 21:40:06,460 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 21:40:06,522 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 21:40:06,539 - root - INFO - Status: Ready - Auto-imported 765 modules (29 failed)
+2026-04-10 21:40:13,699 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 21:40:13,701 - __main__ - INFO - Main application script finished.
+2026-04-10 22:03:06,631 - __main__ - INFO - Main application script started.
+2026-04-10 22:03:09,388 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 22:03:09,388 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 22:03:09,388 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 22:03:09,388 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 22:03:09,388 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 22:03:09,388 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 22:03:09,388 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 22:03:09,388 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 22:03:09,947 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 22:03:17,014 - root - INFO - Auto-imported 765 modules successfully
+2026-04-10 22:03:17,015 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 22:03:17,015 - root - INFO - Auto-import summary: 765 imported, 29 failed, 10682 skipped, 11476 total files processed
+2026-04-10 22:03:17,018 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 22:03:17,023 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 22:03:17,255 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 22:03:17,287 - root - INFO - Status: Ready - Auto-imported 765 modules (29 failed)
+2026-04-10 22:06:28,658 - root - INFO - Starting TTS playback for all details.
+2026-04-10 22:06:28,898 - root - INFO - TTS playback completed for all details.
+2026-04-10 22:12:25,795 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 22:12:25,796 - __main__ - INFO - Main application script finished.
+2026-04-10 22:14:35,957 - __main__ - INFO - Main application script started.
+2026-04-10 22:14:36,129 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 22:14:36,129 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 22:14:36,129 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 22:14:36,129 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 22:14:36,129 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 22:14:36,129 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 22:14:36,129 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 22:14:36,129 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 22:14:36,620 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 22:14:38,246 - root - INFO - Auto-imported 765 modules successfully
+2026-04-10 22:14:38,246 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 22:14:38,246 - root - INFO - Auto-import summary: 765 imported, 29 failed, 10682 skipped, 11476 total files processed
+2026-04-10 22:14:38,248 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 22:14:38,253 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 22:14:38,312 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 22:14:38,325 - root - INFO - Status: Ready - Auto-imported 765 modules (29 failed)
+2026-04-10 22:15:17,225 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 22:15:17,232 - __main__ - INFO - Main application script finished.
+2026-04-10 22:55:12,769 - __main__ - INFO - Main application script started.
+2026-04-10 22:55:14,387 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 22:55:14,387 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 22:55:14,387 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 22:55:14,387 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 22:55:14,387 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 22:55:14,388 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 22:55:14,388 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 22:55:14,388 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 22:55:14,846 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 22:55:21,264 - root - INFO - Auto-imported 765 modules successfully
+2026-04-10 22:55:21,264 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 22:55:21,264 - root - INFO - Auto-import summary: 765 imported, 29 failed, 10682 skipped, 11476 total files processed
+2026-04-10 22:55:21,266 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 22:55:21,278 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 22:55:21,534 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 22:55:21,538 - root - INFO - Status: Ready - Auto-imported 765 modules (29 failed)
+2026-04-10 22:56:38,120 - CrewMessageRouter - INFO - Message from Computer to ['Captain', 'Computer', 'Pilot', 'Navigator', 'Doctor', 'Trader', 'Gunner', 'Chief', 'Tech']: NO 
+2026-04-10 22:57:24,709 - CrewMessageRouter - INFO - Message from Computer to ['Captain', 'Computer', 'Pilot', 'Navigator', 'Doctor', 'Trader', 'Gunner', 'Chief', 'Tech']: CAPTAIN GETS A JOB 
+2026-04-10 22:58:42,969 - CrewMessageRouter - INFO - Message from Computer to ['Captain', 'Computer', 'Pilot', 'Navigator', 'Doctor', 'Trader', 'Gunner', 'Chief', 'Tech']: Hurray! Something to do - AT LAST 
+2026-04-10 22:59:55,431 - CrewMessageRouter - INFO - Message from Computer to ['Captain']: Not easy, but do-able 
+2026-04-10 23:01:12,119 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 23:01:12,120 - __main__ - INFO - Main application script finished.
+2026-04-10 23:17:59,067 - __main__ - INFO - Main application script started.
+2026-04-10 23:18:00,754 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-10 23:18:00,754 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-10 23:18:00,754 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-10 23:18:00,754 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-10 23:18:00,754 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-10 23:18:00,754 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-10 23:18:00,754 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-10 23:18:00,754 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-10 23:18:01,295 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-10 23:18:09,582 - root - INFO - Auto-imported 765 modules successfully
+2026-04-10 23:18:09,582 - root - INFO - Skipped 29 modules (expected for script files)
+2026-04-10 23:18:09,582 - root - INFO - Auto-import summary: 765 imported, 29 failed, 10682 skipped, 11476 total files processed
+2026-04-10 23:18:09,584 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-10 23:18:09,591 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-10 23:18:09,661 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-10 23:18:09,677 - root - INFO - Status: Ready - Auto-imported 765 modules (29 failed)
+2026-04-10 23:22:32,048 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-10 23:22:32,102 - __main__ - INFO - Main application script finished.
+2026-04-13 18:24:45,345 - __main__ - INFO - Main application script started.
+2026-04-13 18:25:23,090 - __main__ - INFO - Main application script started.
+2026-04-13 18:27:37,407 - __main__ - INFO - Main application script started.
+2026-04-13 18:28:17,679 - __main__ - INFO - Main application script started.
+2026-04-13 18:28:18,021 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-13 18:28:18,021 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-13 18:28:18,021 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-13 18:28:18,021 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-13 18:28:18,021 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-13 18:28:18,021 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-13 18:28:18,021 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-13 18:28:18,021 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-13 18:28:18,022 - root - ERROR - Failed to initialize GUI: name 'ThemeManager' is not defined
+2026-04-13 18:39:13,180 - __main__ - INFO - Main application script started.
+2026-04-13 18:39:13,406 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-13 18:39:13,406 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-13 18:39:13,407 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-13 18:39:13,407 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-13 18:39:13,407 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-13 18:39:13,407 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-13 18:39:13,407 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-13 18:39:13,407 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-13 18:39:13,407 - root - ERROR - Failed to initialize GUI: name 'ThemeManager' is not defined
+2026-04-13 18:56:53,579 - __main__ - INFO - Main application script started.
+2026-04-13 19:12:21,139 - __main__ - INFO - Main application script started.
+2026-04-13 19:27:28,403 - __main__ - INFO - Main application script started.
+2026-04-13 19:37:34,498 - __main__ - INFO - Main application script started.
+2026-04-13 19:37:38,779 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-13 19:37:38,779 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-13 19:37:38,779 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-13 19:37:38,779 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-13 19:37:38,779 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-13 19:37:38,779 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-13 19:37:38,779 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-13 19:37:38,779 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-13 19:37:39,398 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-13 19:37:55,443 - root - INFO - Auto-imported 1515 modules successfully
+2026-04-13 19:37:55,443 - root - INFO - Skipped 31 modules (expected for script files)
+2026-04-13 19:37:55,443 - root - INFO - Auto-import summary: 1515 imported, 31 failed, 11337 skipped, 12883 total files processed
+2026-04-13 19:37:55,471 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-13 19:37:55,476 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-13 19:37:55,620 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-13 19:37:55,622 - root - INFO - Status: Ready - Auto-imported 1515 modules (31 failed)
+2026-04-13 19:38:01,999 - root - INFO - Status: Launched 0101 server.py
+2026-04-13 19:47:30,620 - __main__ - INFO - Main application script started.
+2026-04-13 19:47:30,830 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-13 19:47:30,830 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-13 19:47:30,830 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-13 19:47:30,830 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-13 19:47:30,830 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-13 19:47:30,830 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-13 19:47:30,830 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-13 19:47:30,830 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-13 19:47:31,137 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-13 19:47:35,631 - root - INFO - Auto-imported 1515 modules successfully
+2026-04-13 19:47:35,631 - root - INFO - Skipped 31 modules (expected for script files)
+2026-04-13 19:47:35,632 - root - INFO - Auto-import summary: 1515 imported, 31 failed, 11337 skipped, 12883 total files processed
+2026-04-13 19:47:35,634 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-13 19:47:35,642 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-13 19:47:35,753 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-13 19:47:35,763 - root - INFO - Status: Ready - Auto-imported 1515 modules (31 failed)
+2026-04-13 19:47:35,777 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-13 19:47:35,779 - __main__ - INFO - Main application script finished.
+2026-04-13 21:17:53,718 - __main__ - INFO - Main application script started.
+2026-04-13 21:17:55,618 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-13 21:17:55,618 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-13 21:17:55,619 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-13 21:17:55,619 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-13 21:17:55,619 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-13 21:17:55,619 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-13 21:17:55,619 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-13 21:17:55,619 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-13 21:17:56,107 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-13 21:18:11,923 - root - INFO - Auto-imported 1519 modules successfully
+2026-04-13 21:18:11,923 - root - INFO - Skipped 32 modules (expected for script files)
+2026-04-13 21:18:11,923 - root - INFO - Auto-import summary: 1519 imported, 32 failed, 11337 skipped, 12888 total files processed
+2026-04-13 21:18:11,926 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-13 21:18:11,929 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-13 21:18:12,058 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-13 21:18:12,060 - root - INFO - Status: Ready - Auto-imported 1519 modules (32 failed)
+2026-04-13 21:19:08,690 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-13 21:19:08,693 - __main__ - INFO - Main application script finished.
+2026-04-13 21:29:04,163 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-13 21:29:04,165 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-13 21:29:04,166 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-13 21:29:04,167 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-13 21:29:04,168 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-13 21:29:04,168 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-13 21:29:04,168 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-13 21:29:04,168 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-13 21:29:04,904 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-13 21:29:33,394 - root - INFO - Auto-imported 1533 modules successfully
+2026-04-13 21:29:33,394 - root - INFO - Skipped 18 modules (expected for script files)
+2026-04-13 21:29:33,394 - root - INFO - Auto-import summary: 1533 imported, 18 failed, 11338 skipped, 12889 total files processed
+2026-04-13 21:29:33,396 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-13 21:29:33,400 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-13 21:29:33,520 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-13 21:29:33,522 - root - INFO - Status: Ready - Auto-imported 1533 modules (18 failed)
+2026-04-13 21:29:33,647 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-13 21:29:33,647 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-13 21:29:33,647 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-13 21:29:33,648 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-13 21:29:33,648 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-13 21:29:33,648 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-13 21:29:33,648 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-13 21:29:33,648 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-13 21:29:34,230 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-13 21:29:34,231 - root - INFO - Using cached auto-import results
+2026-04-13 21:29:34,236 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-13 21:29:34,237 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-13 21:29:34,509 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-13 21:29:34,534 - root - INFO - Status: Ready - Auto-imported 1533 modules (18 failed)
+2026-04-13 23:55:11,977 - __main__ - INFO - Main application script started.
+2026-04-13 23:55:12,538 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-13 23:55:12,538 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-13 23:55:12,538 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-13 23:55:12,538 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-13 23:55:12,538 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-13 23:55:12,538 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-13 23:55:12,538 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-13 23:55:12,538 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-13 23:55:13,074 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-13 23:55:13,075 - root - INFO - Using cached auto-import results
+2026-04-13 23:55:13,076 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-13 23:55:13,100 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-13 23:55:13,254 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-13 23:55:13,269 - root - INFO - Status: Ready - Auto-imported 1529 modules (32 failed)
+2026-04-13 23:56:33,973 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-13 23:56:33,973 - __main__ - INFO - Main application script finished.

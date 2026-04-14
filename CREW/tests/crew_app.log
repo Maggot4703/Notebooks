@@ -1,0 +1,2 @@
+2025-09-28 12:30:05,608 - __main__ - INFO - Main application script started.
+2025-09-28 12:30:08,948 - root - ERROR - Failed to initialize GUI: This means you probably do not have eSpeak or eSpeak-ng installed!

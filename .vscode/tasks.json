@@ -95,6 +95,19 @@
 				"2"
 			],
 			"group": "none"
+		},
+		{
+			"label": "Crew: Run and Validate Tests",
+			"type": "shell",
+			"command": "pytest",
+			"args": [
+				"/home/me/Notebooks/CREW/Crew/tests"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$pytest"
+			],
+			"group": "test"
 		}
 	]
 }

@@ -1,0 +1,10 @@
+# Folders in /home/me/Notebooks/CREW/DESIGN/AGENTS
+chatman/
+coder/
+designer/
+piman/
+researcher/
+scanman/
+traveller/
+updater/
+

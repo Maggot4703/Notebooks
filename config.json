@@ -1,7 +1,11 @@
 {
-    "window_size": "800x800",
+    "window_size": "1600x900",
     "min_window_size": "800x800",
-    "column_widths": {},
+    "column_widths": {
+        "col1": 100,
+        "col2": 150,
+        "col3": 200
+    },
     "column_visibility": {},
     "last_directory": "/home/me",
     "last_file_path": "",
@@ -18,5 +22,16 @@
         "voice": "dra/kn",
         "rate": 190,
         "volume": 1.0
-    }
+    },
+    "string_val": "test",
+    "int_val": 42,
+    "bool_val": false,
+    "list_val": [
+        1,
+        2,
+        3
+    ],
+    "test_key": "test_value",
+    "persona": "default",
+    "context_window": 10
 }

@@ -1,0 +1,9 @@
+- Always validate data before processing.
+- Always document changes in NOTEBOOKS.
+- Always follow security best practices.
+
+NO 1 IMPORTANCE - Crew.py is the program i want to keep working AT ALL COSTS
+If you need to modify any files referenced by Crew.py, try working on a copy - create tests, debug, test and fix
+repeat process until it works without losing any previous functionality
+only update original file if copy works without losing functionality and Crew.py still functions
+

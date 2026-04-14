@@ -12,6 +12,24 @@ This workspace now includes a minimal starter you can copy when you want to add 
 - `src/crewai_skill_demo/demo.py` shows how to run the skill locally without wiring a full crew yet
 - `.env.example` gives you a starting point for real crew runs later
 
+
+## Running the Crew Application
+
+**Recommended:** Use the provided script to ensure all relative imports work correctly:
+
+```bash
+./crew_run.sh
+```
+
+This script runs Crew as a module (`python3 -m Crew.Crew`), which is required for Python to resolve relative imports in the codebase. Do **not** run Crew.py directly with `python Crew/Crew.py` or `python3 Crew/Crew.py`, as this will cause import errors.
+
+You can also pass CLI arguments:
+
+```bash
+./crew_run.sh --help
+./crew_run.sh grid-image --image-path <path> --output-path <path>
+```
+
 ## Recommended setup
 
 From `/home/me/Notebooks/CREW`:
