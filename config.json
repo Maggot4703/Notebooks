@@ -33,5 +33,13 @@
     ],
     "test_key": "test_value",
     "persona": "default",
-    "context_window": 10
+    "context_window": 10,
+    "llm": {
+        "enabled": false,
+        "api_key": "YOUR_OPENAI_API_KEY",
+        "endpoint": "https://api.openai.com/v1/chat/completions",
+        "model": "gpt-3.5-turbo",
+        "max_tokens": 256,
+        "temperature": 0.7
+    }
 }

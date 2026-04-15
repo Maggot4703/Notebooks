@@ -6072,3 +6072,900 @@ PIL.UnidentifiedImageError: cannot identify image file '/tmp/tmp05cb9pjs/corrupt
 2026-04-13 19:46:55,443 - root - INFO - Status: Ready - Auto-imported 1471 modules (2 failed)
 2026-04-13 19:46:55,502 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
 2026-04-13 19:46:55,504 - __main__ - INFO - Main application script finished.
+<<<<<<< HEAD
+=======
+2026-04-14 10:01:01,285 - __main__ - INFO - Main application script started.
+2026-04-15 16:16:55,993 - __main__ - INFO - Main application script started.
+2026-04-15 16:17:32,510 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 16:19:09,336 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 16:19:09,536 - root - INFO - Auto-imported 1538 modules successfully
+2026-04-15 16:19:09,536 - root - INFO - Skipped 4 modules (expected for script files)
+2026-04-15 16:19:09,536 - root - INFO - Auto-import summary: 1538 imported, 4 failed, 1970 skipped, 3512 total files processed
+2026-04-15 16:19:09,582 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 16:19:09,681 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 16:19:09,687 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 16:23:34,635 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 16:23:35,636 - __main__ - INFO - Main application script finished.
+2026-04-15 17:01:16,094 - config - INFO - Configuration file not found at /tmp/tmpg4wpyjge/config.json. Using default configuration.
+2026-04-15 17:01:16,127 - config - INFO - Configuration saved to /tmp/tmpg4wpyjge/config.json
+2026-04-15 17:01:16,128 - config - INFO - Configuration file not found at /tmp/tmpqgwr2r43/config.json. Using default configuration.
+2026-04-15 17:01:16,128 - config - INFO - Configuration saved to /tmp/tmpqgwr2r43/config.json
+2026-04-15 17:01:16,128 - config - INFO - Configuration saved to /tmp/tmpqgwr2r43/config.json
+2026-04-15 17:01:16,129 - config - INFO - Configuration file not found at /tmp/tmp225nj_5c/config.json. Using default configuration.
+2026-04-15 17:01:16,130 - config - INFO - Configuration saved to /tmp/tmp225nj_5c/config.json
+2026-04-15 17:01:16,130 - config - WARNING - Attempting to set an unknown configuration key: 'string_val'. This key is not validated.
+2026-04-15 17:01:16,130 - config - INFO - Configuration saved to /tmp/tmp225nj_5c/config.json
+2026-04-15 17:01:16,130 - config - WARNING - Attempting to set an unknown configuration key: 'int_val'. This key is not validated.
+2026-04-15 17:01:16,131 - config - INFO - Configuration saved to /tmp/tmp225nj_5c/config.json
+2026-04-15 17:01:16,131 - config - WARNING - Attempting to set an unknown configuration key: 'bool_val'. This key is not validated.
+2026-04-15 17:01:16,131 - config - INFO - Configuration saved to /tmp/tmp225nj_5c/config.json
+2026-04-15 17:01:16,131 - config - WARNING - Attempting to set an unknown configuration key: 'list_val'. This key is not validated.
+2026-04-15 17:01:16,132 - config - INFO - Configuration saved to /tmp/tmp225nj_5c/config.json
+2026-04-15 17:01:16,132 - config - INFO - Configuration file not found at /tmp/tmpefng60jr/config.json. Using default configuration.
+2026-04-15 17:01:16,133 - config - INFO - Configuration saved to /tmp/tmpefng60jr/config.json
+2026-04-15 17:01:16,137 - config - INFO - Configuration file not found at /tmp/tmpvb_e4ilg/config.json. Using default configuration.
+2026-04-15 17:01:16,139 - config - INFO - Configuration saved to /tmp/tmpvb_e4ilg/config.json
+2026-04-15 17:01:16,142 - config - INFO - Configuration file not found at /tmp/tmpiykfoyyd/config.json. Using default configuration.
+2026-04-15 17:01:16,143 - config - INFO - Configuration saved to /tmp/tmpiykfoyyd/config.json
+2026-04-15 17:01:16,144 - config - INFO - Configuration file not found at /tmp/tmp0wvyj1_l/config.json. Using default configuration.
+2026-04-15 17:01:16,145 - config - INFO - Configuration saved to /tmp/tmp0wvyj1_l/config.json
+2026-04-15 17:01:16,148 - config - INFO - Configuration file not found at /tmp/tmp5tlopfig/config.json. Using default configuration.
+2026-04-15 17:01:16,149 - config - INFO - Configuration saved to /tmp/tmp5tlopfig/config.json
+2026-04-15 17:01:16,150 - config - WARNING - Attempting to set an unknown configuration key: 'test_key'. This key is not validated.
+2026-04-15 17:01:16,150 - config - INFO - Configuration saved to /tmp/tmp5tlopfig/config.json
+2026-04-15 17:01:16,153 - config - INFO - Configuration saved to /tmp/tmp5tlopfig/config.json
+2026-04-15 17:01:16,160 - file_utils - INFO - Successfully read /tmp/tmplffjyc3s/test_npcs.csv using built-in csv module.
+2026-04-15 17:01:16,161 - Crew - INFO - Successfully read file: /tmp/tmpcsdug5g0/test_npcs.csv
+2026-04-15 17:01:16,164 - Crew - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:01:16,165 - file_utils - INFO - Successfully read /tmp/tmpabg5b9vj/test.csv using built-in csv module.
+2026-04-15 17:01:16,291 - file_utils - INFO - Successfully read /tmp/tmpanoopg0s/test.csv using pandas.
+2026-04-15 17:01:16,292 - file_utils - ERROR - File not found: nonexistent_file.csv
+2026-04-15 17:01:16,293 - root - WARNING - Row 0 has 2 columns but headers have 3
+2026-04-15 17:01:16,916 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:01:17,663 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:01:18,256 - DatabaseManager - INFO - setup_logging called (test stub)
+2026-04-15 17:01:19,226 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:01:20,028 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:01:20,596 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:01:21,411 - enhanced_features - INFO - 📄 Generated requirements.txt
+2026-04-15 17:01:21,414 - enhanced_features - INFO - All Python dependencies are installed
+2026-04-15 17:01:48,166 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:02:18,510 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 17:02:18,769 - root - INFO - Auto-imported 1538 modules successfully
+2026-04-15 17:02:18,770 - root - INFO - Skipped 4 modules (expected for script files)
+2026-04-15 17:02:18,770 - root - INFO - Auto-import summary: 1538 imported, 4 failed, 1970 skipped, 3512 total files processed
+2026-04-15 17:02:18,792 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv...
+2026-04-15 17:02:18,805 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv.
+2026-04-15 17:02:18,806 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:02:19,399 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:02:19,400 - root - INFO - Using cached auto-import results
+2026-04-15 17:02:19,403 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv...
+2026-04-15 17:02:19,406 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv.
+2026-04-15 17:02:19,407 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:02:19,407 - root - INFO - Starting TTS playback for status.
+2026-04-15 17:02:19,408 - root - ERROR - TTS status error: Test error
+2026-04-15 17:02:49,791 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:02:49,842 - root - INFO - Using cached auto-import results
+2026-04-15 17:02:49,843 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv...
+2026-04-15 17:02:49,846 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv.
+2026-04-15 17:02:49,846 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:02:49,941 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:02:49,942 - root - INFO - Using cached auto-import results
+2026-04-15 17:02:49,943 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv...
+2026-04-15 17:02:49,946 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv.
+2026-04-15 17:02:49,946 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:02:50,034 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:02:50,035 - root - INFO - Using cached auto-import results
+2026-04-15 17:02:50,037 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv...
+2026-04-15 17:02:50,039 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv.
+2026-04-15 17:02:50,040 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:02:56,105 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:02:56,106 - root - INFO - Using cached auto-import results
+2026-04-15 17:02:56,107 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:02:56,133 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:02:56,133 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:02:56,221 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:02:56,222 - root - INFO - Using cached auto-import results
+2026-04-15 17:02:56,223 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:02:56,226 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:02:56,226 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:02:56,312 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:02:56,313 - root - INFO - Using cached auto-import results
+2026-04-15 17:02:56,314 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:02:56,318 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:02:56,318 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:02:56,401 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:02:56,402 - root - INFO - Using cached auto-import results
+2026-04-15 17:02:56,405 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:02:56,408 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:02:56,409 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:03:03,128 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:03:03,128 - root - INFO - Using cached auto-import results
+2026-04-15 17:03:03,130 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:03:03,132 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:03:03,132 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:03:03,217 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:03:03,218 - root - INFO - Using cached auto-import results
+2026-04-15 17:03:03,220 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:03:03,224 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:03:03,224 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:03:03,314 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:03:03,315 - root - INFO - Using cached auto-import results
+2026-04-15 17:03:03,318 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:03:03,321 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:03:03,322 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:03:03,363 - root - INFO - Status: Saved to /tmp/tmpynwvhcc1/test.csv
+2026-04-15 17:03:03,444 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:03:03,444 - root - INFO - Using cached auto-import results
+2026-04-15 17:03:03,446 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:03:03,449 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:03:03,449 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:03:03,450 - root - INFO - Status: Saved to /tmp/tmpwhlo5hw8/test.txt
+2026-04-15 17:03:03,533 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:03:03,534 - root - INFO - Using cached auto-import results
+2026-04-15 17:03:03,537 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:03:03,539 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:03:03,540 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:03:03,540 - root - ERROR - Error saving to file /nonexistent_dir/test.csv: [Errno 2] No such file or directory: '/nonexistent_dir/test.csv'
+2026-04-15 17:03:03,541 - root - INFO - Status: Error saving to /nonexistent_dir/test.csv
+2026-04-15 17:03:05,354 - Crew - ERROR - Error in overlay_grid for /tmp/tmpn2lhf55k/corrupted.png: cannot identify image file '/tmp/tmpn2lhf55k/corrupted.png'
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/Crew.py", line 372, in overlay_grid
+    img = Image.open(image_path)
+  File "/home/me/.local/lib/python3.14/site-packages/PIL/Image.py", line 3579, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file '/tmp/tmpn2lhf55k/corrupted.png'
+2026-04-15 17:03:05,401 - Crew - INFO - Grid overlay applied to /tmp/tmpi_7rz3es/line_image.png with grid size (8, 6).
+2026-04-15 17:03:05,486 - Crew - INFO - Grid overlay applied to /tmp/tmp37julnl9/test_image.png with grid size (42, 32).
+2026-04-15 17:03:05,494 - Crew - INFO - Grid overlay applied to /tmp/tmpv7f_kd0u/test_image.png with grid size (5, 3).
+2026-04-15 17:03:05,503 - Crew - INFO - Grid overlay applied to /tmp/tmpg0ac8i3d/test_image.png with grid size (42, 32).
+2026-04-15 17:03:05,509 - Crew - ERROR - Image file not found at nonexistent_file.png in overlay_grid.
+2026-04-15 17:03:05,524 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:03:05,525 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:03:05,525 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:03:05,532 - Crew - INFO - Grid overlay applied to /tmp/tmpbvxx5ari/large_test_image.png with grid size (20, 15).
+2026-04-15 17:03:05,538 - Crew - INFO - Grid overlay applied to /tmp/tmp_1wfkeuk/rgba_image.png with grid size (42, 32).
+2026-04-15 17:03:05,545 - Crew - INFO - Grid overlay applied to /tmp/tmpsu_630i0/test_image.png with grid size (4, 2).
+2026-04-15 17:03:05,552 - Crew - INFO - Grid overlay applied to /tmp/tmp_94f_6lw/test_image.png with grid size (1, 1).
+2026-04-15 17:03:05,558 - Crew - INFO - Grid overlay applied to /tmp/tmpqanae8zr/test_image.png with grid size (42, 32).
+2026-04-15 17:03:05,567 - Crew - INFO - Grid overlay applied to /tmp/tmp9tdyfsma/test_image.png with grid size (42, 32).
+2026-04-15 17:03:05,576 - Crew - INFO - Grid overlay applied to /tmp/tmpbwh3o2eg/large_test_image.png with grid size (50, 30).
+2026-04-15 17:03:05,890 - mcp_service - INFO - Input DataFrame for MCP context is empty.
+2026-04-15 17:03:05,915 - root - INFO - StateManager initialized
+2026-04-15 17:03:05,915 - root - ERROR - Error loading window state: DummyGUI.__init__.<locals>.<lambda>() takes 2 positional arguments but 3 were given
+2026-04-15 17:03:05,916 - root - INFO - StateManager initialized
+2026-04-15 17:03:05,916 - root - ERROR - Error saving window state: 'DummyConfig' object has no attribute 'set'
+2026-04-15 17:03:07,907 - root - INFO - Main layout created successfully
+2026-04-15 17:03:07,909 - root - INFO - Ignoring saved window size '1020x1080' and forcing '800x800'.
+2026-04-15 17:03:07,910 - root - INFO - Ignoring saved minimum window size '800x600' and forcing '800x800'.
+2026-04-15 17:07:59,597 - config - INFO - Configuration file not found at /tmp/tmpdvefvirw/config.json. Using default configuration.
+2026-04-15 17:07:59,597 - config - INFO - Configuration saved to /tmp/tmpdvefvirw/config.json
+2026-04-15 17:07:59,598 - config - INFO - Configuration file not found at /tmp/tmpzx29ty95/config.json. Using default configuration.
+2026-04-15 17:07:59,598 - config - INFO - Configuration saved to /tmp/tmpzx29ty95/config.json
+2026-04-15 17:07:59,598 - config - INFO - Configuration saved to /tmp/tmpzx29ty95/config.json
+2026-04-15 17:07:59,651 - config - INFO - Configuration file not found at /tmp/tmp8x2rga65/config.json. Using default configuration.
+2026-04-15 17:07:59,651 - config - INFO - Configuration saved to /tmp/tmp8x2rga65/config.json
+2026-04-15 17:07:59,651 - config - WARNING - Attempting to set an unknown configuration key: 'string_val'. This key is not validated.
+2026-04-15 17:07:59,652 - config - INFO - Configuration saved to /tmp/tmp8x2rga65/config.json
+2026-04-15 17:07:59,652 - config - WARNING - Attempting to set an unknown configuration key: 'int_val'. This key is not validated.
+2026-04-15 17:07:59,652 - config - INFO - Configuration saved to /tmp/tmp8x2rga65/config.json
+2026-04-15 17:07:59,652 - config - WARNING - Attempting to set an unknown configuration key: 'bool_val'. This key is not validated.
+2026-04-15 17:07:59,653 - config - INFO - Configuration saved to /tmp/tmp8x2rga65/config.json
+2026-04-15 17:07:59,653 - config - WARNING - Attempting to set an unknown configuration key: 'list_val'. This key is not validated.
+2026-04-15 17:07:59,653 - config - INFO - Configuration saved to /tmp/tmp8x2rga65/config.json
+2026-04-15 17:07:59,654 - config - INFO - Configuration file not found at /tmp/tmpywfm5xbb/config.json. Using default configuration.
+2026-04-15 17:07:59,654 - config - INFO - Configuration saved to /tmp/tmpywfm5xbb/config.json
+2026-04-15 17:07:59,655 - config - INFO - Configuration file not found at /tmp/tmpsd9r7vzo/config.json. Using default configuration.
+2026-04-15 17:07:59,655 - config - INFO - Configuration saved to /tmp/tmpsd9r7vzo/config.json
+2026-04-15 17:07:59,656 - config - INFO - Configuration file not found at /tmp/tmpa_y2ng0r/config.json. Using default configuration.
+2026-04-15 17:07:59,656 - config - INFO - Configuration saved to /tmp/tmpa_y2ng0r/config.json
+2026-04-15 17:07:59,657 - config - INFO - Configuration file not found at /tmp/tmp4hpw7s5e/config.json. Using default configuration.
+2026-04-15 17:07:59,658 - config - INFO - Configuration saved to /tmp/tmp4hpw7s5e/config.json
+2026-04-15 17:07:59,659 - config - INFO - Configuration file not found at /tmp/tmpt7yz2abb/config.json. Using default configuration.
+2026-04-15 17:07:59,659 - config - INFO - Configuration saved to /tmp/tmpt7yz2abb/config.json
+2026-04-15 17:07:59,659 - config - WARNING - Attempting to set an unknown configuration key: 'test_key'. This key is not validated.
+2026-04-15 17:07:59,659 - config - INFO - Configuration saved to /tmp/tmpt7yz2abb/config.json
+2026-04-15 17:07:59,660 - config - INFO - Configuration saved to /tmp/tmpt7yz2abb/config.json
+2026-04-15 17:07:59,664 - file_utils - INFO - Successfully read /tmp/tmpe19fufc5/test_npcs.csv using built-in csv module.
+2026-04-15 17:07:59,664 - Crew - INFO - Successfully read file: /tmp/tmp5pqpuiy8/test_npcs.csv
+2026-04-15 17:07:59,666 - Crew - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:07:59,666 - file_utils - INFO - Successfully read /tmp/tmp1qf9jaio/test.csv using built-in csv module.
+2026-04-15 17:07:59,767 - file_utils - INFO - Successfully read /tmp/tmp8hrptsvb/test.csv using pandas.
+2026-04-15 17:07:59,768 - file_utils - ERROR - File not found: nonexistent_file.csv
+2026-04-15 17:07:59,769 - root - WARNING - Row 0 has 2 columns but headers have 3
+2026-04-15 17:08:00,135 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:08:00,459 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:08:00,782 - DatabaseManager - INFO - setup_logging called (test stub)
+2026-04-15 17:08:01,420 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:08:01,799 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:08:02,192 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:08:02,844 - enhanced_features - INFO - 📄 Generated requirements.txt
+2026-04-15 17:08:02,846 - enhanced_features - INFO - All Python dependencies are installed
+2026-04-15 17:08:11,860 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:08:41,429 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 17:08:41,513 - root - INFO - Auto-imported 1538 modules successfully
+2026-04-15 17:08:41,513 - root - INFO - Skipped 4 modules (expected for script files)
+2026-04-15 17:08:41,513 - root - INFO - Auto-import summary: 1538 imported, 4 failed, 1970 skipped, 3512 total files processed
+2026-04-15 17:08:41,570 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv...
+2026-04-15 17:08:41,573 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv.
+2026-04-15 17:08:41,574 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:08:42,260 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:08:42,261 - root - INFO - Using cached auto-import results
+2026-04-15 17:08:42,263 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv...
+2026-04-15 17:08:42,266 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv.
+2026-04-15 17:08:42,266 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:08:42,267 - root - INFO - Starting TTS playback for status.
+2026-04-15 17:08:42,268 - root - ERROR - TTS status error: Test error
+2026-04-15 17:09:11,564 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:11,565 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:11,567 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv...
+2026-04-15 17:09:11,571 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv.
+2026-04-15 17:09:11,571 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:11,741 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:11,742 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:11,746 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv...
+2026-04-15 17:09:11,749 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv.
+2026-04-15 17:09:11,749 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:11,847 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:11,847 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:11,849 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv...
+2026-04-15 17:09:11,852 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew15/data/npcs.csv.
+2026-04-15 17:09:11,852 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:20,521 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:20,522 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:20,524 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:09:20,527 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:09:20,527 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:20,614 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:20,615 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:20,618 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:09:20,622 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:09:20,622 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:20,708 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:20,708 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:20,710 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:09:20,712 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:09:20,712 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:20,793 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:20,793 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:20,794 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:09:20,797 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:09:20,797 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:24,639 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:24,640 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:24,641 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:09:24,644 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:09:24,644 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:24,735 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:24,736 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:24,737 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:09:24,740 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:09:24,741 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:24,831 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:24,832 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:24,834 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:09:24,838 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:09:24,839 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:24,840 - root - INFO - Status: Saved to /tmp/tmp4r4tsxdg/test.csv
+2026-04-15 17:09:24,933 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:24,935 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:24,938 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:09:24,942 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:09:24,942 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:24,943 - root - INFO - Status: Saved to /tmp/tmpt0z_riye/test.txt
+2026-04-15 17:09:25,030 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:09:25,031 - root - INFO - Using cached auto-import results
+2026-04-15 17:09:25,033 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:09:25,037 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:09:25,038 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:09:25,039 - root - ERROR - Error saving to file /nonexistent_dir/test.csv: [Errno 2] No such file or directory: '/nonexistent_dir/test.csv'
+2026-04-15 17:09:25,039 - root - INFO - Status: Error saving to /nonexistent_dir/test.csv
+2026-04-15 17:09:25,521 - Crew - ERROR - Error in overlay_grid for /tmp/tmpsg_e6qgu/corrupted.png: cannot identify image file '/tmp/tmpsg_e6qgu/corrupted.png'
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/Crew.py", line 372, in overlay_grid
+    img = Image.open(image_path)
+  File "/home/me/.local/lib/python3.14/site-packages/PIL/Image.py", line 3579, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file '/tmp/tmpsg_e6qgu/corrupted.png'
+2026-04-15 17:09:25,561 - Crew - INFO - Grid overlay applied to /tmp/tmppcyodxmc/line_image.png with grid size (8, 6).
+2026-04-15 17:09:25,621 - Crew - INFO - Grid overlay applied to /tmp/tmp46_7lsbu/test_image.png with grid size (42, 32).
+2026-04-15 17:09:25,628 - Crew - INFO - Grid overlay applied to /tmp/tmppfct6mri/test_image.png with grid size (5, 3).
+2026-04-15 17:09:25,634 - Crew - INFO - Grid overlay applied to /tmp/tmpdeypwjx7/test_image.png with grid size (42, 32).
+2026-04-15 17:09:25,642 - Crew - ERROR - Image file not found at nonexistent_file.png in overlay_grid.
+2026-04-15 17:09:25,647 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:09:25,648 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:09:25,648 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:09:25,655 - Crew - INFO - Grid overlay applied to /tmp/tmptef58bg_/large_test_image.png with grid size (20, 15).
+2026-04-15 17:09:25,663 - Crew - INFO - Grid overlay applied to /tmp/tmpbv1s0qos/rgba_image.png with grid size (42, 32).
+2026-04-15 17:09:25,669 - Crew - INFO - Grid overlay applied to /tmp/tmpih5uuenm/test_image.png with grid size (4, 2).
+2026-04-15 17:09:25,676 - Crew - INFO - Grid overlay applied to /tmp/tmp32unkyyy/test_image.png with grid size (1, 1).
+2026-04-15 17:09:25,681 - Crew - INFO - Grid overlay applied to /tmp/tmpttt2bjmu/test_image.png with grid size (42, 32).
+2026-04-15 17:09:25,688 - Crew - INFO - Grid overlay applied to /tmp/tmp027f63z7/test_image.png with grid size (42, 32).
+2026-04-15 17:09:25,695 - Crew - INFO - Grid overlay applied to /tmp/tmpls0_0x9x/large_test_image.png with grid size (50, 30).
+2026-04-15 17:09:25,810 - mcp_service - INFO - Input DataFrame for MCP context is empty.
+2026-04-15 17:09:25,824 - root - INFO - StateManager initialized
+2026-04-15 17:09:25,824 - root - ERROR - Error loading window state: DummyGUI.__init__.<locals>.<lambda>() takes 2 positional arguments but 3 were given
+2026-04-15 17:09:25,824 - root - INFO - StateManager initialized
+2026-04-15 17:09:25,824 - root - ERROR - Error saving window state: 'DummyConfig' object has no attribute 'set'
+2026-04-15 17:09:27,655 - root - INFO - Main layout created successfully
+2026-04-15 17:09:27,657 - root - INFO - Ignoring saved window size '1020x1080' and forcing '800x800'.
+2026-04-15 17:09:27,658 - root - INFO - Ignoring saved minimum window size '800x600' and forcing '800x800'.
+2026-04-15 17:19:13,907 - config - INFO - Configuration file not found at /tmp/tmp6gvdnpqy/config.json. Using default configuration.
+2026-04-15 17:19:13,907 - config - INFO - Configuration saved to /tmp/tmp6gvdnpqy/config.json
+2026-04-15 17:19:13,908 - config - INFO - Configuration file not found at /tmp/tmppes7l6yx/config.json. Using default configuration.
+2026-04-15 17:19:13,908 - config - INFO - Configuration saved to /tmp/tmppes7l6yx/config.json
+2026-04-15 17:19:13,909 - config - INFO - Configuration saved to /tmp/tmppes7l6yx/config.json
+2026-04-15 17:19:13,964 - config - INFO - Configuration file not found at /tmp/tmpkikpq05e/config.json. Using default configuration.
+2026-04-15 17:19:13,966 - config - INFO - Configuration saved to /tmp/tmpkikpq05e/config.json
+2026-04-15 17:19:13,966 - config - WARNING - Attempting to set an unknown configuration key: 'string_val'. This key is not validated.
+2026-04-15 17:19:13,967 - config - INFO - Configuration saved to /tmp/tmpkikpq05e/config.json
+2026-04-15 17:19:13,967 - config - WARNING - Attempting to set an unknown configuration key: 'int_val'. This key is not validated.
+2026-04-15 17:19:13,967 - config - INFO - Configuration saved to /tmp/tmpkikpq05e/config.json
+2026-04-15 17:19:13,967 - config - WARNING - Attempting to set an unknown configuration key: 'bool_val'. This key is not validated.
+2026-04-15 17:19:13,968 - config - INFO - Configuration saved to /tmp/tmpkikpq05e/config.json
+2026-04-15 17:19:13,968 - config - WARNING - Attempting to set an unknown configuration key: 'list_val'. This key is not validated.
+2026-04-15 17:19:13,968 - config - INFO - Configuration saved to /tmp/tmpkikpq05e/config.json
+2026-04-15 17:19:13,969 - config - INFO - Configuration file not found at /tmp/tmp20y8h7ys/config.json. Using default configuration.
+2026-04-15 17:19:13,970 - config - INFO - Configuration saved to /tmp/tmp20y8h7ys/config.json
+2026-04-15 17:19:13,971 - config - INFO - Configuration file not found at /tmp/tmpuxidcs80/config.json. Using default configuration.
+2026-04-15 17:19:13,972 - config - INFO - Configuration saved to /tmp/tmpuxidcs80/config.json
+2026-04-15 17:19:13,973 - config - INFO - Configuration file not found at /tmp/tmptq3z5qox/config.json. Using default configuration.
+2026-04-15 17:19:13,973 - config - INFO - Configuration saved to /tmp/tmptq3z5qox/config.json
+2026-04-15 17:19:13,974 - config - INFO - Configuration file not found at /tmp/tmpe92my1qk/config.json. Using default configuration.
+2026-04-15 17:19:13,974 - config - INFO - Configuration saved to /tmp/tmpe92my1qk/config.json
+2026-04-15 17:19:13,975 - config - INFO - Configuration file not found at /tmp/tmp4iyxqn5a/config.json. Using default configuration.
+2026-04-15 17:19:13,975 - config - INFO - Configuration saved to /tmp/tmp4iyxqn5a/config.json
+2026-04-15 17:19:13,975 - config - WARNING - Attempting to set an unknown configuration key: 'test_key'. This key is not validated.
+2026-04-15 17:19:13,975 - config - INFO - Configuration saved to /tmp/tmp4iyxqn5a/config.json
+2026-04-15 17:19:13,976 - config - INFO - Configuration saved to /tmp/tmp4iyxqn5a/config.json
+2026-04-15 17:19:13,978 - file_utils - INFO - Successfully read /tmp/tmppi4egr8_/test_npcs.csv using built-in csv module.
+2026-04-15 17:19:13,979 - Crew - INFO - Successfully read file: /tmp/tmpoi2l91gg/test_npcs.csv
+2026-04-15 17:19:13,980 - Crew - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:19:13,981 - file_utils - INFO - Successfully read /tmp/tmpwqe22cg_/test.csv using built-in csv module.
+2026-04-15 17:19:13,984 - file_utils - INFO - Successfully read /tmp/tmpcixxqunx/test.csv using pandas.
+2026-04-15 17:19:13,985 - file_utils - ERROR - File not found: nonexistent_file.csv
+2026-04-15 17:19:13,987 - root - WARNING - Row 0 has 2 columns but headers have 3
+2026-04-15 17:19:14,311 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:19:14,702 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:19:15,027 - DatabaseManager - INFO - setup_logging called (test stub)
+2026-04-15 17:19:15,697 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:19:16,022 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:19:16,425 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:19:17,037 - enhanced_features - INFO - 📄 Generated requirements.txt
+2026-04-15 17:19:17,038 - enhanced_features - INFO - All Python dependencies are installed
+2026-04-15 17:19:18,637 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:19:32,338 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 17:19:32,418 - root - INFO - Auto-imported 1538 modules successfully
+2026-04-15 17:19:32,419 - root - INFO - Skipped 4 modules (expected for script files)
+2026-04-15 17:19:32,419 - root - INFO - Auto-import summary: 1538 imported, 4 failed, 1970 skipped, 3512 total files processed
+2026-04-15 17:19:32,427 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:19:32,432 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:19:32,433 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:19:32,581 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:19:32,582 - root - INFO - Using cached auto-import results
+2026-04-15 17:19:32,584 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:19:32,587 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:19:32,588 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:19:32,669 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:19:32,670 - root - INFO - Using cached auto-import results
+2026-04-15 17:19:32,672 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:19:32,675 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:19:32,675 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:19:32,756 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:19:32,757 - root - INFO - Using cached auto-import results
+2026-04-15 17:19:32,758 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:19:32,761 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:19:32,761 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:19:33,120 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:19:33,120 - root - INFO - Using cached auto-import results
+2026-04-15 17:19:33,121 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:19:33,124 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:19:33,124 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:19:33,203 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:19:33,203 - root - INFO - Using cached auto-import results
+2026-04-15 17:19:33,205 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:19:33,210 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:19:33,210 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:19:33,299 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:19:33,300 - root - INFO - Using cached auto-import results
+2026-04-15 17:19:33,301 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:19:33,304 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:19:33,304 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:19:33,304 - root - INFO - Status: Saved to /tmp/tmp9zqglgrl/test.csv
+2026-04-15 17:19:33,388 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:19:33,389 - root - INFO - Using cached auto-import results
+2026-04-15 17:19:33,390 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:19:33,393 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:19:33,393 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:19:33,394 - root - INFO - Status: Saved to /tmp/tmpzzpm_zzz/test.txt
+2026-04-15 17:19:33,477 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:19:33,478 - root - INFO - Using cached auto-import results
+2026-04-15 17:19:33,480 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:19:33,484 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:19:33,485 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:19:33,486 - root - ERROR - Error saving to file /nonexistent_dir/test.csv: [Errno 2] No such file or directory: '/nonexistent_dir/test.csv'
+2026-04-15 17:19:33,487 - root - INFO - Status: Error saving to /nonexistent_dir/test.csv
+2026-04-15 17:19:33,650 - Crew - ERROR - Error in overlay_grid for /tmp/tmp1ll5wyho/corrupted.png: cannot identify image file '/tmp/tmp1ll5wyho/corrupted.png'
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/Crew.py", line 372, in overlay_grid
+    img = Image.open(image_path)
+  File "/home/me/.local/lib/python3.14/site-packages/PIL/Image.py", line 3579, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file '/tmp/tmp1ll5wyho/corrupted.png'
+2026-04-15 17:19:33,684 - Crew - INFO - Grid overlay applied to /tmp/tmpt2qo284a/line_image.png with grid size (8, 6).
+2026-04-15 17:19:33,747 - Crew - INFO - Grid overlay applied to /tmp/tmpbyezsmnz/test_image.png with grid size (42, 32).
+2026-04-15 17:19:33,753 - Crew - INFO - Grid overlay applied to /tmp/tmp3zxd__59/test_image.png with grid size (5, 3).
+2026-04-15 17:19:33,758 - Crew - INFO - Grid overlay applied to /tmp/tmpsnrw865u/test_image.png with grid size (42, 32).
+2026-04-15 17:19:33,764 - Crew - ERROR - Image file not found at nonexistent_file.png in overlay_grid.
+2026-04-15 17:19:33,770 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:19:33,770 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:19:33,770 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:19:33,778 - Crew - INFO - Grid overlay applied to /tmp/tmpnukksmj9/large_test_image.png with grid size (20, 15).
+2026-04-15 17:19:33,784 - Crew - INFO - Grid overlay applied to /tmp/tmpeb0s8b4g/rgba_image.png with grid size (42, 32).
+2026-04-15 17:19:33,790 - Crew - INFO - Grid overlay applied to /tmp/tmpcav9ei85/test_image.png with grid size (4, 2).
+2026-04-15 17:19:33,796 - Crew - INFO - Grid overlay applied to /tmp/tmp374o9474/test_image.png with grid size (1, 1).
+2026-04-15 17:19:33,802 - Crew - INFO - Grid overlay applied to /tmp/tmpmixi945u/test_image.png with grid size (42, 32).
+2026-04-15 17:19:33,808 - Crew - INFO - Grid overlay applied to /tmp/tmpghh4lx1x/test_image.png with grid size (42, 32).
+2026-04-15 17:19:33,815 - Crew - INFO - Grid overlay applied to /tmp/tmpl5ldqbcw/large_test_image.png with grid size (50, 30).
+2026-04-15 17:19:33,827 - mcp_service - INFO - Input DataFrame for MCP context is empty.
+2026-04-15 17:19:33,841 - root - INFO - StateManager initialized
+2026-04-15 17:19:33,841 - root - ERROR - Error loading window state: DummyGUI.__init__.<locals>.<lambda>() takes 2 positional arguments but 3 were given
+2026-04-15 17:19:33,841 - root - INFO - StateManager initialized
+2026-04-15 17:19:33,841 - root - ERROR - Error saving window state: 'DummyConfig' object has no attribute 'set'
+2026-04-15 17:19:35,612 - root - INFO - Main layout created successfully
+2026-04-15 17:19:35,615 - root - INFO - Ignoring saved window size '1020x1080' and forcing '800x800'.
+2026-04-15 17:19:35,616 - root - INFO - Ignoring saved minimum window size '800x600' and forcing '800x800'.
+2026-04-15 17:23:20,167 - config - INFO - Configuration file not found at /tmp/tmp3rj0bbgi/config.json. Using default configuration.
+2026-04-15 17:23:20,167 - config - INFO - Configuration saved to /tmp/tmp3rj0bbgi/config.json
+2026-04-15 17:23:20,169 - config - INFO - Configuration file not found at /tmp/tmpz92li3p0/config.json. Using default configuration.
+2026-04-15 17:23:20,169 - config - INFO - Configuration saved to /tmp/tmpz92li3p0/config.json
+2026-04-15 17:23:20,169 - config - INFO - Configuration saved to /tmp/tmpz92li3p0/config.json
+2026-04-15 17:23:20,221 - config - INFO - Configuration file not found at /tmp/tmphstwxzfm/config.json. Using default configuration.
+2026-04-15 17:23:20,222 - config - INFO - Configuration saved to /tmp/tmphstwxzfm/config.json
+2026-04-15 17:23:20,222 - config - WARNING - Attempting to set an unknown configuration key: 'string_val'. This key is not validated.
+2026-04-15 17:23:20,222 - config - INFO - Configuration saved to /tmp/tmphstwxzfm/config.json
+2026-04-15 17:23:20,222 - config - WARNING - Attempting to set an unknown configuration key: 'int_val'. This key is not validated.
+2026-04-15 17:23:20,222 - config - INFO - Configuration saved to /tmp/tmphstwxzfm/config.json
+2026-04-15 17:23:20,222 - config - WARNING - Attempting to set an unknown configuration key: 'bool_val'. This key is not validated.
+2026-04-15 17:23:20,223 - config - INFO - Configuration saved to /tmp/tmphstwxzfm/config.json
+2026-04-15 17:23:20,223 - config - WARNING - Attempting to set an unknown configuration key: 'list_val'. This key is not validated.
+2026-04-15 17:23:20,223 - config - INFO - Configuration saved to /tmp/tmphstwxzfm/config.json
+2026-04-15 17:23:20,224 - config - INFO - Configuration file not found at /tmp/tmphvykm5za/config.json. Using default configuration.
+2026-04-15 17:23:20,224 - config - INFO - Configuration saved to /tmp/tmphvykm5za/config.json
+2026-04-15 17:23:20,225 - config - INFO - Configuration file not found at /tmp/tmpottxrel7/config.json. Using default configuration.
+2026-04-15 17:23:20,225 - config - INFO - Configuration saved to /tmp/tmpottxrel7/config.json
+2026-04-15 17:23:20,227 - config - INFO - Configuration file not found at /tmp/tmplr4p4nnl/config.json. Using default configuration.
+2026-04-15 17:23:20,227 - config - INFO - Configuration saved to /tmp/tmplr4p4nnl/config.json
+2026-04-15 17:23:20,228 - config - INFO - Configuration file not found at /tmp/tmpmsp2wwtc/config.json. Using default configuration.
+2026-04-15 17:23:20,228 - config - INFO - Configuration saved to /tmp/tmpmsp2wwtc/config.json
+2026-04-15 17:23:20,228 - config - INFO - Configuration file not found at /tmp/tmp4aiz00lv/config.json. Using default configuration.
+2026-04-15 17:23:20,229 - config - INFO - Configuration saved to /tmp/tmp4aiz00lv/config.json
+2026-04-15 17:23:20,229 - config - WARNING - Attempting to set an unknown configuration key: 'test_key'. This key is not validated.
+2026-04-15 17:23:20,229 - config - INFO - Configuration saved to /tmp/tmp4aiz00lv/config.json
+2026-04-15 17:23:20,229 - config - INFO - Configuration saved to /tmp/tmp4aiz00lv/config.json
+2026-04-15 17:23:20,232 - file_utils - INFO - Successfully read /tmp/tmps0irzsxr/test_npcs.csv using built-in csv module.
+2026-04-15 17:23:20,233 - Crew - INFO - Successfully read file: /tmp/tmpjufk0t47/test_npcs.csv
+2026-04-15 17:23:20,234 - Crew - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:23:20,236 - file_utils - INFO - Successfully read /tmp/tmpd1_ykodh/test.csv using built-in csv module.
+2026-04-15 17:23:20,263 - file_utils - INFO - Successfully read /tmp/tmp45ik_n3h/test.csv using pandas.
+2026-04-15 17:23:20,264 - file_utils - ERROR - File not found: nonexistent_file.csv
+2026-04-15 17:23:20,265 - root - WARNING - Row 0 has 2 columns but headers have 3
+2026-04-15 17:23:20,600 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:23:20,982 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:23:21,339 - DatabaseManager - INFO - setup_logging called (test stub)
+2026-04-15 17:23:21,987 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:23:22,311 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:23:22,635 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:23:23,014 - enhanced_features - INFO - 📄 Generated requirements.txt
+2026-04-15 17:23:23,016 - enhanced_features - INFO - All Python dependencies are installed
+2026-04-15 17:23:23,464 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:23:23,465 - root - INFO - Using cached auto-import results
+2026-04-15 17:23:23,467 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:23:23,475 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:23:23,476 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:23:23,624 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:23:23,625 - root - INFO - Using cached auto-import results
+2026-04-15 17:23:23,627 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:23:23,632 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:23:23,632 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:23:23,750 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:23:23,751 - root - INFO - Using cached auto-import results
+2026-04-15 17:23:23,753 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:23:23,756 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:23:23,757 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:23:23,866 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:23:23,868 - root - INFO - Using cached auto-import results
+2026-04-15 17:23:23,870 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:23:23,875 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:23:23,876 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:23:24,019 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:23:24,020 - root - INFO - Using cached auto-import results
+2026-04-15 17:23:24,025 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:23:24,031 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:23:24,032 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:23:24,166 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:23:24,168 - root - INFO - Using cached auto-import results
+2026-04-15 17:23:24,172 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:23:24,177 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:23:24,178 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:23:24,307 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:23:24,309 - root - INFO - Using cached auto-import results
+2026-04-15 17:23:24,311 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:23:24,315 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:23:24,316 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:23:24,317 - root - INFO - Status: Saved to /tmp/tmpb2br3w2j/test.csv
+2026-04-15 17:23:24,434 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:23:24,435 - root - INFO - Using cached auto-import results
+2026-04-15 17:23:24,438 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:23:24,445 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:23:24,446 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:23:24,447 - root - INFO - Status: Saved to /tmp/tmpiflseptp/test.txt
+2026-04-15 17:23:24,584 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:23:24,585 - root - INFO - Using cached auto-import results
+2026-04-15 17:23:24,587 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:23:24,592 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:23:24,593 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:23:24,594 - root - ERROR - Error saving to file /nonexistent_dir/test.csv: [Errno 2] No such file or directory: '/nonexistent_dir/test.csv'
+2026-04-15 17:23:24,596 - root - INFO - Status: Error saving to /nonexistent_dir/test.csv
+2026-04-15 17:23:24,804 - Crew - ERROR - Error in overlay_grid for /tmp/tmpktodi034/corrupted.png: cannot identify image file '/tmp/tmpktodi034/corrupted.png'
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/Crew.py", line 372, in overlay_grid
+    img = Image.open(image_path)
+  File "/home/me/.local/lib/python3.14/site-packages/PIL/Image.py", line 3579, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file '/tmp/tmpktodi034/corrupted.png'
+2026-04-15 17:23:24,843 - Crew - INFO - Grid overlay applied to /tmp/tmpjww9_b0s/line_image.png with grid size (8, 6).
+2026-04-15 17:23:24,945 - Crew - INFO - Grid overlay applied to /tmp/tmplclevzjo/test_image.png with grid size (42, 32).
+2026-04-15 17:23:24,956 - Crew - INFO - Grid overlay applied to /tmp/tmptc22wi7f/test_image.png with grid size (5, 3).
+2026-04-15 17:23:24,966 - Crew - INFO - Grid overlay applied to /tmp/tmpu4e2c0u9/test_image.png with grid size (42, 32).
+2026-04-15 17:23:24,975 - Crew - ERROR - Image file not found at nonexistent_file.png in overlay_grid.
+2026-04-15 17:23:24,983 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:23:24,984 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:23:24,984 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:23:24,997 - Crew - INFO - Grid overlay applied to /tmp/tmpqtcwwy35/large_test_image.png with grid size (20, 15).
+2026-04-15 17:23:25,006 - Crew - INFO - Grid overlay applied to /tmp/tmp9p9uiufe/rgba_image.png with grid size (42, 32).
+2026-04-15 17:23:25,016 - Crew - INFO - Grid overlay applied to /tmp/tmpvk2gzr95/test_image.png with grid size (4, 2).
+2026-04-15 17:23:25,026 - Crew - INFO - Grid overlay applied to /tmp/tmpycxyeita/test_image.png with grid size (1, 1).
+2026-04-15 17:23:25,034 - Crew - INFO - Grid overlay applied to /tmp/tmpmwuoe4e0/test_image.png with grid size (42, 32).
+2026-04-15 17:23:25,044 - Crew - INFO - Grid overlay applied to /tmp/tmpj5sb6m21/test_image.png with grid size (42, 32).
+2026-04-15 17:23:25,056 - Crew - INFO - Grid overlay applied to /tmp/tmpcwvt57vb/large_test_image.png with grid size (50, 30).
+2026-04-15 17:23:25,105 - mcp_service - INFO - Input DataFrame for MCP context is empty.
+2026-04-15 17:23:25,151 - root - INFO - StateManager initialized
+2026-04-15 17:23:25,152 - root - ERROR - Error loading window state: DummyGUI.__init__.<locals>.<lambda>() takes 2 positional arguments but 3 were given
+2026-04-15 17:23:25,154 - root - INFO - StateManager initialized
+2026-04-15 17:23:25,155 - root - ERROR - Error saving window state: 'DummyConfig' object has no attribute 'set'
+2026-04-15 17:23:26,755 - root - INFO - Main layout created successfully
+2026-04-15 17:23:26,758 - root - INFO - Ignoring saved window size '1020x1080' and forcing '800x800'.
+2026-04-15 17:23:26,760 - root - INFO - Ignoring saved minimum window size '800x600' and forcing '800x800'.
+2026-04-15 17:29:07,895 - config - INFO - Configuration file not found at /tmp/tmpxx7mqojh/config.json. Using default configuration.
+2026-04-15 17:29:07,896 - config - INFO - Configuration saved to /tmp/tmpxx7mqojh/config.json
+2026-04-15 17:29:07,897 - config - INFO - Configuration file not found at /tmp/tmpj2vmocpl/config.json. Using default configuration.
+2026-04-15 17:29:07,897 - config - INFO - Configuration saved to /tmp/tmpj2vmocpl/config.json
+2026-04-15 17:29:07,897 - config - INFO - Configuration saved to /tmp/tmpj2vmocpl/config.json
+2026-04-15 17:29:07,953 - config - INFO - Configuration file not found at /tmp/tmpqg6oexmu/config.json. Using default configuration.
+2026-04-15 17:29:07,953 - config - INFO - Configuration saved to /tmp/tmpqg6oexmu/config.json
+2026-04-15 17:29:07,953 - config - WARNING - Attempting to set an unknown configuration key: 'string_val'. This key is not validated.
+2026-04-15 17:29:07,953 - config - INFO - Configuration saved to /tmp/tmpqg6oexmu/config.json
+2026-04-15 17:29:07,954 - config - WARNING - Attempting to set an unknown configuration key: 'int_val'. This key is not validated.
+2026-04-15 17:29:07,954 - config - INFO - Configuration saved to /tmp/tmpqg6oexmu/config.json
+2026-04-15 17:29:07,954 - config - WARNING - Attempting to set an unknown configuration key: 'bool_val'. This key is not validated.
+2026-04-15 17:29:07,954 - config - INFO - Configuration saved to /tmp/tmpqg6oexmu/config.json
+2026-04-15 17:29:07,954 - config - WARNING - Attempting to set an unknown configuration key: 'list_val'. This key is not validated.
+2026-04-15 17:29:07,955 - config - INFO - Configuration saved to /tmp/tmpqg6oexmu/config.json
+2026-04-15 17:29:07,955 - config - INFO - Configuration file not found at /tmp/tmpv15zl5gm/config.json. Using default configuration.
+2026-04-15 17:29:07,956 - config - INFO - Configuration saved to /tmp/tmpv15zl5gm/config.json
+2026-04-15 17:29:07,956 - config - INFO - Configuration file not found at /tmp/tmp_15xs7hu/config.json. Using default configuration.
+2026-04-15 17:29:07,957 - config - INFO - Configuration saved to /tmp/tmp_15xs7hu/config.json
+2026-04-15 17:29:07,957 - config - INFO - Configuration file not found at /tmp/tmppe7_4rnq/config.json. Using default configuration.
+2026-04-15 17:29:07,958 - config - INFO - Configuration saved to /tmp/tmppe7_4rnq/config.json
+2026-04-15 17:29:07,958 - config - INFO - Configuration file not found at /tmp/tmp4p8w_m5a/config.json. Using default configuration.
+2026-04-15 17:29:07,958 - config - INFO - Configuration saved to /tmp/tmp4p8w_m5a/config.json
+2026-04-15 17:29:07,960 - config - INFO - Configuration file not found at /tmp/tmpcyemjl8x/config.json. Using default configuration.
+2026-04-15 17:29:07,960 - config - INFO - Configuration saved to /tmp/tmpcyemjl8x/config.json
+2026-04-15 17:29:07,960 - config - WARNING - Attempting to set an unknown configuration key: 'test_key'. This key is not validated.
+2026-04-15 17:29:07,960 - config - INFO - Configuration saved to /tmp/tmpcyemjl8x/config.json
+2026-04-15 17:29:07,960 - config - INFO - Configuration saved to /tmp/tmpcyemjl8x/config.json
+2026-04-15 17:29:07,963 - file_utils - INFO - Successfully read /tmp/tmp5tjxawp5/test_npcs.csv using built-in csv module.
+2026-04-15 17:29:07,964 - Crew - INFO - Successfully read file: /tmp/tmp7f_cpj2t/test_npcs.csv
+2026-04-15 17:29:07,965 - Crew - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:29:07,966 - file_utils - INFO - Successfully read /tmp/tmptps8mqei/test.csv using built-in csv module.
+2026-04-15 17:29:07,969 - file_utils - INFO - Successfully read /tmp/tmpfnpbdh8f/test.csv using pandas.
+2026-04-15 17:29:07,970 - file_utils - ERROR - File not found: nonexistent_file.csv
+2026-04-15 17:29:07,971 - root - WARNING - Row 0 has 2 columns but headers have 3
+2026-04-15 17:29:08,301 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:29:08,625 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:29:08,938 - DatabaseManager - INFO - setup_logging called (test stub)
+2026-04-15 17:29:09,653 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:29:09,999 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:29:10,325 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:29:10,734 - enhanced_features - INFO - 📄 Generated requirements.txt
+2026-04-15 17:29:10,736 - enhanced_features - INFO - All Python dependencies are installed
+2026-04-15 17:29:11,065 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:29:21,267 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 17:29:21,336 - root - INFO - Auto-imported 1538 modules successfully
+2026-04-15 17:29:21,336 - root - INFO - Skipped 4 modules (expected for script files)
+2026-04-15 17:29:21,336 - root - INFO - Auto-import summary: 1538 imported, 4 failed, 1970 skipped, 3512 total files processed
+2026-04-15 17:29:21,339 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:29:21,343 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:29:21,344 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:29:21,459 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:29:21,460 - root - INFO - Using cached auto-import results
+2026-04-15 17:29:21,461 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:29:21,464 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:29:21,465 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:29:21,550 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:29:21,551 - root - INFO - Using cached auto-import results
+2026-04-15 17:29:21,552 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:29:21,555 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:29:21,555 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:29:21,642 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:29:21,643 - root - INFO - Using cached auto-import results
+2026-04-15 17:29:21,644 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:29:21,647 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:29:21,647 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:29:21,648 - audio_manager - ERROR - Failed to stop recording: not enough values to unpack (expected 2, got 0)
+2026-04-15 17:29:21,768 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:29:21,769 - root - INFO - Using cached auto-import results
+2026-04-15 17:29:21,771 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:29:21,773 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:29:21,774 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:29:21,860 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:29:21,861 - root - INFO - Using cached auto-import results
+2026-04-15 17:29:21,863 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:29:21,866 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:29:21,866 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:29:21,948 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:29:21,948 - root - INFO - Using cached auto-import results
+2026-04-15 17:29:21,950 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:29:21,953 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:29:21,953 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:29:21,953 - root - INFO - Status: Saved to /tmp/tmp_9bt5bq6/test.csv
+2026-04-15 17:29:22,047 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:29:22,048 - root - INFO - Using cached auto-import results
+2026-04-15 17:29:22,050 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:29:22,054 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:29:22,054 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:29:22,054 - root - INFO - Status: Saved to /tmp/tmp7a4j4t6y/test.txt
+2026-04-15 17:29:22,133 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:29:22,134 - root - INFO - Using cached auto-import results
+2026-04-15 17:29:22,136 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:29:22,139 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:29:22,139 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:29:22,140 - root - ERROR - Error saving to file /nonexistent_dir/test.csv: [Errno 2] No such file or directory: '/nonexistent_dir/test.csv'
+2026-04-15 17:29:22,140 - root - INFO - Status: Error saving to /nonexistent_dir/test.csv
+2026-04-15 17:29:22,319 - Crew - ERROR - Error in overlay_grid for /tmp/tmpwutq_2mm/corrupted.png: cannot identify image file '/tmp/tmpwutq_2mm/corrupted.png'
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/Crew.py", line 372, in overlay_grid
+    img = Image.open(image_path)
+  File "/home/me/.local/lib/python3.14/site-packages/PIL/Image.py", line 3579, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file '/tmp/tmpwutq_2mm/corrupted.png'
+2026-04-15 17:29:22,348 - Crew - INFO - Grid overlay applied to /tmp/tmpdqfcpev9/line_image.png with grid size (8, 6).
+2026-04-15 17:29:22,416 - Crew - INFO - Grid overlay applied to /tmp/tmp3ae2pnwd/test_image.png with grid size (42, 32).
+2026-04-15 17:29:22,423 - Crew - INFO - Grid overlay applied to /tmp/tmpw0r4_zx7/test_image.png with grid size (5, 3).
+2026-04-15 17:29:22,430 - Crew - INFO - Grid overlay applied to /tmp/tmptqu8rsud/test_image.png with grid size (42, 32).
+2026-04-15 17:29:22,435 - Crew - ERROR - Image file not found at nonexistent_file.png in overlay_grid.
+2026-04-15 17:29:22,442 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:29:22,443 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:29:22,443 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:29:22,451 - Crew - INFO - Grid overlay applied to /tmp/tmpzc2zlxpk/large_test_image.png with grid size (20, 15).
+2026-04-15 17:29:22,459 - Crew - INFO - Grid overlay applied to /tmp/tmpsa8fuq46/rgba_image.png with grid size (42, 32).
+2026-04-15 17:29:22,468 - Crew - INFO - Grid overlay applied to /tmp/tmphe_s2a5x/test_image.png with grid size (4, 2).
+2026-04-15 17:29:22,476 - Crew - INFO - Grid overlay applied to /tmp/tmp84vvx7ly/test_image.png with grid size (1, 1).
+2026-04-15 17:29:22,484 - Crew - INFO - Grid overlay applied to /tmp/tmpj05z11zc/test_image.png with grid size (42, 32).
+2026-04-15 17:29:22,491 - Crew - INFO - Grid overlay applied to /tmp/tmpo9cobhpy/test_image.png with grid size (42, 32).
+2026-04-15 17:29:22,500 - Crew - INFO - Grid overlay applied to /tmp/tmpcsthhbxf/large_test_image.png with grid size (50, 30).
+2026-04-15 17:29:22,511 - mcp_service - INFO - Input DataFrame for MCP context is empty.
+2026-04-15 17:29:22,524 - root - INFO - StateManager initialized
+2026-04-15 17:29:22,524 - root - ERROR - Error loading window state: DummyGUI.__init__.<locals>.<lambda>() takes 2 positional arguments but 3 were given
+2026-04-15 17:29:22,525 - root - INFO - StateManager initialized
+2026-04-15 17:29:22,525 - root - ERROR - Error saving window state: 'DummyConfig' object has no attribute 'set'
+2026-04-15 17:29:24,181 - root - INFO - Main layout created successfully
+2026-04-15 17:29:24,183 - root - INFO - Ignoring saved window size '1020x1080' and forcing '800x800'.
+2026-04-15 17:29:24,184 - root - INFO - Ignoring saved minimum window size '800x600' and forcing '800x800'.
+2026-04-15 17:31:33,979 - config - INFO - Configuration file not found at /tmp/tmppd539uf2/config.json. Using default configuration.
+2026-04-15 17:31:33,979 - config - INFO - Configuration saved to /tmp/tmppd539uf2/config.json
+2026-04-15 17:31:33,980 - config - INFO - Configuration file not found at /tmp/tmpuh8y1156/config.json. Using default configuration.
+2026-04-15 17:31:33,981 - config - INFO - Configuration saved to /tmp/tmpuh8y1156/config.json
+2026-04-15 17:31:33,981 - config - INFO - Configuration saved to /tmp/tmpuh8y1156/config.json
+2026-04-15 17:31:34,036 - config - INFO - Configuration file not found at /tmp/tmp4zok8v8a/config.json. Using default configuration.
+2026-04-15 17:31:34,037 - config - INFO - Configuration saved to /tmp/tmp4zok8v8a/config.json
+2026-04-15 17:31:34,037 - config - WARNING - Attempting to set an unknown configuration key: 'string_val'. This key is not validated.
+2026-04-15 17:31:34,037 - config - INFO - Configuration saved to /tmp/tmp4zok8v8a/config.json
+2026-04-15 17:31:34,037 - config - WARNING - Attempting to set an unknown configuration key: 'int_val'. This key is not validated.
+2026-04-15 17:31:34,038 - config - INFO - Configuration saved to /tmp/tmp4zok8v8a/config.json
+2026-04-15 17:31:34,038 - config - WARNING - Attempting to set an unknown configuration key: 'bool_val'. This key is not validated.
+2026-04-15 17:31:34,039 - config - INFO - Configuration saved to /tmp/tmp4zok8v8a/config.json
+2026-04-15 17:31:34,039 - config - WARNING - Attempting to set an unknown configuration key: 'list_val'. This key is not validated.
+2026-04-15 17:31:34,039 - config - INFO - Configuration saved to /tmp/tmp4zok8v8a/config.json
+2026-04-15 17:31:34,040 - config - INFO - Configuration file not found at /tmp/tmpm0ler16s/config.json. Using default configuration.
+2026-04-15 17:31:34,040 - config - INFO - Configuration saved to /tmp/tmpm0ler16s/config.json
+2026-04-15 17:31:34,041 - config - INFO - Configuration file not found at /tmp/tmpzczona95/config.json. Using default configuration.
+2026-04-15 17:31:34,042 - config - INFO - Configuration saved to /tmp/tmpzczona95/config.json
+2026-04-15 17:31:34,043 - config - INFO - Configuration file not found at /tmp/tmp6h6w73un/config.json. Using default configuration.
+2026-04-15 17:31:34,043 - config - INFO - Configuration saved to /tmp/tmp6h6w73un/config.json
+2026-04-15 17:31:34,044 - config - INFO - Configuration file not found at /tmp/tmpqs85k8o3/config.json. Using default configuration.
+2026-04-15 17:31:34,046 - config - INFO - Configuration saved to /tmp/tmpqs85k8o3/config.json
+2026-04-15 17:31:34,047 - config - INFO - Configuration file not found at /tmp/tmp81zmwinw/config.json. Using default configuration.
+2026-04-15 17:31:34,048 - config - INFO - Configuration saved to /tmp/tmp81zmwinw/config.json
+2026-04-15 17:31:34,048 - config - WARNING - Attempting to set an unknown configuration key: 'test_key'. This key is not validated.
+2026-04-15 17:31:34,049 - config - INFO - Configuration saved to /tmp/tmp81zmwinw/config.json
+2026-04-15 17:31:34,050 - config - INFO - Configuration saved to /tmp/tmp81zmwinw/config.json
+2026-04-15 17:31:34,054 - file_utils - INFO - Successfully read /tmp/tmp1q0a7h4z/test_npcs.csv using built-in csv module.
+2026-04-15 17:31:34,055 - Crew - INFO - Successfully read file: /tmp/tmp6ravv2t6/test_npcs.csv
+2026-04-15 17:31:34,056 - Crew - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:31:34,058 - file_utils - INFO - Successfully read /tmp/tmpgj86n_af/test.csv using built-in csv module.
+2026-04-15 17:31:34,061 - file_utils - INFO - Successfully read /tmp/tmpj9r6shrp/test.csv using pandas.
+2026-04-15 17:31:34,062 - file_utils - ERROR - File not found: nonexistent_file.csv
+2026-04-15 17:31:34,063 - root - WARNING - Row 0 has 2 columns but headers have 3
+2026-04-15 17:31:34,388 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:31:35,203 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:31:36,128 - DatabaseManager - INFO - setup_logging called (test stub)
+2026-04-15 17:31:36,908 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:31:37,232 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:31:37,556 - DatabaseManager - INFO - Database connection closed.
+2026-04-15 17:31:37,954 - enhanced_features - INFO - 📄 Generated requirements.txt
+2026-04-15 17:31:37,956 - enhanced_features - INFO - All Python dependencies are installed
+2026-04-15 17:31:38,187 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:31:38,187 - root - INFO - Using cached auto-import results
+2026-04-15 17:31:38,189 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:31:38,194 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:31:38,195 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:31:38,283 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:31:38,284 - root - INFO - Using cached auto-import results
+2026-04-15 17:31:38,285 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:31:38,288 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:31:38,288 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:31:38,372 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:31:38,373 - root - INFO - Using cached auto-import results
+2026-04-15 17:31:38,375 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:31:38,377 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:31:38,378 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:31:38,481 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:31:38,482 - root - INFO - Using cached auto-import results
+2026-04-15 17:31:38,486 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:31:38,490 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:31:38,490 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:31:46,302 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:31:46,303 - root - INFO - Using cached auto-import results
+2026-04-15 17:31:46,316 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:31:46,320 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:31:46,323 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:31:46,445 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:31:46,446 - root - INFO - Using cached auto-import results
+2026-04-15 17:31:46,448 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:31:46,452 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:31:46,452 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:31:46,559 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:31:46,560 - root - INFO - Using cached auto-import results
+2026-04-15 17:31:46,563 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:31:46,567 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:31:46,568 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:31:46,569 - root - INFO - Status: Saved to /tmp/tmp_yzlz5q4/test.csv
+2026-04-15 17:31:46,664 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:31:46,665 - root - INFO - Using cached auto-import results
+2026-04-15 17:31:46,668 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:31:46,672 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:31:46,673 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:31:46,673 - root - INFO - Status: Saved to /tmp/tmpybw7znfn/test.txt
+2026-04-15 17:31:46,764 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:31:46,765 - root - INFO - Using cached auto-import results
+2026-04-15 17:31:46,767 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:31:46,770 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:31:46,770 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:31:46,770 - root - ERROR - Error saving to file /nonexistent_dir/test.csv: [Errno 2] No such file or directory: '/nonexistent_dir/test.csv'
+2026-04-15 17:31:46,771 - root - INFO - Status: Error saving to /nonexistent_dir/test.csv
+2026-04-15 17:31:46,877 - Crew - ERROR - Error in overlay_grid for /tmp/tmpbutsuimj/corrupted.png: cannot identify image file '/tmp/tmpbutsuimj/corrupted.png'
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/Crew.py", line 372, in overlay_grid
+    img = Image.open(image_path)
+  File "/home/me/.local/lib/python3.14/site-packages/PIL/Image.py", line 3579, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file '/tmp/tmpbutsuimj/corrupted.png'
+2026-04-15 17:31:46,907 - Crew - INFO - Grid overlay applied to /tmp/tmppq7iffkm/line_image.png with grid size (8, 6).
+2026-04-15 17:31:46,966 - Crew - INFO - Grid overlay applied to /tmp/tmpyyu70zw7/test_image.png with grid size (42, 32).
+2026-04-15 17:31:46,972 - Crew - INFO - Grid overlay applied to /tmp/tmpvvjzp3bf/test_image.png with grid size (5, 3).
+2026-04-15 17:31:46,978 - Crew - INFO - Grid overlay applied to /tmp/tmp_0vcxuma/test_image.png with grid size (42, 32).
+2026-04-15 17:31:46,983 - Crew - ERROR - Image file not found at nonexistent_file.png in overlay_grid.
+2026-04-15 17:31:46,988 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:31:46,988 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:31:46,988 - Crew - ERROR - grid_size values must be > 0.
+2026-04-15 17:31:46,995 - Crew - INFO - Grid overlay applied to /tmp/tmpdwa1qwcx/large_test_image.png with grid size (20, 15).
+2026-04-15 17:31:47,001 - Crew - INFO - Grid overlay applied to /tmp/tmpz3ao7ilm/rgba_image.png with grid size (42, 32).
+2026-04-15 17:31:47,007 - Crew - INFO - Grid overlay applied to /tmp/tmpe12uro34/test_image.png with grid size (4, 2).
+2026-04-15 17:31:47,014 - Crew - INFO - Grid overlay applied to /tmp/tmp8u1n4371/test_image.png with grid size (1, 1).
+2026-04-15 17:31:47,020 - Crew - INFO - Grid overlay applied to /tmp/tmpmmxovwxu/test_image.png with grid size (42, 32).
+2026-04-15 17:31:47,026 - Crew - INFO - Grid overlay applied to /tmp/tmp9tdo8sam/test_image.png with grid size (42, 32).
+2026-04-15 17:31:47,034 - Crew - INFO - Grid overlay applied to /tmp/tmptzd_8qq3/large_test_image.png with grid size (50, 30).
+2026-04-15 17:31:47,046 - mcp_service - INFO - Input DataFrame for MCP context is empty.
+2026-04-15 17:31:47,060 - root - INFO - StateManager initialized
+2026-04-15 17:31:47,060 - root - ERROR - Error loading window state: DummyGUI.__init__.<locals>.<lambda>() takes 2 positional arguments but 3 were given
+2026-04-15 17:31:47,061 - root - INFO - StateManager initialized
+2026-04-15 17:31:47,061 - root - ERROR - Error saving window state: 'DummyConfig' object has no attribute 'set'
+2026-04-15 17:31:48,486 - root - INFO - Main layout created successfully
+2026-04-15 17:31:48,487 - root - INFO - Ignoring saved window size '1020x1080' and forcing '800x800'.
+2026-04-15 17:31:48,491 - root - INFO - Ignoring saved minimum window size '800x600' and forcing '800x800'.
+2026-04-15 17:32:51,953 - __main__ - INFO - Main application script started.
+2026-04-15 17:33:01,436 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:33:01,437 - root - INFO - Using cached auto-import results
+2026-04-15 17:33:01,439 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:33:01,512 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:33:01,532 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:33:54,676 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/CREW/recording.wav, channels=1
+2026-04-15 17:33:54,719 - audio_manager - ERROR - Failed to open stream with channels=1: [Errno -9997] Invalid sample rate
+2026-04-15 17:33:54,719 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/CREW/recording.wav, channels=2
+2026-04-15 17:33:54,720 - audio_manager - ERROR - Failed to open stream with channels=2: [Errno -9998] Invalid number of channels
+2026-04-15 17:33:54,720 - audio_manager - ERROR - All attempts to start recording failed for device=USB Composite Device: Audio (hw:2,0) (index=2)
+2026-04-15 17:33:54,720 - root - ERROR - Failed to start recording: [Errno -9998] Invalid number of channels
+2026-04-15 17:34:05,241 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:34:05,242 - __main__ - INFO - Main application script finished.
+2026-04-15 17:34:47,808 - __main__ - INFO - Main application script started.
+2026-04-15 17:34:49,708 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:35:04,758 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 17:35:04,805 - root - INFO - Auto-imported 1538 modules successfully
+2026-04-15 17:35:04,806 - root - INFO - Skipped 4 modules (expected for script files)
+2026-04-15 17:35:04,806 - root - INFO - Auto-import summary: 1538 imported, 4 failed, 1970 skipped, 3512 total files processed
+2026-04-15 17:35:04,851 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:35:04,961 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:35:04,967 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:35:20,223 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/CREW/recording.wav, channels=1
+2026-04-15 17:35:20,224 - audio_manager - ERROR - Failed to open stream with channels=1: [Errno -9997] Invalid sample rate
+2026-04-15 17:35:20,224 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/CREW/recording.wav, channels=2
+2026-04-15 17:35:20,225 - audio_manager - ERROR - Failed to open stream with channels=2: [Errno -9998] Invalid number of channels
+2026-04-15 17:35:20,225 - audio_manager - ERROR - All attempts to start recording failed for device=USB Composite Device: Audio (hw:2,0) (index=2)
+2026-04-15 17:35:20,225 - root - ERROR - Failed to start recording: [Errno -9998] Invalid number of channels
+2026-04-15 17:35:28,855 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:35:28,855 - __main__ - INFO - Main application script finished.
+2026-04-15 17:38:43,364 - __main__ - INFO - Main application script started.
+2026-04-15 17:38:45,837 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:38:45,838 - root - INFO - Using cached auto-import results
+2026-04-15 17:38:45,841 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:38:45,934 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:38:45,942 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:39:04,537 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/CREW/recording.wav, channels=1
+2026-04-15 17:39:04,539 - audio_manager - ERROR - Failed to open stream with channels=1: [Errno -9997] Invalid sample rate
+2026-04-15 17:39:04,539 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/CREW/recording.wav, channels=2
+2026-04-15 17:39:04,540 - audio_manager - ERROR - Failed to open stream with channels=2: [Errno -9998] Invalid number of channels
+2026-04-15 17:39:04,540 - audio_manager - ERROR - All attempts to start recording failed for device=USB Composite Device: Audio (hw:2,0) (index=2)
+2026-04-15 17:39:04,540 - root - ERROR - Failed to start recording: [Errno -9998] Invalid number of channels
+2026-04-15 17:39:10,801 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:39:10,802 - __main__ - INFO - Main application script finished.
+2026-04-15 17:39:31,062 - __main__ - INFO - Main application script started.
+2026-04-15 17:39:32,148 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:39:32,149 - root - INFO - Using cached auto-import results
+2026-04-15 17:39:32,151 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:39:32,207 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:39:32,218 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:39:48,840 - root - INFO - Starting TTS playback for all details.
+2026-04-15 17:39:49,029 - root - INFO - TTS playback completed for all details.
+2026-04-15 17:39:57,048 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:39:57,048 - __main__ - INFO - Main application script finished.
+2026-04-15 17:40:47,034 - __main__ - INFO - Main application script started.
+2026-04-15 17:41:07,890 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:41:36,982 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 17:41:37,536 - root - INFO - Auto-imported 1538 modules successfully
+2026-04-15 17:41:37,536 - root - INFO - Skipped 4 modules (expected for script files)
+2026-04-15 17:41:37,536 - root - INFO - Auto-import summary: 1538 imported, 4 failed, 1970 skipped, 3512 total files processed
+2026-04-15 17:41:38,187 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:41:38,826 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:41:38,831 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:41:56,007 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/CREW/recording.wav, channels=1
+2026-04-15 17:41:56,008 - audio_manager - ERROR - Failed to open stream with channels=1: [Errno -9997] Invalid sample rate
+2026-04-15 17:41:56,008 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/CREW/recording.wav, channels=2
+2026-04-15 17:41:56,009 - audio_manager - ERROR - Failed to open stream with channels=2: [Errno -9998] Invalid number of channels
+2026-04-15 17:41:56,010 - audio_manager - ERROR - All attempts to start recording failed for device=USB Composite Device: Audio (hw:2,0) (index=2)
+2026-04-15 17:41:56,010 - root - ERROR - Failed to start recording: [Errno -9998] Invalid number of channels
+2026-04-15 17:43:03,394 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:43:03,394 - __main__ - INFO - Main application script finished.
+2026-04-15 17:47:21,123 - __main__ - INFO - Main application script started.
+2026-04-15 17:47:25,435 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 17:47:41,208 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 17:47:41,333 - root - INFO - Auto-imported 1538 modules successfully
+2026-04-15 17:47:41,333 - root - INFO - Skipped 4 modules (expected for script files)
+2026-04-15 17:47:41,333 - root - INFO - Auto-import summary: 1538 imported, 4 failed, 1970 skipped, 3512 total files processed
+2026-04-15 17:47:41,338 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 17:47:41,448 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 17:47:41,450 - root - INFO - Status: Ready - Auto-imported 1538 modules (4 failed)
+2026-04-15 17:47:47,004 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 17:47:47,005 - __main__ - INFO - Main application script finished.
+>>>>>>> 0cc4b126 (Add new crawler job docs, Flask APIs, chatbot CLI/web, and sample audio)

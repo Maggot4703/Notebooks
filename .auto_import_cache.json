@@ -1754,6 +1754,14 @@
       "Import error: No module named 'skills'"
     ],
     [
+      "CREW/flask_app.py",
+      "Import error: No module named 'flask'"
+    ],
+    [
+      "CREW/flask_crew_api.py",
+      "Import error: No module named 'flask'"
+    ],
+    [
       "CREW/skills/query_researcher.py",
       "Import error: No module named 'crewai'"
     ],
@@ -1764,6 +1772,10 @@
     [
       "batch_ocr_counters.py",
       "Import error: No module named 'pypdf'"
+    ],
+    [
+      "crew_chatbot_web.py",
+      "Import error: No module named 'flask'"
     ],
     [
       "export_markdown_to_pdf.py",
@@ -1778,5 +1790,9 @@
       "Import error: cannot import name 'ExtensionRegistry' from 'spec_kit_main.src.specify_cli.extensions' (/home/me/Not"
     ]
   ],
+<<<<<<< HEAD
   "timestamp": 1776296640.6548967
+=======
+  "timestamp": 1776294864.2412367
+>>>>>>> 0cc4b126 (Add new crawler job docs, Flask APIs, chatbot CLI/web, and sample audio)
 }

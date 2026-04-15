@@ -1882,6 +1882,7 @@
 2026-04-13 23:55:13,269 - root - INFO - Status: Ready - Auto-imported 1529 modules (32 failed)
 2026-04-13 23:56:33,973 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
 2026-04-13 23:56:33,973 - __main__ - INFO - Main application script finished.
+<<<<<<< HEAD
 2026-04-16 00:43:50,638 - __main__ - INFO - Main application script started.
 2026-04-16 00:44:00,072 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
 2026-04-16 00:44:00,654 - root - INFO - Status: Auto-importing workspace modules...
@@ -1894,3 +1895,725 @@
 2026-04-16 00:46:39,846 - root - INFO - Status: Ready - Auto-imported 1638 modules (34 failed)
 2026-04-16 00:47:17,094 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
 2026-04-16 00:47:17,099 - __main__ - INFO - Main application script finished.
+=======
+2026-04-14 09:09:27,178 - __main__ - INFO - Main application script started.
+2026-04-14 09:41:49,454 - __main__ - INFO - Main application script started.
+2026-04-14 09:47:19,953 - __main__ - INFO - Main application script started.
+2026-04-14 09:50:10,751 - __main__ - INFO - Main application script started.
+2026-04-14 09:53:59,031 - __main__ - INFO - Main application script started.
+2026-04-14 09:54:18,248 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-14 09:54:18,248 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-14 09:54:18,249 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-14 09:54:18,249 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-14 09:54:18,249 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-14 09:54:18,249 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-14 09:54:18,249 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-14 09:54:18,249 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-14 09:54:20,348 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-14 09:54:47,305 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-14 09:54:48,608 - root - INFO - Auto-imported 1537 modules successfully
+2026-04-14 09:54:48,609 - root - INFO - Skipped 34 modules (expected for script files)
+2026-04-14 09:54:48,609 - root - INFO - Auto-import summary: 1537 imported, 34 failed, 17783 skipped, 19354 total files processed
+2026-04-14 09:54:48,612 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-14 09:54:48,617 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/BACKUP/Crew23/data/npcs.csv...
+2026-04-14 09:54:48,822 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/BACKUP/Crew23/data/npcs.csv.
+2026-04-14 09:54:48,845 - root - INFO - Status: Ready - Auto-imported 1537 modules (34 failed)
+2026-04-14 09:54:53,683 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-14 09:54:53,685 - __main__ - INFO - Main application script finished.
+2026-04-14 09:55:57,606 - __main__ - INFO - Main application script started.
+2026-04-14 09:56:28,100 - __main__ - INFO - Main application script started.
+2026-04-14 09:57:38,182 - __main__ - INFO - Main application script started.
+2026-04-14 10:05:23,053 - __main__ - INFO - Main application script started.
+2026-04-14 10:05:23,308 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-14 10:05:23,308 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-14 10:05:23,308 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-14 10:05:23,308 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-14 10:05:23,308 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-14 10:05:23,308 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-14 10:05:23,308 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-14 10:05:23,308 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-14 10:05:23,462 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-14 10:05:39,262 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-14 10:05:39,595 - root - INFO - Auto-imported 1480 modules successfully
+2026-04-14 10:05:39,595 - root - INFO - Skipped 34 modules (expected for script files)
+2026-04-14 10:05:39,595 - root - INFO - Auto-import summary: 1480 imported, 34 failed, 17683 skipped, 19197 total files processed
+2026-04-14 10:05:39,599 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-14 10:05:39,611 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-14 10:05:39,854 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-14 10:05:39,891 - root - INFO - Status: Ready - Auto-imported 1480 modules (34 failed)
+2026-04-14 10:05:39,969 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-14 10:05:39,972 - __main__ - INFO - Main application script finished.
+2026-04-14 10:06:29,357 - __main__ - INFO - Main application script started.
+2026-04-14 10:06:31,588 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-14 10:06:31,588 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-14 10:06:31,589 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-14 10:06:31,589 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-14 10:06:31,589 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-14 10:06:31,589 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-14 10:06:31,589 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-14 10:06:31,589 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-14 10:06:32,157 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-14 10:06:32,212 - root - INFO - Using cached auto-import results
+2026-04-14 10:06:32,223 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-14 10:06:32,232 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-14 10:06:32,377 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-14 10:06:32,396 - root - INFO - Status: Ready - Auto-imported 1480 modules (34 failed)
+2026-04-14 10:06:38,199 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-14 10:06:38,199 - __main__ - INFO - Main application script finished.
+2026-04-14 12:26:17,577 - __main__ - INFO - Main application script started.
+2026-04-14 12:26:19,559 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-14 12:26:19,559 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-14 12:26:19,559 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-14 12:26:19,559 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-14 12:26:19,559 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-14 12:26:19,559 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-14 12:26:19,559 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-14 12:26:19,559 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-14 12:26:19,869 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-14 12:26:35,620 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-14 12:26:36,308 - root - INFO - Auto-imported 1482 modules successfully
+2026-04-14 12:26:36,308 - root - INFO - Skipped 32 modules (expected for script files)
+2026-04-14 12:26:36,308 - root - INFO - Auto-import summary: 1482 imported, 32 failed, 17771 skipped, 19285 total files processed
+2026-04-14 12:26:36,326 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-14 12:26:36,333 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-14 12:26:36,452 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-14 12:26:36,463 - root - INFO - Status: Ready - Auto-imported 1482 modules (32 failed)
+2026-04-14 12:27:38,056 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-14 12:27:38,056 - root - ERROR - Error updating script menu: name 'glob' is not defined
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/gui.py", line 3589, in _update_script_menu
+    script_files = glob.glob(os.path.join(self.scripts_dir, "*.py"))
+                   ^^^^
+NameError: name 'glob' is not defined. Did you forget to import 'glob'?
+2026-04-14 12:28:06,761 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-14 12:28:06,762 - root - ERROR - Error updating script menu: name 'glob' is not defined
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/gui.py", line 3589, in _update_script_menu
+    script_files = glob.glob(os.path.join(self.scripts_dir, "*.py"))
+                   ^^^^
+NameError: name 'glob' is not defined. Did you forget to import 'glob'?
+2026-04-14 12:36:36,505 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-14 12:36:36,505 - __main__ - INFO - Main application script finished.
+2026-04-14 12:44:57,459 - __main__ - INFO - Main application script started.
+2026-04-14 12:44:57,978 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-14 12:44:57,978 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-14 12:44:57,979 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-14 12:44:57,979 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-14 12:44:57,979 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-14 12:44:57,979 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-14 12:44:57,979 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-14 12:44:57,979 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-14 12:44:58,427 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-14 12:45:05,334 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-14 12:45:05,614 - root - INFO - Auto-imported 1482 modules successfully
+2026-04-14 12:45:05,614 - root - INFO - Skipped 32 modules (expected for script files)
+2026-04-14 12:45:05,614 - root - INFO - Auto-import summary: 1482 imported, 32 failed, 17771 skipped, 19285 total files processed
+2026-04-14 12:45:05,618 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-14 12:45:05,627 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-14 12:45:05,760 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-14 12:45:05,777 - root - INFO - Status: Ready - Auto-imported 1482 modules (32 failed)
+2026-04-14 12:45:11,286 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-14 12:45:11,287 - root - ERROR - Error updating script menu: name 'glob' is not defined
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/gui.py", line 3592, in _update_script_menu
+    script_files = glob.glob(os.path.join(self.scripts_dir, "*.py"))
+                   ^^^^
+NameError: name 'glob' is not defined. Did you forget to import 'glob'?
+2026-04-14 12:58:23,448 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-14 12:58:23,450 - __main__ - INFO - Main application script finished.
+2026-04-14 12:59:37,200 - __main__ - INFO - Main application script started.
+2026-04-14 12:59:37,610 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-14 12:59:37,610 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-14 12:59:37,610 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-14 12:59:37,610 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-14 12:59:37,610 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-14 12:59:37,610 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-14 12:59:37,610 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-14 12:59:37,610 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-14 12:59:37,952 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-14 12:59:49,796 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-14 12:59:50,428 - root - INFO - Auto-imported 1482 modules successfully
+2026-04-14 12:59:50,428 - root - INFO - Skipped 32 modules (expected for script files)
+2026-04-14 12:59:50,428 - root - INFO - Auto-import summary: 1482 imported, 32 failed, 17771 skipped, 19285 total files processed
+2026-04-14 12:59:50,431 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-14 12:59:50,438 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-14 12:59:50,557 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-14 12:59:50,563 - root - INFO - Status: Ready - Auto-imported 1482 modules (32 failed)
+2026-04-14 12:59:57,485 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-14 12:59:58,989 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-14 13:00:02,402 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-14 13:00:02,402 - __main__ - INFO - Main application script finished.
+2026-04-14 13:58:37,166 - __main__ - INFO - Main application script started.
+2026-04-14 13:58:38,903 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-14 13:58:38,903 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-14 13:58:38,903 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-14 13:58:38,903 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-14 13:58:38,903 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-14 13:58:38,903 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-14 13:58:38,903 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-14 13:58:38,903 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-14 13:58:39,295 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-14 13:58:59,754 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-14 13:59:00,563 - root - INFO - Auto-imported 1483 modules successfully
+2026-04-14 13:59:00,564 - root - INFO - Skipped 32 modules (expected for script files)
+2026-04-14 13:59:00,564 - root - INFO - Auto-import summary: 1483 imported, 32 failed, 17771 skipped, 19286 total files processed
+2026-04-14 13:59:00,567 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-14 13:59:00,574 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-14 13:59:00,710 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-14 13:59:00,726 - root - INFO - Status: Ready - Auto-imported 1483 modules (32 failed)
+2026-04-14 13:59:19,698 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-14 13:59:19,699 - __main__ - INFO - Main application script finished.
+2026-04-14 14:00:31,097 - __main__ - INFO - Main application script started.
+2026-04-14 14:00:31,271 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-14 14:00:31,271 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-14 14:00:31,272 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-14 14:00:31,272 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-14 14:00:31,272 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-14 14:00:31,272 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-14 14:00:31,272 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-14 14:00:31,272 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-14 14:00:31,602 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-14 14:00:31,602 - root - INFO - Using cached auto-import results
+2026-04-14 14:00:31,603 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-14 14:00:31,604 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-14 14:00:31,701 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-14 14:00:31,721 - root - INFO - Status: Ready - Auto-imported 1483 modules (32 failed)
+2026-04-14 14:00:35,935 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-14 14:00:35,935 - __main__ - INFO - Main application script finished.
+2026-04-14 14:06:09,251 - __main__ - INFO - Main application script started.
+2026-04-14 14:06:09,645 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-14 14:06:09,645 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-14 14:06:09,645 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-14 14:06:09,645 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-14 14:06:09,645 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-14 14:06:09,645 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-14 14:06:09,645 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-14 14:06:09,645 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-14 14:06:10,143 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-14 14:06:17,810 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-14 14:06:18,185 - root - INFO - Auto-imported 1483 modules successfully
+2026-04-14 14:06:18,186 - root - INFO - Skipped 32 modules (expected for script files)
+2026-04-14 14:06:18,186 - root - INFO - Auto-import summary: 1483 imported, 32 failed, 17778 skipped, 19293 total files processed
+2026-04-14 14:06:18,191 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-14 14:06:18,196 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-14 14:06:18,273 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-14 14:06:18,278 - root - INFO - Status: Ready - Auto-imported 1483 modules (32 failed)
+2026-04-14 14:06:18,320 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-14 14:06:18,321 - __main__ - INFO - Main application script finished.
+2026-04-14 14:12:33,235 - __main__ - INFO - Main application script started.
+2026-04-14 14:12:35,355 - config - WARNING - Unknown configuration key 'tts_settings' found in config file.
+2026-04-14 14:12:35,355 - config - WARNING - Unknown configuration key 'string_val' found in config file.
+2026-04-14 14:12:35,355 - config - WARNING - Unknown configuration key 'int_val' found in config file.
+2026-04-14 14:12:35,355 - config - WARNING - Unknown configuration key 'bool_val' found in config file.
+2026-04-14 14:12:35,355 - config - WARNING - Unknown configuration key 'list_val' found in config file.
+2026-04-14 14:12:35,355 - config - WARNING - Unknown configuration key 'test_key' found in config file.
+2026-04-14 14:12:35,355 - config - WARNING - Unknown configuration key 'persona' found in config file.
+2026-04-14 14:12:35,355 - config - WARNING - Unknown configuration key 'context_window' found in config file.
+2026-04-14 14:12:35,931 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-14 14:13:19,130 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-14 14:13:19,818 - root - INFO - Auto-imported 1524 modules successfully
+2026-04-14 14:13:19,819 - root - INFO - Skipped 32 modules (expected for script files)
+2026-04-14 14:13:19,820 - root - INFO - Auto-import summary: 1524 imported, 32 failed, 17855 skipped, 19411 total files processed
+2026-04-14 14:13:19,832 - root - INFO - Ignoring saved window size '1600x900' and forcing '800x800'.
+2026-04-14 14:13:19,844 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-14 14:13:20,081 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-14 14:13:20,158 - root - INFO - Status: Ready - Auto-imported 1524 modules (32 failed)
+2026-04-14 14:13:25,086 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-14 14:13:30,542 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-14 14:13:40,159 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-14 14:13:47,375 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-14 14:13:52,050 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-14 14:13:57,338 - root - INFO - Status: Opened scripts folder: /home/me/Notebooks/CREW/Crew/scripts
+2026-04-14 14:14:07,174 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-14 14:14:07,174 - __main__ - INFO - Main application script finished.
+2026-04-15 18:34:26,223 - __main__ - INFO - Main application script started.
+2026-04-15 18:34:46,322 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 18:34:47,431 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 18:36:12,604 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 18:36:17,175 - root - INFO - Auto-imported 1581 modules successfully
+2026-04-15 18:36:17,175 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 18:36:17,175 - root - INFO - Auto-import summary: 1581 imported, 36 failed, 12514 skipped, 14131 total files processed
+2026-04-15 18:36:17,251 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 18:36:17,743 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 18:36:17,772 - root - INFO - Status: Ready - Auto-imported 1581 modules (36 failed)
+2026-04-15 18:39:53,044 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 18:39:54,032 - __main__ - INFO - Main application script finished.
+2026-04-15 19:26:10,540 - __main__ - INFO - Main application script started.
+2026-04-15 19:26:17,143 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 19:26:18,280 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 19:26:38,546 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 19:26:39,772 - root - INFO - Auto-imported 1581 modules successfully
+2026-04-15 19:26:39,772 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 19:26:39,773 - root - INFO - Auto-import summary: 1581 imported, 36 failed, 12514 skipped, 14131 total files processed
+2026-04-15 19:26:39,789 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 19:26:39,998 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 19:26:39,999 - root - INFO - Status: Ready - Auto-imported 1581 modules (36 failed)
+2026-04-15 19:26:56,396 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/recording.wav, channels=1
+2026-04-15 19:26:56,413 - audio_manager - ERROR - Failed to open stream with channels=1: [Errno -9997] Invalid sample rate
+2026-04-15 19:26:56,414 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/recording.wav, channels=2
+2026-04-15 19:26:56,415 - audio_manager - ERROR - Failed to open stream with channels=2: [Errno -9998] Invalid number of channels
+2026-04-15 19:26:56,415 - audio_manager - ERROR - All attempts to start recording failed for device=USB Composite Device: Audio (hw:2,0) (index=2)
+2026-04-15 19:26:56,416 - root - ERROR - Failed to start recording: [Errno -9998] Invalid number of channels
+2026-04-15 19:26:56,416 - gui - ERROR - Failed to start recording with device 'USB Composite Device: Audio (hw:2,0)': [Errno -9998] Invalid number of channels
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/gui.py", line 1722, in _start_recording_with_device
+    path, proc = start_recording(device=device_name)
+                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/Notebooks/CREW/Crew/audio_manager.py", line 77, in start_recording
+    raise last_error if last_error else RuntimeError("Could not open audio stream.")
+  File "/home/me/Notebooks/CREW/Crew/audio_manager.py", line 67, in start_recording
+    stream = pa.open(format=FORMAT, channels=channels, rate=RATE, input=True,
+                    frames_per_buffer=CHUNK, input_device_index=device_index)
+  File "/home/me/Notebooks/.venv/lib/python3.14/site-packages/pyaudio/__init__.py", line 639, in open
+    stream = PyAudio.Stream(self, *args, **kwargs)
+  File "/home/me/Notebooks/.venv/lib/python3.14/site-packages/pyaudio/__init__.py", line 441, in __init__
+    self._stream = pa.open(**arguments)
+                   ~~~~~~~^^^^^^^^^^^^^
+OSError: [Errno -9998] Invalid number of channels
+2026-04-15 19:27:01,897 - root - ERROR - Status error: ❌ Failed to start recording: [Errno -9998] Invalid number of channels
+2026-04-15 19:27:08,542 - audio_manager - INFO - Attempting to start recording: device=sysdefault (index=3), output=/home/me/Notebooks/recording.wav, channels=1
+2026-04-15 19:27:08,543 - audio_manager - ERROR - Failed to open stream with channels=1: [Errno -9998] Invalid number of channels
+2026-04-15 19:27:08,543 - audio_manager - INFO - Attempting to start recording: device=sysdefault (index=3), output=/home/me/Notebooks/recording.wav, channels=2
+2026-04-15 19:27:08,543 - audio_manager - ERROR - Failed to open stream with channels=2: [Errno -9998] Invalid number of channels
+2026-04-15 19:27:08,543 - audio_manager - ERROR - All attempts to start recording failed for device=sysdefault (index=3)
+2026-04-15 19:27:08,543 - root - ERROR - Failed to start recording: [Errno -9998] Invalid number of channels
+2026-04-15 19:27:08,543 - gui - ERROR - Failed to start recording with device 'sysdefault': [Errno -9998] Invalid number of channels
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/gui.py", line 1722, in _start_recording_with_device
+    path, proc = start_recording(device=device_name)
+                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/Notebooks/CREW/Crew/audio_manager.py", line 77, in start_recording
+    raise last_error if last_error else RuntimeError("Could not open audio stream.")
+  File "/home/me/Notebooks/CREW/Crew/audio_manager.py", line 67, in start_recording
+    stream = pa.open(format=FORMAT, channels=channels, rate=RATE, input=True,
+                    frames_per_buffer=CHUNK, input_device_index=device_index)
+  File "/home/me/Notebooks/.venv/lib/python3.14/site-packages/pyaudio/__init__.py", line 639, in open
+    stream = PyAudio.Stream(self, *args, **kwargs)
+  File "/home/me/Notebooks/.venv/lib/python3.14/site-packages/pyaudio/__init__.py", line 441, in __init__
+    self._stream = pa.open(**arguments)
+                   ~~~~~~~^^^^^^^^^^^^^
+OSError: [Errno -9998] Invalid number of channels
+2026-04-15 19:30:03,186 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 19:30:03,259 - __main__ - INFO - Main application script finished.
+2026-04-15 19:31:26,669 - __main__ - INFO - Main application script started.
+2026-04-15 19:31:28,930 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 19:31:29,265 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 19:31:29,281 - root - INFO - Using cached auto-import results
+2026-04-15 19:31:29,284 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 19:31:29,369 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 19:31:29,384 - root - INFO - Status: Ready - Auto-imported 1581 modules (36 failed)
+2026-04-15 19:32:06,588 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/recording.wav, channels=1
+2026-04-15 19:32:06,632 - audio_manager - ERROR - Failed to open stream with channels=1: [Errno -9997] Invalid sample rate
+2026-04-15 19:32:06,632 - audio_manager - INFO - Attempting to start recording: device=USB Composite Device: Audio (hw:2,0) (index=2), output=/home/me/Notebooks/recording.wav, channels=2
+2026-04-15 19:32:06,632 - audio_manager - ERROR - Failed to open stream with channels=2: [Errno -9998] Invalid number of channels
+2026-04-15 19:32:06,632 - audio_manager - ERROR - All attempts to start recording failed for device=USB Composite Device: Audio (hw:2,0) (index=2)
+2026-04-15 19:32:06,632 - root - ERROR - Failed to start recording: [Errno -9998] Invalid number of channels
+2026-04-15 19:32:06,632 - gui - ERROR - Failed to start recording with device 'USB Composite Device: Audio (hw:2,0)': [Errno -9998] Invalid number of channels
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/gui.py", line 1722, in _start_recording_with_device
+    path, proc = start_recording(device=device_name)
+                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/Notebooks/CREW/Crew/audio_manager.py", line 87, in start_recording
+    raise last_error if last_error else RuntimeError("Could not open audio stream.")
+  File "/home/me/Notebooks/CREW/Crew/audio_manager.py", line 77, in start_recording
+    stream = pa.open(format=FORMAT, channels=channels, rate=RATE, input=True,
+                    frames_per_buffer=CHUNK, input_device_index=device_index)
+  File "/home/me/Notebooks/.venv/lib/python3.14/site-packages/pyaudio/__init__.py", line 639, in open
+    stream = PyAudio.Stream(self, *args, **kwargs)
+  File "/home/me/Notebooks/.venv/lib/python3.14/site-packages/pyaudio/__init__.py", line 441, in __init__
+    self._stream = pa.open(**arguments)
+                   ~~~~~~~^^^^^^^^^^^^^
+OSError: [Errno -9998] Invalid number of channels
+2026-04-15 19:32:17,442 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 19:32:17,443 - __main__ - INFO - Main application script finished.
+2026-04-15 19:32:58,047 - __main__ - INFO - Main application script started.
+2026-04-15 19:32:58,558 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 19:32:58,946 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 19:33:17,931 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 19:33:18,735 - root - INFO - Auto-imported 1581 modules successfully
+2026-04-15 19:33:18,735 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 19:33:18,735 - root - INFO - Auto-import summary: 1581 imported, 36 failed, 12514 skipped, 14131 total files processed
+2026-04-15 19:33:18,745 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 19:33:18,830 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 19:33:18,832 - root - INFO - Status: Ready - Auto-imported 1581 modules (36 failed)
+2026-04-15 19:33:27,802 - audio_manager - INFO - Attempting to start recording: device=2 (index=2), output=/home/me/Notebooks/recording.wav, channels=1
+2026-04-15 19:33:27,856 - audio_manager - ERROR - Failed to open stream with channels=1: [Errno -9997] Invalid sample rate
+2026-04-15 19:33:27,857 - audio_manager - INFO - Attempting to start recording: device=2 (index=2), output=/home/me/Notebooks/recording.wav, channels=2
+2026-04-15 19:33:27,857 - audio_manager - ERROR - Failed to open stream with channels=2: [Errno -9998] Invalid number of channels
+2026-04-15 19:33:27,857 - audio_manager - ERROR - All attempts to start recording failed for device=2 (index=2)
+2026-04-15 19:33:27,857 - root - ERROR - Failed to start recording: [Errno -9998] Invalid number of channels
+2026-04-15 19:33:27,857 - gui - ERROR - Failed to start recording with device 'USB Composite Device: Audio (hw:2,0)': [Errno -9998] Invalid number of channels
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/gui.py", line 1744, in _start_recording_with_device
+    path, proc = start_recording(device=device_index)
+                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/Notebooks/CREW/Crew/audio_manager.py", line 87, in start_recording
+    raise last_error if last_error else RuntimeError("Could not open audio stream.")
+  File "/home/me/Notebooks/CREW/Crew/audio_manager.py", line 77, in start_recording
+    stream = pa.open(format=FORMAT, channels=channels, rate=RATE, input=True,
+                    frames_per_buffer=CHUNK, input_device_index=device_index)
+  File "/home/me/Notebooks/.venv/lib/python3.14/site-packages/pyaudio/__init__.py", line 639, in open
+    stream = PyAudio.Stream(self, *args, **kwargs)
+  File "/home/me/Notebooks/.venv/lib/python3.14/site-packages/pyaudio/__init__.py", line 441, in __init__
+    self._stream = pa.open(**arguments)
+                   ~~~~~~~^^^^^^^^^^^^^
+OSError: [Errno -9998] Invalid number of channels
+2026-04-15 19:33:39,529 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 19:33:39,530 - __main__ - INFO - Main application script finished.
+2026-04-15 19:34:09,965 - __main__ - INFO - Main application script started.
+2026-04-15 19:34:10,619 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 19:34:11,101 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 19:34:11,132 - root - INFO - Using cached auto-import results
+2026-04-15 19:34:11,134 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 19:34:11,248 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 19:34:11,250 - root - INFO - Status: Ready - Auto-imported 1581 modules (36 failed)
+2026-04-15 19:34:19,148 - audio_manager - INFO - Attempting to start recording: device=2 (index=2), output=/home/me/Notebooks/recording.wav, channels=1
+2026-04-15 19:34:19,148 - audio_manager - ERROR - Failed to open stream with channels=1: [Errno -9997] Invalid sample rate
+2026-04-15 19:34:19,149 - audio_manager - ERROR - All attempts to start recording failed for device=2 (index=2)
+2026-04-15 19:34:19,149 - root - ERROR - Failed to start recording: [Errno -9997] Invalid sample rate
+2026-04-15 19:34:19,149 - gui - ERROR - Failed to start recording with device 'USB Composite Device: Audio (hw:2,0)': [Errno -9997] Invalid sample rate
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/Crew/gui.py", line 1744, in _start_recording_with_device
+    path, proc = start_recording(device=device_index)
+                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/Notebooks/CREW/Crew/audio_manager.py", line 91, in start_recording
+    raise last_error if last_error else RuntimeError("Could not open audio stream.")
+  File "/home/me/Notebooks/CREW/Crew/audio_manager.py", line 81, in start_recording
+    stream = pa.open(format=FORMAT, channels=channels, rate=RATE, input=True,
+                    frames_per_buffer=CHUNK, input_device_index=device_index)
+  File "/home/me/Notebooks/.venv/lib/python3.14/site-packages/pyaudio/__init__.py", line 639, in open
+    stream = PyAudio.Stream(self, *args, **kwargs)
+  File "/home/me/Notebooks/.venv/lib/python3.14/site-packages/pyaudio/__init__.py", line 441, in __init__
+    self._stream = pa.open(**arguments)
+                   ~~~~~~~^^^^^^^^^^^^^
+OSError: [Errno -9997] Invalid sample rate
+2026-04-15 19:37:38,424 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 19:37:38,425 - __main__ - INFO - Main application script finished.
+2026-04-15 19:38:45,978 - __main__ - INFO - Main application script started.
+2026-04-15 19:38:46,680 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 19:38:47,089 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 19:38:57,954 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 19:38:58,546 - root - INFO - Auto-imported 1581 modules successfully
+2026-04-15 19:38:58,546 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 19:38:58,546 - root - INFO - Auto-import summary: 1581 imported, 36 failed, 12514 skipped, 14131 total files processed
+2026-04-15 19:38:58,555 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 19:38:58,633 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 19:38:58,638 - root - INFO - Status: Ready - Auto-imported 1581 modules (36 failed)
+2026-04-15 19:39:05,875 - audio_manager - INFO - Attempting to start recording: device=2 (index=2), output=/home/me/Notebooks/recording.wav, channels=1, rate=48000
+2026-04-15 19:39:05,924 - audio_manager - INFO - Recording started successfully with channels=1, rate=48000
+2026-04-15 19:39:05,927 - root - INFO - Status: Recording from: USB Composite Device: Audio (hw:2,0)... (Stop to finish)
+2026-04-15 19:39:16,391 - audio_manager - INFO - Recording finished and saved: /home/me/Notebooks/recording.wav
+2026-04-15 19:39:16,392 - audio_manager - INFO - Recording stopped by user.
+2026-04-15 19:39:20,327 - root - INFO - Status: Recording saved: /home/me/Notebooks/recording.wav
+2026-04-15 19:39:23,679 - audio_manager - INFO - Playing audio: /home/me/Notebooks/recording.wav
+2026-04-15 19:39:23,745 - root - INFO - Status: Playing last recording...
+2026-04-15 19:39:56,986 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 19:39:56,987 - __main__ - INFO - Main application script finished.
+2026-04-15 19:45:35,136 - __main__ - INFO - Main application script started.
+2026-04-15 19:45:35,382 - root - ERROR - Failed to initialize GUI: 'CrewGUI' object has no attribute 'show_about'
+2026-04-15 19:46:21,739 - __main__ - INFO - Main application script started.
+2026-04-15 19:46:23,012 - root - ERROR - Failed to initialize GUI: 'CrewGUI' object has no attribute 'show_about'
+2026-04-15 19:47:08,418 - __main__ - INFO - Main application script started.
+2026-04-15 19:48:07,391 - __main__ - INFO - Main application script started.
+2026-04-15 19:48:08,155 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 19:48:08,540 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 19:48:49,685 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 19:48:52,912 - root - INFO - Auto-imported 1595 modules successfully
+2026-04-15 19:48:52,913 - root - INFO - Skipped 22 modules (expected for script files)
+2026-04-15 19:48:52,913 - root - INFO - Auto-import summary: 1595 imported, 22 failed, 12514 skipped, 14131 total files processed
+2026-04-15 19:48:52,924 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 19:48:53,041 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 19:48:53,053 - root - INFO - Status: Ready - Auto-imported 1595 modules (22 failed)
+2026-04-15 19:48:58,750 - audio_manager - INFO - Attempting to start recording: device=2 (index=2), output=/home/me/Notebooks/recording.wav, channels=1, rate=48000
+2026-04-15 19:48:58,753 - audio_manager - INFO - Recording started successfully with channels=1, rate=48000
+2026-04-15 19:48:58,758 - root - INFO - Status: Recording from: USB Composite Device: Audio (hw:2,0)... (Stop to finish)
+2026-04-15 19:49:08,133 - audio_manager - INFO - Recording finished and saved: /home/me/Notebooks/recording.wav
+2026-04-15 19:49:08,133 - audio_manager - INFO - Recording stopped by user.
+2026-04-15 19:49:10,374 - root - INFO - Status: Recording saved: /home/me/Notebooks/recording.wav
+2026-04-15 19:49:13,517 - audio_manager - INFO - Playing audio: /home/me/Notebooks/recording.wav
+2026-04-15 19:49:13,524 - root - INFO - Status: Playing last recording...
+2026-04-15 19:55:32,952 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 19:55:33,784 - __main__ - INFO - Main application script finished.
+2026-04-15 19:57:03,834 - __main__ - INFO - Main application script started.
+2026-04-15 19:57:07,304 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 19:57:07,871 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 19:57:38,963 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 19:57:40,088 - root - INFO - Auto-imported 1581 modules successfully
+2026-04-15 19:57:40,089 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 19:57:40,089 - root - INFO - Auto-import summary: 1581 imported, 36 failed, 12514 skipped, 14131 total files processed
+2026-04-15 19:57:40,105 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 19:57:40,217 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 19:57:40,224 - root - INFO - Status: Ready - Auto-imported 1581 modules (36 failed)
+2026-04-15 19:57:51,418 - audio_manager - INFO - Attempting to start recording: device=2 (index=2), output=/home/me/Notebooks/recording.wav, channels=1, rate=48000
+2026-04-15 19:57:51,480 - audio_manager - INFO - Recording started successfully with channels=1, rate=48000
+2026-04-15 19:57:51,500 - root - INFO - Status: Recording from: USB Composite Device: Audio (hw:2,0)... (Stop to finish)
+2026-04-15 19:58:00,009 - audio_manager - INFO - Recording finished and saved: /home/me/Notebooks/recording.wav
+2026-04-15 19:58:00,010 - audio_manager - INFO - Recording stopped by user.
+2026-04-15 19:58:03,689 - root - INFO - Status: Recording saved: /home/me/Notebooks/recording.wav
+2026-04-15 19:58:06,438 - audio_manager - INFO - Playing audio: /home/me/Notebooks/recording.wav
+2026-04-15 19:58:06,522 - root - INFO - Status: Playing last recording...
+2026-04-15 19:58:33,050 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 19:58:33,052 - __main__ - INFO - Main application script finished.
+2026-04-15 20:04:00,586 - __main__ - INFO - Main application script started.
+2026-04-15 20:04:02,040 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 20:04:02,577 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 20:04:15,436 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 20:04:16,018 - root - INFO - Auto-imported 1581 modules successfully
+2026-04-15 20:04:16,018 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 20:04:16,018 - root - INFO - Auto-import summary: 1581 imported, 36 failed, 12514 skipped, 14131 total files processed
+2026-04-15 20:04:16,048 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 20:04:16,123 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 20:04:16,125 - root - INFO - Status: Ready - Auto-imported 1581 modules (36 failed)
+2026-04-15 20:04:47,991 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-15 20:06:30,399 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 20:06:30,400 - __main__ - INFO - Main application script finished.
+2026-04-15 20:32:00,922 - __main__ - INFO - Main application script started.
+2026-04-15 20:32:07,367 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 20:32:08,274 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 20:32:32,838 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 20:32:33,607 - root - INFO - Auto-imported 1581 modules successfully
+2026-04-15 20:32:33,608 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 20:32:33,608 - root - INFO - Auto-import summary: 1581 imported, 36 failed, 12514 skipped, 14131 total files processed
+2026-04-15 20:32:33,646 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 20:32:33,732 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 20:32:33,754 - root - INFO - Status: Ready - Auto-imported 1581 modules (36 failed)
+2026-04-15 20:33:12,324 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 20:33:12,326 - __main__ - INFO - Main application script finished.
+2026-04-15 20:40:08,056 - __main__ - INFO - Main application script started.
+2026-04-15 20:40:09,259 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 20:40:09,691 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 20:40:32,433 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 20:40:34,826 - root - INFO - Auto-imported 1595 modules successfully
+2026-04-15 20:40:34,827 - root - INFO - Skipped 22 modules (expected for script files)
+2026-04-15 20:40:34,827 - root - INFO - Auto-import summary: 1595 imported, 22 failed, 12514 skipped, 14131 total files processed
+2026-04-15 20:40:34,839 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 20:40:34,908 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 20:40:34,920 - root - INFO - Status: Ready - Auto-imported 1595 modules (22 failed)
+2026-04-15 20:41:04,236 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 20:41:04,237 - __main__ - INFO - Main application script finished.
+2026-04-15 21:10:27,403 - __main__ - INFO - Main application script started.
+2026-04-15 21:10:34,645 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 21:10:35,837 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 21:11:27,267 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 21:11:28,598 - root - INFO - Auto-imported 1639 modules successfully
+2026-04-15 21:11:28,599 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 21:11:28,599 - root - INFO - Auto-import summary: 1639 imported, 36 failed, 12593 skipped, 14268 total files processed
+2026-04-15 21:11:28,861 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 21:11:28,977 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 21:11:29,000 - root - INFO - Status: Ready - Auto-imported 1639 modules (36 failed)
+2026-04-15 21:11:37,912 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 21:11:37,912 - __main__ - INFO - Main application script finished.
+2026-04-15 21:23:38,565 - __main__ - INFO - Main application script started.
+2026-04-15 21:23:42,468 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 21:23:42,859 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 21:24:06,283 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 21:24:07,583 - root - INFO - Auto-imported 1639 modules successfully
+2026-04-15 21:24:07,583 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 21:24:07,583 - root - INFO - Auto-import summary: 1639 imported, 36 failed, 12593 skipped, 14268 total files processed
+2026-04-15 21:24:07,607 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 21:24:07,721 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 21:24:07,728 - root - INFO - Status: Ready - Auto-imported 1639 modules (36 failed)
+2026-04-15 21:24:53,144 - audio_manager - INFO - Attempting to start recording: device=2 (index=2), output=/home/me/Notebooks/recording.wav, channels=1, rate=48000
+2026-04-15 21:24:53,178 - audio_manager - INFO - Recording started successfully with channels=1, rate=48000
+2026-04-15 21:24:53,181 - root - INFO - Status: Recording from: USB Composite Device: Audio (hw:2,0)... (Stop to finish)
+2026-04-15 21:24:58,238 - audio_manager - INFO - Recording finished and saved: /home/me/Notebooks/recording.wav
+2026-04-15 21:24:58,238 - audio_manager - INFO - Recording stopped by user.
+2026-04-15 21:25:00,231 - root - INFO - Status: Recording saved: /home/me/Notebooks/recording.wav
+2026-04-15 21:25:10,166 - audio_manager - INFO - Playing audio: /home/me/Notebooks/recording.wav
+2026-04-15 21:25:10,217 - root - INFO - Status: Playing last recording...
+2026-04-15 21:26:01,290 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-15 21:29:25,585 - root - INFO - Starting TTS playback for all details.
+2026-04-15 21:29:25,850 - root - INFO - TTS playback completed for all details.
+2026-04-15 21:30:01,800 - root - INFO - Status: Refreshing views...
+2026-04-15 21:30:01,933 - root - INFO - Status: Views refreshed
+2026-04-15 21:30:31,497 - root - INFO - Status: Filtered data. Displaying 63 records.
+2026-04-15 21:30:43,347 - root - INFO - Status: Filtered data. Displaying 63 records.
+2026-04-15 21:30:52,402 - root - INFO - Status: Filtered data. Displaying 63 records.
+2026-04-15 21:44:26,945 - root - INFO - Starting TTS playback for all details.
+2026-04-15 21:44:44,044 - root - INFO - TTS playback completed for all details.
+2026-04-15 21:48:52,958 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 21:48:52,958 - __main__ - INFO - Main application script finished.
+2026-04-15 21:52:39,001 - __main__ - INFO - Main application script started.
+2026-04-15 21:52:39,230 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 21:52:39,642 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 21:52:44,265 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 21:52:44,502 - root - INFO - Auto-imported 1639 modules successfully
+2026-04-15 21:52:44,502 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 21:52:44,502 - root - INFO - Auto-import summary: 1639 imported, 36 failed, 12593 skipped, 14268 total files processed
+2026-04-15 21:52:44,512 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 21:52:44,595 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 21:52:44,598 - root - INFO - Status: Ready - Auto-imported 1639 modules (36 failed)
+2026-04-15 21:54:00,693 - root - INFO - Status: Filters cleared
+2026-04-15 21:56:04,710 - root - INFO - Status: Sorted by R-S (ascending)
+2026-04-15 21:56:07,576 - root - INFO - Status: Sorted by R-S (descending)
+2026-04-15 21:56:09,120 - root - INFO - Status: Sorted by R-S (ascending)
+2026-04-15 21:56:17,128 - root - INFO - Status: Sorted by R-S (descending)
+2026-04-15 21:56:44,192 - root - INFO - Status: Launched 0101 server.py
+2026-04-15 22:11:23,738 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-15 22:11:27,384 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-15 22:11:29,542 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-15 22:11:31,015 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-15 22:11:36,018 - root - INFO - Status: Running script: any_month.py...
+2026-04-15 22:11:37,547 - root - INFO - Executing script: python '/home/me/Notebooks/CREW/Crew/scripts/any_month.py'
+2026-04-15 22:12:05,031 - root - INFO - Status: Script 'any_month.py' finished.
+2026-04-15 22:13:38,018 - root - INFO - Status: Refreshing views...
+2026-04-15 22:13:38,200 - root - INFO - Status: Views refreshed
+2026-04-15 22:19:13,824 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 22:19:14,721 - __main__ - INFO - Main application script finished.
+2026-04-15 22:36:13,107 - __main__ - INFO - Main application script started.
+2026-04-15 22:36:23,996 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 22:36:26,396 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 22:42:00,143 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 22:42:01,517 - root - INFO - Auto-imported 1639 modules successfully
+2026-04-15 22:42:01,517 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 22:42:01,518 - root - INFO - Auto-import summary: 1639 imported, 36 failed, 12593 skipped, 14268 total files processed
+2026-04-15 22:42:01,560 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 22:42:01,703 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 22:42:01,708 - root - INFO - Status: Ready - Auto-imported 1639 modules (36 failed)
+2026-04-15 22:43:18,986 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-15 22:44:36,582 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 22:44:36,636 - __main__ - INFO - Main application script finished.
+2026-04-15 23:04:24,362 - __main__ - INFO - Main application script started.
+2026-04-15 23:04:26,806 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 23:04:27,215 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 23:04:52,080 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 23:04:53,116 - root - INFO - Auto-imported 1639 modules successfully
+2026-04-15 23:04:53,116 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-15 23:04:53,116 - root - INFO - Auto-import summary: 1639 imported, 36 failed, 12594 skipped, 14269 total files processed
+2026-04-15 23:04:53,152 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 23:04:53,271 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 23:04:53,297 - root - INFO - Status: Ready - Auto-imported 1639 modules (36 failed)
+2026-04-15 23:06:13,080 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 23:06:13,140 - __main__ - INFO - Main application script finished.
+2026-04-15 23:13:59,846 - __main__ - INFO - Main application script started.
+2026-04-15 23:14:02,162 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 23:14:02,878 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 23:14:51,408 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 23:14:52,799 - root - INFO - Auto-imported 1639 modules successfully
+2026-04-15 23:14:52,800 - root - INFO - Skipped 37 modules (expected for script files)
+2026-04-15 23:14:52,800 - root - INFO - Auto-import summary: 1639 imported, 37 failed, 12594 skipped, 14270 total files processed
+2026-04-15 23:14:53,681 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 23:14:54,297 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 23:14:54,404 - root - INFO - Status: Ready - Auto-imported 1639 modules (37 failed)
+2026-04-15 23:15:11,057 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 23:15:11,118 - __main__ - INFO - Main application script finished.
+2026-04-15 23:24:48,707 - __main__ - INFO - Main application script started.
+2026-04-15 23:24:55,703 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 23:24:56,565 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 23:25:20,043 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 23:25:22,631 - root - INFO - Auto-imported 1639 modules successfully
+2026-04-15 23:25:22,632 - root - INFO - Skipped 37 modules (expected for script files)
+2026-04-15 23:25:22,632 - root - INFO - Auto-import summary: 1639 imported, 37 failed, 12594 skipped, 14270 total files processed
+2026-04-15 23:25:22,667 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 23:25:22,824 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 23:25:22,852 - root - INFO - Status: Ready - Auto-imported 1639 modules (37 failed)
+2026-04-15 23:27:47,616 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-15 23:28:58,882 - CrewMessageRouter - INFO - Message from Captain to ['Captain', 'Computer', 'Pilot', 'Navigator', 'Doctor', 'Trader', 'Gunner', 'Chief', 'Tech']: /list 
+2026-04-15 23:30:26,958 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 23:30:26,960 - __main__ - INFO - Main application script finished.
+2026-04-15 23:34:16,826 - __main__ - INFO - Main application script started.
+2026-04-15 23:34:19,556 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 23:34:19,911 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 23:34:36,013 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 23:34:36,528 - root - INFO - Auto-imported 1639 modules successfully
+2026-04-15 23:34:36,528 - root - INFO - Skipped 37 modules (expected for script files)
+2026-04-15 23:34:36,528 - root - INFO - Auto-import summary: 1639 imported, 37 failed, 12594 skipped, 14270 total files processed
+2026-04-15 23:34:36,542 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 23:34:36,688 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 23:34:36,694 - root - INFO - Status: Ready - Auto-imported 1639 modules (37 failed)
+2026-04-15 23:34:36,741 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 23:34:36,742 - __main__ - INFO - Main application script finished.
+2026-04-15 23:39:46,392 - __main__ - INFO - Main application script started.
+2026-04-15 23:39:46,707 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 23:39:47,121 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 23:39:52,083 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 23:39:52,368 - root - INFO - Auto-imported 1639 modules successfully
+2026-04-15 23:39:52,368 - root - INFO - Skipped 37 modules (expected for script files)
+2026-04-15 23:39:52,368 - root - INFO - Auto-import summary: 1639 imported, 37 failed, 12594 skipped, 14270 total files processed
+2026-04-15 23:39:52,376 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 23:39:52,455 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 23:39:52,456 - root - INFO - Status: Ready - Auto-imported 1639 modules (37 failed)
+2026-04-15 23:40:37,651 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-15 23:44:36,701 - __main__ - INFO - Main application script started.
+2026-04-15 23:44:38,662 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 23:44:39,284 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 23:44:39,286 - root - INFO - Using cached auto-import results
+2026-04-15 23:44:39,288 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 23:44:39,415 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 23:44:39,417 - root - INFO - Status: Ready - Auto-imported 1639 modules (37 failed)
+2026-04-15 23:45:17,837 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 23:45:17,838 - __main__ - INFO - Main application script finished.
+2026-04-15 23:46:16,712 - __main__ - INFO - Main application script started.
+2026-04-15 23:46:17,398 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 23:46:17,788 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 23:46:43,740 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-15 23:46:45,796 - root - INFO - Auto-imported 1653 modules successfully
+2026-04-15 23:46:45,797 - root - INFO - Skipped 23 modules (expected for script files)
+2026-04-15 23:46:45,797 - root - INFO - Auto-import summary: 1653 imported, 23 failed, 12594 skipped, 14270 total files processed
+2026-04-15 23:46:45,802 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 23:46:45,906 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 23:46:45,920 - root - INFO - Status: Ready - Auto-imported 1653 modules (23 failed)
+2026-04-15 23:47:14,936 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 23:47:14,937 - __main__ - INFO - Main application script finished.
+2026-04-15 23:48:57,967 - __main__ - INFO - Main application script started.
+2026-04-15 23:48:58,643 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 23:48:59,157 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 23:48:59,160 - root - INFO - Using cached auto-import results
+2026-04-15 23:48:59,186 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 23:48:59,289 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 23:48:59,297 - root - INFO - Status: Ready - Auto-imported 1653 modules (23 failed)
+2026-04-15 23:49:52,496 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 23:49:52,496 - __main__ - INFO - Main application script finished.
+2026-04-15 23:51:01,094 - __main__ - INFO - Main application script started.
+2026-04-15 23:51:01,267 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-15 23:51:01,646 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-15 23:51:01,646 - root - INFO - Using cached auto-import results
+2026-04-15 23:51:01,656 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-15 23:51:01,760 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-15 23:51:01,791 - root - INFO - Status: Ready - Auto-imported 1653 modules (23 failed)
+2026-04-15 23:51:35,303 - audio_manager - INFO - Attempting to start recording: device=1 (index=1), output=/home/me/Notebooks/recording.wav, channels=1, rate=48000
+2026-04-15 23:51:35,346 - audio_manager - INFO - Recording started successfully with channels=1, rate=48000
+2026-04-15 23:51:35,350 - root - INFO - Status: Recording from: USB Composite Device: Audio (hw:2,0)... (Stop to finish)
+2026-04-15 23:51:42,325 - audio_manager - INFO - Recording finished and saved: /home/me/Notebooks/recording.wav
+2026-04-15 23:51:42,326 - audio_manager - INFO - Recording stopped by user.
+2026-04-15 23:51:46,502 - root - INFO - Status: Recording saved: /home/me/Notebooks/recording.wav
+2026-04-15 23:51:50,580 - audio_manager - INFO - Playing audio: /home/me/Notebooks/recording.wav
+2026-04-15 23:51:50,619 - root - INFO - Status: Playing last recording...
+2026-04-15 23:52:39,066 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 23:52:39,067 - __main__ - INFO - Main application script finished.
+2026-04-15 23:53:47,789 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-15 23:53:47,791 - __main__ - INFO - Main application script finished.
+2026-04-16 00:02:48,323 - __main__ - INFO - Main application script started.
+2026-04-16 00:03:07,685 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 00:03:08,610 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 00:05:24,179 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-16 00:05:30,399 - root - INFO - Auto-imported 1653 modules successfully
+2026-04-16 00:05:30,420 - root - INFO - Skipped 23 modules (expected for script files)
+2026-04-16 00:05:30,420 - root - INFO - Auto-import summary: 1653 imported, 23 failed, 12594 skipped, 14270 total files processed
+2026-04-16 00:05:30,607 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-16 00:05:30,677 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-16 00:05:30,679 - root - INFO - Status: Ready - Auto-imported 1653 modules (23 failed)
+2026-04-16 00:05:30,985 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-16 00:05:30,987 - __main__ - INFO - Main application script finished.
+2026-04-16 00:05:37,861 - __main__ - INFO - Main application script started.
+2026-04-16 00:05:41,577 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 00:05:41,968 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 00:05:41,970 - root - INFO - Using cached auto-import results
+2026-04-16 00:05:41,972 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-16 00:05:42,022 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-16 00:05:42,038 - root - INFO - Status: Ready - Auto-imported 1653 modules (23 failed)
+2026-04-16 00:09:31,690 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-16 00:09:31,690 - __main__ - INFO - Main application script finished.
+2026-04-16 00:14:23,247 - __main__ - INFO - Main application script started.
+2026-04-16 00:14:23,585 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 00:14:24,229 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 00:14:34,141 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-16 00:14:34,427 - root - INFO - Auto-imported 1639 modules successfully
+2026-04-16 00:14:34,427 - root - INFO - Skipped 37 modules (expected for script files)
+2026-04-16 00:14:34,427 - root - INFO - Auto-import summary: 1639 imported, 37 failed, 12594 skipped, 14270 total files processed
+2026-04-16 00:14:34,438 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-16 00:14:34,512 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-16 00:14:34,522 - root - INFO - Status: Ready - Auto-imported 1639 modules (37 failed)
+2026-04-16 00:19:03,366 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-16 00:19:03,368 - __main__ - INFO - Main application script finished.
+>>>>>>> 0cc4b126 (Add new crawler job docs, Flask APIs, chatbot CLI/web, and sample audio)
