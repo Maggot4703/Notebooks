@@ -1,3 +1,0 @@
-- Never assign unqualified agents to critical roles.
-- Never bypass validation steps.
-- Never share credentials in plain text.

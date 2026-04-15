@@ -1,9 +1,0 @@
-Captain
-Chief
-Doctor
-Gunner
-Navigator
-Owner
-Pilot
-Tech
-Trader

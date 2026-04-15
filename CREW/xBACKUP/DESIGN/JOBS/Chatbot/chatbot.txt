@@ -1,1 +1,0 @@
-this bot is the main repository for all chatbot traffic

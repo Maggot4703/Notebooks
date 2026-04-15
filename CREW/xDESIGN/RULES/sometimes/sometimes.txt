@@ -1,2 +1,0 @@
-- Sometimes escalate issues to a supervisor if unresolved after 3 attempts.
-- Sometimes automate repetitive tasks if time allows.

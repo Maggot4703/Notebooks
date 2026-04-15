@@ -23,7 +23,7 @@ KEY_RE = re.compile(r'^[a-z0-9][a-z0-9-]{0,63}$')
 # Watchdog: shut down if no browser ping received within this many seconds.
 # Primary shutdown is via /api/shutdown (sent by persist.js on tab close).
 # This timeout is a safety net for pages without persist.js.
-SHUTDOWN_TIMEOUT = 60
+SHUTDOWN_TIMEOUT = 600
 
 _ping_lock = threading.Lock()
 _last_ping = time.time()
