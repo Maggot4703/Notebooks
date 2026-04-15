@@ -1882,3 +1882,15 @@
 2026-04-13 23:55:13,269 - root - INFO - Status: Ready - Auto-imported 1529 modules (32 failed)
 2026-04-13 23:56:33,973 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
 2026-04-13 23:56:33,973 - __main__ - INFO - Main application script finished.
+2026-04-16 00:43:50,638 - __main__ - INFO - Main application script started.
+2026-04-16 00:44:00,072 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 00:44:00,654 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 00:46:33,576 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-16 00:46:39,584 - root - INFO - Auto-imported 1638 modules successfully
+2026-04-16 00:46:39,584 - root - INFO - Skipped 34 modules (expected for script files)
+2026-04-16 00:46:39,585 - root - INFO - Auto-import summary: 1638 imported, 34 failed, 12586 skipped, 14258 total files processed
+2026-04-16 00:46:39,666 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-16 00:46:39,843 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-16 00:46:39,846 - root - INFO - Status: Ready - Auto-imported 1638 modules (34 failed)
+2026-04-16 00:47:17,094 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-16 00:47:17,099 - __main__ - INFO - Main application script finished.
