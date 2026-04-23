@@ -11,7 +11,6 @@ def hex_to_rgb(hex_color):
     """Convert hex color string to RGB tuple."""
     hex_color = hex_color.lstrip('#')
     return tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
-
 def rgb_to_hex(rgb):
     """Convert RGB tuple to hex color string."""
     return '#{:02X}{:02X}{:02X}'.format(*rgb)
@@ -27,8 +26,29 @@ def calculate_hexagon_points(center, radius):
     ]
 
 def main():
-    """Main function placeholder for test."""
+    """Main function with SpeechRecognition integration example."""
     print("Crew main function executed.")
+    try:
+        import speech_recognition as sr
+    except ImportError:
+        print("SpeechRecognition module is not available.")
+        return
+    print("\n[SpeechRecognition Integration Demo]")
+    recognizer = sr.Recognizer()
+    try:
+        with sr.Microphone() as source:
+            print("Say something (listening for 3 seconds)...")
+            audio = recognizer.listen(source, timeout=3, phrase_time_limit=3)
+        print("Recognizing...")
+        try:
+            text = recognizer.recognize_google(audio)
+            print(f"You said: {text}")
+        except sr.UnknownValueError:
+            print("Could not understand audio.")
+        except sr.RequestError as e:
+            print(f"Could not request results from Google Speech Recognition service; {e}")
+    except Exception as e:
+        print(f"Microphone or recognition error: {e}")
 
 def spacer():
     """Print a spacer line (for test)."""
@@ -128,7 +148,7 @@ logger = logging.getLogger(__name__)
 REQUIRED_PACKAGES = [
     ("PIL", "pillow"),
     ("pandas", "pandas"),
-    ("SpeechRecognition", "SpeechRecognition"),
+    ("speech_recognition", "SpeechRecognition"),
     ("tkinter", None),  # tkinter is standard in most Python installs
 ]
 
@@ -141,10 +161,22 @@ def _auto_install_deps():
                 print("[ERROR] tkinter is not installed. Please install the python3-tk package via your system package manager.")
                 sys.exit(1)
             continue
+        if mod == "speech_recognition":
+            try:
+                importlib.import_module("speech_recognition")
+            except ImportError as e:
+                print(f"[ERROR] Could not import speech_recognition.\nError: {e}")
+                if pip_name:
+                    print(f"[INFO] Attempting to install missing dependency: {pip_name}")
+                    subprocess.check_call([sys.executable, "-m", "pip", "install", pip_name])
+                else:
+                    print(f"[ERROR] Please install '{mod}' manually or via your system package manager.")
+                    sys.exit(1)
+            continue
         try:
             importlib.import_module(mod)
-        except ImportError:
-            print(f"[ERROR] Required module '{mod}' is missing and could not be imported.")
+        except ImportError as e:
+            print(f"[ERROR] Required module '{mod}' is missing and could not be imported.\nImportError: {e}")
             if pip_name:
                 print(f"[INFO] Attempting to install missing dependency: {pip_name}")
                 subprocess.check_call([sys.executable, "-m", "pip", "install", pip_name])
@@ -198,37 +230,6 @@ Notes:
 
 
 
-# --- Auto-install required dependencies if missing ---
-
-# Add SpeechRecognition to required packages
-REQUIRED_PACKAGES = [
-    ("PIL", "pillow"),
-    ("pandas", "pandas"),
-    ("SpeechRecognition", "SpeechRecognition"),
-    ("tkinter", None),  # tkinter is standard in most Python installs
-]
-
-def _auto_install_deps():
-    for mod, pip_name in REQUIRED_PACKAGES:
-        if mod == "tkinter":
-            try:
-                importlib.import_module("tkinter")
-            except ImportError:
-                print("[ERROR] tkinter is not installed. Please install the python3-tk package via your system package manager.")
-                sys.exit(1)
-            continue
-        try:
-            importlib.import_module(mod)
-        except ImportError:
-            print(f"[ERROR] Required module '{mod}' is missing and could not be imported.")
-            if pip_name:
-                print(f"[INFO] Attempting to install missing dependency: {pip_name}")
-                subprocess.check_call([sys.executable, "-m", "pip", "install", pip_name])
-            else:
-                print(f"[ERROR] Please install '{mod}' manually or via your system package manager.")
-                sys.exit(1)
-
-_auto_install_deps()
 
 
 import pandas as pd

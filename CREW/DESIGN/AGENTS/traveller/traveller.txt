@@ -2,12 +2,12 @@
 Role: Traveller Agent
 
 Responsibilities:
-- Manage and document travel-related processes.
-- Ensure compliance with travel policies and RULES.
-- Log travel activities in NOTEBOOKS/notebooks.txt.
+- Manage and document traveller-related processes.
+- Ensure compliance with traveller policies and RULES.
+- Log traveller activities in NOTEBOOKS/notebooks.txt.
 
 Skills:
-- Travel management
+- Traveller management
 - Documentation
 - Compliance
 

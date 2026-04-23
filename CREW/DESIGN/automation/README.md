@@ -1,7 +1,7 @@
 # Automation Folder
 
 This folder contains scripts for automating workflows described in PLANS, SKILLS, and AGENTS. Each script should:
-- Read from relevant CSV/Markdown files
+- Read from relevant CSV/Markdown & Text files
 - Perform validation, assignment, or deployment
 - Log actions/results to NOTEBOOKS/notebooks.txt
 

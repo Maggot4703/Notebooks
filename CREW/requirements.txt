@@ -2,3 +2,5 @@ pandas>=1.3.0
 Pillow>=8.0.0
 ijson>=3.0.0
 SpeechRecognition>=3.8.1
+
+# Project requires Python 3.12 (not 3.14+) for gemini-cli compatibility

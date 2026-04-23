@@ -5,6 +5,24 @@
 		},
 		{
 			"path": "../0101/0101"
+		},
+		{
+			"path": "../CARDCUTTER/CardCutter"
+		},
+		{
+			"path": "../AI"
+		},
+		{
+			"path": "../CALIBRE"
+		},
+		{
+			"path": "../Manuals"
+		},
+		{
+			"path": "../skills"
+		},
+		{
+			"path": "../TRAVELLERMAP"
 		}
 	],
 	"settings": {
@@ -17,6 +35,7 @@
 				"envManager": "ms-python.python:system",
 				"packageManager": "ms-python.python:pip"
 			}
-		]
+		],
+		"makefile.configureOnOpen": true
 	}
 }

@@ -30,12 +30,33 @@ You can also pass CLI arguments:
 ./crew_run.sh grid-image --image-path <path> --output-path <path>
 ```
 
+
+## Python Version Compatibility
+
+**Important:** This project requires **Python 3.12** for compatibility with `gemini-cli` and Google AI libraries. Python 3.14 is not supported due to upstream library issues.
+
 ## Recommended setup
 
 From `/home/me/Notebooks/CREW`:
 
 ```bash
 uv sync
+```
+
+### Check Python Version
+
+Before installing dependencies, run:
+
+```bash
+python3 --version
+```
+
+It should output `Python 3.12.x`. If not, please install Python 3.12 and create a new virtual environment.
+
+You can also run the provided script:
+
+```bash
+python3 check_python_version.py
 ```
 
 If you want the optional CrewAI toolkit package as well:
