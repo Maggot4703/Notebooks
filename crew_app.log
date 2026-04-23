@@ -377,3 +377,120 @@
 2026-04-23 19:28:19,682 - __main__ - INFO - GUI startup time: 7.632s
 2026-04-23 19:28:19,683 - utils - INFO - ----------------------------------------
 2026-04-23 19:28:19,684 - __main__ - INFO - Main application script finished. Total time: 10.508s
+2026-04-23 19:34:45,907 - __main__ - INFO - Main application script started.
+2026-04-23 19:34:45,907 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 19:34:46,416 - __main__ - INFO - CLI import time: 0.508s
+2026-04-23 19:34:46,530 - __main__ - INFO - GUI import time: 0.090s
+2026-04-23 19:34:46,806 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 19:34:47,300 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 19:34:47,415 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 19:34:47,426 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 19:34:47,426 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 19:34:50,459 - __main__ - INFO - GUI startup time: 3.929s
+2026-04-23 19:34:50,460 - utils - INFO - ----------------------------------------
+2026-04-23 19:34:50,460 - __main__ - INFO - Main application script finished. Total time: 4.552s
+2026-04-23 19:36:06,374 - __main__ - INFO - Main application script started.
+2026-04-23 19:36:07,098 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 19:37:43,258 - __main__ - INFO - Main application script started.
+2026-04-23 19:37:43,259 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 19:58:15,098 - __main__ - INFO - Main application script started.
+2026-04-23 19:58:15,126 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 19:58:20,545 - __main__ - INFO - CLI import time: 5.419s
+2026-04-23 19:58:20,664 - __main__ - INFO - GUI import time: 0.116s
+2026-04-23 19:58:21,100 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 19:58:21,699 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 19:58:21,831 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 19:58:21,848 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 19:58:21,848 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 19:58:24,497 - __main__ - INFO - GUI startup time: 3.833s
+2026-04-23 19:58:24,498 - utils - INFO - ----------------------------------------
+2026-04-23 19:58:24,499 - __main__ - INFO - Main application script finished. Total time: 9.399s
+2026-04-23 20:00:26,958 - __main__ - INFO - Main application script started.
+2026-04-23 20:00:26,958 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:00:26,987 - __main__ - INFO - CLI import time: 0.028s
+2026-04-23 20:00:27,214 - __main__ - INFO - GUI import time: 0.219s
+2026-04-23 20:00:27,425 - root - ERROR - Failed to initialize GUI: name 'TTS_AVAILABLE' is not defined
+2026-04-23 20:00:48,113 - __main__ - INFO - Main application script started.
+2026-04-23 20:00:48,113 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:00:48,621 - __main__ - INFO - CLI import time: 0.508s
+2026-04-23 20:00:48,839 - __main__ - INFO - GUI import time: 0.187s
+2026-04-23 20:00:49,249 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:00:49,847 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:00:50,026 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:00:50,037 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:00:50,038 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:00:52,992 - __main__ - INFO - GUI startup time: 4.152s
+2026-04-23 20:00:52,992 - utils - INFO - ----------------------------------------
+2026-04-23 20:00:52,993 - __main__ - INFO - Main application script finished. Total time: 4.879s
+2026-04-23 20:03:31,820 - __main__ - INFO - Main application script started.
+2026-04-23 20:03:31,923 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:03:42,655 - __main__ - INFO - CLI import time: 10.731s
+2026-04-23 20:03:42,765 - __main__ - INFO - GUI import time: 0.095s
+2026-04-23 20:03:44,957 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:03:45,527 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:03:45,615 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:03:45,619 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:03:45,619 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:03:56,166 - __main__ - INFO - GUI startup time: 13.400s
+2026-04-23 20:03:56,167 - utils - INFO - ----------------------------------------
+2026-04-23 20:03:56,168 - __main__ - INFO - Main application script finished. Total time: 24.346s
+2026-04-23 20:17:43,716 - __main__ - INFO - Main application script started.
+2026-04-23 20:17:43,716 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:17:44,195 - __main__ - INFO - CLI import time: 0.479s
+2026-04-23 20:17:44,316 - __main__ - INFO - GUI import time: 0.096s
+2026-04-23 20:17:44,662 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:17:45,158 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:17:45,284 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:17:45,308 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:17:45,309 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:17:47,869 - __main__ - INFO - GUI startup time: 3.553s
+2026-04-23 20:17:47,870 - utils - INFO - ----------------------------------------
+2026-04-23 20:17:47,871 - __main__ - INFO - Main application script finished. Total time: 4.154s
+2026-04-23 20:17:56,080 - __main__ - INFO - Main application script started.
+2026-04-23 20:17:56,080 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:17:56,634 - __main__ - INFO - CLI import time: 0.554s
+2026-04-23 20:17:56,813 - __main__ - INFO - GUI import time: 0.155s
+2026-04-23 20:17:57,227 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:17:57,746 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:17:57,880 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:17:57,902 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:17:57,905 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:19:08,655 - root - INFO - Status: Opening text file: AAA-counters.txt...
+2026-04-23 20:19:08,743 - root - INFO - Status: Loaded: AAA-counters.txt
+2026-04-23 20:19:36,926 - root - INFO - Status: Opening text file: batch_ocr_counters.md...
+2026-04-23 20:19:37,020 - root - INFO - Status: Loaded: batch_ocr_counters.md
+2026-04-23 20:21:53,897 - root - INFO - Status: Opening text file: plan-page37CounterOcr.prompt.md...
+2026-04-23 20:21:53,996 - root - INFO - Status: Loaded: plan-page37CounterOcr.prompt.md
+2026-04-23 20:22:51,621 - root - INFO - Status: Opening text file: crew_chatbot.py...
+2026-04-23 20:22:51,714 - root - INFO - Status: Loaded: crew_chatbot.py
+2026-04-23 20:23:59,848 - root - INFO - Status: Opening text file: orchestrate_batch_ocr.py...
+2026-04-23 20:23:59,915 - root - INFO - Status: Loaded: orchestrate_batch_ocr.py
+2026-04-23 20:24:58,284 - root - INFO - Status: Opening text file: skills_reference.txt...
+2026-04-23 20:24:58,369 - root - INFO - Status: Loaded: skills_reference.txt
+2026-04-23 20:25:56,836 - __main__ - INFO - GUI startup time: 480.021s
+2026-04-23 20:25:56,837 - utils - INFO - ----------------------------------------
+2026-04-23 20:25:56,837 - __main__ - INFO - Main application script finished. Total time: 480.756s
+2026-04-23 20:26:00,380 - __main__ - INFO - Main application script started.
+2026-04-23 20:26:00,381 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:26:00,996 - __main__ - INFO - CLI import time: 0.615s
+2026-04-23 20:26:01,114 - __main__ - INFO - GUI import time: 0.094s
+2026-04-23 20:26:01,418 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:26:01,894 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:26:02,033 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:26:02,035 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:26:02,038 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:26:05,434 - __main__ - INFO - GUI startup time: 4.319s
+2026-04-23 20:26:05,435 - utils - INFO - ----------------------------------------
+2026-04-23 20:26:05,435 - __main__ - INFO - Main application script finished. Total time: 5.054s
+2026-04-23 20:26:14,639 - __main__ - INFO - Main application script started.
+2026-04-23 20:26:14,641 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:26:15,351 - __main__ - INFO - CLI import time: 0.709s
+2026-04-23 20:26:15,505 - __main__ - INFO - GUI import time: 0.108s
+2026-04-23 20:26:15,798 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:26:16,389 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:26:16,595 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:26:16,625 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:26:16,625 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:26:21,094 - __main__ - INFO - GUI startup time: 5.588s
+2026-04-23 20:26:21,094 - utils - INFO - ----------------------------------------
+2026-04-23 20:26:21,096 - __main__ - INFO - Main application script finished. Total time: 6.455s
