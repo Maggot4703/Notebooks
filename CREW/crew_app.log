@@ -69,3 +69,317 @@
 2026-04-20 18:09:54,564 - utils - INFO - Logged progress: Started Crew main application script.
 2026-04-20 20:19:37,506 - __main__ - INFO - Main application script started.
 2026-04-20 20:19:38,098 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 13:19:15,348 - __main__ - INFO - Main application script started.
+2026-04-24 13:19:15,655 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 13:20:29,543 - __main__ - INFO - CLI import time: 73.888s
+2026-04-24 13:20:34,254 - __main__ - INFO - GUI import time: 4.466s
+2026-04-24 13:20:45,721 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-24 13:20:45,923 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-24 13:20:45,937 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-24 13:20:46,157 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-24 13:20:57,992 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-24 13:22:14,197 - __main__ - INFO - GUI startup time: 99.761s
+2026-04-24 13:22:14,569 - utils - INFO - ----------------------------------------
+2026-04-24 13:22:14,569 - __main__ - INFO - Main application script finished. Total time: 178.667s
+2026-04-24 13:37:17,748 - __main__ - INFO - Main application script started.
+2026-04-24 13:37:17,976 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 13:37:30,980 - __main__ - INFO - CLI import time: 13.004s
+2026-04-24 13:37:33,368 - __main__ - INFO - GUI import time: 2.342s
+2026-04-24 13:37:41,608 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-24 13:37:41,979 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-24 13:37:41,987 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-24 13:37:42,443 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-24 13:37:55,690 - __main__ - INFO - GUI startup time: 22.322s
+2026-04-24 13:37:55,691 - utils - INFO - ----------------------------------------
+2026-04-24 13:37:55,691 - __main__ - INFO - Main application script finished. Total time: 37.958s
+2026-04-24 14:59:27,391 - __main__ - INFO - Main application script started.
+2026-04-24 14:59:32,180 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 18:19:41,932 - __main__ - INFO - Main application script started.
+2026-04-24 18:19:42,124 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 18:21:41,019 - __main__ - INFO - CLI import time: 0.358s
+2026-04-24 18:21:58,298 - __main__ - INFO - GUI import time: 16.426s
+2026-04-24 18:23:06,533 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-24 18:23:06,937 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-24 18:23:06,957 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-24 18:23:06,957 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-24 18:54:37,283 - __main__ - INFO - Main application script started.
+2026-04-24 18:54:37,317 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 18:54:42,650 - __main__ - INFO - CLI import time: 0.243s
+2026-04-24 18:54:45,834 - __main__ - INFO - GUI import time: 3.178s
+2026-04-24 18:54:50,249 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-24 18:54:50,587 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-24 18:54:50,598 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-24 18:54:50,720 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-24 18:57:16,279 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-24 18:58:43,935 - __main__ - INFO - GUI startup time: 237.233s
+2026-04-24 18:58:44,371 - utils - INFO - ----------------------------------------
+2026-04-24 18:58:44,371 - __main__ - INFO - Main application script finished. Total time: 245.784s
+2026-04-24 20:37:09,036 - __main__ - INFO - Main application script started.
+2026-04-24 20:37:20,493 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 20:45:08,042 - __main__ - INFO - CLI import time: 1.181s
+2026-04-24 20:45:41,532 - __main__ - INFO - GUI import time: 33.216s
+2026-04-24 21:55:47,643 - __main__ - INFO - Main application script started.
+2026-04-24 21:55:47,875 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 21:57:17,947 - __main__ - INFO - CLI import time: 0.325s
+2026-04-24 21:57:24,259 - __main__ - INFO - GUI import time: 6.309s
+2026-04-24 21:57:35,297 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-24 21:57:35,483 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-24 21:57:35,501 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-24 21:57:35,502 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-24 21:59:39,816 - __main__ - INFO - GUI startup time: 135.557s
+2026-04-24 21:59:39,971 - utils - INFO - ----------------------------------------
+2026-04-24 21:59:39,972 - __main__ - INFO - Main application script finished. Total time: 232.174s
+2026-04-24 22:00:01,117 - __main__ - INFO - Main application script started.
+2026-04-24 22:00:01,151 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 22:00:16,205 - __main__ - INFO - CLI import time: 0.122s
+2026-04-24 22:00:19,452 - __main__ - INFO - GUI import time: 3.245s
+2026-04-24 22:00:27,165 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-24 22:00:27,269 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-24 22:00:27,273 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-24 22:00:27,274 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-24 22:43:24,098 - __main__ - INFO - GUI startup time: 2584.645s
+2026-04-24 22:43:24,098 - utils - INFO - ----------------------------------------
+2026-04-24 22:43:24,098 - __main__ - INFO - Main application script finished. Total time: 2602.981s
+2026-04-24 22:43:25,597 - __main__ - INFO - Main application script started.
+2026-04-24 22:43:25,601 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 22:43:28,860 - __main__ - INFO - CLI import time: 0.055s
+2026-04-24 22:43:29,372 - __main__ - INFO - GUI import time: 0.507s
+2026-04-24 22:43:30,885 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-24 22:43:30,966 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-24 22:43:30,979 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-24 22:43:30,980 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-24 22:46:18,291 - __main__ - INFO - GUI startup time: 168.797s
+2026-04-24 22:46:18,420 - utils - INFO - ----------------------------------------
+2026-04-24 22:46:18,420 - __main__ - INFO - Main application script finished. Total time: 172.574s
+2026-04-24 23:19:14,017 - __main__ - INFO - Main application script started.
+2026-04-24 23:19:14,086 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-24 23:19:19,744 - __main__ - INFO - CLI import time: 0.092s
+2026-04-24 23:19:20,679 - __main__ - INFO - GUI import time: 0.933s
+2026-04-24 23:19:24,353 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-24 23:19:24,440 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-24 23:19:24,444 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-24 23:19:24,444 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-24 23:20:02,706 - __main__ - INFO - GUI startup time: 42.027s
+2026-04-24 23:20:02,715 - utils - INFO - ----------------------------------------
+2026-04-24 23:20:02,715 - __main__ - INFO - Main application script finished. Total time: 48.689s
+2026-04-25 19:42:56,862 - __main__ - INFO - Main application script started.
+2026-04-25 19:42:57,004 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-25 19:42:58,268 - __main__ - INFO - CLI import time: 0.008s
+2026-04-25 19:42:58,678 - __main__ - INFO - GUI import time: 0.400s
+2026-04-25 19:43:00,084 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-25 19:43:00,184 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-25 19:43:00,192 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-25 19:43:00,192 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 00:55:58,307 - __main__ - INFO - Main application script started.
+2026-04-26 00:55:58,370 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 00:56:55,149 - __main__ - INFO - Main application script started.
+2026-04-26 00:56:55,150 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 01:02:45,952 - __main__ - INFO - Main application script started.
+2026-04-26 01:02:45,952 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 01:02:47,687 - __main__ - INFO - CLI import time: 0.950s
+2026-04-26 01:02:49,310 - __main__ - INFO - GUI import time: 1.620s
+2026-04-26 01:03:02,157 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-26 01:03:02,330 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-26 01:03:02,338 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-26 01:03:02,338 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 01:05:10,062 - CrewMessageRouter - INFO - Message from Bot to ['All']: Welcome to Crew Chat! Start your conversation below. 
+2026-04-26 09:32:54,642 - __main__ - INFO - Main application script started.
+2026-04-26 09:32:54,719 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 09:33:17,511 - __main__ - INFO - CLI import time: 3.417s
+2026-04-26 09:33:19,491 - __main__ - INFO - GUI import time: 1.978s
+2026-04-26 09:33:24,431 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-26 09:33:24,565 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-26 09:33:24,582 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-26 09:33:24,583 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 09:35:31,386 - CrewMessageRouter - INFO - Message from Bot to ['All']: Welcome to Crew Chat! Start your conversation below. 
+2026-04-26 09:38:22,697 - __main__ - INFO - GUI startup time: 303.206s
+2026-04-26 09:38:22,698 - utils - INFO - ----------------------------------------
+2026-04-26 09:38:22,698 - __main__ - INFO - Main application script finished. Total time: 328.056s
+2026-04-26 09:42:15,852 - __main__ - INFO - Main application script started.
+2026-04-26 09:42:16,665 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 09:42:39,512 - __main__ - INFO - CLI import time: 1.693s
+2026-04-26 09:42:40,991 - __main__ - INFO - GUI import time: 1.477s
+2026-04-26 09:42:59,011 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-26 09:42:59,123 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-26 09:42:59,123 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-26 09:42:59,124 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 09:43:58,026 - __main__ - INFO - GUI startup time: 76.685s
+2026-04-26 09:43:58,423 - utils - INFO - ----------------------------------------
+2026-04-26 09:43:58,423 - __main__ - INFO - Main application script finished. Total time: 101.825s
+2026-04-26 11:51:26,496 - __main__ - INFO - Main application script started.
+2026-04-26 11:51:26,565 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 11:51:27,258 - __main__ - INFO - CLI import time: 0.101s
+2026-04-26 11:54:19,071 - __main__ - INFO - Main application script started.
+2026-04-26 11:54:19,426 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 11:55:03,121 - __main__ - INFO - CLI import time: 3.219s
+2026-04-26 11:59:27,906 - __main__ - INFO - Main application script started.
+2026-04-26 11:59:27,970 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 11:59:48,218 - __main__ - INFO - CLI import time: 2.247s
+2026-04-26 12:00:32,334 - __main__ - INFO - Main application script started.
+2026-04-26 12:00:32,334 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 12:01:40,344 - __main__ - INFO - CLI import time: 1.215s
+2026-04-26 12:02:09,465 - __main__ - INFO - Main application script started.
+2026-04-26 12:02:09,571 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 12:03:05,591 - __main__ - INFO - CLI import time: 2.419s
+2026-04-26 12:03:13,071 - __main__ - INFO - GUI import time: 7.443s
+2026-04-26 12:03:23,992 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-26 12:03:24,403 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-26 12:03:24,415 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-26 12:03:24,745 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 12:04:17,346 - root - INFO - Starting TTS playback for all details.
+2026-04-26 12:04:38,941 - root - INFO - TTS playback completed for all details.
+2026-04-26 12:04:49,859 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-26 12:06:53,845 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-26 12:06:57,691 - root - INFO - Auto-imported 1905 modules successfully
+2026-04-26 12:06:57,691 - root - INFO - Skipped 5 modules (expected for script files)
+2026-04-26 12:06:57,691 - root - INFO - Auto-import summary: 1905 imported, 5 failed, 4833 skipped, 6743 total files processed
+2026-04-26 12:06:57,802 - root - INFO - Status: Auto-imported 1905 modules (5 failed)
+2026-04-26 12:08:50,258 - __main__ - INFO - GUI startup time: 337.187s
+2026-04-26 12:08:50,259 - utils - INFO - ----------------------------------------
+2026-04-26 12:08:50,259 - __main__ - INFO - Main application script finished. Total time: 400.793s
+2026-04-26 12:20:56,540 - __main__ - INFO - Main application script started.
+2026-04-26 12:20:56,561 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 12:20:57,279 - __main__ - INFO - CLI import time: 0.117s
+2026-04-26 12:47:54,960 - __main__ - INFO - Main application script started.
+2026-04-26 12:47:54,962 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 12:48:13,495 - __main__ - INFO - CLI import time: 0.726s
+2026-04-26 12:48:14,452 - __main__ - INFO - GUI import time: 0.954s
+2026-04-26 12:48:18,286 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-26 12:48:18,398 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-26 12:48:18,399 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-26 12:48:18,399 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 12:48:23,798 - __main__ - INFO - GUI startup time: 9.346s
+2026-04-26 12:48:23,802 - utils - INFO - ----------------------------------------
+2026-04-26 12:48:23,803 - __main__ - INFO - Main application script finished. Total time: 28.838s
+2026-04-26 12:52:11,854 - __main__ - INFO - Main application script started.
+2026-04-26 12:52:11,856 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 12:52:14,551 - __main__ - INFO - CLI import time: 0.243s
+2026-04-26 12:52:14,909 - __main__ - INFO - GUI import time: 0.356s
+2026-04-26 12:52:16,190 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-26 12:52:16,274 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-26 12:52:16,275 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-26 12:52:16,277 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 12:52:28,406 - root - INFO - Starting TTS playback for all details.
+2026-04-26 12:52:28,723 - root - INFO - TTS playback completed for all details.
+2026-04-26 12:52:36,241 - __main__ - INFO - GUI startup time: 21.332s
+2026-04-26 12:52:36,241 - utils - INFO - ----------------------------------------
+2026-04-26 12:52:36,241 - __main__ - INFO - Main application script finished. Total time: 24.387s
+2026-04-26 12:52:47,827 - __main__ - INFO - Main application script started.
+2026-04-26 12:52:47,828 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 12:52:48,570 - __main__ - INFO - CLI import time: 0.101s
+2026-04-26 12:52:48,610 - __main__ - INFO - GUI import time: 0.036s
+2026-04-26 12:52:49,117 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-26 12:52:49,230 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-26 12:52:49,244 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-26 12:52:49,244 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 12:53:07,325 - __main__ - INFO - GUI startup time: 18.715s
+2026-04-26 12:53:07,326 - utils - INFO - ----------------------------------------
+2026-04-26 12:53:07,326 - __main__ - INFO - Main application script finished. Total time: 19.498s
+2026-04-26 12:57:17,157 - __main__ - INFO - Main application script started.
+2026-04-26 12:57:17,158 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 12:57:20,421 - __main__ - INFO - CLI import time: 0.362s
+2026-04-26 12:57:20,799 - __main__ - INFO - GUI import time: 0.376s
+2026-04-26 12:57:21,994 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-26 12:57:22,078 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-26 12:57:22,090 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-26 12:57:22,091 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 12:57:25,254 - __main__ - INFO - GUI startup time: 4.455s
+2026-04-26 12:57:25,255 - utils - INFO - ----------------------------------------
+2026-04-26 12:57:25,255 - __main__ - INFO - Main application script finished. Total time: 8.097s
+2026-04-26 13:07:34,166 - __main__ - INFO - Main application script started.
+2026-04-26 13:07:34,246 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 13:07:47,680 - __main__ - INFO - CLI import time: 3.913s
+2026-04-26 13:07:49,140 - __main__ - INFO - GUI import time: 1.457s
+2026-04-26 13:07:53,770 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-26 13:07:53,905 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-26 13:07:53,921 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-26 13:07:53,922 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 13:08:05,312 - __main__ - INFO - GUI startup time: 16.171s
+2026-04-26 13:08:05,312 - utils - INFO - ----------------------------------------
+2026-04-26 13:08:05,312 - __main__ - INFO - Main application script finished. Total time: 31.145s
+2026-04-26 13:11:28,332 - __main__ - INFO - Main application script started.
+2026-04-26 13:11:28,335 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-26 13:11:30,164 - __main__ - INFO - CLI import time: 0.092s
+2026-04-26 13:11:30,246 - __main__ - INFO - GUI import time: 0.079s
+2026-04-26 13:11:30,809 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-26 13:11:31,199 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-26 13:11:31,206 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-26 13:11:31,207 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-26 13:11:44,608 - __main__ - INFO - GUI startup time: 14.307s
+2026-04-26 13:11:44,608 - utils - INFO - ----------------------------------------
+2026-04-26 13:11:44,608 - __main__ - INFO - Main application script finished. Total time: 16.222s
+2026-04-26 14:13:54,773 - __main__ - INFO - Main application script started.
+2026-04-26 14:13:59,236 - __main__ - INFO - CLI import time: 0.334s
+2026-04-26 14:13:59,636 - __main__ - INFO - GUI import time: 0.397s
+2026-04-26 14:14:10,281 - __main__ - INFO - GUI startup time: 10.644s
+2026-04-26 14:14:10,284 - __main__ - INFO - Main application script finished. Total time: 15.508s
+2026-04-26 14:36:28,798 - __main__ - INFO - Main application script started.
+2026-04-26 14:37:08,744 - __main__ - INFO - CLI import time: 5.704s
+2026-04-26 14:37:13,882 - __main__ - INFO - GUI import time: 5.130s
+2026-04-26 14:41:00,288 - __main__ - INFO - GUI startup time: 226.404s
+2026-04-26 14:41:00,425 - __main__ - INFO - Main application script finished. Total time: 271.490s
+2026-04-26 14:41:50,981 - __main__ - INFO - Main application script started.
+2026-04-26 14:41:57,061 - __main__ - INFO - CLI import time: 0.648s
+2026-04-26 14:41:57,653 - __main__ - INFO - GUI import time: 0.589s
+2026-04-26 14:43:10,181 - __main__ - INFO - GUI startup time: 72.527s
+2026-04-26 14:43:10,182 - __main__ - INFO - Main application script finished. Total time: 79.200s
+2026-04-26 16:18:17,947 - cli - INFO - Running crop-csv with image: /tmp/does_not_exist.png, annotations: /tmp/does_not_exist.csv, output: /tmp/out
+2026-04-26 16:18:17,988 - cli - ERROR - Image file not found: /tmp/does_not_exist.png
+2026-04-26 16:18:17,989 - cli - INFO - Running read-csv with path: /tmp/does_not_exist.csv
+2026-04-26 16:18:18,002 - cli - ERROR - CSV file not found: /tmp/does_not_exist.csv
+2026-04-26 16:18:18,027 - cli - INFO - Running read-excel with path: /tmp/does_not_exist.xlsx
+2026-04-26 16:18:18,027 - cli - ERROR - Excel file not found: /tmp/does_not_exist.xlsx
+2026-04-26 16:18:18,028 - cli - ERROR - Unknown command: not-a-command
+2026-04-26 17:02:44,934 - __main__ - INFO - Main application script started.
+2026-04-26 17:06:09,552 - __main__ - INFO - Main application script started.
+2026-04-26 17:06:09,810 - __main__ - INFO - CLI import time: 0.121s
+2026-04-26 17:06:54,415 - __main__ - INFO - Main application script started.
+2026-04-26 17:06:54,643 - __main__ - INFO - CLI import time: 0.114s
+2026-04-26 17:12:40,799 - __main__ - INFO - Main application script started.
+2026-04-26 17:12:41,008 - __main__ - INFO - CLI import time: 0.084s
+2026-04-26 17:12:42,821 - __main__ - INFO - GUI import time: 1.811s
+2026-04-26 17:13:11,500 - __main__ - INFO - GUI startup time: 28.679s
+2026-04-26 17:13:11,505 - __main__ - INFO - Main application script finished. Total time: 30.702s
+2026-04-26 19:22:29,759 - __main__ - INFO - Main application script started.
+2026-04-26 19:22:47,175 - __main__ - INFO - CLI import time: 13.011s
+2026-04-26 19:22:52,998 - __main__ - INFO - GUI import time: 5.705s
+2026-04-26 19:24:37,564 - __main__ - INFO - GUI startup time: 104.565s
+2026-04-26 19:24:37,616 - __main__ - INFO - Main application script finished. Total time: 127.805s
+2026-04-26 19:25:53,784 - __main__ - INFO - Main application script started.
+2026-04-26 19:26:00,043 - __main__ - INFO - CLI import time: 4.567s
+2026-04-26 19:26:02,989 - __main__ - INFO - GUI import time: 2.941s
+2026-04-26 19:27:28,611 - __main__ - INFO - GUI startup time: 85.038s
+2026-04-26 19:27:29,227 - __main__ - INFO - Main application script finished. Total time: 94.243s
+2026-04-26 20:10:50,955 - __main__ - INFO - Main application script started.
+2026-04-26 20:11:08,497 - __main__ - INFO - CLI import time: 14.776s
+2026-04-26 20:11:13,801 - __main__ - INFO - GUI import time: 5.303s
+2026-04-26 20:11:41,910 - __main__ - INFO - GUI startup time: 28.108s
+2026-04-26 20:11:41,910 - __main__ - INFO - Main application script finished. Total time: 50.955s
+2026-04-26 20:12:29,914 - __main__ - INFO - Main application script started.
+2026-04-26 20:12:33,772 - __main__ - INFO - CLI import time: 2.843s
+2026-04-26 20:12:34,661 - __main__ - INFO - GUI import time: 0.886s
+2026-04-26 20:12:37,770 - __main__ - INFO - GUI startup time: 3.108s
+2026-04-26 20:12:37,771 - __main__ - INFO - Main application script finished. Total time: 7.855s
+2026-04-26 20:22:32,805 - __main__ - INFO - Main application script started.
+2026-04-26 20:22:33,831 - __main__ - INFO - CLI import time: 0.067s
+2026-04-26 20:22:34,764 - __main__ - INFO - GUI import time: 0.932s
+2026-04-26 20:22:38,102 - __main__ - INFO - GUI startup time: 3.333s
+2026-04-26 20:22:38,109 - __main__ - INFO - Main application script finished. Total time: 5.297s
+2026-04-26 20:26:08,560 - __main__ - INFO - Main application script started.
+2026-04-26 20:26:13,960 - __main__ - INFO - CLI import time: 3.825s
+2026-04-26 20:26:16,907 - __main__ - INFO - GUI import time: 2.941s
+2026-04-26 20:27:00,729 - __main__ - INFO - GUI startup time: 43.819s
+2026-04-26 20:27:00,752 - __main__ - INFO - Main application script finished. Total time: 52.169s
+2026-04-26 21:28:19,734 - __main__ - INFO - Main application script started.
+2026-04-26 21:28:20,047 - __main__ - INFO - CLI import time: 0.142s
+2026-04-26 21:28:20,143 - __main__ - INFO - GUI import time: 0.093s
+2026-04-26 21:31:40,464 - __main__ - INFO - GUI startup time: 200.318s
+2026-04-26 21:31:40,466 - __main__ - INFO - Main application script finished. Total time: 200.730s
+2026-04-26 21:33:30,328 - __main__ - INFO - Main application script started.
+2026-04-26 21:33:30,786 - __main__ - INFO - CLI import time: 0.260s
+2026-04-26 21:33:30,873 - __main__ - INFO - GUI import time: 0.084s
+2026-04-26 21:33:47,269 - __main__ - INFO - GUI startup time: 16.395s
+2026-04-26 21:33:47,270 - __main__ - INFO - Main application script finished. Total time: 16.941s
+2026-04-26 22:21:21,859 - __main__ - INFO - Main application script started.
+2026-04-26 22:21:23,724 - __main__ - INFO - CLI import time: 0.743s
+2026-04-26 22:21:24,873 - __main__ - INFO - GUI import time: 1.147s

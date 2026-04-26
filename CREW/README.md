@@ -4,6 +4,10 @@ In current `CrewAI` docs, a reusable agent "skill" is typically implemented as a
 
 This workspace now includes a minimal starter you can copy when you want to add a new skill.
 
+## Documentation Index
+
+See [docs/README.md](docs/README.md) for a full index of user and developer documentation, including the [FetchDocs (ReadMine) User Guide](docs/fetchdocs_readmine.md).
+
 ## What was added
 
 - `pyproject.toml` declares `crewai`

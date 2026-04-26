@@ -56,6 +56,7 @@ REQUIRED_PACKAGES = [
     ("tkinter", None),  # tkinter is standard in most Python installs
 ]
 
+logger = logging.getLogger(__name__)
 
 
 
@@ -331,8 +332,19 @@ def main():
 
     import time
     start_time = time.perf_counter()
+
+    # Centralized Logging Configuration
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        filename="crew_app.log",
+        filemode="a",
+    )
+    
     logger.info("Main application script started.")
     log_progress_md("Started Crew main application script.")
+
+    _auto_install_deps()
 
     # Import CLI parser and runner from cli.py (defer heavy imports)
     cli_import_start = time.perf_counter()
