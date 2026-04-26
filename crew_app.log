@@ -494,3 +494,111 @@
 2026-04-23 20:26:21,094 - __main__ - INFO - GUI startup time: 5.588s
 2026-04-23 20:26:21,094 - utils - INFO - ----------------------------------------
 2026-04-23 20:26:21,096 - __main__ - INFO - Main application script finished. Total time: 6.455s
+2026-04-23 20:28:05,031 - __main__ - INFO - Main application script started.
+2026-04-23 20:28:05,032 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:28:07,072 - __main__ - INFO - CLI import time: 2.040s
+2026-04-23 20:28:07,246 - __main__ - INFO - GUI import time: 0.158s
+2026-04-23 20:28:07,776 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:28:08,185 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:28:08,310 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:28:08,320 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:28:08,321 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:28:16,294 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 20:28:21,488 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 20:28:42,075 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 20:28:42,998 - root - INFO - Auto-imported 1885 modules successfully
+2026-04-23 20:28:42,998 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 20:28:42,998 - root - INFO - Auto-import summary: 1885 imported, 36 failed, 14317 skipped, 16238 total files processed
+2026-04-23 20:28:43,004 - root - INFO - Status: Auto-imported 1885 modules (36 failed)
+2026-04-23 20:31:45,266 - __main__ - INFO - GUI startup time: 218.020s
+2026-04-23 20:31:45,267 - utils - INFO - ----------------------------------------
+2026-04-23 20:31:45,268 - __main__ - INFO - Main application script finished. Total time: 220.235s
+2026-04-23 20:35:05,020 - __main__ - INFO - Main application script started.
+2026-04-23 20:35:05,305 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:36:35,711 - __main__ - INFO - Main application script started.
+2026-04-23 20:36:35,730 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:36:49,112 - __main__ - INFO - Main application script started.
+2026-04-23 20:36:49,112 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:37:03,755 - __main__ - INFO - Main application script started.
+2026-04-23 20:37:03,756 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:37:08,488 - __main__ - INFO - CLI import time: 4.732s
+2026-04-23 20:37:09,171 - __main__ - INFO - GUI import time: 0.669s
+2026-04-23 20:37:12,974 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:37:13,366 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:37:13,488 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:37:13,502 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:37:13,503 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:37:35,015 - root - INFO - Starting TTS playback for all details.
+2026-04-23 20:37:35,259 - root - INFO - TTS playback completed for all details.
+2026-04-23 20:39:50,120 - __main__ - INFO - GUI startup time: 160.949s
+2026-04-23 20:39:50,120 - utils - INFO - ----------------------------------------
+2026-04-23 20:39:50,121 - __main__ - INFO - Main application script finished. Total time: 166.365s
+2026-04-23 21:08:48,511 - __main__ - INFO - Main application script started.
+2026-04-23 21:08:48,563 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 21:08:54,239 - __main__ - INFO - CLI import time: 5.676s
+2026-04-23 21:08:54,827 - __main__ - INFO - GUI import time: 0.569s
+2026-04-23 21:08:57,432 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 21:08:57,787 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 21:08:57,913 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 21:08:57,915 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 21:08:57,916 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 21:11:38,501 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 21:12:06,835 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 21:12:07,725 - root - INFO - Auto-imported 1885 modules successfully
+2026-04-23 21:12:07,725 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 21:12:07,725 - root - INFO - Auto-import summary: 1885 imported, 36 failed, 14317 skipped, 16238 total files processed
+2026-04-23 21:12:07,739 - root - INFO - Status: Auto-imported 1885 modules (36 failed)
+2026-04-23 21:13:31,471 - root - INFO - Status: Loaded: skills_reference.txt
+2026-04-23 21:18:56,094 - root - INFO - Status: Opening text file: skills-list.txt...
+2026-04-23 21:18:56,483 - root - INFO - Status: Loaded: skills-list.txt
+2026-04-23 21:21:14,595 - root - INFO - Status: Opening text file: skills_reference.txt...
+2026-04-23 21:21:14,968 - root - INFO - Status: Loaded: skills_reference.txt
+2026-04-23 21:23:40,412 - root - INFO - Status: Opening text file: crew_chatbot.py...
+2026-04-23 21:23:40,804 - root - INFO - Status: Loaded: crew_chatbot.py
+2026-04-23 21:29:04,173 - root - INFO - Status: Opening text file: README.md...
+2026-04-23 21:29:04,590 - root - INFO - Status: Loaded: README.md
+2026-04-23 21:30:47,775 - root - INFO - Status: Loaded: requirements.txt
+2026-04-23 21:31:37,265 - root - INFO - Status: Opening text file: crew_chatbot_web.py...
+2026-04-23 21:31:37,593 - root - INFO - Status: Loaded: crew_chatbot_web.py
+2026-04-23 21:36:57,829 - root - INFO - Status: Opening text file: demo_query.py...
+2026-04-23 21:36:58,197 - root - INFO - Status: Loaded: demo_query.py
+2026-04-23 21:37:53,281 - root - INFO - Status: Opening text file: traveller_agent.py...
+2026-04-23 21:37:53,544 - root - INFO - Status: Loaded: traveller_agent.py
+2026-04-23 21:45:40,648 - root - INFO - Status: Opening text file: audio_manager.py...
+2026-04-23 21:45:40,755 - root - INFO - Status: Loaded: audio_manager.py
+2026-04-23 21:47:30,597 - root - INFO - Status: Opening data file: SECUNDUS.csv...
+2026-04-23 21:47:30,724 - root - INFO - Status: Loaded 16 records
+2026-04-23 21:48:08,777 - root - INFO - Status: Opening data file: npcs.csv...
+2026-04-23 21:48:08,954 - root - INFO - Status: Loaded 63 records
+2026-04-23 21:51:17,889 - root - INFO - Status: Opening text file: traveller_wiki_api.py...
+2026-04-23 21:51:17,933 - root - INFO - Status: Loaded: traveller_wiki_api.py
+2026-04-23 21:53:08,874 - root - INFO - Status: Opening text file: examples.txt...
+2026-04-23 21:53:09,288 - root - INFO - Status: Loaded: examples.txt
+2026-04-23 21:54:31,503 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-23 21:54:56,927 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-23 21:55:13,972 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-23 21:58:35,011 - __main__ - INFO - GUI startup time: 2980.183s
+2026-04-23 21:58:35,011 - utils - INFO - ----------------------------------------
+2026-04-23 21:58:35,011 - __main__ - INFO - Main application script finished. Total time: 2986.500s
+2026-04-23 22:43:51,652 - __main__ - INFO - Main application script started.
+2026-04-23 22:43:51,671 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 22:43:57,529 - __main__ - INFO - CLI import time: 5.858s
+2026-04-23 22:43:58,270 - __main__ - INFO - GUI import time: 0.724s
+2026-04-23 22:44:03,518 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 22:44:04,088 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 22:44:04,226 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 22:44:04,233 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 22:44:04,235 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 22:47:33,223 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 22:47:34,227 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 22:47:44,889 - root - INFO - Status: Sorted by NPC (ascending)
+2026-04-23 22:52:49,152 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-23 22:55:54,570 - root - INFO - Status: Opening text file: README.md...
+2026-04-23 22:55:55,101 - root - INFO - Status: Loaded: README.md
+2026-04-23 22:58:07,292 - root - INFO - Status: Opening text file: traveller_wiki_api.py...
+2026-04-23 22:58:07,678 - root - INFO - Status: Loaded: traveller_wiki_api.py
+2026-04-23 22:58:51,431 - root - INFO - Status: Opening text file: cli.py...
+2026-04-23 22:58:51,851 - root - INFO - Status: Loaded: cli.py
+2026-04-23 23:05:46,462 - __main__ - INFO - GUI startup time: 1308.191s
+2026-04-23 23:05:46,463 - utils - INFO - ----------------------------------------
+2026-04-23 23:05:46,464 - __main__ - INFO - Main application script finished. Total time: 1314.809s
