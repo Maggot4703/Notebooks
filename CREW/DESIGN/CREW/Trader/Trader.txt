@@ -1,1 +1,62 @@
 Trader
+In the Traveller universe, the Trader (also known as the Merchant, Broker, or Purser) is the person who justifies the ship’s existence. While the Pilot and Engineer keep the ship moving, the Trader ensures it moves for a profit. In a game famous for its "Accountants and Spaceships" reputation, the Trader is the one who navigates the most dangerous territory of all: The Free Market.
+
+Here is a breakdown of the duties and responsibilities for a Traveller Trader.
+1. Speculative Trade (Buy Low, Sell High)
+
+The Trader’s primary goal is to find "Speculative Goods"—cargo bought with the crew's own money in hopes of selling it for a massive profit elsewhere.
+
+    Market Analysis: Using the Broker skill to identify which goods are undervalued on a planet. This involves checking the world's Trade Codes (e.g., an Industrial world sells manufactured goods cheaply, while an Agricultural world pays a premium for them).
+
+    Supplier Negotiation: Finding a "connection" on-planet to get a better price. A successful Trader knows that a 10% discount on a million-credit cargo of "Advanced Electronics" is the difference between a new ship and bankruptcy.
+
+    Risk Management: Deciding whether to buy "Legal" cargo with low margins or "Black Market" goods (Illegal) that offer 500% profit but come with the risk of Imperial seizure.
+
+2. Freight and Passenger Management
+
+If the ship isn't hauling its own goods, it’s hauling someone else’s.
+
+    Manifesting Freight: Filling the cargo hold with "Common Freight." This is less risky than speculation but requires the Admin skill to manage the paperwork and ensure the ship is maximized for every ton of displacement.
+
+    Passenger Manifest: Vetting passengers for High, Middle, and Low berths. The Trader is responsible for "Customer Service"—making sure High Passengers are happy enough to provide a good reputation (and tips), while ensuring Low Passengers actually survive the trip.
+
+    Customs Liaison: Dealing with the "Men in Blue" (Imperial or Local Customs). The Trader handles the bribes, the paperwork, and the smooth-talking required to get the ship through a planetary blockade or a routine inspection.
+
+3. Financial Logistics
+
+The Trader is often the ship’s CFO. They keep the ledger that keeps the crew fed.
+Financial Task	Description
+Operating Costs	Calculating the "Break-even" point for a jump. If the jump costs Cr50,000 in fuel and maintenance, the Trader must find Cr51,000 in revenue.
+Payroll & Shares	Distributing the "Dividends" to the crew after the ship's mortgage and expenses are paid.
+Port Fees	Negotiating docking fees, refueling costs, and "expediting" payments to starport officials.
+4. Procurement and Logistics
+
+When the ship needs something—whether it’s a spare part for the Jump Drive or a crate of combat armor—the Trader finds it.
+
+    Sourcing: Using the Streetwise or Broker skills to find rare Tech Level 15 components on a TL-8 backwater world.
+
+    Contracting: Negotiating with mercenary companies, planetary governments, or megacorporations like Zhuunshii or Sternmetal Horizons for long-term shipping contracts.
+
+5. The "Face" of the Crew
+
+While the Captain holds the authority, the Trader often holds the conversation.
+
+    Diplomacy: Acting as the primary negotiator in non-hostile encounters.
+
+    Information Brokerage: Trading information as a commodity. A Trader often picks up rumors in starport bars about which systems are under blockade or where a new gold rush is starting.
+
+The Trader’s Skillset
+
+A successful Trader is a social chameleon. Their most valuable assets are:
+
+    Broker: The core skill for getting better prices on cargo.
+
+    Admin: For navigating the nightmare of Imperial bureaucracy.
+
+    Streetwise: For finding the "alternative" markets and knowing when a deal is too good to be true.
+
+    Persuade: For when the math doesn't work, but the charm does.
+
+    The Trader’s Maxim: "A ship in port is a hole in the pocket." Every day spent docked is a day spent losing credits to life support and berthing fees. A good Trader has the next cargo lined up before the current one is even unloaded.
+
+Are you running a "legal" corporate-sponsored route, or is your ship's manifest mostly written in pencil so it can be "erased" if a patrol ship appears?

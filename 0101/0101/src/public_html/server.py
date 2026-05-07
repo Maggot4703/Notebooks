@@ -11,6 +11,8 @@ Then open: http://localhost:8080/0101.html
 import http.server
 import os
 import re
+import shutil
+import subprocess
 import sys
 import threading
 import time
@@ -19,6 +21,8 @@ import webbrowser
 PORT = 8080
 SAVED_DIR = os.path.join(os.path.dirname(__file__), "saved")
 KEY_RE = re.compile(r'^[a-z0-9][a-z0-9-]{0,63}$')
+DEFAULT_0101_WINDOW_WIDTH = 720
+DEFAULT_0101_WINDOW_HEIGHT = 1180
 
 # Watchdog: shut down if no browser ping received within this many seconds.
 # Primary shutdown is via /api/shutdown (sent by persist.js on tab close).
@@ -107,12 +111,79 @@ def _watchdog(httpd):
             break
 
 
+def _resize_window_by_title(
+    window_title, width, height, attempts=10, delay_seconds=0.5
+):
+    """Resize a browser window by title when a desktop window manager tool exists."""
+    if not os.environ.get("DISPLAY"):
+        return False
+
+    for command in ("wmctrl", "xdotool"):
+        if not shutil.which(command):
+            continue
+        for _ in range(attempts):
+            try:
+                if command == "wmctrl":
+                    subprocess.run(
+                        ["wmctrl", "-r", window_title, "-e", f"0,-1,-1,{width},{height}"],
+                        check=True,
+                        capture_output=True,
+                        text=True,
+                    )
+                    return True
+
+                search_result = subprocess.run(
+                    ["xdotool", "search", "--name", window_title],
+                    check=True,
+                    capture_output=True,
+                    text=True,
+                )
+                window_ids = [
+                    window_id
+                    for window_id in search_result.stdout.splitlines()
+                    if window_id.strip()
+                ]
+                if not window_ids:
+                    time.sleep(delay_seconds)
+                    continue
+                subprocess.run(
+                    [
+                        "xdotool",
+                        "windowsize",
+                        window_ids[-1],
+                        str(width),
+                        str(height),
+                    ],
+                    check=True,
+                    capture_output=True,
+                    text=True,
+                )
+                return True
+            except subprocess.CalledProcessError:
+                time.sleep(delay_seconds)
+    return False
+
+
+def _open_0101_browser(url):
+    """Open 0101 in a new browser window and resize it for the page layout."""
+    webbrowser.open(url, new=1)
+    threading.Thread(
+        target=_resize_window_by_title,
+        args=("0101", DEFAULT_0101_WINDOW_WIDTH, DEFAULT_0101_WINDOW_HEIGHT),
+        daemon=True,
+    ).start()
+
+
 def main():
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     with http.server.ThreadingHTTPServer(("", PORT), Handler) as httpd:
         print(f"Serving on http://localhost:{PORT}/")
         threading.Thread(target=_watchdog, args=(httpd,), daemon=True).start()
-        threading.Timer(1.0, webbrowser.open, args=(f"http://localhost:{PORT}/0101.html",)).start()
+        threading.Timer(
+            1.0,
+            _open_0101_browser,
+            args=(f"http://localhost:{PORT}/0101.html",),
+        ).start()
         httpd.serve_forever()
     print("Server stopped.")
 

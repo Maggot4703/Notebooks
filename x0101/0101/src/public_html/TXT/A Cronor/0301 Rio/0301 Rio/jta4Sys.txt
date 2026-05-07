@@ -1,0 +1,14 @@
+Hex = 0301
+Name = Rio
+UWP = C686648-8
+Remarks = Ag Ni Ga Ri
+{Ix} = { 0 }
+(Ex) = (954+1)
+[Cx] = [6658]
+N = -
+B = -
+Z = -
+PBG = 201
+W = 8
+A = NaHu
+Stellar = M0 V M1 V

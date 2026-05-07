@@ -1,1 +1,63 @@
 Doctor
+In the Traveller universe, the Doctor (or Ship’s Medical Officer) is the thin line between a successful payday and a "Total Party Kill." Because space travel is inherently hostile to organic life—involving high-G maneuvers, radiation, exotic alien pathogens, and high-velocity gauss rounds—the Doctor’s role is both clinical and high-stakes.
+
+Here is a breakdown of the duties and responsibilities for a Traveller Doctor.
+1. Trauma and Combat Medicine
+
+When a boarding action goes south or a planetary exploration meets hostile wildlife, the Doctor is the most important person on the team.
+
+    Stabilization: Using the Medical skill to prevent a wounded crewmate from dying (reaching "0" in three physical characteristics).
+
+    Surgery: Performing invasive procedures to repair internal damage caused by combat or accidents.
+
+    Triage: Deciding who gets the limited supply of "Fast Drug" (cryo-sleep in a pill) to suspend their metabolism until the ship reaches a high-tech starport.
+
+2. Low Berth Management
+
+Many ships carry "Low Passengers" in cryo-sleep (Frozen Watch). This is statistically the most dangerous way to travel.
+
+    Revival Oversight: Every time a passenger is thawed, a Medical check is required. If the Doctor fails, the passenger dies.
+
+    Maintenance: Ensuring the "Ice Boxes" don't malfunction during the week-long jump.
+
+    Emergency Thawing: Knowing how to safely wake the "Frozen Watch" (backup crew) if the main crew is incapacitated.
+
+3. Xenobiology and Epidemiology
+
+Stepping off a ship onto a new world means exposing the crew to billions of years of alien evolution.
+
+    Bio-Hazard Screening: Running scans to ensure the crew isn't bringing "space plague" back onto the ship.
+
+    Decontamination: Managing the airlocks and ship’s scrubbers if a biological threat is detected.
+
+    Alien Physiology: Understanding how to treat non-human sophonts, like the Vargr, Aslan, or Hivers, whose biologies react differently to human medicine.
+
+4. Long-Term Health and Life Support
+
+The Doctor works closely with the Chief Engineer to ensure the ship's environment doesn't slowly kill the inhabitants.
+Responsibility	Description
+Radiation Treatment	Monitoring "rad" intake after solar flares or reactor leaks and administering anti-rad drugs.
+Psychological Health	Managing "Jump Cabin Fever." A week in a metal box can lead to psychosis or depression.
+Pharmacology	Managing the ship's supply of "Medical Slow," "Combat Drugs," and "Anagathics" (anti-aging drugs).
+Cybernetic Maintenance	Overseeing the integration and repair of neural links or prosthetic limbs.
+5. Medical Admin and Law
+
+Medical care in the Imperium is highly regulated.
+
+    Death Certificates: Legally certifying deaths in deep space for Imperial records.
+
+    Malpractice Avoidance: Maintaining the ship’s Sickbay to "High Guard" standards to avoid lawsuits at the next Class A Starport.
+
+    Forensics: Using medical knowledge to investigate suspicious deaths—vital in many "murder mystery" Traveller scenarios.
+
+The Doctor’s Arsenal
+
+A Doctor’s effectiveness is determined by their Medical skill level and the Tech Level (TL) of their equipment:
+
+    Medkit: Portable trauma gear for the field.
+
+    Sickbay: The dedicated room on a ship (usually required for ships over 200 tons) that provides bonuses to healing.
+
+    Automed: A robotic surgical table that can perform basic tasks if the Doctor is the one who is injured.
+
+    The Moral Dilemma: In Traveller, anagathic drugs (which stop aging) are highly illegal on some worlds and incredibly expensive everywhere. A Doctor often has to decide if they are willing to participate in the "Grey Market" to keep wealthy patrons—or themselves—young.

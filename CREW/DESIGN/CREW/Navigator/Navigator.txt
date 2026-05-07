@@ -1,1 +1,60 @@
 Navigator
+In the Traveller universe, the Navigator (sometimes called the Astrogator) is the ship’s resident mathematician and cosmic cartographer. While the Pilot handles the "stick" in real-space, the Navigator is responsible for the ship's position in the fourth dimension.
+
+Without a skilled Navigator, a ship is just a very expensive coffin waiting to vanish into the "Blind Eternities" of Jump space.
+1. Jump Plotting (The Prime Responsibility)
+
+The Navigator’s most critical duty is calculating the Jump Profile. This isn't just pointing the ship at a star; it’s a high-stakes calculus problem involving gravity wells, stellar drift, and the ship’s specific drive performance.
+
+    Plotting the Course: Using the Astrogatorm skill to calculate the jump. A failed roll can lead to a Misjump, which might dump the ship in empty space, destroy the drive, or emerge months later than planned.
+
+    Gravity Well Avoidance: Ensuring the exit and entry points are outside the "100-diameter" limit of planets and stars. Jumping too close to a world is the fastest way to trigger a catastrophic drive failure.
+
+    The "Jump-6" Challenge: The further the jump, the more variables there are. Plotting a Jump-1 is routine; plotting a Jump-6 is a masterwork of spatial computation.
+
+2. Sensor Operations and "Lookout"
+
+In deep space, you can't see "up" or "down." The Navigator translates raw data into a tactical map.
+
+    Passive & Active Scans: Managing the ship’s sensors to detect incoming vessels, navigation hazards (like asteroid belts), or hidden pirate caches.
+
+    Signature Analysis: Identifying a ship’s type and origin by its heat and radiation signature before it gets close enough to fire.
+
+    Electronic Counter-Countermeasures (ECCM): Cutting through enemy jamming to keep a lock on a target or a destination.
+
+3. Real-Space Navigation and Orbits
+
+Once the ship exits Jump, the Navigator’s job transitions to orbital mechanics.
+
+    Orbital Insertion: Calculating the precise burn needed to enter a stable orbit around a planet or moon.
+
+    Approach Vectors: Coordinating with the Pilot to find the most efficient path to a starport, often while dodging orbital debris or naval blockades.
+
+    Time-to-Target: Managing the "Intercept" math. If the ship needs to catch a fleeing freighter, the Navigator tells the Engineer how much thrust is required and for how long.
+
+4. Library Data and Cartography
+
+The Navigator is the keeper of the ship’s Library Data.
+Duty	Description
+Chart Updates	Downloading the latest star charts at Class A/B starports to account for stellar movement.
+Surveying	In "Scout" campaigns, the Navigator records data on uncharted worlds, which can be sold for significant credits.
+Legal Clearances	Ensuring the ship has the correct "navigational beacons" and codes for restricted Imperial star systems.
+5. Communications and Signal Logic
+
+Because they spend so much time in the sensor and computer suites, Navigators often handle the ship's long-range comms.
+
+    Tight-Beam Comms: Aiming high-precision lasers at distant satellites or ships to transmit data without being intercepted.
+
+    Signal Encryption: Ensuring the ship’s logs and transmissions are scrambled to prevent corporate or imperial espionage.
+
+The Navigator’s Skillset
+
+A great Navigator is usually the smartest person on the bridge, relying on:
+
+    Astrogation: The core skill for Jump-plotting.
+
+    Electronics (Sensors/Comms): For "seeing" and "talking" in the void.
+
+    Science (Astronomy/Physics): For understanding the celestial bodies they are navigating around.
+
+    The Navigator’s Nightmare: "The Empty Hex." When a ship misjumps into a hex on the subsector map with no star system, it is up to the Navigator to find a way to get the ship back to civilization before the life support runs out.

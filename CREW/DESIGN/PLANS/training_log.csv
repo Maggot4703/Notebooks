@@ -1,7 +1,1 @@
-agent_name,role,training_completed,certification,completion_date
-John Doe,Pilot,Yes,Flight Cert,2026-04-01
-Jane Smith,Medic,Yes,Medical Cert,2026-03-15
-Alice Carter,Captain,Yes,Command Cert,2026-03-10
-Bob Lee,Navigator,Yes,Flight Cert,2026-03-20
-Eve Kim,Engineer,Yes,Engineer Cert,2026-03-25
-Sam Patel,Security,Yes,Security Cert,2026-03-28
+/home/me/Notebooks/CREW/DESIGN/PLANS/training_log.csv

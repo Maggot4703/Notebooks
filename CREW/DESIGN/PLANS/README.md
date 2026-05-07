@@ -1,27 +1,11 @@
-# PLANS Folder
+# Crew Code Improvement and Testing Plans
 
-This folder contains process plans. Each plan .txt file should follow this template:
+This directory contains plans and documentation for code quality, linting, and testing improvements for the Crew project.
 
-PLAN: [Plan Name]
+- [code_improvement_and_testing_plan.md](code_improvement_and_testing_plan.md): Main plan for code improvements, linting, and regular testing.
 
-Objective:
-- [Objective]
+## Usage
 
-Steps:
-1. [Step 1]
-2. [Step 2]
-
-Inputs:
-- [Input 1]
-
-Outputs:
-- [Output 1]
-
-Responsible Agents:
-- [Agent 1]
-
-Notes:
-- [Notes]
-
-Automation & Documentation:
-- [Automation steps, scripts, logging]
+- Review the plan and follow the steps for code style, linting, and testing.
+- Use the provided Makefile and pre-commit.sh for automation.
+- Update this directory with new plans or documentation as needed.

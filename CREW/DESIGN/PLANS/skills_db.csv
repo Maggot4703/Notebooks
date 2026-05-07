@@ -1,7 +1,1 @@
-agent_name,skills,certifications,availability,experience
-John Doe,"Piloting, Navigation","Flight Cert",Active,5
-Jane Smith,"Medicine, First Aid","Medical Cert",Active,3
-Alice Carter,"Leadership, Strategy","Command Cert",On Leave,7
-Bob Lee,"Navigation, Astrogation","Flight Cert",Active,4
-Eve Kim,"Engineering, Repair","Engineer Cert",On Leave,6
-Sam Patel,"Security, Tactics","Security Cert",Active,2
+/home/me/Notebooks/CREW/DESIGN/PLANS/skills_db.csv

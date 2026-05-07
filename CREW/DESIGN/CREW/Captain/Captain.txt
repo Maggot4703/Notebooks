@@ -1,1 +1,58 @@
 Captain
+
+ description of Traveller Captains duties and responsibilities
+
+In the Traveller tabletop RPG universe, the Captain (or Master) of a starship holds a position that is equal parts CEO, diplomat, and tactical commander. Whether you're running a subsidized merchant or a mercenary cruiser, the Captain's primary responsibility is the safety of the vessel and the lives of everyone aboard.
+
+Here is a breakdown of the core duties and responsibilities for a Traveller Captain.
+1. Legal and Regulatory Compliance
+
+The Captain is the legal representative of the ship. In the Third Imperium, this means navigating a complex web of interstellar laws.
+
+    Lien and Registration: Ensuring the ship's transponder is active and registration papers are current.
+
+    Customs & Cargo: Taking legal responsibility for all manifested cargo. If the crew is smuggling "unauthorized" goods, the Captain is the one who faces the Imperial sensory net.
+
+    The High Guard: Maintaining order. Under Imperial Law, a Captain has broad "High Justice" authority while in jump space, acting as the judge and jury for any crimes committed on board.
+
+2. Strategic Operations and Navigation
+
+While the Pilot handles the stick and the Navigator plots the course, the Captain makes the "Go/No-Go" decisions.
+
+    Jump Planning: Deciding when to initiate a Jump and ensuring the ship is at least 100 diameters away from any significant gravity well to avoid a misjump.
+
+    Fuel Management: Deciding between buying refined fuel at a starport or "skimming" unrefined fuel from a gas giant (which saves money but risks damaging the drives).
+
+    Mission Selection: In a sandbox game, the Captain chooses which speculative trade goods to buy and which contracts to sign.
+
+3. Financial Oversight
+
+A ship is a massive financial liability. A Captain's most stressful duty is often just keeping the lights on.
+Expense Category	Captain's Responsibility
+Mortgage	Ensuring the monthly payment (usually 1/240th of the ship's cost) is met.
+Maintenance	Budgeting for the annual overhaul (1% of the ship's value).
+Life Support	Covering the Cr1,000–Cr2,000 per person per month costs.
+Payroll	Managing the "shares" or fixed salaries of the crew.
+4. Personnel and Command
+
+The Captain is the glue that keeps a diverse group of Travellers from killing each other during a week-long stint in Jump space.
+
+    Morale: Managing the psychological health of the crew during the isolation of a 168-hour jump.
+
+    Discipline: Resolving conflicts between departments (e.g., the Engineer complaining about the Pilot redlining the maneuvers).
+
+    Crisis Leadership: In combat or during a drive failure, the Captain issues the "Direct" actions, providing bonuses to crew skill checks through the Leadership and Tactics skills.
+
+5. Diplomacy and External Relations
+
+The Captain is the "Face" of the ship when dealing with Starport Authorities, planetary governors, and rival captains.
+
+    Bribery and Negotiation: Knowing when to use a silver tongue and when to use a credit chip to bypass red tape.
+
+    Ship-to-Ship Comms: Handling hails and distress signals in deep space.
+
+The "Captain's Burden"
+
+In Traveller, the Captain is often the character with the highest Social Standing (SOC) or Education (EDU), but the most successful ones are those who master the Leadership, Admin, and Broker skills.
+
+    Pro Tip: A Captain who ignores their Engineer's warnings about a "slightly misaligned" jump drive usually ends up as a permanent resident of a cold, dark corner of the void.

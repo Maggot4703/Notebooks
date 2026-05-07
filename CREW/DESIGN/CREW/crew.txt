@@ -1,9 +1,1 @@
-Captain
-Chief
-Doctor
-Gunner
-Navigator
-Owner
-Pilot
-Tech
-Trader
+Captain, Chief, Doctor, Gunner, Navigator, Owner, Pilot, Tech, Trader, 
