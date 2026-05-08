@@ -7,6 +7,7 @@ Projects are organized in UPPERCASE folders so each area can run independently.
 ## Workspace Layout
 
 - `AI/` - AI notes, workflows, and project bootstrap automation
+- `BACKUP/` - shared LAN backup tooling for `me@home` and `me@p48`
 - `BASH/` - shell command exploration and docs
 - `CALIBRE/` - Calibre command and notebook workflows
 - `CARDCUTTER/` - card-cutter tools and notebook assets
@@ -50,6 +51,7 @@ uv run jupyter lab
 Examples:
 
 ```bash
+cd /home/me/Notebooks/BACKUP && uv sync && uv run notebooks-backup --help
 cd /home/me/Notebooks/AI && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/BASH && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/CALIBRE && uv sync && uv run jupyter lab
@@ -129,6 +131,28 @@ bash links-ipynb.sh
 - Use one virtual environment per project/workspace.
 - Prefer `uv` over mixed package managers in the same workspace.
 - Treat generated command docs and outputs as generated artifacts.
+
+## Backup Workflow
+
+Use the backup workspace to manage the shared restic repository for `me@home` and `me@p48`.
+
+```bash
+cd /home/me/Notebooks/BACKUP
+uv sync
+uv run notebooks-backup list-drives --host me@home
+uv run notebooks-backup select-drive --host me@home --index 1
+uv run notebooks-backup init-repo
+uv run notebooks-backup install-systemd
+uv run notebooks-backup backup
+```
+
+The drive selection is remembered in `~/.config/notebooks-backup/config.json`, the
+restic password is stored in `~/.config/notebooks-backup/restic-password.txt`, and
+restore is done with:
+
+```bash
+uv run notebooks-backup restore --host-name me@home --target ~/restic-restore
+```
 
 ## Troubleshooting
 
