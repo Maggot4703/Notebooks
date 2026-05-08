@@ -67,6 +67,19 @@ body[bgcolor], table[bgcolor], tr[bgcolor], td[bgcolor], th[bgcolor],
 HTML_SHELL_STYLESHEET = '<link rel="stylesheet" href="/0101-shell.css">\n'
 HTML_PERSIST_SCRIPT = '<script src="/persist.js"></script>\n'
 HTML_SHELL_SCRIPT = '<script src="/0101-shell.js"></script>\n'
+LEGACY_ASSET_ALIASES = {
+    "/key_files/w3.js.download": "0101_files/w3.js.download",
+}
+IMAGE_FALLBACK_EXTENSIONS = (
+    ".gif",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".webp",
+    ".bmp",
+    ".svg",
+)
+TRAVELLER_SCRIPTS_STUB = b"window.TravellerScripts = window.TravellerScripts || {};\n"
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -77,10 +90,13 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().end_headers()
 
     def do_HEAD(self):
-        if urlsplit(self.path).path == "/favicon.ico":
+        request_path = urlsplit(self.path).path
+        if request_path == "/favicon.ico":
             self.send_response(204)
             self.send_header("Content-Length", "0")
             self.end_headers()
+            return
+        if self._serve_legacy_asset(request_path, head_only=True):
             return
         super().do_HEAD()
 
@@ -209,6 +225,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         print("Ignoring /api/shutdown; server lifetime is heartbeat-controlled.")
 
     def do_GET(self):
+        request_path = urlsplit(self.path).path
         if self.path.rstrip("/") == "/api/ping":
             self._touch_ping()
             self.send_response(204)
@@ -218,7 +235,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if self.path.rstrip("/") == "/api/shutdown":
             self._shutdown_response()
             return
-        if urlsplit(self.path).path == "/favicon.ico":
+        if request_path == "/favicon.ico":
             self.send_response(204)
             self.send_header("Content-Length", "0")
             self.end_headers()
@@ -226,6 +243,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         key = self._api_key()
         if key is None:
             self._touch_ping()
+            if self._serve_legacy_asset(request_path):
+                return
             if self._serve_html_with_shell():
                 return
             super().do_GET()
@@ -298,6 +317,58 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.send_header("Content-Length", str(len(data)))
         self.end_headers()
         self.wfile.write(data)
+        return True
+
+    def _serve_legacy_asset(self, request_path, head_only=False):
+        alias_path = LEGACY_ASSET_ALIASES.get(request_path)
+        if alias_path:
+            target_path = os.path.join(WEB_ROOT, alias_path)
+            if os.path.isfile(target_path):
+                return self._serve_binary_file(target_path, head_only=head_only)
+
+        if request_path == "/TravellerScripts.js":
+            return self._serve_bytes(
+                TRAVELLER_SCRIPTS_STUB,
+                "application/javascript; charset=utf-8",
+                head_only=head_only,
+            )
+
+        translated_path = self.translate_path(request_path)
+        if os.path.exists(translated_path):
+            return False
+
+        if request_path.lower().endswith(IMAGE_FALLBACK_EXTENSIONS):
+            placeholder_path = os.path.join(WEB_ROOT, "missing-asset.svg")
+            if os.path.isfile(placeholder_path):
+                return self._serve_binary_file(
+                    placeholder_path,
+                    content_type="image/svg+xml",
+                    head_only=head_only,
+                )
+
+        return False
+
+    def _serve_binary_file(self, file_path, content_type=None, head_only=False):
+        try:
+            with open(file_path, "rb") as handle:
+                data = handle.read()
+        except OSError:
+            self.send_error(404)
+            return True
+
+        return self._serve_bytes(
+            data,
+            content_type or self.guess_type(file_path),
+            head_only=head_only,
+        )
+
+    def _serve_bytes(self, data, content_type, head_only=False):
+        self.send_response(200)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Length", str(len(data)))
+        self.end_headers()
+        if not head_only:
+            self.wfile.write(data)
         return True
 
     @staticmethod
