@@ -1,1 +1,2 @@
-/home/me/Notebooks/CREW/DESIGN/PLANS/training_log.csv
+person_name,training_name,completed_on,expires_on,status,notes
+Example User,Speech Settings walkthrough,2026-05-08,,reference,Example row for future design use

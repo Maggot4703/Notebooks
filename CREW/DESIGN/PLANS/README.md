@@ -14,12 +14,19 @@ Production behavior still lives in `../Crew/`.
 - [crew_gui_workflow_and_conversation_log.md](crew_gui_workflow_and_conversation_log.md) - current GUI workflow summary and design notes
 - [code_improvement_and_testing_plan.md](code_improvement_and_testing_plan.md) - code quality and testing plan
 - [crew_test_coverage_and_gaps.md](crew_test_coverage_and_gaps.md) - testing gaps and observations
+- [crew_template_v2.md](crew_template_v2.md) - role and readiness planning template
+- [skills_db.csv](skills_db.csv) - lightweight design-time skill mapping template
+- [training_log.csv](training_log.csv) - lightweight design-time readiness/training template
 
 ## Notes on historical artifacts
 
 Some files here are historical snapshots, dated exports, or planning scratch files.
 Examples include dated CSVs, logs, and `*_code.py` sketches. Keep them for reference,
 but do not treat them as the current production workflow without re-verifying them.
+
+The `crew_template_v2.md`, `skills_db.csv`, and `training_log.csv` files are
+maintained as simple design/reference artifacts so linked plan files under
+`CREW/Crew/PLANS/` resolve to something useful instead of stale or broken targets.
 
 ## Validation references
 
