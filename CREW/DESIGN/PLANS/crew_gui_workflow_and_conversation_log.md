@@ -2,44 +2,58 @@
 
 ## GUI Workflow Overview
 
-The Crew Manager GUI (gui.py) provides a user-friendly interface for managing crew assignments, validating readiness, and automating key processes. Here’s how the workflow typically operates:
+This summary reflects the current production Crew Manager app in `CREW/Crew/gui.py`.
 
-### 1. Application Startup
-- The GUI initializes with a themed window and menu bar.
-- Auto-imports all .py modules in the workspace for extensibility.
-- Loads configuration, state, and any default data files.
+### 1. Application startup
 
-### 2. Main Features
-- **Menu Bar:** File (Open, Save, Exit), Edit (Find, Clear Filter), View (Refresh, Theme Toggle, Column Visibility).
-- **Widgets:** Data tables, filter/search, assignment controls, status bar, and more.
-- **TTS Integration:** If available, enables text-to-speech for accessibility.
-- **Script Runner:** Allows running scripts from the scripts/ directory for automation.
+- `Crew.py` launches the main application and restores saved window state.
+- The GUI loads configuration, restores layout choices, and attempts to load default data such as `data/npcs.csv`.
+- Status messages report progress through startup and auto-import behavior.
 
-### 3. Crew Assignment & Validation
-- Users can load crew data (CSV/Excel), view/edit assignments, and trigger validation routines.
-- Validation logic checks skills, certifications, and readiness (training, health, etc.).
-- Results and exceptions are logged and displayed in the GUI.
+### 2. Main working surfaces
 
-### 4. Logging & Status
-- All actions and errors are logged to crew_app.log.
-- Status bar provides real-time feedback on operations and import results.
+- **Data view:** tabular browsing, filtering, sorting, and column visibility changes
+- **Details panel:** selected-record details and text content
+- **Scripts menu:** access to script-based automation from the project
+- **Chat surfaces:** Crew Chatbot and Crew Multi-User Chat workflows
+- **Speech features:** live TTS reads selected text, status, details, and test phrases
 
-### 5. Automation
-- Background worker thread handles long-running or automated tasks without freezing the GUI.
-- Scripts can be run for batch operations or custom automation.
+### 3. Help and documentation flow
+
+- The Help menu now links to the local project README, docs index, ReadMine guide, and ReadMine output notes.
+- This makes `CREW/Crew/README.md`, `CREW/docs/fetchdocs_readmine.md`, and `CREW/Crew/Reading Now/README.md` part of the normal support path instead of side docs.
+
+### 4. Speech settings and TTS behavior
+
+- Speech Settings is a current, user-facing configuration dialog for TTS and STT settings.
+- Live TTS uses a short lead-in pause before playback so the first words are easier to catch.
+- The dialog now includes voice, speed, volume, lead-in, and speech-recognition controls.
+
+### 5. ReadMine workflow touchpoints
+
+- `ReadMine.py` is the production documentation-fetch implementation.
+- Current production output is beginner-only by default, with stale intermediate and advanced directories pruned during refresh.
+- The generated output tree under `CREW/Crew/Reading Now/` has its own README and is referenced by the GUI help/docs flow.
+
+### 6. Logging and status
+
+- The app logs startup and operational status through the normal logging flow.
+- Status-bar updates are an important part of the user workflow and should be preserved in future design plans.
 
 ---
 
-## Conversation Log
+## Conversation log
 
 ### 2026-04-13
-- User requested a full breakdown of the CREW system folder and design structure.
-- Explored all DESIGN subfolders and files, including AGENTS, JOBS, PLANS, RULES, SKILLS, and NOTEBOOKS.
-- Provided expanded explanations of the crew assignment plan, referenced files, and validation logic.
-- Delivered a sample end-to-end automation/validation workflow for crew assignment and readiness check.
-- Supplied a real code example from Crew.py and gui.py, showing how automation, validation, and logging are implemented in both CLI and GUI workflows.
-- Documented the GUI workflow, including menu structure, assignment/validation process, and logging/automation features.
+
+- Reviewed the DESIGN folder structure and documented how AGENTS, JOBS, PLANS, RULES, SKILLS, and NOTEBOOKS connect.
+- Captured a high-level Crew GUI workflow for onboarding and design reference.
+
+### 2026-05-08 sync note
+
+- Updated this summary to match the current production Crew app.
+- Added the current Help menu docs flow, Speech Settings behavior, TTS lead-in note, and ReadMine beginner-only output model.
 
 ---
 
-This log and workflow summary can be used as a reference for future development, onboarding, or troubleshooting in the CREW project.
+Use this file as a design reference. Re-verify it when major GUI workflow changes land in `CREW/Crew/gui.py`.

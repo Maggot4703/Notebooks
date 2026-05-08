@@ -3,23 +3,30 @@
 PLAN: [Web Plan Name]
 
 Objective:
-- [Objective]
+- [What user-facing web behavior should change]
+
+Target Surface:
+- [Site, page, endpoint, or server path]
+
+Source of Truth:
+- [Production path or design path]
 
 Steps:
-1. [Step 1]
-2. [Step 2]
+1. [Identify the affected page, endpoint, or flow]
+2. [Describe the implementation change]
+3. [Describe how the result will be checked]
 
 Inputs:
-- [Input 1]
+- [HTML, server, API, or design inputs]
 
 Outputs:
-- [Output 1]
+- [Updated page, endpoint behavior, docs, or saved output]
 
 Responsible Agents:
 - [Agent 1]
 
 Notes:
-- [Notes]
+- [Lifecycle, persistence, docs, or rollout notes]
 
 Automation & Documentation:
-- [Automation steps, scripts, logging]
+- [Scripts, logs, or linked docs involved]

@@ -1,62 +1,32 @@
-
-
-PLAN: Crew Assignment
+PLAN: Crew Assignment and Readiness Review
 
 Objective:
-- Assign agents to crew roles and ensure readiness for operations.
+- Document how assignment and readiness work should map onto the current production Crew Manager app.
 
 Steps:
-1. Identify crew requirements for the mission.
-2. Select agents based on required skills (see SKILLS/assignment_validation.txt).
-3. Assign agents to specific roles and confirm acceptance.
-4. Validate crew readiness (training, equipment, health) using SKILLS/readiness_review.txt.
-5. Log assignments and status in NOTEBOOKS/notebooks.txt.
+1. Define the roster or NPC dataset to load into `CREW/Crew/`.
+2. Review which columns or records drive assignment, filtering, or readiness decisions.
+3. Use the GUI or supporting scripts to inspect, group, and validate the data.
+4. Record any missing requirements, mismatches, or follow-up actions in DESIGN notes or NOTEBOOKS.
+5. Update linked plans or skills if the workflow changes.
 
 Inputs:
-- Mission requirements document
-- Agent skill profiles (skills_db.csv)
-- Training log (training_log.csv)
-- Crew template (crew_template_v2.md)
+- Crew or NPC CSV/Excel source files
+- Current production app behavior in `CREW/Crew/Crew.py` and `CREW/Crew/gui.py`
+- Skill and readiness process notes in `DESIGN/SKILLS/`
+- Relevant design notes in `DESIGN/PLANS/`
 
 Outputs:
-- Updated crew roster (crew_roster_0426.csv)
-- Readiness report (readiness_report_0426.md)
-- Assignment notifications (assignment_emails.log)
+- Updated assignment notes or workflow decisions
+- Validation findings captured in `NOTEBOOKS/notebooks.txt` or a linked plan
+- Follow-up tasks for GUI, scripts, or documentation
 
 Responsible Agents:
 - Crew Manager Agent
 - Designer Agent
+- Updater Agent
 
 Notes:
-- Review assignments weekly or after any major event.
-- Follow RULES/always.txt, RULES/never.txt, RULES/sometimes.txt.
-
-Automation & Documentation:
-- Automate validation and readiness review using scripts and referenced templates.
-- Document all steps and outcomes in NOTEBOOKS/notebooks.txt.
-
----
-
-PLAN TEMPLATE
-
-PLAN: [Plan Name]
-
-Objective:
-- [Brief description of what this plan aims to achieve.]
-
-Steps:
-1. [First step in the process.]
-2. [Second step.]
-3. [Continue as needed.]
-
-Inputs:
-- [List any required inputs, files, or prerequisites.]
-
-Outputs:
-- [List expected outputs or results.]
-
-Responsible Agents:
-- [List agents or roles responsible for executing this plan.]
-
-Notes:
-- [Any additional notes or considerations.]
+- Do not hard-code dated export names as canonical outputs.
+- Treat this as a design plan unless a task explicitly asks for runtime automation changes.
+- Cross-check any workflow claims against the current production docs and GUI behavior.

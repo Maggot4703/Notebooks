@@ -2,43 +2,44 @@
 
 ## Commands
 
-Work from `xCrew/` for the runnable application code.
+Work from `../Crew/` for the production Crew Manager application.
 
 ```bash
-cd xCrew
-pip install -r requirements.txt
-python Crew.py --help
-python run_gui.py
-python -m pytest
-python -m pytest tests/test_basic.py
-python -m pytest tests/test_basic.py::TestBasicApp::test_module_imports
+cd /home/me/Notebooks/CREW/Crew
+uv sync
+uv run python Crew.py
+uv run python gui.py
+pytest
+pytest tests/test_basic.py
+pytest tests/test_basic.py::TestBasicApp::test_module_imports
 flake8 .
 black .
-pre-commit run --all-files
 ```
 
-For display-backed GUI checks:
+For ReadMine-focused work, broad `pytest` collection can still be interrupted by the
+current package import issue in `CREW/Crew/__init__.py`. When that happens, use the
+targeted direct path instead:
 
 ```bash
-cd xCrew
-bash run_gui_tests.sh
+cd /home/me/Notebooks/CREW/Crew
+python -m py_compile ReadMine.py tests/test_readmine_features.py tests/test_readmine_progress.py
+python tests/test_readmine_features.py
+python tests/test_readmine_progress.py
 ```
 
 ## Architecture
 
-- `xCrew/` is the actual Crew Manager application. `Crew.py` is the compatibility-critical entry point: it supports CLI subcommands and also acts as a GUI launcher.
-- `gui.py` contains the large `CrewGUI` Tkinter application. `run_gui.py` is a thin wrapper, and `gui_main_function.py` is the canonical GUI startup path.
-- Data and persistence are split across helper modules: `data_manager.py` owns loaded table state plus filter/sort behavior, `database_manager.py` manages SQLite-backed crew/group storage, and `config.py` + `state_manager.py` persist window geometry, column widths, visibility, and other settings through `config.json`.
-- `ui_manager.py` and `event_manager.py` are extracted support modules for layout and bindings, but they still operate by reading and mutating attributes on the main `CrewGUI` instance.
-- `message_router.py`, `audio_manager.py`, `tts_manager.py`, and related modules layer chat, recording, and TTS features onto the same GUI rather than living in a separate service boundary.
-- The top-level `AGENTS/`, `RULES/`, `SKILLS/`, `PLANS/`, `JOBS/`, `NOTEBOOKS/`, and `automation/` folders are design/process assets. Edit those when the task is about workflow or documentation; edit `xCrew/` when the task is about application behavior.
+- `CREW/Crew/` is the production Crew Manager application. Treat it as the source of truth for runtime behavior, docs, and tests.
+- `Crew.py` is the main entry point. `gui.py` contains the main Tk interface, while helper modules such as `data_manager.py`, `database_manager.py`, `config.py`, `state_manager.py`, and `ui_manager.py` support persistence and layout behavior.
+- `ReadMine.py` is the production documentation-fetch workflow. It now defaults to beginner-only output under `CREW/Crew/Reading Now/`.
+- `CREW/docs/` and `CREW/Crew/docs/` hold the current documentation indexes and build notes. The GUI Help menu now links to these local docs.
+- `DESIGN/` is for design assets, plans, templates, and workflow notes. Update it when documenting process or architecture. Do not treat `DESIGN/xCrew/` as part of the active app.
+- `DESIGN/xCrew/` is not used. Keep production changes in `CREW/Crew/`. Treat other backup-style trees as non-authoritative unless a task explicitly targets them.
 
 ## Conventions
 
-- Treat `xCrew/Crew.py` and `xCrew/gui.py` as behavior-preservation hotspots. Existing instructions in `xCrew/.instructions.md` and `xCrew/.github/instructions/Crew.instructions.md` favor incremental modularization, reuse of existing code, and avoiding feature or UI regressions.
-- Keep the current flat import style inside `xCrew/` (`from config import Config`, `from database_manager import DatabaseManager`, etc.). Tests rely on `xCrew/tests/conftest.py` adding the project root to `sys.path`, so package-relative import rewrites ripple through many files.
-- Default pytest collection is defined in `xCrew/setup.cfg` and only targets `xCrew/tests/`. There are also top-level `xCrew/test_*.py` files, but many of those are standalone `unittest` or utility scripts and are not part of the default pytest run.
-- Formatting and linting conventions come from `xCrew/setup.cfg` and `xCrew/.pre-commit-config.yaml`: Black-style 88 columns, Flake8 with `E501` and `E203` ignored, and isort using the Black profile.
-- GUI state restoration is attribute-driven: helper managers expect specific `CrewGUI` fields such as `data_table`, `column_visibility`, and `_saved_column_widths` to exist. Preserve those contracts when refactoring.
-- `xCrew/gui.py` auto-imports workspace Python files while explicitly skipping scripts, tests, and side-effect-heavy modules, and it caches results in `.auto_import_cache.json`. Be careful when changing discovery or import behavior.
-- The design folders cross-reference each other: plans point at skills and jobs, rules constrain implementation, and automation scripts are expected to log process outcomes under `NOTEBOOKS/`.
+- Prefer `uv` for the production app workflow in `CREW/Crew/`.
+- Preserve the flat import style used by the runtime code (`from config import Config`, `import cli`, etc.).
+- Follow `CREW/Crew/setup.cfg` for pytest, flake8, and Black conventions.
+- When documenting Crew behavior, prefer current production surfaces: local docs, Help menu entries, Speech Settings, ReadMine beginner-only output, and the current TTS behavior.
+- Keep DESIGN documents explicit about whether they describe production behavior, a future plan, or a historical snapshot.

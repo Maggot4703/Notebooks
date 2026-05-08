@@ -3,17 +3,24 @@
 SKILL: [Skill Name]
 
 Purpose:
-- [Purpose]
+- [What this skill accomplishes]
+
+Use When:
+- [When to apply it]
+
+Inputs / Preconditions:
+- [Input 1]
 
 Process:
 1. [Step 1]
 2. [Step 2]
-
-Inputs:
-- [Input 1]
+3. [Validation or follow-up step]
 
 Outputs:
 - [Output 1]
 
+References:
+- [Production file, design plan, or related doc]
+
 Error Handling:
-- [Error handling steps]
+- [How to surface or record failures]
