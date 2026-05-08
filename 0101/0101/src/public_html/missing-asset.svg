@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160">
+  <rect width="320" height="160" fill="#161b22"/>
+  <rect x="8" y="8" width="304" height="144" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <path d="M64 110l38-42 26 30 34-40 42 52H64z" fill="#30363d"/>
+  <circle cx="118" cy="58" r="12" fill="#58a6ff"/>
+  <text x="160" y="70" fill="#f0f6fc" font-family="Arial, Helvetica, sans-serif" font-size="20" text-anchor="middle">
+    Missing local asset
+  </text>
+  <text x="160" y="98" fill="#8b949e" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle">
+    This exported file is not present in 0101
+  </text>
+</svg>

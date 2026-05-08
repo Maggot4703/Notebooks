@@ -10,12 +10,11 @@
     <meta http-equiv="Cache-Control" content="no-cache" />
     <meta http-equiv="Expires" content="Sat, 18 Sep 2021 12:13:54 BST" />
     <link rel="stylesheet" href="./0101_files/w3.css">
+    <link rel="stylesheet" href="0101-shell.css">
     <!-- Set CSS -->
     <style>
       body {
-        background-color: white;
-        color: black;
-        font-size: 12px;
+        font-size: 14px;
       }
       h1 {
         background-color: black;
@@ -39,7 +38,7 @@
   </head>
   <body onbeforeunload="return myFunction()">
     <!-- Set Location -->
-    <div class="w3-center">
+    <div class="w3-center tm-control-bar">
       <a id="demo" onclick="LinkClick()" href="0-Stellar.html">Stellar Data</a>
       <select id="Sector" name="Sector" onchange="SecChange()">
         <option>Spinward Marches</option>
@@ -187,7 +186,7 @@
       }
     </script>    
     <!-- Main Map -->
-    <div class="w3-center">
+    <div class="w3-center tm-main-map">
       <img id="pic0" src="./JPG/0101-Maps.jpg" usemap="#Maps" onclick="picClickMain()" width="600" height="600" alt="eh?">
       <map accesskey="h" id="hexnum" name="Maps">
         <!-- SUBSECTOR MAP -->
@@ -203,7 +202,7 @@
       </map>
     </div>
     <!-- Offensive Capability -->
-    <div class="w3-row">
+    <div class="w3-row tm-card-grid">
       <div class="w3-col s4 w3-center">
         <a id="sdb" onclick="LinkClick()" href="1-Scout.html">Scouts/SDBs</a>
         <img id="pic1" src="./JPG/0101-SDBs.jpg" width="200" height="100" alt="eh?" onclick="picClick('sdb')">
@@ -218,7 +217,7 @@
       </div>
     </div>
     <!-- Defensive Capability -->
-    <div class="w3-row">
+    <div class="w3-row tm-card-grid">
       <div class="w3-col s4 w3-center">
         <a id="defence" onclick="LinkClick(id)" href="4-Army.html">Army/Defences</a>
         <img id="pic4" src="./JPG/0101-Defences.jpg" width="200" height="100" alt="eh?" onclick="picClick('defence')">
@@ -233,7 +232,7 @@
       </div>
     </div>
     <!-- Commerce Capability -->
-    <div class="w3-row">
+    <div class="w3-row tm-card-grid">
       <div class="w3-col s4 w3-center">
         <a id="giant" onclick="LinkClick(id)" href="7-Giants.html">Merchant/Giants</a>
         <img id="pic7" src="./JPG/0101-Gas Giants.jpg" width="200" height="100" alt="eh?" onclick="picClick('giant')">
@@ -248,7 +247,7 @@
       </div>
     </div>
     <!-- Commerce Capability -->
-    <div class="w3-row">
+    <div class="w3-row tm-card-grid">
       <div class="w3-col s4 w3-center">
         <a id="giant1a" onclick="LinkClick(id)" href="10-Invader.html">Merchant/Giants</a>
         <img id="pic7a" src="./JPG/0101-Gas Giants.jpg" width="200" height="100" alt="eh?" onclick="picClick('giant')">
@@ -264,25 +263,31 @@
     </div>
     <!-- picClickMain -->
     <script>
+      function setSelectionHighlight(element) {
+        Array.prototype.forEach.call(
+          document.querySelectorAll(".tm-selection-highlight"),
+          function(node) {
+            node.classList.remove("tm-selection-highlight");
+          }
+        );
+        if (element) {
+          element.classList.add("tm-selection-highlight");
+        }
+        document.body.style.backgroundColor = "";
+      }
+
       function picClickMain() {
         console.log("picClickMain()");
-        var x = document.getElementById("demo");
-        //console.log("x = " + x);
-        col = "white";
-        document.body.style.backgroundColor = col;
-        console.log("col = " + col);
+        var x = document.getElementById("pic0");
+        setSelectionHighlight(x);
         console.log("x.toString() = " + x.toString());
         console.log("SHOW <SEC><SUB><SYS>jta4All3.html");
-        
-        
-        
       }
     </script>
     <!-- Counter Clicks -->
     <script>
       function picClick(s) {
         var x = document.getElementById(s);
-        col = "white";
         console.log("picClick(" + s + ")");
         switch (s) {
           case "":
@@ -292,89 +297,74 @@
           case "main":
           {
             x = document.getElementById("demo");
-            col = "white";
             break;
           }
 
           case "sdb":
           {
             x = document.getElementById("sdb");
-            col = "yellow";
             break;
           }
           case "ron":
           {
             x = document.getElementById("ron");
-            col = "cyan";
             break;
           }
           case "troop":
           {
             x = document.getElementById("troop");
-            col = "red";
             break;
           }
 
           case "defence":
           {
             x = document.getElementById("defence");
-            col = "green";
             break;
           }
           case "population":
           {
             x = document.getElementById("population");
-            col = "white";
             break;
           }
           case "belt":
           {
             x = document.getElementById("belt");
-            col = "grey";
             break;
           }
 
           case "giant":
           {
             x = document.getElementById("giant");
-            col = "dark grey";
             break;
           }
           case "world":
           {
             x = document.getElementById("world");
-            col = "white";
             break;
           }
           case "worlds":
           {
             x = document.getElementById("worlds");
-            col = "dark grey";
             break;
           }
 
           case "giant1":
           {
             x = document.getElementById("giant");
-            col = "dark grey";
             break;
           }
           case "world1":
           {
             x = document.getElementById("world");
-            col = "white";
             break;
           }
           case "worlds1":
           {
             x = document.getElementById("worlds");
-            col = "dark grey";
             break;
           }
         }
-        //console.log("  " + "x = " + x);
-        console.log("" + "col = " + col);
-        document.body.style.backgroundColor = col;
+        setSelectionHighlight(x);
       }
     </script> 
     <!-- Sector Change -->
@@ -478,6 +468,7 @@
         console.log("SysChange()");
         sys = x;
         console.log("sys = " + x);
+        document.title = sys + " • 0101";
         save();
         load();
         save();
@@ -559,6 +550,8 @@
         // <a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Info.txt" target="_blank">Info</a>
       }
     </script>
+    <script src="persist.js"></script>
+    <script src="0101-shell.js"></script>
     <!-- -->
   </body>
 </html>
