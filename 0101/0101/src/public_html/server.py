@@ -69,6 +69,7 @@ HTML_PERSIST_SCRIPT = '<script src="/persist.js"></script>\n'
 HTML_SHELL_SCRIPT = '<script src="/0101-shell.js"></script>\n'
 LEGACY_ASSET_ALIASES = {
     "/key_files/w3.js.download": "0101_files/w3.js.download",
+    "/PDFs/SM/0101.html": "0101.html",
 }
 IMAGE_FALLBACK_EXTENSIONS = (
     ".gif",
