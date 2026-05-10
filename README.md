@@ -12,6 +12,7 @@ Projects are organized in UPPERCASE folders so each area can run independently.
 - `CALIBRE/` - Calibre command and notebook workflows
 - `CARDCUTTER/` - card-cutter tools and notebook assets
 - `CREW/` - Crew-related notebooks and structured Python project
+- `OPENWEBUI/` - host mapping for Open WebUI, Crew.py, and 0101.html
 - `JUPYTERLAB/` - JupyterLab exploration
 - `PYTHON/` - general Python learning notebooks
 
@@ -55,6 +56,7 @@ cd /home/me/Notebooks/BACKUP && uv sync && uv run notebooks-backup --help
 cd /home/me/Notebooks/AI && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/BASH && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/CALIBRE && uv sync && uv run jupyter lab
+cd /home/me/Notebooks/OPENWEBUI && uv sync && ./openwebui-host.sh me@home
 cd /home/me/Notebooks/PYTHON && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/JUPYTERLAB && uv sync && uv run jupyter lab
 ```
