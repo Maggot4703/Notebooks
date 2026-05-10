@@ -34,9 +34,9 @@ uv sync
 - Local: http://127.0.0.1:3000
 - Network: http://home.Home:3000 (if mDNS available)
 
-**me@p48 0101 web app:**
-- Direct IP: http://192.168.0.8:8001/0101.html
-- Hostname: http://p48:8001/0101.html (requires p48 in /etc/hosts)
+**me@p48 0101 web app (port 8080):**
+- Direct IP: http://192.168.0.8:8080/0101.html
+- Hostname: http://p48:8080/0101.html (requires p48 in /etc/hosts)
   
 Add to `/etc/hosts` on any machine to access by hostname:
 ```
