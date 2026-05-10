@@ -57,6 +57,7 @@ cd /home/me/Notebooks/AI && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/BASH && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/CALIBRE && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/OPENWEBUI && uv sync && ./openwebui-host.sh me@home
+cd /home/me/Notebooks/OPENWEBUI && uv sync && ./openwebui-host.sh me@p48
 cd /home/me/Notebooks/PYTHON && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/JUPYTERLAB && uv sync && uv run jupyter lab
 ```

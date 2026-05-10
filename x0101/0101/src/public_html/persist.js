@@ -22,10 +22,6 @@
 
   var DEBOUNCE_MS = 800;
 
-  // Tracks the last time an internal (same-origin) link was clicked.
-  // Used by the pagehide handler to distinguish internal navigation from tab close.
-  var _internalNavTime = 0;
-
   // --- Helpers ---------------------------------------------------------------
 
   function apiUrl(key) {
@@ -63,41 +59,45 @@
     };
   }
 
+  function initTextarea(el) {
+    if (!el || el.getAttribute('data-persist-initialized') === 'true') {
+      return;
+    }
+    el.setAttribute('data-persist-initialized', 'true');
+    loadTextarea(el);
+    el.addEventListener('input', debounce(function () { saveTextarea(el); }, DEBOUNCE_MS));
+  }
+
+  function initAll(root) {
+    var scope = root || document;
+    scope.querySelectorAll('textarea[data-persist]').forEach(initTextarea);
+  }
+
+  function reloadTextarea(el) {
+    if (!el) {
+      return;
+    }
+    el.setAttribute('data-persist-initialized', 'false');
+    el.value = '';
+    initTextarea(el);
+  }
+
   // --- Wire up all [data-persist] textareas ----------------------------------
 
   document.addEventListener('DOMContentLoaded', function () {
-    var textareas = document.querySelectorAll('textarea[data-persist]');
-
-    textareas.forEach(function (el) {
-      loadTextarea(el);
-      el.addEventListener('input', debounce(function () { saveTextarea(el); }, DEBOUNCE_MS));
-    });
+    initAll(document);
 
     // Heartbeat: keep server watchdog alive while any page is open
     setInterval(function () { fetch('/api/ping').catch(function () {}); }, 5000);
-
-    // Track internal navigation so pagehide can tell it apart from tab close.
-    document.addEventListener('click', function (e) {
-      var a = e.target.closest('a[href]');
-      if (!a) return;
-      var href = a.getAttribute('href');
-      // Relative paths and same-origin absolute paths count as internal.
-      if (!href || href.startsWith('#')) return;
-      try {
-        var url = new URL(href, window.location.href);
-        if (url.origin === window.location.origin) {
-          _internalNavTime = Date.now();
-        }
-      } catch (err) { /* malformed href — ignore */ }
-    });
   });
 
-  // Flush all on tab close or navigation; also signal server to shut down on tab/browser close.
+  // Flush all on tab close or navigation. Server lifetime is controlled by heartbeat.
   window.addEventListener('pagehide', function () {
     document.querySelectorAll('textarea[data-persist]').forEach(beaconTextarea);
-    // If an internal link was clicked within the last 3 s this is page navigation — don't shut down.
-    if (Date.now() - _internalNavTime < 3000) return;
-    navigator.sendBeacon('/api/shutdown');
   });
+
+  window.tmPersistInit = initTextarea;
+  window.tmPersistInitAll = initAll;
+  window.tmPersistReload = reloadTextarea;
 
 }());

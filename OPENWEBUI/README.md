@@ -2,8 +2,48 @@
 
 This workspace records the local Open WebUI setup for the two main machines:
 
-- `me@home` -> `CREW/Crew/Crew.py`
-- `me@p48` -> `0101/0101/src/public_html/0101.html`
+- **me@home** (this machine) → `CREW/Crew/Crew.py` → Open WebUI at http://127.0.0.1:3000
+- **me@p48** (192.168.0.8) → `0101/0101/src/public_html/0101.html` → http://p48:8001/0101.html
+
+## Quick Start
+
+**On me@home (this machine):**
+```bash
+cd /home/me/Notebooks/OPENWEBUI
+uv sync
+./openwebui-serve.sh      # Start Open WebUI server
+```
+
+**On me@p48 (remote machine):**
+```bash
+cd /home/me/Notebooks/0101/0101/src/public_html
+uv sync
+uv run python server.py   # Start 0101 web server (port 8001)
+```
+
+Or use the auto-launcher:
+```bash
+cd /home/me/Notebooks/OPENWEBUI
+uv sync
+./openwebui-host.sh me@home   # or me@p48
+```
+
+## Access from Browser
+
+**me@home Open WebUI:**
+- Local: http://127.0.0.1:3000
+- Network: http://home.Home:3000 (if mDNS available)
+
+**me@p48 0101 web app:**
+- Direct IP: http://192.168.0.8:8001/0101.html
+- Hostname: http://p48:8001/0101.html (requires p48 in /etc/hosts)
+  
+Add to `/etc/hosts` on any machine to access by hostname:
+```
+192.168.0.8  p48  p48.Home
+```
+
+## Ollama Model
 
 Use a small shared Ollama model that works on Raspberry Pi 4B and Pi 500 class hardware:
 

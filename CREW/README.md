@@ -16,6 +16,7 @@ See [docs/README.md](docs/README.md) for a full index of user and developer docu
 - `src/crewai_skill_demo/demo.py` shows how to run the skill locally without wiring a full crew yet
 - `.env.example` gives you a starting point for real crew runs later
 
+Open WebUI is the browser companion for this workspace on `me@home`; launch it from the sibling `OPENWEBUI/` workspace with `./openwebui-host.sh me@home`.
 
 ## Running the Crew Application
 

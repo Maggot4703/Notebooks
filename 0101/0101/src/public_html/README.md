@@ -2,6 +2,14 @@
  
 
 
+Launch the matching Open WebUI companion from the sibling workspace:
+
+```bash
+cd /home/me/Notebooks/OPENWEBUI
+uv sync
+./openwebui-host.sh me@p48
+```
+
 ## Startup Code
 
 ```bash

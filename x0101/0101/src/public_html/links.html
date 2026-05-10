@@ -1,62 +1,264 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="en">
   <head>
-    <title>Traveller links</title>
+    <title>0101 Links</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="0101-shell.css">
+    <style>
+      .links-page {
+        width: min(1180px, calc(100% - 1rem));
+        margin: 0 auto 2rem;
+        display: grid;
+        gap: 1rem;
+      }
+
+      .links-hero {
+        position: relative;
+        overflow: hidden;
+        padding: 1.35rem;
+        border: 1px solid var(--tm-border);
+        border-radius: 20px;
+        background:
+          radial-gradient(circle at top right, rgba(88, 166, 255, 0.2), transparent 30%),
+          linear-gradient(145deg, rgba(22, 27, 34, 0.98), rgba(33, 38, 45, 0.96));
+        box-shadow: var(--tm-shadow);
+      }
+
+      .links-hero h1 {
+        margin: 0 0 0.45rem;
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+      }
+
+      .links-hero p {
+        max-width: 72ch;
+        margin: 0 0 1rem;
+        color: var(--tm-muted);
+      }
+
+      .links-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1rem;
+      }
+
+      .links-card {
+        padding: 1rem;
+        border: 1px solid var(--tm-border);
+        border-radius: 18px;
+        background:
+          linear-gradient(180deg, rgba(22, 27, 34, 0.98), rgba(18, 22, 28, 0.98));
+        box-shadow: var(--tm-shadow);
+        transition:
+          transform 0.18s ease,
+          border-color 0.18s ease,
+          box-shadow 0.18s ease;
+      }
+
+      .links-card:hover,
+      .links-card:focus-within {
+        transform: translateY(-2px);
+        border-color: rgba(88, 166, 255, 0.55);
+        box-shadow: 0 18px 38px rgba(0, 0, 0, 0.34);
+      }
+
+      .links-card h1,
+      .links-card h2 {
+        margin-top: 0;
+        margin-bottom: 0.45rem;
+      }
+
+      .links-card h2 {
+        font-size: 1.15rem;
+      }
+
+      .links-card p {
+        margin-top: 0;
+        margin-bottom: 0.9rem;
+        color: var(--tm-muted);
+      }
+
+      .links-card ul {
+        margin: 0;
+        padding-left: 1.1rem;
+      }
+
+      .links-card li + li {
+        margin-top: 0.45rem;
+      }
+
+      .links-card a {
+        text-decoration: none;
+      }
+
+      .links-card a:hover,
+      .links-card a:focus {
+        text-decoration: underline;
+      }
+
+      .links-pill-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+      }
+
+      .links-pill-list a {
+        display: inline-block;
+        padding: 0.5rem 0.85rem;
+        border: 1px solid var(--tm-border);
+        border-radius: 999px;
+        background: var(--tm-panel-alt);
+        text-decoration: none;
+        transition:
+          transform 0.18s ease,
+          border-color 0.18s ease,
+          background 0.18s ease;
+      }
+
+      .links-pill-list a:hover,
+      .links-pill-list a:focus {
+        transform: translateY(-1px);
+        border-color: var(--tm-accent);
+        background: rgba(88, 166, 255, 0.12);
+      }
+
+      .links-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin-top: 0.9rem;
+      }
+
+      .links-meta span {
+        display: inline-block;
+        padding: 0.35rem 0.7rem;
+        border: 1px solid rgba(88, 166, 255, 0.25);
+        border-radius: 999px;
+        background: rgba(88, 166, 255, 0.1);
+        color: #c9e3ff;
+        font-size: 0.92rem;
+      }
+
+      .links-label {
+        display: inline-block;
+        margin-bottom: 0.55rem;
+        padding: 0.28rem 0.6rem;
+        border-radius: 999px;
+        background: rgba(88, 166, 255, 0.12);
+        color: #c9e3ff;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .links-mono {
+        font-family: "Cascadia Code", "Consolas", monospace;
+        color: #c9d1d9;
+      }
+    </style>
   </head>
   <body>
-    <div>LINKS</div>
-    <br/>
-    <div><a href="0-Stellar.html">STELLAR</a></div>
-    <div><br/></div>
-    <div><a href="1-Scout.html">SCOUT</a></div>
-    <div><a href="2-Navy.html">NAVY</a></div>
-    <div><a href="3-Marine.html">MARINE</a></div>
-    <div><a href="4-Army.html">ARMY</a></div>
-    <div><a href="5-Other.html">OTHER</a></div>
-    <div><a href="6-Merchant.html">MERCHANT</a></div>
-    <div><br/></div>
-    <div><a href="7-Giants.html">TRAVEL</a></div>
-    <div><a href="8-Mainworld.html">LIFE</a></div>
-    <div><a href="9-Worlds.html">TRADE</a></div>
-    <div><br/></div>
-    <div><a href="TXT/A Cronor/ISF.txt">Potential Hot Spots</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4All.txt">jta4All</a></div>
-    <div><br/></div>
-    <div>SEC</div>
-    <div><a href="TXT">Sector</a></div>
-    <div><br/></div>
-    <div>SUB</div>
-    <div><a href="TXT/A Cronor">Subsector</a></div>
-    <div><br/></div>
-    <div>SYS</div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/Economics.txt">Economics</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/Investments.txt">Investments</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/PocketEmpire.txt">PocketEmpire</a></div>
-    <div><br/></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude">DIRLIST</a></div>
-    <div><br/></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4All.txt">jta4All</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Bases.txt">jta4Bases</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Dest.txt">jta4Dest</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4HTML.txt">jta4HTML</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Info.txt">jta4Info</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Line.txt">jta4Line</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Near.txt">jta4Near</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Orb.txt">jta4Orb</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Sec.txt">jta4Sec</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Str.txt">jta4Str</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Sub.txt">jta4Sub</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Sys.txt">jta4Sys</a></div>
-    <div><a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4UWP.txt">jta4UWP</a></div>
-    <div><br/></div>
-    <a href="index.html">INDEX</a><br>
-    <div><br/></div>
+    <main class="links-page">
+      <section class="links-hero">
+        <h1>0101 working links</h1>
+        <p>
+          A cleaned-up reference page for the most useful local 0101 links. This
+          replaces the old raw list with shell-backed navigation and only keeps
+          links that resolve inside the served site.
+        </p>
+        <ul class="links-pill-list">
+          <li><a href="0101.html">Open main 0101 view</a></li>
+          <li><a href="index.html">Return to navigator</a></li>
+          <li><a href="TXT/">Browse all TXT exports</a></li>
+          <li><a href="HTML/">Browse all HTML exports</a></li>
+          <li><a href="indexWorlds.html">Open world index</a></li>
+        </ul>
+        <div class="links-meta">
+          <span>Dark-mode friendly</span>
+          <span>Shell-backed navigation</span>
+          <span>Local links only</span>
+        </div>
+      </section>
+
+      <section class="links-grid">
+        <article class="links-card">
+          <span class="links-label">Topic pages</span>
+          <h2>Topic pages</h2>
+          <p>Fast jumps into the main grouped 0101 pages.</p>
+          <ul>
+            <li><a href="0-Stellar.html">Stellar</a></li>
+            <li><a href="1-Scout.html">Scout</a></li>
+            <li><a href="2-Navy.html">Navy</a></li>
+            <li><a href="3-Marine.html">Marine</a></li>
+            <li><a href="4-Army.html">Army</a></li>
+            <li><a href="5-Other.html">Other</a></li>
+            <li><a href="6-Merchant.html">Merchant</a></li>
+            <li><a href="7-Giants.html">Travel / Giants</a></li>
+            <li><a href="8-Mainworld.html">Life / Mainworld</a></li>
+            <li><a href="9-Worlds.html">Trade / Worlds</a></li>
+          </ul>
+        </article>
+
+        <article class="links-card">
+          <span class="links-label">Core views</span>
+          <h2>Core data pages</h2>
+          <p>Sector, subsector, system, and supporting data views.</p>
+          <ul>
+            <li><a href="Sector.html">Sector data</a></li>
+            <li><a href="Subsector.html">Subsector data</a></li>
+            <li><a href="System.html">System data</a></li>
+            <li><a href="JSON.html">JSON view</a></li>
+            <li><a href="classColours.html">Class colours</a></li>
+            <li><a href="grids.html">Grids</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li><a href="powers.html">Powers</a></li>
+          </ul>
+        </article>
+
+        <article class="links-card">
+          <span class="links-label">Subsector text</span>
+          <h2>Subsector text bundles</h2>
+          <p>Directory-style links into the local text exports for A Cronor.</p>
+          <ul>
+            <li><a href="TXT/A%20Cronor/">A Cronor subsector folder</a></li>
+            <li><a href="TXT/A%20Cronor/Navy.txt">Navy summary</a></li>
+            <li><a href="TXT/A%20Cronor/Marine.txt">Marine summary</a></li>
+            <li><a href="TXT/A%20Cronor/NobleWorlds.txt">Noble worlds</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/">0101 Zeycude folder</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/">0101 Zeycude detail folder</a></li>
+          </ul>
+        </article>
+
+        <article class="links-card">
+          <span class="links-label">Zeycude detail</span>
+          <h2>Zeycude detail sheets</h2>
+          <p>
+            Direct links to the generated <span class="links-mono">jta4*</span>
+            text outputs for 0101 Zeycude.
+          </p>
+          <ul>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4All.txt">jta4All</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4Bases.txt">jta4Bases</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4Dest.txt">jta4Dest</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4HTML.txt">jta4HTML</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4Info.txt">jta4Info</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4Line.txt">jta4Line</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4Near.txt">jta4Near</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4Orb.txt">jta4Orb</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4Sec.txt">jta4Sec</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4Str.txt">jta4Str</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4Sub.txt">jta4Sub</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4Sys.txt">jta4Sys</a></li>
+            <li><a href="TXT/A%20Cronor/0101%20Zeycude/0101%20Zeycude/jta4UWP.txt">jta4UWP</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script src="persist.js"></script>
+    <script src="0101-shell.js"></script>
   </body>
 </html>
