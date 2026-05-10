@@ -1,6 +1,6 @@
 [project]
 name = "openwebui"
-version = "0.1.0"
+version = "0.9.4"
 description = "Host mapping for Open WebUI companion apps."
 requires-python = ">=3.11"
 dependencies = [
