@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/me/Notebooks/CREW/agents/demo_query.py", line 5, in <module>
+    from agents.traveller_agent import TravellerAgent
+  File "/home/me/Notebooks/CREW/agents/traveller_agent.py", line 1, in <module>
+    from skills.query_researcher import QueryResearcherSkill
+  File "/home/me/Notebooks/CREW/skills/query_researcher.py", line 1, in <module>
+    from crewai.tools import BaseTool
+ModuleNotFoundError: No module named 'crewai'

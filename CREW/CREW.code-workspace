@@ -2,11 +2,48 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../0101/0101"
+		},
+		{
+			"path": "../CARDCUTTER/CardCutter"
+		},
+		{
+			"path": "../AI"
+		},
+		{
+			"path": "../CALIBRE"
+		},
+		{
+			"path": "../Manuals"
+		},
+		{
+			"path": "../skills"
+		},
+		{
+			"path": "../TRAVELLERMAP"
+		},
+		{
+			"path": "../../Documents/5FW"
 		}
 	],
 	"settings": {
 		"python.defaultInterpreterPath": "${workspaceFolder}/Crew/.venv/bin/python",
 		"python.terminal.activateEnvironment": true,
-		"workbench.browser.enableChatTools": true
+		"workbench.browser.enableChatTools": true,
+		"python-envs.pythonProjects": [
+			{
+				"path": "DESIGN/Crew",
+				"envManager": "ms-python.python:system",
+				"packageManager": "ms-python.python:pip"
+			},
+			{
+				"path": ".",
+				"envManager": "ms-python.python:system",
+				"packageManager": "ms-python.python:pip"
+			}
+		],
+		"makefile.configureOnOpen": true
 	}
 }

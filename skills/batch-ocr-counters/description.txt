@@ -1,0 +1,1 @@
+batch-ocr-counters: Batch OCR of 200x100px counters in all PDFs in a directory using ocr-pic skill. Automates detection, OCR, and output file management for wargame counters or similar graphics. See SKILL.md for usage.

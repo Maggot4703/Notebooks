@@ -106,3 +106,12 @@ https://commons.wikimedia.org/wiki/File:Omega_Nebula.jpg
 * Some features contributed by https://github.com/hakeem4321
 
 
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/VTT/traveller-foundryvtt-0.18.9
+uv sync
+uv run jupyter lab
+```

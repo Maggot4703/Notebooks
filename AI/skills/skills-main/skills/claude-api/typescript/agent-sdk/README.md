@@ -218,3 +218,12 @@ for await (const message of query({
 3. **Use appropriate permission modes** — Start with `"default"` and only escalate when needed
 4. **Handle all message types** — Check for `result` property to get agent output
 5. **Limit maxTurns** — Prevent runaway agents with reasonable limits
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/AI/skills/skills-main/skills/claude-api/typescript/agent-sdk
+uv sync
+uv run jupyter lab
+```

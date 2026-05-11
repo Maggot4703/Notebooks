@@ -14,3 +14,13 @@ This folder contains notebooks and scripts for working with Calibre (e-book mana
 ## Conventions
 - Store Calibre-related scripts and docs in this workspace
 - Use markdown for documentation and code cells for automation
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/CALIBRE
+uv sync
+#uv run jupyter lab
+uv run main.py
+```

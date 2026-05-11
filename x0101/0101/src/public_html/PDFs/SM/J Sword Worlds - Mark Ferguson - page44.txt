@@ -1,0 +1,277 @@
+# Page 44
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: O92? Narsil
+  Code: 0003
+  Size: 2-Realment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 20
+  TF: TF 5
+  TL: TL 13
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: O92? Narsil
+  Code: 0004
+  Size: 2-Realment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 20
+  TF: TF 5
+  TL: TL 13
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: O92? Narsil
+  Code: 0005
+  Size: 2-Realment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 20
+  TF: TF 5
+  TL: TL 13
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 1026 Anduril
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 10
+  TF: TF 5
+  TL: TL 11
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 1123 AoveUse
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 1
+  TF: TF 1
+  TL: TL 13
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 0921 Hrunting
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL &
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 1126 Orcrist
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 1
+  TF: TF 1
+  TL: TL 13
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 1221. Gungnir
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 1
+  TF: TF 1
+  TL: TL 8
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 0922 Tizon
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: e's
+  TF: TF 45
+  TL: TL 13
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 1223 Gram
+  Code: 0001
+  Size: 6-Coarps
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 50
+  TF: TF 50
+  TL: TL 12
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 0927 Narsil
+  Code: 0001
+  Size: 2-Realment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 20
+  TF: TF 5
+  TL: TL 13
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 1225 Excalibur
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 1
+  TF: TF 1
+  TL: TL 13
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: O92? Narsil
+  Code: 0002
+  Size: 2-Realment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 20
+  TF: TF 5
+  TL: TL 13
+
+--- R4C1 | MARINE | X19.png ---
+  Unit ID: 1324 hating
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 1
+  TF: TF 1
+  TL: TL 13
+
+--- R4C2 | MARINE | X20.png ---
+  Unit ID: 1325 Sacnoth
+  Code: 0001
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 20
+  TF: TF 10
+  TL: TL 12
+
+--- R4C3 | MARINE | X21.png ---
+  Unit ID: 1325 Sacnoth
+  Code: 0002
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 1-Cavalry
+  CF: CF 20
+  TF: TF 10
+  TL: TL 12
+
+--- R5C1 | MARINE | X22.png ---
+  Unit ID: 1325 Sacnoth
+  Code: 0003
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 10
+  TF: TF 10
+  TL: TL 12
+
+--- R5C2 | MARINE | X23.png ---
+  Unit ID: 1329 Caladbolg
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL 13
+
+--- R5C3 | MARINE | X24.png ---
+  Unit ID: 1522 Dyrnwyn
+  Code: [unreadable - 4-digit code, see PDF]
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: e's
+  TF: TF 45
+  TL: TL 13
+
+--- R6C1 | MARINE | X25.png ---
+  Unit ID: 1523 Durendal
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: CF 2
+  TF: TF 1
+  TL: TL 11
+
+--- R6C2 | MARINE | X26.png ---
+  Unit ID: 1523 Durendal
+  Code: 0002
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL 11
+
+--- R6C3 | MARINE | X27.png ---
+  Unit ID: 1524 Hofud
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: e's
+  TF: TF 45
+  TL: TL 13
+
+--- R7C1 | MARINE | X28.png ---
+  Unit ID: 1525 Sting
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL 13

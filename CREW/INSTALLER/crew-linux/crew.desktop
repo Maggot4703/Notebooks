@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Crew Manager
+Comment=Launch the portable Crew Manager bundle
+Exec=__EXEC__
+Path=__PATH__
+Icon=__ICON__
+Terminal=false
+Categories=Utility;Office;

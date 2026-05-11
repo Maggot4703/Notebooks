@@ -22,10 +22,10 @@ Use `uv` as the primary workflow for this directory. The local `.venv` may be cr
 Recommended setup:
 
 ```sh
-cd /home/me/Notebooks/IDE
+cd /home/me/Notebooks/AI
 uv sync
+#uv run jupyter lab
 uv run python main.py
-uv run jupyter lab
 ```
 
 Fallback setup with a standard virtual environment:
@@ -35,9 +35,9 @@ cd /home/me/Notebooks/IDE
 python -m venv .venv
 source .venv/bin/activate
 python -m ensurepip --upgrade
-python -m pip install -e .
-python main.py
-jupyter lab
+uv sync
+uv run python main.py
+uv run jupyter lab
 ```
 
 ## Node prerequisites
@@ -48,3 +48,13 @@ This workspace expects the following tools to be available on `PATH`:
 - `npm`
 
 The runtime checker in `main.py` validates these tools and the Python notebook dependencies before launching notebook workflows.
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/AI
+uv sync
+#uv run jupyter lab
+uv run python main.py
+```

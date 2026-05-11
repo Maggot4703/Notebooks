@@ -1,0 +1,26 @@
+- Always validate data before processing.
+- Always document changes in NOTEBOOKS.
+- Always follow security best practices.
+
+NO 1 IMPORTANCE - Crew.py is the program i want to keep working AT ALL COSTS
+If you need to modify any files referenced by Crew.py, try working on a copy - create tests, debug, test and fix
+repeat process until it works without losing any previous functionality
+only update original file if copy works without losing functionality and Crew.py still functions
+ALWAYS LET ME KNOW SUCCESS OF JOB
+
+when a chat session is ended - save in /home/me/Notebooks/CREW/DESIGN/chats
+when a plan or suggestion is saved - save in /home/me/Notebooks/CREW/Crew/PLANS
+
+#codebase 
+remember errors &  warnings
+proceed step-by-step with the modularization,
+debug and fix often - check off list if completed
+use existing code if possible - modify if needed
+careful of linting errors - 
+please plan each of your suggestions and save to ~/Notebooks/CREW/Crew/PLANS
+please research and plan each of these suggestions and save to ~/Notebooks/CREW/Crew/plan.md
+update/create more tests to include and test all files referenced in Crew.py  
+ONLY WORK ON COPIES - DO NOT REPLACE ORIGINALS UNTIL TESTED AND RUNNING CORRECTLY
+add comments throughout
+
+

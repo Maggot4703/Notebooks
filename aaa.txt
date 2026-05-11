@@ -93,3 +93,6 @@ look in PDFs folder for references
 if in doubt ask user (me)
 save plan as '/home/me/Desktop/Next.md'
 ---
+
+---
+

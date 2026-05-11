@@ -15,3 +15,13 @@ This folder contains shell command documentation, exploration notebooks, and rel
 - Keep scripts and docs organized by topic in subfolders
 - Prefer reproducible, copy-paste friendly command examples
 - Use markdown for explanations and code cells for commands
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/BASH
+uv sync
+#uv run jupyter lab
+uv run main.py
+```

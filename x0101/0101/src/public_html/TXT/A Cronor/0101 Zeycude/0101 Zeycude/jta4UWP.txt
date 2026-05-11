@@ -1,0 +1,39 @@
+C430698-9
+Starport = C
+	Quality = Routine
+	Yards = No
+	Repairs = Major damage
+	Fuel = Unrefined
+	Downport = Yes
+	Highport = No
+	possBases = S
+
+Size = 4
+	DIGIT	DIA(MI)	DIA(KM)
+	4	4,000	6,400
+
+Atmosphere = 3
+	DIGIT	DESCRIPTION	EFFECTS
+	3	VThin	S2
+
+Hydrosphere = 0
+	DIGIT	DESCRIPTION
+	0	Desert World
+
+Population = 6
+	POPULATION UNDER 6,000,000
+	DIGIT	DESCRIPTION	VALUE
+	6	Million	,000,000
+
+Government = 9
+	DIGIT	DESCRIPTION	NOTE
+	9	Impersonal Bureaucracy	Impersonal agencies rule
+
+Law Level = 8
+	DIGIT	DESCRIPTION	NOTE
+	8	High Law	Open display of weapons prohibited
+
+Tech Level = 9
+	DIGIT		
+	9		
+

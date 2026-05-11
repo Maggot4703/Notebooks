@@ -1,0 +1,12 @@
+pandas==3.0.1
+Pillow==12.1.1
+ijson==3.5.0
+SpeechRecognition==3.16.0
+customtkinter==5.2.2
+requests==2.32.5
+beautifulsoup4==4.14.3
+html2text==2025.4.15
+pyttsx3==2.99
+PyAudio==0.2.14
+openpyxl==3.1.5
+xlrd==2.0.2

@@ -14,3 +14,12 @@ This folder contains shared utility modules and backup scripts for TravellerMap.
 - Organize utilities by function
 - Document usage in code comments or markdown
 # This file marks the utils directory for shared modules and backup scripts.
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/TRAVELLERMAP/scripts/utils
+uv sync
+uv run jupyter lab
+```

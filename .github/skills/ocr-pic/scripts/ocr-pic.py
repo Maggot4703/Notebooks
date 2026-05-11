@@ -3,14 +3,41 @@
 ocr-pic.py — OCR wargame counter images embedded on PDF pages.
 
 Counter structure (200x100px):
+if page contains 600x600px image then considered a world_page
+if on world_page:
   Left half  (x 0 to 99):  solid colour identifying counter type
+                         SCOUT = yellow (R≈255, G≈255, B≈0) [not used in this PDF but may appear in others]
+                            4 lines of text on right half
                          NAVY = cyan (R≈0, G≈255, B≈255)
+                            5 lines of text on right half
                          MARINE = red (R≈255, G≈0, B≈0)
-  Right half (x 100 to 199): white background with black text, 10 lines
+                            4 lines of text on right half
+                         ARMY = green (R≈0  , G≈255, B≈0) [not used in this PDF but may appear in others]
+                            4 lines of text on right half
+                         POP = white (R≈255, G≈255, B≈255) [not used in this PDF but may appear in others]
+                            4 lines of text on right half
+                         BELTS = light gray (R≈200, G≈200, B≈200) [not used in this PDF but may appear in others]
+                            4 lines of text on right half
+                         GGs = dark gray (R≈50, G≈50, B≈50) [not used in this PDF but may appear in others].  left image
+                            4 lines of text on right half
+                         MAINWORLD = various colours (not used in this PDF but may appear in others)
+                            10 lines of text on right half
+                            bottom middle image
+                         WORLDS = Gray (R≈128, G≈128, B≈128) [not used in this PDF but may appear in others]
+                            4 lines of text on right half
+                            bottom right image is gray (R≈128, G≈128, B≈128)
+  Right half (x 100 to 199): white background with black text; number of lines varies by counter type
+else:
+  if left half of image is mostly cyan → NAVY counter
+      Right half (x 100 to 199): white background with black text; number of lines varies by counter type
+  if left half of image is mostly red  → MARINE counter
+      Right half (x 100 to 199): white background with black text; number of lines varies by counter type
+  else → not a counter
+
 
 Usage:
     python ocr-pic.py <pdf_path> <page1> [page2 ...] <output_dir>
-
+    python ocr-pic.py '/media/me/SSD120/T5/Vland/A Voskhod.pdf' 10
     Page numbers are 1-indexed (human-facing).
     One output file is written per page:
         <output_dir>/<pdf_stem>-page<N>.txt

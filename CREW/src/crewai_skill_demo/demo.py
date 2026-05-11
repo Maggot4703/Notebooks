@@ -2,6 +2,16 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+# Support direct execution (python /path/to/demo.py) by adding src to sys.path.
+if __package__ in {None, ""}:
+    src_dir = Path(__file__).resolve().parent.parent
+    src_dir_str = str(src_dir)
+    if src_dir_str not in sys.path:
+        sys.path.insert(0, src_dir_str)
+
 from crewai_skill_demo.tools import GridOverlayTool
 from crewai_skill_demo.tools import WorldLookupTool
 

@@ -1,0 +1,6 @@
+Portable Crew Linux bundle contents:
+- payload/CREW/Crew runtime files and selected support directories
+- payload/CREW/docs/fetchdocs_readmine.md
+- payload/CARDCUTTER/CardCutter compatibility assets
+- install.sh, launch-crew.sh, uninstall.sh
+- requirements-lock.txt, system-packages.txt, crew.desktop, INSTALL.md

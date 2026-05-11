@@ -1,236 +1,634 @@
-2026-03-22 19:44:02,529 - __main__ - INFO - Main application script started.
-2026-03-22 19:44:04,933 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 19:48:05,037 - __main__ - INFO - Main application script started.
-2026-03-22 19:48:06,267 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 19:48:11,648 - root - INFO - Auto-imported 77 modules successfully
-2026-03-22 19:48:11,648 - root - INFO - Skipped 19 modules (expected for script files)
-2026-03-22 19:48:11,648 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
-2026-03-22 19:48:11,659 - root - INFO - Status: Default data file not found.
-2026-03-22 19:48:11,665 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 19:52:34,482 - __main__ - INFO - Main application script started.
-2026-03-22 19:52:36,175 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 19:52:36,176 - root - INFO - Using cached auto-import results
-2026-03-22 19:52:36,182 - root - INFO - Status: Default data file not found.
-2026-03-22 19:52:36,197 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 19:52:53,208 - root - INFO - Status: Opening text file: main.py...
-2026-03-22 19:52:53,259 - root - INFO - Status: Loaded: main.py
-2026-03-22 19:52:59,705 - root - INFO - Status: Opening text file: main.py...
-2026-03-22 19:52:59,790 - root - INFO - Status: Loaded: main.py
-2026-03-22 19:53:08,696 - root - INFO - Status: Opening text file: startup.txt...
-2026-03-22 19:53:08,805 - root - INFO - Status: Loaded: startup.txt
-2026-03-22 19:53:25,890 - root - INFO - Status: Opening data file: Crew.csv...
-2026-03-22 19:53:26,026 - root - INFO - Status: Loaded 23 records
-2026-03-22 19:53:38,472 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-22 19:53:38,472 - __main__ - INFO - Main application script finished.
-2026-03-22 19:53:39,310 - __main__ - INFO - Main application script started.
-2026-03-22 19:53:40,678 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 19:53:42,561 - root - INFO - Auto-imported 77 modules successfully
-2026-03-22 19:53:42,561 - root - INFO - Skipped 19 modules (expected for script files)
-2026-03-22 19:53:42,562 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
-2026-03-22 19:53:42,568 - root - INFO - Status: Default data file not found.
-2026-03-22 19:53:42,570 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 19:53:47,182 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-22 19:53:47,183 - __main__ - INFO - Main application script finished.
-2026-03-22 19:54:04,081 - __main__ - INFO - Main application script started.
-2026-03-22 19:54:05,473 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 19:54:05,474 - root - INFO - Using cached auto-import results
-2026-03-22 19:54:05,476 - root - INFO - Status: Default data file not found.
-2026-03-22 19:54:05,477 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 19:54:35,885 - root - INFO - Status: Opening data file: Crew.csv...
-2026-03-22 19:54:36,026 - root - INFO - Status: Loaded 23 records
-2026-03-22 19:55:19,871 - root - INFO - Status: Opening data file: NPC.csv...
-2026-03-22 19:55:19,964 - root - INFO - Status: Loaded 16 records
-2026-03-22 19:55:30,943 - root - INFO - Status: Opening data file: Crew.csv...
-2026-03-22 19:55:31,035 - root - INFO - Status: Loaded 23 records
-2026-03-22 19:55:56,236 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-22 19:55:56,237 - __main__ - INFO - Main application script finished.
-2026-03-22 19:58:35,841 - __main__ - INFO - Main application script started.
-2026-03-22 19:58:36,445 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 19:58:36,446 - root - INFO - Using cached auto-import results
-2026-03-22 19:58:36,448 - root - INFO - Status: Default data file not found.
-2026-03-22 19:58:36,456 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 19:58:58,054 - root - WARNING - No data loaded to filter.
-2026-03-22 19:58:58,118 - root - WARNING - No data loaded to filter.
-2026-03-22 19:58:59,832 - root - INFO - Status: Filters cleared
-2026-03-22 20:00:04,139 - root - INFO - Status: Opening text file: npcs.py...
-2026-03-22 20:00:04,797 - root - INFO - Status: Loaded: npcs.py
-2026-03-22 20:00:14,837 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-22 20:00:14,837 - __main__ - INFO - Main application script finished.
-2026-03-22 20:00:15,856 - __main__ - INFO - Main application script started.
-2026-03-22 20:00:16,643 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 20:00:18,645 - root - INFO - Auto-imported 77 modules successfully
-2026-03-22 20:00:18,645 - root - INFO - Skipped 19 modules (expected for script files)
-2026-03-22 20:00:18,645 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
-2026-03-22 20:00:18,651 - root - INFO - Status: Default data file not found.
-2026-03-22 20:00:18,653 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 20:00:20,748 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-22 20:00:20,750 - __main__ - INFO - Main application script finished.
-2026-03-22 20:11:46,408 - __main__ - INFO - Main application script started.
-2026-03-22 20:11:50,997 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 20:12:02,390 - root - INFO - Auto-imported 77 modules successfully
-2026-03-22 20:12:02,390 - root - INFO - Skipped 19 modules (expected for script files)
-2026-03-22 20:12:02,390 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
-2026-03-22 20:12:02,474 - root - INFO - Status: Default data file not found.
-2026-03-22 20:12:02,478 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 22:27:02,856 - __main__ - INFO - Main application script started.
-2026-03-22 22:27:05,248 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 22:27:32,198 - root - INFO - Auto-imported 77 modules successfully
-2026-03-22 22:27:32,199 - root - INFO - Skipped 19 modules (expected for script files)
-2026-03-22 22:27:32,199 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
-2026-03-22 22:27:32,206 - root - INFO - Status: Default data file not found.
-2026-03-22 22:27:32,210 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 22:27:32,243 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-22 22:27:32,244 - __main__ - INFO - Main application script finished.
-2026-03-22 22:31:19,729 - __main__ - INFO - Main application script started.
-2026-03-22 22:31:20,578 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 22:31:20,580 - root - INFO - Using cached auto-import results
-2026-03-22 22:31:20,653 - root - INFO - Status: Default data file not found.
-2026-03-22 22:31:20,658 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 22:31:25,594 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-22 22:31:25,594 - __main__ - INFO - Main application script finished.
-2026-03-22 22:33:52,761 - __main__ - INFO - Main application script started.
-2026-03-22 22:33:53,558 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 22:33:57,175 - root - INFO - Auto-imported 77 modules successfully
-2026-03-22 22:33:57,175 - root - INFO - Skipped 19 modules (expected for script files)
-2026-03-22 22:33:57,175 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
-2026-03-22 22:33:58,486 - root - INFO - Status: Default data file not found.
-2026-03-22 22:33:58,491 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 22:39:54,111 - __main__ - INFO - Main application script started.
-2026-03-22 22:39:54,634 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-22 22:40:00,934 - root - INFO - Auto-imported 77 modules successfully
-2026-03-22 22:40:00,934 - root - INFO - Skipped 19 modules (expected for script files)
-2026-03-22 22:40:00,934 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
-2026-03-22 22:40:00,941 - root - INFO - Status: Default data file not found.
-2026-03-22 22:40:00,945 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-22 22:40:13,500 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-22 22:40:13,501 - __main__ - INFO - Main application script finished.
-2026-03-24 18:15:12,887 - __main__ - INFO - Main application script started.
-2026-03-24 18:15:14,523 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-24 18:15:18,200 - root - INFO - Auto-imported 77 modules successfully
-2026-03-24 18:15:18,200 - root - INFO - Skipped 19 modules (expected for script files)
-2026-03-24 18:15:18,201 - root - INFO - Auto-import summary: 77 imported, 19 failed, 26437 skipped, 26533 total files processed
-2026-03-24 18:15:18,304 - root - INFO - Status: Default data file not found.
-2026-03-24 18:15:18,311 - root - INFO - Status: Ready - Auto-imported 77 modules (19 failed)
-2026-03-24 18:16:14,230 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-24 18:16:14,231 - __main__ - INFO - Main application script finished.
-2026-03-24 18:32:25,198 - __main__ - INFO - Main application script started.
-2026-03-24 18:33:03,190 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-26 23:05:07,542 - __main__ - INFO - Main application script started.
-2026-03-26 23:05:11,793 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-26 23:05:16,754 - root - INFO - Auto-imported 86 modules successfully
-2026-03-26 23:05:16,754 - root - INFO - Skipped 20 modules (expected for script files)
-2026-03-26 23:05:16,754 - root - INFO - Auto-import summary: 86 imported, 20 failed, 38950 skipped, 39056 total files processed
-2026-03-26 23:05:16,793 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
-2026-03-26 23:05:17,022 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
-2026-03-26 23:05:17,038 - root - INFO - Status: Ready - Auto-imported 86 modules (20 failed)
-2026-03-26 23:05:48,520 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
-2026-03-26 23:05:49,623 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
-2026-03-26 23:05:49,841 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
-2026-03-26 23:05:51,471 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
-2026-03-26 23:05:54,605 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
-2026-03-26 23:05:57,965 - root - ERROR - Error handling column click: Treeview.identify_column() takes 2 positional arguments but 3 were given
-2026-03-26 23:06:12,349 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-26 23:06:28,598 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-26 23:06:38,343 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-26 23:06:45,750 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-26 23:06:46,838 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-26 23:06:47,905 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-26 23:07:09,405 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-26 23:07:10,789 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-26 23:17:58,514 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-26 23:18:36,144 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-26 23:18:36,145 - __main__ - INFO - Main application script finished.
-2026-03-26 23:45:26,846 - __main__ - INFO - Main application script started.
-2026-03-26 23:45:27,490 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-26 23:45:30,941 - root - INFO - Auto-imported 86 modules successfully
-2026-03-26 23:45:30,941 - root - INFO - Skipped 20 modules (expected for script files)
-2026-03-26 23:45:30,941 - root - INFO - Auto-import summary: 86 imported, 20 failed, 38950 skipped, 39056 total files processed
-2026-03-26 23:45:30,949 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
-2026-03-26 23:45:31,015 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
-2026-03-26 23:45:31,042 - root - INFO - Status: Ready - Auto-imported 86 modules (20 failed)
-2026-03-26 23:47:00,729 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-26 23:47:00,729 - __main__ - INFO - Main application script finished.
-2026-03-30 21:19:50,774 - __main__ - INFO - Main application script started.
-2026-03-30 21:19:53,226 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-30 21:21:22,634 - __main__ - INFO - Main application script started.
-2026-03-30 21:21:23,502 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-30 21:21:26,836 - root - INFO - Auto-imported 87 modules successfully
-2026-03-30 21:21:26,836 - root - INFO - Skipped 25 modules (expected for script files)
-2026-03-30 21:21:26,836 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39506 skipped, 39618 total files processed
-2026-03-30 21:21:26,849 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
-2026-03-30 21:21:27,008 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
-2026-03-30 21:21:27,045 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
-2026-03-30 21:21:31,166 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-30 21:21:31,167 - __main__ - INFO - Main application script finished.
-2026-03-30 21:35:28,801 - __main__ - INFO - Main application script started.
-2026-03-30 21:35:29,360 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-30 21:35:32,033 - root - INFO - Auto-imported 87 modules successfully
-2026-03-30 21:35:32,033 - root - INFO - Skipped 25 modules (expected for script files)
-2026-03-30 21:35:32,033 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39506 skipped, 39618 total files processed
-2026-03-30 21:35:32,040 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
-2026-03-30 21:35:32,150 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
-2026-03-30 21:35:32,156 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
-2026-03-30 21:35:33,996 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-30 21:35:33,998 - __main__ - INFO - Main application script finished.
-2026-03-31 10:04:01,748 - __main__ - INFO - Main application script started.
-2026-03-31 10:04:04,018 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-31 10:04:09,774 - root - INFO - Auto-imported 87 modules successfully
-2026-03-31 10:04:09,774 - root - INFO - Skipped 25 modules (expected for script files)
-2026-03-31 10:04:09,774 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39582 skipped, 39694 total files processed
-2026-03-31 10:04:09,781 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
-2026-03-31 10:04:09,843 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
-2026-03-31 10:04:09,845 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
-2026-03-31 10:05:09,081 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-31 10:05:09,082 - __main__ - INFO - Main application script finished.
-2026-03-31 10:12:42,668 - __main__ - INFO - Main application script started.
-2026-03-31 10:12:43,259 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-31 10:12:45,772 - root - INFO - Auto-imported 87 modules successfully
-2026-03-31 10:12:45,772 - root - INFO - Skipped 25 modules (expected for script files)
-2026-03-31 10:12:45,773 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39582 skipped, 39694 total files processed
-2026-03-31 10:12:45,778 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
-2026-03-31 10:12:45,889 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
-2026-03-31 10:12:45,897 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
-2026-03-31 10:13:50,588 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-31 10:13:50,589 - __main__ - INFO - Main application script finished.
-2026-03-31 10:41:23,406 - __main__ - INFO - Main application script started.
-2026-03-31 10:41:24,030 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-31 10:41:26,550 - root - INFO - Auto-imported 87 modules successfully
-2026-03-31 10:41:26,550 - root - INFO - Skipped 25 modules (expected for script files)
-2026-03-31 10:41:26,551 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39582 skipped, 39694 total files processed
-2026-03-31 10:41:26,564 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
-2026-03-31 10:41:26,668 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
-2026-03-31 10:41:26,680 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
-2026-03-31 10:41:58,824 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-31 10:42:00,600 - root - INFO - Updating script menu as it is about to be displayed...
-2026-03-31 10:50:13,170 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-31 10:50:13,170 - __main__ - INFO - Main application script finished.
-2026-03-31 10:50:14,161 - __main__ - INFO - Main application script started.
-2026-03-31 10:50:15,085 - root - INFO - Status: Auto-importing workspace modules...
-2026-03-31 10:50:18,203 - root - INFO - Auto-imported 87 modules successfully
-2026-03-31 10:50:18,203 - root - INFO - Skipped 25 modules (expected for script files)
-2026-03-31 10:50:18,203 - root - INFO - Auto-import summary: 87 imported, 25 failed, 39582 skipped, 39694 total files processed
-2026-03-31 10:50:18,213 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
-2026-03-31 10:50:18,345 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
-2026-03-31 10:50:18,375 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
-2026-03-31 10:50:18,393 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-03-31 10:50:18,393 - __main__ - INFO - Main application script finished.
-2026-04-01 13:58:28,455 - __main__ - INFO - Main application script started.
-2026-04-01 13:58:34,887 - root - INFO - Status: Auto-importing workspace modules...
-2026-04-01 13:58:39,715 - root - INFO - Auto-imported 87 modules successfully
-2026-04-01 13:58:39,715 - root - INFO - Skipped 25 modules (expected for script files)
-2026-04-01 13:58:39,716 - root - INFO - Auto-import summary: 87 imported, 25 failed, 12300 skipped, 12412 total files processed
-2026-04-01 13:58:39,750 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
-2026-04-01 13:58:39,818 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
-2026-04-01 13:58:39,820 - root - INFO - Status: Ready - Auto-imported 87 modules (25 failed)
-2026-04-01 13:59:11,360 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-04-01 13:59:11,363 - __main__ - INFO - Main application script finished.
-2026-04-01 14:59:19,923 - __main__ - INFO - Main application script started.
-2026-04-01 14:59:22,672 - root - INFO - Status: Auto-importing workspace modules...
-2026-04-01 14:59:25,492 - root - INFO - Auto-imported 89 modules successfully
-2026-04-01 14:59:25,493 - root - INFO - Skipped 25 modules (expected for script files)
-2026-04-01 14:59:25,493 - root - INFO - Auto-import summary: 89 imported, 25 failed, 12303 skipped, 12417 total files processed
-2026-04-01 14:59:25,503 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
-2026-04-01 14:59:25,621 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
-2026-04-01 14:59:25,625 - root - INFO - Status: Ready - Auto-imported 89 modules (25 failed)
-2026-04-01 14:59:26,928 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
-2026-04-01 14:59:26,930 - __main__ - INFO - Main application script finished.
+2026-04-16 01:38:24,288 - __main__ - INFO - Main application script started.
+2026-04-16 01:38:25,048 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 01:38:25,500 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 01:38:37,196 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-16 01:38:37,668 - root - INFO - Auto-imported 1638 modules successfully
+2026-04-16 01:38:37,668 - root - INFO - Skipped 37 modules (expected for script files)
+2026-04-16 01:38:37,668 - root - INFO - Auto-import summary: 1638 imported, 37 failed, 12587 skipped, 14262 total files processed
+2026-04-16 01:38:37,679 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-16 01:38:37,750 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-16 01:38:37,751 - root - INFO - Status: Ready - Auto-imported 1638 modules (37 failed)
+2026-04-16 01:38:46,642 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-16 01:38:50,592 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-16 01:38:56,588 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-16 01:39:42,094 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-16 01:39:46,884 - root - INFO - Status: Opened scripts folder: /home/me/Notebooks/CREW/Crew/scripts
+2026-04-16 01:40:16,835 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-16 01:40:16,835 - __main__ - INFO - Main application script finished.
+2026-04-16 01:55:34,716 - __main__ - INFO - Main application script started.
+2026-04-16 01:56:28,498 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 01:56:30,952 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 01:56:31,210 - root - INFO - Using cached auto-import results
+2026-04-16 01:56:31,217 - root - INFO - Status: Ready - Auto-imported 1638 modules (37 failed)
+2026-04-16 01:57:36,142 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-16 01:57:36,258 - __main__ - INFO - Main application script finished.
+2026-04-16 02:28:03,347 - __main__ - INFO - Main application script started.
+2026-04-16 02:28:06,185 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 02:28:06,980 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 02:28:36,854 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-16 02:28:37,662 - root - INFO - Auto-imported 1638 modules successfully
+2026-04-16 02:28:37,662 - root - INFO - Skipped 37 modules (expected for script files)
+2026-04-16 02:28:37,662 - root - INFO - Auto-import summary: 1638 imported, 37 failed, 12587 skipped, 14262 total files processed
+2026-04-16 02:28:37,683 - root - INFO - Status: Ready - Auto-imported 1638 modules (37 failed)
+2026-04-16 02:29:42,537 - __main__ - INFO - Main application script started.
+2026-04-16 02:29:46,755 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 02:29:47,298 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 02:29:47,331 - root - INFO - Using cached auto-import results
+2026-04-16 02:29:47,348 - root - INFO - Status: Ready - Auto-imported 1638 modules (37 failed)
+2026-04-16 02:34:43,980 - __main__ - INFO - Main application script started.
+2026-04-16 02:34:57,518 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 02:34:58,084 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 02:35:57,425 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-16 02:35:58,068 - root - INFO - Auto-imported 1638 modules successfully
+2026-04-16 02:35:58,068 - root - INFO - Skipped 37 modules (expected for script files)
+2026-04-16 02:35:58,068 - root - INFO - Auto-import summary: 1638 imported, 37 failed, 12587 skipped, 14262 total files processed
+2026-04-16 02:35:58,083 - root - INFO - Status: Ready - Auto-imported 1638 modules (37 failed)
+2026-04-16 02:38:10,320 - root - INFO - Status: Opening data file: npcs.csv...
+2026-04-16 02:38:10,491 - root - INFO - Status: Loaded 0 records
+2026-04-16 02:38:25,039 - root - INFO - Status: Opening data file: npcs.csv...
+2026-04-16 02:38:25,103 - root - INFO - Status: Loaded 0 records
+2026-04-16 02:38:31,286 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-16 02:38:31,286 - __main__ - INFO - Main application script finished.
+2026-04-16 02:38:43,324 - __main__ - INFO - Main application script started.
+2026-04-16 02:38:44,492 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 02:38:44,954 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 02:38:45,011 - root - INFO - Using cached auto-import results
+2026-04-16 02:38:45,014 - root - INFO - Status: Ready - Auto-imported 1638 modules (37 failed)
+2026-04-16 02:38:48,570 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-16 02:38:48,572 - __main__ - INFO - Main application script finished.
+2026-04-16 10:10:57,229 - __main__ - INFO - Main application script started.
+2026-04-16 10:10:57,454 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-16 10:10:57,840 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-16 10:11:10,430 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-16 10:11:10,834 - root - INFO - Auto-imported 1638 modules successfully
+2026-04-16 10:11:10,834 - root - INFO - Skipped 37 modules (expected for script files)
+2026-04-16 10:11:10,834 - root - INFO - Auto-import summary: 1638 imported, 37 failed, 12587 skipped, 14262 total files processed
+2026-04-16 10:11:10,852 - root - INFO - Status: Ready - Auto-imported 1638 modules (37 failed)
+2026-04-16 10:13:18,270 - root - INFO - Status: Opening data file: npcs.csv...
+2026-04-16 10:13:18,539 - root - INFO - Status: Loaded 0 records
+2026-04-16 10:14:55,949 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-16 10:14:55,949 - __main__ - INFO - Main application script finished.
+2026-04-16 16:35:08,167 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-16 16:35:08,168 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-16 16:35:08,284 - werkzeug - INFO -  * Restarting with stat
+2026-04-16 16:36:58,579 - werkzeug - WARNING -  * Debugger is active!
+2026-04-16 16:36:59,331 - werkzeug - INFO -  * Debugger PIN: 123-989-803
+2026-04-18 23:15:25,262 - __main__ - INFO - Main application script started.
+2026-04-18 23:15:34,606 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-18 23:15:36,151 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-18 23:21:25,203 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-18 23:22:04,363 - root - INFO - Auto-imported 1815 modules successfully
+2026-04-18 23:22:04,363 - root - INFO - Skipped 34 modules (expected for script files)
+2026-04-18 23:22:04,363 - root - INFO - Auto-import summary: 1815 imported, 34 failed, 12930 skipped, 14779 total files processed
+2026-04-18 23:22:06,461 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-18 23:22:06,600 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-18 23:22:06,602 - root - INFO - Status: Ready - Auto-imported 1815 modules (34 failed)
+2026-04-18 23:22:07,649 - __main__ - INFO - Spacer function called - typically for separating output or logical sections.
+2026-04-18 23:22:07,650 - __main__ - INFO - Main application script finished.
+2026-04-20 18:57:09,844 - __main__ - INFO - Main application script started.
+2026-04-20 18:57:09,891 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-20 18:57:38,382 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-20 18:57:39,245 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-20 18:58:14,037 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-20 18:58:16,213 - root - INFO - Auto-imported 1817 modules successfully
+2026-04-20 18:58:16,213 - root - INFO - Skipped 35 modules (expected for script files)
+2026-04-20 18:58:16,213 - root - INFO - Auto-import summary: 1817 imported, 35 failed, 15319 skipped, 17171 total files processed
+2026-04-20 18:58:16,518 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-20 18:58:16,634 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-20 18:58:16,653 - root - INFO - Status: Ready - Auto-imported 1817 modules (35 failed)
+2026-04-20 18:58:16,693 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-20 18:58:18,245 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-20 18:58:19,574 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-20 19:00:16,324 - utils - INFO - ----------------------------------------
+2026-04-20 19:00:16,328 - __main__ - INFO - Main application script finished.
+2026-04-20 19:48:17,281 - utils - INFO - ----------------------------------------
+2026-04-20 19:48:19,966 - DatabaseManager - INFO - Database connection closed.
+2026-04-20 19:48:22,159 - DatabaseManager - INFO - Database connection closed.
+2026-04-20 19:48:23,217 - DatabaseManager - INFO - setup_logging called (test stub)
+2026-04-20 19:48:25,632 - DatabaseManager - INFO - Database connection closed.
+2026-04-20 19:48:26,513 - DatabaseManager - INFO - Database connection closed.
+2026-04-20 19:48:28,141 - DatabaseManager - INFO - Database connection closed.
+2026-04-20 19:48:29,110 - DatabaseManager - INFO - Database connection closed.
+2026-04-20 19:48:32,285 - DatabaseManager - INFO - Database connection closed.
+2026-04-20 19:48:50,161 - enhanced_features - INFO - 📄 Generated requirements.txt
+2026-04-20 19:48:50,163 - enhanced_features - INFO - All Python dependencies are installed
+2026-04-20 19:48:58,490 - root - INFO - EventManager initialized
+2026-04-20 19:48:58,491 - root - INFO - EventManager initialized
+2026-04-20 19:48:58,491 - root - ERROR - Error binding event <Escape>: 'object' object has no attribute 'bind'
+2026-04-20 19:48:58,491 - root - ERROR - Error binding event <Control-f>: 'object' object has no attribute 'bind'
+2026-04-20 19:48:58,491 - root - ERROR - Error binding event <F5>: 'object' object has no attribute 'bind'
+2026-04-20 19:49:50,072 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-20 19:49:51,078 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 16:29:03,437 - __main__ - INFO - Main application script started.
+2026-04-23 16:30:44,810 - __main__ - INFO - Main application script started.
+2026-04-23 16:30:59,079 - __main__ - INFO - Main application script started.
+2026-04-23 16:30:59,109 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 16:31:17,994 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 16:31:20,154 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 16:32:14,321 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 16:32:17,380 - root - INFO - Auto-imported 1820 modules successfully
+2026-04-23 16:32:17,380 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 16:32:17,380 - root - INFO - Auto-import summary: 1820 imported, 36 failed, 15320 skipped, 17176 total files processed
+2026-04-23 16:32:17,559 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 16:32:17,753 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 16:32:17,766 - root - INFO - Status: Ready - Auto-imported 1820 modules (36 failed)
+2026-04-23 16:32:17,767 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 16:32:45,400 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-23 16:56:03,049 - audio_manager - INFO - Attempting to start recording: device=2 (index=2), output=/home/me/Notebooks/recording.wav, channels=1, rate=48000
+2026-04-23 16:56:03,283 - audio_manager - INFO - Recording started successfully with channels=1, rate=48000
+2026-04-23 16:56:03,286 - root - INFO - Status: Recording from: USB Composite Device: Audio (hw:2,0)... (Stop to finish)
+2026-04-23 16:56:07,281 - audio_manager - INFO - Recording finished and saved: /home/me/Notebooks/recording.wav
+2026-04-23 16:56:07,281 - audio_manager - INFO - Recording stopped by user.
+2026-04-23 16:56:09,371 - root - INFO - Status: Recording saved: /home/me/Notebooks/recording.wav
+2026-04-23 16:56:13,266 - audio_manager - INFO - Playing audio: /home/me/Notebooks/recording.wav
+2026-04-23 16:56:13,434 - root - INFO - Status: Playing last recording...
+2026-04-23 16:56:24,010 - root - INFO - Status: Loaded audio: recording.wav
+2026-04-23 16:56:33,747 - audio_manager - INFO - Playing audio: /home/me/Notebooks/recording.wav
+2026-04-23 16:56:33,763 - root - INFO - Status: Playing last recording...
+2026-04-23 16:56:53,625 - root - INFO - Status: Loaded audio: a.wav
+2026-04-23 16:56:58,868 - audio_manager - INFO - Playing audio: /home/me/Notebooks/a.wav
+2026-04-23 16:56:58,877 - root - INFO - Status: Playing last recording...
+2026-04-23 16:57:46,919 - root - INFO - Status: Speech saved to: recording.wav
+2026-04-23 16:57:55,830 - audio_manager - INFO - Playing audio: /home/me/Notebooks/a.wav
+2026-04-23 16:57:55,838 - root - INFO - Status: Playing last recording...
+2026-04-23 17:04:13,431 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 17:04:24,359 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 17:07:07,486 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 17:07:16,229 - utils - INFO - ----------------------------------------
+2026-04-23 17:07:16,229 - __main__ - INFO - Main application script finished.
+2026-04-23 17:07:23,531 - __main__ - INFO - Main application script started.
+2026-04-23 17:07:23,565 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 17:07:30,269 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 17:07:30,615 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 17:07:53,984 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 17:07:55,805 - root - INFO - Auto-imported 1820 modules successfully
+2026-04-23 17:07:55,805 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 17:07:55,805 - root - INFO - Auto-import summary: 1820 imported, 36 failed, 15320 skipped, 17176 total files processed
+2026-04-23 17:07:55,840 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 17:07:55,929 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 17:07:55,933 - root - INFO - Status: Ready - Auto-imported 1820 modules (36 failed)
+2026-04-23 17:07:55,933 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 17:08:28,439 - utils - INFO - ----------------------------------------
+2026-04-23 17:08:28,441 - __main__ - INFO - Main application script finished.
+2026-04-23 17:22:23,660 - __main__ - INFO - Main application script started.
+2026-04-23 17:22:23,662 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 17:22:24,566 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 17:22:24,906 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 17:22:29,592 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 17:22:29,864 - root - INFO - Auto-imported 1820 modules successfully
+2026-04-23 17:22:29,864 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 17:22:29,864 - root - INFO - Auto-import summary: 1820 imported, 36 failed, 15320 skipped, 17176 total files processed
+2026-04-23 17:22:29,874 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 17:22:29,950 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 17:22:29,952 - root - INFO - Status: Ready - Auto-imported 1820 modules (36 failed)
+2026-04-23 17:22:29,953 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 17:25:34,042 - CrewMessageRouter - INFO - Message from Bot to ['All']: Welcome to Crew Chat! Start your conversation below. 
+2026-04-23 17:29:36,696 - audio_manager - INFO - Attempting to start recording: device=2 (index=2), output=/home/me/Notebooks/recording.wav, channels=1, rate=48000
+2026-04-23 17:29:36,714 - audio_manager - INFO - Recording started successfully with channels=1, rate=48000
+2026-04-23 17:29:36,718 - root - INFO - Status: Recording from: USB Composite Device: Audio (hw:2,0)... (Stop to finish)
+2026-04-23 17:32:22,822 - utils - INFO - ----------------------------------------
+2026-04-23 17:32:22,822 - __main__ - INFO - Main application script finished.
+2026-04-23 17:57:52,432 - __main__ - INFO - Main application script started.
+2026-04-23 17:57:52,432 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 17:57:53,263 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 17:57:53,819 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 17:57:58,482 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 17:57:58,825 - root - INFO - Auto-imported 1820 modules successfully
+2026-04-23 17:57:58,825 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 17:57:58,825 - root - INFO - Auto-import summary: 1820 imported, 36 failed, 15320 skipped, 17176 total files processed
+2026-04-23 17:57:58,834 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 17:57:59,002 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 17:57:59,015 - root - INFO - Status: Ready - Auto-imported 1820 modules (36 failed)
+2026-04-23 17:57:59,015 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 17:58:07,210 - utils - INFO - ----------------------------------------
+2026-04-23 17:58:07,210 - __main__ - INFO - Main application script finished.
+2026-04-23 17:58:48,237 - __main__ - INFO - Main application script started.
+2026-04-23 17:58:48,238 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 17:58:49,049 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 17:58:49,514 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 17:58:49,516 - root - INFO - Using cached auto-import results
+2026-04-23 17:58:49,518 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 17:58:49,639 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 17:58:49,651 - root - INFO - Status: Ready - Auto-imported 1820 modules (36 failed)
+2026-04-23 17:58:49,652 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 17:58:52,441 - utils - INFO - ----------------------------------------
+2026-04-23 17:58:52,443 - __main__ - INFO - Main application script finished.
+2026-04-23 18:03:27,840 - __main__ - INFO - Main application script started.
+2026-04-23 18:03:27,840 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:03:28,941 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 18:03:29,462 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 18:03:34,051 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 18:03:34,320 - root - INFO - Auto-imported 1820 modules successfully
+2026-04-23 18:03:34,320 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 18:03:34,320 - root - INFO - Auto-import summary: 1820 imported, 36 failed, 15320 skipped, 17176 total files processed
+2026-04-23 18:03:34,331 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 18:03:34,412 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 18:03:34,420 - root - INFO - Status: Ready - Auto-imported 1820 modules (36 failed)
+2026-04-23 18:03:34,421 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 18:03:41,585 - utils - INFO - ----------------------------------------
+2026-04-23 18:03:41,586 - __main__ - INFO - Main application script finished.
+2026-04-23 18:12:19,887 - __main__ - INFO - Main application script started.
+2026-04-23 18:12:19,901 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:12:27,945 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 18:12:28,679 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 18:12:51,428 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 18:12:52,791 - root - INFO - Auto-imported 1882 modules successfully
+2026-04-23 18:12:52,791 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 18:12:52,791 - root - INFO - Auto-import summary: 1882 imported, 36 failed, 15399 skipped, 17317 total files processed
+2026-04-23 18:12:52,802 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 18:12:52,920 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 18:12:52,922 - root - INFO - Status: Ready - Auto-imported 1882 modules (36 failed)
+2026-04-23 18:12:52,922 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 18:13:00,557 - utils - INFO - ----------------------------------------
+2026-04-23 18:13:00,558 - __main__ - INFO - Main application script finished.
+2026-04-23 18:13:05,436 - __main__ - INFO - Main application script started.
+2026-04-23 18:13:05,437 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:13:06,151 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 18:13:06,588 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 18:13:06,589 - root - INFO - Using cached auto-import results
+2026-04-23 18:13:06,596 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 18:13:06,668 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 18:13:06,682 - root - INFO - Status: Ready - Auto-imported 1882 modules (36 failed)
+2026-04-23 18:13:06,683 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 18:13:21,134 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 18:13:28,095 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 18:14:08,628 - CrewMessageRouter - INFO - Message from Bot to ['All']: Welcome to Crew Chat! Start your conversation below. 
+2026-04-23 18:18:48,810 - utils - INFO - ----------------------------------------
+2026-04-23 18:18:48,810 - __main__ - INFO - Main application script finished.
+2026-04-23 18:34:35,905 - __main__ - INFO - Main application script started.
+2026-04-23 18:34:37,330 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:36:26,092 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 18:36:27,086 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 18:50:02,990 - __main__ - INFO - Main application script started.
+2026-04-23 18:50:03,027 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:50:05,696 - __main__ - INFO - CLI import time: 2.669s
+2026-04-23 18:50:06,068 - __main__ - INFO - GUI import time: 0.353s
+2026-04-23 18:50:07,251 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 18:50:07,586 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 18:50:22,315 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 18:50:23,189 - root - INFO - Auto-imported 1944 modules successfully
+2026-04-23 18:50:23,189 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 18:50:23,189 - root - INFO - Auto-import summary: 1944 imported, 36 failed, 15478 skipped, 17458 total files processed
+2026-04-23 18:50:23,196 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 18:50:23,354 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 18:50:23,374 - root - INFO - Status: Ready - Auto-imported 1944 modules (36 failed)
+2026-04-23 18:50:23,374 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 18:50:24,665 - __main__ - INFO - GUI startup time: 18.596s
+2026-04-23 18:50:24,665 - utils - INFO - ----------------------------------------
+2026-04-23 18:50:24,666 - __main__ - INFO - Main application script finished. Total time: 21.675s
+2026-04-23 18:50:39,547 - __main__ - INFO - Main application script started.
+2026-04-23 18:50:39,547 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:50:41,433 - __main__ - INFO - CLI import time: 1.885s
+2026-04-23 18:50:41,594 - __main__ - INFO - GUI import time: 0.147s
+2026-04-23 18:50:41,993 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 18:50:42,351 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 18:50:42,352 - root - INFO - Using cached auto-import results
+2026-04-23 18:50:42,358 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 18:50:42,476 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 18:50:42,503 - root - INFO - Status: Ready - Auto-imported 1944 modules (36 failed)
+2026-04-23 18:50:42,504 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 18:50:46,348 - __main__ - INFO - GUI startup time: 4.754s
+2026-04-23 18:50:46,349 - utils - INFO - ----------------------------------------
+2026-04-23 18:50:46,349 - __main__ - INFO - Main application script finished. Total time: 6.801s
+2026-04-23 18:54:42,206 - __main__ - INFO - Main application script started.
+2026-04-23 18:54:42,233 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:54:42,284 - __main__ - INFO - CLI import time: 0.051s
+2026-04-23 18:54:47,152 - __main__ - INFO - GUI import time: 4.863s
+2026-04-23 18:54:48,025 - root - ERROR - Failed to initialize GUI: name 'tk' is not defined
+2026-04-23 18:56:14,022 - __main__ - INFO - Main application script started.
+2026-04-23 18:56:14,030 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:56:14,069 - __main__ - INFO - CLI import time: 0.039s
+2026-04-23 18:57:01,253 - __main__ - INFO - Main application script started.
+2026-04-23 18:57:01,253 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:57:01,297 - __main__ - INFO - CLI import time: 0.043s
+2026-04-23 18:57:28,234 - __main__ - INFO - Main application script started.
+2026-04-23 18:57:28,235 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:57:31,295 - __main__ - INFO - CLI import time: 3.060s
+2026-04-23 18:57:31,662 - __main__ - INFO - GUI import time: 0.347s
+2026-04-23 18:57:33,423 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 18:57:33,784 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 18:57:51,475 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 18:57:52,711 - root - INFO - Auto-imported 1944 modules successfully
+2026-04-23 18:57:52,712 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 18:57:52,712 - root - INFO - Auto-import summary: 1944 imported, 36 failed, 15478 skipped, 17458 total files processed
+2026-04-23 18:57:52,720 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 18:57:52,870 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 18:57:52,881 - root - INFO - Status: Ready - Auto-imported 1944 modules (36 failed)
+2026-04-23 18:57:52,881 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 18:57:53,968 - __main__ - INFO - GUI startup time: 22.305s
+2026-04-23 18:57:53,968 - utils - INFO - ----------------------------------------
+2026-04-23 18:57:53,968 - __main__ - INFO - Main application script finished. Total time: 25.734s
+2026-04-23 18:58:41,253 - __main__ - INFO - Main application script started.
+2026-04-23 18:58:41,253 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:58:45,912 - __main__ - INFO - CLI import time: 4.658s
+2026-04-23 18:58:49,820 - __main__ - INFO - Main application script started.
+2026-04-23 18:58:49,820 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 18:58:50,252 - __main__ - INFO - CLI import time: 0.431s
+2026-04-23 18:58:51,279 - __main__ - INFO - GUI import time: 1.007s
+2026-04-23 18:58:52,371 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 18:58:52,768 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 18:58:52,806 - root - INFO - Using cached auto-import results
+2026-04-23 18:58:52,808 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 18:58:52,897 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 18:58:52,922 - root - INFO - Status: Ready - Auto-imported 1944 modules (36 failed)
+2026-04-23 18:58:52,922 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 18:59:32,019 - root - INFO - Status: Sorted by TERTIUS (ascending)
+2026-04-23 18:59:37,978 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-23 18:59:51,671 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 18:59:55,800 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 19:00:01,577 - root - INFO - Status: Running script: any_month.py...
+2026-04-23 19:00:01,577 - root - INFO - Executing script: python '/home/me/Notebooks/CREW/Crew/scripts/any_month.py'
+2026-04-23 19:00:01,721 - root - INFO - Status: Script 'any_month.py' finished.
+2026-04-23 19:01:54,925 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 19:04:25,682 - __main__ - INFO - GUI startup time: 328.571s
+2026-04-23 19:04:33,384 - utils - INFO - ----------------------------------------
+2026-04-23 19:04:33,385 - __main__ - INFO - Main application script finished. Total time: 330.030s
+2026-04-23 19:22:50,080 - __main__ - INFO - Main application script started.
+2026-04-23 19:22:50,127 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 19:23:03,114 - __main__ - INFO - CLI import time: 12.986s
+2026-04-23 19:23:03,765 - __main__ - INFO - GUI import time: 0.634s
+2026-04-23 19:23:13,491 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 19:23:14,416 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 19:23:14,691 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 19:23:14,692 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 19:23:14,692 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 19:23:22,185 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 19:23:27,958 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 19:23:53,173 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 19:23:54,871 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 19:23:54,932 - root - INFO - Auto-imported 1944 modules successfully
+2026-04-23 19:23:54,933 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 19:23:54,933 - root - INFO - Auto-import summary: 1944 imported, 36 failed, 15478 skipped, 17458 total files processed
+2026-04-23 19:23:54,940 - root - INFO - Status: Auto-imported 1944 modules (36 failed)
+2026-04-23 19:24:01,591 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 19:27:33,776 - __main__ - INFO - GUI startup time: 270.011s
+2026-04-23 19:27:33,776 - utils - INFO - ----------------------------------------
+2026-04-23 19:27:33,777 - __main__ - INFO - Main application script finished. Total time: 283.695s
+2026-04-23 19:28:09,174 - __main__ - INFO - Main application script started.
+2026-04-23 19:28:09,199 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 19:28:11,681 - __main__ - INFO - CLI import time: 2.482s
+2026-04-23 19:28:12,050 - __main__ - INFO - GUI import time: 0.352s
+2026-04-23 19:28:13,603 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 19:28:13,924 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 19:28:14,089 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 19:28:14,098 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 19:28:14,098 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 19:28:19,682 - __main__ - INFO - GUI startup time: 7.632s
+2026-04-23 19:28:19,683 - utils - INFO - ----------------------------------------
+2026-04-23 19:28:19,684 - __main__ - INFO - Main application script finished. Total time: 10.508s
+2026-04-23 19:34:45,907 - __main__ - INFO - Main application script started.
+2026-04-23 19:34:45,907 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 19:34:46,416 - __main__ - INFO - CLI import time: 0.508s
+2026-04-23 19:34:46,530 - __main__ - INFO - GUI import time: 0.090s
+2026-04-23 19:34:46,806 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 19:34:47,300 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 19:34:47,415 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 19:34:47,426 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 19:34:47,426 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 19:34:50,459 - __main__ - INFO - GUI startup time: 3.929s
+2026-04-23 19:34:50,460 - utils - INFO - ----------------------------------------
+2026-04-23 19:34:50,460 - __main__ - INFO - Main application script finished. Total time: 4.552s
+2026-04-23 19:36:06,374 - __main__ - INFO - Main application script started.
+2026-04-23 19:36:07,098 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 19:37:43,258 - __main__ - INFO - Main application script started.
+2026-04-23 19:37:43,259 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 19:58:15,098 - __main__ - INFO - Main application script started.
+2026-04-23 19:58:15,126 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 19:58:20,545 - __main__ - INFO - CLI import time: 5.419s
+2026-04-23 19:58:20,664 - __main__ - INFO - GUI import time: 0.116s
+2026-04-23 19:58:21,100 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 19:58:21,699 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 19:58:21,831 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 19:58:21,848 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 19:58:21,848 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 19:58:24,497 - __main__ - INFO - GUI startup time: 3.833s
+2026-04-23 19:58:24,498 - utils - INFO - ----------------------------------------
+2026-04-23 19:58:24,499 - __main__ - INFO - Main application script finished. Total time: 9.399s
+2026-04-23 20:00:26,958 - __main__ - INFO - Main application script started.
+2026-04-23 20:00:26,958 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:00:26,987 - __main__ - INFO - CLI import time: 0.028s
+2026-04-23 20:00:27,214 - __main__ - INFO - GUI import time: 0.219s
+2026-04-23 20:00:27,425 - root - ERROR - Failed to initialize GUI: name 'TTS_AVAILABLE' is not defined
+2026-04-23 20:00:48,113 - __main__ - INFO - Main application script started.
+2026-04-23 20:00:48,113 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:00:48,621 - __main__ - INFO - CLI import time: 0.508s
+2026-04-23 20:00:48,839 - __main__ - INFO - GUI import time: 0.187s
+2026-04-23 20:00:49,249 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:00:49,847 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:00:50,026 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:00:50,037 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:00:50,038 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:00:52,992 - __main__ - INFO - GUI startup time: 4.152s
+2026-04-23 20:00:52,992 - utils - INFO - ----------------------------------------
+2026-04-23 20:00:52,993 - __main__ - INFO - Main application script finished. Total time: 4.879s
+2026-04-23 20:03:31,820 - __main__ - INFO - Main application script started.
+2026-04-23 20:03:31,923 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:03:42,655 - __main__ - INFO - CLI import time: 10.731s
+2026-04-23 20:03:42,765 - __main__ - INFO - GUI import time: 0.095s
+2026-04-23 20:03:44,957 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:03:45,527 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:03:45,615 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:03:45,619 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:03:45,619 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:03:56,166 - __main__ - INFO - GUI startup time: 13.400s
+2026-04-23 20:03:56,167 - utils - INFO - ----------------------------------------
+2026-04-23 20:03:56,168 - __main__ - INFO - Main application script finished. Total time: 24.346s
+2026-04-23 20:17:43,716 - __main__ - INFO - Main application script started.
+2026-04-23 20:17:43,716 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:17:44,195 - __main__ - INFO - CLI import time: 0.479s
+2026-04-23 20:17:44,316 - __main__ - INFO - GUI import time: 0.096s
+2026-04-23 20:17:44,662 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:17:45,158 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:17:45,284 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:17:45,308 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:17:45,309 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:17:47,869 - __main__ - INFO - GUI startup time: 3.553s
+2026-04-23 20:17:47,870 - utils - INFO - ----------------------------------------
+2026-04-23 20:17:47,871 - __main__ - INFO - Main application script finished. Total time: 4.154s
+2026-04-23 20:17:56,080 - __main__ - INFO - Main application script started.
+2026-04-23 20:17:56,080 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:17:56,634 - __main__ - INFO - CLI import time: 0.554s
+2026-04-23 20:17:56,813 - __main__ - INFO - GUI import time: 0.155s
+2026-04-23 20:17:57,227 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:17:57,746 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:17:57,880 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:17:57,902 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:17:57,905 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:19:08,655 - root - INFO - Status: Opening text file: AAA-counters.txt...
+2026-04-23 20:19:08,743 - root - INFO - Status: Loaded: AAA-counters.txt
+2026-04-23 20:19:36,926 - root - INFO - Status: Opening text file: batch_ocr_counters.md...
+2026-04-23 20:19:37,020 - root - INFO - Status: Loaded: batch_ocr_counters.md
+2026-04-23 20:21:53,897 - root - INFO - Status: Opening text file: plan-page37CounterOcr.prompt.md...
+2026-04-23 20:21:53,996 - root - INFO - Status: Loaded: plan-page37CounterOcr.prompt.md
+2026-04-23 20:22:51,621 - root - INFO - Status: Opening text file: crew_chatbot.py...
+2026-04-23 20:22:51,714 - root - INFO - Status: Loaded: crew_chatbot.py
+2026-04-23 20:23:59,848 - root - INFO - Status: Opening text file: orchestrate_batch_ocr.py...
+2026-04-23 20:23:59,915 - root - INFO - Status: Loaded: orchestrate_batch_ocr.py
+2026-04-23 20:24:58,284 - root - INFO - Status: Opening text file: skills_reference.txt...
+2026-04-23 20:24:58,369 - root - INFO - Status: Loaded: skills_reference.txt
+2026-04-23 20:25:56,836 - __main__ - INFO - GUI startup time: 480.021s
+2026-04-23 20:25:56,837 - utils - INFO - ----------------------------------------
+2026-04-23 20:25:56,837 - __main__ - INFO - Main application script finished. Total time: 480.756s
+2026-04-23 20:26:00,380 - __main__ - INFO - Main application script started.
+2026-04-23 20:26:00,381 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:26:00,996 - __main__ - INFO - CLI import time: 0.615s
+2026-04-23 20:26:01,114 - __main__ - INFO - GUI import time: 0.094s
+2026-04-23 20:26:01,418 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:26:01,894 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:26:02,033 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:26:02,035 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:26:02,038 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:26:05,434 - __main__ - INFO - GUI startup time: 4.319s
+2026-04-23 20:26:05,435 - utils - INFO - ----------------------------------------
+2026-04-23 20:26:05,435 - __main__ - INFO - Main application script finished. Total time: 5.054s
+2026-04-23 20:26:14,639 - __main__ - INFO - Main application script started.
+2026-04-23 20:26:14,641 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:26:15,351 - __main__ - INFO - CLI import time: 0.709s
+2026-04-23 20:26:15,505 - __main__ - INFO - GUI import time: 0.108s
+2026-04-23 20:26:15,798 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:26:16,389 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:26:16,595 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:26:16,625 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:26:16,625 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:26:21,094 - __main__ - INFO - GUI startup time: 5.588s
+2026-04-23 20:26:21,094 - utils - INFO - ----------------------------------------
+2026-04-23 20:26:21,096 - __main__ - INFO - Main application script finished. Total time: 6.455s
+2026-04-23 20:28:05,031 - __main__ - INFO - Main application script started.
+2026-04-23 20:28:05,032 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:28:07,072 - __main__ - INFO - CLI import time: 2.040s
+2026-04-23 20:28:07,246 - __main__ - INFO - GUI import time: 0.158s
+2026-04-23 20:28:07,776 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:28:08,185 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:28:08,310 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:28:08,320 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:28:08,321 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:28:16,294 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 20:28:21,488 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 20:28:42,075 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 20:28:42,998 - root - INFO - Auto-imported 1885 modules successfully
+2026-04-23 20:28:42,998 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 20:28:42,998 - root - INFO - Auto-import summary: 1885 imported, 36 failed, 14317 skipped, 16238 total files processed
+2026-04-23 20:28:43,004 - root - INFO - Status: Auto-imported 1885 modules (36 failed)
+2026-04-23 20:31:45,266 - __main__ - INFO - GUI startup time: 218.020s
+2026-04-23 20:31:45,267 - utils - INFO - ----------------------------------------
+2026-04-23 20:31:45,268 - __main__ - INFO - Main application script finished. Total time: 220.235s
+2026-04-23 20:35:05,020 - __main__ - INFO - Main application script started.
+2026-04-23 20:35:05,305 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:36:35,711 - __main__ - INFO - Main application script started.
+2026-04-23 20:36:35,730 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:36:49,112 - __main__ - INFO - Main application script started.
+2026-04-23 20:36:49,112 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:37:03,755 - __main__ - INFO - Main application script started.
+2026-04-23 20:37:03,756 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 20:37:08,488 - __main__ - INFO - CLI import time: 4.732s
+2026-04-23 20:37:09,171 - __main__ - INFO - GUI import time: 0.669s
+2026-04-23 20:37:12,974 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 20:37:13,366 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 20:37:13,488 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 20:37:13,502 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 20:37:13,503 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 20:37:35,015 - root - INFO - Starting TTS playback for all details.
+2026-04-23 20:37:35,259 - root - INFO - TTS playback completed for all details.
+2026-04-23 20:39:50,120 - __main__ - INFO - GUI startup time: 160.949s
+2026-04-23 20:39:50,120 - utils - INFO - ----------------------------------------
+2026-04-23 20:39:50,121 - __main__ - INFO - Main application script finished. Total time: 166.365s
+2026-04-23 21:08:48,511 - __main__ - INFO - Main application script started.
+2026-04-23 21:08:48,563 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 21:08:54,239 - __main__ - INFO - CLI import time: 5.676s
+2026-04-23 21:08:54,827 - __main__ - INFO - GUI import time: 0.569s
+2026-04-23 21:08:57,432 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 21:08:57,787 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 21:08:57,913 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 21:08:57,915 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 21:08:57,916 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 21:11:38,501 - root - INFO - Status: Auto-importing workspace modules...
+2026-04-23 21:12:06,835 - root - WARNING - Failed to auto-import /home/me/Notebooks/CREW/NOTEBOOKS/travellermap_api_advanced.py: 'Alg'
+2026-04-23 21:12:07,725 - root - INFO - Auto-imported 1885 modules successfully
+2026-04-23 21:12:07,725 - root - INFO - Skipped 36 modules (expected for script files)
+2026-04-23 21:12:07,725 - root - INFO - Auto-import summary: 1885 imported, 36 failed, 14317 skipped, 16238 total files processed
+2026-04-23 21:12:07,739 - root - INFO - Status: Auto-imported 1885 modules (36 failed)
+2026-04-23 21:13:31,471 - root - INFO - Status: Loaded: skills_reference.txt
+2026-04-23 21:18:56,094 - root - INFO - Status: Opening text file: skills-list.txt...
+2026-04-23 21:18:56,483 - root - INFO - Status: Loaded: skills-list.txt
+2026-04-23 21:21:14,595 - root - INFO - Status: Opening text file: skills_reference.txt...
+2026-04-23 21:21:14,968 - root - INFO - Status: Loaded: skills_reference.txt
+2026-04-23 21:23:40,412 - root - INFO - Status: Opening text file: crew_chatbot.py...
+2026-04-23 21:23:40,804 - root - INFO - Status: Loaded: crew_chatbot.py
+2026-04-23 21:29:04,173 - root - INFO - Status: Opening text file: README.md...
+2026-04-23 21:29:04,590 - root - INFO - Status: Loaded: README.md
+2026-04-23 21:30:47,775 - root - INFO - Status: Loaded: requirements.txt
+2026-04-23 21:31:37,265 - root - INFO - Status: Opening text file: crew_chatbot_web.py...
+2026-04-23 21:31:37,593 - root - INFO - Status: Loaded: crew_chatbot_web.py
+2026-04-23 21:36:57,829 - root - INFO - Status: Opening text file: demo_query.py...
+2026-04-23 21:36:58,197 - root - INFO - Status: Loaded: demo_query.py
+2026-04-23 21:37:53,281 - root - INFO - Status: Opening text file: traveller_agent.py...
+2026-04-23 21:37:53,544 - root - INFO - Status: Loaded: traveller_agent.py
+2026-04-23 21:45:40,648 - root - INFO - Status: Opening text file: audio_manager.py...
+2026-04-23 21:45:40,755 - root - INFO - Status: Loaded: audio_manager.py
+2026-04-23 21:47:30,597 - root - INFO - Status: Opening data file: SECUNDUS.csv...
+2026-04-23 21:47:30,724 - root - INFO - Status: Loaded 16 records
+2026-04-23 21:48:08,777 - root - INFO - Status: Opening data file: npcs.csv...
+2026-04-23 21:48:08,954 - root - INFO - Status: Loaded 63 records
+2026-04-23 21:51:17,889 - root - INFO - Status: Opening text file: traveller_wiki_api.py...
+2026-04-23 21:51:17,933 - root - INFO - Status: Loaded: traveller_wiki_api.py
+2026-04-23 21:53:08,874 - root - INFO - Status: Opening text file: examples.txt...
+2026-04-23 21:53:09,288 - root - INFO - Status: Loaded: examples.txt
+2026-04-23 21:54:31,503 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-23 21:54:56,927 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-23 21:55:13,972 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-23 21:58:35,011 - __main__ - INFO - GUI startup time: 2980.183s
+2026-04-23 21:58:35,011 - utils - INFO - ----------------------------------------
+2026-04-23 21:58:35,011 - __main__ - INFO - Main application script finished. Total time: 2986.500s
+2026-04-23 22:43:51,652 - __main__ - INFO - Main application script started.
+2026-04-23 22:43:51,671 - utils - INFO - Logged progress: Started Crew main application script.
+2026-04-23 22:43:57,529 - __main__ - INFO - CLI import time: 5.858s
+2026-04-23 22:43:58,270 - __main__ - INFO - GUI import time: 0.724s
+2026-04-23 22:44:03,518 - config - ERROR - Configuration validation error: Invalid type for 'tts_settings.rate'. Expected <class 'float'>, got <class 'int'>.. Using default configuration.
+2026-04-23 22:44:04,088 - root - INFO - Status: Loading default data from /home/me/Notebooks/CREW/Crew/data/npcs.csv...
+2026-04-23 22:44:04,226 - root - INFO - Status: Loaded 63 records from /home/me/Notebooks/CREW/Crew/data/npcs.csv.
+2026-04-23 22:44:04,233 - root - INFO - Status: Ready - Auto-imported 0 modules (0 failed)
+2026-04-23 22:44:04,235 - utils - INFO - Logged progress: Started Crew GUI application.
+2026-04-23 22:47:33,223 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 22:47:34,227 - root - INFO - Updating script menu as it is about to be displayed...
+2026-04-23 22:47:44,889 - root - INFO - Status: Sorted by NPC (ascending)
+2026-04-23 22:52:49,152 - root - INFO - Status: Fetching documentation via ReadMine...
+2026-04-23 22:55:54,570 - root - INFO - Status: Opening text file: README.md...
+2026-04-23 22:55:55,101 - root - INFO - Status: Loaded: README.md
+2026-04-23 22:58:07,292 - root - INFO - Status: Opening text file: traveller_wiki_api.py...
+2026-04-23 22:58:07,678 - root - INFO - Status: Loaded: traveller_wiki_api.py
+2026-04-23 22:58:51,431 - root - INFO - Status: Opening text file: cli.py...
+2026-04-23 22:58:51,851 - root - INFO - Status: Loaded: cli.py
+2026-04-23 23:05:46,462 - __main__ - INFO - GUI startup time: 1308.191s
+2026-04-23 23:05:46,463 - utils - INFO - ----------------------------------------
+2026-04-23 23:05:46,464 - __main__ - INFO - Main application script finished. Total time: 1314.809s
+2026-05-04 22:50:01,434 - __main__ - INFO - Main application script started.
+2026-05-04 22:50:07,609 - __main__ - INFO - CLI import time: 3.994s
+2026-05-04 22:50:08,303 - __main__ - INFO - GUI import time: 0.691s
+2026-05-04 22:54:05,835 - __main__ - INFO - GUI startup time: 236.680s
+2026-05-04 22:54:06,817 - __main__ - INFO - Main application script finished. Total time: 243.550s
+2026-05-05 12:17:02,818 - __main__ - INFO - Main application script started.
+2026-05-05 12:17:04,246 - __main__ - INFO - CLI import time: 0.781s
+2026-05-05 12:17:04,443 - __main__ - INFO - GUI import time: 0.194s
+2026-05-05 12:17:40,265 - __main__ - INFO - GUI startup time: 35.822s
+2026-05-05 12:17:40,271 - __main__ - INFO - Main application script finished. Total time: 37.447s
+2026-05-05 12:17:49,605 - __main__ - INFO - Main application script started.
+2026-05-05 12:17:50,357 - __main__ - INFO - CLI import time: 0.299s
+2026-05-05 12:17:50,374 - __main__ - INFO - GUI import time: 0.014s
+2026-05-05 12:21:44,057 - __main__ - INFO - GUI startup time: 233.682s
+2026-05-05 12:21:44,057 - __main__ - INFO - Main application script finished. Total time: 234.452s
+2026-05-05 13:56:35,026 - __main__ - INFO - Main application script started.
+2026-05-05 13:56:49,134 - __main__ - INFO - CLI import time: 10.226s
+2026-05-05 13:56:50,802 - __main__ - INFO - GUI import time: 1.665s
+2026-05-05 14:52:04,778 - __main__ - INFO - GUI startup time: 3313.977s
+2026-05-05 14:52:04,890 - __main__ - INFO - Main application script finished. Total time: 3329.752s
+2026-05-06 11:35:21,929 - __main__ - INFO - Main application script started.
+2026-05-06 11:35:24,502 - __main__ - INFO - CLI import time: 1.636s
+2026-05-06 11:35:24,725 - __main__ - INFO - GUI import time: 0.221s
+2026-05-06 11:39:17,575 - __main__ - INFO - GUI startup time: 232.850s
+2026-05-06 11:39:17,996 - __main__ - INFO - Main application script finished. Total time: 235.646s
+2026-05-10 13:29:10,948 - __main__ - INFO - Main application script started.
+2026-05-10 13:29:12,579 - __main__ - INFO - CLI import time: 0.742s
+2026-05-10 13:29:13,772 - __main__ - INFO - GUI import time: 1.191s
+2026-05-10 13:32:18,257 - __main__ - INFO - GUI startup time: 184.485s
+2026-05-10 13:32:18,260 - __main__ - INFO - Main application script finished. Total time: 187.310s

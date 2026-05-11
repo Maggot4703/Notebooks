@@ -1,0 +1,58 @@
+Chief
+In the Traveller universe, the Chief Engineer is the unsung hero who stands between the crew and a cold, silent death in the vacuum. While the Captain decides where to go, the Engineer determines if the ship actually arrives. They are responsible for the most complex, expensive, and volatile machinery ever devised by Sophonts.
+
+Here is a breakdown of the duties and responsibilities for a Traveller Chief Engineer.
+1. Power Plant Management
+
+The fusion power plant is the heart of the ship. Without it, there is no gravity, no air, and no maneuverability.
+
+    Output Regulation: Managing the "Power Budget." During combat, the Engineer must shunt power between the Maneuver Drive, spinal mounts, and screens (shields).
+
+    Fuel Quality Control: If the Captain decides to skim a gas giant to save credits, the Engineer must process that "unrefined" fuel. Failure to properly treat it can lead to power fluctuations or catastrophic plant failure.
+
+    Emergency Scram: Knowing exactly when to shut down the plant to prevent a core breach if the ship takes internal damage.
+
+2. The Jump Drive (The "Week of Stress")
+
+The Jump Drive is the most temperamental piece of technology on the ship. The Engineer’s job is most critical during the transition into and out of Jump space.
+
+    Pre-Jump Calibration: Spending hours checking the lanthanum coils and drive alignment. A poor Engineer (J-Drive) check can result in a misjump, sending the ship light-years off course or into a pocket dimension.
+
+    Jump Maintenance: Monitoring the drive for the full 168 hours of Jump. If the drive "hiccups" in the middle of Jump space, the Engineer is the only one who can keep the ship from tearing apart.
+
+3. Maneuver Drive & Thrusters
+
+In real-space, the Engineer ensures the ship can actually move.
+
+    G-Force Compensation: Ensuring the internal grav-plates sync with the M-Drive. If they desync during a high-G turn, the crew becomes "structural reinforcement" against the bulkhead.
+
+    Reaction Control: Maintaining the small thrusters used for docking and fine orbital adjustments.
+
+4. Damage Control and Repair
+
+When the "Incoming Missile" alarm sounds, the Engineer becomes the ship’s combat medic—but for metal instead of flesh.
+Task	Description
+Field Repairs	Patching hull breaches and jury-rigging blown relays during a fire-fight.
+Jury-Rigging	Using the Mechanic skill to get 110% performance out of a damaged system for a short burst.
+Annual Maintenance	Overseeing the month-long shipyard overhaul to ensure the ship’s "Wear and Tear" doesn't lead to a permanent DM (Dice Modifier) penalty to operations.
+5. Life Support and Environment
+
+If the air tastes like "stale ozone and old socks," the Engineer has failed.
+
+    Atmospheric Scrubbers: Maintaining the filters that remove CO2​ and recycle moisture.
+
+    Thermal Regulation: Managing the massive heat radiators. Space is cold, but a fusion plant is incredibly hot; the Engineer keeps the crew from freezing or boiling.
+
+    Gravitics: Keeping the 1.0G standard consistent across all decks.
+
+The Engineer’s Toolkit
+
+A Chief Engineer lives and dies by their Technical Skills. In game terms, you’ll want high levels in:
+
+    Engineer (Power, M-Drive, or J-Drive): The "Big Three" specialties.
+
+    Mechanic: For general hull and hardware fixes.
+
+    Electronics: For the computers and sensors that monitor the drives.
+
+    The Golden Rule: A good Chief Engineer always pads their repair time estimates by 25%. If you tell the Captain it takes four hours and you do it in three, you're a miracle worker. If you tell them one hour and it takes two, you're the reason everyone is dead.

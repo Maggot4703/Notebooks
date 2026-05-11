@@ -12,6 +12,7 @@ dependencies = [
 [tool.uv.workspace]
 members = [
     "AI",
+    "BACKUP",
     "BASH",
     "CALIBRE",
     "CARDCUTTER",

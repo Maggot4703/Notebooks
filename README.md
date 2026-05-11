@@ -7,10 +7,12 @@ Projects are organized in UPPERCASE folders so each area can run independently.
 ## Workspace Layout
 
 - `AI/` - AI notes, workflows, and project bootstrap automation
+- `BACKUP/` - shared LAN backup tooling for `me@home` and `me@p48`
 - `BASH/` - shell command exploration and docs
 - `CALIBRE/` - Calibre command and notebook workflows
 - `CARDCUTTER/` - card-cutter tools and notebook assets
 - `CREW/` - Crew-related notebooks and structured Python project
+- `OPENWEBUI/` - host mapping for Open WebUI, Crew.py, and 0101.html
 - `JUPYTERLAB/` - JupyterLab exploration
 - `PYTHON/` - general Python learning notebooks
 
@@ -22,8 +24,6 @@ Root-level convenience notebooks mirror key workspace notebooks (for example `ai
 - Python (project environments are created per workspace)
 - `uv` (primary dependency/environment tool)
 - JupyterLab
-
-Optional fallback workflow is available with `pipenv` in workspaces that include a `Pipfile`.
 
 ## Quick Start (Root)
 
@@ -52,9 +52,12 @@ uv run jupyter lab
 Examples:
 
 ```bash
+cd /home/me/Notebooks/BACKUP && uv sync && uv run notebooks-backup --help
 cd /home/me/Notebooks/AI && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/BASH && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/CALIBRE && uv sync && uv run jupyter lab
+cd /home/me/Notebooks/OPENWEBUI && uv sync && ./openwebui-host.sh me@home
+cd /home/me/Notebooks/OPENWEBUI && uv sync && ./openwebui-host.sh me@p48
 cd /home/me/Notebooks/PYTHON && uv sync && uv run jupyter lab
 cd /home/me/Notebooks/JUPYTERLAB && uv sync && uv run jupyter lab
 ```
@@ -91,7 +94,7 @@ mkdir -p "/home/me/Notebooks/${PROJECT_NAME}"
 cd "/home/me/Notebooks/${PROJECT_NAME}"
 uv venv
 source .venv/bin/activate
-uv pip install jupyterlab ipykernel pandas
+uv add jupyterlab ipykernel pandas
 uv pip freeze > requirements.txt
 cp /home/me/Notebooks/AI/startup.txt ./startup.txt
 sed -i "2s|^cd .*|cd /home/me/Notebooks/${PROJECT_NAME}|" ./startup.txt
@@ -132,6 +135,28 @@ bash links-ipynb.sh
 - Prefer `uv` over mixed package managers in the same workspace.
 - Treat generated command docs and outputs as generated artifacts.
 
+## Backup Workflow
+
+Use the backup workspace to manage the shared restic repository for `me@home` and `me@p48`.
+
+```bash
+cd /home/me/Notebooks/BACKUP
+uv sync
+uv run notebooks-backup list-drives --host me@home
+uv run notebooks-backup select-drive --host me@home --index 1
+uv run notebooks-backup init-repo
+uv run notebooks-backup install-systemd
+uv run notebooks-backup backup
+```
+
+The drive selection is remembered in `~/.config/notebooks-backup/config.json`, the
+restic password is stored in `~/.config/notebooks-backup/restic-password.txt`, and
+restore is done with:
+
+```bash
+uv run notebooks-backup restore --host-name me@home --target ~/restic-restore
+```
+
 ## Troubleshooting
 
 - If `uv` is missing:
@@ -162,3 +187,13 @@ To convert all `.md` files in `/home/me/Notebooks` (recursively) to PDF with ful
 - If you see LaTeX errors about missing Unicode characters, make sure you are using `--pdf-engine=xelatex` and a Unicode font (like DejaVu or Noto).
 - For other font issues, try `-V mainfont="Noto Sans" -V monofont="Noto Sans Mono"` if those fonts are installed.
 =======
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks
+uv sync
+#uv run jupyter lab
+uv run python main.py
+```

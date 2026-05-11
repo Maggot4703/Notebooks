@@ -1,0 +1,14 @@
+Hex = 0608
+Name = Ninjar
+UWP = A311666-C
+Remarks = Ic Na Ni Mr
+{Ix} = { 2 }
+(Ex) = (956+1)
+[Cx] = [584B]
+N = -
+B = KM
+Z = -
+PBG = 410
+W = 6
+A = ZhIN
+Stellar = A4 V

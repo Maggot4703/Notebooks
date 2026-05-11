@@ -1,0 +1,55 @@
+CREW DESIGN OVERVIEW
+====================
+
+Purpose
+-------
+`/home/me/Notebooks/CREW/DESIGN` is the planning and documentation workspace for the
+Crew project. It is for architecture notes, process templates, plan drafts, and
+workflow guidance. The production application itself lives in `../Crew/`.
+
+Current source of truth
+-----------------------
+- Production application: `../Crew/`
+- Production documentation index: `../docs/README.md`
+- Production app docs/build notes: `../Crew/docs/`
+- Production ReadMine implementation: `../Crew/ReadMine.py`
+- Generated ReadMine output notes: `../Crew/Reading Now/README.md`
+
+Historical or non-authoritative areas
+-------------------------------------
+- `xCrew/` inside DESIGN is an unused legacy copy and is not part of the active app.
+- numbered `*.py.md` files and `*_code.py` plan files are reference dumps or code sketches.
+- logs, CSVs, and dated artifacts under `PLANS/` are historical records unless a task
+  explicitly calls for updating them.
+
+Folder guide
+------------
+- `AGENTS/` - role definitions and agent templates for process work.
+- `JOBS/` - job definitions describing objectives, owners, and linked plans/skills.
+- `PLANS/` - implementation plans, workflow notes, and design-level roadmaps.
+- `RULES/` - process constraints and standards for design work.
+- `SKILLS/` - reusable process descriptions used by plans and agents.
+- `NOTEBOOKS/` - lightweight logs or notes about design/test runs.
+- `automation/` - automation scripts tied to the design workflow.
+
+What to update here
+-------------------
+Update DESIGN files when you need to:
+- align plans with the current production Crew app
+- refresh templates so new docs point at `CREW/Crew`
+- record workflow expectations for GUI, ReadMine, testing, or documentation
+- document future work without changing the production app yet
+
+What not to assume
+------------------
+- Do not use `xCrew/` as a runtime or documentation source.
+- Do not assume dated output files such as `crew_roster_0426.csv` are canonical targets.
+- Do not describe ReadMine as multi-level output unless you are explicitly documenting
+  older behavior; current production output is beginner-only by default.
+
+Current production notes worth reflecting in future design docs
+---------------------------------------------------------------
+- The GUI Help menu opens local docs and ReadMine guidance.
+- Speech Settings is a live GUI surface for TTS/STT configuration.
+- TTS uses a short lead-in pause before speaking to avoid clipped first words.
+- ReadMine keeps beginner output and prunes stale intermediate/advanced directories.

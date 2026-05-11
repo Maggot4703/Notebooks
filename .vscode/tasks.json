@@ -6,6 +6,108 @@
 			"type": "shell",
 			"command": "date",
 			"group": "none"
+		},
+		{
+			"label": "T5-test: Run CLI --help (uv)",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"--project",
+				"${workspaceFolder}/T5-test",
+				"python",
+				"${workspaceFolder}/T5-test/t5_test.py",
+				"--help"
+			],
+			"group": "none"
+		},
+		{
+			"label": "T5-test: grid-image sample (uv)",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"--project",
+				"${workspaceFolder}/T5-test",
+				"python",
+				"${workspaceFolder}/T5-test/t5_test.py",
+				"grid-image",
+				"input.png",
+				"output.png",
+				"--grid-width",
+				"42",
+				"--grid-height",
+				"32",
+				"--grid-color",
+				"lightgrey"
+			],
+			"group": "none"
+		},
+		{
+			"label": "T5-test: read-csv sample (uv)",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"--project",
+				"${workspaceFolder}/T5-test",
+				"python",
+				"${workspaceFolder}/T5-test/t5_test.py",
+				"read-csv",
+				"sample.csv"
+			],
+			"group": "none"
+		},
+		{
+			"label": "T5-test: read-excel sample (uv)",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"--project",
+				"${workspaceFolder}/T5-test",
+				"python",
+				"${workspaceFolder}/T5-test/t5_test.py",
+				"read-excel",
+				"sample.xlsx"
+			],
+			"group": "none"
+		},
+		{
+			"label": "T5-test: mark-line sample (uv)",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"--project",
+				"${workspaceFolder}/T5-test",
+				"python",
+				"${workspaceFolder}/T5-test/t5_test.py",
+				"mark-line",
+				"10",
+				"10",
+				"200",
+				"200",
+				"line-output.png",
+				"--color",
+				"red",
+				"--thickness",
+				"2"
+			],
+			"group": "none"
+		},
+		{
+			"label": "Crew: Run and Validate Tests",
+			"type": "shell",
+			"command": "pytest",
+			"args": [
+				"/home/me/Notebooks/CREW/Crew/tests"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$pytest"
+			],
+			"group": "test"
 		}
 	]
 }

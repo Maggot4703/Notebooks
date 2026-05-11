@@ -1,0 +1,93 @@
+---
+Date: 2026-04-14
+Topic: Traveller Map API Research
+Sources:
+- https://travellermap.com/api/metadata?sector=Spinward%20Marches (API endpoint, metadata example)
+- https://travellermap.com/api/sec?sector=Spinward%20Marches&type=TabDelimited (world list)
+- https://github.com/inexorabletash/TravellerMap (integration examples)
+- CREW/DESIGN/AGENTS/researcher/researcher.txt (role definition)
+- CREW/DESIGN/RULES/always/always.txt (process compliance)
+- CREW/DESIGN/SKILLS/readiness_review.txt (process compliance)
+
+Summary:
+- The Traveller Map API provides programmatic access to sector metadata, world lists, allegiances, and map features for the Traveller RPG universe.
+- /api/metadata returns sector-level data (e.g., subsectors, allegiances, map features) in JSON.
+- /api/sec?sector=...&type=TabDelimited provides world lists in tab-delimited format for automation.
+- The API is public, does not require authentication for basic queries, and uses structured data (JSON/tab-delimited).
+- Integration examples are available in the inexorabletash/TravellerMap GitHub repo, but direct documentation is sparse—endpoint discovery is best done by experimenting with parameters.
+- The API is reliable, widely used, and considered authoritative for the Official Traveller Universe (OTU).
+
+Recommendations:
+1. Use /api/metadata to discover subsectors, allegiances, and map features for a sector.
+2. Use /api/sec with type=TabDelimited for world lists and automation.
+3. Parse JSON/tab-delimited responses as appropriate; no authentication is needed for read-only queries.
+4. Review the inexorabletash/TravellerMap GitHub repo for code examples and advanced integration.
+5. Log all research and integration activities in NOTEBOOKS/notebooks.txt as per process rules.
+
+Examples:
+- Sector metadata: https://travellermap.com/api/metadata?sector=Spinward%20Marches
+- World list: https://travellermap.com/api/sec?sector=Spinward%20Marches&type=TabDelimited
+- GitHub: https://github.com/inexorabletash/TravellerMap
+
+Action:
+This research activity and outcome have been logged in NOTEBOOKS/notebooks.txt as required by RULES/always.txt and the Researcher Agent role.
+Date: 2026-04-14
+Topic: Traveller RPG Research
+Sources:
+- https://www.travellerrpg.com/ (Citizens of the Imperium forums, wiki, resources)
+- CREW/DESIGN/SKILLS/readiness_review.txt (internal process skill)
+
+Summary:
+- The Traveller RPG is a foundational science fiction roleplaying game with multiple editions (Classic, MegaTraveller, New Era, GURPS, Mongoose, etc.) and a highly active community.
+- The main hub, Citizens of the Imperium (travellerrpg.com), offers reliable, up-to-date forums, a resource library, and a wiki, all moderated and contributed to by experienced fans and creators.
+- Forums are organized by edition and topic, supporting rules Q&A, campaign planning, art, ship design, and software tools.
+- The Imperial Encyclopedia Wiki and resource library are valuable for campaign prep and rules clarifications.
+- The readiness_review skill provides a checklist approach that can be adapted for RPG session prep (e.g., referee/player readiness, equipment, scenario review).
+
+Recommendations:
+1. Use the Citizens of the Imperium forums and wiki for authoritative rules answers and community support.
+2. Adapt the readiness review checklist for Traveller session prep to ensure all participants and materials are ready.
+3. Leverage the resource library and wiki for campaign planning and clarifications.
+4. Monitor trending forum topics for emerging rules questions and best practices.
+
+Examples:
+- Classic Traveller Forum: https://www.travellerrpg.com/forums/classic-traveller.56/
+- Traveller Wiki: https://www.travellerrpg.com/link-forums/traveller-wiki.196/
+- Readiness Review Skill: CREW/DESIGN/SKILLS/readiness_review.txt
+
+Action:
+This research activity and outcome have been logged in CREW/DESIGN/NOTEBOOKS/notebooks.txt as required.
+
+Date: 2026-04-14
+Topic: Traveller Map API Research
+Sources:
+- https://travellermap.com/api/metadata?sector=Spinward%20Marches (API endpoint, metadata example)
+- CREW/DESIGN/AGENTS/researcher/researcher.txt (role definition)
+- CREW/DESIGN/RULES/always/always.txt (process compliance)
+- CREW/DESIGN/SKILLS/readiness_review.txt (process compliance)
+
+Summary:
+- The Traveller Map API at travellermap.com provides programmatic access to sector metadata, world lists, allegiances, and map features for the Traveller RPG universe.
+- The /api/metadata endpoint returns sector-level data (e.g., Spinward Marches), including subsector names/letters, allegiances, and map features in JSON format. Example: https://travellermap.com/api/metadata?sector=Spinward%20Marches
+- Other endpoints (e.g., /api/sec?sector=...&type=TabDelimited) provide world lists in tab-delimited format, suitable for integration and automation.
+- The API is public and does not require authentication for basic queries. Data is structured for easy parsing (JSON, tab-delimited text).
+- Integration examples are available in open-source projects on GitHub (e.g., inexorabletash/TravellerMap), but direct documentation is sparse; endpoint discovery is best done by inspecting the /api and /doc/api pages and experimenting with parameters.
+- Reliability: The API is maintained by the TravellerMap community and is widely used in fan tools and campaign generators. Data is considered authoritative for the Official Traveller Universe (OTU).
+
+Recommendations:
+1. Use the /api/metadata endpoint to programmatically discover subsectors, allegiances, and map features for a given sector.
+2. Use the /api/sec endpoint with type=TabDelimited to fetch world lists for automation and integration.
+3. For integration, parse JSON or tab-delimited responses as appropriate; no authentication is required for read-only queries.
+4. Review the inexorabletash/TravellerMap GitHub repository for code examples and advanced integration patterns.
+5. Log all research and integration activities in NOTEBOOKS/notebooks.txt as per process rules.
+
+Examples:
+- Sector metadata: https://travellermap.com/api/metadata?sector=Spinward%20Marches
+- World list: https://travellermap.com/api/sec?sector=Spinward%20Marches&type=TabDelimited
+- GitHub: https://github.com/inexorabletash/TravellerMap
+
+Action:
+This research activity and outcome have been logged in NOTEBOOKS/notebooks.txt as required by RULES/always.txt and the Researcher Agent role.
+Query to Researcher: What are the latest travel policy changes?
+Response: Latest travel policy: All crew must check in before departure.
+---

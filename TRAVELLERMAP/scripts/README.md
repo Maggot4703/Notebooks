@@ -13,3 +13,12 @@ This folder contains main Python scripts for TravellerMap data processing and au
 - Name scripts by function or workflow
 - Keep scripts organized for maintainability
 # This file marks the scripts directory for main Python scripts.
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/TRAVELLERMAP/scripts
+uv sync
+uv run jupyter lab
+```

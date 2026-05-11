@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-pip install anthropic
+uv add anthropic
 ```
 
 ## Client Initialization
@@ -401,4 +401,13 @@ def call_with_retry(
         time.sleep(delay)
 
     raise last_exception
+```
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/AI/skills/skills-main/skills/claude-api/python/claude-api
+uv sync
+uv run jupyter lab
 ```

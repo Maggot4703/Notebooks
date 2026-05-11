@@ -1,0 +1,21 @@
+SKILL: Readiness Review
+
+Purpose:
+- Confirm that all assigned agents are fully prepared for mission execution.
+
+Process:
+1. Review training and certification records for all assigned agents.
+2. Check equipment and health status.
+3. Conduct a readiness review meeting with all stakeholders.
+4. Complete the pre-mission checklist.
+5. Document readiness status and any issues.
+
+Inputs:
+- Training log
+- Pre-mission checklist
+
+Outputs:
+- Readiness review report
+
+Error Handling:
+- If readiness is not confirmed, assign corrective actions and schedule a follow-up review.

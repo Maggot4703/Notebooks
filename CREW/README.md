@@ -4,26 +4,70 @@ In current `CrewAI` docs, a reusable agent "skill" is typically implemented as a
 
 This workspace now includes a minimal starter you can copy when you want to add a new skill.
 
+## Documentation Index
+
+See [docs/README.md](docs/README.md) for a full index of user and developer documentation, including the [FetchDocs (ReadMine) User Guide](docs/fetchdocs_readmine.md).
+
 ## What was added
 
-- `Pipfile` now declares `crewai`
+- `pyproject.toml` declares `crewai`
 - `src/crewai_skill_demo/tools/world_lookup_tool.py` contains a custom `BaseTool`
 - `src/crewai_skill_demo/tools/grid_overlay_tool.py` wraps existing `Crew.py` grid logic
 - `src/crewai_skill_demo/demo.py` shows how to run the skill locally without wiring a full crew yet
 - `.env.example` gives you a starting point for real crew runs later
+
+Open WebUI is the browser companion for this workspace on `me@home`; launch it from the sibling `OPENWEBUI/` workspace with `./openwebui-host.sh me@home`.
+
+## Running the Crew Application
+
+**Recommended:** Use the provided script to ensure all relative imports work correctly:
+
+```bash
+./crew_run.sh
+```
+
+This script runs Crew as a module (`python3 -m Crew.Crew`), which is required for Python to resolve relative imports in the codebase. Do **not** run Crew.py directly with `python Crew/Crew.py` or `python3 Crew/Crew.py`, as this will cause import errors.
+
+You can also pass CLI arguments:
+
+```bash
+./crew_run.sh --help
+./crew_run.sh grid-image --image-path <path> --output-path <path>
+```
+
+
+## Python Version Compatibility
+
+**Important:** This project requires **Python 3.12** for compatibility with `gemini-cli` and Google AI libraries. Python 3.14 is not supported due to upstream library issues.
 
 ## Recommended setup
 
 From `/home/me/Notebooks/CREW`:
 
 ```bash
-pipenv install --skip-lock
+uv sync
+```
+
+### Check Python Version
+
+Before installing dependencies, run:
+
+```bash
+python3 --version
+```
+
+It should output `Python 3.12.x`. If not, please install Python 3.12 and create a new virtual environment.
+
+You can also run the provided script:
+
+```bash
+python3 check_python_version.py
 ```
 
 If you want the optional CrewAI toolkit package as well:
 
 ```bash
-pipenv run python -m pip install "crewai[tools]"
+uv add "crewai[tools]"
 ```
 
 ## File layout
@@ -79,7 +123,7 @@ class MySkillTool(BaseTool):
 Once `crewai` is installed:
 
 ```bash
-pipenv run crewai create tool my_skill
+uv run crewai create tool my_skill
 ```
 
 That is the current CLI shortcut for generating a custom tool scaffold.
@@ -89,7 +133,7 @@ That is the current CLI shortcut for generating a custom tool scaffold.
 Run the included demo:
 
 ```bash
-PYTHONPATH=src pipenv run python -m crewai_skill_demo.demo
+PYTHONPATH=src uv run python -m crewai_skill_demo.demo
 ```
 
 Expected result: a short local lookup result for `Regina`.
@@ -169,3 +213,54 @@ researcher = Agent(
 ```
 
 For actual crew execution, copy `.env.example` to `.env` and fill in the model provider keys you plan to use.
+
+
+## Startup Code
+
+```bash
+cd /home/me/Notebooks/CREW
+uv sync
+PYTHONPATH=src uv run python -m crewai_skill_demo.demo
+```
+
+Or, you can run the demo script directly (now safe for both styles):
+
+```bash
+cd /home/me/Notebooks/CREW
+uv sync
+uv run python src/crewai_skill_demo/demo.py
+```
+
+Both commands are supported. The first (module style) is always safe and recommended for most users. The second (direct script) works because demo.py now bootstraps sys.path automatically.
+## Troubleshooting: Missing pandas or other dependencies
+
+If you see an error like:
+
+```
+ModuleNotFoundError: No module named 'pandas'
+```
+
+it means the required package is not installed in the Python environment you are using. If you run `Crew/Crew.py` directly, make sure to install dependencies in the environment you use to launch it. For example, if you are using a virtual environment from another project (like DICTATE), install pandas there:
+
+```bash
+/path/to/venv/bin/pip install pandas
+```
+
+Or, to install in the current environment:
+
+```bash
+pip install pandas
+```
+```
+
+
+## STARTUP CODE
+
+```bash
+cd /home/me/Notebooks/CREW/Crew
+uv sync
+#uv run jupyter lab
+uv run python Crew.py
+'''
+
+- The Crew GUI now includes a Speech (TTS) menu and a Microphone (speech recognition) menu. See [Crew/Crew/README.md](Crew/Crew/README.md#speech-and-microphone-features) for details.
