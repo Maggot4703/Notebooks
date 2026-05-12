@@ -24,4 +24,5 @@ jobs:
       - name: Run Playwright tests
         run: |
           cd 0101/0101
-          npx playwright test
+          # Use local binary to avoid requiring @playwright/test twice in some Actions environments
+          ./node_modules/.bin/playwright test
