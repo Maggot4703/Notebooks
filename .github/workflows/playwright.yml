@@ -19,8 +19,21 @@ jobs:
         run: |
           cd 0101/0101
           uv sync || true
-          uv run python src/public_html/server.py &
-          sleep 2
+          nohup uv run python src/public_html/server.py > server.log 2>&1 &
+          echo "started server pid: $!" || true
+          # Wait for server to become responsive on /api/ping (30s timeout)
+          attempts=0
+          until curl -sSf http://localhost:8080/api/ping >/dev/null 2>&1; do
+            attempts=$((attempts+1))
+            echo "Waiting for server... ($attempts)"
+            if [ $attempts -ge 30 ]; then
+              echo "Server failed to start; dumping server.log:" >&2
+              sed -n '1,200p' server.log >&2 || true
+              exit 1
+            fi
+            sleep 1
+          done
+          echo "Server is up."
       - name: Debug info (0101)
         run: |
           cd 0101/0101
