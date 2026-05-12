@@ -1,7 +1,0 @@
-# <command> --help
-%s --help >./Output_A/helper-%s--help.txt
-man %s >./Output_A/helpMan-%s.txt
-# snap help <command>
-snap help %s >./Output_S/helper-snap-help-%s.txt
-# calibre db
-calibredb %s --help >./Output_C/helper-calibredb-%s--help.txt

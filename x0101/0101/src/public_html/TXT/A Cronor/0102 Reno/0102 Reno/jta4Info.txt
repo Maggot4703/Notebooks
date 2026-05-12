@@ -1,77 +1,0 @@
-Hex = 0102
-Name = Reno
-UWP = C4207B9-A
-Starport = C
-	Quality = Routine
-	Yards = No
-	Repairs = Major damage
-	Fuel = Unrefined
-	Downport = Yes
-	Highport = No
-	possBases = S
-Size = 4
-	DIGIT	DIA(MI)	DIA(KM)
-	4	4,000	6,400
-Atmosphere = 2
-	DIGIT	DESCRIPTION	EFFECTS
-	2	VThin, Tainted	P1, S2
-Hydrosphere = 0
-	DIGIT	DESCRIPTION
-	0	Desert World
-Population = 7
-	POPULATION UNDER 60,000,000
-	DIGIT	DESCRIPTION	VALUE
-	7	Ten million	0,000,000
-Government = B
-	DIGIT	DESCRIPTION	NOTE
-	B	Non-Charismatic Dictatorship	Government by the successor to a charismatic dictator
-Law Level = 9
-	DIGIT	DESCRIPTION	NOTE
-	9	High Law	Weapons outside the home prohibited
-Tech Level = A
-	DIGIT		
-	A		
-Remarks = De He Na Po Pi Pz
-	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
-	De	23456789	0					Desert	
-	He	3459ABC	2479ABC	012				Hell World	
-	Na		0123	0123	6789ABC			Non Agricultural	
-	Po		2345	0123				Poor	
-	Pi		012479		78			Pre Industrial	
-	Pz				789ABC			Puzzle	Amber Zone
-{Ix} = { 1 }
-	TL 10 = +1
-	Importance = Normal (1)+0=1
-(Ex) = (C6A+2)
-	Resources =  12
-	Labour =  6
-	Infrastructure =  10
-	Efficiency =  2
-	RU = 1440
-[Cx] = [886B]
-	Homogeneity = 8
-	Acceptance = 8
-	Strangeness = 6
-	Symbols = 11
-N = -
-	No Imperial Nobles
-B = -
-	DIGIT	DESCRIPTION	ALLEG
-Z = A
-	CODE	DESCRIPTION
-	A	Amber - Potentially dangerous.  Caution advised.  Imperial.
-PBG = 603
-	Population Multiplier = 6
-	POPULATION UNDER 60,000,000
-	Planetoid Belts = 0
-	Gas Giants = 3
-W = 12
-	Non Stars In System = 12
-	-1 (mainworld)
-	-0 (planetoid belts)
-	-3 (gas giants)
-	 = 8 other worlds
-A = ZhIN
-	CODE	DESCRIPTION
-Stellar = G8 V M1 V
-	Stars = 2
