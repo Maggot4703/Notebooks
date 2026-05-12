@@ -632,3 +632,8 @@
 2026-05-10 13:29:13,772 - __main__ - INFO - GUI import time: 1.191s
 2026-05-10 13:32:18,257 - __main__ - INFO - GUI startup time: 184.485s
 2026-05-10 13:32:18,260 - __main__ - INFO - Main application script finished. Total time: 187.310s
+2026-05-12 10:35:58,739 - __main__ - INFO - Main application script started.
+2026-05-12 10:35:59,194 - __main__ - INFO - CLI import time: 0.025s
+2026-05-12 10:35:59,632 - __main__ - INFO - GUI import time: 0.436s
+2026-05-12 10:39:35,446 - __main__ - INFO - GUI startup time: 215.815s
+2026-05-12 10:39:35,447 - __main__ - INFO - Main application script finished. Total time: 216.708s

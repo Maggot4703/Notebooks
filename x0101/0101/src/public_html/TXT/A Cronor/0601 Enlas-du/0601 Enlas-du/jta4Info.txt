@@ -1,76 +1,0 @@
-Hex = 0601
-Name = Enlas-du
-UWP = E975776-6
-Starport = E
-	Quality = Frontier
-	Yards = No
-	Repairs = No
-	Fuel = No
-	Downport = Beacon
-	Highport = No
-	possBases = No
-Size = 9
-	DIGIT	DIA(MI)	DIA(KM)
-	9	9,000	14,400
-Atmosphere = 7
-	DIGIT	DESCRIPTION	EFFECTS
-	7	Standard, Tainted	P1
-Hydrosphere = 5
-	DIGIT	DESCRIPTION
-	5	50%
-Population = 7
-	POPULATION UNDER 30,000,000
-	DIGIT	DESCRIPTION	VALUE
-	7	Ten million	0,000,000
-Government = 7
-	DIGIT	DESCRIPTION	NOTE
-	7	Balkanization	Rival governments continually compete for control of the world
-Law Level = 6
-	DIGIT	DESCRIPTION	NOTE
-	6	Moderate Law	Pohibition of Machineguns
-Tech Level = 6
-	DIGIT		
-	6		
-Remarks = Ag Pi
-	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
-	Ag		456789	45678	567			Agricultural	
-	Pi		012479		78			Pre Industrial	
-{Ix} = { -1 }
-	Starport E = -1
-	TL 6 = -1
-	Ag  = +1
-	Importance = Unimportant (-1)+0=-1
-(Ex) = (966-2)
-	Resources =  9
-	Labour =  6
-	Infrastructure =  6
-	Efficiency =  -2
-	RU = -648
-[Cx] = [6645]
-	Homogeneity = 6
-	Acceptance = 6
-	Strangeness = 4
-	Symbols = 5
-N = -
-	No Imperial Nobles
-B = -
-	DIGIT	DESCRIPTION	ALLEG
-Z = -
-	CODE	DESCRIPTION
-	-	Green - Unrestricted.  Imperial.
-PBG = 323
-	Population Multiplier = 3
-	POPULATION UNDER 30,000,000
-	Planetoid Belts = 2
-	Gas Giants = 3
-W = 14
-	Non Stars In System = 14
-	-1 (mainworld)
-	-2 (planetoid belts)
-	-3 (gas giants)
-	 = 8 other worlds
-A = NaHu
-	CODE	DESCRIPTION
-	NaHu	Non-Aligned, Human-dominated
-Stellar = F1 V
-	Stars = 1

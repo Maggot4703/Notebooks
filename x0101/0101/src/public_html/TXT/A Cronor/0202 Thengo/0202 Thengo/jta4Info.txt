@@ -1,76 +1,0 @@
-Hex = 0202
-Name = Thengo
-UWP = C868586-5
-Starport = C
-	Quality = Routine
-	Yards = No
-	Repairs = Major damage
-	Fuel = Unrefined
-	Downport = Yes
-	Highport = No
-	possBases = S
-Size = 8
-	DIGIT	DIA(MI)	DIA(KM)
-	8	8,000	13,800
-Atmosphere = 6
-	DIGIT	DESCRIPTION	EFFECTS
-	6	Standard	
-Hydrosphere = 8
-	DIGIT	DESCRIPTION
-	8	80%
-Population = 5
-	POPULATION UNDER 800,000
-	DIGIT	DESCRIPTION	VALUE
-	5	Hundred thousand	00,000
-Government = 8
-	DIGIT	DESCRIPTION	NOTE
-	8	Civil Service Bureaucracy	Rule by agencies employing individuals selected by merit
-Law Level = 6
-	DIGIT	DESCRIPTION	NOTE
-	6	Moderate Law	Pohibition of Machineguns
-Tech Level = 5
-	DIGIT		
-	5		
-Remarks = Ag Ni Pr
-	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
-	Ag		456789	45678	567			Agricultural	
-	Ni				456			Non Industrial	
-	Pr		68		59			Pre Rich	
-{Ix} = { -1 }
-	TL 5 = -1
-	Ag  = +1
-	Pop < 7 = -1
-	Importance = Unimportant (-1)+0=-1
-(Ex) = (743-2)
-	Resources =  7
-	Labour =  4
-	Infrastructure =  3
-	Efficiency =  -2
-	RU = -168
-[Cx] = [4444]
-	Homogeneity = 4
-	Acceptance = 4
-	Strangeness = 4
-	Symbols = 4
-N = -
-	No Imperial Nobles
-B = -
-	DIGIT	DESCRIPTION	ALLEG
-Z = -
-	CODE	DESCRIPTION
-	-	Green - Unrestricted.  Imperial.
-PBG = 801
-	Population Multiplier = 8
-	POPULATION UNDER 800,000
-	Planetoid Belts = 0
-	Gas Giants = 1
-W = 12
-	Non Stars In System = 12
-	-1 (mainworld)
-	-0 (planetoid belts)
-	-1 (gas giants)
-	 = 10 other worlds
-A = ZhIN
-	CODE	DESCRIPTION
-Stellar = G5 V M3 V
-	Stars = 2
