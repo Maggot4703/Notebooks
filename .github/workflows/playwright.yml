@@ -10,8 +10,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install deps
+      - name: Install deps (0101)
         run: |
+          cd 0101/0101
           npm ci
           npx playwright install --with-deps
       - name: Start server
@@ -21,4 +22,6 @@ jobs:
           uv run python src/public_html/server.py &
           sleep 2
       - name: Run Playwright tests
-        run: npx playwright test
+        run: |
+          cd 0101/0101
+          npx playwright test
