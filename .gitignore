@@ -10,3 +10,5 @@ wheels/
 
 # Virtual environments
 .venv
+\n# Ignore nested Playwright node_modules
+0101/0101/tests/playwright/node_modules
