@@ -18,8 +18,12 @@ jobs:
       - name: Start server
         run: |
           cd 0101/0101
-          uv sync || true
-          nohup uv run python src/public_html/server.py > server.log 2>&1 &
+          # If requirements.txt exists, install dependencies
+          if [ -f requirements.txt ]; then
+            python -m pip install --upgrade pip
+            python -m pip install -r requirements.txt
+          fi
+          nohup python -u src/public_html/server.py > server.log 2>&1 &
           echo "started server pid: $!" || true
           # Wait for server to become responsive on /api/ping (30s timeout)
           attempts=0
