@@ -18,6 +18,12 @@ jobs:
       - name: Remove accidental gitlinks
         run: |
           git ls-files -s | awk '$1=="160000"{print $4}' | xargs -r git rm --cached -r || true
+      - name: Init submodules (if any)
+        run: |
+          if [ -f .gitmodules ]; then
+            git submodule sync --recursive || true
+            git submodule update --init --recursive --depth 1 || true
+          fi
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
