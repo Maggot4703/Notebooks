@@ -3201,7 +3201,7 @@ wheels = [
 
 [[package]]
 name = "open-webui"
-version = "0.9.4"
+version = "0.9.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "accelerate" },
@@ -3300,9 +3300,9 @@ dependencies = [
     { name = "xlrd" },
     { name = "youtube-transcript-api" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0b/8c/f0503dae9f13be04876454db458c505f9cc699e769e9ff55a59ce83d7d35/open_webui-0.9.4.tar.gz", hash = "sha256:5ab29680ccb20e3905eb9c423ca62eadc3cad284ef3b99a9fe4bfe6d64007e35", size = 52161914, upload-time = "2026-05-09T07:57:04.294Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9f/1f/cd81f80e1f28ff52f5f83b1c35e6b679c2368689a67831e8c7be4d416aed/open_webui-0.9.5.tar.gz", hash = "sha256:f231aaac4316b1e24824db1ccb195d8af32ca5a34b79ed0cb6ce5bc517bf62b4", size = 52172646, upload-time = "2026-05-10T18:20:48.559Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5b/9f/fdc6d89372adee11e0709f219b2bd36122856be401967077dc67fa3a69ea/open_webui-0.9.4-py3-none-any.whl", hash = "sha256:a33f577bdf03f273c50e74df455687cbec69d0c4556c90c146af78fa4631b3cb", size = 151385574, upload-time = "2026-05-09T07:56:58.233Z" },
+    { url = "https://files.pythonhosted.org/packages/a9/59/993a84b6852a4f1a46e8142f2b59b8748ca8b5a49ad1353c510c06b30898/open_webui-0.9.5-py3-none-any.whl", hash = "sha256:88e5751135cb54188e15bcd693cbef8689b3f755197513b76bb6ca35482f290d", size = 151398894, upload-time = "2026-05-10T18:20:38.031Z" },
 ]
 
 [[package]]
@@ -3492,7 +3492,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "open-webui", specifier = ">=0.9.4" }]
+requires-dist = [{ name = "open-webui", specifier = ">=0.9.5" }]
 
 [[package]]
 name = "orjson"
