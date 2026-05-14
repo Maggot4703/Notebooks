@@ -14,6 +14,10 @@ jobs:
           fetch-depth: 0
           submodules: false
           persist-credentials: false
+
+      - name: Remove accidental gitlinks
+        run: |
+          git ls-files -s | awk '$1=="160000"{print $4}' | xargs -r git rm --cached -r || true
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
