@@ -220,6 +220,17 @@
         </article>
 
         <article class="links-card">
+          <span class="links-label">External</span>
+          <h2>External RPG references</h2>
+          <p>Quick links into common Traveller resources. Links are populated from local context where possible.</p>
+          <ul>
+            <li><a id="rpg-wiki-link" href="#" target="_blank" rel="noopener">Traveller Wiki (search)</a></li>
+            <li><a id="rpg-map-link" href="#" target="_blank" rel="noopener">TravellerMap (site search)</a></li>
+            <li><a id="rpg-rpg-link" href="#" target="_blank" rel="noopener">TravellerRpg (site search)</a></li>
+          </ul>
+        </article>
+
+        <article class="links-card">
           <span class="links-label">Subsector text</span>
           <h2>Subsector text bundles</h2>
           <p>Directory-style links into the local text exports for A Cronor.</p>
@@ -260,5 +271,36 @@
     </main>
     <script src="persist.js"></script>
     <script src="0101-shell.js"></script>
+    <script>
+      (function () {
+        function getSector() {
+          var el = document.getElementById('Sector');
+          if (el && el.value) return el.value;
+          return localStorage.getItem('sec') || '';
+        }
+        function getHex() {
+          var el = document.getElementById('Sys');
+          if (el && el.value) return el.value.toLowerCase();
+          try {
+            var saved = localStorage.getItem('hexJSON');
+            if (!saved) return '';
+            var parsed = JSON.parse(saved);
+            return parsed && parsed.hex ? String(parsed.hex).toLowerCase() : '';
+          } catch (e) { return ''; }
+        }
+        var sector = getSector();
+        var hex = getHex();
+        var query = sector || '';
+        if (hex) query = query ? query + ' ' + hex : hex;
+        var wiki = 'https://travellerrpg.fandom.com/wiki/Special:Search?query=' + encodeURIComponent(query);
+        var map = 'https://duckduckgo.com/?q=site:travellermap.com+' + encodeURIComponent(query);
+        var rpg = 'https://duckduckgo.com/?q=site:travellerrpg.com+' + encodeURIComponent(query);
+        try {
+          var w = document.getElementById('rpg-wiki-link'); if (w) w.href = wiki;
+          var m = document.getElementById('rpg-map-link'); if (m) m.href = map;
+          var r = document.getElementById('rpg-rpg-link'); if (r) r.href = rpg;
+        } catch (e) {}
+      }());
+    </script>
   </body>
 </html>
