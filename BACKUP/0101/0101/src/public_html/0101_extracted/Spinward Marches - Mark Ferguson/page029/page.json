@@ -1,0 +1,18 @@
+{
+  "page_number": 29,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page029/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020 ‘Spinward Marches\nSpinward Marches/L Mora/3124 Mora\n\nO\n©\n\neee\n\nAA99AC7-F\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\nSize=A\nDIGIT DIA(MI) DIA(KM)\nA 10,000 16,000\n\nAtmosphere = 9\nDIGIT DESCRIPTION EFFECTS\n9 Dense, Tainted PI\n\nHydrosphere = 9\nDIGIT DESCRIPTION\n990%\n\nPopulation = A\nPOPULATION UNDER 10,000,000,000\nDIGIT DESCRIPTION VALUE\nA Ten billion 0,000,000,000\n\nGovernment = C\nDIGIT DESCRIPTION NOTE\nC Charismatic Oligarchy Goverment by a sect religious, mystic, or psionic group, organization, or class enjoying the overwhelming confidence of the citizenry\n\nLaw Level=7\nDIGIT DESCRIPTION NOTE\n7 Moderate Law Prohibition of Pistols\n\n‘Tech Level =F\nDIGIT\nF\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 17/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page029/page_full.png"
+}

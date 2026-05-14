@@ -1,0 +1,14 @@
+Hex = 0704
+Name = Nerewhon
+UWP = E738475-7
+Remarks = Ni
+{Ix} = { -3 }
+(Ex) = (631-5)
+[Cx] = [2135]
+N = -
+B = -
+Z = -
+PBG = 820
+W = 10
+A = NaHu
+Stellar = K5 V

@@ -1,0 +1,18 @@
+{
+  "page_number": 37,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page037/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020 ‘Spinward Marches\nSpinward Marches/P Trin's Veil/3235 Trin\n\nA894A96-F\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel = Both\nDownport = Yes\n\nSize =8\nDIGIT DIA(MI) DIA(KM)\n8 8,000 13,800\n\nAtmosphere = 9\nDIGIT DESCRIPTION EFFECTS\n9 Dense, Tainted P1\n\nHydrosphere = 4\nDIGIT DESCRIPTION\n4.40%\n\nPopulation = A\nPOPULATION UNDER 10,000,000,000\nDIGIT DESCRIPTION VALUE\nA Ten billion 0,000,000,000\n\nGovernment = 9\nDIGIT DESCRIPTION NOTE\n9 Impersonal Bureaucracy Impersonal agencies rule\n\nLaw Level= 6\nDIGIT DESCRIPTION NOTE\n6 Moderate Law Pohibition of Machineguns\n\nTech Level =F\nDIGIT\nF\n\nSECTOR CAPITAL\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 21/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page037/page_full.png"
+}

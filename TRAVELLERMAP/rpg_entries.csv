@@ -1,0 +1,10 @@
+raw,type,title,name,world,hex,subsector_name,unit_number,unit_designation,regiment,force,action,role,organization,origin_world,origin_hex,note
+"Duke of Kesali (Vland/2737)",noble_title,Duke,Kesali,Vland,2737,,,,,,,,,,
+"Kakadan Subsector",subsector,,,,,Kakadan,,,,,,,,
+"Baron of Fraynj (Gushmege/1623)",noble_title,Baron,Fraynj,Gushmege,1623,,,,,,,,,,
+"Sallounn Subsector",subsector,,,,,Sallounn,,,,,,,,
+"#11, 154th BRS",unit,,,,, ,11,"154th BRS",,,,,,,
+"#104, 154th BRS",unit,,,,, ,104,"154th BRS",,,,,,,
+"#88, 4518th LIR, MCG The Final Victory At Uakye",unit_action,,,,, ,88,,"4518th LIR",MCG,"The Final Victory At Uakye",,,,,
+"#279, 4518th LIR, MCG Battle of Mongo",unit_action,,,,, ,279,,"4518th LIR",MCG,"Battle of Mongo",,,,,
+"TAS Member OF Galis (Delphi/0918) NOT FROM!",affiliation_note,,,,,,,,,,,"TAS Member","Galis",Delphi,0918,"Member of Galis but NOT from Galis"

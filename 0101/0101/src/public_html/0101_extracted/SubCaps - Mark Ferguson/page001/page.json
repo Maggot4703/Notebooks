@@ -1,0 +1,316 @@
+{
+  "page_number": 1,
+  "bbox": [
+    0.0,
+    0.0,
+    595.0,
+    842.0
+  ],
+  "text_blocks": [
+    {
+      "bbox": [
+        150.3000030517578,
+        57.461997985839844,
+        444.9960021972656,
+        77.38800048828125
+      ],
+      "spans": [
+        {
+          "text": "Spinward Marches Subsector Capitals",
+          "bbox": [
+            150.3000030517578,
+            57.461997985839844,
+            444.9960021972656,
+            77.38800048828125
+          ],
+          "size": 18.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        83.5999984741211,
+        239.0080108642578,
+        510.260009765625,
+        254.0919952392578
+      ],
+      "spans": [
+        {
+          "text": "0304 Chronor",
+          "bbox": [
+            83.5999984741211,
+            239.30799865722656,
+            154.9879913330078,
+            252.5919952392578
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "1106 Jewell",
+          "bbox": [
+            208.3000030517578,
+            240.80799865722656,
+            266.5960388183594,
+            254.0919952392578
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "1910 Regina",
+          "bbox": [
+            326.5,
+            239.30799865722656,
+            389.47601318359375,
+            252.5919952392578
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "3110 Aramis",
+          "bbox": [
+            446.6000061035156,
+            239.0080108642578,
+            510.260009765625,
+            252.29200744628906
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        82.19999694824219,
+        404.5080261230469,
+        516.176025390625,
+        419.7920227050781
+      ],
+      "spans": [
+        {
+          "text": "0614 Querion",
+          "bbox": [
+            82.19999694824219,
+            406.5080261230469,
+            151.84800720214844,
+            419.7920227050781
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "1116 Frenzie",
+          "bbox": [
+            205.5,
+            406.5080261230469,
+            269.49603271484375,
+            419.7920227050781
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "1719 Lanth",
+          "bbox": [
+            328.79998779296875,
+            404.5080261230469,
+            387.0479736328125,
+            417.7920227050781
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "2716 Rhylanor",
+          "bbox": [
+            440.6000061035156,
+            404.6080017089844,
+            516.176025390625,
+            417.8919982910156
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        91.0,
+        570.2080078125,
+        506.2080383300781,
+        585.4920043945312
+      ],
+      "spans": [
+        {
+          "text": "0527 Mire",
+          "bbox": [
+            91.0,
+            570.2080078125,
+            143.11599731445312,
+            583.4920043945312
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "1223 Gram",
+          "bbox": [
+            208.6999969482422,
+            570.2080078125,
+            266.2040100097656,
+            583.4920043945312
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "2124 Lunion",
+          "bbox": [
+            325.79998779296875,
+            570.2080078125,
+            390.0480041503906,
+            583.4920043945312
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "3124 Mora",
+          "bbox": [
+            450.6000061035156,
+            572.2080078125,
+            506.2080383300781,
+            585.4920043945312
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        85.9000015258789,
+        735.907958984375,
+        502.97601318359375,
+        749.5919799804688
+      ],
+      "spans": [
+        {
+          "text": "0732 Iderati",
+          "bbox": [
+            85.9000015258789,
+            735.907958984375,
+            148.20401000976562,
+            749.1919555664062
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "1532 Elixabeth",
+          "bbox": [
+            199.3000030517578,
+            736.3079833984375,
+            275.5360412597656,
+            749.5919799804688
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "2036 Glisten",
+          "bbox": [
+            326.1000061035156,
+            735.907958984375,
+            389.748046875,
+            749.1919555664062
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        },
+        {
+          "text": "3235 Trin",
+          "bbox": [
+            453.79998779296875,
+            736.0079956054688,
+            502.97601318359375,
+            749.2919921875
+          ],
+          "size": 12.0,
+          "font": "TimesNewRomanPS-BoldMT"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img001.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img002.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img003.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img004.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img005.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img006.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img007.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img008.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img009.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img010.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img011.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img012.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img013.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img014.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img015.png",
+      "type": "png"
+    },
+    {
+      "file": "0101_extracted/SubCaps - Mark Ferguson/page001/img016.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "",
+  "page_image": "0101_extracted/SubCaps - Mark Ferguson/page001/page_full.png"
+}

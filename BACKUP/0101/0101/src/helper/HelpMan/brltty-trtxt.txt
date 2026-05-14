@@ -1,0 +1,16 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/brltty-trtxt
+Usage: brltty-trtxt [option ...] [{input-file | -} ...]
+-i file      --input-table=        Path to input text table.
+-o file      --output-table=       Path to output text table.
+-6           --six-dots            Remove dots seven and eight.
+-b           --no-base-characters  Don't fall back to the Unicode base
+                                   character.
+-h           --help                Print a usage summary (commonly used options
+                                   only), and then exit.
+-H           --full-help           Print a usage summary (all options), and
+                                   then exit.

@@ -1,0 +1,18 @@
+{
+  "page_number": 11,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page011/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "44/08/2020 Spinward Marches\nSpinward Marches/C Regina/1910 Regina\n\nA788899-C\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\nSize=7\nDIGIT DIA(MI) DIA(KM)\n7 7,000 12,200\n\nAtmosphere = 8\nDIGIT DESCRIPTION EFFECTS\n8 Dense\n\nHydrosphere = 8\nDIGIT DESCRIPTION\n8 80%\n\nPopulation = 8\nPOPULATION UNDER 700,000,000\nDIGIT DESCRIPTION VALUE\n8 Hundred million 00,000,000\n\nGovernment = 9\nDIGIT DESCRIPTION NOTE\n9 Impersonal Bureaucracy Impersonal agencies rule\n\nLaw Level= 9\nDIGIT DESCRIPTION NOTE\n9 High Law Weapons outside the home prohibited\n\nTech Level =C\nDIGIT\nCc\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page011/page_full.png"
+}

@@ -1,0 +1,85 @@
+# Page 39
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 3202 Junidy
+  Code: 0003
+  Size: 6-Coarps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 100
+  TF: TF 50
+  TL: TL 11
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 3202 Junidy
+  Code: 0004
+  Size: 6-Coarps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 100
+  TF: TF 50
+  TL: TL 11
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 3202 Junidy
+  Code: 0005
+  Size: 6-Coarps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 100
+  TF: TF 50
+  TL: TL 11
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 2908 Zila
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL ?
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 3002 Yebab
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: e's
+  TF: TF 45
+  TL: TL 8
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 3202 Junidy
+  Code: 0001
+  Size: 6-Coarps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 100
+  TF: TF 50
+  TL: TL 11
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 3202 Junidy
+  Code: 0002
+  Size: 6-Coarps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 100
+  TF: TF 50
+  TL: TL 11
