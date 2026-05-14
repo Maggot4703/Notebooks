@@ -552,6 +552,17 @@
     </script>
     <script src="persist.js"></script>
     <script src="0101-shell.js"></script>
+    <script>
+      // Non-destructive hide for Book Browser if present
+      document.addEventListener('DOMContentLoaded', function(){
+        try {
+          var el = document.getElementById('book-browser') || document.querySelector('.book-browser');
+          if (el) el.style.display = 'none';
+        } catch (e) {
+          console.warn('hide book-browser failed', e);
+        }
+      });
+    </script>
     <!-- -->
   </body>
 </html>
