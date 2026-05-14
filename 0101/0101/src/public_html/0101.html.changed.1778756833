@@ -202,29 +202,7 @@
         <area shape="rect" coords="0,0,400,50" alt="show Key" href="key.html">
       </map>
     </div>
-    <!-- Book Browser -->
-    <div id="book-browser" class="w3-row tm-card-grid" style="display:none!important;">
-      <div class="w3-col s12 w3-center">
-        <section style="padding:1rem;margin:1rem;border:1px solid #30363d;border-radius:12px;background:var(--tm-panel);">
-          <h2>Book Browser</h2>
-          <div id="tm-pdf-list"></div>
-
-          <div style="margin-top:0.5rem;display:flex;gap:0.5rem;align-items:center;justify-content:center;flex-wrap:wrap;">
-            <div id="tm-pdf-title" style="font-weight:600"></div>
-            <div style="display:flex;gap:0.4rem;align-items:center;">
-              <input id="tm-search-input" type="search" placeholder="Search page text..." style="padding:0.4rem;border-radius:6px;border:1px solid #30363d;min-width:220px;">
-              <button id="tm-search-btn" style="padding:0.4rem 0.6rem;border-radius:6px;">Search</button>
-              <label style="color:var(--tm-muted);margin-left:0.5rem;"><input id="tm-highlight-case" type="checkbox"> Case-sensitive</label>
-              <label style="color:var(--tm-muted);margin-left:0.5rem;"><input id="tm-search-server" type="checkbox"> Server search</label>
-              <button id="tm-rebuild-index" style="padding:0.4rem;border-radius:6px;margin-left:0.4rem;">Rebuild index</button>
-            </div>
-          </div>
-
-          <div id="tm-pager" style="margin:0.5rem 0"></div>
-          <div id="tm-viewer" style="text-align:left;padding:0.5rem;max-width:900px;margin:0 auto"></div>
-        </section>
-      </div>
-    </div>
+    <!-- Book Browser removed -->
 
     <!-- Offensive Capability -->
     <div class="w3-row tm-card-grid">

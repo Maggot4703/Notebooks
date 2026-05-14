@@ -1679,3 +1679,6 @@ Serving on http://localhost:8080/
 127.0.0.1 - "POST /api/text/scratchpad-index-html-spinward-marches-0102 HTTP/1.1" 200 -
 No browser ping for 60s — shutting down.
 Server stopped.
+Serving on http://localhost:8080/
+No browser ping for 60s — shutting down.
+Server stopped.
