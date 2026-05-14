@@ -45,6 +45,8 @@ jobs:
           if [ -f CREW/Crew/requirements.txt ]; then pip install -r CREW/Crew/requirements.txt; fi
           # Ensure pytest is available in the runner
           python -m pip install pytest
+          # Ensure commonly used test deps are present (fallback if requirements.txt missing entries)
+          python -m pip install requests
       - name: Run pytest for CREW
         run: |
           # Run tests from repo root so imports resolve; use Xvfb for GUI tests
