@@ -17,7 +17,14 @@ jobs:
 
       - name: Remove accidental gitlinks
         run: |
-          git ls-files -s | awk '$1=="160000"{print $4}' | xargs -r git rm --cached -r || true
+          git ls-files -s | awk '$1=="160000"{print $4}' | while read -r p; do
+            # If .gitmodules lists this path, skip removal (it's an intended submodule)
+            if [ -f .gitmodules ] && grep -q "path = $p" .gitmodules; then
+              echo "Skipping submodule path: $p"
+            else
+              git rm --cached -r "$p" || true
+            fi
+          done || true
       - name: Init submodules (if any)
         run: |
           if [ -f .gitmodules ]; then
