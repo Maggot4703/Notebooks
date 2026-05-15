@@ -10,8 +10,9 @@ import os
 import sqlite3
 import tempfile
 import unittest
-import sys, os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import database_manager
 
 
@@ -106,7 +107,7 @@ Bob Wilson,Medic,Alpha,Medicine,Chemistry"""
         headers = ["NAME", "ROLE", "SQUAD"]
         data = [["A", "B", "C"]]
         import tempfile
-        import stat
+
         with tempfile.NamedTemporaryFile(delete=False) as tmp:
             tmp.close()
             os.chmod(tmp.name, 0o400)  # Read-only
@@ -118,7 +119,8 @@ Bob Wilson,Medic,Alpha,Medicine,Chemistry"""
 
     def test_load_data_corrupt_file(self):
         import tempfile
-        with tempfile.NamedTemporaryFile(suffix='.csv', delete=False) as tmp:
+
+        with tempfile.NamedTemporaryFile(suffix=".csv", delete=False) as tmp:
             tmp.write(b"not,a,valid,csv\n\x00\x01\x02\x03")
             tmp.close()
             with database_manager.DatabaseManager(self.test_db_path) as db:

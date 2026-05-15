@@ -29,7 +29,9 @@ def get_page_count(pdf_path):
     return None
 
 
-def convert(pdf_path: str, output_path: str | None = None, dpi: int = 150, external_assets=None):
+def convert(
+    pdf_path: str, output_path: str | None = None, dpi: int = 150, external_assets=None
+):
     pdf_path = str(Path(pdf_path).resolve())
     if not Path(pdf_path).exists():
         print(f"Error: {pdf_path} not found")
@@ -44,17 +46,23 @@ def convert(pdf_path: str, output_path: str | None = None, dpi: int = 150, exter
     file_size_mb = os.path.getsize(pdf_path) / (1024 * 1024)
 
     if file_size_mb > 150:
-        print(f"WARNING: PDF is {file_size_mb:.0f}MB — conversion may be slow and memory-intensive.")
+        print(
+            f"WARNING: PDF is {file_size_mb:.0f}MB — conversion may be slow and memory-intensive."
+        )
 
     page_count = get_page_count(pdf_path)
 
     # Auto-detect external assets mode
     if external_assets is None:
-        external_assets = file_size_mb > 20 or (page_count is not None and page_count > 50)
+        external_assets = file_size_mb > 20 or (
+            page_count is not None and page_count > 50
+        )
         if external_assets:
-            print(f"Auto-enabling external assets mode (file: {file_size_mb:.1f}MB, pages: {page_count or 'unknown'})")
+            print(
+                f"Auto-enabling external assets mode (file: {file_size_mb:.1f}MB, pages: {page_count or 'unknown'})"
+            )
 
-    output = output_path or str(Path(pdf_path).with_suffix('.html'))
+    output = output_path or str(Path(pdf_path).with_suffix(".html"))
     output_dir = Path(output).parent
 
     if external_assets:
@@ -65,7 +73,8 @@ def convert(pdf_path: str, output_path: str | None = None, dpi: int = 150, exter
         prefix = os.path.join(tmpdir, "page")
         result = subprocess.run(
             ["pdftoppm", "-png", "-r", str(dpi), pdf_path, prefix],
-            capture_output=True, text=True
+            capture_output=True,
+            text=True,
         )
         if result.returncode != 0:
             print(f"Error converting PDF: {result.stderr}")
@@ -93,12 +102,12 @@ def convert(pdf_path: str, output_path: str | None = None, dpi: int = 150, exter
                 f'<section class="slide">'
                 f'<div class="slide-inner">'
                 f'<img src="{src}" alt="Page {i}">'
-                f'</div></section>'
+                f"</div></section>"
             )
 
     title = Path(pdf_path).stem.replace("-", " ").replace("_", " ")
 
-    html = f'''<!DOCTYPE html>
+    html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -145,9 +154,9 @@ document.addEventListener('click', e => {{
 }});
 show(0);
 </script>
-</body></html>'''
+</body></html>"""
 
-    Path(output).write_text(html, encoding='utf-8')
+    Path(output).write_text(html, encoding="utf-8")
     output_size = os.path.getsize(output)
 
     print(f"Converted to: {output}")
@@ -159,12 +168,23 @@ show(0);
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert PDF to HTML presentation")
     parser.add_argument("input", help="Path to .pdf file")
-    parser.add_argument("output", nargs="?", help="Output HTML path (default: same name with .html)")
-    parser.add_argument("--external-assets", action="store_true", default=None,
-                        help="Save page images as separate files in assets/ directory (auto-detected for large files)")
-    parser.add_argument("--no-external-assets", action="store_true",
-                        help="Force inline base64 even for large files")
-    parser.add_argument("--dpi", type=int, default=150, help="Render DPI (default: 150)")
+    parser.add_argument(
+        "output", nargs="?", help="Output HTML path (default: same name with .html)"
+    )
+    parser.add_argument(
+        "--external-assets",
+        action="store_true",
+        default=None,
+        help="Save page images as separate files in assets/ directory (auto-detected for large files)",
+    )
+    parser.add_argument(
+        "--no-external-assets",
+        action="store_true",
+        help="Force inline base64 even for large files",
+    )
+    parser.add_argument(
+        "--dpi", type=int, default=150, help="Render DPI (default: 150)"
+    )
     args = parser.parse_args()
 
     ext_assets = None

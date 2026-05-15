@@ -62,6 +62,7 @@ class GenericIntegration(MarkdownIntegration):
         raw = opts.get("raw_options")
         if raw:
             import shlex
+
             tokens = shlex.split(raw)
             for i, token in enumerate(tokens):
                 if token == "--commands-dir" and i + 1 < len(tokens):
@@ -69,9 +70,7 @@ class GenericIntegration(MarkdownIntegration):
                 if token.startswith("--commands-dir="):
                     return token.split("=", 1)[1]
 
-        raise ValueError(
-            "--commands-dir is required for the generic integration"
-        )
+        raise ValueError("--commands-dir is required for the generic integration")
 
     def commands_dest(self, project_root: Path) -> Path:
         """Not supported for GenericIntegration — use setup() directly.
@@ -122,7 +121,9 @@ class GenericIntegration(MarkdownIntegration):
 
         for src_file in templates:
             raw = src_file.read_text(encoding="utf-8")
-            processed = self.process_template(raw, self.key, script_type, arg_placeholder)
+            processed = self.process_template(
+                raw, self.key, script_type, arg_placeholder
+            )
             dst_name = self.command_filename(src_file.stem)
             dst_file = self.write_file_and_record(
                 processed, dest / dst_name, project_root, manifest

@@ -17,11 +17,14 @@ from sector_utils import load_sector_data, SECTOR_HEADERS
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Export sector/world data to Excel spreadsheet.")
-    parser.add_argument("sector_file", help="Path to sector file (.sec or tab-delimited)")
+    parser = argparse.ArgumentParser(
+        description="Export sector/world data to Excel spreadsheet."
+    )
+    parser.add_argument(
+        "sector_file", help="Path to sector file (.sec or tab-delimited)"
+    )
     parser.add_argument("--output", help="Output XLSX file", default="output.xlsx")
     return parser.parse_args()
-
 
 
 def main():
@@ -37,6 +40,7 @@ def main():
     df = pd.DataFrame([row[:11] for row in rows], columns=SECTOR_HEADERS)
     df.to_excel(args.output, index=False)
     print(f"Spreadsheet exported to {args.output}")
+
 
 if __name__ == "__main__":
     main()

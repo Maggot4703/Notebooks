@@ -57,7 +57,7 @@ def ingest_document(skill: ContextGraphSkill, document: str) -> dict:
         ],
     }
 
-    print(f"[LLM] Extracted entities + relations:")
+    print("[LLM] Extracted entities + relations:")
     print(json.dumps(extraction_result, indent=2))
 
     # --- STEP 3: PERSIST PHASE (Call Python methods) ---
@@ -68,24 +68,33 @@ def ingest_document(skill: ContextGraphSkill, document: str) -> dict:
         try:
             node_id = skill.add_node(entity["name"], entity["type"])
             added_nodes[entity["name"]] = node_id
-            print(f"  ✓ Added node: {entity['name']} (id: {node_id}, type: {entity['type']})")
+            print(
+                f"  ✓ Added node: {entity['name']} (id: {node_id}, type: {entity['type']})"
+            )
         except Exception as e:
             errors.append(f"Failed to add node {entity['name']}: {e}")
             print(f"  ✗ Error adding node {entity['name']}: {e}")
 
     for relation in extraction_result["relations"]:
         # Validate both endpoints exist
-        if relation["source"] not in added_nodes or relation["target"] not in added_nodes:
-            error_msg = f"Cannot add edge: source or target missing"
+        if (
+            relation["source"] not in added_nodes
+            or relation["target"] not in added_nodes
+        ):
+            error_msg = "Cannot add edge: source or target missing"
             errors.append(error_msg)
-            print(f"  ✗ Skip edge {relation['source']} → {relation['target']}: {error_msg}")
+            print(
+                f"  ✗ Skip edge {relation['source']} → {relation['target']}: {error_msg}"
+            )
             continue
 
         # Validate confidence threshold
         if relation["confidence"] < 0.6:
             error_msg = f"Confidence {relation['confidence']} < 0.6 (minimum threshold)"
             errors.append(error_msg)
-            print(f"  ✗ Skip edge {relation['source']} → {relation['target']}: {error_msg}")
+            print(
+                f"  ✗ Skip edge {relation['source']} → {relation['target']}: {error_msg}"
+            )
             continue
 
         try:
@@ -101,15 +110,16 @@ def ingest_document(skill: ContextGraphSkill, document: str) -> dict:
                 f"(confidence: {relation['confidence']})"
             )
         except Exception as e:
-            errors.append(f"Failed to add edge {relation['source']} → {relation['target']}: {e}")
+            errors.append(
+                f"Failed to add edge {relation['source']} → {relation['target']}: {e}"
+            )
             print(f"  ✗ Error adding edge: {e}")
 
     return {
         "success": len(errors) == 0,
         "nodes_added": len(added_nodes),
-        "edges_added": len(extraction_result["relations"]) - len(
-            [e for e in errors if "skip edge" in e.lower()]
-        ),
+        "edges_added": len(extraction_result["relations"])
+        - len([e for e in errors if "skip edge" in e.lower()]),
         "errors": errors,
     }
 
@@ -137,12 +147,14 @@ def query_graph(skill: ContextGraphSkill, query: str) -> dict:
                 "edges_found": 0,
             }
 
-        print(f"  ✓ Retrieved subgraph with {len(subgraph['nodes'])} nodes, {len(subgraph['edges'])} edges")
-        print(f"\n  Nodes:")
+        print(
+            f"  ✓ Retrieved subgraph with {len(subgraph['nodes'])} nodes, {len(subgraph['edges'])} edges"
+        )
+        print("\n  Nodes:")
         for node_id, node in subgraph["nodes"].items():
             print(f"    - {node['name']} (type: {node['type']}, id: {node_id})")
 
-        print(f"\n  Edges:")
+        print("\n  Edges:")
         for edge in subgraph["edges"]:
             source_name = subgraph["nodes"][edge["source"]]["name"]
             target_name = subgraph["nodes"][edge["target"]]["name"]
@@ -176,7 +188,10 @@ def main():
     """
 
     result = ingest_document(skill, document)
-    print(f"\n[INGEST RESULT] Nodes added: {result['nodes_added']}, " f"Edges added: {result['edges_added']}")
+    print(
+        f"\n[INGEST RESULT] Nodes added: {result['nodes_added']}, "
+        f"Edges added: {result['edges_added']}"
+    )
     if result["errors"]:
         print(f"Errors: {result['errors']}")
 
@@ -189,7 +204,9 @@ def main():
     for query in queries:
         result = query_graph(skill, query)
         if result["success"]:
-            print(f"  Nodes found: {result['nodes_found']}, Edges found: {result['edges_found']}")
+            print(
+                f"  Nodes found: {result['nodes_found']}, Edges found: {result['edges_found']}"
+            )
         else:
             print(f"  Error: {result['error']}")
 

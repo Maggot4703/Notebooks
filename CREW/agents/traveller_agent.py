@@ -4,6 +4,7 @@ from agents.researcher_agent import ResearcherAgent
 researcher_agent = ResearcherAgent()
 query_researcher_skill = QueryResearcherSkill(researcher_agent)
 
+
 class TravellerAgent:
     def __init__(self):
         self.tools = {"QueryResearcher": query_researcher_skill}

@@ -1,6 +1,7 @@
 import unittest
 from Crew.file_utils import read_file, read_csv_builtin, read_csv_pandas, read_excel
 
+
 class TestErrorHandling(unittest.TestCase):
     def test_read_file_not_found(self):
         self.assertIsNone(read_file("nonexistent.txt"))
@@ -17,6 +18,7 @@ class TestErrorHandling(unittest.TestCase):
     def test_read_csv_builtin_invalid(self):
         # Should handle invalid file gracefully
         self.assertEqual(read_csv_builtin("/dev/null"), [])
+
 
 if __name__ == "__main__":
     unittest.main()

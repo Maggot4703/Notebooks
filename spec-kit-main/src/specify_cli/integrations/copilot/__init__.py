@@ -83,7 +83,9 @@ class CopilotIntegration(IntegrationBase):
         # 1. Process and write command files as .agent.md
         for src_file in templates:
             raw = src_file.read_text(encoding="utf-8")
-            processed = self.process_template(raw, self.key, script_type, arg_placeholder)
+            processed = self.process_template(
+                raw, self.key, script_type, arg_placeholder
+            )
             dst_name = self.command_filename(src_file.stem)
             dst_file = self.write_file_and_record(
                 processed, dest / dst_name, project_root, manifest
@@ -143,17 +145,19 @@ class CopilotIntegration(IntegrationBase):
         """
         try:
             existing = json.loads(dst.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError):
+        except json.JSONDecodeError, OSError:
             # Cannot parse existing file (likely JSONC with comments).
             # Skip merge to preserve the user's settings, but show
             # what they should add manually.
             import logging
+
             template_content = src.read_text(encoding="utf-8")
             logging.getLogger(__name__).warning(
                 "Could not parse %s (may contain JSONC comments). "
                 "Skipping settings merge to preserve existing file.\n"
                 "Please add the following settings manually:\n%s",
-                dst, template_content,
+                dst,
+                template_content,
             )
             return
 
@@ -161,6 +165,7 @@ class CopilotIntegration(IntegrationBase):
 
         if not isinstance(existing, dict) or not isinstance(new_settings, dict):
             import logging
+
             logging.getLogger(__name__).warning(
                 "Skipping settings merge: %s or template is not a JSON object.", dst
             )
@@ -180,6 +185,4 @@ class CopilotIntegration(IntegrationBase):
         if not changed:
             return
 
-        dst.write_text(
-            json.dumps(existing, indent=4) + "\n", encoding="utf-8"
-        )
+        dst.write_text(json.dumps(existing, indent=4) + "\n", encoding="utf-8")

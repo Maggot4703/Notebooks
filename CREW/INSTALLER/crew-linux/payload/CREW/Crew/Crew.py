@@ -22,7 +22,6 @@ Notes:
 """
 
 # Utility functions moved to utils.py
-import csv
 import importlib
 import logging
 import os
@@ -252,6 +251,7 @@ def overlay_grid(
             "Could not overlay grid on image. Please check your input and " "try again."
         )
         return None
+
 
 def get_version() -> str:
     """

@@ -13,4 +13,4 @@ def test_index_served():
         except Exception:
             time.sleep(0.5)
     assert r is not None and r.status_code == 200
-    assert '0101-shell.js' in r.text
+    assert "0101-shell.js" in r.text

@@ -1,4 +1,3 @@
-
 import os
 import json
 import argparse
@@ -7,7 +6,9 @@ import argparse
 def main():
     parser = argparse.ArgumentParser(description="Notebooks main entry point")
     parser.add_argument("--persona", type=str, help="Persona for chatbot session")
-    parser.add_argument("--context-window", type=int, help="Context window size for chatbot session")
+    parser.add_argument(
+        "--context-window", type=int, help="Context window size for chatbot session"
+    )
     args = parser.parse_args()
 
     config_path = os.path.join(os.path.dirname(__file__), "config.json")
@@ -29,9 +30,11 @@ def main():
     session_state = {
         "persona": persona,
         "context_window": context_window,
-        "history": []
+        "history": [],
     }
-    print(f"[session_state] persona: {session_state['persona']}, context_window: {session_state['context_window']}")
+    print(
+        f"[session_state] persona: {session_state['persona']}, context_window: {session_state['context_window']}"
+    )
     readme_path = None
     for root, dirs, files in os.walk(os.path.dirname(__file__)):
         if "README.md" in files:

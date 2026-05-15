@@ -10,14 +10,18 @@ from copilot import (
     PermissionHandler,
 )
 
+
 async def main():
     # Create and start client
     client = CopilotClient()
     await client.start()
 
     # Create session
-    session = await client.create_session(SessionConfig(model="gpt-5",
-        on_permission_request=PermissionHandler.approve_all))
+    session = await client.create_session(
+        SessionConfig(
+            model="gpt-5", on_permission_request=PermissionHandler.approve_all
+        )
+    )
 
     done = asyncio.Event()
 
@@ -53,6 +57,7 @@ Please confirm before moving any files.
 
     await session.destroy()
     await client.stop()
+
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -36,6 +36,7 @@ def get_integration(key: str) -> IntegrationBase | None:
 
 # -- Register built-in integrations --------------------------------------
 
+
 def _register_builtins() -> None:
     """Register all built-in integrations.
 

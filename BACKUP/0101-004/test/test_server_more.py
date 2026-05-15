@@ -15,4 +15,4 @@ def test_rewrite_legacy_file_urls_no_crash():
     out = server.Handler._rewrite_legacy_file_urls(sample, "/index.html")
     assert isinstance(out, str)
     # The function either rewrites or returns the original; ensure 'file:///' is not introduced twice
-    assert out.count('file:///') <= 1
+    assert out.count("file:///") <= 1

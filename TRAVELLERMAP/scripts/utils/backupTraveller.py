@@ -5,8 +5,10 @@ import shutil
 search_names = {"t5", "traveller", "pdfs"}
 destination_root = "/media/me/Traveller"
 
+
 def is_match(name):
     return name.lower() in search_names
+
 
 def get_mounted_drives():
     # List all /media/me/* and /mnt/* as candidate drives
@@ -17,6 +19,7 @@ def get_mounted_drives():
                 drives.append(os.path.join(base, entry))
     return [d for d in drives if os.path.isdir(d)]
 
+
 def find_relevant_folders(drive):
     matches = []
     for root, dirs, files in os.walk(drive):
@@ -24,6 +27,7 @@ def find_relevant_folders(drive):
             if is_match(d):
                 matches.append(os.path.join(root, d))
     return matches
+
 
 def copy_folder(src, dst):
     if not os.path.exists(dst):
@@ -35,6 +39,8 @@ def copy_folder(src, dst):
             shutil.copytree(s, d, dirs_exist_ok=True)
         else:
             shutil.copy2(s, d)
+
+
 def get_total_size(folders):
     total = 0
     for folder in folders:
@@ -44,6 +50,7 @@ def get_total_size(folders):
                 if os.path.isfile(fp):
                     total += os.path.getsize(fp)
     return total
+
 
 def write_html_listing(files, html_path, folder_label=None):
     with open(html_path, "w", encoding="utf-8") as f:
@@ -56,11 +63,14 @@ def write_html_listing(files, html_path, folder_label=None):
             f.write(f"<li>{file}</li>\n")
         f.write("</ul>\n</body></html>\n")
 
+
 def safe_html_filename(folder_path):
     # Replace slashes and problematic chars with underscores, remove leading slashes
     import re
-    fname = re.sub(r'[^A-Za-z0-9._-]', '_', folder_path.strip('/'))
+
+    fname = re.sub(r"[^A-Za-z0-9._-]", "_", folder_path.strip("/"))
     return f"not_copied_{fname}.html"
+
 
 def main():
     if not os.path.exists(destination_root):
@@ -83,7 +93,9 @@ def main():
                     folder_size += os.path.getsize(fp)
         usage = shutil.disk_usage(destination_root)
         if folder_size > usage.free:
-            print(f"Not enough space for folder {folder}. Writing HTML listing and skipping.")
+            print(
+                f"Not enough space for folder {folder}. Writing HTML listing and skipping."
+            )
             html_path = os.path.join(destination_root, safe_html_filename(folder))
             write_html_listing(folder_files, html_path, folder_label=folder)
             print(f"HTML listing written to {html_path}")
@@ -93,6 +105,7 @@ def main():
         dest = os.path.join(destination_root, f"{drive_name}_{folder_name}")
         print(f"Copying from {folder} to {dest}")
         copy_folder(folder, dest)
+
 
 if __name__ == "__main__":
     main()

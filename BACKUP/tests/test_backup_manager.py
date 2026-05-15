@@ -50,7 +50,9 @@ class BackupManagerTests(unittest.TestCase):
             "/media/me/BACKUP": {"size": 10_000, "available": 9_500},
         }
         with (
-            mock.patch.object(backup_manager, "get_lsblk_data", return_value=lsblk_data),
+            mock.patch.object(
+                backup_manager, "get_lsblk_data", return_value=lsblk_data
+            ),
             mock.patch.object(backup_manager, "get_df_usage", return_value=usage),
         ):
             candidates = backup_manager.get_drive_candidates(None)

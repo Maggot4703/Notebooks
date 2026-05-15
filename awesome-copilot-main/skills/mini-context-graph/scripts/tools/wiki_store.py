@@ -16,6 +16,7 @@ Wiki structure (relative to project root):
 
 The agent WRITES pages; this module handles the filesystem + index + log.
 """
+
 from __future__ import annotations
 
 import os
@@ -40,6 +41,7 @@ _CATEGORY_DIRS = {
 # ---------------------------------------------------------------------------
 # Internal helpers
 # ---------------------------------------------------------------------------
+
 
 def _ensure_dirs() -> None:
     _WIKI_DIR.mkdir(parents=True, exist_ok=True)
@@ -67,6 +69,7 @@ def _page_path(category: str, slug: str) -> Path:
 # Index management
 # ---------------------------------------------------------------------------
 
+
 def _load_index() -> list[dict]:
     """Parse index.md into a list of entry dicts."""
     if not _INDEX_FILE.exists():
@@ -82,12 +85,14 @@ def _load_index() -> list[dict]:
                 summary = parts[2] if len(parts) > 2 else ""
                 date = parts[3] if len(parts) > 3 else ""
                 slug = re.sub(r"\[\[|\]\]", "", link)
-                entries.append({
-                    "slug": slug,
-                    "category": category,
-                    "summary": summary,
-                    "date": date,
-                })
+                entries.append(
+                    {
+                        "slug": slug,
+                        "category": category,
+                        "summary": summary,
+                        "date": date,
+                    }
+                )
     return entries
 
 
@@ -119,6 +124,7 @@ def _append_log(operation: str, detail: str) -> None:
 # ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
+
 
 def write_page(
     category: str,
@@ -164,12 +170,14 @@ def write_page(
         existing["summary"] = summary
         existing["date"] = _now_iso()
     else:
-        entries.append({
-            "slug": slug,
-            "category": category,
-            "summary": summary,
-            "date": _now_iso(),
-        })
+        entries.append(
+            {
+                "slug": slug,
+                "category": category,
+                "summary": summary,
+                "date": _now_iso(),
+            }
+        )
     _save_index(entries)
     _append_log("write", title)
 
@@ -215,14 +223,18 @@ def search_wiki(query: str) -> list[dict]:
                 # Extract a short snippet around first match
                 first_token = next(iter(query_tokens & content_tokens), "")
                 idx = content.find(first_token)
-                snippet = content[max(0, idx - 30):idx + 80].replace("\n", " ").strip()
-                results.append({
-                    "slug": page_path.stem,
-                    "category": category,
-                    "path": str(page_path.relative_to(_WIKI_DIR)),
-                    "score": overlap,
-                    "snippet": snippet,
-                })
+                snippet = (
+                    content[max(0, idx - 30) : idx + 80].replace("\n", " ").strip()
+                )
+                results.append(
+                    {
+                        "slug": page_path.stem,
+                        "category": category,
+                        "path": str(page_path.relative_to(_WIKI_DIR)),
+                        "score": overlap,
+                        "snippet": snippet,
+                    }
+                )
 
     results.sort(key=lambda x: x["score"], reverse=True)
     return results

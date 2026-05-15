@@ -72,7 +72,10 @@ class TestClaudeIntegration:
         assert (scripts_dir / "update-context.sh").exists()
         assert (scripts_dir / "update-context.ps1").exists()
 
-        tracked = {path.resolve().relative_to(tmp_path.resolve()).as_posix() for path in created}
+        tracked = {
+            path.resolve().relative_to(tmp_path.resolve()).as_posix()
+            for path in created
+        }
         assert ".specify/integrations/claude/scripts/update-context.sh" in tracked
         assert ".specify/integrations/claude/scripts/update-context.ps1" in tracked
 
@@ -142,7 +145,9 @@ class TestClaudeIntegration:
             os.chdir(old_cwd)
 
         assert result.exit_code == 0, result.output
-        assert (project / ".claude" / "skills" / "speckit-specify" / "SKILL.md").exists()
+        assert (
+            project / ".claude" / "skills" / "speckit-specify" / "SKILL.md"
+        ).exists()
         assert (project / ".specify" / "integrations" / "claude.manifest.json").exists()
 
     def test_interactive_claude_selection_uses_integration_path(self, tmp_path):
@@ -198,7 +203,16 @@ class TestClaudeIntegration:
 
         result = runner.invoke(
             app,
-            ["init", str(target), "--ai", "claude", "--script", "sh", "--no-git", "--ignore-agent-tools"],
+            [
+                "init",
+                str(target),
+                "--ai",
+                "claude",
+                "--script",
+                "sh",
+                "--no-git",
+                "--ignore-agent-tools",
+            ],
         )
 
         assert result.exit_code == 0
@@ -298,9 +312,9 @@ class TestClaudeArgumentHints:
         assert len(skill_files) > 0
         for f in skill_files:
             content = f.read_text(encoding="utf-8")
-            assert "argument-hint:" in content, (
-                f"{f.parent.name}/SKILL.md is missing argument-hint frontmatter"
-            )
+            assert (
+                "argument-hint:" in content
+            ), f"{f.parent.name}/SKILL.md is missing argument-hint frontmatter"
 
     def test_hints_match_expected_values(self, tmp_path):
         """Each skill's argument-hint must match the expected text."""
@@ -312,15 +326,15 @@ class TestClaudeArgumentHints:
             # Extract stem: speckit-plan -> plan
             stem = f.parent.name
             if stem.startswith("speckit-"):
-                stem = stem[len("speckit-"):]
+                stem = stem[len("speckit-") :]
             expected_hint = ARGUMENT_HINTS.get(stem)
-            assert expected_hint is not None, (
-                f"No expected hint defined for skill '{stem}'"
-            )
+            assert (
+                expected_hint is not None
+            ), f"No expected hint defined for skill '{stem}'"
             content = f.read_text(encoding="utf-8")
-            assert f'argument-hint: "{expected_hint}"' in content, (
-                f"{f.parent.name}/SKILL.md: expected hint '{expected_hint}' not found"
-            )
+            assert (
+                f'argument-hint: "{expected_hint}"' in content
+            ), f"{f.parent.name}/SKILL.md: expected hint '{expected_hint}' not found"
 
     def test_hint_is_inside_frontmatter(self, tmp_path):
         """argument-hint must appear between the --- delimiters, not in the body."""
@@ -334,12 +348,12 @@ class TestClaudeArgumentHints:
             assert len(parts) >= 3, f"No frontmatter in {f.parent.name}/SKILL.md"
             frontmatter = parts[1]
             body = parts[2]
-            assert "argument-hint:" in frontmatter, (
-                f"{f.parent.name}/SKILL.md: argument-hint not in frontmatter section"
-            )
-            assert "argument-hint:" not in body, (
-                f"{f.parent.name}/SKILL.md: argument-hint leaked into body"
-            )
+            assert (
+                "argument-hint:" in frontmatter
+            ), f"{f.parent.name}/SKILL.md: argument-hint not in frontmatter section"
+            assert (
+                "argument-hint:" not in body
+            ), f"{f.parent.name}/SKILL.md: argument-hint leaked into body"
 
     def test_hint_appears_after_description(self, tmp_path):
         """argument-hint must immediately follow the description line."""
@@ -354,16 +368,16 @@ class TestClaudeArgumentHints:
             for idx, line in enumerate(lines):
                 if line.startswith("description:"):
                     found_description = True
-                    assert idx + 1 < len(lines), (
-                        f"{f.parent.name}/SKILL.md: description is last line"
-                    )
-                    assert lines[idx + 1].startswith("argument-hint:"), (
-                        f"{f.parent.name}/SKILL.md: argument-hint does not follow description"
-                    )
+                    assert idx + 1 < len(
+                        lines
+                    ), f"{f.parent.name}/SKILL.md: description is last line"
+                    assert lines[idx + 1].startswith(
+                        "argument-hint:"
+                    ), f"{f.parent.name}/SKILL.md: argument-hint does not follow description"
                     break
-            assert found_description, (
-                f"{f.parent.name}/SKILL.md: no description: line found in output"
-            )
+            assert (
+                found_description
+            ), f"{f.parent.name}/SKILL.md: no description: line found in output"
 
     def test_inject_argument_hint_only_in_frontmatter(self):
         """inject_argument_hint must not modify description: lines in the body."""
@@ -379,9 +393,9 @@ class TestClaudeArgumentHints:
         result = ClaudeIntegration.inject_argument_hint(content, "Test hint")
         lines = result.splitlines()
         hint_count = sum(1 for ln in lines if ln.startswith("argument-hint:"))
-        assert hint_count == 1, (
-            f"Expected exactly 1 argument-hint line, found {hint_count}"
-        )
+        assert (
+            hint_count == 1
+        ), f"Expected exactly 1 argument-hint line, found {hint_count}"
 
     def test_inject_argument_hint_skips_if_already_present(self):
         """inject_argument_hint must not duplicate if argument-hint already exists."""

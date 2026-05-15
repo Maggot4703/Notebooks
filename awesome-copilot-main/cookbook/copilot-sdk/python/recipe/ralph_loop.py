@@ -43,13 +43,15 @@ async def ralph_loop(mode: str = "build", max_iterations: int = 50):
         for i in range(1, max_iterations + 1):
             print(f"\n=== Iteration {i}/{max_iterations} ===")
 
-            session = await client.create_session(SessionConfig(
-                model="gpt-5.1-codex-mini",
-                # Pin the agent to the project directory
-                working_directory=str(Path.cwd()),
-                # Auto-approve tool calls for unattended operation
-                on_permission_request=PermissionHandler.approve_all,
-            ))
+            session = await client.create_session(
+                SessionConfig(
+                    model="gpt-5.1-codex-mini",
+                    # Pin the agent to the project directory
+                    working_directory=str(Path.cwd()),
+                    # Auto-approve tool calls for unattended operation
+                    on_permission_request=PermissionHandler.approve_all,
+                )
+            )
 
             # Log tool usage for visibility
             def log_tool_event(event):
@@ -58,9 +60,7 @@ async def ralph_loop(mode: str = "build", max_iterations: int = 50):
 
             session.on(log_tool_event)
             try:
-                await session.send_and_wait(
-                    MessageOptions(prompt=prompt), timeout=600
-                )
+                await session.send_and_wait(MessageOptions(prompt=prompt), timeout=600)
             finally:
                 await session.destroy()
 

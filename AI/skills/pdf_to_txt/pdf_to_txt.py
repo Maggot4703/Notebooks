@@ -104,7 +104,6 @@ def _validate_output_path(output_path: Path) -> None:
         raise NotADirectoryError(f"Output parent is not a directory: {parent}")
 
 
-
 def _extract_text_pypdf(pdf_path: Path, page_range=None, stream_write_fh=None):
     try:
         from pypdf import PdfReader
@@ -119,8 +118,11 @@ def _extract_text_pypdf(pdf_path: Path, page_range=None, stream_write_fh=None):
     indices = (
         range(total_pages)
         if page_range is None
-        else [i for i in range(total_pages)
-              if (i + 1) >= page_range[0] and (i + 1) <= page_range[1]]
+        else [
+            i
+            for i in range(total_pages)
+            if (i + 1) >= page_range[0] and (i + 1) <= page_range[1]
+        ]
     )
     for idx in indices:
         page = reader.pages[idx]
@@ -139,14 +141,18 @@ def _extract_text_pypdf(pdf_path: Path, page_range=None, stream_write_fh=None):
 def _extract_text_pdfplumber(pdf_path: Path, page_range=None, stream_write_fh=None):
     _require_pdfplumber()
     import pdfplumber
+
     pages = []
     with pdfplumber.open(pdf_path) as pdf:
         total_pages = len(pdf.pages)
         indices = (
             range(total_pages)
             if page_range is None
-            else [i for i in range(total_pages)
-                  if (i + 1) >= page_range[0] and (i + 1) <= page_range[1]]
+            else [
+                i
+                for i in range(total_pages)
+                if (i + 1) >= page_range[0] and (i + 1) <= page_range[1]
+            ]
         )
         for idx in indices:
             page = pdf.pages[idx]
@@ -162,7 +168,6 @@ def _extract_text_pdfplumber(pdf_path: Path, page_range=None, stream_write_fh=No
     return "\n\n".join(pages)
 
 
-
 def _extract_text_ocr(pdf_path: Path, lang: str, page_range=None, stream_write_fh=None):
     _require_ocr_dependencies()
 
@@ -176,20 +181,26 @@ def _extract_text_ocr(pdf_path: Path, lang: str, page_range=None, stream_write_f
     indices = (
         range(total_pages)
         if page_range is None
-        else [i for i in range(total_pages)
-              if (i + 1) >= page_range[0] and (i + 1) <= page_range[1]]
+        else [
+            i
+            for i in range(total_pages)
+            if (i + 1) >= page_range[0] and (i + 1) <= page_range[1]
+        ]
     )
     # Auto language detection if requested
     if lang == "auto":
         try:
             from langdetect import detect
+
             first_text = pytesseract.image_to_string(images[0])
             detected_lang = detect(first_text)
             # Map ISO 639-1 to tesseract codes if needed
             lang = detected_lang if detected_lang else "eng"
             print(f"  Detected OCR language: {lang}", file=sys.stderr)
         except Exception as exc:
-            print(f"  Language auto-detection failed: {exc}. Using 'eng'", file=sys.stderr)
+            print(
+                f"  Language auto-detection failed: {exc}. Using 'eng'", file=sys.stderr
+            )
             lang = "eng"
     for idx in indices:
         image = images[idx]
@@ -227,8 +238,6 @@ def _is_scanned(pdf_path: Path) -> bool:
         return False
 
 
-
-
 def convert(
     pdf_path: Path,
     output_path: Path,
@@ -255,16 +264,15 @@ def convert(
                     )
             else:
                 if use_ocr:
-                    print(
-                        "  Method: OCR (scanned PDF detected)", file=sys.stderr
-                    )
+                    print("  Method: OCR (scanned PDF detected)", file=sys.stderr)
                     _extract_text_ocr(
-                        pdf_path, lang=ocr_lang, page_range=page_range, stream_write_fh=fh
+                        pdf_path,
+                        lang=ocr_lang,
+                        page_range=page_range,
+                        stream_write_fh=fh,
                     )
                 else:
-                    print(
-                        "  Method: text extraction (pdfplumber)", file=sys.stderr
-                    )
+                    print("  Method: text extraction (pdfplumber)", file=sys.stderr)
                     _extract_text_pdfplumber(
                         pdf_path, page_range=page_range, stream_write_fh=fh
                     )
@@ -291,9 +299,7 @@ def convert(
     if use_ocr or text is None:
         if use_ocr:
             print("  Method: OCR (scanned PDF detected)", file=sys.stderr)
-            text = _extract_text_ocr(
-                pdf_path, lang=ocr_lang, page_range=page_range
-            )
+            text = _extract_text_ocr(pdf_path, lang=ocr_lang, page_range=page_range)
         else:
             print("  Method: text extraction (pdfplumber)", file=sys.stderr)
             text = _extract_text_pdfplumber(pdf_path, page_range=page_range)
@@ -309,13 +315,13 @@ def convert(
     )
 
 
-
-
 def main() -> None:
 
     import concurrent.futures
+
     try:
         from tqdm import tqdm
+
         has_tqdm = True
     except ImportError:
         has_tqdm = False
@@ -327,9 +333,7 @@ def main() -> None:
         )
     )
     parser.add_argument("input", help="PDF file or directory of PDFs")
-    parser.add_argument(
-        "-o", "--output", help="Output .txt path (single file only)"
-    )
+    parser.add_argument("-o", "--output", help="Output .txt path (single file only)")
     parser.add_argument(
         "--ocr", action="store_true", help="Force OCR even for text-based PDFs"
     )
@@ -353,8 +357,8 @@ def main() -> None:
     def parse_page_range(s):
         if not s:
             return None
-        if '-' in s:
-            parts = s.split('-')
+        if "-" in s:
+            parts = s.split("-")
             if len(parts) == 2:
                 try:
                     start = int(parts[0])
@@ -367,9 +371,7 @@ def main() -> None:
             return (page, page)
         except Exception:
             pass
-        raise argparse.ArgumentTypeError(
-            "Page range must be N or N-M (e.g., 2 or 3-5)"
-        )
+        raise argparse.ArgumentTypeError("Page range must be N or N-M (e.g., 2 or 3-5)")
 
     parser.add_argument(
         "--pages",
@@ -389,9 +391,7 @@ def main() -> None:
         if not pdf_files:
             print(f"No .pdf files found in {input_path}", file=sys.stderr)
             sys.exit(1)
-        print(
-            f"Found {len(pdf_files)} PDF(s) in {input_path}", file=sys.stderr
-        )
+        print(f"Found {len(pdf_files)} PDF(s) in {input_path}", file=sys.stderr)
         successes = 0
         failures = 0
 
@@ -440,11 +440,7 @@ def main() -> None:
     elif input_path.is_file():
         if not input_path.suffix.lower() == ".pdf":
             parser.error(f"Input file must be a .pdf: {input_path}")
-        out = (
-            Path(args.output)
-            if args.output
-            else input_path.with_suffix(".txt")
-        )
+        out = Path(args.output) if args.output else input_path.with_suffix(".txt")
         try:
             convert(
                 input_path,

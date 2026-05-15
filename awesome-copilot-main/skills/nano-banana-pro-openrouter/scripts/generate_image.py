@@ -17,7 +17,6 @@ from pathlib import Path
 
 from openai import OpenAI
 
-
 # Configuration
 MAX_INPUT_IMAGES = 3
 MIME_TO_EXT = {
@@ -29,21 +28,27 @@ MIME_TO_EXT = {
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Generate or edit images via OpenRouter.")
-    parser.add_argument("--prompt", required=True, help="Prompt describing the desired image.")
-    parser.add_argument("--filename", required=True, help="Output filename (relative to CWD).")
-    parser.add_argument(
-      "--resolution",
-      type=str.upper,
-      choices=["1K", "2K", "4K"],
-      default="1K",
-      help="Output resolution: 1K, 2K, or 4K.",
+    parser = argparse.ArgumentParser(
+        description="Generate or edit images via OpenRouter."
     )
     parser.add_argument(
-      "--input-image",
-      action="append",
-      default=[],
-      help=f"Optional input image path (repeatable, max {MAX_INPUT_IMAGES}).",
+        "--prompt", required=True, help="Prompt describing the desired image."
+    )
+    parser.add_argument(
+        "--filename", required=True, help="Output filename (relative to CWD)."
+    )
+    parser.add_argument(
+        "--resolution",
+        type=str.upper,
+        choices=["1K", "2K", "4K"],
+        default="1K",
+        help="Output resolution: 1K, 2K, or 4K.",
+    )
+    parser.add_argument(
+        "--input-image",
+        action="append",
+        default=[],
+        help=f"Optional input image path (repeatable, max {MAX_INPUT_IMAGES}).",
     )
     return parser.parse_args()
 
@@ -86,14 +91,18 @@ def parse_data_url(data_url: str) -> tuple[str, bytes]:
     return mime, raw
 
 
-def resolve_output_path(filename: str, image_index: int, total_count: int, mime: str) -> Path:
+def resolve_output_path(
+    filename: str, image_index: int, total_count: int, mime: str
+) -> Path:
     output_path = Path(filename)
     suffix = output_path.suffix
 
     # Validate/correct suffix matches MIME type
     expected_suffix = MIME_TO_EXT.get(mime, ".png")
     if suffix and suffix.lower() != expected_suffix.lower():
-        print(f"Warning: filename extension '{suffix}' doesn't match returned MIME type '{mime}'. Using '{expected_suffix}' instead.")
+        print(
+            f"Warning: filename extension '{suffix}' doesn't match returned MIME type '{mime}'. Using '{expected_suffix}' instead."
+        )
         suffix = expected_suffix
     elif not suffix:
         suffix = expected_suffix
@@ -128,7 +137,9 @@ def main():
     args = parse_args()
 
     if len(args.input_image) > MAX_INPUT_IMAGES:
-        raise SystemExit(f"Too many input images: {len(args.input_image)} (max {MAX_INPUT_IMAGES}).")
+        raise SystemExit(
+            f"Too many input images: {len(args.input_image)} (max {MAX_INPUT_IMAGES})."
+        )
 
     image_size = args.resolution
 
@@ -139,15 +150,19 @@ def main():
 
     system_prompt = load_system_prompt()
     if system_prompt:
-        messages.append({
-            "role": "system",
-            "content": system_prompt,
-        })
+        messages.append(
+            {
+                "role": "system",
+                "content": system_prompt,
+            }
+        )
 
-    messages.append({
-        "role": "user",
-        "content": build_message_content(args.prompt, args.input_image),
-    })
+    messages.append(
+        {
+            "role": "user",
+            "content": build_message_content(args.prompt, args.input_image),
+        }
+    )
 
     response = client.chat.completions.create(
         model="google/gemini-3-pro-image-preview",
@@ -158,7 +173,7 @@ def main():
             "image_config": {
                 # "aspect_ratio": "16:9",
                 "image_size": image_size,
-            }
+            },
         },
     )
 
@@ -169,7 +184,7 @@ def main():
 
     # Create output directory once before processing images
     output_base_path = Path(args.filename)
-    if output_base_path.parent and str(output_base_path.parent) != '.':
+    if output_base_path.parent and str(output_base_path.parent) != ".":
         output_base_path.parent.mkdir(parents=True, exist_ok=True)
 
     saved_paths = []

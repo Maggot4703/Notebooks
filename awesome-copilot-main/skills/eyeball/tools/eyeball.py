@@ -71,13 +71,17 @@ def _check_core_deps():
         missing.append("python-docx")
     if missing:
         print(f"Missing dependencies: {', '.join(missing)}", file=sys.stderr)
-        print(f"Run setup.sh or: {sys.executable} -m pip install pymupdf pillow python-docx playwright", file=sys.stderr)
+        print(
+            f"Run setup.sh or: {sys.executable} -m pip install pymupdf pillow python-docx playwright",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
 
 # ---------------------------------------------------------------------------
 # Document conversion: source -> PDF
 # ---------------------------------------------------------------------------
+
 
 def convert_to_pdf(source_path, output_pdf_path):
     """Convert a document to PDF. Supports .docx, .doc, .rtf, .html, .htm."""
@@ -122,9 +126,9 @@ def _convert_with_word_mac(source_path, output_pdf_path):
     source_abs = os.path.abspath(source_path)
     output_abs = os.path.abspath(output_pdf_path)
     # Escape characters that break AppleScript string interpolation
-    source_safe = source_abs.replace('\\', '\\\\').replace('"', '\\"')
-    output_safe = output_abs.replace('\\', '\\\\').replace('"', '\\"')
-    script = f'''
+    source_safe = source_abs.replace("\\", "\\\\").replace('"', '\\"')
+    output_safe = output_abs.replace("\\", "\\\\").replace('"', '\\"')
+    script = f"""
     tell application "Microsoft Word"
         open POSIX file "{source_safe}"
         delay 5
@@ -132,14 +136,13 @@ def _convert_with_word_mac(source_path, output_pdf_path):
         save as theDoc file name POSIX file "{output_safe}" file format format PDF
         close theDoc saving no
     end tell
-    '''
+    """
     try:
         result = subprocess.run(
-            ["osascript", "-e", script],
-            capture_output=True, text=True, timeout=120
+            ["osascript", "-e", script], capture_output=True, text=True, timeout=120
         )
         return result.returncode == 0 and os.path.exists(output_pdf_path)
-    except (subprocess.TimeoutExpired, FileNotFoundError):
+    except subprocess.TimeoutExpired, FileNotFoundError:
         return False
 
 
@@ -148,9 +151,18 @@ def _convert_with_libreoffice(soffice_path, source_path, output_pdf_path):
     with tempfile.TemporaryDirectory() as tmpdir:
         try:
             result = subprocess.run(
-                [soffice_path, "--headless", "--convert-to", "pdf",
-                 "--outdir", tmpdir, source_path],
-                capture_output=True, text=True, timeout=120
+                [
+                    soffice_path,
+                    "--headless",
+                    "--convert-to",
+                    "pdf",
+                    "--outdir",
+                    tmpdir,
+                    source_path,
+                ],
+                capture_output=True,
+                text=True,
+                timeout=120,
             )
             if result.returncode != 0:
                 return False
@@ -159,7 +171,7 @@ def _convert_with_libreoffice(soffice_path, source_path, output_pdf_path):
             if os.path.exists(tmp_pdf):
                 shutil.move(tmp_pdf, output_pdf_path)
                 return True
-        except (subprocess.TimeoutExpired, FileNotFoundError):
+        except subprocess.TimeoutExpired, FileNotFoundError:
             pass
     return False
 
@@ -170,7 +182,9 @@ def _find_libreoffice_windows():
     for env_var in ("ProgramFiles", "ProgramFiles(x86)"):
         base = os.environ.get(env_var)
         if base:
-            candidates.append(os.path.join(base, "LibreOffice", "program", "soffice.exe"))
+            candidates.append(
+                os.path.join(base, "LibreOffice", "program", "soffice.exe")
+            )
     for path in candidates:
         if os.path.isfile(path):
             return path
@@ -183,6 +197,7 @@ def _convert_with_word_windows(source_path, output_pdf_path):
     doc = None
     try:
         import win32com.client
+
         source_abs = os.path.abspath(source_path)
         output_abs = os.path.abspath(output_pdf_path)
         os.makedirs(os.path.dirname(output_abs), exist_ok=True)
@@ -259,8 +274,12 @@ def render_url_to_pdf(url, output_pdf_path):
                 path=output_pdf_path,
                 format="Letter",
                 print_background=True,
-                margin={"top": "0.5in", "bottom": "0.5in",
-                        "left": "0.75in", "right": "0.75in"}
+                margin={
+                    "top": "0.5in",
+                    "bottom": "0.5in",
+                    "left": "0.75in",
+                    "right": "0.75in",
+                },
             )
         finally:
             if browser is not None:
@@ -271,8 +290,10 @@ def render_url_to_pdf(url, output_pdf_path):
 # Screenshot generation
 # ---------------------------------------------------------------------------
 
-def screenshot_region(pdf_doc, anchors, target_page=None, target_pages=None,
-                      context_padding=40, dpi=200):
+
+def screenshot_region(
+    pdf_doc, anchors, target_page=None, target_pages=None, context_padding=40, dpi=200
+):
     """
     Find anchor text in a PDF and capture the surrounding region as a highlighted image.
 
@@ -320,8 +341,9 @@ def screenshot_region(pdf_doc, anchors, target_page=None, target_pages=None,
     # If single page, render one region
     if len(page_hits) == 1:
         pg_idx = list(page_hits.keys())[0]
-        img = _render_page_region(pdf_doc, pg_idx, page_hits[pg_idx],
-                                   context_padding, zoom)
+        img = _render_page_region(
+            pdf_doc, pg_idx, page_hits[pg_idx], context_padding, zoom
+        )
         img_bytes = _img_to_bytes(img)
         return img_bytes, f"page {pg_idx + 1}", img.size
 
@@ -329,8 +351,9 @@ def screenshot_region(pdf_doc, anchors, target_page=None, target_pages=None,
     images = []
     pages_used = sorted(page_hits.keys())
     for pg_idx in pages_used:
-        img = _render_page_region(pdf_doc, pg_idx, page_hits[pg_idx],
-                                   context_padding, zoom)
+        img = _render_page_region(
+            pdf_doc, pg_idx, page_hits[pg_idx], context_padding, zoom
+        )
         images.append(img)
 
     stitched = _stitch_vertical(images)
@@ -358,7 +381,7 @@ def _render_page_region(pdf_doc, pg_idx, hits_with_anchors, context_padding, zoo
         page_rect.x0 + 20,
         max(page_rect.y0, min_y - context_padding),
         page_rect.x1 - 20,
-        min(page_rect.y1, max_y + context_padding)
+        min(page_rect.y1, max_y + context_padding),
     )
 
     mat = fitz.Matrix(zoom, zoom)
@@ -374,12 +397,13 @@ def _render_page_region(pdf_doc, pg_idx, hits_with_anchors, context_padding, zoo
             y0 = (rect.y0 - crop_rect.y0) * zoom
             x1 = (rect.x1 - crop_rect.x0) * zoom
             y1 = (rect.y1 - crop_rect.y0) * zoom
-            draw.rectangle([x0-pad, y0-pad, x1+pad, y1+pad], fill=(255, 255, 0, 100))
+            draw.rectangle(
+                [x0 - pad, y0 - pad, x1 + pad, y1 + pad], fill=(255, 255, 0, 100)
+            )
 
     # Border
     ImageDraw.Draw(img).rectangle(
-        [0, 0, img.width - 1, img.height - 1],
-        outline=(160, 160, 160), width=2
+        [0, 0, img.width - 1, img.height - 1], outline=(160, 160, 160), width=2
     )
 
     return img
@@ -396,7 +420,8 @@ def _stitch_vertical(images, gap=4):
         y += img.height + gap
     ImageDraw.Draw(stitched).rectangle(
         [0, 0, stitched.width - 1, stitched.height - 1],
-        outline=(160, 160, 160), width=2
+        outline=(160, 160, 160),
+        width=2,
     )
     return stitched
 
@@ -413,8 +438,16 @@ def _img_to_bytes(img):
 # Output document assembly
 # ---------------------------------------------------------------------------
 
-def build_analysis_doc(pdf_doc, sections, output_path, title=None, subtitle=None,
-                       source_label=None, dpi=200):
+
+def build_analysis_doc(
+    pdf_doc,
+    sections,
+    output_path,
+    title=None,
+    subtitle=None,
+    source_label=None,
+    dpi=200,
+):
     """
     Build a Word document with analysis sections and inline source screenshots.
 
@@ -464,11 +497,12 @@ def build_analysis_doc(pdf_doc, sections, output_path, title=None, subtitle=None
 
         if anchors:
             img_bytes, page_label, size = screenshot_region(
-                pdf_doc, anchors,
+                pdf_doc,
+                anchors,
                 target_page=target_page,
                 target_pages=target_pages,
                 context_padding=padding,
-                dpi=dpi
+                dpi=dpi,
             )
 
             if img_bytes:
@@ -521,6 +555,7 @@ def build_analysis_doc(pdf_doc, sections, output_path, title=None, subtitle=None
 # CLI commands
 # ---------------------------------------------------------------------------
 
+
 def cmd_setup_check():
     """Check if all dependencies are available."""
     checks = {
@@ -536,24 +571,28 @@ def cmd_setup_check():
 
     try:
         import fitz
+
         checks["PyMuPDF"] = True
     except ImportError:
         pass
 
     try:
         from PIL import Image
+
         checks["Pillow"] = True
     except ImportError:
         pass
 
     try:
         from docx import Document
+
         checks["python-docx"] = True
     except ImportError:
         pass
 
     try:
         from playwright.sync_api import sync_playwright
+
         checks["Playwright"] = True
     except ImportError:
         pass
@@ -586,9 +625,16 @@ def cmd_setup_check():
     if system == "Windows":
         try:
             import winreg
+
             word_reg_paths = [
-                (winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\WINWORD.EXE"),
-                (winreg.HKEY_CURRENT_USER, r"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\WINWORD.EXE"),
+                (
+                    winreg.HKEY_LOCAL_MACHINE,
+                    r"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\WINWORD.EXE",
+                ),
+                (
+                    winreg.HKEY_CURRENT_USER,
+                    r"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\WINWORD.EXE",
+                ),
                 (winreg.HKEY_CLASSES_ROOT, r"Word.Application"),
             ]
             for hive, subkey in word_reg_paths:
@@ -624,14 +670,22 @@ def cmd_setup_check():
         if name in ("PyMuPDF", "Pillow", "python-docx") and not ok:
             all_core = False
 
-    has_converter = checks["Word (macOS)"] or checks["Word (Windows)"] or checks["LibreOffice"]
+    has_converter = (
+        checks["Word (macOS)"] or checks["Word (Windows)"] or checks["LibreOffice"]
+    )
     has_web = checks["Playwright"] and checks["Chromium browser"]
 
     print("")
     print("Source support:")
-    print(f"  PDF files:   {'Ready' if all_core else 'Needs: pip3 install pymupdf pillow python-docx'}")
-    print(f"  Word docs:   {'Ready' if has_converter else 'Needs: Microsoft Word or LibreOffice'}")
-    print(f"  Web URLs:    {'Ready' if has_web else 'Needs: pip3 install playwright && python3 -m playwright install chromium'}")
+    print(
+        f"  PDF files:   {'Ready' if all_core else 'Needs: pip3 install pymupdf pillow python-docx'}"
+    )
+    print(
+        f"  Word docs:   {'Ready' if has_converter else 'Needs: Microsoft Word or LibreOffice'}"
+    )
+    print(
+        f"  Web URLs:    {'Ready' if has_web else 'Needs: pip3 install playwright && python3 -m playwright install chromium'}"
+    )
 
     return 0 if all_core else 1
 
@@ -660,8 +714,11 @@ def cmd_screenshot(args):
 
     ext = os.path.splitext(source)[1].lower()
     if ext != ".pdf":
-        print(f"Source must be a PDF file (got {ext}). "
-              f"Use 'convert' to convert other formats first.", file=sys.stderr)
+        print(
+            f"Source must be a PDF file (got {ext}). "
+            f"Use 'convert' to convert other formats first.",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     anchors = json.loads(args.anchors)
@@ -672,10 +729,7 @@ def cmd_screenshot(args):
     pdf_doc = fitz.open(source)
     try:
         img_bytes, page_label, size = screenshot_region(
-            pdf_doc, anchors,
-            target_page=target_page,
-            context_padding=padding,
-            dpi=dpi
+            pdf_doc, anchors, target_page=target_page, context_padding=padding, dpi=dpi
         )
     finally:
         pdf_doc.close()
@@ -722,10 +776,13 @@ def cmd_build(args):
 
         pdf_doc = fitz.open(tmp_pdf)
         build_analysis_doc(
-            pdf_doc, sections, output,
-            title=title, subtitle=subtitle,
+            pdf_doc,
+            sections,
+            output,
+            title=title,
+            subtitle=subtitle,
             source_label=source_label,
-            dpi=dpi
+            dpi=dpi,
         )
 
         size_kb = os.path.getsize(output) / 1024
@@ -797,19 +854,19 @@ def main():
 
     # build
     p_build = sub.add_parser("build", help="Build analysis document")
-    p_build.add_argument("--source", required=True,
-                         help="Source document path or URL")
-    p_build.add_argument("--output", required=True,
-                         help="Output .docx path")
-    p_build.add_argument("--sections", required=True,
-                         help="JSON array of section objects")
+    p_build.add_argument("--source", required=True, help="Source document path or URL")
+    p_build.add_argument("--output", required=True, help="Output .docx path")
+    p_build.add_argument(
+        "--sections", required=True, help="JSON array of section objects"
+    )
     p_build.add_argument("--title", help="Document title")
     p_build.add_argument("--subtitle", help="Document subtitle")
     p_build.add_argument("--dpi", type=int, default=200)
 
     # extract-text
-    p_text = sub.add_parser("extract-text",
-                            help="Extract text from a document (for AI analysis)")
+    p_text = sub.add_parser(
+        "extract-text", help="Extract text from a document (for AI analysis)"
+    )
     p_text.add_argument("--source", required=True)
 
     args = parser.parse_args()

@@ -17,7 +17,7 @@ import logging
 import tkinter as tk
 import tkinter.font as tkfont
 from tkinter import ttk
-from typing import Any, Callable, Dict, Optional
+from typing import Any, Dict, Optional
 
 
 class UIManager:

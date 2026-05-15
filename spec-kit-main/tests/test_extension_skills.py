@@ -18,24 +18,28 @@ import yaml
 from pathlib import Path
 
 from specify_cli.extensions import (
-    ExtensionManifest,
     ExtensionManager,
-    ExtensionError,
 )
-
 
 # ===== Helpers =====
 
-def _create_init_options(project_root: Path, ai: str = "claude", ai_skills: bool = True):
+
+def _create_init_options(
+    project_root: Path, ai: str = "claude", ai_skills: bool = True
+):
     """Write a .specify/init-options.json file."""
     opts_dir = project_root / ".specify"
     opts_dir.mkdir(parents=True, exist_ok=True)
     opts_file = opts_dir / "init-options.json"
-    opts_file.write_text(json.dumps({
-        "ai": ai,
-        "ai_skills": ai_skills,
-        "script": "sh",
-    }))
+    opts_file.write_text(
+        json.dumps(
+            {
+                "ai": ai,
+                "ai_skills": ai_skills,
+                "script": "sh",
+            }
+        )
+    )
 
 
 def _create_skills_dir(project_root: Path, ai: str = "claude") -> Path:
@@ -94,7 +98,7 @@ def _create_extension_dir(temp_dir: Path, ext_id: str = "test-ext") -> Path:
 
     (commands_dir / "hello.md").write_text(
         "---\n"
-        "description: \"Test hello command\"\n"
+        'description: "Test hello command"\n'
         "---\n"
         "\n"
         "# Hello Command\n"
@@ -105,7 +109,7 @@ def _create_extension_dir(temp_dir: Path, ext_id: str = "test-ext") -> Path:
 
     (commands_dir / "world.md").write_text(
         "---\n"
-        "description: \"Test world command\"\n"
+        'description: "Test world command"\n'
         "---\n"
         "\n"
         "# World Command\n"
@@ -117,6 +121,7 @@ def _create_extension_dir(temp_dir: Path, ext_id: str = "test-ext") -> Path:
 
 
 # ===== Fixtures =====
+
 
 @pytest.fixture
 def temp_dir():
@@ -161,6 +166,7 @@ def no_skills_project(project_dir):
 
 
 # ===== ExtensionManager._get_skills_dir Tests =====
+
 
 class TestExtensionManagerGetSkillsDir:
     """Test _get_skills_dir() on ExtensionManager."""
@@ -213,6 +219,7 @@ class TestExtensionManagerGetSkillsDir:
 
 # ===== Extension Skill Registration Tests =====
 
+
 class TestExtensionSkillRegistration:
     """Test _register_extension_skills() on ExtensionManager."""
 
@@ -233,9 +240,7 @@ class TestExtensionSkillRegistration:
         """SKILL.md should have correct agentskills.io structure."""
         project_dir, skills_dir = skills_project
         manager = ExtensionManager(project_dir)
-        manager.install_from_directory(
-            extension_dir, "0.1.0", register_commands=False
-        )
+        manager.install_from_directory(extension_dir, "0.1.0", register_commands=False)
 
         skill_file = skills_dir / "speckit-test-ext-hello" / "SKILL.md"
         assert skill_file.exists()
@@ -255,9 +260,7 @@ class TestExtensionSkillRegistration:
         """Generated SKILL.md should contain valid, parseable YAML frontmatter."""
         project_dir, skills_dir = skills_project
         manager = ExtensionManager(project_dir)
-        manager.install_from_directory(
-            extension_dir, "0.1.0", register_commands=False
-        )
+        manager.install_from_directory(extension_dir, "0.1.0", register_commands=False)
 
         skill_file = skills_dir / "speckit-test-ext-hello" / "SKILL.md"
         content = skill_file.read_text()
@@ -361,7 +364,9 @@ class TestExtensionSkillRegistration:
         assert "speckit-test-ext-world" in metadata["registered_skills"]
         assert (skills_dir / "speckit-test-ext-hello" / "SKILL.md").exists()
 
-    def test_skill_registration_resolves_script_placeholders(self, project_dir, temp_dir):
+    def test_skill_registration_resolves_script_placeholders(
+        self, project_dir, temp_dir
+    ):
         """Auto-registered extension skills should resolve script placeholders."""
         _create_init_options(project_dir, ai="claude", ai_skills=True)
         skills_dir = _create_skills_dir(project_dir, ai="claude")
@@ -395,7 +400,7 @@ class TestExtensionSkillRegistration:
             "---\n"
             "description: Scripted plan command\n"
             "scripts:\n"
-            "  sh: ../../scripts/bash/setup-plan.sh --json \"{ARGS}\"\n"
+            '  sh: ../../scripts/bash/setup-plan.sh --json "{ARGS}"\n'
             "agent_scripts:\n"
             "  sh: ../../scripts/bash/update-agent-context.sh __AGENT__\n"
             "---\n\n"
@@ -467,6 +472,7 @@ class TestExtensionSkillRegistration:
 
 
 # ===== Extension Skill Unregistration Tests =====
+
 
 class TestExtensionSkillUnregistration:
     """Test _unregister_extension_skills() on ExtensionManager."""
@@ -541,10 +547,13 @@ class TestExtensionSkillUnregistration:
 
 # ===== Command File Without Frontmatter =====
 
+
 class TestExtensionSkillEdgeCases:
     """Test edge cases in extension skill registration."""
 
-    def test_install_with_non_dict_init_options_does_not_crash(self, project_dir, extension_dir):
+    def test_install_with_non_dict_init_options_does_not_crash(
+        self, project_dir, extension_dir
+    ):
         """Corrupted init-options payloads should disable skill registration, not crash install."""
         opts_file = project_dir / ".specify" / "init-options.json"
         opts_file.parent.mkdir(parents=True, exist_ok=True)
@@ -700,7 +709,9 @@ class TestExtensionSkillEdgeCases:
         assert "Extension command: speckit.badfm-ext.broken" in content
         assert "This body should still be used." in content
 
-    def test_remove_cleans_up_when_init_options_deleted(self, skills_project, extension_dir):
+    def test_remove_cleans_up_when_init_options_deleted(
+        self, skills_project, extension_dir
+    ):
         """Skills should be cleaned up even if init-options.json is deleted after install."""
         project_dir, skills_dir = skills_project
         manager = ExtensionManager(project_dir)
@@ -721,7 +732,9 @@ class TestExtensionSkillEdgeCases:
         assert not (skills_dir / "speckit-test-ext-hello").exists()
         assert not (skills_dir / "speckit-test-ext-world").exists()
 
-    def test_remove_cleans_up_when_ai_skills_toggled(self, skills_project, extension_dir):
+    def test_remove_cleans_up_when_ai_skills_toggled(
+        self, skills_project, extension_dir
+    ):
         """Skills should be cleaned up even if ai_skills is toggled to false after install."""
         project_dir, skills_dir = skills_project
         manager = ExtensionManager(project_dir)

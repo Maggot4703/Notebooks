@@ -30,10 +30,16 @@ def main():
     args = p.parse_args()
 
     if not args.token:
-        print("GITHUB_TOKEN must be set via --token or the GITHUB_TOKEN env var", file=sys.stderr)
+        print(
+            "GITHUB_TOKEN must be set via --token or the GITHUB_TOKEN env var",
+            file=sys.stderr,
+        )
         sys.exit(2)
 
-    headers = {"Authorization": f"token {args.token}", "Accept": "application/vnd.github.v3+json"}
+    headers = {
+        "Authorization": f"token {args.token}",
+        "Accept": "application/vnd.github.v3+json",
+    }
 
     url = f"{API_BASE}/repos/{args.owner}/{args.repo}/actions/runs/{args.run_id}/artifacts"
     r = requests.get(url, headers=headers)
@@ -56,7 +62,9 @@ def main():
         sys.exit(4)
 
     artifact_id = target["id"]
-    dl_url = f"{API_BASE}/repos/{args.owner}/{args.repo}/actions/artifacts/{artifact_id}/zip"
+    dl_url = (
+        f"{API_BASE}/repos/{args.owner}/{args.repo}/actions/artifacts/{artifact_id}/zip"
+    )
     print(f"Downloading artifact id={artifact_id}...")
     rr = requests.get(dl_url, headers=headers, stream=True)
     if rr.status_code not in (200, 302):
@@ -80,5 +88,5 @@ def main():
     print(f"Artifact extracted to: {out_dir}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

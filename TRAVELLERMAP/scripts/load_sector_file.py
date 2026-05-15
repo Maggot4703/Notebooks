@@ -3,10 +3,12 @@
 load_sector_file.py
 Prototype: Load a Traveller sector file from a local path or URL, validate, and print summary.
 """
+
 import pandas as pd
 import requests
 import sys
 import os
+
 
 def load_sector_file(path_or_url):
     if path_or_url.startswith("http://") or path_or_url.startswith("https://"):
@@ -33,6 +35,7 @@ def load_sector_file(path_or_url):
     print(df.head(5))
     return df
 
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: load_sector_file.py <path_or_url>")
@@ -42,6 +45,7 @@ def main():
         load_sector_file(path_or_url)
     except Exception as e:
         print(f"Error: {e}")
+
 
 if __name__ == "__main__":
     main()

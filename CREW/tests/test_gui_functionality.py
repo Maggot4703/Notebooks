@@ -2,6 +2,7 @@ import unittest
 import tkinter as tk
 from Crew.gui import CrewGUI
 
+
 class TestGUIPreprocessing(unittest.TestCase):
     def setUp(self):
         self.root = tk.Tk()
@@ -24,7 +25,7 @@ class TestGUIPreprocessing(unittest.TestCase):
         # Each chunk should be less than or equal to 600 chars
         self.assertTrue(all(len(chunk) <= 600 for chunk in chunks))
         self.assertGreater(len(chunks), 1)
-        self.assertEqual("".join(chunk.replace(" ","") for chunk in chunks), "a"*700)
+        self.assertEqual("".join(chunk.replace(" ", "") for chunk in chunks), "a" * 700)
 
     # def test_send_to_tts_engine(self):
     #     text = "Hello, this is a test."
@@ -32,6 +33,7 @@ class TestGUIPreprocessing(unittest.TestCase):
     #         self.gui._send_to_tts_engine(text)
     #     except Exception as e:
     #         self.fail(f"_send_to_tts_engine raised an exception: {e}")
+
 
 if __name__ == "__main__":
     unittest.main()

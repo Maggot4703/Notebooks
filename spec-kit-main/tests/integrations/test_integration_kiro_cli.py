@@ -28,10 +28,20 @@ class TestKiroAlias:
         try:
             os.chdir(target)
             runner = CliRunner()
-            result = runner.invoke(app, [
-                "init", "--here", "--ai", "kiro",
-                "--ignore-agent-tools", "--script", "sh", "--no-git",
-            ], catch_exceptions=False)
+            result = runner.invoke(
+                app,
+                [
+                    "init",
+                    "--here",
+                    "--ai",
+                    "kiro",
+                    "--ignore-agent-tools",
+                    "--script",
+                    "sh",
+                    "--no-git",
+                ],
+                catch_exceptions=False,
+            )
         finally:
             os.chdir(old_cwd)
 

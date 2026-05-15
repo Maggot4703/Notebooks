@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Simple HTML template for dashboard
-TEMPLATE = '''
+TEMPLATE = """
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,26 +29,30 @@ TEMPLATE = '''
     <pre>{{ logs }}</pre>
 </body>
 </html>
-'''
+"""
 
-@app.route('/')
+
+@app.route("/")
 def dashboard():
     # Load crew assignments
     crew = []
     crew_header = []
-    crew_path = os.path.join(os.path.dirname(__file__), '../PLANS/crew_roster_0426.csv')
+    crew_path = os.path.join(os.path.dirname(__file__), "../PLANS/crew_roster_0426.csv")
     if os.path.exists(crew_path):
         with open(crew_path) as f:
             reader = csv.DictReader(f)
             crew = list(reader)
             crew_header = reader.fieldnames
     # Load logs
-    logs_path = os.path.join(os.path.dirname(__file__), '../NOTEBOOKS/notebooks.txt')
-    logs = ''
+    logs_path = os.path.join(os.path.dirname(__file__), "../NOTEBOOKS/notebooks.txt")
+    logs = ""
     if os.path.exists(logs_path):
         with open(logs_path) as f:
             logs = f.read()
-    return render_template_string(TEMPLATE, crew=crew, crew_header=crew_header, logs=logs)
+    return render_template_string(
+        TEMPLATE, crew=crew, crew_header=crew_header, logs=logs
+    )
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run(debug=True, port=5000)

@@ -92,7 +92,9 @@ class ClaudeIntegration(SkillsIntegration):
             out.append(line)
         return "".join(out)
 
-    def _render_skill(self, template_name: str, frontmatter: dict[str, Any], body: str) -> str:
+    def _render_skill(
+        self, template_name: str, frontmatter: dict[str, Any], body: str
+    ) -> str:
         """Render a processed command template as a Claude skill."""
         skill_name = f"speckit-{template_name.replace('.', '-')}"
         description = frontmatter.get(
@@ -107,6 +109,7 @@ class ClaudeIntegration(SkillsIntegration):
 
     def _build_skill_fm(self, name: str, description: str, source: str) -> dict:
         from specify_cli.agents import CommandRegistrar
+
         return CommandRegistrar.build_skill_frontmatter(
             self.key, name, description, source
         )
@@ -183,7 +186,7 @@ class ClaudeIntegration(SkillsIntegration):
             skill_dir_name = path.parent.name  # e.g. "speckit-plan"
             stem = skill_dir_name
             if stem.startswith("speckit-"):
-                stem = stem[len("speckit-"):]
+                stem = stem[len("speckit-") :]
             hint = ARGUMENT_HINTS.get(stem, "")
             if hint:
                 updated = self.inject_argument_hint(updated, hint)

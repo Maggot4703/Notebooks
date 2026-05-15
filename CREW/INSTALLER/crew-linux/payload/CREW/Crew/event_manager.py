@@ -6,7 +6,7 @@ Phase 2 of the CrewGUI refactoring plan - Extracts all event handling logic from
 
 import logging
 import tkinter as tk
-from typing import Callable, Optional
+from typing import Callable
 
 # Check if TTS is available
 try:

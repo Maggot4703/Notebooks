@@ -2,6 +2,7 @@
 traveller_agent.py
 Auto-discovers and exposes all TRAVELLERMAP scripts as both CLI commands and Python callables.
 """
+
 import os
 import importlib.util
 import ast
@@ -36,22 +37,26 @@ class TravellerAgent:
 
     def _discover_scripts(self):
         """Scan for .py scripts in TRAVELLERMAP and CREW and register as commands and callables."""
-        all_folders = [p for p in (T5_SCRIPTS_DIRS + CREW_SCRIPTS_DIRS) if os.path.isdir(p)]
+        all_folders = [
+            p for p in (T5_SCRIPTS_DIRS + CREW_SCRIPTS_DIRS) if os.path.isdir(p)
+        ]
         for folder in all_folders:
             for fname in os.listdir(folder):
-                if fname.endswith('.py') and not fname.startswith('__'):
+                if fname.endswith(".py") and not fname.startswith("__"):
                     script_path = os.path.join(folder, fname)
                     # Prefix crew- for CREW scripts to avoid name collisions
-                    if os.path.abspath(script_path).startswith(os.path.abspath(CREW_SCRIPTS_BASE)):
-                        cmd_name = 'crew-' + fname[:-3].replace('_', '-')
+                    if os.path.abspath(script_path).startswith(
+                        os.path.abspath(CREW_SCRIPTS_BASE)
+                    ):
+                        cmd_name = "crew-" + fname[:-3].replace("_", "-")
                         func_name = fname[:-3]
                     else:
-                        cmd_name = fname[:-3].replace('_', '-')
+                        cmd_name = fname[:-3].replace("_", "-")
                         func_name = fname[:-3]
                     self.registry[cmd_name] = {
-                        'path': script_path,
-                        'func': self._make_callable(script_path, func_name),
-                        'doc': self._extract_doc(script_path),
+                        "path": script_path,
+                        "func": self._make_callable(script_path, func_name),
+                        "doc": self._extract_doc(script_path),
                     }
 
     def _make_callable(self, script_path: str, func_name: str) -> Callable:
@@ -63,15 +68,17 @@ class TravellerAgent:
             spec.loader.exec_module(mod)
             if hasattr(mod, func_name):
                 return getattr(mod, func_name)(*args, **kwargs)
-            if hasattr(mod, 'main'):
-                return getattr(mod, 'main')(*args, **kwargs)
-            raise AttributeError(f"No callable named {func_name} or main() in {script_path}")
+            if hasattr(mod, "main"):
+                return getattr(mod, "main")(*args, **kwargs)
+            raise AttributeError(
+                f"No callable named {func_name} or main() in {script_path}"
+            )
 
         return wrapper
 
     def _extract_doc(self, script_path: str) -> str:
         try:
-            with open(script_path, 'r', encoding='utf-8') as f:
+            with open(script_path, "r", encoding="utf-8") as f:
                 src = f.read()
             mod = ast.parse(src)
             doc = ast.get_docstring(mod) or ""
@@ -83,12 +90,12 @@ class TravellerAgent:
         return list(self.registry.keys())
 
     def get_doc(self, cmd_name: str) -> str:
-        return self.registry.get(cmd_name, {}).get('doc', '')
+        return self.registry.get(cmd_name, {}).get("doc", "")
 
     def run(self, cmd_name: str, *args, **kwargs):
         if cmd_name not in self.registry:
             raise ValueError(f"Unknown skill: {cmd_name}")
-        return self.registry[cmd_name]['func'](*args, **kwargs)
+        return self.registry[cmd_name]["func"](*args, **kwargs)
 
 
 # Singleton instance

@@ -18,7 +18,6 @@ This script prefers PyMuPDF (fitz) or pdfplumber for text extraction, and falls 
 from __future__ import annotations
 import argparse
 import json
-import os
 import sys
 import csv
 import time
@@ -73,7 +72,7 @@ def detect_page_count_and_text(path: Path, max_pages_check: int = 2) -> tuple[in
                 page_count = len(p.pages)
                 for i in range(min(page_count, max_pages_check)):
                     try:
-                        text += (p.pages[i].extract_text() or "")
+                        text += p.pages[i].extract_text() or ""
                     except Exception:
                         continue
             return page_count, text
@@ -116,7 +115,9 @@ def scan_dir(pdf_dir: Path) -> list[dict]:
         if page_count == 0:
             type_hint = "invalid-or-unreadable"
         else:
-            type_hint = "searchable" if is_searchable(sample_text) else "scanned-or-image"
+            type_hint = (
+                "searchable" if is_searchable(sample_text) else "scanned-or-image"
+            )
         items.append(
             {
                 "path": str(p),
@@ -124,7 +125,9 @@ def scan_dir(pdf_dir: Path) -> list[dict]:
                 "size_bytes": size,
                 "page_count": page_count,
                 "type_hint": type_hint,
-                "sample_text": sample_text[:500].replace("\n", " ") if sample_text else "",
+                "sample_text": (
+                    sample_text[:500].replace("\n", " ") if sample_text else ""
+                ),
                 "scanned_check_timestamp": int(time.time()),
             }
         )
@@ -134,21 +137,30 @@ def scan_dir(pdf_dir: Path) -> list[dict]:
 def write_outputs(items: list[dict], json_out: Path, csv_out: Path | None):
     json_out.parent.mkdir(parents=True, exist_ok=True)
     with open(json_out, "w", encoding="utf-8") as fh:
-        json.dump({"scanned_at": int(time.time()), "files": items}, fh, indent=2, ensure_ascii=False)
+        json.dump(
+            {"scanned_at": int(time.time()), "files": items},
+            fh,
+            indent=2,
+            ensure_ascii=False,
+        )
     if csv_out:
         csv_out.parent.mkdir(parents=True, exist_ok=True)
         with open(csv_out, "w", encoding="utf-8", newline="") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["name", "path", "size_bytes", "page_count", "type_hint", "sample_text"])
+            writer.writerow(
+                ["name", "path", "size_bytes", "page_count", "type_hint", "sample_text"]
+            )
             for it in items:
-                writer.writerow([
-                    it.get("name"),
-                    it.get("path"),
-                    it.get("size_bytes"),
-                    it.get("page_count"),
-                    it.get("type_hint"),
-                    (it.get("sample_text") or "")[:200],
-                ])
+                writer.writerow(
+                    [
+                        it.get("name"),
+                        it.get("path"),
+                        it.get("size_bytes"),
+                        it.get("page_count"),
+                        it.get("type_hint"),
+                        (it.get("sample_text") or "")[:200],
+                    ]
+                )
 
 
 def find_candidate_dir(cli_path: str | None) -> Path | None:
@@ -174,13 +186,20 @@ def find_candidate_dir(cli_path: str | None) -> Path | None:
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Audit PDFs for 0101 Book Browser")
     parser.add_argument("--path", help="Path to PDFs directory", default=None)
-    parser.add_argument("--output", help="JSON output path (default: WEB_ROOT/0101_extracted/audit_report.json)", default=None)
+    parser.add_argument(
+        "--output",
+        help="JSON output path (default: WEB_ROOT/0101_extracted/audit_report.json)",
+        default=None,
+    )
     parser.add_argument("--csv", help="CSV output path (optional)", default=None)
     args = parser.parse_args(argv)
 
     pdf_dir = find_candidate_dir(args.path)
     if pdf_dir is None:
-        print("No PDF directory found. Tried defaults. Provide --path to the PDFs folder.", file=sys.stderr)
+        print(
+            "No PDF directory found. Tried defaults. Provide --path to the PDFs folder.",
+            file=sys.stderr,
+        )
         sys.exit(2)
 
     print(f"Scanning PDFs in: {pdf_dir}")
@@ -188,7 +207,9 @@ def main(argv=None):
     items = scan_dir(pdf_dir)
 
     # default outputs
-    out_json = Path(args.output) if args.output else DEFAULT_OUTPUT_DIR / "audit_report.json"
+    out_json = (
+        Path(args.output) if args.output else DEFAULT_OUTPUT_DIR / "audit_report.json"
+    )
     out_csv = Path(args.csv) if args.csv else DEFAULT_OUTPUT_DIR / "audit_report.csv"
 
     write_outputs(items, out_json, out_csv)

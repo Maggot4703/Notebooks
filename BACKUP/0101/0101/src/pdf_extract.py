@@ -9,12 +9,11 @@ Usage:
 
 Requirements (optional): PyMuPDF (fitz) recommended. pdfplumber and pytesseract used as fallbacks/for OCR.
 """
+
 from __future__ import annotations
 import argparse
 import json
-import os
 import sys
-import math
 from pathlib import Path
 import time
 
@@ -42,7 +41,7 @@ OUT_DIR = WEB_ROOT / "0101_extracted"
 
 
 def normalize_name(s: str) -> str:
-    return "".join(c if c.isalnum() or c in (' ', '-', '_') else '_' for c in s).strip()
+    return "".join(c if c.isalnum() or c in (" ", "-", "_") else "_" for c in s).strip()
 
 
 def extract_with_fitZ(pdf_path: Path, out_root: Path):
@@ -67,12 +66,14 @@ def extract_with_fitZ(pdf_path: Path, out_root: Path):
                     spans = []
                     for line in b.get("lines", []):
                         for span in line.get("spans", []):
-                            spans.append({
-                                "text": span.get("text"),
-                                "bbox": span.get("bbox"),
-                                "size": span.get("size"),
-                                "font": span.get("font"),
-                            })
+                            spans.append(
+                                {
+                                    "text": span.get("text"),
+                                    "bbox": span.get("bbox"),
+                                    "size": span.get("size"),
+                                    "font": span.get("font"),
+                                }
+                            )
                     blocks.append({"bbox": b.get("bbox"), "spans": spans})
         except Exception:
             blocks = []
@@ -88,13 +89,17 @@ def extract_with_fitZ(pdf_path: Path, out_root: Path):
                     fmt = "png"
                     img_name = page_out / f"img{img_index:03d}.{fmt}"
                     pix.save(str(img_name))
-                    images.append({"file": str(img_name.relative_to(WEB_ROOT)), "type": fmt})
+                    images.append(
+                        {"file": str(img_name.relative_to(WEB_ROOT)), "type": fmt}
+                    )
                 else:
                     # CMYK: convert to RGB
                     pix1 = fitz.Pixmap(fitz.csRGB, pix)
                     img_name = page_out / f"img{img_index:03d}.png"
                     pix1.save(str(img_name))
-                    images.append({"file": str(img_name.relative_to(WEB_ROOT)), "type": "png"})
+                    images.append(
+                        {"file": str(img_name.relative_to(WEB_ROOT)), "type": "png"}
+                    )
                     pix1 = None
                 pix = None
         except Exception:
@@ -102,7 +107,11 @@ def extract_with_fitZ(pdf_path: Path, out_root: Path):
 
         # if no text blocks and OCR available, render page image and OCR
         ocr_text = ""
-        if (not blocks or sum(len(b.get("spans", [])) for b in blocks) == 0) and pytesseract is not None and Image is not None:
+        if (
+            (not blocks or sum(len(b.get("spans", [])) for b in blocks) == 0)
+            and pytesseract is not None
+            and Image is not None
+        ):
             try:
                 mat = fitz.Matrix(2, 2)
                 pix = page.get_pixmap(matrix=mat)
@@ -177,7 +186,10 @@ def process_pdf(pdf_path: Path):
         elif pdfplumber is not None:
             base_out = extract_with_pdfplumber(pdf_path, out_root)
         else:
-            print("No PDF extraction library available (fitz/pdfplumber).", file=sys.stderr)
+            print(
+                "No PDF extraction library available (fitz/pdfplumber).",
+                file=sys.stderr,
+            )
             return None
         print(f"Wrote extracted assets to: {base_out}")
         return base_out
@@ -198,7 +210,9 @@ def find_pdfs(cli_pdf: str | None, all_flag: bool) -> list[Path]:
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--pdf", help="Single PDF to process (path)")
-    parser.add_argument("--all", action="store_true", help="Process all PDFs in PDFs/SM")
+    parser.add_argument(
+        "--all", action="store_true", help="Process all PDFs in PDFs/SM"
+    )
     args = parser.parse_args(argv)
 
     targets = find_pdfs(args.pdf, args.all)

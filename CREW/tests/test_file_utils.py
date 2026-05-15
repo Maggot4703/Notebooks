@@ -1,8 +1,9 @@
-
 # No sys.path modification needed; use direct imports for local modules
 import pandas as pd
-import sys, os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import file_utils
 
 
@@ -20,6 +21,7 @@ def test_read_file(tmp_path):
             assert result is None
         finally:
             file_path.chmod(0o644)
+
     file_path = tmp_path / "test.txt"
     file_path.write_text("hello world")
     result = file_utils.read_file(str(file_path))
@@ -37,6 +39,7 @@ def test_read_csv_builtin(tmp_path):
         # Should not raise, just parse as rows
         result = file_utils.read_csv_builtin(str(csv_path))
         assert isinstance(result, list)
+
     csv_path = tmp_path / "test.csv"
     csv_path.write_text("a,b\n1,2\n3,4\n")
     result = file_utils.read_csv_builtin(str(csv_path))
@@ -47,6 +50,7 @@ def test_read_csv_pandas(tmp_path):
     def test_read_csv_pandas_file_not_found():
         result = file_utils.read_csv_pandas("nonexistent.csv")
         assert result is None
+
     csv_path = tmp_path / "test.csv"
     csv_path.write_text("a,b\n1,2\n3,4\n")
     df = file_utils.read_csv_pandas(str(csv_path))
@@ -59,6 +63,7 @@ def test_read_excel(tmp_path):
     def test_read_excel_file_not_found():
         result = file_utils.read_excel("nonexistent.xlsx")
         assert result is None
+
     # Requires openpyxl installed
     excel_path = tmp_path / "test.xlsx"
     df = pd.DataFrame({"a": [1, 2], "b": [3, 4]})

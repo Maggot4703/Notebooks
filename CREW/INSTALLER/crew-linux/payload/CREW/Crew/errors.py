@@ -27,7 +27,7 @@ Date: 2024
 import functools
 import logging
 import traceback
-from typing import Any, Callable, Dict, List, Optional, Type, Union
+from typing import Any, Callable, Dict, List, Optional, Type
 
 # Setup logger for this module (assuming a global logger or pass one in)
 # If you have a central logging config, this might not be needed here.

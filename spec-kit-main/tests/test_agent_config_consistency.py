@@ -6,7 +6,6 @@ from pathlib import Path
 from specify_cli import AGENT_CONFIG, AI_ASSISTANT_ALIASES, AI_ASSISTANT_HELP
 from specify_cli.extensions import CommandRegistrar
 
-
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
@@ -50,16 +49,25 @@ class TestAgentConfigConsistency:
 
     def test_devcontainer_kiro_installer_uses_pinned_checksum(self):
         """Devcontainer installer should always verify Kiro installer via pinned SHA256."""
-        post_create_text = (REPO_ROOT / ".devcontainer" / "post-create.sh").read_text(encoding="utf-8")
+        post_create_text = (REPO_ROOT / ".devcontainer" / "post-create.sh").read_text(
+            encoding="utf-8"
+        )
 
-        assert 'KIRO_INSTALLER_SHA256="7487a65cf310b7fb59b357c4b5e6e3f3259d383f4394ecedb39acf70f307cffb"' in post_create_text
+        assert (
+            'KIRO_INSTALLER_SHA256="7487a65cf310b7fb59b357c4b5e6e3f3259d383f4394ecedb39acf70f307cffb"'
+            in post_create_text
+        )
         assert "sha256sum -c -" in post_create_text
         assert "KIRO_SKIP_KIRO_INSTALLER_VERIFY" not in post_create_text
 
     def test_agent_context_scripts_use_kiro_cli(self):
         """Agent context scripts should advertise kiro-cli and not legacy q agent key."""
-        bash_text = (REPO_ROOT / "scripts" / "bash" / "update-agent-context.sh").read_text(encoding="utf-8")
-        pwsh_text = (REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1").read_text(encoding="utf-8")
+        bash_text = (
+            REPO_ROOT / "scripts" / "bash" / "update-agent-context.sh"
+        ).read_text(encoding="utf-8")
+        pwsh_text = (
+            REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1"
+        ).read_text(encoding="utf-8")
 
         assert "kiro-cli" in bash_text
         assert "kiro-cli" in pwsh_text
@@ -89,8 +97,12 @@ class TestAgentConfigConsistency:
 
     def test_agent_context_scripts_include_tabnine(self):
         """Agent context scripts should support tabnine agent type."""
-        bash_text = (REPO_ROOT / "scripts" / "bash" / "update-agent-context.sh").read_text(encoding="utf-8")
-        pwsh_text = (REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1").read_text(encoding="utf-8")
+        bash_text = (
+            REPO_ROOT / "scripts" / "bash" / "update-agent-context.sh"
+        ).read_text(encoding="utf-8")
+        pwsh_text = (
+            REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1"
+        ).read_text(encoding="utf-8")
 
         assert "tabnine" in bash_text
         assert "TABNINE_FILE" in bash_text
@@ -121,7 +133,9 @@ class TestAgentConfigConsistency:
 
     def test_kimi_in_powershell_validate_set(self):
         """PowerShell update-agent-context script should include 'kimi' in ValidateSet."""
-        ps_text = (REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1").read_text(encoding="utf-8")
+        ps_text = (
+            REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1"
+        ).read_text(encoding="utf-8")
 
         validate_set_match = re.search(r"\[ValidateSet\(([^)]*)\)\]", ps_text)
         assert validate_set_match is not None
@@ -155,8 +169,12 @@ class TestAgentConfigConsistency:
 
     def test_trae_in_agent_context_scripts(self):
         """Agent context scripts should support trae agent type."""
-        bash_text = (REPO_ROOT / "scripts" / "bash" / "update-agent-context.sh").read_text(encoding="utf-8")
-        pwsh_text = (REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1").read_text(encoding="utf-8")
+        bash_text = (
+            REPO_ROOT / "scripts" / "bash" / "update-agent-context.sh"
+        ).read_text(encoding="utf-8")
+        pwsh_text = (
+            REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1"
+        ).read_text(encoding="utf-8")
 
         assert "trae" in bash_text
         assert "TRAE_FILE" in bash_text
@@ -165,7 +183,9 @@ class TestAgentConfigConsistency:
 
     def test_trae_in_powershell_validate_set(self):
         """PowerShell update-agent-context script should include 'trae' in ValidateSet."""
-        ps_text = (REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1").read_text(encoding="utf-8")
+        ps_text = (
+            REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1"
+        ).read_text(encoding="utf-8")
 
         validate_set_match = re.search(r"\[ValidateSet\(([^)]*)\)\]", ps_text)
         assert validate_set_match is not None
@@ -200,7 +220,9 @@ class TestAgentConfigConsistency:
 
     def test_pi_in_powershell_validate_set(self):
         """PowerShell update-agent-context script should include 'pi' in ValidateSet."""
-        ps_text = (REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1").read_text(encoding="utf-8")
+        ps_text = (
+            REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1"
+        ).read_text(encoding="utf-8")
 
         validate_set_match = re.search(r"\[ValidateSet\(([^)]*)\)\]", ps_text)
         assert validate_set_match is not None
@@ -210,8 +232,12 @@ class TestAgentConfigConsistency:
 
     def test_agent_context_scripts_include_pi(self):
         """Agent context scripts should support pi agent type."""
-        bash_text = (REPO_ROOT / "scripts" / "bash" / "update-agent-context.sh").read_text(encoding="utf-8")
-        pwsh_text = (REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1").read_text(encoding="utf-8")
+        bash_text = (
+            REPO_ROOT / "scripts" / "bash" / "update-agent-context.sh"
+        ).read_text(encoding="utf-8")
+        pwsh_text = (
+            REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1"
+        ).read_text(encoding="utf-8")
 
         assert "pi" in bash_text
         assert "Pi Coding Agent" in bash_text
@@ -242,8 +268,12 @@ class TestAgentConfigConsistency:
 
     def test_iflow_in_agent_context_scripts(self):
         """Agent context scripts should support iflow agent type."""
-        bash_text = (REPO_ROOT / "scripts" / "bash" / "update-agent-context.sh").read_text(encoding="utf-8")
-        pwsh_text = (REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1").read_text(encoding="utf-8")
+        bash_text = (
+            REPO_ROOT / "scripts" / "bash" / "update-agent-context.sh"
+        ).read_text(encoding="utf-8")
+        pwsh_text = (
+            REPO_ROOT / "scripts" / "powershell" / "update-agent-context.ps1"
+        ).read_text(encoding="utf-8")
 
         assert "iflow" in bash_text
         assert "IFLOW_FILE" in bash_text

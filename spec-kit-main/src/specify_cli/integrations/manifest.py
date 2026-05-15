@@ -32,9 +32,7 @@ def _validate_rel_path(rel: Path, root: Path) -> Path:
     that escape *root*, or otherwise resolves outside the project root.
     """
     if rel.is_absolute():
-        raise ValueError(
-            f"Absolute paths are not allowed in manifests: {rel}"
-        )
+        raise ValueError(f"Absolute paths are not allowed in manifests: {rel}")
     resolved = (root / rel).resolve()
     root_resolved = root.resolve()
     try:
@@ -68,7 +66,12 @@ class IntegrationManifest:
     @property
     def manifest_path(self) -> Path:
         """Path to the on-disk manifest JSON."""
-        return self.project_root / ".specify" / "integrations" / f"{self.key}.manifest.json"
+        return (
+            self.project_root
+            / ".specify"
+            / "integrations"
+            / f"{self.key}.manifest.json"
+        )
 
     # -- Recording files --------------------------------------------------
 
@@ -158,7 +161,7 @@ class IntegrationManifest:
             try:
                 normed = Path(os.path.normpath(path))
                 normed.relative_to(root)
-            except (ValueError, OSError):
+            except ValueError, OSError:
                 continue
             if not path.exists() and not path.is_symlink():
                 continue
@@ -209,7 +212,9 @@ class IntegrationManifest:
 
     def save(self) -> Path:
         """Write the manifest to disk.  Returns the manifest path."""
-        self._installed_at = self._installed_at or datetime.now(timezone.utc).isoformat()
+        self._installed_at = (
+            self._installed_at or datetime.now(timezone.utc).isoformat()
+        )
         data: dict[str, Any] = {
             "integration": self.key,
             "version": self.version,

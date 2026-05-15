@@ -3,17 +3,23 @@
 import asyncio
 from copilot import CopilotClient, SessionConfig, MessageOptions, PermissionHandler
 
+
 async def main():
     client = CopilotClient()
     await client.start()
 
     # Create session with a memorable ID
-    session = await client.create_session(SessionConfig(
-        session_id="user-123-conversation",
-        model="gpt-5",
-        on_permission_request=PermissionHandler.approve_all))
+    session = await client.create_session(
+        SessionConfig(
+            session_id="user-123-conversation",
+            model="gpt-5",
+            on_permission_request=PermissionHandler.approve_all,
+        )
+    )
 
-    await session.send_and_wait(MessageOptions(prompt="Let's discuss TypeScript generics"))
+    await session.send_and_wait(
+        MessageOptions(prompt="Let's discuss TypeScript generics")
+    )
     print(f"Session created: {session.session_id}")
 
     # Destroy session but keep data on disk
@@ -21,7 +27,9 @@ async def main():
     print("Session destroyed (state persisted)")
 
     # Resume the previous session
-    resumed = await client.resume_session("user-123-conversation", on_permission_request=PermissionHandler.approve_all)
+    resumed = await client.resume_session(
+        "user-123-conversation", on_permission_request=PermissionHandler.approve_all
+    )
     print(f"Resumed: {resumed.session_id}")
 
     await resumed.send_and_wait(MessageOptions(prompt="What were we discussing?"))
@@ -36,6 +44,7 @@ async def main():
 
     await resumed.destroy()
     await client.stop()
+
 
 if __name__ == "__main__":
     asyncio.run(main())

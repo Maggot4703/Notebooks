@@ -35,10 +35,7 @@ def hex_to_rgb(hex_color: str) -> Tuple[int, int, int]:
         if color_value.startswith("#") and len(color_value) == 4:
             # Expand #RGB to #RRGGBB
             color_value = (
-                "#"
-                + color_value[1] * 2
-                + color_value[2] * 2
-                + color_value[3] * 2
+                "#" + color_value[1] * 2 + color_value[2] * 2 + color_value[3] * 2
             )
         rgb = ImageColor.getrgb(color_value)
         if len(rgb) == 4:
@@ -49,17 +46,13 @@ def hex_to_rgb(hex_color: str) -> Tuple[int, int, int]:
         return (0, 0, 0)
 
 
-def rgb_to_hex(
-    r: int, g: Optional[int] = None, b: Optional[int] = None
-) -> str:
+def rgb_to_hex(r: int, g: Optional[int] = None, b: Optional[int] = None) -> str:
     try:
         if isinstance(r, tuple) and len(r) == 3:
             r, g, b = r
         if g is None or b is None:
             raise ValueError("RGB values are required")
-        if not (0 <= int(r) <= 255
-                and 0 <= int(g) <= 255
-                and 0 <= int(b) <= 255):
+        if not (0 <= int(r) <= 255 and 0 <= int(g) <= 255 and 0 <= int(b) <= 255):
             raise ValueError(f"RGB values must be 0-255: ({r}, {g}, {b})")
         return f"#{int(r):02X}{int(g):02X}{int(b):02X}"
     except Exception as e:
@@ -73,6 +66,8 @@ def _resolve_color(color_value: Any) -> Any:
     if isinstance(color_value, str):
         return hex_to_rgb(color_value)
     return (0, 0, 0)
+
+
 # Image helpers
 
 
@@ -147,9 +142,7 @@ def read_csv_builtin(filename: str) -> list:
                 data.append(row)
         return data
     except Exception as e:
-        logger.error(
-            f"Error reading CSV file {filename} with built-in csv: {e}"
-        )
+        logger.error(f"Error reading CSV file {filename} with built-in csv: {e}")
         return []
 
 

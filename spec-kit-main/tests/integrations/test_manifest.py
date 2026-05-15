@@ -192,7 +192,10 @@ class TestManifestPersistence:
 
     def test_manifest_path(self, tmp_path):
         m = IntegrationManifest("copilot", tmp_path)
-        assert m.manifest_path == tmp_path / ".specify" / "integrations" / "copilot.manifest.json"
+        assert (
+            m.manifest_path
+            == tmp_path / ".specify" / "integrations" / "copilot.manifest.json"
+        )
 
     def test_load_missing_raises(self, tmp_path):
         with pytest.raises(FileNotFoundError):

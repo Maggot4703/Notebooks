@@ -17,15 +17,14 @@ Options:
 """
 
 import argparse
-import os
 import sys
 import textwrap
 from pathlib import Path
 
-
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def pkg_name(pypi_name: str) -> str:
     """Convert 'my-pkg' → 'my_pkg'."""
@@ -48,13 +47,14 @@ def touch(path: Path) -> None:
 # File generators
 # ---------------------------------------------------------------------------
 
-def gen_pyproject_setuptools(name: str, mod: str, author: str, email: str, layout: str) -> str:
-    packages_find = (
-        'where = ["src"]' if layout == "src" else f'include = ["{mod}*"]'
-    )
+
+def gen_pyproject_setuptools(
+    name: str, mod: str, author: str, email: str, layout: str
+) -> str:
+    packages_find = 'where = ["src"]' if layout == "src" else f'include = ["{mod}*"]'
     pkg_data_key = f"src/{mod}" if layout == "src" else mod
     pythonpath = "" if layout == "src" else '\npythonpath    = ["."]'
-    return f'''\
+    return f"""\
 [build-system]
 requires = ["setuptools>=68", "wheel", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
@@ -168,11 +168,11 @@ omit   = ["tests/*"]
 [tool.coverage.report]
 fail_under   = 80
 show_missing = true
-'''
+"""
 
 
 def gen_pyproject_hatchling(name: str, mod: str, author: str, email: str) -> str:
-    return f'''\
+    return f"""\
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
@@ -247,7 +247,7 @@ addopts      = "-v --tb=short --cov={mod} --cov-report=term-missing"
 [tool.coverage.report]
 fail_under   = 80
 show_missing = true
-'''
+"""
 
 
 def gen_init(name: str, mod: str) -> str:
@@ -406,7 +406,7 @@ class MemoryBackend(BaseBackend):
 
 
 def gen_conftest(name: str, mod: str) -> str:
-    return f'''\
+    return f"""\
 import pytest
 
 from {mod}.backends.memory import MemoryBackend
@@ -424,11 +424,11 @@ def client(memory_backend: MemoryBackend) -> YourClient:
         api_key="test-key",
         backend=memory_backend,
     )
-'''
+"""
 
 
 def gen_test_core(mod: str) -> str:
-    return f'''\
+    return f"""\
 import pytest
 
 from {mod} import YourClient
@@ -448,11 +448,11 @@ def test_client_raises_on_empty_key() -> None:
 def test_client_raises_on_invalid_timeout() -> None:
     with pytest.raises(ValueError, match="timeout"):
         YourClient(api_key="sk-test", timeout=-1)
-'''
+"""
 
 
 def gen_test_backends() -> str:
-    return '''\
+    return """\
 import pytest
 from your_package.backends.memory import MemoryBackend
 
@@ -488,11 +488,11 @@ async def test_different_keys_are_independent() -> None:
     await backend.set("key2", "b")
     assert await backend.get("key1") == "a"
     assert await backend.get("key2") == "b"
-'''
+"""
 
 
 def gen_ci_yml(name: str, mod: str) -> str:
-    return f'''\
+    return f"""\
 name: CI
 
 on:
@@ -542,11 +542,11 @@ jobs:
         uses: codecov/codecov-action@v4
         with:
           fail_ci_if_error: false
-'''
+"""
 
 
 def gen_publish_yml() -> str:
-    return '''\
+    return """\
 name: Publish to PyPI
 
 on:
@@ -590,11 +590,11 @@ jobs:
           path: dist/
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-'''
+"""
 
 
 def gen_precommit() -> str:
-    return '''\
+    return """\
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.4.4
@@ -629,11 +629,11 @@ repos:
       - id: debug-statements
       - id: no-commit-to-branch
         args: [--branch, master, --branch, main]
-'''
+"""
 
 
 def gen_changelog(name: str) -> str:
-    return f'''\
+    return f"""\
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -649,11 +649,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial project scaffold
 
 [Unreleased]: https://github.com/yourusername/{name}/commits/master
-'''
+"""
 
 
 def gen_readme(name: str, mod: str) -> str:
-    return f'''\
+    return f"""\
 # {name}
 
 > One-line description — what it does and why it's useful.
@@ -697,21 +697,21 @@ See [CHANGELOG.md](./CHANGELOG.md)
 ## License
 
 MIT — see [LICENSE](./LICENSE)
-'''
+"""
 
 
 def gen_setup_py() -> str:
-    return '''\
+    return """\
 # Thin shim for legacy editable install compatibility.
 # All configuration lives in pyproject.toml.
 from setuptools import setup
 
 setup()
-'''
+"""
 
 
 def gen_license(author: str) -> str:
-    return f'''\
+    return f"""\
 MIT License
 
 Copyright (c) 2026 {author}
@@ -733,12 +733,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-'''
+"""
 
 
 # ---------------------------------------------------------------------------
 # Main scaffold
 # ---------------------------------------------------------------------------
+
 
 def scaffold(
     name: str,
@@ -820,10 +821,15 @@ labels: enhancement
 
     # pyproject.toml + setup.py
     if build == "setuptools":
-        write(root / "pyproject.toml", gen_pyproject_setuptools(name, mod, author, email, layout))
+        write(
+            root / "pyproject.toml",
+            gen_pyproject_setuptools(name, mod, author, email, layout),
+        )
         write(root / "setup.py", gen_setup_py())
     else:
-        write(root / "pyproject.toml", gen_pyproject_hatchling(name, mod, author, email))
+        write(
+            root / "pyproject.toml", gen_pyproject_hatchling(name, mod, author, email)
+        )
 
     # .gitignore
     write(
@@ -866,6 +872,7 @@ cov_annotate/
 # CLI
 # ---------------------------------------------------------------------------
 
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Scaffold a production-grade Python PyPI package."
@@ -894,6 +901,7 @@ def main() -> None:
 
     # Validate name
     import re
+
     if not re.match(r"^[a-z][a-z0-9\-]*$", args.name):
         print(
             f"Error: --name must be lowercase letters, digits, and hyphens only. Got: {args.name!r}",

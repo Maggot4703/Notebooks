@@ -161,7 +161,9 @@ def add_relation(relation_name: str) -> None:
     """Register a relation type, incrementing its usage count."""
     ontology = _load()
     canonical = normalize_relation(relation_name)
-    ontology["relation_types"][canonical] = ontology["relation_types"].get(canonical, 0) + 1
+    ontology["relation_types"][canonical] = (
+        ontology["relation_types"].get(canonical, 0) + 1
+    )
     _save(ontology)
 
 

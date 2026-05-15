@@ -3,18 +3,19 @@
 
 Supports external assets mode for large files to avoid huge single-file HTML.
 """
+
 import argparse
 import base64
-import io
 import os
-import re
 import sys
 from pathlib import Path
+
 
 def _ensure_pptx():
     try:
         from pptx import Presentation
         from pptx.enum.text import PP_ALIGN
+
         return True
     except ImportError:
         print("ERROR: python-pptx not installed. Install with: pip install python-pptx")
@@ -52,6 +53,7 @@ def get_text_style(run):
 
 def get_alignment(paragraph):
     from pptx.enum.text import PP_ALIGN
+
     try:
         align = paragraph.alignment
         if align == PP_ALIGN.CENTER:
@@ -78,12 +80,13 @@ def get_shape_position(shape, slide_width, slide_height):
 
 def get_slide_background(slide, prs):
     from pptx.oxml.ns import qn
+
     for source in [slide, slide.slide_layout]:
         try:
             bg_el = source.background._element
-            for sf in bg_el.iter(qn('a:solidFill')):
-                clr = sf.find(qn('a:srgbClr'))
-                if clr is not None and clr.get('val'):
+            for sf in bg_el.iter(qn("a:solidFill")):
+                clr = sf.find(qn("a:srgbClr"))
+                if clr is not None and clr.get("val"):
                     return f"background-color:#{clr.get('val')}"
         except:
             pass
@@ -92,21 +95,24 @@ def get_slide_background(slide, prs):
 
 def get_shape_fill(shape):
     from pptx.oxml.ns import qn
+
     try:
-        sp_pr = shape._element.find(qn('p:spPr'))
+        sp_pr = shape._element.find(qn("p:spPr"))
         if sp_pr is None:
-            sp_pr = shape._element.find(qn('a:spPr'))
+            sp_pr = shape._element.find(qn("a:spPr"))
         if sp_pr is None:
-            for tag in ['{http://schemas.openxmlformats.org/drawingml/2006/main}spPr',
-                        '{http://schemas.openxmlformats.org/presentationml/2006/main}spPr']:
+            for tag in [
+                "{http://schemas.openxmlformats.org/drawingml/2006/main}spPr",
+                "{http://schemas.openxmlformats.org/presentationml/2006/main}spPr",
+            ]:
                 sp_pr = shape._element.find(tag)
                 if sp_pr is not None:
                     break
         if sp_pr is not None:
-            sf = sp_pr.find(qn('a:solidFill'))
+            sf = sp_pr.find(qn("a:solidFill"))
             if sf is not None:
-                clr = sf.find(qn('a:srgbClr'))
-                if clr is not None and clr.get('val'):
+                clr = sf.find(qn("a:srgbClr"))
+                if clr is not None and clr.get("val"):
                     return f"#{clr.get('val')}"
     except:
         pass
@@ -156,14 +162,14 @@ def count_images(prs):
 
 
 CONTENT_TYPE_TO_EXT = {
-    'image/png': '.png',
-    'image/jpeg': '.jpg',
-    'image/jpg': '.jpg',
-    'image/gif': '.gif',
-    'image/bmp': '.bmp',
-    'image/tiff': '.tiff',
-    'image/svg+xml': '.svg',
-    'image/webp': '.webp',
+    "image/png": ".png",
+    "image/jpeg": ".jpg",
+    "image/jpg": ".jpg",
+    "image/gif": ".gif",
+    "image/bmp": ".bmp",
+    "image/tiff": ".tiff",
+    "image/svg+xml": ".svg",
+    "image/webp": ".webp",
 }
 
 
@@ -175,12 +181,14 @@ def convert(pptx_path, output_path=None, external_assets=None):
 
     # Pre-flight warning for very large files
     if file_size_mb > 150:
-        print(f"WARNING: File is {file_size_mb:.0f}MB — consider using PDF conversion (convert-pdf.py) for better performance.")
+        print(
+            f"WARNING: File is {file_size_mb:.0f}MB — consider using PDF conversion (convert-pdf.py) for better performance."
+        )
 
     prs = Presentation(pptx_path)
     slide_width = prs.slide_width
     slide_height = prs.slide_height
-    aspect_ratio = slide_width / slide_height if slide_height else 16/9
+    aspect_ratio = slide_width / slide_height if slide_height else 16 / 9
 
     total_images = count_images(prs)
 
@@ -188,9 +196,11 @@ def convert(pptx_path, output_path=None, external_assets=None):
     if external_assets is None:
         external_assets = file_size_mb > 20 or total_images > 50
         if external_assets:
-            print(f"Auto-enabling external assets mode (file: {file_size_mb:.1f}MB, images: {total_images})")
+            print(
+                f"Auto-enabling external assets mode (file: {file_size_mb:.1f}MB, images: {total_images})"
+            )
 
-    output = output_path or str(Path(pptx_path).with_suffix('.html'))
+    output = output_path or str(Path(pptx_path).with_suffix(".html"))
     output_dir = Path(output).parent
 
     if external_assets:
@@ -205,7 +215,9 @@ def convert(pptx_path, output_path=None, external_assets=None):
         elements = []
 
         for shape in sorted(slide.shapes, key=lambda s: (s.top or 0, s.left or 0)):
-            left, top, width, height = get_shape_position(shape, slide_width, slide_height)
+            left, top, width, height = get_shape_position(
+                shape, slide_width, slide_height
+            )
             pos_style = f"position:absolute;left:{left:.1f}%;top:{top:.1f}%;width:{width:.1f}%;height:{height:.1f}%"
 
             # Image
@@ -214,17 +226,17 @@ def convert(pptx_path, output_path=None, external_assets=None):
                 if blob:
                     img_counter += 1
                     if external_assets:
-                        ext = CONTENT_TYPE_TO_EXT.get(content_type, '.png')
+                        ext = CONTENT_TYPE_TO_EXT.get(content_type, ".png")
                         img_name = f"img-{img_counter:03d}{ext}"
                         (assets_dir / img_name).write_bytes(blob)
                         src = f"assets/{img_name}"
                     else:
-                        b64 = base64.b64encode(blob).decode('utf-8')
+                        b64 = base64.b64encode(blob).decode("utf-8")
                         src = f"data:{content_type};base64,{b64}"
                     elements.append(
                         f'<div style="{pos_style};display:flex;align-items:center;justify-content:center">'
                         f'<img src="{src}" style="max-width:100%;max-height:100%;object-fit:contain" alt="">'
-                        f'</div>'
+                        f"</div>"
                     )
                     continue
 
@@ -239,7 +251,9 @@ def convert(pptx_path, output_path=None, external_assets=None):
                         table_html += f'<td style="border:1px solid #ccc;padding:6px 10px">{cell_text}</td>'
                     table_html += "</tr>"
                 table_html += "</table>"
-                elements.append(f'<div style="{pos_style};overflow:auto">{table_html}</div>')
+                elements.append(
+                    f'<div style="{pos_style};overflow:auto">{table_html}</div>'
+                )
                 continue
 
             # Text
@@ -252,10 +266,14 @@ def convert(pptx_path, output_path=None, external_assets=None):
                 if text_parts:
                     content = "".join(text_parts)
                     fill = get_shape_fill(shape)
-                    fill_style = f"background-color:{fill};padding:1em;border-radius:8px;" if fill else ""
+                    fill_style = (
+                        f"background-color:{fill};padding:1em;border-radius:8px;"
+                        if fill
+                        else ""
+                    )
                     elements.append(
                         f'<div style="{pos_style};{fill_style}overflow:hidden;display:flex;flex-direction:column;justify-content:center">'
-                        f'{content}</div>'
+                        f"{content}</div>"
                     )
                 continue
 
@@ -274,11 +292,15 @@ def convert(pptx_path, output_path=None, external_assets=None):
     title = "Presentation"
     if prs.slides:
         for shape in prs.slides[0].shapes:
-            if hasattr(shape, "text") and shape.text.strip() and len(shape.text.strip()) < 150:
+            if (
+                hasattr(shape, "text")
+                and shape.text.strip()
+                and len(shape.text.strip()) < 150
+            ):
                 title = shape.text.strip()
                 break
 
-    html = f'''<!DOCTYPE html>
+    html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -344,9 +366,9 @@ function scaleSlides() {{
 window.addEventListener('resize', scaleSlides);
 scaleSlides();
 </script>
-</body></html>'''
+</body></html>"""
 
-    Path(output).write_text(html, encoding='utf-8')
+    Path(output).write_text(html, encoding="utf-8")
     output_size = os.path.getsize(output)
 
     # Summary
@@ -360,11 +382,20 @@ scaleSlides();
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert PPTX to HTML presentation")
     parser.add_argument("input", help="Path to .pptx file")
-    parser.add_argument("output", nargs="?", help="Output HTML path (default: same name with .html)")
-    parser.add_argument("--external-assets", action="store_true", default=None,
-                        help="Save images as separate files in assets/ directory (auto-detected for large files)")
-    parser.add_argument("--no-external-assets", action="store_true",
-                        help="Force inline base64 even for large files")
+    parser.add_argument(
+        "output", nargs="?", help="Output HTML path (default: same name with .html)"
+    )
+    parser.add_argument(
+        "--external-assets",
+        action="store_true",
+        default=None,
+        help="Save images as separate files in assets/ directory (auto-detected for large files)",
+    )
+    parser.add_argument(
+        "--no-external-assets",
+        action="store_true",
+        help="Force inline base64 even for large files",
+    )
     args = parser.parse_args()
 
     ext_assets = None  # auto-detect

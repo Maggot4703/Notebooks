@@ -50,4 +50,3 @@ tldr --help >./uv_help/tldr-help.txt
 """
 
 print(text)
-

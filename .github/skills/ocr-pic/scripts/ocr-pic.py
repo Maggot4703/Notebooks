@@ -74,29 +74,29 @@ from pypdf import PdfReader
 # ---------------------------------------------------------------------------
 
 NAVY_FIELDS = [
-    "Unit ID",        # 4 digits, space, up to 8 alphanumerics
-    "Ship Code",      # 1 letter + 3 digits  (e.g. C001)
+    "Unit ID",  # 4 digits, space, up to 8 alphanumerics
+    "Ship Code",  # 1 letter + 3 digits  (e.g. C001)
     "Squadron Type",  # alphanumeric text
-    "Jump",           # J-N  (jump rating)
-    "Streamlining",   # CAPITALS code (e.g. USL)
-    "DF",             # DF + number
-    "AF",             # AF + number
-    "BF",             # BF + number
-    "TF",             # TF + number
-    "TL",             # TL + number
+    "Jump",  # J-N  (jump rating)
+    "Streamlining",  # CAPITALS code (e.g. USL)
+    "DF",  # DF + number
+    "AF",  # AF + number
+    "BF",  # BF + number
+    "TF",  # TF + number
+    "TL",  # TL + number
 ]
 
 MARINE_FIELDS = [
-    "Unit ID",        # 4 digits, space, up to 8 alphanumerics
-    "Code",           # 4 digits
-    "Size",           # N-Label  (e.g. 2-Regiment)
-    "Quality",        # N-Label  (e.g. 1-Elite)
-    "Mobility",       # N-Label  (e.g. 1-Armoured)
-    "Mobility",       # N-Label  (second mobility line)
-    "Type",           # N-Label  (e.g. 0-Infantry)
-    "CF",             # CF + number
-    "TF",             # TF + number
-    "TL",             # TL + number
+    "Unit ID",  # 4 digits, space, up to 8 alphanumerics
+    "Code",  # 4 digits
+    "Size",  # N-Label  (e.g. 2-Regiment)
+    "Quality",  # N-Label  (e.g. 1-Elite)
+    "Mobility",  # N-Label  (e.g. 1-Armoured)
+    "Mobility",  # N-Label  (second mobility line)
+    "Type",  # N-Label  (e.g. 0-Infantry)
+    "CF",  # CF + number
+    "TF",  # TF + number
+    "TL",  # TL + number
 ]
 
 GRID_COLS = 3
@@ -129,9 +129,7 @@ def detect_counter_type(img: Image.Image) -> str:
     if (b > r + 20 and b > g + 10) or (120 <= hue <= 190 and sat >= 35):
         return "NAVY"
     # MARINE: red — red dominant, or HSV hue at red extremes
-    if (r > b + 20 and r > g + 10) or (
-        (hue <= 15 or hue >= 240) and sat >= 35
-    ):
+    if (r > b + 20 and r > g + 10) or ((hue <= 15 or hue >= 240) and sat >= 35):
         return "MARINE"
     return "EMPTY"
 
@@ -158,9 +156,7 @@ def preprocess_counter(img: Image.Image, upscale: int = 6) -> Image.Image:
     w, h = img.size
     # Crop to right half, inset 1px from each frame border
     right = img.crop((w // 2 + 1, 1, w - 1, h - 1))
-    right = right.resize(
-        (right.width * upscale, right.height * upscale), Image.LANCZOS
-    )
+    right = right.resize((right.width * upscale, right.height * upscale), Image.LANCZOS)
     gray = ImageOps.grayscale(right)
     # Add white border — prevents Tesseract clipping edge characters
     gray = ImageOps.expand(gray, border=30, fill=255)
@@ -294,9 +290,7 @@ def format_counter(
         rows.append(f"  {label}: {value}")
 
     if len(lines) != len(fields):
-        rows.append(
-            f"  [NOTE: expected {len(fields)} lines, got {len(lines)}]"
-        )
+        rows.append(f"  [NOTE: expected {len(fields)} lines, got {len(lines)}]")
 
     return header + "\n" + "\n".join(rows)
 
@@ -315,9 +309,7 @@ def is_counter_candidate(img: Image.Image) -> bool:
     return 1.5 <= ratio <= 3.5
 
 
-def process_page(
-    reader: PdfReader, page_number: int, upscale: int = 6
-) -> str:
+def process_page(reader: PdfReader, page_number: int, upscale: int = 6) -> str:
     """OCR all non-EMPTY counters on a page and return formatted output."""
     page = reader.pages[page_number - 1]
     imgs = list(page.images)
@@ -414,19 +406,15 @@ def resolve_pdf_for_letter(letter: str, pdf_dir: str) -> str:
     Raises ValueError if zero or more than one match is found.
     """
     candidates = [
-        p for p in Path(pdf_dir).iterdir()
-        if p.suffix.lower() == ".pdf"
-        and p.name.upper().startswith(letter.upper())
+        p
+        for p in Path(pdf_dir).iterdir()
+        if p.suffix.lower() == ".pdf" and p.name.upper().startswith(letter.upper())
     ]
     if not candidates:
-        raise ValueError(
-            f"No PDF found in {pdf_dir!r} starting with letter {letter!r}"
-        )
+        raise ValueError(f"No PDF found in {pdf_dir!r} starting with letter {letter!r}")
     if len(candidates) > 1:
         names = ", ".join(str(c) for c in candidates)
-        raise ValueError(
-            f"Multiple PDFs start with {letter!r} in {pdf_dir!r}: {names}"
-        )
+        raise ValueError(f"Multiple PDFs start with {letter!r} in {pdf_dir!r}: {names}")
     return str(candidates[0])
 
 
@@ -448,8 +436,7 @@ def run_batch(
         m = re.fullmatch(r"([A-Za-z])-?(\d+)", token)
         if not m:
             raise ValueError(
-                f"Batch token {token!r} is not in LETTER-PAGE format "
-                "(e.g. A-37)"
+                f"Batch token {token!r} is not in LETTER-PAGE format " "(e.g. A-37)"
             )
         letter, page_str = m.group(1), m.group(2)
         pdf_path = resolve_pdf_for_letter(letter, pdf_dir)
@@ -490,6 +477,7 @@ def run_batch(
 # Entry point
 # ---------------------------------------------------------------------------
 
+
 def build_arg_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="ocr-pic",
@@ -508,11 +496,14 @@ def build_arg_parser() -> argparse.ArgumentParser:
         ),
     )
     p.add_argument(
-        "--pdf", metavar="FILE",
+        "--pdf",
+        metavar="FILE",
         help="Path to the source PDF (omit for file-chooser dialog).",
     )
     p.add_argument(
-        "--pages", nargs="+", metavar="N",
+        "--pages",
+        nargs="+",
+        metavar="N",
         help=(
             "Page number(s) to process (1-indexed). "
             "Accepts individual numbers, comma-separated lists, and "
@@ -521,14 +512,18 @@ def build_arg_parser() -> argparse.ArgumentParser:
         ),
     )
     p.add_argument(
-        "--output-dir", metavar="DIR", default=None,
+        "--output-dir",
+        metavar="DIR",
+        default=None,
         help=(
             "Directory to write output .txt files. "
             "Defaults to the same directory as the PDF."
         ),
     )
     p.add_argument(
-        "--batch", nargs="+", metavar="LETTER-PAGE",
+        "--batch",
+        nargs="+",
+        metavar="LETTER-PAGE",
         help=(
             "Batch mode: one or more LETTER-PAGE tokens (e.g. A-37 B-35). "
             "Each letter is matched to the first PDF in --pdf-dir whose "
@@ -537,7 +532,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
         ),
     )
     p.add_argument(
-        "--pdf-dir", metavar="DIR", default=None,
+        "--pdf-dir",
+        metavar="DIR",
+        default=None,
         help=(
             "Directory to search for PDFs when using --batch. "
             "Output .txt files are written here unless --output-dir is "

@@ -5,7 +5,7 @@ Enhanced features and utilities for the NPCs Data Processing Tool.
 import logging
 import subprocess
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict
 
 logger = logging.getLogger(__name__)
 

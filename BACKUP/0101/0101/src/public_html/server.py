@@ -8,6 +8,7 @@ Serves static files as before, plus two REST endpoints to persist textarea text:
 Run: python server.py
 Then open: http://localhost:8080/index.html
 """
+
 import http.server
 import html
 import io
@@ -26,7 +27,7 @@ from urllib.parse import quote, unquote, urlsplit, parse_qs
 PORT = 8080
 WEB_ROOT = os.path.dirname(__file__)
 SAVED_DIR = os.path.join(WEB_ROOT, "saved")
-KEY_RE = re.compile(r'^[a-z0-9][a-z0-9-]{0,63}$')
+KEY_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 DEFAULT_0101_WINDOW_WIDTH = 720
 DEFAULT_0101_WINDOW_HEIGHT = 1180
 
@@ -87,14 +88,19 @@ TRAVELLER_SCRIPTS_STUB = b"window.TravellerScripts = window.TravellerScripts || 
 # Simple sqlite index for server-side full-text search
 INDEX_DB = os.path.join(WEB_ROOT, "0101_index.db")
 
+
 def _ensure_index_db():
     conn = sqlite3.connect(INDEX_DB)
     c = conn.cursor()
     try:
-        c.execute("CREATE VIRTUAL TABLE IF NOT EXISTS pages_fts USING fts5(doc_id, page_num UNINDEXED, text)")
+        c.execute(
+            "CREATE VIRTUAL TABLE IF NOT EXISTS pages_fts USING fts5(doc_id, page_num UNINDEXED, text)"
+        )
     except Exception:
         # fallback to a plain table when fts5 is unavailable
-        c.execute("CREATE TABLE IF NOT EXISTS pages_fts_plain (doc_id TEXT, page_num INTEGER, text TEXT)")
+        c.execute(
+            "CREATE TABLE IF NOT EXISTS pages_fts_plain (doc_id TEXT, page_num INTEGER, text TEXT)"
+        )
     conn.commit()
     conn.close()
 
@@ -109,12 +115,16 @@ def build_index():
     use_fts = False
     try:
         c.execute("DROP TABLE IF EXISTS pages_fts")
-        c.execute("CREATE VIRTUAL TABLE pages_fts USING fts5(doc_id, page_num UNINDEXED, text)")
+        c.execute(
+            "CREATE VIRTUAL TABLE pages_fts USING fts5(doc_id, page_num UNINDEXED, text)"
+        )
         use_fts = True
     except Exception:
         # fts5 not available; use plain table
         c.execute("DROP TABLE IF EXISTS pages_fts_plain")
-        c.execute("CREATE TABLE pages_fts_plain (doc_id TEXT, page_num INTEGER, text TEXT)")
+        c.execute(
+            "CREATE TABLE pages_fts_plain (doc_id TEXT, page_num INTEGER, text TEXT)"
+        )
         use_fts = False
 
     for name in sorted(os.listdir(extracted_root)):
@@ -142,14 +152,19 @@ def build_index():
                 fulltext = "\n".join(text_parts)
                 page_num = pdata.get("page_number", 0)
                 if use_fts:
-                    c.execute("INSERT INTO pages_fts(doc_id, page_num, text) VALUES (?, ?, ?)", (name, page_num, fulltext))
+                    c.execute(
+                        "INSERT INTO pages_fts(doc_id, page_num, text) VALUES (?, ?, ?)",
+                        (name, page_num, fulltext),
+                    )
                 else:
-                    c.execute("INSERT INTO pages_fts_plain(doc_id, page_num, text) VALUES (?, ?, ?)", (name, page_num, fulltext))
+                    c.execute(
+                        "INSERT INTO pages_fts_plain(doc_id, page_num, text) VALUES (?, ?, ?)",
+                        (name, page_num, fulltext),
+                    )
             except Exception as e:
-                print('Indexing error', e)
+                print("Indexing error", e)
     conn.commit()
     conn.close()
-
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -187,9 +202,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if normalized_path:
             parent = normalized_path.rsplit("/", 1)[0]
             parent_href = (parent + "/") if parent else "/"
-            items.append(
-                f'<li><a href="{quote(parent_href, safe="/%")}">..</a></li>'
-            )
+            items.append(f'<li><a href="{quote(parent_href, safe="/%")}">..</a></li>')
 
         for name in entries:
             full_path = os.path.join(path, name)
@@ -346,7 +359,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 except Exception:
                     self.send_error(500)
                     return
-                data = json.dumps({"id": pdf_id, "page_count": len(mdata.get("pages", []))}).encode("utf-8")
+                data = json.dumps(
+                    {"id": pdf_id, "page_count": len(mdata.get("pages", []))}
+                ).encode("utf-8")
                 self.send_response(200)
                 self.send_header("Content-Type", "application/json; charset=utf-8")
                 self.send_header("Content-Length", str(len(data)))
@@ -397,12 +412,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 c = conn.cursor()
                 results = []
                 try:
-                    rows = c.execute("SELECT doc_id, page_num, snippet(pages_fts, 2, '<mark>','</mark>','...', 10) FROM pages_fts WHERE pages_fts MATCH ? LIMIT 200", (q,)).fetchall()
+                    rows = c.execute(
+                        "SELECT doc_id, page_num, snippet(pages_fts, 2, '<mark>','</mark>','...', 10) FROM pages_fts WHERE pages_fts MATCH ? LIMIT 200",
+                        (q,),
+                    ).fetchall()
                     for r in rows:
                         results.append({"id": r[0], "page": r[1], "snippet": r[2]})
                 except Exception:
                     # fallback to plain table search
-                    rows = c.execute("SELECT doc_id, page_num, substr(text, instr(lower(text), lower(?)) - 30, 200) FROM pages_fts_plain WHERE lower(text) LIKE '%' || lower(?) || '%' LIMIT 200", (q, q)).fetchall()
+                    rows = c.execute(
+                        "SELECT doc_id, page_num, substr(text, instr(lower(text), lower(?)) - 30, 200) FROM pages_fts_plain WHERE lower(text) LIKE '%' || lower(?) || '%' LIMIT 200",
+                        (q, q),
+                    ).fetchall()
                     for r in rows:
                         results.append({"id": r[0], "page": r[1], "snippet": r[2]})
                 conn.close()
@@ -471,10 +492,13 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     # try normalized stem match
                     if os.path.isdir(pdfs_dir):
                         for fname in os.listdir(pdfs_dir):
-                            if not fname.lower().endswith('.pdf'):
+                            if not fname.lower().endswith(".pdf"):
                                 continue
                             stem = os.path.splitext(fname)[0]
-                            norm = ''.join(c if c.isalnum() or c in (' ', '-', '_') else '_' for c in stem).strip()
+                            norm = "".join(
+                                c if c.isalnum() or c in (" ", "-", "_") else "_"
+                                for c in stem
+                            ).strip()
                             if norm == pdf_id or fname == pdf_id or stem == pdf_id:
                                 target = os.path.join(pdfs_dir, fname)
                                 break
@@ -484,10 +508,15 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
             def run_extract():
                 try:
-                    script = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', 'pdf_extract.py'))
-                    subprocess.run([sys.executable, script, '--pdf', target], cwd=os.path.dirname(script))
+                    script = os.path.normpath(
+                        os.path.join(os.path.dirname(__file__), "..", "pdf_extract.py")
+                    )
+                    subprocess.run(
+                        [sys.executable, script, "--pdf", target],
+                        cwd=os.path.dirname(script),
+                    )
                 except Exception as e:
-                    print('Extraction error', e)
+                    print("Extraction error", e)
 
             threading.Thread(target=run_extract, daemon=True).start()
             self.send_response(202)
@@ -498,12 +527,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         # API: trigger index build
         if self.path.rstrip("/") == "/api/index/build":
             self._touch_ping()
+
             def run_build():
                 try:
                     _ensure_index_db()
                     build_index()
                 except Exception as e:
-                    print('Index build error', e)
+                    print("Index build error", e)
+
             threading.Thread(target=run_build, daemon=True).start()
             self.send_response(202)
             self.send_header("Content-Length", "0")
@@ -528,7 +559,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         """Return the key if the path is /api/text/<key>, else None."""
         if not self.path.startswith("/api/text/"):
             return None
-        key = self.path[len("/api/text/"):]
+        key = self.path[len("/api/text/") :]
         # strip query string
         key = key.split("?")[0]
         if not KEY_RE.match(key):
@@ -762,7 +793,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     @staticmethod
     def _fallback_legacy_file_url(raw_url):
         decoded_path = unquote(urlsplit(raw_url).path).lower()
-        if decoded_path.endswith((".gif", ".png", ".jpg", ".jpeg", ".webp", ".bmp", ".svg")):
+        if decoded_path.endswith(
+            (".gif", ".png", ".jpg", ".jpeg", ".webp", ".bmp", ".svg")
+        ):
             return "/missing-asset.svg"
         return "#missing-local-file"
 
@@ -791,7 +824,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 fallback_before=True,
                 prepend_if_missing=True,
             )
-        if '/0101-shell.css' not in content:
+        if "/0101-shell.css" not in content:
             content = Handler._insert_asset(
                 content,
                 r"</head\s*>",
@@ -800,7 +833,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 fallback_before=True,
                 prepend_if_missing=True,
             )
-        if '/persist.js' not in content:
+        if "/persist.js" not in content:
             content = Handler._insert_asset(
                 content,
                 r"</body\s*>",
@@ -808,7 +841,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 fallback_pattern=r"</html\s*>",
                 fallback_before=True,
             )
-        if '/0101-shell.js' not in content:
+        if "/0101-shell.js" not in content:
             content = Handler._insert_asset(
                 content,
                 r"</body\s*>",
@@ -882,7 +915,13 @@ def _resize_window_by_title(
             try:
                 if command == "wmctrl":
                     subprocess.run(
-                        ["wmctrl", "-r", window_title, "-e", f"0,-1,-1,{width},{height}"],
+                        [
+                            "wmctrl",
+                            "-r",
+                            window_title,
+                            "-e",
+                            f"0,-1,-1,{width},{height}",
+                        ],
                         check=True,
                         capture_output=True,
                         text=True,
@@ -947,6 +986,7 @@ def main():
         ).start()
         httpd.serve_forever()
     print("Server stopped.")
+
 
 if __name__ == "__main__":
     main()

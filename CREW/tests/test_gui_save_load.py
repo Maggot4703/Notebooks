@@ -3,10 +3,10 @@ import tempfile
 import unittest
 import tkinter as tk
 from unittest.mock import patch
-from pathlib import Path
 
 # Ensure gui.py is importable
 from Crew.gui import CrewGUI
+
 
 class TestCrewGUISaveLoad(unittest.TestCase):
     def setUp(self):
@@ -51,6 +51,7 @@ class TestCrewGUISaveLoad(unittest.TestCase):
         # Process the event loop to allow root.after callbacks to run
         self.root.update()  # This will process pending events
         mock_showerror.assert_called()
+
 
 if __name__ == "__main__":
     unittest.main()

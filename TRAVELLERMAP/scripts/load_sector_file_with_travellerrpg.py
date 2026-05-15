@@ -3,10 +3,12 @@
 load_sector_file_with_travellerrpg.py
 Prototype: Load a Traveller sector file from a local path, URL, or travellerrpg.com sector download, validate, and print summary.
 """
+
 import pandas as pd
 import requests
 import sys
 import os
+
 
 def fetch_travellerrpg_sector(sector_name):
     # Example: https://travellerrpg.com/data/sector/Vland.tab
@@ -16,10 +18,13 @@ def fetch_travellerrpg_sector(sector_name):
     lines = resp.text.splitlines()
     return lines
 
+
 def load_sector_file(path_or_url_or_sector):
-    if path_or_url_or_sector.lower().endswith('.tab'):
+    if path_or_url_or_sector.lower().endswith(".tab"):
         # Local file or URL
-        if path_or_url_or_sector.startswith("http://") or path_or_url_or_sector.startswith("https://"):
+        if path_or_url_or_sector.startswith(
+            "http://"
+        ) or path_or_url_or_sector.startswith("https://"):
             resp = requests.get(path_or_url_or_sector, timeout=10)
             resp.raise_for_status()
             lines = resp.text.splitlines()
@@ -46,6 +51,7 @@ def load_sector_file(path_or_url_or_sector):
     print(df.head(5))
     return df
 
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: load_sector_file_with_travellerrpg.py <path|url|sector_name>")
@@ -58,6 +64,7 @@ def main():
         load_sector_file(arg)
     except Exception as e:
         print(f"Error: {e}")
+
 
 if __name__ == "__main__":
     main()

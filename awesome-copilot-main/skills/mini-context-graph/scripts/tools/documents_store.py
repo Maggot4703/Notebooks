@@ -11,13 +11,13 @@ Handles:
 - Retrieving chunks by id or by keyword search
 - Persisting to data/documents.json
 """
+
 from __future__ import annotations
 
 import json
 import os
 import re
 import sys
-import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -27,17 +27,69 @@ import config
 _DATA_DIR = Path(os.environ.get("MINI_CONTEXT_GRAPH_DATA_DIR", str(config.DATA_DIR)))
 _DOCS_FILE = _DATA_DIR / "documents.json"
 
-_CHUNK_SIZE = 500       # characters per chunk
-_CHUNK_OVERLAP = 100    # overlap between consecutive chunks
+_CHUNK_SIZE = 500  # characters per chunk
+_CHUNK_OVERLAP = 100  # overlap between consecutive chunks
 
-_STOPWORDS = frozenset([
-    "a", "an", "the", "is", "are", "was", "were", "be", "been", "being",
-    "have", "has", "had", "do", "does", "did", "will", "would", "could",
-    "should", "may", "might", "shall", "can", "to", "of", "in", "on",
-    "at", "by", "for", "with", "from", "and", "or", "but", "not", "it",
-    "its", "this", "that", "these", "those", "i", "you", "he", "she",
-    "we", "they", "what", "which", "who", "how", "why", "when", "where",
-])
+_STOPWORDS = frozenset(
+    [
+        "a",
+        "an",
+        "the",
+        "is",
+        "are",
+        "was",
+        "were",
+        "be",
+        "been",
+        "being",
+        "have",
+        "has",
+        "had",
+        "do",
+        "does",
+        "did",
+        "will",
+        "would",
+        "could",
+        "should",
+        "may",
+        "might",
+        "shall",
+        "can",
+        "to",
+        "of",
+        "in",
+        "on",
+        "at",
+        "by",
+        "for",
+        "with",
+        "from",
+        "and",
+        "or",
+        "but",
+        "not",
+        "it",
+        "its",
+        "this",
+        "that",
+        "these",
+        "those",
+        "i",
+        "you",
+        "he",
+        "she",
+        "we",
+        "they",
+        "what",
+        "which",
+        "who",
+        "how",
+        "why",
+        "when",
+        "where",
+    ]
+)
 
 
 def _load() -> dict:
@@ -58,7 +110,9 @@ def _tokenize(text: str) -> list[str]:
     return [t for t in tokens if t not in _STOPWORDS and len(t) > 1]
 
 
-def _chunk_text(content: str, chunk_size: int = _CHUNK_SIZE, overlap: int = _CHUNK_OVERLAP) -> list[str]:
+def _chunk_text(
+    content: str, chunk_size: int = _CHUNK_SIZE, overlap: int = _CHUNK_OVERLAP
+) -> list[str]:
     """Split content into overlapping character windows."""
     chunks = []
     start = 0
@@ -74,6 +128,7 @@ def _chunk_text(content: str, chunk_size: int = _CHUNK_SIZE, overlap: int = _CHU
 # ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
+
 
 def add_document(
     doc_id: str,
@@ -102,11 +157,13 @@ def add_document(
     raw_chunks = _chunk_text(content)
     chunks = []
     for i, text in enumerate(raw_chunks):
-        chunks.append({
-            "chunk_id": f"{doc_id}_chunk_{i:03d}",
-            "index": i,
-            "text": text,
-        })
+        chunks.append(
+            {
+                "chunk_id": f"{doc_id}_chunk_{i:03d}",
+                "index": i,
+                "text": text,
+            }
+        )
 
     doc = {
         "id": doc_id,
@@ -164,13 +221,18 @@ def search_chunks(query: str, top_k: int = 5) -> list[dict]:
             overlap = len(query_tokens & chunk_tokens)
             if overlap > 0:
                 score = overlap / len(query_tokens)
-                scored.append((score, {
-                    "chunk_id": chunk["chunk_id"],
-                    "doc_id": doc["id"],
-                    "doc_title": doc["title"],
-                    "score": round(score, 4),
-                    "text": chunk["text"],
-                }))
+                scored.append(
+                    (
+                        score,
+                        {
+                            "chunk_id": chunk["chunk_id"],
+                            "doc_id": doc["id"],
+                            "doc_title": doc["title"],
+                            "score": round(score, 4),
+                            "text": chunk["text"],
+                        },
+                    )
+                )
 
     scored.sort(key=lambda x: x[0], reverse=True)
     return [item for _, item in scored[:top_k]]

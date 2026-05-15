@@ -7,6 +7,7 @@ Handles:
 - Fetching neighbors
 - Persisting to graph.json
 """
+
 from __future__ import annotations
 
 import json
@@ -124,15 +125,17 @@ def add_edge(
                 _save(graph)
             return
 
-    graph["edges"].append({
-        "source": source_id,
-        "target": target_id,
-        "type": relation_lower,
-        "confidence": confidence,
-        "source_document": source_document,
-        "supporting_text": supporting_text,
-        "chunk_id": chunk_id,
-    })
+    graph["edges"].append(
+        {
+            "source": source_id,
+            "target": target_id,
+            "type": relation_lower,
+            "confidence": confidence,
+            "source_document": source_document,
+            "supporting_text": supporting_text,
+            "chunk_id": chunk_id,
+        }
+    )
     _save(graph)
 
 

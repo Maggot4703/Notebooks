@@ -5,7 +5,6 @@ import requests
 
 import server
 
-
 WEB_ROOT = server.WEB_ROOT
 
 

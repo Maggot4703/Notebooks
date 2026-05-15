@@ -18,6 +18,7 @@ from datetime import datetime, timedelta
 from unittest.mock import patch, mock_open
 
 from cache import Cache
+
 # from Crew import get_version  # Uncomment and fix if needed
 # from errors import ConfigError  # Uncomment and fix if needed
 
@@ -26,7 +27,7 @@ class TestCache(unittest.TestCase):
 
     def test_cache_unwritable_dir(self):
         import tempfile
-        import stat
+
         unwritable_dir = tempfile.mkdtemp()
         os.chmod(unwritable_dir, 0o400)
         try:
@@ -45,6 +46,7 @@ class TestCache(unittest.TestCase):
         # Simulate ConfigError usage if present
         try:
             from errors import ConfigError
+
             with self.assertRaises(ConfigError):
                 raise ConfigError("Test config error")
         except ImportError:
@@ -53,7 +55,8 @@ class TestCache(unittest.TestCase):
     def test_cache_invalid_json_load(self):
         # Simulate invalid JSON file for cache.load()
         import tempfile
-        bad_file = tempfile.NamedTemporaryFile(delete=False, mode='w')
+
+        bad_file = tempfile.NamedTemporaryFile(delete=False, mode="w")
         bad_file.write("{not: valid json}")
         bad_file.close()
         cache = Cache(cache_dir=self.test_cache_dir)

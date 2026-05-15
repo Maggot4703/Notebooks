@@ -143,9 +143,7 @@ def main() -> None:
         )
     )
     parser.add_argument("input", help="PDF file or directory of PDFs")
-    parser.add_argument(
-        "-o", "--output", help="Output .txt path (single file only)"
-    )
+    parser.add_argument("-o", "--output", help="Output .txt path (single file only)")
     parser.add_argument(
         "--ocr", action="store_true", help="Force OCR even for text-based PDFs"
     )
@@ -165,9 +163,7 @@ def main() -> None:
         if not pdf_files:
             print(f"No .pdf files found in {input_path}", file=sys.stderr)
             sys.exit(1)
-        print(
-            f"Found {len(pdf_files)} PDF(s) in {input_path}", file=sys.stderr
-        )
+        print(f"Found {len(pdf_files)} PDF(s) in {input_path}", file=sys.stderr)
         successes = 0
         failures = 0
         for pdf_file in pdf_files:
@@ -188,11 +184,7 @@ def main() -> None:
     elif input_path.is_file():
         if not input_path.suffix.lower() == ".pdf":
             parser.error(f"Input file must be a .pdf: {input_path}")
-        out = (
-            Path(args.output)
-            if args.output
-            else input_path.with_suffix(".txt")
-        )
+        out = Path(args.output) if args.output else input_path.with_suffix(".txt")
         try:
             convert(input_path, out, force_ocr=args.ocr, ocr_lang=args.lang)
         except Exception as exc:

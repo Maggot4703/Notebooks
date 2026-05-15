@@ -10,6 +10,7 @@ Agent usage:
 - query():  agent reads retrieval.md, calls index_store.search + retrieval_engine.retrieve,
             then calls graph_store.get_subgraph and returns the result.
 """
+
 from __future__ import annotations
 
 import sys
@@ -18,7 +19,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import config
-from tools import graph_store, index_store, ontology_store, retrieval_engine, documents_store
+from tools import (
+    graph_store,
+    index_store,
+    ontology_store,
+    retrieval_engine,
+    documents_store,
+)
 
 
 class ContextGraphSkill:
@@ -272,11 +279,13 @@ class ContextGraphSkill:
                 if chunk:
                     chunks_out.append({"chunk_id": cid, "text": chunk["text"]})
             if chunks_out:
-                supporting_documents.append({
-                    "doc_id": doc_id,
-                    "doc_title": doc["title"],
-                    "supporting_chunks": chunks_out,
-                })
+                supporting_documents.append(
+                    {
+                        "doc_id": doc_id,
+                        "doc_title": doc["title"],
+                        "supporting_chunks": chunks_out,
+                    }
+                )
 
         # Build a simple evidence chain string
         chain_parts = []
@@ -286,7 +295,9 @@ class ContextGraphSkill:
             src_name = src_node.get("name", edge["source"])
             tgt_name = tgt_node.get("name", edge["target"])
             chain_parts.append(f"{src_name} --[{edge['type']}]--> {tgt_name}")
-        evidence_chain = " | ".join(chain_parts) if chain_parts else "No edges in subgraph."
+        evidence_chain = (
+            " | ".join(chain_parts) if chain_parts else "No edges in subgraph."
+        )
 
         return {
             "query": query,

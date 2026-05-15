@@ -60,7 +60,6 @@ try:
 except ImportError:
     from .deepseek_integration import deepseek_code_query
 
-from file_utils import read_csv_builtin, read_csv_pandas, read_excel
 from utils import crop_from_annotations, process_csv_data, process_excel_data
 
 # Command registry for CLI handlers
@@ -194,7 +193,7 @@ def handle_crop_csv(args, logger):
             f"No crops were saved for image: {args.image_path} with annotations: {args.annotations_csv}"
         )
         print(
-            f"[ERROR] No crops were saved. Please check the annotation CSV and image file.",
+            "[ERROR] No crops were saved. Please check the annotation CSV and image file.",
             file=sys.stderr,
         )
         return 1

@@ -10,18 +10,37 @@ from specify_cli.integrations import (
 from specify_cli.integrations.base import MarkdownIntegration
 from .conftest import StubIntegration
 
-
 # Every integration key that must be registered (Stage 2 + Stage 3 + Stage 4 + Stage 5).
 ALL_INTEGRATION_KEYS = [
     "copilot",
     # Stage 3 — standard markdown integrations
-    "claude", "qwen", "opencode", "junie", "kilocode", "auggie",
-    "roo", "codebuddy", "qodercli", "amp", "shai", "bob", "trae",
-    "pi", "iflow", "kiro-cli", "windsurf", "vibe", "cursor-agent",
+    "claude",
+    "qwen",
+    "opencode",
+    "junie",
+    "kilocode",
+    "auggie",
+    "roo",
+    "codebuddy",
+    "qodercli",
+    "amp",
+    "shai",
+    "bob",
+    "trae",
+    "pi",
+    "iflow",
+    "kiro-cli",
+    "windsurf",
+    "vibe",
+    "cursor-agent",
     # Stage 4 — TOML integrations
-    "gemini", "tabnine",
+    "gemini",
+    "tabnine",
     # Stage 5 — skills, generic & option-driven integrations
-    "codex", "kimi", "agy", "generic",
+    "codex",
+    "kimi",
+    "agy",
+    "generic",
 ]
 
 
@@ -43,6 +62,7 @@ class TestRegistry:
     def test_register_empty_key_raises(self):
         class EmptyKey(MarkdownIntegration):
             key = ""
+
         with pytest.raises(ValueError, match="empty key"):
             _register(EmptyKey())
 
@@ -77,11 +97,13 @@ class TestRegistrarKeyAlignment:
     )
     def test_integration_key_in_registrar(self, key):
         from specify_cli.agents import CommandRegistrar
-        assert key in CommandRegistrar.AGENT_CONFIGS, (
-            f"Integration '{key}' is registered but has no AGENT_CONFIGS entry"
-        )
+
+        assert (
+            key in CommandRegistrar.AGENT_CONFIGS
+        ), f"Integration '{key}' is registered but has no AGENT_CONFIGS entry"
 
     def test_no_stale_cursor_shorthand(self):
         """The old 'cursor' shorthand must not appear in AGENT_CONFIGS."""
         from specify_cli.agents import CommandRegistrar
+
         assert "cursor" not in CommandRegistrar.AGENT_CONFIGS

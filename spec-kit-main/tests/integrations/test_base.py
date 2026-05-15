@@ -21,7 +21,9 @@ class TestIntegrationOption:
         assert opt.help == ""
 
     def test_flag_option(self):
-        opt = IntegrationOption(name="--skills", is_flag=True, default=True, help="Enable skills")
+        opt = IntegrationOption(
+            name="--skills", is_flag=True, default=True, help="Enable skills"
+        )
         assert opt.is_flag is True
         assert opt.default is True
         assert opt.help == "Enable skills"
@@ -70,7 +72,9 @@ class TestIntegrationBase:
         (tpl / "specify.md").write_text("spec content", encoding="utf-8")
 
         i = StubIntegration()
-        monkeypatch.setattr(type(i), "list_command_templates", lambda self: sorted(tpl.glob("*.md")))
+        monkeypatch.setattr(
+            type(i), "list_command_templates", lambda self: sorted(tpl.glob("*.md"))
+        )
 
         project = tmp_path / "project"
         project.mkdir()
@@ -132,6 +136,7 @@ class TestBasePrimitives:
     def test_commands_dest_no_config_raises(self, tmp_path):
         class NoConfig(MarkdownIntegration):
             key = "noconfig"
+
         with pytest.raises(ValueError, match="config is not set"):
             NoConfig().commands_dest(tmp_path)
 
@@ -139,7 +144,9 @@ class TestBasePrimitives:
         src = tmp_path / "source.md"
         src.write_text("content", encoding="utf-8")
         dest_dir = tmp_path / "output"
-        result = IntegrationBase.copy_command_to_directory(src, dest_dir, "speckit.plan.md")
+        result = IntegrationBase.copy_command_to_directory(
+            src, dest_dir, "speckit.plan.md"
+        )
         assert result == dest_dir / "speckit.plan.md"
         assert result.read_text(encoding="utf-8") == "content"
 
