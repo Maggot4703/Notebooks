@@ -26,7 +26,11 @@ from urllib.parse import quote, unquote, urlsplit, parse_qs
 
 PORT = 8080
 WEB_ROOT = os.path.dirname(__file__)
-SAVED_DIR = os.path.join(WEB_ROOT, "saved")
+# Save notes to a Desktop folder so they persist across sessions on the host
+DESKTOP_NOTES_DIR = os.path.expanduser('~/Desktop/0101_notes')
+SAVED_DIR = DESKTOP_NOTES_DIR
+# Ensure the directory exists
+os.makedirs(SAVED_DIR, exist_ok=True)
 KEY_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 DEFAULT_0101_WINDOW_WIDTH = 720
 DEFAULT_0101_WINDOW_HEIGHT = 1180
@@ -549,8 +553,16 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         body = self.rfile.read(length).decode("utf-8")
         os.makedirs(SAVED_DIR, exist_ok=True)
         path = os.path.join(SAVED_DIR, f"{key}.txt")
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(body)
+        # If empty body, remove the saved file to keep Desktop clean
+        if not body or body.strip() == '':
+            try:
+                if os.path.isfile(path):
+                    os.remove(path)
+            except Exception:
+                pass
+        else:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(body)
         self.send_response(200)
         self.send_header("Content-Length", "0")
         self.end_headers()
