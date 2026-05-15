@@ -546,7 +546,42 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_error(404)
             return
         length = int(self.headers.get("Content-Length", 0))
-        body = self.rfile.read(length).decode("utf-8")
+        body = ""
+        if length:
+            body = self.rfile.read(length).decode("utf-8")
+        else:
+            # Fallback: sometimes clients send bodies without Content-Length
+            # (e.g., chunked encoding or proxies). Try to read any immediately
+            # available data with a short socket timeout so handler doesn't block.
+            try:
+                orig_timeout = None
+                try:
+                    orig_timeout = self.connection.gettimeout()
+                except Exception:
+                    orig_timeout = None
+                try:
+                    # small timeout to drain any available body bytes
+                    self.connection.settimeout(0.1)
+                    chunks = []
+                    while True:
+                        data = self.rfile.read(65536)
+                        if not data:
+                            break
+                        chunks.append(data)
+                    if chunks:
+                        body = b"".join(chunks).decode("utf-8")
+                finally:
+                    # restore original timeout if possible
+                    try:
+                        if orig_timeout is None:
+                            self.connection.settimeout(None)
+                        else:
+                            self.connection.settimeout(orig_timeout)
+                    except Exception:
+                        pass
+            except Exception:
+                body = ""
+
         os.makedirs(SAVED_DIR, exist_ok=True)
         path = os.path.join(SAVED_DIR, f"{key}.txt")
         with open(path, "w", encoding="utf-8") as f:
