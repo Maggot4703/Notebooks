@@ -342,6 +342,241 @@ SCRIPTS
             }
       </script>
     <div></div>
+    <script>
+          (function(){
+            function linkify4d(root){
+              var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+              var nodes = [];
+              var n;
+              while(n = walker.nextNode()) nodes.push(n);
+              nodes.forEach(function(node){
+                if(!/\b\d{4}\b/.test(node.nodeValue)) return;
+                var span = document.createElement('span');
+                var parts = node.nodeValue.split(/(\b\d{4}\b)/);
+                parts.forEach(function(p){
+                  if(/^\d{4}$/.test(p)){
+                    var a = document.createElement('a');
+                    a.href = '0101.html';
+                    a.setAttribute('data-hex', p);
+                    a.textContent = p;
+                    span.appendChild(a);
+                  } else {
+                    span.appendChild(document.createTextNode(p));
+                  }
+                });
+                node.parentNode.replaceChild(span, node);
+              });
+            }
+            document.addEventListener('DOMContentLoaded', function(){ try{ linkify4d(document.body); }catch(e){} });
+          }());
+    </script>
+    <script>
+          (function(){
+            function buildHexMap() {
+              return fetch('TXT/worlds-by-subsector.json').then(function(r){ return r.json(); }).then(function(data){
+                var map = Object.create(null);
+                Object.keys(data).forEach(function(sub){
+                  var items = data[sub] || [];
+                  items.forEach(function(w){ map[w.hex] = sub; });
+                });
+                return map;
+              }).catch(function(){ return {}; });
+            }
+
+            function linkifyWithMap(root, hexMap){
+              var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+              var nodes = [];
+              var n;
+              while(n = walker.nextNode()) nodes.push(n);
+              nodes.forEach(function(node){
+                if(!/\b\d{4}\b/.test(node.nodeValue)) return;
+                var span = document.createElement('span');
+                var parts = node.nodeValue.split(/(\b\d{4}\b)/);
+                parts.forEach(function(p){
+                  if(/^\d{4}$/.test(p)){
+                    var a = document.createElement('a');
+                    a.href = '0101.html';
+                    a.setAttribute('data-hex', p);
+                    var sub = hexMap[p];
+                    if (sub) {
+                      a.setAttribute('data-sub', sub);
+                      a.setAttribute('data-sec', 'Spinward Marches');
+                    }
+                    a.textContent = p;
+                    span.appendChild(a);
+                  } else {
+                    span.appendChild(document.createTextNode(p));
+                  }
+                });
+                node.parentNode.replaceChild(span, node);
+              });
+            }
+            document.addEventListener('DOMContentLoaded', function(){ buildHexMap().then(function(map){ try{ linkifyWithMap(document.body, map); }catch(e){} }); });
+          }());
+    </script>
+    <script>
+(function(){
+  function buildPdfMap(){
+    var map = Object.create(null);
+    Array.prototype.forEach.call(document.querySelectorAll('a[href*="PDFs/SM/"]'), function(link){
+      try{
+        var href = link.getAttribute('href');
+        var fn = decodeURIComponent(href.split('/').pop());
+        var sub = fn.split(' - ')[0].trim();
+        if(sub) map[sub] = href;
+      }catch(e){}
+    });
+    return map;
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    try{
+      var pdfMap = buildPdfMap();
+      Array.prototype.forEach.call(document.querySelectorAll('a[data-sub]'), function(a){
+        var sub = a.getAttribute('data-sub');
+        if(sub && pdfMap[sub]) a.setAttribute('data-pdf', pdfMap[sub]);
+      });
+    }catch(e){}
+  });
+}());
+</script>
+    <script>
+(function(){
+  function buildPdfMaps(){
+    var pdfMap = Object.create(null);
+    var letterMap = Object.create(null);
+    Array.prototype.forEach.call(document.querySelectorAll('a[href*="PDFs/SM/"]'), function(link){
+      try{
+        var href = link.getAttribute('href');
+        var fn = decodeURIComponent(href.split('/').pop());
+        var base = fn.split(' - ')[0].trim();
+        if(base) pdfMap[base] = href;
+        var m = base.match(/^([A-P])\b/);
+        if(m) letterMap[m[1]] = href;
+      }catch(e){}
+    });
+    return {pdfMap: pdfMap, letterMap: letterMap};
+  }
+
+  // Static fallback subsector names (letter -> canonical subsector name)
+  var STATIC_SUBS = {
+    A: 'A Cronor', B: 'B Jewell', C: 'C Regina', D: 'D Aramis', E: 'E Querion', F: 'F Vilis',
+    G: 'G Lanth', H: "H Rhylanor", I: 'I Darrian', J: "J Sword Worlds", K: 'K Lunion',
+    L: 'L Mora', M: 'M Five Sisters', N: 'N District 268', O: 'O Glisten', P: "P Trin's Veil"
+  };
+
+  function canonicalPdfForLetter(letter){
+    var name = STATIC_SUBS[letter];
+    if(!name) return null;
+    var fname = letter + ' ' + name.split(' ').slice(1).join(' ');
+    var candidate = 'PDFs/SM/' + encodeURIComponent(letter + ' ' + name + ' - Mark Ferguson.pdf');
+    return candidate;
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    try{
+      var maps = buildPdfMaps();
+      Array.prototype.forEach.call(document.querySelectorAll('a[data-sub]'), function(a){
+        var sub = a.getAttribute('data-sub') || '';
+        if(sub && maps.pdfMap[sub]) {
+          a.setAttribute('data-pdf', maps.pdfMap[sub]);
+          return;
+        }
+        var m = sub.match(/^([A-P])\b/);
+        if(m && maps.letterMap[m[1]]){
+          a.setAttribute('data-pdf', maps.letterMap[m[1]]);
+          return;
+        }
+        if(m){
+          var cand = canonicalPdfForLetter(m[1]);
+          if(cand) a.setAttribute('data-pdf', cand);
+        }
+      });
+    }catch(e){}
+  });
+}());
+</script>
+    <script>
+(function(){
+  function exists(url){
+    return fetch(url, {method:'HEAD'}).then(function(r){ return r && r.ok; }).catch(function(){ return false; });
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    Array.prototype.forEach.call(document.querySelectorAll('a[data-sub]'), function(a){
+      if(a.getAttribute('data-pdf')) return; // already set
+      (async function(){
+        var sub = a.getAttribute('data-sub') || '';
+        var letter = (sub.match(/^([A-P])\b/) || [])[1];
+        var candidates = [];
+        var dp = a.getAttribute('data-pdf');
+        if(dp) candidates.push(dp);
+        if(letter) candidates.push('PDFs/SM/' + encodeURIComponent(letter + ' ' + (sub || '') + ' - Mark Ferguson.pdf'));
+        for(var i=0;i<candidates.length;i++){
+          var cand = candidates[i];
+          if(!cand) continue;
+          try{
+            var ok = await exists(cand);
+            if(ok){ a.setAttribute('data-pdf', cand); break; }
+          }catch(e){}
+        }
+      })();
+    });
+  });
+}());
+</script>
+    <script>
+(function(){
+  var FULL_PDF_MAP = {
+    "A Cronor":"PDFs/SM/A Cronor - Mark Ferguson.pdf",
+    "B Jewell":"PDFs/SM/B Jewell - Mark Ferguson.pdf",
+    "C Regina":"PDFs/SM/C Regina - Mark Ferguson.pdf",
+    "D Aramis":"PDFs/SM/D Aramis - Mark Ferguson.pdf",
+    "E Querion":"PDFs/SM/E Querion - Mark Ferguson.pdf",
+    "F Vilis.":"PDFs/SM/F Vilis. - Mark Ferguson.pdf",
+    "G Lanth":"PDFs/SM/G Lanth - Mark Ferguson.pdf",
+    "H Rhylanor":"PDFs/SM/H Rhylanor - Mark Ferguson.pdf",
+    "I Darrian":"PDFs/SM/I Darrian - Mark Ferguson.pdf",
+    "J Sword Worlds":"PDFs/SM/J Sword Worlds - Mark Ferguson.pdf",
+    "K Lunion":"PDFs/SM/K Lunion - Mark Ferguson.pdf",
+    "L Mora":"PDFs/SM/L Mora - Mark Ferguson.pdf",
+    "M Five Sisters":"PDFs/SM/M Five Sisters - Mark Ferguson.pdf",
+    "N District 268":"PDFs/SM/N District 268 - Mark Ferguson.pdf",
+    "O Glisten":"PDFs/SM/O Glisten - Mark Ferguson.pdf",
+    "P Trin's Veil":"PDFs/SM/P Trin's Veil - Mark Ferguson.pdf"
+  };
+  var LETTER_MAP = {
+    A: FULL_PDF_MAP['A Cronor'], B: FULL_PDF_MAP['B Jewell'], C: FULL_PDF_MAP['C Regina'],
+    D: FULL_PDF_MAP['D Aramis'], E: FULL_PDF_MAP['E Querion'], F: FULL_PDF_MAP['F Vilis.'],
+    G: FULL_PDF_MAP['G Lanth'], H: FULL_PDF_MAP['H Rhylanor'], I: FULL_PDF_MAP['I Darrian'],
+    J: FULL_PDF_MAP['J Sword Worlds'], K: FULL_PDF_MAP['K Lunion'], L: FULL_PDF_MAP['L Mora'],
+    M: FULL_PDF_MAP['M Five Sisters'], N: FULL_PDF_MAP['N District 268'], O: FULL_PDF_MAP['O Glisten'],
+    P: FULL_PDF_MAP["P Trin's Veil"]
+  };
+
+  function applyOnce(){
+    var anchors = document.querySelectorAll('a[data-sub]');
+    var changed = false;
+    for(var i=0;i<anchors.length;i++){
+      var a = anchors[i];
+      if(a.getAttribute('data-pdf')) continue;
+      var sub = a.getAttribute('data-sub') || '';
+      if(FULL_PDF_MAP[sub]){ a.setAttribute('data-pdf', FULL_PDF_MAP[sub]); changed = true; continue; }
+      var m = sub.match(/^([A-P])\b/);
+      if(m && LETTER_MAP[m[1]]){ a.setAttribute('data-pdf', LETTER_MAP[m[1]]); changed = true; continue; }
+    }
+    return changed;
+  }
+
+  var attempts = 0;
+  var maxAttempts = 25;
+  var timer = setInterval(function(){
+    attempts++;
+    try{
+      var did = applyOnce();
+      if(did || attempts>=maxAttempts) clearInterval(timer);
+    }catch(e){ if(attempts>=maxAttempts) clearInterval(timer); }
+  }, 200);
+}());
+</script>
     <script src="persist.js"></script>
     <script src="0101-shell.js"></script>
   </body>
