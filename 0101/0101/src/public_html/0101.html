@@ -550,49 +550,6 @@
         // <a href="TXT/A Cronor/0101 Zeycude/0101 Zeycude/jta4Info.txt" target="_blank">Info</a>
       }
     </script>
-    <!-- Page Notes: saved to Desktop per-page -->
-    <div style="position:fixed; right:12px; bottom:12px; width:320px; z-index:9999;">
-      <div style="background:#0f1720;border:1px solid #2b3440;padding:8px;border-radius:8px;color:#cbd5e1;font-size:13px;box-shadow:0 6px 18px rgba(0,0,0,0.45);">
-        <div style="font-weight:600;margin-bottom:6px;">Notes</div>
-        <textarea id="page-notes" rows="8" style="width:100%;background:#071018;color:#e6edf3;border:1px solid #243040;padding:6px;border-radius:6px;resize:vertical;font-family:monospace;font-size:12px"></textarea>
-        <div style="text-align:right;margin-top:6px;font-size:11px;color:#94a3b8">Saved to Desktop</div>
-      </div>
-    </div>
-    <script>
-      (function(){
-        function sanitizeKey(s){
-          return s.replace(/[^a-z0-9]/gi,'-').toLowerCase().replace(/^-+|-+$/g,'').slice(0,60);
-        }
-        try{
-          var ta = document.getElementById('page-notes');
-          if(ta){
-            var p = location.pathname || location.href;
-            var base = sanitizeKey(p||'page');
-            if(!/^[a-z0-9]/.test(base)) base = 'p' + base;
-            var key = 'n-' + base;
-
-            function apiUrl(k){ return '/api/text/' + encodeURIComponent(k); }
-            // load existing
-            fetch(apiUrl(key)).then(function(r){ if(r.ok) return r.text(); return ''; }).then(function(t){ if(t) ta.value = t; }).catch(function(){});
-            // save debounced
-            var timer = null;
-            function saveNow(){
-              var v = ta.value || '';
-              try{
-                if(navigator.sendBeacon){
-                  navigator.sendBeacon(apiUrl(key), new Blob([v],{type:'text/plain'}));
-                } else {
-                  fetch(apiUrl(key), {method:'POST', headers:{'Content-Type':'text/plain'}, body: v}).catch(function(){});
-                }
-              }catch(e){}
-            }
-            ta.addEventListener('input', function(){ clearTimeout(timer); timer = setTimeout(saveNow, 800); });
-            window.addEventListener('pagehide', function(){ saveNow(); });
-          }
-        }catch(e){console.warn('Notes init failed', e);} 
-      }());
-    </script>
-
     <script src="persist.js"></script>
     <script src="0101-shell.js"></script>
     <!-- Book Browser permanently removed: client-side hide removed -->
