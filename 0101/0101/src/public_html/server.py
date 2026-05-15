@@ -17,6 +17,7 @@ import os
 import re
 import shutil
 import subprocess
+import shlex
 import sys
 import threading
 import time
@@ -27,6 +28,9 @@ from urllib.parse import quote, unquote, urlsplit, parse_qs
 PORT = 8080
 WEB_ROOT = os.path.dirname(__file__)
 SAVED_DIR = os.path.join(WEB_ROOT, "saved")
+# Optional push target for mirroring saved notes to a desktop on another host.
+# Set DESKTOP_PUSH_TARGET env var to e.g. 'me@home:~/Desktop/0101_notes/' to enable.
+DESKTOP_PUSH_TARGET = os.environ.get('DESKTOP_PUSH_TARGET', 'me@home:~/Desktop/0101_notes/')
 KEY_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 DEFAULT_0101_WINDOW_WIDTH = 720
 DEFAULT_0101_WINDOW_HEIGHT = 1180
@@ -584,8 +588,96 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
         os.makedirs(SAVED_DIR, exist_ok=True)
         path = os.path.join(SAVED_DIR, f"{key}.txt")
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(body)
+        # If body is empty, remove any existing saved file to avoid keeping empty notes
+        if not body:
+            try:
+                if os.path.exists(path):
+                    os.remove(path)
+            except Exception:
+                # If removal fails, silently continue
+                pass
+
+            # Also attempt to remove the mirrored file on the configured desktop
+            # target so empty saves don't leave stale Desktop copies.
+            try:
+                if DESKTOP_PUSH_TARGET:
+                    # If target looks like a remote (user@host:/path), SSH in and remove.
+                    if ':' in DESKTOP_PUSH_TARGET and not DESKTOP_PUSH_TARGET.startswith('/'):
+                        try:
+                            host_part, remote_dir = DESKTOP_PUSH_TARGET.split(':', 1)
+                            remote_dir = remote_dir.rstrip('/')
+                            remote_file = remote_dir + '/' + os.path.basename(path)
+                            cmd = [
+                                'ssh',
+                                '-o',
+                                'BatchMode=yes',
+                                host_part,
+                                "rm -f " + shlex.quote(remote_file),
+                            ]
+                            subprocess.run(cmd, capture_output=True, text=True, timeout=20)
+                        except Exception:
+                            pass
+                    else:
+                        # Local directory target
+                        try:
+                            dest_path = os.path.join(DESKTOP_PUSH_TARGET, os.path.basename(path))
+                            if os.path.exists(dest_path):
+                                os.remove(dest_path)
+                        except Exception:
+                            pass
+            except Exception:
+                pass
+        else:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(body)
+
+            # Best-effort push of the saved file to a configured desktop target.
+            # Runs in a background thread so requests stay responsive. The target
+            # can be disabled by setting DESKTOP_PUSH_TARGET to an empty string.
+            def _push_saved_file(src_path, target):
+                try:
+                    if not target:
+                        return
+                    if shutil.which("rsync") is None:
+                        return
+                    rsync_cmd = [
+                        "rsync",
+                        "-az",
+                        "-e",
+                        "ssh -o BatchMode=yes",
+                        src_path,
+                        target,
+                    ]
+                    subprocess.run(rsync_cmd, capture_output=True, text=True, timeout=30)
+                except Exception:
+                    pass
+
+            try:
+                import threading
+
+                if DESKTOP_PUSH_TARGET:
+                    t = threading.Thread(target=_push_saved_file, args=(path, DESKTOP_PUSH_TARGET), daemon=True)
+                    t.start()
+            except Exception:
+                pass
+
+        self.send_response(200)
+        self.send_header("Content-Length", "0")
+        self.end_headers()
+
+    def do_DELETE(self):
+        # Support DELETE /api/text/<key> to remove saved note file
+        key = self._api_key()
+        if key is None:
+            self.send_error(404)
+            return
+        path = os.path.join(SAVED_DIR, f"{key}.txt")
+        try:
+            if os.path.exists(path):
+                os.remove(path)
+        except Exception:
+            # ignore errors
+            pass
         self.send_response(200)
         self.send_header("Content-Length", "0")
         self.end_headers()
