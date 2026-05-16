@@ -16,10 +16,11 @@ This script prefers PyMuPDF (fitz) or pdfplumber for text extraction, and falls 
 """
 
 from __future__ import annotations
+
 import argparse
+import csv
 import json
 import sys
-import csv
 import time
 from pathlib import Path
 

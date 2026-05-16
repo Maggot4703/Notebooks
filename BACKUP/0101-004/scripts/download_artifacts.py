@@ -10,11 +10,12 @@ The script finds the artifact by name, downloads the artifact zip, and extracts 
 """
 
 import argparse
+import io
 import os
 import sys
-import requests
 import zipfile
-import io
+
+import requests
 
 API_BASE = "https://api.github.com"
 

@@ -5,11 +5,14 @@ Flask Web Chat Interface for Crew Chatbot
 - Supports persona switching, chat history, and LLM replies
 """
 
-import os
-from flask import Flask, render_template_string, request, session, redirect, url_for
-import uuid
 import json
-from crew_chatbot import load_agents, CONFIG_PATH, LOG_PATH
+import os
+import uuid
+
+from flask import (Flask, redirect, render_template_string, request, session,
+                   url_for)
+
+from crew_chatbot import CONFIG_PATH, LOG_PATH, load_agents
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", str(uuid.uuid4()))

@@ -9,20 +9,20 @@ Run: python server.py
 Then open: http://localhost:8080/index.html
 """
 
-import http.server
 import html
+import http.server
 import io
 import json
 import os
 import re
 import shutil
+import sqlite3
 import subprocess
 import sys
 import threading
 import time
 import webbrowser
-import sqlite3
-from urllib.parse import quote, unquote, urlsplit, parse_qs
+from urllib.parse import parse_qs, quote, unquote, urlsplit
 
 PORT = 8080
 WEB_ROOT = os.path.dirname(__file__)

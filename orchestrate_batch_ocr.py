@@ -11,11 +11,11 @@ Usage:
     python orchestrate_batch_ocr.py /path/to/input_dir /path/to/output_dir
 """
 
-import os
-import sys
-import subprocess
-from pathlib import Path
 import logging
+import os
+import subprocess
+import sys
+from pathlib import Path
 
 BATCH_OCR_SCRIPT = "/home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py"
 LOG_FILE = "orchestrate_batch_ocr.log"

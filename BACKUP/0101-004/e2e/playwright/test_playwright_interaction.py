@@ -1,5 +1,6 @@
-from playwright.sync_api import sync_playwright
 import time
+
+from playwright.sync_api import sync_playwright
 
 
 def test_persist_via_fetch():
