@@ -1,3 +1,4 @@
+---
 name: Lint Python (flake8)
 
 on:
