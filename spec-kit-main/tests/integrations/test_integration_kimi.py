@@ -127,8 +127,9 @@ class TestKimiNextSteps:
     def test_next_steps_show_skill_invocation(self, tmp_path):
         """Kimi next-steps guidance should display /skill:speckit-* usage."""
         import os
-        from typer.testing import CliRunner
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "kimi-next-steps"
         project.mkdir()

@@ -16,8 +16,8 @@ class TestCodexAutoPromote:
 
     def test_ai_codex_without_ai_skills_auto_promotes(self, tmp_path):
         """--ai codex should work the same as --integration codex."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         target = tmp_path / "test-proj"

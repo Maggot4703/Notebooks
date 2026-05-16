@@ -1,7 +1,8 @@
 # plan_20_api_integration_code.py
+from typing import List
+
 from fastapi import FastAPI
 from pydantic import BaseModel
-from typing import List
 
 app = FastAPI()
 

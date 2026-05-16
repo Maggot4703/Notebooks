@@ -1,13 +1,10 @@
 """Tests for IntegrationOption, IntegrationBase, MarkdownIntegration, and primitives."""
 
 import pytest
-
-from specify_cli.integrations.base import (
-    IntegrationBase,
-    IntegrationOption,
-    MarkdownIntegration,
-)
+from specify_cli.integrations.base import (IntegrationBase, IntegrationOption,
+                                           MarkdownIntegration)
 from specify_cli.integrations.manifest import IntegrationManifest
+
 from .conftest import StubIntegration
 
 

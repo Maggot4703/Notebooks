@@ -4,14 +4,14 @@ DICTATE — Snazzy voice-to-text dictaphone
 Records from microphone and transcribes to screen.
 """
 
+import math
 import os
+import subprocess
 import sys
+import threading
+import time
 import tkinter as tk
 from tkinter import scrolledtext
-import threading
-import math
-import time
-import subprocess
 
 
 def _auto_install(module: str, package: str = None):

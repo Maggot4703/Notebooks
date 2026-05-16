@@ -9,8 +9,9 @@ Batch extract 200x100 images from PDFs and OCR them.
 
 import subprocess
 from pathlib import Path
-from PIL import Image
+
 import pytesseract
+from PIL import Image
 
 target_dir = "/home/me/Desktop/T5/Vland"
 out_md = "/home/me/Desktop/T5/Vland/pdf_image_ocr_results.md"

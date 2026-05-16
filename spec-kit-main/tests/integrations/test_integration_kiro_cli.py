@@ -18,8 +18,8 @@ class TestKiroAlias:
 
     def test_kiro_alias_normalized_to_kiro_cli(self, tmp_path):
         """--ai kiro should normalize to canonical kiro-cli and auto-promote."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         target = tmp_path / "kiro-alias-proj"
         target.mkdir()

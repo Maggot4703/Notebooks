@@ -4,10 +4,11 @@ load_sector_file.py
 Prototype: Load a Traveller sector file from a local path or URL, validate, and print summary.
 """
 
+import os
+import sys
+
 import pandas as pd
 import requests
-import sys
-import os
 
 
 def load_sector_file(path_or_url):

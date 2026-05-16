@@ -3,9 +3,8 @@
 import json
 import os
 
-from typer.testing import CliRunner
-
 from specify_cli import app
+from typer.testing import CliRunner
 
 runner = CliRunner()
 

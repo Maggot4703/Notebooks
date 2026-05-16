@@ -3,7 +3,6 @@
 import os
 
 import pytest
-
 from specify_cli.integrations import get_integration
 from specify_cli.integrations.base import MarkdownIntegration
 from specify_cli.integrations.manifest import IntegrationManifest
@@ -204,8 +203,8 @@ class TestGenericIntegration:
 
     def test_cli_generic_without_commands_dir_fails(self, tmp_path):
         """--integration generic without --ai-commands-dir should fail."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         result = runner.invoke(
@@ -226,8 +225,8 @@ class TestGenericIntegration:
 
     def test_complete_file_inventory_sh(self, tmp_path):
         """Every file produced by specify init --integration generic --ai-commands-dir ... --script sh."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "inventory-generic-sh"
         project.mkdir()
@@ -293,8 +292,8 @@ class TestGenericIntegration:
 
     def test_complete_file_inventory_ps(self, tmp_path):
         """Every file produced by specify init --integration generic --ai-commands-dir ... --script ps."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "inventory-generic-ps"
         project.mkdir()

@@ -1,7 +1,8 @@
-import requests
 import csv
-from io import StringIO
 import sys
+from io import StringIO
+
+import requests
 
 
 def get_sector_url(sector_name):

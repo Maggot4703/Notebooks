@@ -4,6 +4,7 @@ Covers widget registration, layout creation, and status updates.
 """
 
 import unittest
+
 from ui_manager import UIManager
 
 

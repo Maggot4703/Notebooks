@@ -3,16 +3,11 @@
 T5-test: Unified entrypoint for CardCutter + Crew functionality
 """
 
-import sys
 import argparse
-from t5_shared import (
-    overlay_grid,
-    mark_line,
-    read_csv_pandas,
-    read_excel,
-    DEFAULT_GRID_COLOR,
-    DEFAULT_GRID_SIZE,
-)
+import sys
+
+from t5_shared import (DEFAULT_GRID_COLOR, DEFAULT_GRID_SIZE, mark_line,
+                       overlay_grid, read_csv_pandas, read_excel)
 
 
 # Example CLI: grid-image, read-csv, read-excel, mark-line
@@ -148,8 +143,8 @@ def create_cli_parser():
 def run_cli(args: argparse.Namespace) -> int:
     if args.command == "travellermap-script-docs":
         import os
-        import sys as _sys
         import runpy
+        import sys as _sys
 
         tm_dir = "/home/me/Notebooks/TRAVELLERMAP"
         scripts_dir = os.path.join(tm_dir, "scripts")
@@ -281,8 +276,9 @@ def run_cli(args: argparse.Namespace) -> int:
 
     if args.command == "count-military-bases":
         sys.path.append("/home/me/Notebooks/TRAVELLERMAP")
-        import count_military_bases
         import sys as _sys
+
+        import count_military_bases
 
         sys_argv = ["count_military_bases.py"] + args.sector
         old_argv = _sys.argv
@@ -316,9 +312,9 @@ def run_cli(args: argparse.Namespace) -> int:
 
     if args.command == "record-audio":
         try:
-            import sounddevice as sd
             import numpy as np
             import scipy.io.wavfile as wav
+            import sounddevice as sd
         except ImportError:
             print(
                 "Please install sounddevice and scipy: pip install sounddevice scipy numpy"
@@ -451,8 +447,8 @@ def main():
         sys.exit(run_cli(args))
     # No CLI command: try to launch GUI
     try:
-        import sys as _sys
         import importlib.util
+        import sys as _sys
         import tkinter as tk
 
         # Add Crew GUI directory to sys.path if not present

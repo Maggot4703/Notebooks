@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Test the pandas parsing fix without GUI"""
 
-import sys
 import os
+import sys
 from pathlib import Path
 
 sys.path.append("/home/me/BACKUP/PROJECTS/Crew")

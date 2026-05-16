@@ -6,12 +6,12 @@ Used by both the extension system and the preset system to write
 command files into agent-specific directories in the correct format.
 """
 
-from pathlib import Path
-from typing import Dict, List, Any
-
 import platform
 import re
 from copy import deepcopy
+from pathlib import Path
+from typing import Any, Dict, List
+
 import yaml
 
 

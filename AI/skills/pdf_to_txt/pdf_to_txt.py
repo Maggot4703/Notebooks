@@ -87,8 +87,8 @@ def _require_ocr_dependencies() -> None:
         )
 
     try:
-        from pdf2image import convert_from_path  # noqa: F401
         import pytesseract  # noqa: F401
+        from pdf2image import convert_from_path  # noqa: F401
     except ImportError as exc:
         raise RuntimeError(
             "OCR Python dependencies missing. Install with: "
@@ -171,8 +171,8 @@ def _extract_text_pdfplumber(pdf_path: Path, page_range=None, stream_write_fh=No
 def _extract_text_ocr(pdf_path: Path, lang: str, page_range=None, stream_write_fh=None):
     _require_ocr_dependencies()
 
-    from pdf2image import convert_from_path
     import pytesseract
+    from pdf2image import convert_from_path
 
     pages = []
     print(f"  Running OCR on {pdf_path.name} ...", file=sys.stderr)

@@ -13,7 +13,8 @@ Usage:
 
 import argparse
 import sys
-from sector_utils import load_sector_data, SECTOR_HEADERS
+
+from sector_utils import SECTOR_HEADERS, load_sector_data
 
 
 def parse_args():

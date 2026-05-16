@@ -21,6 +21,7 @@ Examples:
 import argparse
 import json
 import sys
+
 import requests
 
 # ── Metadata ────────────────────────────────────────────────────────────────

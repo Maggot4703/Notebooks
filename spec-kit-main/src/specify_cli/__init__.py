@@ -24,31 +24,30 @@ Or install globally:
     specify init --here
 """
 
+import json
 import os
+import shutil
+import stat
 import subprocess
 import sys
-import zipfile
 import tempfile
-import shutil
-import json
-import json5
-import stat
-import yaml
+import zipfile
 from pathlib import Path
 from typing import Any, Optional
 
-import typer
-from rich.console import Console
-from rich.panel import Panel
-from rich.text import Text
-from rich.live import Live
-from rich.align import Align
-from rich.table import Table
-from rich.tree import Tree
-from typer.core import TyperGroup
-
+import json5
 # For cross-platform keyboard input
 import readchar
+import typer
+import yaml
+from rich.align import Align
+from rich.console import Console
+from rich.live import Live
+from rich.panel import Panel
+from rich.table import Table
+from rich.text import Text
+from rich.tree import Tree
+from typer.core import TyperGroup
 
 
 def _build_agent_config() -> dict[str, dict[str, Any]]:
@@ -1489,7 +1488,8 @@ def init(
             # Install preset if specified
             if preset:
                 try:
-                    from .presets import PresetManager, PresetCatalog, PresetError
+                    from .presets import (PresetCatalog, PresetError,
+                                          PresetManager)
 
                     preset_manager = PresetManager(project_path)
                     speckit_ver = get_speckit_version()
@@ -1739,8 +1739,8 @@ def check():
 @app.command()
 def version():
     """Display version and system information."""
-    import platform
     import importlib.metadata
+    import platform
 
     show_banner()
 
@@ -2480,13 +2480,8 @@ def preset_add(
     ),
 ):
     """Install a preset."""
-    from .presets import (
-        PresetManager,
-        PresetCatalog,
-        PresetError,
-        PresetValidationError,
-        PresetCompatibilityError,
-    )
+    from .presets import (PresetCatalog, PresetCompatibilityError, PresetError,
+                          PresetManager, PresetValidationError)
 
     project_root = Path.cwd()
 
@@ -2538,9 +2533,9 @@ def preset_add(
                 raise typer.Exit(1)
 
             console.print(f"Installing preset from [cyan]{from_url}[/cyan]...")
-            import urllib.request
-            import urllib.error
             import tempfile
+            import urllib.error
+            import urllib.request
 
             with tempfile.TemporaryDirectory() as tmpdir:
                 zip_path = Path(tmpdir) / "preset.zip"
@@ -2718,7 +2713,7 @@ def preset_info(
 ):
     """Show detailed information about a preset."""
     from .extensions import normalize_priority
-    from .presets import PresetCatalog, PresetManager, PresetError
+    from .presets import PresetCatalog, PresetError, PresetManager
 
     project_root = Path.cwd()
 
@@ -3262,6 +3257,7 @@ def _resolve_catalog_extension(
         - If not found: (None, None)
     """
     from rich.table import Table
+
     from .extensions import ExtensionError
 
     try:
@@ -3596,13 +3592,8 @@ def extension_add(
     ),
 ):
     """Install an extension."""
-    from .extensions import (
-        ExtensionManager,
-        ExtensionCatalog,
-        ExtensionError,
-        ValidationError,
-        CompatibilityError,
-    )
+    from .extensions import (CompatibilityError, ExtensionCatalog,
+                             ExtensionError, ExtensionManager, ValidationError)
 
     project_root = Path.cwd()
 
@@ -3648,8 +3639,8 @@ def extension_add(
 
             elif from_url:
                 # Install from URL (ZIP file)
-                import urllib.request
                 import urllib.error
+                import urllib.request
                 from urllib.parse import urlparse
 
                 # Validate URL
@@ -3976,7 +3967,8 @@ def extension_info(
     extension: str = typer.Argument(help="Extension ID or name"),
 ):
     """Show detailed information about an extension."""
-    from .extensions import ExtensionCatalog, ExtensionManager, normalize_priority
+    from .extensions import (ExtensionCatalog, ExtensionManager,
+                             normalize_priority)
 
     project_root = Path.cwd()
 
@@ -4186,17 +4178,13 @@ def extension_update(
     ),
 ):
     """Update extension(s) to latest version."""
-    from .extensions import (
-        ExtensionManager,
-        ExtensionCatalog,
-        ExtensionError,
-        ValidationError,
-        CommandRegistrar,
-        HookExecutor,
-        normalize_priority,
-    )
-    from packaging import version as pkg_version
     import shutil
+
+    from packaging import version as pkg_version
+
+    from .extensions import (CommandRegistrar, ExtensionCatalog,
+                             ExtensionError, ExtensionManager, HookExecutor,
+                             ValidationError, normalize_priority)
 
     project_root = Path.cwd()
 

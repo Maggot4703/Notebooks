@@ -1,5 +1,6 @@
-from skills.query_researcher import QueryResearcherSkill
 from agents.researcher_agent import ResearcherAgent
+
+from skills.query_researcher import QueryResearcherSkill
 
 researcher_agent = ResearcherAgent()
 query_researcher_skill = QueryResearcherSkill(researcher_agent)

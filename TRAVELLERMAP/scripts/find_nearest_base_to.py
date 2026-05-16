@@ -1,9 +1,10 @@
 # Find the nearest military base to a world in any sector
 
-import requests
-import sys
-import os
 import json
+import os
+import sys
+
+import requests
 
 # All possible Traveller base codes (from count_military_bases.py)
 CODES = set(

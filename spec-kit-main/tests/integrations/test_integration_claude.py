@@ -5,7 +5,6 @@ import os
 from unittest.mock import patch
 
 import yaml
-
 from specify_cli.integrations import INTEGRATION_REGISTRY, get_integration
 from specify_cli.integrations.base import IntegrationBase
 from specify_cli.integrations.claude import ARGUMENT_HINTS
@@ -80,8 +79,8 @@ class TestClaudeIntegration:
         assert ".specify/integrations/claude/scripts/update-context.ps1" in tracked
 
     def test_ai_flag_auto_promotes_and_enables_skills(self, tmp_path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "claude-promote"
         project.mkdir()
@@ -118,8 +117,8 @@ class TestClaudeIntegration:
         assert init_options["integration"] == "claude"
 
     def test_integration_flag_creates_skill_files(self, tmp_path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "claude-integration"
         project.mkdir()
@@ -151,8 +150,8 @@ class TestClaudeIntegration:
         assert (project / ".specify" / "integrations" / "claude.manifest.json").exists()
 
     def test_interactive_claude_selection_uses_integration_path(self, tmp_path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "claude-interactive"
         project.mkdir()
@@ -195,8 +194,8 @@ class TestClaudeIntegration:
 
     def test_claude_init_remains_usable_when_converter_fails(self, tmp_path):
         """Claude init should succeed even without install_ai_skills."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         target = tmp_path / "fail-proj"

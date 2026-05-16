@@ -4,6 +4,7 @@ Covers event handler setup and invocation.
 """
 
 import unittest
+
 from events import setup_event_handlers
 
 

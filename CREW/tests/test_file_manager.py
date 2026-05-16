@@ -2,14 +2,15 @@
 Test suite for FileManager module (file_manager.py).
 """
 
-import unittest
-import sys
 import os
+import sys
+import unittest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from file_manager import FileManager
-import tempfile
 import os
+import tempfile
+
+from file_manager import FileManager
 
 
 class TestFileManager(unittest.TestCase):

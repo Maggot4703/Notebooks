@@ -1,8 +1,8 @@
 """Tests for ForgeIntegration."""
 
 from specify_cli.integrations import get_integration
-from specify_cli.integrations.manifest import IntegrationManifest
 from specify_cli.integrations.forge import format_forge_command_name
+from specify_cli.integrations.manifest import IntegrationManifest
 
 
 class TestForgeCommandNameFormatter:
@@ -217,8 +217,8 @@ class TestForgeIntegration:
 
     def test_forge_specific_transformations(self, tmp_path):
         """Test Forge-specific processing: name injection and handoffs stripping."""
-        from specify_cli.integrations.forge import ForgeIntegration
         from specify_cli.agents import CommandRegistrar
+        from specify_cli.integrations.forge import ForgeIntegration
 
         forge = ForgeIntegration()
         m = IntegrationManifest("forge", tmp_path)
@@ -276,8 +276,8 @@ class TestForgeIntegration:
 
     def test_name_field_uses_hyphenated_format(self, tmp_path):
         """Verify that injected name fields use hyphenated format (speckit-plan, not speckit.plan)."""
-        from specify_cli.integrations.forge import ForgeIntegration
         from specify_cli.agents import CommandRegistrar
+        from specify_cli.integrations.forge import ForgeIntegration
 
         forge = ForgeIntegration()
         m = IntegrationManifest("forge", tmp_path)

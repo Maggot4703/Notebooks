@@ -1,11 +1,6 @@
+from image_utils import (crop_from_annotations, mark_line, markHorizontalLine,
+                         overlay_grid, process_images)
 from PIL import Image
-from image_utils import (
-    mark_line,
-    overlay_grid,
-    process_images,
-    crop_from_annotations,
-    markHorizontalLine,
-)
 
 
 def test_mark_line_creates_image():

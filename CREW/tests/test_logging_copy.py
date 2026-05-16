@@ -1,4 +1,5 @@
 from unittest import mock
+
 from Crew import log_progress_md
 
 # Test log_progress_md by patching open and checking file writes

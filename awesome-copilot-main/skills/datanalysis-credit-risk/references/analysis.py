@@ -2,16 +2,17 @@
 PSI calculation is reused in func.py, analysis.py only handles variable selection
 """
 
-import pandas as pd
-import numpy as np
+from datetime import datetime
 from typing import List, Tuple
+
+import lightgbm as lgb
+import numpy as np
+import pandas as pd
+from joblib import Parallel, delayed
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
-from datetime import datetime
-import lightgbm as lgb
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
-from joblib import Parallel, delayed
+from sklearn.model_selection import train_test_split
 
 
 def drop_abnormal_ym(
@@ -92,8 +93,8 @@ def drop_lowiv_features(
         iv_detail: IV details (IV value of each feature in each organization and overall)
         iv_process: IV processing table (features that do not meet the conditions)
     """
-    from references.func import calculate_iv
     from joblib import Parallel, delayed
+    from references.func import calculate_iv
 
     orgs = sorted(data["new_org"].unique())
 

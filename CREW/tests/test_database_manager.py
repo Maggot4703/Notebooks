@@ -8,9 +8,9 @@ and SQLite database functionality.
 # No sys.path modification needed; use direct import for local module
 import os
 import sqlite3
+import sys
 import tempfile
 import unittest
-import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import database_manager

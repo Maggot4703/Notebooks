@@ -4,10 +4,11 @@ load_sector_file_with_travellerrpg.py
 Prototype: Load a Traveller sector file from a local path, URL, or travellerrpg.com sector download, validate, and print summary.
 """
 
+import os
+import sys
+
 import pandas as pd
 import requests
-import sys
-import os
 
 
 def fetch_travellerrpg_sector(sector_name):

@@ -9,9 +9,9 @@ Recursively scans the workspace, generates:
 Usage: python index_workspace.py [root_folder]
 """
 
+import json
 import os
 import sys
-import json
 from datetime import datetime
 
 # Tagging rules (customize as needed)

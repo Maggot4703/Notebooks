@@ -12,8 +12,7 @@ if __package__ in {None, ""}:
     if src_dir_str not in sys.path:
         sys.path.insert(0, src_dir_str)
 
-from crewai_skill_demo.tools import GridOverlayTool
-from crewai_skill_demo.tools import WorldLookupTool
+from crewai_skill_demo.tools import GridOverlayTool, WorldLookupTool
 
 
 def main() -> None:

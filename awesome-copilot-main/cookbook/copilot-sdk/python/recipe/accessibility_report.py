@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
 
 import asyncio
-from copilot import (
-    CopilotClient,
-    SessionConfig,
-    MessageOptions,
-    SessionEvent,
-    PermissionHandler,
-)
+
+from copilot import (CopilotClient, MessageOptions, PermissionHandler,
+                     SessionConfig, SessionEvent)
 
 # ============================================================================
 # Main Application

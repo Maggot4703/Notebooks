@@ -1,9 +1,10 @@
 # Advanced Traveller Map API Usage Examples
 # Requirements: requests, pandas
 
-import requests
-import pandas as pd
 from io import StringIO
+
+import pandas as pd
+import requests
 
 # --- CONFIG ---
 sector = "Spinward Marches"

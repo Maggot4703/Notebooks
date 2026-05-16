@@ -11,11 +11,12 @@ Requirements (optional): PyMuPDF (fitz) recommended. pdfplumber and pytesseract 
 """
 
 from __future__ import annotations
+
 import argparse
 import json
 import sys
-from pathlib import Path
 import time
+from pathlib import Path
 
 try:
     import fitz

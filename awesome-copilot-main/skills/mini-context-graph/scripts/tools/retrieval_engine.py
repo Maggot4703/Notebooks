@@ -8,14 +8,14 @@ Output: list of node_ids within traversal depth filtered by min_confidence
 from __future__ import annotations
 
 import sys
-from pathlib import Path
 from collections import deque
+from pathlib import Path
 
 # Allow imports from parent package
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from tools import graph_store
 import config
+from tools import graph_store
 
 
 def retrieve(

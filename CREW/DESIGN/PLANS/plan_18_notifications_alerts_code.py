@@ -1,6 +1,7 @@
 # plan_18_notifications_alerts_code.py
-import pandas as pd
 from datetime import datetime, timedelta
+
+import pandas as pd
 
 
 def check_expiring_certs(training_log, days=30):

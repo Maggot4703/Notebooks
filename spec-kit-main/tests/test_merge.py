@@ -1,7 +1,6 @@
 import stat
 
-from specify_cli import merge_json_files
-from specify_cli import handle_vscode_settings
+from specify_cli import handle_vscode_settings, merge_json_files
 
 # --- Dimension 2: Polite Deep Merge Strategy ---
 

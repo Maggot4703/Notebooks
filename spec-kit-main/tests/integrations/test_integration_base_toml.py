@@ -12,7 +12,6 @@ import os
 import tomllib
 
 import pytest
-
 from specify_cli.integrations import INTEGRATION_REGISTRY, get_integration
 from specify_cli.integrations.base import TomlIntegration
 from specify_cli.integrations.manifest import IntegrationManifest
@@ -378,8 +377,8 @@ class TomlIntegrationTests:
     # -- CLI auto-promote -------------------------------------------------
 
     def test_ai_flag_auto_promotes(self, tmp_path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / f"promote-{self.KEY}"
         project.mkdir()
@@ -409,8 +408,8 @@ class TomlIntegrationTests:
         assert cmd_dir.is_dir(), f"--ai {self.KEY} did not create commands directory"
 
     def test_integration_flag_creates_files(self, tmp_path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / f"int-{self.KEY}"
         project.mkdir()
@@ -511,8 +510,8 @@ class TomlIntegrationTests:
 
     def test_complete_file_inventory_sh(self, tmp_path):
         """Every file produced by specify init --integration <key> --script sh."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / f"inventory-sh-{self.KEY}"
         project.mkdir()
@@ -547,8 +546,8 @@ class TomlIntegrationTests:
 
     def test_complete_file_inventory_ps(self, tmp_path):
         """Every file produced by specify init --integration <key> --script ps."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / f"inventory-ps-{self.KEY}"
         project.mkdir()

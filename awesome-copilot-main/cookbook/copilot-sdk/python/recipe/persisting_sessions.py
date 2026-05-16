@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 import asyncio
-from copilot import CopilotClient, SessionConfig, MessageOptions, PermissionHandler
+
+from copilot import (CopilotClient, MessageOptions, PermissionHandler,
+                     SessionConfig)
 
 
 async def main():

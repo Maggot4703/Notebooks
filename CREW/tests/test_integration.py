@@ -1,12 +1,13 @@
+import os
+import tempfile
+import tkinter as tk
 import unittest
+
 from Crew.cli import main as cli_main
 from Crew.data_manager import DataManager
-from Crew.file_utils import save_file, read_csv_builtin
 from Crew.database_manager import DatabaseManager
+from Crew.file_utils import read_csv_builtin, save_file
 from Crew.gui import CrewGUI
-import tempfile
-import os
-import tkinter as tk
 
 
 class TestCrewIntegration(unittest.TestCase):

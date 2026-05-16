@@ -16,8 +16,8 @@ class TestCursorAgentAutoPromote:
 
     def test_ai_cursor_agent_without_ai_skills_auto_promotes(self, tmp_path):
         """--ai cursor-agent should work the same as --integration cursor-agent."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         target = tmp_path / "test-proj"

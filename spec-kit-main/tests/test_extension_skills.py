@@ -11,15 +11,13 @@ Tests cover:
 """
 
 import json
-import pytest
-import tempfile
 import shutil
-import yaml
+import tempfile
 from pathlib import Path
 
-from specify_cli.extensions import (
-    ExtensionManager,
-)
+import pytest
+import yaml
+from specify_cli.extensions import ExtensionManager
 
 # ===== Helpers =====
 

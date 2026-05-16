@@ -4,7 +4,6 @@ import hashlib
 import json
 
 import pytest
-
 from specify_cli.integrations.manifest import IntegrationManifest, _sha256
 
 

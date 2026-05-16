@@ -4,10 +4,11 @@ t5_shared.py - Shared helpers for T5-test (CardCutter + Crew)
 
 # os import removed (unused)
 import csv
-import pandas as pd
-from PIL import Image, ImageDraw, ImageColor
 import logging
 from typing import Any, Optional, Tuple, Union
+
+import pandas as pd
+from PIL import Image, ImageColor, ImageDraw
 
 # Logging setup (Crew style)
 logging.basicConfig(

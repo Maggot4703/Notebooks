@@ -12,14 +12,8 @@ from PIL import Image
 # Add parent directory to path to import Crew module
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from Crew import (
-    DEFAULT_GRID_COLOR,
-    DEFAULT_GRID_SIZE,
-    DEFAULT_LINE_COLOR,
-    IMAGE_DIMENSIONS,
-    markHorizontalLine,
-    overlayGrid,
-)
+from Crew import (DEFAULT_GRID_COLOR, DEFAULT_GRID_SIZE, DEFAULT_LINE_COLOR,
+                  IMAGE_DIMENSIONS, markHorizontalLine, overlayGrid)
 
 
 class TestImageProcessing(unittest.TestCase):

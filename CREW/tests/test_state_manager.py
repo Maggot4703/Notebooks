@@ -4,6 +4,7 @@ Covers window state loading, saving, and column width management.
 """
 
 import unittest
+
 from state_manager import StateManager
 
 

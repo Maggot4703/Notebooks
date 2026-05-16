@@ -9,30 +9,22 @@ Tests cover:
 - Catalog stack (multi-catalog support)
 """
 
-import pytest
 import json
-import tempfile
 import shutil
+import tempfile
 import tomllib
-from pathlib import Path
 from datetime import datetime, timezone
+from pathlib import Path
 
+import pytest
+from specify_cli.extensions import (CORE_COMMAND_NAMES, CatalogEntry,
+                                    CommandRegistrar, CompatibilityError,
+                                    ExtensionCatalog, ExtensionError,
+                                    ExtensionManager, ExtensionManifest,
+                                    ExtensionRegistry, HookExecutor,
+                                    ValidationError, normalize_priority,
+                                    version_satisfies)
 from tests.conftest import strip_ansi
-from specify_cli.extensions import (
-    CatalogEntry,
-    CORE_COMMAND_NAMES,
-    ExtensionManifest,
-    ExtensionRegistry,
-    ExtensionManager,
-    CommandRegistrar,
-    HookExecutor,
-    ExtensionCatalog,
-    ExtensionError,
-    ValidationError,
-    CompatibilityError,
-    normalize_priority,
-    version_satisfies,
-)
 
 # ===== Fixtures =====
 
@@ -1021,7 +1013,8 @@ $ARGUMENTS
 
     def test_adjust_script_paths_does_not_mutate_input(self):
         """Path adjustments should not mutate caller-owned frontmatter dicts."""
-        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import \
+            CommandRegistrar as AgentCommandRegistrar
 
         registrar = AgentCommandRegistrar()
         original = {
@@ -1043,7 +1036,8 @@ $ARGUMENTS
 
     def test_adjust_script_paths_preserves_extension_local_paths(self):
         """Extension-local script paths should not be rewritten into .specify/.specify."""
-        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import \
+            CommandRegistrar as AgentCommandRegistrar
 
         registrar = AgentCommandRegistrar()
         original = {
@@ -1066,7 +1060,8 @@ $ARGUMENTS
 
     def test_rewrite_project_relative_paths_preserves_extension_local_body_paths(self):
         """Body rewrites should preserve extension-local assets while fixing top-level refs."""
-        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import \
+            CommandRegistrar as AgentCommandRegistrar
 
         body = (
             "Read `.specify/extensions/test-ext/templates/spec.md`\n"
@@ -1080,7 +1075,8 @@ $ARGUMENTS
 
     def test_render_toml_command_handles_embedded_triple_double_quotes(self):
         """TOML renderer should stay valid when body includes triple double-quotes."""
-        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import \
+            CommandRegistrar as AgentCommandRegistrar
 
         registrar = AgentCommandRegistrar()
         output = registrar.render_toml_command(
@@ -1094,7 +1090,8 @@ $ARGUMENTS
 
     def test_render_toml_command_escapes_when_both_triple_quote_styles_exist(self):
         """If body has both triple quote styles, fall back to escaped basic string."""
-        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import \
+            CommandRegistrar as AgentCommandRegistrar
 
         registrar = AgentCommandRegistrar()
         output = registrar.render_toml_command(
@@ -1109,7 +1106,8 @@ $ARGUMENTS
 
     def test_render_toml_command_preserves_multiline_description(self):
         """Multiline descriptions should render as parseable TOML with preserved semantics."""
-        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import \
+            CommandRegistrar as AgentCommandRegistrar
 
         registrar = AgentCommandRegistrar()
         output = registrar.render_toml_command(
@@ -3040,9 +3038,10 @@ class TestExtensionAddCLI:
 
     def test_add_by_display_name_uses_resolved_id_for_download(self, tmp_path):
         """extension add by display name should use resolved ID for download_extension()."""
-        from typer.testing import CliRunner
-        from unittest.mock import patch, MagicMock
+        from unittest.mock import MagicMock, patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -3152,6 +3151,7 @@ class TestExtensionUpdateCLI:
     def _create_catalog_zip(zip_path: Path, version: str):
         """Create a minimal ZIP that passes extension_update ID validation."""
         import zipfile
+
         import yaml
 
         manifest = {
@@ -3175,9 +3175,10 @@ class TestExtensionUpdateCLI:
 
     def test_update_success_preserves_installed_at(self, tmp_path):
         """Successful update should keep original installed_at and apply new version."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         project_dir = tmp_path / "project"
@@ -3234,10 +3235,11 @@ class TestExtensionUpdateCLI:
 
     def test_update_failure_rolls_back_registry_hooks_and_commands(self, tmp_path):
         """Failed update should restore original registry, hooks, and command files."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
-        from specify_cli import app
+
         import yaml
+        from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         project_dir = tmp_path / "project"
@@ -3327,9 +3329,10 @@ class TestExtensionListCLI:
 
     def test_list_shows_extension_id(self, extension_dir, project_dir):
         """extension list should display the extension ID."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -3557,9 +3560,10 @@ class TestExtensionPriorityCLI:
 
     def test_add_with_priority_option(self, extension_dir, project_dir):
         """Test extension add command with --priority option."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -3577,9 +3581,10 @@ class TestExtensionPriorityCLI:
 
     def test_list_shows_priority(self, extension_dir, project_dir):
         """Test extension list shows priority."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -3598,9 +3603,10 @@ class TestExtensionPriorityCLI:
 
     def test_set_priority_changes_priority(self, extension_dir, project_dir):
         """Test set-priority command changes extension priority."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -3624,9 +3630,10 @@ class TestExtensionPriorityCLI:
 
     def test_set_priority_same_value_no_change(self, extension_dir, project_dir):
         """Test set-priority with same value shows already set message."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -3645,9 +3652,10 @@ class TestExtensionPriorityCLI:
 
     def test_set_priority_invalid_value(self, extension_dir, project_dir):
         """Test set-priority rejects invalid priority values."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -3663,9 +3671,10 @@ class TestExtensionPriorityCLI:
 
     def test_set_priority_not_installed(self, project_dir):
         """Test set-priority fails for non-installed extension."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -3685,9 +3694,10 @@ class TestExtensionPriorityCLI:
 
     def test_set_priority_by_display_name(self, extension_dir, project_dir):
         """Test set-priority works with extension display name."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 

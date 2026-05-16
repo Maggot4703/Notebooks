@@ -1,7 +1,7 @@
 import os
 import tempfile
-import unittest
 import tkinter as tk
+import unittest
 from unittest.mock import patch
 
 # Ensure gui.py is importable

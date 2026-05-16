@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 
 import asyncio
-import subprocess
-import sys
 import os
 import re
-from copilot import (
-    CopilotClient,
-    SessionConfig,
-    MessageOptions,
-    SessionEvent,
-    PermissionHandler,
-)
+import subprocess
+import sys
+
+from copilot import (CopilotClient, MessageOptions, PermissionHandler,
+                     SessionConfig, SessionEvent)
 
 # ============================================================================
 # Git & GitHub Detection

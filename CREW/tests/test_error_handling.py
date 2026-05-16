@@ -1,5 +1,7 @@
 import unittest
-from Crew.file_utils import read_file, read_csv_builtin, read_csv_pandas, read_excel
+
+from Crew.file_utils import (read_csv_builtin, read_csv_pandas, read_excel,
+                             read_file)
 
 
 class TestErrorHandling(unittest.TestCase):

@@ -3,10 +3,10 @@ traveller_agent.py
 Auto-discovers and exposes all TRAVELLERMAP scripts as both CLI commands and Python callables.
 """
 
-import os
-import importlib.util
 import ast
-from typing import Callable, Dict, Any
+import importlib.util
+import os
+from typing import Any, Callable, Dict
 
 # Determine paths relative to this file for robust operation in different environments
 HERE = os.path.abspath(os.path.dirname(__file__))

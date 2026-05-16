@@ -12,10 +12,11 @@ Usage:
 """
 
 import argparse
-from reportlab.lib.pagesizes import letter, landscape
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
+
 from reportlab.lib import colors
-from sector_utils import load_sector_data, SECTOR_HEADERS
+from reportlab.lib.pagesizes import landscape, letter
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
+from sector_utils import SECTOR_HEADERS, load_sector_data
 
 
 def parse_args():

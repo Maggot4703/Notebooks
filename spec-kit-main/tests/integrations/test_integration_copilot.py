@@ -175,8 +175,8 @@ class TestCopilotIntegration:
 
     def test_complete_file_inventory_sh(self, tmp_path):
         """Every file produced by specify init --integration copilot --script sh."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "inventory-sh"
         project.mkdir()
@@ -250,8 +250,8 @@ class TestCopilotIntegration:
 
     def test_complete_file_inventory_ps(self, tmp_path):
         """Every file produced by specify init --integration copilot --script ps."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "inventory-ps"
         project.mkdir()

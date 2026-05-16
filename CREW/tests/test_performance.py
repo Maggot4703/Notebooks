@@ -1,7 +1,8 @@
-import unittest
-import time
 import tempfile
-from Crew.file_utils import save_file, read_csv_builtin
+import time
+import unittest
+
+from Crew.file_utils import read_csv_builtin, save_file
 
 
 class TestPerformance(unittest.TestCase):

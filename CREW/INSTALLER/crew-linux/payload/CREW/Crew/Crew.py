@@ -37,13 +37,9 @@ from utils import log_progress_md, show_user_error, spacer
 
 # Local imports (absolute only)
 try:
-    from image_utils import (
-        DEFAULT_GRID_COLOR,
-        DEFAULT_GRID_SIZE,
-        DEFAULT_LINE_COLOR,
-        IMAGE_DIMENSIONS,
-        _resolve_color,
-    )
+    from image_utils import (DEFAULT_GRID_COLOR, DEFAULT_GRID_SIZE,
+                             DEFAULT_LINE_COLOR, IMAGE_DIMENSIONS,
+                             _resolve_color)
 except ImportError as e:
     raise ImportError(
         "Failed to import image_utils. Ensure it is in the PYTHONPATH."

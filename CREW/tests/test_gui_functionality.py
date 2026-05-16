@@ -1,5 +1,6 @@
-import unittest
 import tkinter as tk
+import unittest
+
 from Crew.gui import CrewGUI
 
 

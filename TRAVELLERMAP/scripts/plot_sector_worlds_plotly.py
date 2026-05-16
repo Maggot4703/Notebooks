@@ -4,10 +4,11 @@ plot_sector_worlds_plotly.py
 Plot a Traveller sector's worlds using Plotly for interactive visualization.
 """
 
-import requests
-import plotly.express as px
-import pandas as pd
 import sys
+
+import pandas as pd
+import plotly.express as px
+import requests
 
 
 def fetch_sector_tab(sector="Vland"):

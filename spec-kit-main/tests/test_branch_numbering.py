@@ -31,8 +31,8 @@ class TestSaveBranchNumbering:
         assert saved["branch_numbering"] == "sequential"
 
     def test_branch_numbering_defaults_to_sequential(self, tmp_path: Path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project_dir = tmp_path / "proj"
         runner = CliRunner()
@@ -59,8 +59,8 @@ class TestBranchNumberingValidation:
     """Tests for branch_numbering CLI validation via CliRunner."""
 
     def test_invalid_branch_numbering_rejected(self, tmp_path: Path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         result = runner.invoke(
@@ -79,8 +79,8 @@ class TestBranchNumberingValidation:
         assert "Invalid --branch-numbering" in result.output
 
     def test_valid_branch_numbering_sequential(self, tmp_path: Path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         result = runner.invoke(
@@ -102,8 +102,8 @@ class TestBranchNumberingValidation:
         assert "Invalid --branch-numbering" not in (result.output or "")
 
     def test_valid_branch_numbering_timestamp(self, tmp_path: Path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         result = runner.invoke(

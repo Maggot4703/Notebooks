@@ -6,24 +6,23 @@ Extensions are modular packages that add commands and functionality to spec-kit
 without bloating the core framework.
 """
 
-import json
+import copy
 import hashlib
+import json
 import os
+import re
+import shutil
 import tempfile
 import zipfile
-import shutil
-import copy
 from dataclasses import dataclass
-from pathlib import Path
-from typing import Optional, Dict, List, Any, Callable, Set
 from datetime import datetime, timezone
-import re
+from pathlib import Path
+from typing import Any, Callable, Dict, List, Optional, Set
 
 import pathspec
-
 import yaml
 from packaging import version as pkg_version
-from packaging.specifiers import SpecifierSet, InvalidSpecifier
+from packaging.specifiers import InvalidSpecifier, SpecifierSet
 
 _FALLBACK_CORE_COMMAND_NAMES = frozenset(
     {
@@ -718,7 +717,8 @@ class ExtensionManager:
             The skills directory ``Path``, or ``None`` if skills were not
             enabled and no native-skills fallback applies.
         """
-        from . import load_init_options, _get_skills_dir as resolve_skills_dir
+        from . import _get_skills_dir as resolve_skills_dir
+        from . import load_init_options
 
         opts = load_init_options(self.project_root)
         if not isinstance(opts, dict):
@@ -761,9 +761,10 @@ class ExtensionManager:
         if not skills_dir:
             return []
 
+        import yaml
+
         from . import load_init_options
         from .agents import CommandRegistrar
-        import yaml
 
         written: List[str] = []
         opts = load_init_options(self.project_root)
@@ -1648,8 +1649,8 @@ class ExtensionCatalog:
         Raises:
             ExtensionError: If catalog cannot be fetched or has invalid format
         """
-        import urllib.request
         import urllib.error
+        import urllib.request
 
         # Determine cache file paths (backward compat for default catalog)
         if entry.url == self.DEFAULT_CATALOG_URL:
@@ -1803,8 +1804,8 @@ class ExtensionCatalog:
         catalog_url = self.get_catalog_url()
 
         try:
-            import urllib.request
             import urllib.error
+            import urllib.request
 
             with urllib.request.urlopen(catalog_url, timeout=10) as response:
                 catalog_data = json.loads(response.read())
@@ -1919,8 +1920,8 @@ class ExtensionCatalog:
         Raises:
             ExtensionError: If extension not found or download fails
         """
-        import urllib.request
         import urllib.error
+        import urllib.request
 
         # Get extension info from catalog
         ext_info = self.get_extension_info(extension_id)

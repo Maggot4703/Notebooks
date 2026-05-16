@@ -12,9 +12,10 @@ Usage:
 """
 
 import argparse
-import pandas as pd
+
 import matplotlib.pyplot as plt
-from sector_utils import load_sector_data, SECTOR_HEADERS
+import pandas as pd
+from sector_utils import SECTOR_HEADERS, load_sector_data
 
 
 def parse_args():

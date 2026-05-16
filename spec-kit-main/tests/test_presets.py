@@ -10,30 +10,22 @@ Tests cover:
 - Extension-provided templates
 """
 
-import pytest
 import json
-import tempfile
 import shutil
+import tempfile
 import zipfile
-from pathlib import Path
 from datetime import datetime, timezone
+from pathlib import Path
 
+import pytest
 import yaml
-
-from tests.conftest import strip_ansi
-from specify_cli.presets import (
-    PresetManifest,
-    PresetRegistry,
-    PresetManager,
-    PresetCatalog,
-    PresetCatalogEntry,
-    PresetResolver,
-    PresetError,
-    PresetValidationError,
-    PresetCompatibilityError,
-    VALID_PRESET_TEMPLATE_TYPES,
-)
 from specify_cli.extensions import ExtensionRegistry
+from specify_cli.presets import (VALID_PRESET_TEMPLATE_TYPES, PresetCatalog,
+                                 PresetCatalogEntry, PresetCompatibilityError,
+                                 PresetError, PresetManager, PresetManifest,
+                                 PresetRegistry, PresetResolver,
+                                 PresetValidationError)
+from tests.conftest import strip_ansi
 
 # ===== Fixtures =====
 
@@ -2051,7 +2043,7 @@ class TestInitOptions:
     """Tests for save_init_options / load_init_options helpers."""
 
     def test_save_and_load_round_trip(self, project_dir):
-        from specify_cli import save_init_options, load_init_options
+        from specify_cli import load_init_options, save_init_options
 
         opts = {"ai": "claude", "ai_skills": True, "here": False}
         save_init_options(project_dir, opts)
@@ -2688,9 +2680,10 @@ class TestPresetSetPriority:
 
     def test_set_priority_changes_priority(self, project_dir, pack_dir):
         """Test set-priority command changes preset priority."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -2714,9 +2707,10 @@ class TestPresetSetPriority:
 
     def test_set_priority_same_value_no_change(self, project_dir, pack_dir):
         """Test set-priority with same value shows already set message."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -2733,9 +2727,10 @@ class TestPresetSetPriority:
 
     def test_set_priority_invalid_value(self, project_dir, pack_dir):
         """Test set-priority rejects invalid priority values."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -2751,9 +2746,10 @@ class TestPresetSetPriority:
 
     def test_set_priority_not_installed(self, project_dir):
         """Test set-priority fails for non-installed preset."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -2849,9 +2845,10 @@ class TestPresetEnableDisable:
 
     def test_disable_preset(self, project_dir, pack_dir):
         """Test disable command sets enabled=False."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -2874,9 +2871,10 @@ class TestPresetEnableDisable:
 
     def test_enable_preset(self, project_dir, pack_dir):
         """Test enable command sets enabled=True."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -2900,9 +2898,10 @@ class TestPresetEnableDisable:
 
     def test_disable_already_disabled(self, project_dir, pack_dir):
         """Test disable on already disabled preset shows warning."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -2919,9 +2918,10 @@ class TestPresetEnableDisable:
 
     def test_enable_already_enabled(self, project_dir, pack_dir):
         """Test enable on already enabled preset shows warning."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -2937,9 +2937,10 @@ class TestPresetEnableDisable:
 
     def test_disable_not_installed(self, project_dir):
         """Test disable fails for non-installed preset."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -2951,9 +2952,10 @@ class TestPresetEnableDisable:
 
     def test_enable_not_installed(self, project_dir):
         """Test enable fails for non-installed preset."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -2998,9 +3000,10 @@ class TestPresetEnableDisable:
 
     def test_enable_corrupted_registry_entry(self, project_dir, pack_dir):
         """Test enable fails gracefully for corrupted registry entry."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 
@@ -3018,9 +3021,10 @@ class TestPresetEnableDisable:
 
     def test_disable_corrupted_registry_entry(self, project_dir, pack_dir):
         """Test disable fails gracefully for corrupted registry entry."""
-        from typer.testing import CliRunner
         from unittest.mock import patch
+
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
 

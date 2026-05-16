@@ -5,11 +5,12 @@ Version: 1.0.0
 Last modified: 02-03-2026
 """
 
+import multiprocessing
 import os
 import sys
 import time
+
 import pandas as pd
-import multiprocessing
 
 # =============================================================================
 # System Configuration
@@ -37,19 +38,15 @@ def _ensure_references_on_path():
 
 _ensure_references_on_path()
 
+from references.analysis import (drop_abnormal_ym, drop_highcorr_features,
+                                 drop_highmiss_features,
+                                 drop_highnoise_features,
+                                 drop_highpsi_features, drop_lowiv_features,
+                                 export_cleaning_report,
+                                 iv_distribution_by_org,
+                                 psi_distribution_by_org,
+                                 value_ratio_distribution_by_org)
 from references.func import get_dataset, missing_check, org_analysis
-from references.analysis import (
-    drop_abnormal_ym,
-    drop_highmiss_features,
-    drop_lowiv_features,
-    drop_highcorr_features,
-    drop_highpsi_features,
-    drop_highnoise_features,
-    export_cleaning_report,
-    iv_distribution_by_org,
-    psi_distribution_by_org,
-    value_ratio_distribution_by_org,
-)
 
 # ==================== Path Configuration (Interactive Input) ====================
 # Use 50-column test data as default, support interactive modification in command line

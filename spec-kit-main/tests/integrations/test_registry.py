@@ -1,13 +1,10 @@
 """Tests for INTEGRATION_REGISTRY — mechanics, completeness, and registrar alignment."""
 
 import pytest
-
-from specify_cli.integrations import (
-    INTEGRATION_REGISTRY,
-    _register,
-    get_integration,
-)
+from specify_cli.integrations import (INTEGRATION_REGISTRY, _register,
+                                      get_integration)
 from specify_cli.integrations.base import MarkdownIntegration
+
 from .conftest import StubIntegration
 
 # Every integration key that must be registered (Stage 2 + Stage 3 + Stage 4 + Stage 5).

@@ -3552,7 +3552,6 @@ class CrewGUI:
         """Start recording with the given device name (but pass index for robustness)."""
         import pyaudio
         import speech_recognition as sr
-
         from audio_manager import start_recording
 
         try:
@@ -3671,7 +3670,8 @@ class CrewGUI:
 
         def task():
             try:
-                from ReadMine import DocumentationFetcher, format_readmine_summary
+                from ReadMine import (DocumentationFetcher,
+                                      format_readmine_summary)
 
                 summary = DocumentationFetcher(base_dir=READMINE_OUTPUT_DIR).process()
                 summary["message"] = format_readmine_summary(summary)

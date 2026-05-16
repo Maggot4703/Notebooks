@@ -25,7 +25,7 @@ import json
 import sys
 import uuid
 from pathlib import Path
-from typing import Dict, List, Any, Tuple
+from typing import Any, Dict, List, Tuple
 
 
 def generate_unique_id() -> str:

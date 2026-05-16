@@ -51,7 +51,8 @@ class TestBasicApp(unittest.TestCase):
     def test_constants_accessible(self):
         """Test that important constants are accessible."""
         try:
-            from globals import DEFAULT_GRID_COLOR, DEFAULT_LINE_COLOR, IMAGE_DIMENSIONS
+            from globals import (DEFAULT_GRID_COLOR, DEFAULT_LINE_COLOR,
+                                 IMAGE_DIMENSIONS)
 
             self.assertIsInstance(IMAGE_DIMENSIONS, tuple)
             self.assertIsInstance(DEFAULT_LINE_COLOR, str)

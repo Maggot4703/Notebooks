@@ -33,8 +33,8 @@ def _extract_text_pdfplumber(pdf_path: Path) -> str:
 
 def _extract_text_ocr(pdf_path: Path) -> str:
     try:
-        from pdf2image import convert_from_path
         import pytesseract
+        from pdf2image import convert_from_path
     except ImportError as exc:
         print(
             f"ERROR: OCR dependencies missing. Install with:\n"

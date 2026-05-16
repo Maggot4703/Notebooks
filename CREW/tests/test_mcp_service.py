@@ -1,22 +1,18 @@
 import json
+import os
+import sys
 import unittest
-import numpy as np
-import pandas as pd
 from unittest.mock import MagicMock, patch
 
-
-import sys
-import os
+import numpy as np
+import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import mcp_service
-
 # Import the tested functions directly for test scope
-from mcp_service import (
-    gather_context_data_from_dataframe,
-    format_data_as_mcp,
-    get_mcp_context_for_npcs,
-)
+from mcp_service import (format_data_as_mcp,
+                         gather_context_data_from_dataframe,
+                         get_mcp_context_for_npcs)
 
 
 class TestCustomEncoder(unittest.TestCase):

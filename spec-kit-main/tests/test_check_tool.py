@@ -5,7 +5,7 @@ Covers issue https://github.com/github/spec-kit/issues/550:
   installed via npm-local (the default `claude` installer path).
 """
 
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
 
 from specify_cli import check_tool
 

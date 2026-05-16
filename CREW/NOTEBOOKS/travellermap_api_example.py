@@ -1,8 +1,8 @@
 # Traveller Map API Integration Example
 # Requirements: requests (install with pip if needed)
 
-import requests
 import pandas as pd
+import requests
 
 # Example 1: Fetch sector metadata (JSON)
 sector = "Spinward Marches"

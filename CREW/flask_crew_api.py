@@ -1,22 +1,14 @@
-from flask import Flask, jsonify, request
 import os
 
+from flask import Flask, jsonify, request
+
 try:
-    from Crew.Crew import (
-        get_project_info,
-        process_images,
-        process_csv_data,
-        process_excel_data,
-        crop_from_annotations,
-    )
+    from Crew.Crew import (crop_from_annotations, get_project_info,
+                           process_csv_data, process_excel_data,
+                           process_images)
 except ImportError:
-    from Crew import (
-        get_project_info,
-        process_images,
-        process_csv_data,
-        process_excel_data,
-        crop_from_annotations,
-    )
+    from Crew import (crop_from_annotations, get_project_info,
+                      process_csv_data, process_excel_data, process_images)
 
 app = Flask(__name__)
 

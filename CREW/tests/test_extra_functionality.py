@@ -1,12 +1,11 @@
 """Tests for extra functionality additions in Crew.py."""
 
 import csv
+import os
+import sys
 from pathlib import Path
 
 from PIL import Image
-
-import sys
-import os
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from Crew import crop_from_annotations, hex_to_rgb, process_images

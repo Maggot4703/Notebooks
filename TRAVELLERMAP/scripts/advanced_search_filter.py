@@ -21,8 +21,8 @@ Sector file must be in standard Traveller tab-delimited format.
 """
 
 import argparse
-import sys
 import os
+import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "utils"))
 from sector_utils import load_sector_data

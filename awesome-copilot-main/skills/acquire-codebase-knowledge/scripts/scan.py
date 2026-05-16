@@ -14,10 +14,10 @@ Exit codes:
   1  Usage error
 """
 
-import os
-import sys
 import argparse
+import os
 import subprocess
+import sys
 from pathlib import Path
 from typing import List
 

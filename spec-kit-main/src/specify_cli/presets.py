@@ -8,21 +8,21 @@ customize the Spec-Driven Development workflow.
 """
 
 import copy
-import json
 import hashlib
+import json
 import os
+import re
+import shutil
 import tempfile
 import zipfile
-import shutil
 from dataclasses import dataclass
-from pathlib import Path
-from typing import Optional, Dict, List, Any
 from datetime import datetime, timezone
-import re
+from pathlib import Path
+from typing import Any, Dict, List, Optional
 
 import yaml
 from packaging import version as pkg_version
-from packaging.specifiers import SpecifierSet, InvalidSpecifier
+from packaging.specifiers import InvalidSpecifier, SpecifierSet
 
 from .extensions import ExtensionRegistry, normalize_priority
 
@@ -559,7 +559,7 @@ class PresetManager:
             The skills directory ``Path``, or ``None`` if skills were not
             enabled and no native-skills fallback applies.
         """
-        from . import load_init_options, _get_skills_dir
+        from . import _get_skills_dir, load_init_options
 
         opts = load_init_options(self.project_root)
         if not isinstance(opts, dict):
@@ -1404,8 +1404,8 @@ class PresetCatalog:
                 pass
 
         try:
-            import urllib.request
             import urllib.error
+            import urllib.request
 
             with urllib.request.urlopen(entry.url, timeout=10) as response:
                 catalog_data = json.loads(response.read())
@@ -1499,8 +1499,8 @@ class PresetCatalog:
                 pass
 
         try:
-            import urllib.request
             import urllib.error
+            import urllib.request
 
             with urllib.request.urlopen(catalog_url, timeout=10) as response:
                 catalog_data = json.loads(response.read())
@@ -1610,8 +1610,8 @@ class PresetCatalog:
         Raises:
             PresetError: If pack not found or download fails
         """
-        import urllib.request
         import urllib.error
+        import urllib.request
 
         pack_info = self.get_pack_info(pack_id)
         if not pack_info:

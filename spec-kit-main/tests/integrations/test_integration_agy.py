@@ -16,8 +16,8 @@ class TestAgyAutoPromote:
 
     def test_ai_agy_without_ai_skills_auto_promotes(self, tmp_path):
         """--ai agy should work the same as --integration agy."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         target = tmp_path / "test-proj"

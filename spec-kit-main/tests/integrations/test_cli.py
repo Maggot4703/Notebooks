@@ -8,8 +8,8 @@ import yaml
 
 class TestInitIntegrationFlag:
     def test_integration_and_ai_mutually_exclusive(self, tmp_path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         result = runner.invoke(
@@ -27,8 +27,8 @@ class TestInitIntegrationFlag:
         assert "mutually exclusive" in result.output
 
     def test_unknown_integration_rejected(self, tmp_path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         result = runner.invoke(
@@ -44,8 +44,8 @@ class TestInitIntegrationFlag:
         assert "Unknown integration" in result.output
 
     def test_integration_copilot_creates_files(self, tmp_path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         runner = CliRunner()
         project = tmp_path / "int-test"
@@ -103,8 +103,8 @@ class TestInitIntegrationFlag:
         assert shared_manifest.exists()
 
     def test_ai_copilot_auto_promotes(self, tmp_path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "promote-test"
         project.mkdir()
@@ -131,8 +131,8 @@ class TestInitIntegrationFlag:
         assert (project / ".github" / "agents" / "speckit.plan.agent.md").exists()
 
     def test_ai_claude_here_preserves_preexisting_commands(self, tmp_path):
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "claude-here-existing"
         project.mkdir()
@@ -175,8 +175,8 @@ class TestInitIntegrationFlag:
 
     def test_shared_infra_skips_existing_files(self, tmp_path):
         """Pre-existing shared files are not overwritten by _install_shared_infra."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "skip-test"
         project.mkdir()
@@ -234,8 +234,8 @@ class TestForceExistingDirectory:
 
     def test_force_merges_into_existing_dir(self, tmp_path):
         """specify init <dir> --force succeeds when the directory already exists."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         target = tmp_path / "existing-proj"
         target.mkdir()
@@ -270,8 +270,8 @@ class TestForceExistingDirectory:
 
     def test_without_force_errors_on_existing_dir(self, tmp_path):
         """specify init <dir> without --force errors when directory exists."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         target = tmp_path / "existing-proj"
         target.mkdir()
@@ -300,8 +300,8 @@ class TestGitExtensionAutoInstall:
 
     def test_git_extension_auto_installed(self, tmp_path):
         """Without --no-git, the git extension is installed during init."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "git-auto"
         project.mkdir()
@@ -349,8 +349,8 @@ class TestGitExtensionAutoInstall:
 
     def test_no_git_skips_extension(self, tmp_path):
         """With --no-git, the git extension is NOT installed."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "no-git"
         project.mkdir()
@@ -385,8 +385,8 @@ class TestGitExtensionAutoInstall:
 
     def test_git_extension_commands_registered(self, tmp_path):
         """Git extension commands are registered with the agent during init."""
-        from typer.testing import CliRunner
         from specify_cli import app
+        from typer.testing import CliRunner
 
         project = tmp_path / "git-cmds"
         project.mkdir()

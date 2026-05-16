@@ -1,15 +1,16 @@
 """Data processing functions module"""
 
-import pandas as pd
-import numpy as np
-import toad
-from typing import List, Dict, Tuple
-import tqdm
 from datetime import datetime
+from typing import Dict, List, Tuple
+
+import numpy as np
+import pandas as pd
+import toad
+import tqdm
 
 try:
     from openpyxl import Workbook
-    from openpyxl.styles import Font, PatternFill, Alignment
+    from openpyxl.styles import Alignment, Font, PatternFill
 
     HAS_OPENPYXL = True
 except:
