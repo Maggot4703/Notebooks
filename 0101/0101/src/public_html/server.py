@@ -21,6 +21,7 @@ import shlex
 import sys
 import threading
 import time
+import uuid
 import webbrowser
 import sqlite3
 from urllib.parse import quote, unquote, urlsplit, parse_qs
@@ -30,7 +31,9 @@ WEB_ROOT = os.path.dirname(__file__)
 SAVED_DIR = os.path.join(WEB_ROOT, "saved")
 # Optional push target for mirroring saved notes to a desktop on another host.
 # Set DESKTOP_PUSH_TARGET env var to e.g. 'me@home:~/Desktop/0101_notes/' to enable.
-DESKTOP_PUSH_TARGET = os.environ.get('DESKTOP_PUSH_TARGET', 'me@home:~/Desktop/0101_notes/')
+DESKTOP_PUSH_TARGET = os.environ.get(
+    "DESKTOP_PUSH_TARGET", "me@home:~/Desktop/0101_notes/"
+)
 KEY_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 DEFAULT_0101_WINDOW_WIDTH = 720
 DEFAULT_0101_WINDOW_HEIGHT = 1180
@@ -444,6 +447,71 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return
 
         # Fallback to existing behavior
+        # API: health check and push_queue listing and retrieval
+        if request_path == "/api/health":
+            # Simple health endpoint for readiness checks
+            self._touch_ping()
+            payload = {"status": "ok", "ts": int(time.time())}
+            data = json.dumps(payload).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+            return
+
+        if request_path.startswith("/api/push-queue"):
+            self._touch_ping()
+            qdir = os.path.join(SAVED_DIR, "push_queue")
+            os.makedirs(qdir, exist_ok=True)
+            # list all jobs
+            if request_path.rstrip("/") == "/api/push-queue":
+                items = []
+                for name in sorted(os.listdir(qdir)):
+                    pathf = os.path.join(qdir, name)
+                    try:
+                        with open(pathf, "r", encoding="utf-8") as fh:
+                            j = json.load(fh)
+                        items.append(
+                            {
+                                "file": name,
+                                "src": j.get("src"),
+                                "target": j.get("target"),
+                                "ts": j.get("ts"),
+                                "attempts": j.get("attempts", 0),
+                            }
+                        )
+                    except Exception:
+                        continue
+                data = json.dumps(items).encode("utf-8")
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Content-Length", str(len(data)))
+                self.end_headers()
+                self.wfile.write(data)
+                print(f"push_queue: listed {len(items)} jobs")
+                return
+            # GET specific job file
+            m = re.match(r"^/api/push-queue/([^/]+)/?$", request_path)
+            if m:
+                jobfile = unquote(m.group(1))
+                jobpath = os.path.join(qdir, jobfile)
+                if not os.path.isfile(jobpath):
+                    self.send_error(404)
+                    return
+                try:
+                    with open(jobpath, "r", encoding="utf-8") as fh:
+                        data = fh.read().encode("utf-8")
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/json; charset=utf-8")
+                    self.send_header("Content-Length", str(len(data)))
+                    self.end_headers()
+                    self.wfile.write(data)
+                    print(f"push_queue: showed {jobfile}")
+                    return
+                except Exception:
+                    self.send_error(500)
+                    return
         if request_path == "/favicon.ico":
             self.send_response(204)
             self.send_header("Content-Length", "0")
@@ -602,25 +670,32 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             try:
                 if DESKTOP_PUSH_TARGET:
                     # If target looks like a remote (user@host:/path), SSH in and remove.
-                    if ':' in DESKTOP_PUSH_TARGET and not DESKTOP_PUSH_TARGET.startswith('/'):
+                    if (
+                        ":" in DESKTOP_PUSH_TARGET
+                        and not DESKTOP_PUSH_TARGET.startswith("/")
+                    ):
                         try:
-                            host_part, remote_dir = DESKTOP_PUSH_TARGET.split(':', 1)
-                            remote_dir = remote_dir.rstrip('/')
-                            remote_file = remote_dir + '/' + os.path.basename(path)
+                            host_part, remote_dir = DESKTOP_PUSH_TARGET.split(":", 1)
+                            remote_dir = remote_dir.rstrip("/")
+                            remote_file = remote_dir + "/" + os.path.basename(path)
                             cmd = [
-                                'ssh',
-                                '-o',
-                                'BatchMode=yes',
+                                "ssh",
+                                "-o",
+                                "BatchMode=yes",
                                 host_part,
                                 "rm -f " + shlex.quote(remote_file),
                             ]
-                            subprocess.run(cmd, capture_output=True, text=True, timeout=20)
+                            subprocess.run(
+                                cmd, capture_output=True, text=True, timeout=20
+                            )
                         except Exception:
                             pass
                     else:
                         # Local directory target
                         try:
-                            dest_path = os.path.join(DESKTOP_PUSH_TARGET, os.path.basename(path))
+                            dest_path = os.path.join(
+                                DESKTOP_PUSH_TARGET, os.path.basename(path)
+                            )
                             if os.path.exists(dest_path):
                                 os.remove(dest_path)
                         except Exception:
@@ -643,20 +718,63 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     rsync_cmd = [
                         "rsync",
                         "-az",
+                        "--update",
                         "-e",
                         "ssh -o BatchMode=yes",
                         src_path,
                         target,
                     ]
-                    subprocess.run(rsync_cmd, capture_output=True, text=True, timeout=30)
+                    res = subprocess.run(
+                        rsync_cmd, capture_output=True, text=True, timeout=30
+                    )
+                    if res.returncode != 0:
+                        # enqueue for retry
+                        try:
+                            qdir = os.path.join(SAVED_DIR, "push_queue")
+                            os.makedirs(qdir, exist_ok=True)
+                            job = {
+                                "src": src_path,
+                                "target": target,
+                                "ts": time.time(),
+                                "attempts": 0,
+                            }
+                            fname = (
+                                f"pushjob-{int(time.time())}-{uuid.uuid4().hex}.json"
+                            )
+                            with open(
+                                os.path.join(qdir, fname), "w", encoding="utf-8"
+                            ) as jh:
+                                json.dump(job, jh)
+                        except Exception:
+                            pass
                 except Exception:
-                    pass
+                    # on unexpected error, enqueue job for later retry
+                    try:
+                        qdir = os.path.join(SAVED_DIR, "push_queue")
+                        os.makedirs(qdir, exist_ok=True)
+                        job = {
+                            "src": src_path,
+                            "target": target,
+                            "ts": time.time(),
+                            "attempts": 0,
+                        }
+                        fname = f"pushjob-{int(time.time())}-{uuid.uuid4().hex}.json"
+                        with open(
+                            os.path.join(qdir, fname), "w", encoding="utf-8"
+                        ) as jh:
+                            json.dump(job, jh)
+                    except Exception:
+                        pass
 
             try:
                 import threading
 
                 if DESKTOP_PUSH_TARGET:
-                    t = threading.Thread(target=_push_saved_file, args=(path, DESKTOP_PUSH_TARGET), daemon=True)
+                    t = threading.Thread(
+                        target=_push_saved_file,
+                        args=(path, DESKTOP_PUSH_TARGET),
+                        daemon=True,
+                    )
                     t.start()
             except Exception:
                 pass
@@ -667,6 +785,53 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def do_DELETE(self):
         # Support DELETE /api/text/<key> to remove saved note file
+        # Also support DELETE /api/push-queue and /api/push-queue/<jobfile>
+        request_path = urlsplit(self.path).path
+        if request_path.startswith("/api/push-queue"):
+            qdir = os.path.join(SAVED_DIR, "push_queue")
+            os.makedirs(qdir, exist_ok=True)
+            # DELETE all jobs
+            if request_path.rstrip("/") == "/api/push-queue":
+                removed = 0
+                for name in os.listdir(qdir):
+                    p = os.path.join(qdir, name)
+                    try:
+                        os.remove(p)
+                        removed += 1
+                    except Exception:
+                        pass
+                self.send_response(200)
+                body = json.dumps({"deleted": removed}).encode("utf-8")
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Content-Length", str(len(body)))
+                self.end_headers()
+                self.wfile.write(body)
+                print(f"push_queue: deleted all ({removed})")
+                return
+            m = re.match(r"^/api/push-queue/([^/]+)/?$", request_path)
+            if m:
+                jobfile = unquote(m.group(1))
+                jobpath = os.path.join(qdir, jobfile)
+                if os.path.exists(jobpath):
+                    try:
+                        os.remove(jobpath)
+                        self.send_response(200)
+                        body = json.dumps({"deleted": jobfile}).encode("utf-8")
+                        self.send_header(
+                            "Content-Type", "application/json; charset=utf-8"
+                        )
+                        self.send_header("Content-Length", str(len(body)))
+                        self.end_headers()
+                        self.wfile.write(body)
+                        print(f"push_queue: deleted {jobfile}")
+                        return
+                    except Exception:
+                        self.send_error(500)
+                        return
+                else:
+                    self.send_error(404)
+                    return
+
         key = self._api_key()
         if key is None:
             self.send_error(404)
@@ -1016,6 +1181,81 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         sys.stderr.write(f"{self.address_string()} - {fmt % args}\n")
 
 
+def _push_retry_worker(interval=10, max_attempts=10):
+    """Background worker: retry failed push jobs stored in saved/push_queue/.
+
+    Each job is a small JSON file with keys: src, target, ts, attempts.
+    The worker attempts rsync and removes the job on success, or increments
+    attempts and retries later. Jobs exceeding max_attempts are discarded.
+    """
+    qdir = os.path.join(SAVED_DIR, "push_queue")
+    os.makedirs(qdir, exist_ok=True)
+    while True:
+        try:
+            jobs = sorted(os.listdir(qdir))
+            for jobf in jobs:
+                jobpath = os.path.join(qdir, jobf)
+                try:
+                    with open(jobpath, "r", encoding="utf-8") as fh:
+                        job = json.load(fh)
+                except Exception:
+                    # corrupt job file; remove it
+                    try:
+                        os.remove(jobpath)
+                    except Exception:
+                        pass
+                    continue
+                attempts = job.get("attempts", 0)
+                if attempts >= max_attempts:
+                    try:
+                        os.remove(jobpath)
+                    except Exception:
+                        pass
+                    continue
+                src = job.get("src")
+                target = job.get("target")
+                if not (src and target):
+                    try:
+                        os.remove(jobpath)
+                    except Exception:
+                        pass
+                    continue
+                if shutil.which("rsync") is None:
+                    break
+                rsync_cmd = [
+                    "rsync",
+                    "-az",
+                    "--update",
+                    "-e",
+                    "ssh -o BatchMode=yes",
+                    src,
+                    target,
+                ]
+                try:
+                    res = subprocess.run(
+                        rsync_cmd, capture_output=True, text=True, timeout=60
+                    )
+                    if res.returncode == 0:
+                        try:
+                            os.remove(jobpath)
+                        except Exception:
+                            pass
+                    else:
+                        job["attempts"] = attempts + 1
+                        job["ts"] = time.time()
+                        try:
+                            with open(jobpath, "w", encoding="utf-8") as fh:
+                                json.dump(job, fh)
+                        except Exception:
+                            pass
+                except Exception:
+                    # leave job file for later retry
+                    pass
+            time.sleep(interval)
+        except Exception:
+            time.sleep(interval)
+
+
 def _watchdog(httpd):
     """Shut down the server if no ping is received within SHUTDOWN_TIMEOUT seconds."""
     while True:
@@ -1105,6 +1345,12 @@ def main():
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     with ReusableThreadingHTTPServer(("", PORT), Handler) as httpd:
         print(f"Serving on http://localhost:{PORT}/")
+        # Start background retry worker for any enqueued push jobs
+        try:
+            threading.Thread(target=_push_retry_worker, daemon=True).start()
+        except Exception:
+            pass
+
         threading.Thread(target=_watchdog, args=(httpd,), daemon=True).start()
         threading.Timer(
             1.0,
