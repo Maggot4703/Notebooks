@@ -4,6 +4,7 @@ retrieval_engine.py — BFS-based graph traversal for context retrieval.
 Input: seed node_ids + depth
 Output: list of node_ids within traversal depth filtered by min_confidence
 """
+
 from __future__ import annotations
 
 import sys

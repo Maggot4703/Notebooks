@@ -21,9 +21,8 @@ def parse_hex(hexstr):
     return (int(hexstr[:2]), int(hexstr[2:]))
 
 
-
 def get_sector_data(sector):
-    url = f'https://travellermap.com/api/sec?sector={sector}&type=TabDelimited'
+    url = f"https://travellermap.com/api/sec?sector={sector}&type=TabDelimited"
     try:
         resp = requests.get(url)
         resp.raise_for_status()
@@ -32,33 +31,34 @@ def get_sector_data(sector):
         print(f"[ERROR] Failed to load sector data: {e}")
         sys.exit(2)
 
+
 # Base type codes (move outside of function)
 BASE_TYPE_CODES = {
-    'N': 'Naval Base',
-    'S': 'Scout Base',
-    'M': 'Marine Base',
-    'W': 'Way Station',
-    'K': 'Corsair Base',
-    'B': 'Base (generic)',
-    'F': 'Fleet Base',
-    'D': 'Depot',
-    'A': 'Army Base',
+    "N": "Naval Base",
+    "S": "Scout Base",
+    "M": "Marine Base",
+    "W": "Way Station",
+    "K": "Corsair Base",
+    "B": "Base (generic)",
+    "F": "Fleet Base",
+    "D": "Depot",
+    "A": "Army Base",
 }
-
 
 
 # Dynamically determine column indices from header
 def get_column_indices(header_line):
-    fields = header_line.strip().split('\t')
+    fields = header_line.strip().split("\t")
     colmap = {name.strip().lower(): idx for idx, name in enumerate(fields)}
     return colmap
 
+
 def find_world(lines, world_name, colmap):
     for line in lines:
-        if line.startswith('#') or not line.strip():
+        if line.startswith("#") or not line.strip():
             continue
-        fields = line.split('\t')
-        name_idx = colmap.get('name')
+        fields = line.split("\t")
+        name_idx = colmap.get("name")
         if name_idx is not None and len(fields) > name_idx:
             name = fields[name_idx].strip().lower()
             if name == world_name.strip().lower():
@@ -66,17 +66,16 @@ def find_world(lines, world_name, colmap):
     return None
 
 
-
 def find_bases(lines, base_types, colmap):
     bases = []
-    hex_idx = colmap.get('hex')
-    name_idx = colmap.get('name')
-    uwp_idx = colmap.get('uwp')
-    bases_idx = colmap.get('bases')
+    hex_idx = colmap.get("hex")
+    name_idx = colmap.get("name")
+    uwp_idx = colmap.get("uwp")
+    bases_idx = colmap.get("bases")
     for line in lines:
-        if line.startswith('#') or not line.strip():
+        if line.startswith("#") or not line.strip():
             continue
-        fields = line.split('\t')
+        fields = line.split("\t")
         if None in (hex_idx, name_idx, uwp_idx, bases_idx):
             continue
         if len(fields) <= max(hex_idx, name_idx, uwp_idx, bases_idx):
@@ -89,16 +88,18 @@ def find_bases(lines, base_types, colmap):
         uwp = fields[uwp_idx]
         bases_field = fields[bases_idx].lower()
         if any(b in bases_field for b in base_types):
-            bases.append({
-                'name': name,
-                'hex': parse_hex(hexloc),
-                'uwp': uwp,
-                'bases': bases_field
-            })
+            bases.append(
+                {
+                    "name": name,
+                    "hex": parse_hex(hexloc),
+                    "uwp": uwp,
+                    "bases": bases_field,
+                }
+            )
     return bases
 
-def main():
 
+def main():
 
     if len(sys.argv) < 3:
         print(
@@ -111,9 +112,7 @@ def main():
             "(e.g., N, S, A, NS, NSA). Default: NSA"
         )
         print("  [--json]: Output result as JSON")
-        print(
-            "Example: python3 find_nearest_base_kesali.py Kesali Vland N --json"
-        )
+        print("Example: python3 find_nearest_base_kesali.py Kesali Vland N --json")
         sys.exit(1)
 
     # Parse args
@@ -124,7 +123,7 @@ def main():
     output_json = False
 
     for arg in args[2:]:
-        if arg.startswith('--json'):
+        if arg.startswith("--json"):
             output_json = True
         elif not base_types:
             base_types = arg.lower()
@@ -134,7 +133,11 @@ def main():
         print("Select a base type to search for (or press Enter for ANY):")
         for code, desc in BASE_TYPE_CODES.items():
             print(f"  {code}: {desc}")
-        user_input = input("Enter base type code (e.g., N, S, A, or leave blank for ANY): ").strip().lower()
+        user_input = (
+            input("Enter base type code (e.g., N, S, A, or leave blank for ANY): ")
+            .strip()
+            .lower()
+        )
         if user_input:
             # Validate input
             valid = all(c.upper() in BASE_TYPE_CODES for c in user_input)
@@ -162,16 +165,16 @@ def main():
         print(f"World '{world}' not found in sector '{sector}'.")
         # Print all world names for debugging
         print("[DEBUG] Worlds found in sector:")
-        name_idx = colmap.get('name')
+        name_idx = colmap.get("name")
         for line in data_lines:
-            if line.startswith('#') or not line.strip():
+            if line.startswith("#") or not line.strip():
                 continue
-            fields = line.split('\t')
+            fields = line.split("\t")
             if name_idx is not None and len(fields) > name_idx:
                 print(f"  - {fields[name_idx]}")
         sys.exit(1)
-    hex_idx = colmap.get('hex')
-    uwp_idx = colmap.get('uwp')
+    hex_idx = colmap.get("hex")
+    uwp_idx = colmap.get("uwp")
     world_hex = parse_hex(world_fields[hex_idx])
     world_uwp = world_fields[uwp_idx]
     print(
@@ -185,26 +188,31 @@ def main():
     min_dist = 100
     nearest = None
     for base in bases:
-        dist = hex_distance(world_hex, base['hex'])
+        dist = hex_distance(world_hex, base["hex"])
         if dist < min_dist:
             min_dist = dist
             nearest = base
     if nearest:
         if output_json:
-            print(json.dumps({
-                "target_world": {
-                    "name": world,
-                    "hex": world_fields[2],
-                    "uwp": world_uwp
-                },
-                "nearest_base": {
-                    "name": nearest['name'],
-                    "hex": f"{nearest['hex'][0]:02d}{nearest['hex'][1]:02d}",
-                    "uwp": nearest['uwp'],
-                    "bases": nearest['bases'],
-                    "distance": min_dist
-                }
-            }, indent=2))
+            print(
+                json.dumps(
+                    {
+                        "target_world": {
+                            "name": world,
+                            "hex": world_fields[2],
+                            "uwp": world_uwp,
+                        },
+                        "nearest_base": {
+                            "name": nearest["name"],
+                            "hex": f"{nearest['hex'][0]:02d}{nearest['hex'][1]:02d}",
+                            "uwp": nearest["uwp"],
+                            "bases": nearest["bases"],
+                            "distance": min_dist,
+                        },
+                    },
+                    indent=2,
+                )
+            )
         else:
             print(
                 f"Nearest base to {world} ({world_fields[0]}) of type [{base_types}]:"
@@ -225,15 +233,14 @@ def run_tests():
     # Fake lines for world and base tests
     lines = [
         "1234\tA\tIx\tTestWorld\tA123456-7\tNS\tRemarks",
-        "5678\tB\tIx\tOtherWorld\tB654321-8\tK\tRemarks"
+        "5678\tB\tIx\tOtherWorld\tB654321-8\tK\tRemarks",
     ]
     wf = find_world(lines, "TestWorld")
     assert wf[3] == "TestWorld"
     bases = find_bases(lines, "N")
-    assert bases[0]['name'] == "TestWorld"
-    assert "N" in bases[0]['bases']
+    assert bases[0]["name"] == "TestWorld"
+    assert "N" in bases[0]["bases"]
     print("All tests passed.")
-
 
 
 if __name__ == "__main__":

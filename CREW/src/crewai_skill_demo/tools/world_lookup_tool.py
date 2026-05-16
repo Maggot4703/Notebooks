@@ -7,6 +7,7 @@ from typing import Type
 try:
     from crewai.tools import BaseTool
 except Exception:
+
     class BaseTool:
         """Fallback BaseTool used when crewai is not available locally."""
 
@@ -21,12 +22,14 @@ except Exception:
 try:
     from pydantic import BaseModel, Field
 except Exception:
+
     class BaseModel:
         """Fallback BaseModel for local demo mode without pydantic."""
 
     def Field(default, description=""):
         _ = description
         return default
+
 
 _WORLD_DATA = {
     "regina": "Regina (Spinward Marches) UWP: A788899-C",

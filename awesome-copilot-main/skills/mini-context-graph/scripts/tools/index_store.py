@@ -6,6 +6,7 @@ Handles:
 - Keyword index: token → [node_ids]
 - Persist to index.json
 """
+
 from __future__ import annotations
 
 import json
@@ -22,12 +23,62 @@ _INDEX_FILE = _DATA_DIR / "index.json"
 
 _STOPWORDS = frozenset(
     [
-        "a", "an", "the", "is", "are", "was", "were", "be", "been", "being",
-        "have", "has", "had", "do", "does", "did", "will", "would", "could",
-        "should", "may", "might", "shall", "can", "to", "of", "in", "on",
-        "at", "by", "for", "with", "from", "and", "or", "but", "not", "it",
-        "its", "this", "that", "these", "those", "i", "you", "he", "she",
-        "we", "they", "what", "which", "who", "how", "why", "when", "where",
+        "a",
+        "an",
+        "the",
+        "is",
+        "are",
+        "was",
+        "were",
+        "be",
+        "been",
+        "being",
+        "have",
+        "has",
+        "had",
+        "do",
+        "does",
+        "did",
+        "will",
+        "would",
+        "could",
+        "should",
+        "may",
+        "might",
+        "shall",
+        "can",
+        "to",
+        "of",
+        "in",
+        "on",
+        "at",
+        "by",
+        "for",
+        "with",
+        "from",
+        "and",
+        "or",
+        "but",
+        "not",
+        "it",
+        "its",
+        "this",
+        "that",
+        "these",
+        "those",
+        "i",
+        "you",
+        "he",
+        "she",
+        "we",
+        "they",
+        "what",
+        "which",
+        "who",
+        "how",
+        "why",
+        "when",
+        "where",
     ]
 )
 

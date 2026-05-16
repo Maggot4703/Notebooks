@@ -95,7 +95,7 @@ def _migrate_legacy_kimi_dotted_skills(skills_dir: Path) -> tuple[int, int]:
         if not (legacy_dir / "SKILL.md").exists():
             continue
 
-        suffix = legacy_dir.name[len("speckit."):]
+        suffix = legacy_dir.name[len("speckit.") :]
         if not suffix:
             continue
 

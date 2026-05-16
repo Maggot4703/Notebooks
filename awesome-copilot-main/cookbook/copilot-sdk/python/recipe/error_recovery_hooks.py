@@ -11,15 +11,14 @@ Requirements:
     pip install copilot-sdk
 """
 
-import asyncio
 from enum import Enum
 
 from copilot import CopilotClient, SubprocessConfig
 
-
 # ---------------------------------------------------------------------------
 # Classification enums
 # ---------------------------------------------------------------------------
+
 
 class ToolResultCategory(str, Enum):
     SHELL_ERROR = "shell_error"
@@ -28,8 +27,8 @@ class ToolResultCategory(str, Enum):
 
 
 class SDKErrorCategory(str, Enum):
-    CLIENT_ERROR = "client_error"       # 4xx — not retryable
-    TRANSIENT = "transient"             # 5xx / timeout
+    CLIENT_ERROR = "client_error"  # 4xx — not retryable
+    TRANSIENT = "transient"  # 5xx / timeout
     NON_RECOVERABLE = "non_recoverable"
 
 
@@ -77,6 +76,7 @@ CONTINUATION_MESSAGES = {
 # Classifiers
 # ---------------------------------------------------------------------------
 
+
 def classify_tool_result(tool_name: str, result_text: str) -> ToolResultCategory:
     """Classify a tool's output into a failure category."""
     result_lower = result_text.lower()
@@ -100,12 +100,15 @@ def classify_sdk_error(error_msg: str, recoverable: bool) -> SDKErrorCategory:
     if any(kw in error_lower for kw in ("401", "403", "404", "400", "422")):
         return SDKErrorCategory.CLIENT_ERROR
 
-    return SDKErrorCategory.TRANSIENT if recoverable else SDKErrorCategory.NON_RECOVERABLE
+    return (
+        SDKErrorCategory.TRANSIENT if recoverable else SDKErrorCategory.NON_RECOVERABLE
+    )
 
 
 # ---------------------------------------------------------------------------
 # SDK Hooks
 # ---------------------------------------------------------------------------
+
 
 def on_post_tool_use(input_data, env):
     """Append continuation hints to failed tool results."""
@@ -140,6 +143,7 @@ def on_error_occurred(input_data, env):
 # Demo: standalone classification test
 # ---------------------------------------------------------------------------
 
+
 def demo_classification():
     """Show classification working on sample outputs."""
     samples = [
@@ -173,6 +177,7 @@ def demo_classification():
 # ---------------------------------------------------------------------------
 # Demo: wired into a real session
 # ---------------------------------------------------------------------------
+
 
 async def demo_with_session():
     """Create a session with hooks registered (requires Copilot auth)."""

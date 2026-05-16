@@ -23,8 +23,8 @@ import json
 import sys
 import requests
 
-
 # ── Metadata ────────────────────────────────────────────────────────────────
+
 
 def get_subsector_letter(sector, subsector_arg):
     """
@@ -42,7 +42,10 @@ def get_subsector_letter(sector, subsector_arg):
         resp = requests.get(url, params={"sector": sector}, timeout=10)
         resp.raise_for_status()
     except requests.RequestException as e:
-        print(f"[ERROR] Failed to fetch metadata for sector '{sector}': {e}", file=sys.stderr)
+        print(
+            f"[ERROR] Failed to fetch metadata for sector '{sector}': {e}",
+            file=sys.stderr,
+        )
         sys.exit(2)
 
     data = resp.json()
@@ -65,6 +68,7 @@ def get_subsector_letter(sector, subsector_arg):
 
 
 # ── Sector data ──────────────────────────────────────────────────────────────
+
 
 def fetch_tab_delimited(sector, subsector_letter):
     """
@@ -133,6 +137,7 @@ def parse_worlds(lines):
 
 
 # ── Entry point ──────────────────────────────────────────────────────────────
+
 
 def main():
     parser = argparse.ArgumentParser(

@@ -1,0 +1,18 @@
+{
+  "page_number": 21,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page021/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "44/08/2020 Spinward Marches\nSpinward Marches/H Rhylanor/2716 Rhylanor\n\n©\n\nA434934-F\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\nSize=4\nDIGIT DIA(MI) DIA(KM)\n4 4,000 6,400\n\nAtmosphere = 3\nDIGIT DESCRIPTION EFFECTS\n3 VThin S2\n\nHydrosphere = 4\nDIGIT DESCRIPTION\n4.40%\n\nPopulation = 9\nPOPULATION UNDER 8,000,000,000\nDIGIT DESCRIPTION VALUE\n9 Billion ,000,000,000\n\nGovernment = 3\nDIGIT DESCRIPTION NOTE\n3 Self Perpetuating Oligarchy Ruk by a restricted minority with little or no input from the masses\n\nLaw Level= 4\nDIGIT DESCRIPTION NOTE\n4 Moderate Law Laser, Beam weapons prohibited\n\n‘Tech Level =F\nDIGIT\nF\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 13/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page021/page_full.png"
+}

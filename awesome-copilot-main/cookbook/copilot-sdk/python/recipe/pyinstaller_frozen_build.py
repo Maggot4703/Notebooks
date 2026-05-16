@@ -21,10 +21,10 @@ from pathlib import Path
 
 from copilot import CopilotClient, SubprocessConfig
 
-
 # ---------------------------------------------------------------------------
 # CLI binary resolution
 # ---------------------------------------------------------------------------
+
 
 def resolve_cli_path() -> str | None:
     """Find the Copilot CLI binary in a frozen build.
@@ -38,6 +38,7 @@ def resolve_cli_path() -> str | None:
     # 1. SDK's normal resolution (works in non-frozen builds)
     try:
         import copilot as pkg
+
         candidates.append(Path(pkg.__file__).parent / "bin" / binary)
     except Exception:
         pass
@@ -62,6 +63,7 @@ def resolve_cli_path() -> str | None:
 # SSL certificate setup
 # ---------------------------------------------------------------------------
 
+
 def ensure_ssl_certs():
     """Inject certifi's CA bundle into the environment.
 
@@ -73,6 +75,7 @@ def ensure_ssl_certs():
 
     try:
         import certifi
+
         ca = certifi.where()
         if Path(ca).is_file():
             os.environ["SSL_CERT_FILE"] = ca
@@ -85,6 +88,7 @@ def ensure_ssl_certs():
 # ---------------------------------------------------------------------------
 # Client factory
 # ---------------------------------------------------------------------------
+
 
 async def create_frozen_client() -> CopilotClient:
     """Create a CopilotClient that works in both normal and frozen builds."""
@@ -108,6 +112,7 @@ async def create_frozen_client() -> CopilotClient:
 # ---------------------------------------------------------------------------
 # Demo
 # ---------------------------------------------------------------------------
+
 
 async def main():
     frozen = getattr(sys, "frozen", False)

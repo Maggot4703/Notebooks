@@ -17,12 +17,17 @@ from sector_utils import load_sector_data, SECTOR_HEADERS
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Export sector/world data to plain text or CSV.")
-    parser.add_argument("sector_file", help="Path to sector file (.sec or tab-delimited)")
-    parser.add_argument("--format", choices=["text", "csv"], default="text", help="Export format")
+    parser = argparse.ArgumentParser(
+        description="Export sector/world data to plain text or CSV."
+    )
+    parser.add_argument(
+        "sector_file", help="Path to sector file (.sec or tab-delimited)"
+    )
+    parser.add_argument(
+        "--format", choices=["text", "csv"], default="text", help="Export format"
+    )
     parser.add_argument("--output", help="Output file (default: stdout)")
     return parser.parse_args()
-
 
 
 def main():
@@ -37,7 +42,12 @@ def main():
         sys.exit(1)
     if args.format == "csv":
         import csv
-        out = open(args.output, 'w', newline='', encoding='utf-8') if args.output else sys.stdout
+
+        out = (
+            open(args.output, "w", newline="", encoding="utf-8")
+            if args.output
+            else sys.stdout
+        )
         writer = csv.writer(out)
         writer.writerow(SECTOR_HEADERS)
         for row in rows:
@@ -50,10 +60,11 @@ def main():
             lines.append("\t".join(row[:11]))
         output = "\n".join(lines)
         if args.output:
-            with open(args.output, 'w', encoding='utf-8') as out:
+            with open(args.output, "w", encoding="utf-8") as out:
                 out.write(output)
         else:
             print(output)
+
 
 if __name__ == "__main__":
     main()

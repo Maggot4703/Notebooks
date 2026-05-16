@@ -3,10 +3,12 @@
 plot_sector_worlds_plotly.py
 Plot a Traveller sector's worlds using Plotly for interactive visualization.
 """
+
 import requests
 import plotly.express as px
 import pandas as pd
 import sys
+
 
 def fetch_sector_tab(sector="Vland"):
     url = f"https://travellermap.com/data/{sector}.tab"
@@ -18,6 +20,7 @@ def fetch_sector_tab(sector="Vland"):
     df = pd.DataFrame(data, columns=header)
     return df
 
+
 def parse_hex_coords(hex_str):
     # Traveller hexes: e.g., '0101' => (1, 1)
     try:
@@ -26,6 +29,7 @@ def parse_hex_coords(hex_str):
         return x, y
     except Exception:
         return None, None
+
 
 def plot_sector(df, sector_name="Vland"):
     df = df.copy()
@@ -45,10 +49,12 @@ def plot_sector(df, sector_name="Vland"):
     fig.update_yaxes(autorange="reversed")
     fig.show()
 
+
 def main():
     sector = sys.argv[1] if len(sys.argv) > 1 else "Vland"
     df = fetch_sector_tab(sector)
     plot_sector(df, sector)
+
 
 if __name__ == "__main__":
     main()

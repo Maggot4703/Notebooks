@@ -1,2 +1,3 @@
 cd /home/me/Notebooks/CREW/BACKUP
 use 7zip with maximum compresssion to compress and archive all folders whose filenames start with 'Crew' that are not already present in archive - and add to /home/me/Notebooks/CREW/BACKUP/CrewFolders.7z
+TEST AND VERIFY

@@ -1,6 +1,7 @@
 # plan_19_role_rotation_randomizer_code.py
 import random
 
+
 def rotate_roles(roles, candidates):
     assignments = {}
     for role in roles:
@@ -9,6 +10,7 @@ def rotate_roles(roles, candidates):
         else:
             assignments[role] = None
     return assignments
+
 
 # Example usage:
 # roles = ['Pilot', 'Medic']

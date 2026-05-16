@@ -407,7 +407,7 @@ def auto_import_py_files() -> Tuple[List[str], List[Tuple[str, str]]]:
                         )
                         continue
 
-                except (IOError, UnicodeDecodeError):
+                except IOError, UnicodeDecodeError:
                     # If we cant read the file, skip it for safety
                     files_skipped += 1
                     continue
@@ -910,7 +910,6 @@ class CrewGUI:
             self.selected_mic_index = None
             self.selected_mic_name = ""
             try:
-                import pyaudio
                 import speech_recognition as sr
 
                 self.stt_recognizer = sr.Recognizer()
@@ -1264,7 +1263,7 @@ class CrewGUI:
             value = float(
                 getattr(self, "tts_lead_in_seconds", DEFAULT_TTS_LEAD_IN_SECONDS)
             )
-        except (TypeError, ValueError):
+        except TypeError, ValueError:
             value = DEFAULT_TTS_LEAD_IN_SECONDS
         return max(0.0, value)
 
@@ -2843,7 +2842,7 @@ class CrewGUI:
             try:
                 with open(history_path, "r", encoding="utf-8") as history_file:
                     data = json.load(history_file)
-            except (FileNotFoundError, json.JSONDecodeError, OSError):
+            except FileNotFoundError, json.JSONDecodeError, OSError:
                 return []
 
             loaded_history = []
@@ -5885,7 +5884,7 @@ class CrewGUI:
                     key=lambda x: float(x[col_index]) if x[col_index] else 0,
                     reverse=self._sort_reverse,
                 )
-            except (ValueError, TypeError):
+            except ValueError, TypeError:
                 # Fall back to string sort
                 data.sort(
                     key=lambda x: str(x[col_index]).lower(),

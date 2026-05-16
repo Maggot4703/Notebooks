@@ -5,7 +5,6 @@ import shutil
 import subprocess
 import sys
 
-
 REQUIRED_COMMANDS = ("node", "npm")
 REQUIRED_MODULES = {
     "ipykernel": "ipykernel",

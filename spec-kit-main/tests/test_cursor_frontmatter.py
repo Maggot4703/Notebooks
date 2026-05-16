@@ -50,9 +50,9 @@ class TestScriptFrontmatterPattern:
             content = f.read()
         # There should be two occurrences of the .mdc check — one per function
         occurrences = content.count('if [[ "$target_file" == *.mdc ]]')
-        assert occurrences >= 2, (
-            f"Expected at least 2 .mdc frontmatter checks, found {occurrences}"
-        )
+        assert (
+            occurrences >= 2
+        ), f"Expected at least 2 .mdc frontmatter checks, found {occurrences}"
 
     def test_powershell_script_has_mdc_frontmatter_logic(self):
         """PowerShell script must also handle .mdc frontmatter."""
@@ -67,9 +67,9 @@ class TestScriptFrontmatterPattern:
             content = f.read()
         assert "alwaysApply: true" in content
         occurrences = content.count(r"\.mdc$")
-        assert occurrences >= 2, (
-            f"Expected at least 2 .mdc frontmatter checks in PS script, found {occurrences}"
-        )
+        assert (
+            occurrences >= 2
+        ), f"Expected at least 2 .mdc frontmatter checks in PS script, found {occurrences}"
 
 
 @requires_git
@@ -83,9 +83,7 @@ class TestCursorFrontmatterIntegration:
         repo.mkdir()
 
         # Init git repo
-        subprocess.run(
-            ["git", "init"], cwd=str(repo), capture_output=True, check=True
-        )
+        subprocess.run(["git", "init"], cwd=str(repo), capture_output=True, check=True)
         subprocess.run(
             ["git", "config", "user.email", "test@test.com"],
             cwd=str(repo),
@@ -102,14 +100,12 @@ class TestCursorFrontmatterIntegration:
         # Create .specify dir with config
         specify_dir = repo / ".specify"
         specify_dir.mkdir()
-        (specify_dir / "config.yaml").write_text(
-            textwrap.dedent("""\
+        (specify_dir / "config.yaml").write_text(textwrap.dedent("""\
                 project_type: webapp
                 language: python
                 framework: fastapi
                 database: N/A
-            """)
-        )
+            """))
 
         # Create template
         templates_dir = specify_dir / "templates"
@@ -246,9 +242,7 @@ class TestCursorFrontmatterIntegration:
 
         content = mdc_file.read_text()
         # Count occurrences of the frontmatter delimiter
-        assert content.count("alwaysApply: true") == 1, (
-            "Frontmatter was duplicated"
-        )
+        assert content.count("alwaysApply: true") == 1, "Frontmatter was duplicated"
 
     def test_non_mdc_file_has_no_frontmatter(self, git_repo):
         """Non-.mdc agent files (e.g., Claude) must NOT get frontmatter."""
@@ -258,6 +252,6 @@ class TestCursorFrontmatterIntegration:
         claude_file = git_repo / ".claude" / "CLAUDE.md"
         if claude_file.exists():
             content = claude_file.read_text()
-            assert not content.startswith("---"), (
-                "Non-mdc file should not have frontmatter"
-            )
+            assert not content.startswith(
+                "---"
+            ), "Non-mdc file should not have frontmatter"

@@ -16,7 +16,9 @@ _, thresh = cv2.threshold(gray, 100, 255, cv2.THRESH_BINARY_INV)
 edges = cv2.Canny(thresh, 50, 150, apertureSize=3)
 
 # Hough Line Transform to detect lines
-lines = cv2.HoughLinesP(edges, 1, np.pi/180, threshold=100, minLineLength=80, maxLineGap=10)
+lines = cv2.HoughLinesP(
+    edges, 1, np.pi / 180, threshold=100, minLineLength=80, maxLineGap=10
+)
 
 # Draw detected lines on a copy of the original image
 output = img.copy()

@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-crew:
+    name: Run CREW tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: false
+          persist-credentials: false
+
+      - name: Remove accidental gitlinks
+        run: |
+          git ls-files -s | awk '$1=="160000"{print $4}' | while read -r p; do
+            # If .gitmodules lists this path, skip removal (it's an intended submodule)
+            if [ -f .gitmodules ] && grep -q "path = $p" .gitmodules; then
+              echo "Skipping submodule path: $p"
+            else
+              git rm --cached -r "$p" || true
+            fi
+          done || true
+      - name: Init submodules (if any)
+        run: |
+          if [ -f .gitmodules ]; then
+            git submodule sync --recursive || true
+            git submodule update --init --recursive --depth 1 || true
+          fi
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.14'
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libffi-dev libssl-dev build-essential xvfb xauth
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f CREW/Crew/requirements.txt ]; then pip install -r CREW/Crew/requirements.txt; fi
+          # Ensure pytest is available in the runner
+          python -m pip install pytest
+          # Ensure commonly used test deps are present (fallback if requirements.txt missing entries)
+          python -m pip install requests
+      - name: Run pytest for CREW
+        run: |
+          # Run tests from repo root so imports resolve; use Xvfb for GUI tests
+          echo "Running tests from repo root: $(pwd)"
+          xvfb-run -s "-screen 0 1400x900x24" pytest CREW/Crew -q

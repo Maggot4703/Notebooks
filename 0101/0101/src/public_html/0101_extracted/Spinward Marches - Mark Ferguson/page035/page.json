@@ -1,0 +1,18 @@
+{
+  "page_number": 35,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page035/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020 ‘Spinward Marches\nSpinward Marches/O Glisten/2036 Glisten\n\n©\n©\n©\n\nA000986-F\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\nSize=0\nDIGIT DIA(MI) DIA(KM)\n0 Asteroid Belt varies\n\nAtmosphere = 0\nDIGIT DESCRIPTION EFFECTS\n0 Vacuum $3\n\nHydrosphere = 0\nDIGIT DESCRIPTION\n0 Desert World\n\nPopulation = 9\nPOPULATION UNDER 8,000,000,000\nDIGIT DESCRIPTION VALUE\n9 Billion ,000,000,000\n\nGovernment = 8\nDIGIT DESCRIPTION NOTE\n8 Civil Service Bureaucracy Rule by agencies employing individuals selected by merit\n\nLaw Level= 6\nDIGIT DESCRIPTION NOTE\n6 Moderate Law Pohibition of Machineguns\n\nTech Level =F\nDIGIT\nF\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 20/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page035/page_full.png"
+}

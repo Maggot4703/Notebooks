@@ -21,6 +21,57 @@
         <li><a href="System.html">Open system page</a></li>
         <li><a href="indexWorlds.html">Browse world index</a></li>
       </ul>
+
+      <section class="tm-page-card" id="rpg-embeds">
+        <h2>External RPG references</h2>
+        <p>Embedded search views (may be blocked by external sites). Use the links in Reference links if embedding is blocked.</p>
+        <div class="rpg-iframe-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0.6rem;">
+          <div>
+            <h3>Traveller Wiki</h3>
+            <iframe id="rpg-wiki-iframe" src="about:blank" title="Traveller Wiki" style="width:100%;height:300px;border:1px solid var(--tm-border);"></iframe>
+          </div>
+          <div>
+            <h3>TravellerMap</h3>
+            <iframe id="rpg-map-iframe" src="about:blank" title="TravellerMap" style="width:100%;height:300px;border:1px solid var(--tm-border);"></iframe>
+          </div>
+          <div>
+            <h3>TravellerRpg</h3>
+            <iframe id="rpg-rpg-iframe" src="about:blank" title="TravellerRpg" style="width:100%;height:300px;border:1px solid var(--tm-border);"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        (function () {
+          function getSector() {
+            var el = document.getElementById('Sector');
+            if (el && el.value) return el.value;
+            return localStorage.getItem('sec') || '';
+          }
+          function getHex() {
+            var el = document.getElementById('Sys');
+            if (el && el.value) return el.value.toLowerCase();
+            try {
+              var saved = localStorage.getItem('hexJSON');
+              if (!saved) return '';
+              var parsed = JSON.parse(saved);
+              return parsed && parsed.hex ? String(parsed.hex).toLowerCase() : '';
+            } catch (e) { return ''; }
+          }
+          var sector = getSector();
+          var hex = getHex();
+          var query = sector || '';
+          if (hex) query = query ? query + ' ' + hex : hex;
+          var wiki = 'https://travellerrpg.fandom.com/wiki/Special:Search?query=' + encodeURIComponent(query);
+          var map = 'https://duckduckgo.com/?q=site:travellermap.com+' + encodeURIComponent(query);
+          var rpg = 'https://duckduckgo.com/?q=site:travellerrpg.com+' + encodeURIComponent(query);
+          try {
+            document.getElementById('rpg-wiki-iframe').src = wiki;
+            document.getElementById('rpg-map-iframe').src = map;
+            document.getElementById('rpg-rpg-iframe').src = rpg;
+          } catch (e) {}
+        }());
+      </script>
     </section>
     <script src="persist.js"></script>
     <script src="0101-shell.js"></script>

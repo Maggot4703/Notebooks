@@ -14,7 +14,6 @@ import textwrap
 from pathlib import Path
 from typing import Any
 
-
 CONFIG_DIR = Path.home() / ".config" / "notebooks-backup"
 CONFIG_PATH = CONFIG_DIR / "config.json"
 PASSWORD_PATH = CONFIG_DIR / "restic-password.txt"
@@ -141,7 +140,9 @@ def run_command(
     )
 
 
-def run_remote(host: str, command: str, *, check: bool = True) -> subprocess.CompletedProcess[str]:
+def run_remote(
+    host: str, command: str, *, check: bool = True
+) -> subprocess.CompletedProcess[str]:
     return run_command(["ssh", host, command], check=check)
 
 
@@ -258,7 +259,9 @@ def choose_drive(
     selection: int | None,
 ) -> dict[str, Any]:
     if selection is None:
-        raw = input("Select drive number to host the shared restic repository: ").strip()
+        raw = input(
+            "Select drive number to host the shared restic repository: "
+        ).strip()
         if not raw.isdigit():
             fail("Drive selection must be a number.")
         selection = int(raw)
@@ -348,7 +351,9 @@ def ensure_repository_directory(config: dict[str, Any]) -> None:
     run_remote(host, f"mkdir -p {shlex.quote(path)}")
 
 
-def resolve_snapshot(config: dict[str, Any], snapshot: str, host_name: str | None) -> str:
+def resolve_snapshot(
+    config: dict[str, Any], snapshot: str, host_name: str | None
+) -> str:
     if snapshot != "latest":
         return snapshot
     command = ["restic", "snapshots", "--json"]
@@ -380,8 +385,7 @@ def default_prune_calendar(host_name: str) -> str:
 
 
 def render_backup_service(script_path: Path) -> str:
-    return textwrap.dedent(
-        f"""\
+    return textwrap.dedent(f"""\
         [Unit]
         Description=Run notebooks restic backup
         Wants=network-online.target
@@ -393,13 +397,11 @@ def render_backup_service(script_path: Path) -> str:
         Nice=10
         IOSchedulingClass=best-effort
         IOSchedulingPriority=7
-        """
-    )
+        """)
 
 
 def render_backup_timer(calendar: str) -> str:
-    return textwrap.dedent(
-        f"""\
+    return textwrap.dedent(f"""\
         [Unit]
         Description=Schedule notebooks restic backup
 
@@ -410,13 +412,11 @@ def render_backup_timer(calendar: str) -> str:
 
         [Install]
         WantedBy=timers.target
-        """
-    )
+        """)
 
 
 def render_prune_service(script_path: Path) -> str:
-    return textwrap.dedent(
-        f"""\
+    return textwrap.dedent(f"""\
         [Unit]
         Description=Prune notebooks restic snapshots
         Wants=network-online.target
@@ -428,13 +428,11 @@ def render_prune_service(script_path: Path) -> str:
         Nice=19
         IOSchedulingClass=best-effort
         IOSchedulingPriority=7
-        """
-    )
+        """)
 
 
 def render_prune_timer(calendar: str) -> str:
-    return textwrap.dedent(
-        f"""\
+    return textwrap.dedent(f"""\
         [Unit]
         Description=Schedule notebooks restic prune
 
@@ -444,8 +442,7 @@ def render_prune_timer(calendar: str) -> str:
 
         [Install]
         WantedBy=timers.target
-        """
-    )
+        """)
 
 
 def command_list_drives(args: argparse.Namespace) -> None:
@@ -594,10 +591,20 @@ def command_install_systemd(args: argparse.Namespace) -> None:
 
     systemd_user = Path.home() / ".config" / "systemd" / "user"
     script_path = Path(__file__).resolve()
-    write_unit(systemd_user / "notebooks-backup.service", render_backup_service(script_path))
-    write_unit(systemd_user / "notebooks-backup.timer", render_backup_timer(backup_calendar))
-    write_unit(systemd_user / "notebooks-backup-prune.service", render_prune_service(script_path))
-    write_unit(systemd_user / "notebooks-backup-prune.timer", render_prune_timer(prune_calendar))
+    write_unit(
+        systemd_user / "notebooks-backup.service", render_backup_service(script_path)
+    )
+    write_unit(
+        systemd_user / "notebooks-backup.timer", render_backup_timer(backup_calendar)
+    )
+    write_unit(
+        systemd_user / "notebooks-backup-prune.service",
+        render_prune_service(script_path),
+    )
+    write_unit(
+        systemd_user / "notebooks-backup-prune.timer",
+        render_prune_timer(prune_calendar),
+    )
 
     run_command(["systemctl", "--user", "daemon-reload"])
     if not args.no_enable:
@@ -623,16 +630,24 @@ def build_parser() -> argparse.ArgumentParser:
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    list_drives = subparsers.add_parser("list-drives", help="List mounted drives by free space.")
-    list_drives.add_argument("--host", help="SSH host that can see the candidate backup drives.")
+    list_drives = subparsers.add_parser(
+        "list-drives", help="List mounted drives by free space."
+    )
+    list_drives.add_argument(
+        "--host", help="SSH host that can see the candidate backup drives."
+    )
     list_drives.set_defaults(func=command_list_drives)
 
     select_drive = subparsers.add_parser(
         "select-drive",
         help="Choose and remember the shared repository drive.",
     )
-    select_drive.add_argument("--host", help="SSH host that will physically host the drive.")
-    select_drive.add_argument("--index", type=int, help="Drive number from list-drives output.")
+    select_drive.add_argument(
+        "--host", help="SSH host that will physically host the drive."
+    )
+    select_drive.add_argument(
+        "--index", type=int, help="Drive number from list-drives output."
+    )
     select_drive.add_argument(
         "--repository-subdir",
         default=DEFAULT_REPOSITORY_SUBDIR,
@@ -640,10 +655,14 @@ def build_parser() -> argparse.ArgumentParser:
     )
     select_drive.set_defaults(func=command_select_drive)
 
-    show_config = subparsers.add_parser("show-config", help="Show the saved backup config.")
+    show_config = subparsers.add_parser(
+        "show-config", help="Show the saved backup config."
+    )
     show_config.set_defaults(func=command_show_config)
 
-    set_sources = subparsers.add_parser("set-sources", help="Override source paths for this host.")
+    set_sources = subparsers.add_parser(
+        "set-sources", help="Override source paths for this host."
+    )
     set_sources.add_argument(
         "--source",
         action="append",
@@ -656,18 +675,26 @@ def build_parser() -> argparse.ArgumentParser:
     )
     set_sources.set_defaults(func=command_set_sources)
 
-    init_repo = subparsers.add_parser("init-repo", help="Create the shared restic repository.")
+    init_repo = subparsers.add_parser(
+        "init-repo", help="Create the shared restic repository."
+    )
     init_repo.set_defaults(func=command_init_repo)
 
-    backup = subparsers.add_parser("backup", help="Run a backup for the current machine.")
+    backup = subparsers.add_parser(
+        "backup", help="Run a backup for the current machine."
+    )
     backup.set_defaults(func=command_backup)
 
-    snapshots = subparsers.add_parser("snapshots", help="List snapshots in the repository.")
+    snapshots = subparsers.add_parser(
+        "snapshots", help="List snapshots in the repository."
+    )
     snapshots.add_argument("--host-name", help="Filter snapshots by host.")
     snapshots.set_defaults(func=command_snapshots)
 
     restore = subparsers.add_parser("restore", help="Restore files from a snapshot.")
-    restore.add_argument("--snapshot", default="latest", help="Snapshot ID or 'latest'.")
+    restore.add_argument(
+        "--snapshot", default="latest", help="Snapshot ID or 'latest'."
+    )
     restore.add_argument(
         "--host-name",
         help="Restore a snapshot for a specific host. Defaults to the current host.",
@@ -685,15 +712,21 @@ def build_parser() -> argparse.ArgumentParser:
     )
     restore.set_defaults(func=command_restore)
 
-    prune = subparsers.add_parser("prune", help="Apply retention and prune old snapshots.")
+    prune = subparsers.add_parser(
+        "prune", help="Apply retention and prune old snapshots."
+    )
     prune.set_defaults(func=command_prune)
 
     install_systemd = subparsers.add_parser(
         "install-systemd",
         help="Install user-level systemd timers for automatic backup and prune.",
     )
-    install_systemd.add_argument("--backup-calendar", help="systemd OnCalendar value for backups.")
-    install_systemd.add_argument("--prune-calendar", help="systemd OnCalendar value for prune.")
+    install_systemd.add_argument(
+        "--backup-calendar", help="systemd OnCalendar value for backups."
+    )
+    install_systemd.add_argument(
+        "--prune-calendar", help="systemd OnCalendar value for prune."
+    )
     install_systemd.add_argument(
         "--no-enable",
         action="store_true",

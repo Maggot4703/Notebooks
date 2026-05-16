@@ -4,8 +4,6 @@ import os
 from dataclasses import dataclass
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
-import pandas as pd
-
 
 @dataclass
 class FilterConfig:
@@ -268,7 +266,7 @@ class DataManager:
                             value = row[col_index]
                             try:
                                 return (0, float(value))
-                            except (ValueError, TypeError):
+                            except ValueError, TypeError:
                                 return (1, str(value).lower())
                         return (1, "")
 
@@ -289,7 +287,7 @@ class DataManager:
                     # Try to convert to number for proper numeric sorting
                     try:
                         return float(value)
-                    except (ValueError, TypeError):
+                    except ValueError, TypeError:
                         return str(value).lower()
                 return ""
 

@@ -13,6 +13,7 @@ from copilot import (
 # Main Application
 # ============================================================================
 
+
 async def main():
     print("=== Accessibility Report Generator ===\n")
 
@@ -33,18 +34,21 @@ async def main():
     client = CopilotClient()
     await client.start()
 
-    session = await client.create_session(SessionConfig(
-        model="claude-opus-4.6",
-        streaming=True,
-        mcp_servers={
-            "playwright": {
-                "type": "local",
-                "command": "npx",
-                "args": ["@playwright/mcp@latest"],
-                "tools": ["*"],
-            }
-        },
-        on_permission_request=PermissionHandler.approve_all))
+    session = await client.create_session(
+        SessionConfig(
+            model="claude-opus-4.6",
+            streaming=True,
+            mcp_servers={
+                "playwright": {
+                    "type": "local",
+                    "command": "npx",
+                    "args": ["@playwright/mcp@latest"],
+                    "tools": ["*"],
+                }
+            },
+            on_permission_request=PermissionHandler.approve_all,
+        )
+    )
 
     done = asyncio.Event()
 
@@ -114,7 +118,11 @@ async def main():
     print("\n\n=== Report Complete ===\n")
 
     # Prompt user for test generation
-    generate_tests = input("Would you like to generate Playwright accessibility tests? (y/n): ").strip().lower()
+    generate_tests = (
+        input("Would you like to generate Playwright accessibility tests? (y/n): ")
+        .strip()
+        .lower()
+    )
 
     if generate_tests in ("y", "yes"):
         done.clear()
@@ -132,7 +140,9 @@ async def main():
         await session.send(MessageOptions(prompt=detect_language_prompt))
         await done.wait()
 
-        language = input("\n\nConfirm language for tests (or enter a different one): ").strip()
+        language = input(
+            "\n\nConfirm language for tests (or enter a different one): "
+        ).strip()
         if not language:
             language = "TypeScript"
 
@@ -169,6 +179,7 @@ async def main():
 
     await session.destroy()
     await client.stop()
+
 
 if __name__ == "__main__":
     asyncio.run(main())

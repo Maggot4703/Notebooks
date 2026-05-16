@@ -9,7 +9,9 @@ from pypdf import PdfReader
 INPUT_DIR = "PDFs"
 OUTPUT_DIR = "OCR"
 # Use the actual path to ocr-pic.py in the repo
-OCR_PIC_SCRIPT = str(Path(__file__).parent / ".github/skills/ocr-pic/scripts/ocr-pic.py")
+OCR_PIC_SCRIPT = str(
+    Path(__file__).parent / ".github/skills/ocr-pic/scripts/ocr-pic.py"
+)
 
 
 def find_pdfs(input_dir):
@@ -25,23 +27,27 @@ def get_pages_with_counters(pdf_path):
         found = False
         for img_obj in imgs:
             w = h = None
-            if hasattr(img_obj, 'width') and hasattr(img_obj, 'height'):
+            if hasattr(img_obj, "width") and hasattr(img_obj, "height"):
                 w, h = img_obj.width, img_obj.height
             elif isinstance(img_obj, dict):
-                w = img_obj.get('/Width')
-                h = img_obj.get('/Height')
+                w = img_obj.get("/Width")
+                h = img_obj.get("/Height")
             else:
                 try:
-                    w = img_obj['/Width']
-                    h = img_obj['/Height']
+                    w = img_obj["/Width"]
+                    h = img_obj["/Height"]
                 except Exception:
-                    print(f"  [WARN] Could not get image size for page {i} in {pdf_path.name}")
+                    print(
+                        f"  [WARN] Could not get image size for page {i} in {pdf_path.name}"
+                    )
             if w == 200 and h == 100:
                 found = True
                 break
             if w is None or h is None:
                 # Fallback: if we cannot determine size, assume it's a counter and process this page
-                print(f"  [INFO] Fallback: Could not determine image size for page {i} in {pdf_path.name}, will attempt OCR.")
+                print(
+                    f"  [INFO] Fallback: Could not determine image size for page {i} in {pdf_path.name}, will attempt OCR."
+                )
                 found = True
                 break
         if found:
@@ -53,9 +59,11 @@ def run_ocr_pic(pdf_path, pages, output_dir):
     if not pages:
         return
     page_args = [str(p) for p in pages]
-    cmd = [
-        sys.executable, OCR_PIC_SCRIPT, "--pdf", str(pdf_path), "--pages"
-    ] + page_args + ["--output-dir", str(output_dir)]
+    cmd = (
+        [sys.executable, OCR_PIC_SCRIPT, "--pdf", str(pdf_path), "--pages"]
+        + page_args
+        + ["--output-dir", str(output_dir)]
+    )
     print(f"Running: {' '.join(cmd)}")
     subprocess.run(cmd, check=True)
 

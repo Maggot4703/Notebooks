@@ -83,14 +83,16 @@ class SkillsIntegrationTests:
         m = IntegrationManifest(self.KEY, tmp_path)
         created = i.setup(tmp_path, m)
         expected_dir = i.skills_dest(tmp_path)
-        assert expected_dir.exists(), f"Expected directory {expected_dir} was not created"
+        assert (
+            expected_dir.exists()
+        ), f"Expected directory {expected_dir} was not created"
         skill_files = [f for f in created if "scripts" not in f.parts]
         assert len(skill_files) > 0, "No skill files were created"
         for f in skill_files:
             # Each SKILL.md is in speckit-<name>/ under the skills directory
-            assert f.resolve().parent.parent == expected_dir.resolve(), (
-                f"{f} is not under {expected_dir}"
-            )
+            assert (
+                f.resolve().parent.parent == expected_dir.resolve()
+            ), f"{f} is not under {expected_dir}"
 
     def test_skill_directory_structure(self, tmp_path):
         """Each command produces speckit-<name>/SKILL.md."""
@@ -100,8 +102,15 @@ class SkillsIntegrationTests:
         skill_files = [f for f in created if "scripts" not in f.parts]
 
         expected_commands = {
-            "analyze", "checklist", "clarify", "constitution",
-            "implement", "plan", "specify", "tasks", "taskstoissues",
+            "analyze",
+            "checklist",
+            "clarify",
+            "constitution",
+            "implement",
+            "plan",
+            "specify",
+            "tasks",
+            "taskstoissues",
         }
 
         # Derive command names from the skill directory names
@@ -239,7 +248,14 @@ class SkillsIntegrationTests:
         i = get_integration(self.KEY)
         m = IntegrationManifest(self.KEY, tmp_path)
         i.setup(tmp_path, m)
-        sh = tmp_path / ".specify" / "integrations" / self.KEY / "scripts" / "update-context.sh"
+        sh = (
+            tmp_path
+            / ".specify"
+            / "integrations"
+            / self.KEY
+            / "scripts"
+            / "update-context.sh"
+        )
         assert os.access(sh, os.X_OK)
 
     # -- CLI auto-promote -------------------------------------------------
@@ -254,10 +270,20 @@ class SkillsIntegrationTests:
         try:
             os.chdir(project)
             runner = CliRunner()
-            result = runner.invoke(app, [
-                "init", "--here", "--ai", self.KEY, "--script", "sh", "--no-git",
-                "--ignore-agent-tools",
-            ], catch_exceptions=False)
+            result = runner.invoke(
+                app,
+                [
+                    "init",
+                    "--here",
+                    "--ai",
+                    self.KEY,
+                    "--script",
+                    "sh",
+                    "--no-git",
+                    "--ignore-agent-tools",
+                ],
+                catch_exceptions=False,
+            )
         finally:
             os.chdir(old_cwd)
         assert result.exit_code == 0, f"init --ai {self.KEY} failed: {result.output}"
@@ -275,13 +301,25 @@ class SkillsIntegrationTests:
         try:
             os.chdir(project)
             runner = CliRunner()
-            result = runner.invoke(app, [
-                "init", "--here", "--integration", self.KEY, "--script", "sh", "--no-git",
-                "--ignore-agent-tools",
-            ], catch_exceptions=False)
+            result = runner.invoke(
+                app,
+                [
+                    "init",
+                    "--here",
+                    "--integration",
+                    self.KEY,
+                    "--script",
+                    "sh",
+                    "--no-git",
+                    "--ignore-agent-tools",
+                ],
+                catch_exceptions=False,
+            )
         finally:
             os.chdir(old_cwd)
-        assert result.exit_code == 0, f"init --integration {self.KEY} failed: {result.output}"
+        assert (
+            result.exit_code == 0
+        ), f"init --integration {self.KEY} failed: {result.output}"
         i = get_integration(self.KEY)
         skills_dir = i.skills_dest(project)
         assert skills_dir.is_dir(), f"Skills directory {skills_dir} not created"
@@ -298,14 +336,25 @@ class SkillsIntegrationTests:
     # -- Complete file inventory ------------------------------------------
 
     _SKILL_COMMANDS = [
-        "analyze", "checklist", "clarify", "constitution",
-        "implement", "plan", "specify", "tasks", "taskstoissues",
+        "analyze",
+        "checklist",
+        "clarify",
+        "constitution",
+        "implement",
+        "plan",
+        "specify",
+        "tasks",
+        "taskstoissues",
     ]
 
     def _expected_files(self, script_variant: str) -> list[str]:
         """Build the full expected file list for a given script variant."""
         i = get_integration(self.KEY)
-        skills_prefix = i.config["folder"].rstrip("/") + "/" + i.config.get("commands_subdir", "skills")
+        skills_prefix = (
+            i.config["folder"].rstrip("/")
+            + "/"
+            + i.config.get("commands_subdir", "skills")
+        )
 
         files = []
         # Skill files
@@ -359,16 +408,25 @@ class SkillsIntegrationTests:
         old_cwd = os.getcwd()
         try:
             os.chdir(project)
-            result = CliRunner().invoke(app, [
-                "init", "--here", "--integration", self.KEY,
-                "--script", "sh", "--no-git", "--ignore-agent-tools",
-            ], catch_exceptions=False)
+            result = CliRunner().invoke(
+                app,
+                [
+                    "init",
+                    "--here",
+                    "--integration",
+                    self.KEY,
+                    "--script",
+                    "sh",
+                    "--no-git",
+                    "--ignore-agent-tools",
+                ],
+                catch_exceptions=False,
+            )
         finally:
             os.chdir(old_cwd)
         assert result.exit_code == 0, f"init failed: {result.output}"
         actual = sorted(
-            p.relative_to(project).as_posix()
-            for p in project.rglob("*") if p.is_file()
+            p.relative_to(project).as_posix() for p in project.rglob("*") if p.is_file()
         )
         expected = self._expected_files("sh")
         assert actual == expected, (
@@ -386,16 +444,25 @@ class SkillsIntegrationTests:
         old_cwd = os.getcwd()
         try:
             os.chdir(project)
-            result = CliRunner().invoke(app, [
-                "init", "--here", "--integration", self.KEY,
-                "--script", "ps", "--no-git", "--ignore-agent-tools",
-            ], catch_exceptions=False)
+            result = CliRunner().invoke(
+                app,
+                [
+                    "init",
+                    "--here",
+                    "--integration",
+                    self.KEY,
+                    "--script",
+                    "ps",
+                    "--no-git",
+                    "--ignore-agent-tools",
+                ],
+                catch_exceptions=False,
+            )
         finally:
             os.chdir(old_cwd)
         assert result.exit_code == 0, f"init failed: {result.output}"
         actual = sorted(
-            p.relative_to(project).as_posix()
-            for p in project.rglob("*") if p.is_file()
+            p.relative_to(project).as_posix() for p in project.rglob("*") if p.is_file()
         )
         expected = self._expected_files("ps")
         assert actual == expected, (

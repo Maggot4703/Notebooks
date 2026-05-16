@@ -3,13 +3,17 @@
 import asyncio
 from copilot import CopilotClient, SessionConfig, MessageOptions, PermissionHandler
 
+
 async def main():
     client = CopilotClient()
 
     try:
         await client.start()
-        session = await client.create_session(SessionConfig(model="gpt-5",
-        on_permission_request=PermissionHandler.approve_all))
+        session = await client.create_session(
+            SessionConfig(
+                model="gpt-5", on_permission_request=PermissionHandler.approve_all
+            )
+        )
 
         response = await session.send_and_wait(MessageOptions(prompt="Hello!"))
 
@@ -21,6 +25,7 @@ async def main():
         print(f"Error: {e}")
     finally:
         await client.stop()
+
 
 if __name__ == "__main__":
     asyncio.run(main())

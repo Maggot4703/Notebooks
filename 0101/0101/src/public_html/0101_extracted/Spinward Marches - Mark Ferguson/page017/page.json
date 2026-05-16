@@ -1,0 +1,18 @@
+{
+  "page_number": 17,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page017/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020 ‘Spinward Marches\nSpinward Marches‘'F Vilis/1116 Frenzie\n\neamleses\n5 BS,\n\nA200436-A\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\nSize=2\nDIGIT DIA(MI) DIA(KM)\n2 2,000 3,200\n\nAtmosphere = 0\nDIGIT DESCRIPTION EFFECTS\n0 Vacuum $3\n\nHydrosphere = 0\nDIGIT DESCRIPTION\n0 Desert World\n\nPopulation = 4\n\nPOPULATION UNDER 10,000\n\nDIGIT DESCRIPTION VALUE\n4 Ten thousand 0,000\n\nGovernment = 3\nDIGIT DESCRIPTION NOTE\n3 Self Perpetuating Oligarchy Ruk by a restricted minority with little or no input from the masses\n\nLaw Level= 6\nDIGIT DESCRIPTION NOTE\n6 Moderate Law Pohibition of Machineguns\n\nTech Level= A.\nDIGIT\nA\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 1/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page017/page_full.png"
+}

@@ -1,6 +1,8 @@
 from fpdf import FPDF
 
-with open("/home/me/Notebooks/markdown_instructions_and_example.md", encoding="utf-8") as f:
+with open(
+    "/home/me/Notebooks/markdown_instructions_and_example.md", encoding="utf-8"
+) as f:
     lines = f.readlines()
 
 pdf = FPDF()

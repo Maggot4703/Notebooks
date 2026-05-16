@@ -1,0 +1,18 @@
+{
+  "page_number": 19,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page019/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020 ‘Spinward Marches\nSpinward Marches/G Lanth/1719 Lanth\n\nA879533-B\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\nSize=8\nDIGIT DIA(MI) DIA(KM)\n8 8,000 13,800\n\nAtmosphere = 7\nDIGIT DESCRIPTION EFFECTS\n7 Standard, Tainted P1\n\nHydrosphere = 9\nDIGIT DESCRIPTION\n990%\n\nPopulation = 5\n\nPOPULATION UNDER 700,000\n\nDIGIT DESCRIPTION VALUE\n5 Hundred thousand 00,000\n\nGovernment = 3\nDIGIT DESCRIPTION NOTE\n3 Self Perpetuating Oligarchy Ruk by a restricted minority with little or no input from the masses\n\nLaw Level = 3\nDIGIT DESCRIPTION NOTE\n3 Low Law Prohibition of Acid, Fire, Gas weapons\n\nTech Level = B\nDIGIT\nB\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 12/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page019/page_full.png"
+}

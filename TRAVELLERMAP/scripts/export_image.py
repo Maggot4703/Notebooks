@@ -18,11 +18,14 @@ from sector_utils import load_sector_data, SECTOR_HEADERS
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Export sector/world data to PNG image table.")
-    parser.add_argument("sector_file", help="Path to sector file (.sec or tab-delimited)")
+    parser = argparse.ArgumentParser(
+        description="Export sector/world data to PNG image table."
+    )
+    parser.add_argument(
+        "sector_file", help="Path to sector file (.sec or tab-delimited)"
+    )
     parser.add_argument("--output", help="Output PNG file", default="output.png")
     return parser.parse_args()
-
 
 
 def main():
@@ -37,15 +40,18 @@ def main():
         return
     df = pd.DataFrame([row[:11] for row in rows], columns=SECTOR_HEADERS)
     df = df.head(100)  # Limit for readability
-    ax = plt.subplots(figsize=(20, min(2+0.3*len(df), 30)))
-    ax.axis('off')
-    table = ax.table(cellText=df.values, colLabels=df.columns, loc='center', cellLoc='left')
+    ax = plt.subplots(figsize=(20, min(2 + 0.3 * len(df), 30)))
+    ax.axis("off")
+    table = ax.table(
+        cellText=df.values, colLabels=df.columns, loc="center", cellLoc="left"
+    )
     table.auto_set_font_size(False)
     table.set_fontsize(8)
     table.scale(1, 1.5)
     plt.tight_layout()
-    plt.savefig(args.output, bbox_inches='tight')
+    plt.savefig(args.output, bbox_inches="tight")
     print(f"Image exported to {args.output}")
+
 
 if __name__ == "__main__":
     main()

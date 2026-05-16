@@ -1,0 +1,18 @@
+{
+  "page_number": 23,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page023/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020 ‘Spinward Marches\nSpinward Marches/I Darrian/0527 Mire\n\nOo\n©O\n\naoe\n\nA665A95-C\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\nSize=6\nDIGIT DIA(MI) DIA(KM)\n6 6,000 9,600\n\nAtmosphere = 6\nDIGIT DESCRIPTION EFFECTS\n6 Standard\n\nHydrosphere = 5\nDIGIT DESCRIPTION\n550%\n\nPopulation = A\nPOPULATION UNDER 10,000,000,000\nDIGIT DESCRIPTION VALUE\nA Ten billion 0,000,000,000\n\nGovernment = 9\nDIGIT DESCRIPTION NOTE\n9 Impersonal Bureaucracy Impersonal agencies rule\n\nLaw Level= 5\nDIGIT DESCRIPTION NOTE\n5 Moderate Law Shock, EMP, Rad, Mag, Grav weapons prohibited\n\nTech Level =C\nDIGIT\nCc\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 14/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page023/page_full.png"
+}

@@ -16,461 +16,659 @@ _HAS_OFFICIAL_ICONS = True
 SERVICE_ICONS = {
     "openai": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#0078D4"/><text x="24" y="30" text-anchor="middle" font-size="18" fill="white" font-weight="700">AI</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "AI",
-        "azure_icon_key": "azure_openai"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "AI",
+        "azure_icon_key": "azure_openai",
     },
     "ai_foundry": {
         "icon_svg": '<rect x="6" y="10" width="36" height="28" rx="4" fill="#0078D4"/><rect x="12" y="16" width="10" height="8" rx="2" fill="white" opacity="0.9"/><rect x="26" y="16" width="10" height="8" rx="2" fill="white" opacity="0.9"/><rect x="12" y="27" width="24" height="5" rx="2" fill="white" opacity="0.6"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "AI",
-        "azure_icon_key": "ai_foundry"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "AI",
+        "azure_icon_key": "ai_foundry",
     },
     "ai_hub": {
         "icon_svg": '<rect x="6" y="10" width="36" height="28" rx="4" fill="#0078D4"/><circle cx="24" cy="24" r="8" fill="white" opacity="0.9"/><circle cx="24" cy="24" r="4" fill="#0078D4"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "AI",
-        "azure_icon_key": "machine_learning"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "AI",
+        "azure_icon_key": "machine_learning",
     },
     "search": {
         "icon_svg": '<circle cx="20" cy="20" r="12" fill="none" stroke="#0078D4" stroke-width="3.5"/><line x1="29" y1="29" x2="40" y2="40" stroke="#0078D4" stroke-width="3.5" stroke-linecap="round"/><circle cx="20" cy="20" r="5" fill="#0078D4" opacity="0.3"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "AI",
-        "azure_icon_key": "cognitive_search"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "AI",
+        "azure_icon_key": "cognitive_search",
     },
     "ai_search": {
         "icon_svg": '<circle cx="20" cy="20" r="12" fill="none" stroke="#0078D4" stroke-width="3.5"/><line x1="29" y1="29" x2="40" y2="40" stroke="#0078D4" stroke-width="3.5" stroke-linecap="round"/><circle cx="20" cy="20" r="5" fill="#0078D4" opacity="0.3"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "AI",
-        "azure_icon_key": "cognitive_search"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "AI",
+        "azure_icon_key": "cognitive_search",
     },
     "aml": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><path d="M14 32 L20 18 L26 26 L32 14" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "AI",
-        "azure_icon_key": "machine_learning"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "AI",
+        "azure_icon_key": "machine_learning",
     },
     "storage": {
         "icon_svg": '<rect x="8" y="8" width="32" height="8" rx="3" fill="#0078D4"/><rect x="8" y="20" width="32" height="8" rx="3" fill="#0078D4" opacity="0.7"/><rect x="8" y="32" width="32" height="8" rx="3" fill="#0078D4" opacity="0.4"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "storage_accounts"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "storage_accounts",
     },
     "adls": {
         "icon_svg": '<rect x="8" y="8" width="32" height="8" rx="3" fill="#0078D4"/><rect x="8" y="20" width="32" height="8" rx="3" fill="#0078D4" opacity="0.7"/><rect x="8" y="32" width="32" height="8" rx="3" fill="#0078D4" opacity="0.4"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "data_lake_storage_gen1"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "data_lake_storage_gen1",
     },
     "fabric": {
         "icon_svg": '<polygon points="24,6 42,18 42,34 24,46 6,34 6,18" fill="#E8740C" opacity="0.9"/><text x="24" y="30" text-anchor="middle" font-size="14" fill="white" font-weight="700">F</text>',
-        "color": "#E8740C", "bg": "#FEF3E8", "category": "Data",
-        "azure_icon_key": "microsoft_fabric"
+        "color": "#E8740C",
+        "bg": "#FEF3E8",
+        "category": "Data",
+        "azure_icon_key": "microsoft_fabric",
     },
     "synapse": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#0078D4"/><path d="M15 24 L24 15 L33 24 L24 33 Z" fill="white" opacity="0.9"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "azure_synapse_analytics"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "azure_synapse_analytics",
     },
     "adf": {
         "icon_svg": '<rect x="6" y="12" width="36" height="24" rx="4" fill="#0078D4"/><path d="M16 24 L28 24 M24 18 L30 24 L24 30" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "data_factory"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "data_factory",
     },
     "data_factory": {
         "icon_svg": '<rect x="6" y="12" width="36" height="24" rx="4" fill="#0078D4"/><path d="M16 24 L28 24 M24 18 L30 24 L24 30" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "data_factory"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "data_factory",
     },
     "keyvault": {
         "icon_svg": '<rect x="10" y="6" width="28" height="36" rx="4" fill="#E8A000"/><circle cx="24" cy="22" r="6" fill="white"/><rect x="22" y="26" width="4" height="10" rx="1" fill="white"/>',
-        "color": "#E8A000", "bg": "#FEF7E0", "category": "Security",
-        "azure_icon_key": "key_vaults"
+        "color": "#E8A000",
+        "bg": "#FEF7E0",
+        "category": "Security",
+        "azure_icon_key": "key_vaults",
     },
     "kv": {
         "icon_svg": '<rect x="10" y="6" width="28" height="36" rx="4" fill="#E8A000"/><circle cx="24" cy="22" r="6" fill="white"/><rect x="22" y="26" width="4" height="10" rx="1" fill="white"/>',
-        "color": "#E8A000", "bg": "#FEF7E0", "category": "Security",
-        "azure_icon_key": "key_vaults"
+        "color": "#E8A000",
+        "bg": "#FEF7E0",
+        "category": "Security",
+        "azure_icon_key": "key_vaults",
     },
     "vnet": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="none" stroke="#5C2D91" stroke-width="2.5"/><circle cx="16" cy="18" r="4" fill="#5C2D91"/><circle cx="32" cy="18" r="4" fill="#5C2D91"/><circle cx="24" cy="32" r="4" fill="#5C2D91"/><line x1="16" y1="18" x2="32" y2="18" stroke="#5C2D91" stroke-width="1.5"/><line x1="16" y1="18" x2="24" y2="32" stroke="#5C2D91" stroke-width="1.5"/><line x1="32" y1="18" x2="24" y2="32" stroke="#5C2D91" stroke-width="1.5"/>',
-        "color": "#5C2D91", "bg": "#F3EEF9", "category": "Network",
-        "azure_icon_key": "virtual_networks"
+        "color": "#5C2D91",
+        "bg": "#F3EEF9",
+        "category": "Network",
+        "azure_icon_key": "virtual_networks",
     },
     "pe": {
         "icon_svg": '<circle cx="24" cy="24" r="14" fill="none" stroke="#5C2D91" stroke-width="2"/><circle cx="24" cy="24" r="6" fill="#5C2D91"/><line x1="24" y1="10" x2="24" y2="4" stroke="#5C2D91" stroke-width="2"/><line x1="24" y1="38" x2="24" y2="44" stroke="#5C2D91" stroke-width="2"/>',
-        "color": "#5C2D91", "bg": "#F3EEF9", "category": "Network",
-        "azure_icon_key": "private_endpoints"
+        "color": "#5C2D91",
+        "bg": "#F3EEF9",
+        "category": "Network",
+        "azure_icon_key": "private_endpoints",
     },
     "nsg": {
         "icon_svg": '<rect x="8" y="8" width="32" height="32" rx="4" fill="#5C2D91"/><path d="M18 20 L24 14 L30 20 M18 28 L24 34 L30 28" stroke="white" stroke-width="2" fill="none"/>',
-        "color": "#5C2D91", "bg": "#F3EEF9", "category": "Network",
-        "azure_icon_key": "network_security_groups"
+        "color": "#5C2D91",
+        "bg": "#F3EEF9",
+        "category": "Network",
+        "azure_icon_key": "network_security_groups",
     },
     "acr": {
         "icon_svg": '<rect x="8" y="10" width="32" height="28" rx="4" fill="#0078D4"/><rect x="14" y="16" width="20" height="16" rx="2" fill="white" opacity="0.3"/><text x="24" y="30" text-anchor="middle" font-size="12" fill="white" font-weight="600">ACR</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Compute"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Compute",
     },
     "aks": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#326CE5"/><text x="24" y="30" text-anchor="middle" font-size="16" fill="white" font-weight="700">K</text>',
-        "color": "#326CE5", "bg": "#EBF0FC", "category": "Compute",
-        "azure_icon_key": "kubernetes_services"
+        "color": "#326CE5",
+        "bg": "#EBF0FC",
+        "category": "Compute",
+        "azure_icon_key": "kubernetes_services",
     },
     "appservice": {
         "icon_svg": '<rect x="8" y="8" width="32" height="32" rx="6" fill="#0078D4"/><polygon points="24,14 34,34 14,34" fill="white" opacity="0.9"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Compute",
-        "azure_icon_key": "app_services"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Compute",
+        "azure_icon_key": "app_services",
     },
     "appinsights": {
         "icon_svg": '<circle cx="24" cy="24" r="16" fill="#773ADC"/><path d="M16 28 L20 20 L24 24 L28 16 L32 22" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>',
-        "color": "#773ADC", "bg": "#F0EAFA", "category": "Monitor",
-        "azure_icon_key": "application_insights"
+        "color": "#773ADC",
+        "bg": "#F0EAFA",
+        "category": "Monitor",
+        "azure_icon_key": "application_insights",
     },
     "monitor": {
         "icon_svg": '<rect x="6" y="10" width="36" height="24" rx="4" fill="#773ADC"/><path d="M14 28 L20 20 L26 24 L34 16" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/><rect x="14" y="36" width="20" height="3" rx="1" fill="#773ADC" opacity="0.5"/>',
-        "color": "#773ADC", "bg": "#F0EAFA", "category": "Monitor",
-        "azure_icon_key": "monitor"
+        "color": "#773ADC",
+        "bg": "#F0EAFA",
+        "category": "Monitor",
+        "azure_icon_key": "monitor",
     },
     "vm": {
         "icon_svg": '<rect x="6" y="8" width="36" height="26" rx="3" fill="#0078D4"/><rect x="10" y="12" width="28" height="18" rx="1" fill="white" opacity="0.2"/><rect x="16" y="36" width="16" height="4" rx="1" fill="#0078D4"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Compute",
-        "azure_icon_key": "virtual_machine"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Compute",
+        "azure_icon_key": "virtual_machine",
     },
     "bastion": {
         "icon_svg": '<rect x="8" y="6" width="32" height="36" rx="4" fill="#5C2D91"/><rect x="14" y="12" width="20" height="14" rx="2" fill="white" opacity="0.3"/><circle cx="24" cy="34" r="4" fill="white" opacity="0.7"/>',
-        "color": "#5C2D91", "bg": "#F3EEF9", "category": "Network",
-        "azure_icon_key": "bastions"
+        "color": "#5C2D91",
+        "bg": "#F3EEF9",
+        "category": "Network",
+        "azure_icon_key": "bastions",
     },
     "jumpbox": {
         "icon_svg": '<rect x="8" y="8" width="32" height="32" rx="4" fill="#5C2D91"/><text x="24" y="30" text-anchor="middle" font-size="14" fill="white" font-weight="600">JB</text>',
-        "color": "#5C2D91", "bg": "#F3EEF9", "category": "Network",
-        "azure_icon_key": "virtual_machine"
+        "color": "#5C2D91",
+        "bg": "#F3EEF9",
+        "category": "Network",
+        "azure_icon_key": "virtual_machine",
     },
     "vpn": {
         "icon_svg": '<rect x="6" y="12" width="36" height="24" rx="4" fill="#5C2D91"/><path d="M16 24 L24 16 L32 24 L24 32 Z" fill="white" opacity="0.8"/>',
-        "color": "#5C2D91", "bg": "#F3EEF9", "category": "Network",
-        "azure_icon_key": "virtual_network_gateways"
+        "color": "#5C2D91",
+        "bg": "#F3EEF9",
+        "category": "Network",
+        "azure_icon_key": "virtual_network_gateways",
     },
     "user": {
         "icon_svg": '<circle cx="24" cy="16" r="8" fill="#0078D4"/><path d="M10 42 Q10 30 24 30 Q38 30 38 42" fill="#0078D4"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "External"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "External",
     },
     "app": {
         "icon_svg": '<rect x="8" y="6" width="32" height="36" rx="6" fill="#666"/><rect x="14" y="12" width="20" height="20" rx="2" fill="white" opacity="0.3"/><circle cx="24" cy="40" r="2" fill="white" opacity="0.7"/>',
-        "color": "#666666", "bg": "#F5F5F5", "category": "External"
+        "color": "#666666",
+        "bg": "#F5F5F5",
+        "category": "External",
     },
     "default": {
         "icon_svg": '<circle cx="24" cy="24" r="16" fill="#0078D4"/><text x="24" y="30" text-anchor="middle" font-size="14" fill="white" font-weight="600">?</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Azure"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Azure",
     },
     "cdn": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#0078D4"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">CDN</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Network",
-        "azure_icon_key": "cdn_profiles"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Network",
+        "azure_icon_key": "cdn_profiles",
     },
     "event_hub": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="8" fill="white" font-weight="700">Event</text><text x="24" y="33" text-anchor="middle" font-size="8" fill="white">Hub</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Integration",
-        "azure_icon_key": "event_hubs"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Integration",
+        "azure_icon_key": "event_hubs",
     },
     "redis": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#D83B01"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">Redis</text>',
-        "color": "#D83B01", "bg": "#FEF0E8", "category": "Data",
-        "azure_icon_key": "cache_redis"
+        "color": "#D83B01",
+        "bg": "#FEF0E8",
+        "category": "Data",
+        "azure_icon_key": "cache_redis",
     },
     "devops": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="8" fill="white" font-weight="700">Dev</text><text x="24" y="33" text-anchor="middle" font-size="8" fill="white">Ops</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "DevOps",
-        "azure_icon_key": "azure_devops"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "DevOps",
+        "azure_icon_key": "azure_devops",
     },
     "acr": {
         "icon_svg": '<rect x="8" y="10" width="32" height="28" rx="4" fill="#0078D4"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">ACR</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Compute",
-        "azure_icon_key": "container_registries"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Compute",
+        "azure_icon_key": "container_registries",
     },
     "container_registry": {
         "icon_svg": '<rect x="8" y="10" width="32" height="28" rx="4" fill="#0078D4"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">ACR</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Compute",
-        "azure_icon_key": "container_registries"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Compute",
+        "azure_icon_key": "container_registries",
     },
     "app_gateway": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="8" fill="white" font-weight="700">App</text><text x="24" y="33" text-anchor="middle" font-size="8" fill="white">GW</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Network",
-        "azure_icon_key": "application_gateways"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Network",
+        "azure_icon_key": "application_gateways",
     },
     "iot_hub": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="8" fill="white" font-weight="700">IoT</text><text x="24" y="33" text-anchor="middle" font-size="8" fill="white">Hub</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "IoT",
-        "azure_icon_key": "iot_hub"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "IoT",
+        "azure_icon_key": "iot_hub",
     },
     "stream_analytics": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="7" fill="white" font-weight="700">Stream</text><text x="24" y="33" text-anchor="middle" font-size="7" fill="white">Analytics</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "stream_analytics_jobs"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "stream_analytics_jobs",
     },
     "vpn_gateway": {
         "icon_svg": '<rect x="6" y="12" width="36" height="24" rx="4" fill="#5C2D91"/><path d="M16 24 L24 16 L32 24 L24 32 Z" fill="white" opacity="0.8"/>',
-        "color": "#5C2D91", "bg": "#F3EEF9", "category": "Network",
-        "azure_icon_key": "virtual_network_gateways"
+        "color": "#5C2D91",
+        "bg": "#F3EEF9",
+        "category": "Network",
+        "azure_icon_key": "virtual_network_gateways",
     },
     "front_door": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="7" fill="white" font-weight="700">Front</text><text x="24" y="33" text-anchor="middle" font-size="7" fill="white">Door</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Network",
-        "azure_icon_key": "front_door_and_cdn_profiles"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Network",
+        "azure_icon_key": "front_door_and_cdn_profiles",
     },
     "ai_hub": {
         "icon_svg": '<rect x="6" y="10" width="36" height="28" rx="4" fill="#0078D4"/><circle cx="24" cy="24" r="8" fill="white" opacity="0.9"/><circle cx="24" cy="24" r="4" fill="#0078D4"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "AI",
-        "azure_icon_key": "ai_studio"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "AI",
+        "azure_icon_key": "ai_studio",
     },
     "firewall": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#E8A000"/><text x="24" y="22" text-anchor="middle" font-size="7" fill="white" font-weight="700">Fire</text><text x="24" y="33" text-anchor="middle" font-size="7" fill="white">wall</text>',
-        "color": "#E8A000", "bg": "#FFF8E1", "category": "Network",
-        "azure_icon_key": "firewalls"
+        "color": "#E8A000",
+        "bg": "#FFF8E1",
+        "category": "Network",
+        "azure_icon_key": "firewalls",
     },
     "document_intelligence": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="9" fill="white" font-weight="700">Doc</text><text x="24" y="33" text-anchor="middle" font-size="9" fill="white">Intel</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "AI",
-        "azure_icon_key": "form_recognizer"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "AI",
+        "azure_icon_key": "form_recognizer",
     },
     "form_recognizer": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="9" fill="white" font-weight="700">Doc</text><text x="24" y="33" text-anchor="middle" font-size="9" fill="white">Intel</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "AI",
-        "azure_icon_key": "form_recognizer"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "AI",
+        "azure_icon_key": "form_recognizer",
     },
     "databricks": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="6" fill="#FF3621"/><text x="24" y="30" text-anchor="middle" font-size="16" fill="white" font-weight="700">DB</text>',
-        "color": "#FF3621", "bg": "#FFF0EE", "category": "Data",
-        "azure_icon_key": "azure_databricks"
+        "color": "#FF3621",
+        "bg": "#FFF0EE",
+        "category": "Data",
+        "azure_icon_key": "azure_databricks",
     },
     "sql_server": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="11" fill="white" font-weight="700">SQL</text><rect x="12" y="28" width="24" height="8" rx="2" fill="white" opacity="0.3"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "sql_server"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "sql_server",
     },
     "sql_database": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="11" fill="white" font-weight="700">SQL</text><rect x="12" y="28" width="24" height="8" rx="2" fill="white" opacity="0.3"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "sql_database"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "sql_database",
     },
     "cosmos_db": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="9" fill="white" font-weight="700">Cosmos</text><text x="24" y="33" text-anchor="middle" font-size="9" fill="white">DB</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "azure_cosmos_db"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "azure_cosmos_db",
     },
     "app_service": {
         "icon_svg": '<rect x="6" y="10" width="36" height="28" rx="6" fill="#0078D4"/><text x="24" y="28" text-anchor="middle" font-size="11" fill="white" font-weight="700">App</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Compute",
-        "azure_icon_key": "app_services"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Compute",
+        "azure_icon_key": "app_services",
     },
     "aks": {
         "icon_svg": '<polygon points="24,4 44,20 38,44 10,44 4,20" fill="#326CE5" stroke="#fff" stroke-width="1"/><text x="24" y="30" text-anchor="middle" font-size="11" fill="white" font-weight="700">K8s</text>',
-        "color": "#326CE5", "bg": "#EBF0FA", "category": "Compute",
-        "azure_icon_key": "kubernetes_services"
+        "color": "#326CE5",
+        "bg": "#EBF0FA",
+        "category": "Compute",
+        "azure_icon_key": "kubernetes_services",
     },
     "function_app": {
         "icon_svg": '<polygon points="24,6 42,42 6,42" fill="#F0AD4E"/><text x="24" y="36" text-anchor="middle" font-size="14" fill="white" font-weight="700">ƒ</text>',
-        "color": "#F0AD4E", "bg": "#FFF8ED", "category": "Compute",
-        "azure_icon_key": "function_apps"
+        "color": "#F0AD4E",
+        "bg": "#FFF8ED",
+        "category": "Compute",
+        "azure_icon_key": "function_apps",
     },
     "synapse": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#0078D4"/><text x="24" y="22" text-anchor="middle" font-size="8" fill="white" font-weight="700">Syn</text><text x="24" y="32" text-anchor="middle" font-size="8" fill="white">apse</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "azure_synapse_analytics"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "azure_synapse_analytics",
     },
     "log_analytics": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#5C2D91"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">Log</text>',
-        "color": "#5C2D91", "bg": "#F3EDF7", "category": "Monitoring",
-        "azure_icon_key": "log_analytics_workspaces"
+        "color": "#5C2D91",
+        "bg": "#F3EDF7",
+        "category": "Monitoring",
+        "azure_icon_key": "log_analytics_workspaces",
     },
     "app_insights": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#5C2D91"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">AI</text>',
-        "color": "#5C2D91", "bg": "#F3EDF7", "category": "Monitoring",
-        "azure_icon_key": "application_insights"
+        "color": "#5C2D91",
+        "bg": "#F3EDF7",
+        "category": "Monitoring",
+        "azure_icon_key": "application_insights",
     },
     "nsg": {
         "icon_svg": '<rect x="6" y="6" width="36" height="36" rx="4" fill="#E8A000"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">NSG</text>',
-        "color": "#E8A000", "bg": "#FFF8E1", "category": "Network",
-        "azure_icon_key": "network_security_groups"
+        "color": "#E8A000",
+        "bg": "#FFF8E1",
+        "category": "Network",
+        "azure_icon_key": "network_security_groups",
     },
     "apim": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><path d="M16 20 L32 20 M16 28 L32 28 M24 14 L24 34" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Integration",
-        "azure_icon_key": "api_management_services"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Integration",
+        "azure_icon_key": "api_management_services",
     },
     "api_management": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><path d="M16 20 L32 20 M16 28 L32 28 M24 14 L24 34" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Integration",
-        "azure_icon_key": "api_management_services"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Integration",
+        "azure_icon_key": "api_management_services",
     },
     "service_bus": {
         "icon_svg": '<rect x="6" y="10" width="36" height="28" rx="4" fill="#0078D4"/><path d="M14 24 L22 24 M26 24 L34 24" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="24" cy="24" r="4" fill="white"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Integration",
-        "azure_icon_key": "azure_service_bus"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Integration",
+        "azure_icon_key": "azure_service_bus",
     },
     "logic_apps": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><path d="M14 18 L24 28 L34 18" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Integration",
-        "azure_icon_key": "logic_apps"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Integration",
+        "azure_icon_key": "logic_apps",
     },
     "logic_app": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><path d="M14 18 L24 28 L34 18" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Integration",
-        "azure_icon_key": "logic_apps"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Integration",
+        "azure_icon_key": "logic_apps",
     },
     "event_grid": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><circle cx="16" cy="18" r="3" fill="white"/><circle cx="32" cy="18" r="3" fill="white"/><circle cx="16" cy="30" r="3" fill="white"/><circle cx="32" cy="30" r="3" fill="white"/><line x1="16" y1="18" x2="32" y2="30" stroke="white" stroke-width="1.5"/><line x1="32" y1="18" x2="16" y2="30" stroke="white" stroke-width="1.5"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Integration",
-        "azure_icon_key": "event_grid_topics"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Integration",
+        "azure_icon_key": "event_grid_topics",
     },
     "container_apps": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><rect x="12" y="14" width="10" height="10" rx="2" fill="white" opacity="0.9"/><rect x="26" y="14" width="10" height="10" rx="2" fill="white" opacity="0.9"/><rect x="12" y="28" width="24" height="6" rx="2" fill="white" opacity="0.6"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Compute",
-        "azure_icon_key": "container_apps_environments"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Compute",
+        "azure_icon_key": "container_apps_environments",
     },
     "container_app": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><rect x="12" y="14" width="10" height="10" rx="2" fill="white" opacity="0.9"/><rect x="26" y="14" width="10" height="10" rx="2" fill="white" opacity="0.9"/><rect x="12" y="28" width="24" height="6" rx="2" fill="white" opacity="0.6"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Compute",
-        "azure_icon_key": "container_apps_environments"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Compute",
+        "azure_icon_key": "container_apps_environments",
     },
     "postgresql": {
         "icon_svg": '<rect x="8" y="8" width="32" height="32" rx="4" fill="#0078D4"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">PG</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "azure_database_postgresql_server"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "azure_database_postgresql_server",
     },
     "mysql": {
         "icon_svg": '<rect x="8" y="8" width="32" height="32" rx="4" fill="#0078D4"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">My</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "azure_database_mysql_server"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "azure_database_mysql_server",
     },
     "load_balancer": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#5C2D91"/><path d="M16 18 L32 18 M16 24 L32 24 M16 30 L32 30" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>',
-        "color": "#5C2D91", "bg": "#F3EEF9", "category": "Network",
-        "azure_icon_key": "load_balancers"
+        "color": "#5C2D91",
+        "bg": "#F3EEF9",
+        "category": "Network",
+        "azure_icon_key": "load_balancers",
     },
     "nat_gateway": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#5C2D91"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">NAT</text>',
-        "color": "#5C2D91", "bg": "#F3EEF9", "category": "Network",
-        "azure_icon_key": "nat"
+        "color": "#5C2D91",
+        "bg": "#F3EEF9",
+        "category": "Network",
+        "azure_icon_key": "nat",
     },
     "expressroute": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#5C2D91"/><path d="M14 24 L34 24" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="14" cy="24" r="4" fill="white"/><circle cx="34" cy="24" r="4" fill="white"/>',
-        "color": "#5C2D91", "bg": "#F3EEF9", "category": "Network",
-        "azure_icon_key": "expressroute_circuits"
+        "color": "#5C2D91",
+        "bg": "#F3EEF9",
+        "category": "Network",
+        "azure_icon_key": "expressroute_circuits",
     },
     "sentinel": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#0078D4"/><path d="M24 12 L24 24 L32 28" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="3" fill="white"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Security",
-        "azure_icon_key": "azure_sentinel"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Security",
+        "azure_icon_key": "azure_sentinel",
     },
     "data_explorer": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><path d="M14 30 L20 18 L26 26 L34 14" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "azure_data_explorer_clusters"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "azure_data_explorer_clusters",
     },
     "kusto": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><path d="M14 30 L20 18 L26 26 L34 14" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Data",
-        "azure_icon_key": "azure_data_explorer_clusters"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Data",
+        "azure_icon_key": "azure_data_explorer_clusters",
     },
     "signalr": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#0078D4"/><path d="M16 20 Q24 12 32 20 M16 28 Q24 36 32 28" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Integration",
-        "azure_icon_key": "signalr"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Integration",
+        "azure_icon_key": "signalr",
     },
     "notification_hub": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><path d="M18 16 L24 12 L30 16 L30 28 L18 28 Z" stroke="white" stroke-width="2" fill="white" opacity="0.9"/><circle cx="24" cy="32" r="3" fill="white"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Integration",
-        "azure_icon_key": "notification_hubs"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Integration",
+        "azure_icon_key": "notification_hubs",
     },
     "spring_apps": {
         "icon_svg": '<circle cx="24" cy="24" r="18" fill="#6DB33F"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">🌱</text>',
-        "color": "#6DB33F", "bg": "#EFF8E8", "category": "Compute",
-        "azure_icon_key": "azure_spring_apps"
+        "color": "#6DB33F",
+        "bg": "#EFF8E8",
+        "category": "Compute",
+        "azure_icon_key": "azure_spring_apps",
     },
     "static_web_app": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="700">SWA</text>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Compute",
-        "azure_icon_key": "static_apps"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Compute",
+        "azure_icon_key": "static_apps",
     },
     "digital_twins": {
         "icon_svg": '<rect x="6" y="8" width="36" height="32" rx="4" fill="#0078D4"/><circle cx="18" cy="20" r="5" fill="white" opacity="0.9"/><circle cx="30" cy="20" r="5" fill="white" opacity="0.9"/><line x1="18" y1="25" x2="18" y2="34" stroke="white" stroke-width="2"/><line x1="30" y1="25" x2="30" y2="34" stroke="white" stroke-width="2"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "IoT",
-        "azure_icon_key": "digital_twins"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "IoT",
+        "azure_icon_key": "digital_twins",
     },
     "backup": {
         "icon_svg": '<rect x="8" y="8" width="32" height="32" rx="4" fill="#0078D4"/><path d="M16 28 L24 16 L32 28 Z" stroke="white" stroke-width="2" fill="white" opacity="0.8"/>',
-        "color": "#0078D4", "bg": "#E8F4FD", "category": "Management",
-        "azure_icon_key": "backup_vault"
+        "color": "#0078D4",
+        "bg": "#E8F4FD",
+        "category": "Management",
+        "azure_icon_key": "backup_vault",
     },
 }
 
 CONNECTION_STYLES = {
-    "api":      {"color": "#0078D4", "dash": "0"},
-    "data":     {"color": "#0F9D58", "dash": "0"},
+    "api": {"color": "#0078D4", "dash": "0"},
+    "data": {"color": "#0F9D58", "dash": "0"},
     "security": {"color": "#E8A000", "dash": "5,5"},
-    "private":  {"color": "#5C2D91", "dash": "3,3"},
-    "network":  {"color": "#5C2D91", "dash": "5,5"},
-    "default":  {"color": "#999999", "dash": "0"},
+    "private": {"color": "#5C2D91", "dash": "3,3"},
+    "network": {"color": "#5C2D91", "dash": "5,5"},
+    "default": {"color": "#999999", "dash": "0"},
 }
 
 
 _TYPE_ALIASES = {
     # Azure ARM resource names → canonical diagram type
     # Network
-    "private_endpoints": "pe", "private_endpoint": "pe",
-    "virtual_networks": "vnet", "virtual_network": "vnet",
-    "network_security_groups": "nsg", "network_security_group": "nsg",
-    "bastion_hosts": "bastion", "bastion_host": "bastion",
-    "application_gateways": "app_gateway", "application_gateway": "app_gateway",
-    "front_doors": "front_door", "front_door_and_cdn_profiles": "front_door",
-    "virtual_network_gateways": "vpn", "vpn_gateways": "vpn",
+    "private_endpoints": "pe",
+    "private_endpoint": "pe",
+    "virtual_networks": "vnet",
+    "virtual_network": "vnet",
+    "network_security_groups": "nsg",
+    "network_security_group": "nsg",
+    "bastion_hosts": "bastion",
+    "bastion_host": "bastion",
+    "application_gateways": "app_gateway",
+    "application_gateway": "app_gateway",
+    "front_doors": "front_door",
+    "front_door_and_cdn_profiles": "front_door",
+    "virtual_network_gateways": "vpn",
+    "vpn_gateways": "vpn",
     "load_balancers": "load_balancer",
     "nat_gateways": "nat_gateway",
     "expressroute_circuits": "expressroute",
     "firewalls": "firewall",
     "cdn_profiles": "cdn",
     # Data
-    "data_factories": "adf", "data_factory": "adf",
-    "storage_accounts": "storage", "storage_account": "storage",
-    "data_lake": "adls", "adls_gen2": "adls", "data_lake_storage": "adls",
-    "fabric_capacities": "fabric", "fabric_capacity": "fabric", "microsoft_fabric": "fabric",
-    "synapse_workspaces": "synapse", "synapse_workspace": "synapse", "synapse_analytics": "synapse",
-    "cosmos": "cosmos_db", "cosmosdb": "cosmos_db", "documentdb": "cosmos_db",
-    "sql_databases": "sql_database", "sql_db": "sql_database",
+    "data_factories": "adf",
+    "data_factory": "adf",
+    "storage_accounts": "storage",
+    "storage_account": "storage",
+    "data_lake": "adls",
+    "adls_gen2": "adls",
+    "data_lake_storage": "adls",
+    "fabric_capacities": "fabric",
+    "fabric_capacity": "fabric",
+    "microsoft_fabric": "fabric",
+    "synapse_workspaces": "synapse",
+    "synapse_workspace": "synapse",
+    "synapse_analytics": "synapse",
+    "cosmos": "cosmos_db",
+    "cosmosdb": "cosmos_db",
+    "documentdb": "cosmos_db",
+    "sql_databases": "sql_database",
+    "sql_db": "sql_database",
     "sql_servers": "sql_server",
-    "redis_caches": "redis", "redis_cache": "redis", "cache_redis": "redis",
+    "redis_caches": "redis",
+    "redis_cache": "redis",
+    "cache_redis": "redis",
     "stream_analytics_jobs": "stream_analytics",
     "databricks_workspaces": "databricks",
-    "data_explorer_clusters": "data_explorer", "azure_data_explorer": "data_explorer",
-    "postgresql_server": "postgresql", "postgresql_servers": "postgresql",
-    "mysql_server": "mysql", "mysql_servers": "mysql",
+    "data_explorer_clusters": "data_explorer",
+    "azure_data_explorer": "data_explorer",
+    "postgresql_server": "postgresql",
+    "postgresql_servers": "postgresql",
+    "mysql_server": "mysql",
+    "mysql_servers": "mysql",
     # AI
-    "cognitive_services": "ai_foundry", "ai_services": "ai_foundry", "foundry": "ai_foundry",
+    "cognitive_services": "ai_foundry",
+    "ai_services": "ai_foundry",
+    "foundry": "ai_foundry",
     "azure_openai": "openai",
-    "cognitive_search": "search", "search_services": "search", "search_service": "search",
-    "machine_learning": "aml", "ml": "aml", "machine_learning_workspaces": "aml",
+    "cognitive_search": "search",
+    "search_services": "search",
+    "search_service": "search",
+    "machine_learning": "aml",
+    "ml": "aml",
+    "machine_learning_workspaces": "aml",
     "form_recognizers": "document_intelligence",
-    "ai_studio": "ai_hub", "foundry_project": "ai_hub",
+    "ai_studio": "ai_hub",
+    "foundry_project": "ai_hub",
     # Security
-    "key_vault": "keyvault", "key_vaults": "keyvault",
-    "sentinel": "sentinel", "azure_sentinel": "sentinel",
+    "key_vault": "keyvault",
+    "key_vaults": "keyvault",
+    "sentinel": "sentinel",
+    "azure_sentinel": "sentinel",
     # Compute
-    "virtual_machines": "vm", "virtual_machine": "vm",
-    "app_services": "appservice", "web_apps": "appservice", "web_app": "appservice",
-    "function_apps": "function_app", "functions": "function_app",
-    "kubernetes_services": "aks", "managed_clusters": "aks", "kubernetes": "aks",
+    "virtual_machines": "vm",
+    "virtual_machine": "vm",
+    "app_services": "appservice",
+    "web_apps": "appservice",
+    "web_app": "appservice",
+    "function_apps": "function_app",
+    "functions": "function_app",
+    "kubernetes_services": "aks",
+    "managed_clusters": "aks",
+    "kubernetes": "aks",
     "container_registries": "acr",
     "container_apps_environments": "container_apps",
-    "spring_apps": "spring_apps", "azure_spring_apps": "spring_apps",
-    "static_apps": "static_web_app", "static_web_apps": "static_web_app",
+    "spring_apps": "spring_apps",
+    "azure_spring_apps": "spring_apps",
+    "static_apps": "static_web_app",
+    "static_web_apps": "static_web_app",
     # Integration
     "event_hubs": "event_hub",
-    "event_grid_topics": "event_grid", "event_grid_domains": "event_grid",
+    "event_grid_topics": "event_grid",
+    "event_grid_domains": "event_grid",
     "api_management_services": "apim",
     "service_bus_namespaces": "service_bus",
     "logic_app": "logic_apps",
     "notification_hubs": "notification_hub",
     # Monitoring
     "log_analytics_workspaces": "log_analytics",
-    "application_insights": "appinsights", "app_insight": "appinsights",
+    "application_insights": "appinsights",
+    "app_insight": "appinsights",
     # IoT
     "iot_hubs": "iot_hub",
     # Management
-    "backup_vaults": "backup", "backup_vault": "backup",
+    "backup_vaults": "backup",
+    "backup_vault": "backup",
 }
+
 
 def get_service_info(svc_type: str) -> dict:
     t = svc_type.lower().replace("-", "_").replace(" ", "_")
@@ -483,37 +681,61 @@ def get_service_info(svc_type: str) -> dict:
     return info
 
 
-def generate_html(services: list, connections: list, title: str, vnet_info: str = "", hierarchy: list = None) -> str:
+def generate_html(
+    services: list,
+    connections: list,
+    title: str,
+    vnet_info: str = "",
+    hierarchy: list = None,
+) -> str:
     def _norm(t):
         t = t.lower().replace("-", "_").replace(" ", "_")
         return _TYPE_ALIASES.get(t, t)
 
-    nodes_js = json.dumps([{
-        "id": svc["id"],
-        "name": svc["name"],
-        "type": _norm(svc.get("type", "default")),
-        "sku": svc.get("sku", ""),
-        "private": svc.get("private", False),
-        "details": svc.get("details", []),
-        "subscription": svc.get("subscription", ""),
-        "resourceGroup": svc.get("resourceGroup", ""),
-        "icon_svg": get_service_info(svc.get("type", "default"))["icon_svg"],
-        "icon_data_uri": get_service_info(svc.get("type", "default")).get("icon_data_uri", ""),
-        "color": get_service_info(svc.get("type", "default"))["color"],
-        "bg": get_service_info(svc.get("type", "default"))["bg"],
-        "category": get_service_info(svc.get("type", "default"))["category"],
-    } for svc in services], ensure_ascii=False)
+    nodes_js = json.dumps(
+        [
+            {
+                "id": svc["id"],
+                "name": svc["name"],
+                "type": _norm(svc.get("type", "default")),
+                "sku": svc.get("sku", ""),
+                "private": svc.get("private", False),
+                "details": svc.get("details", []),
+                "subscription": svc.get("subscription", ""),
+                "resourceGroup": svc.get("resourceGroup", ""),
+                "icon_svg": get_service_info(svc.get("type", "default"))["icon_svg"],
+                "icon_data_uri": get_service_info(svc.get("type", "default")).get(
+                    "icon_data_uri", ""
+                ),
+                "color": get_service_info(svc.get("type", "default"))["color"],
+                "bg": get_service_info(svc.get("type", "default"))["bg"],
+                "category": get_service_info(svc.get("type", "default"))["category"],
+            }
+            for svc in services
+        ],
+        ensure_ascii=False,
+    )
 
     hierarchy_js = json.dumps(hierarchy or [], ensure_ascii=False)
 
-    edges_js = json.dumps([{
-        "from": conn["from"],
-        "to": conn["to"],
-        "label": conn.get("label", ""),
-        "type": conn.get("type", "default"),
-        "color": CONNECTION_STYLES.get(conn.get("type", "default"), CONNECTION_STYLES["default"])["color"],
-        "dash": CONNECTION_STYLES.get(conn.get("type", "default"), CONNECTION_STYLES["default"])["dash"],
-    } for conn in connections], ensure_ascii=False)
+    edges_js = json.dumps(
+        [
+            {
+                "from": conn["from"],
+                "to": conn["to"],
+                "label": conn.get("label", ""),
+                "type": conn.get("type", "default"),
+                "color": CONNECTION_STYLES.get(
+                    conn.get("type", "default"), CONNECTION_STYLES["default"]
+                )["color"],
+                "dash": CONNECTION_STYLES.get(
+                    conn.get("type", "default"), CONNECTION_STYLES["default"]
+                )["dash"],
+            }
+            for conn in connections
+        ],
+        ensure_ascii=False,
+    )
 
     pe_count = sum(1 for s in services if _norm(s.get("type", "default")) == "pe")
     svc_count = len(services) - pe_count
@@ -2022,7 +2244,10 @@ setTimeout(fitToScreen, 100);
 </html>"""
     return html
 
-def generate_diagram(services, connections, title="Azure Architecture", vnet_info="", hierarchy=None):
+
+def generate_diagram(
+    services, connections, title="Azure Architecture", vnet_info="", hierarchy=None
+):
     """Generate an interactive Azure architecture diagram as an HTML string.
 
     Args:
@@ -2035,4 +2260,6 @@ def generate_diagram(services, connections, title="Azure Architecture", vnet_inf
     Returns:
         HTML string containing the interactive diagram.
     """
-    return generate_html(services, connections, title, vnet_info=vnet_info, hierarchy=hierarchy)
+    return generate_html(
+        services, connections, title, vnet_info=vnet_info, hierarchy=hierarchy
+    )

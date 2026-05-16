@@ -3,7 +3,6 @@
 Test module for cache functionality.
 """
 
-import os
 import sys
 import tempfile
 import unittest
@@ -18,8 +17,6 @@ from datetime import datetime, timedelta
 from unittest.mock import patch, mock_open
 
 from cache import Cache
-from Crew import get_version
-from errors import ConfigError
 
 
 class TestCache(unittest.TestCase):

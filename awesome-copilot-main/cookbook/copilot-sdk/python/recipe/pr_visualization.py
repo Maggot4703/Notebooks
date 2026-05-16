@@ -17,16 +17,16 @@ from copilot import (
 # Git & GitHub Detection
 # ============================================================================
 
+
 def is_git_repo():
     try:
         subprocess.run(
-            ["git", "rev-parse", "--git-dir"],
-            check=True,
-            capture_output=True
+            ["git", "rev-parse", "--git-dir"], check=True, capture_output=True
         )
         return True
-    except (subprocess.CalledProcessError, FileNotFoundError):
+    except subprocess.CalledProcessError, FileNotFoundError:
         return False
+
 
 def get_github_remote():
     try:
@@ -34,7 +34,7 @@ def get_github_remote():
             ["git", "remote", "get-url", "origin"],
             check=True,
             capture_output=True,
-            text=True
+            text=True,
         )
         remote_url = result.stdout.strip()
 
@@ -49,8 +49,9 @@ def get_github_remote():
             return https_match.group(1)
 
         return None
-    except (subprocess.CalledProcessError, FileNotFoundError):
+    except subprocess.CalledProcessError, FileNotFoundError:
         return None
+
 
 def parse_args():
     args = sys.argv[1:]
@@ -60,12 +61,15 @@ def parse_args():
             return {"repo": args[idx + 1]}
     return {}
 
+
 def prompt_for_repo():
     return input("Enter GitHub repo (owner/repo): ").strip()
+
 
 # ============================================================================
 # Main Application
 # ============================================================================
+
 
 async def main():
     print("🔍 PR Age Chart Generator\n")
@@ -99,10 +103,10 @@ async def main():
     client = CopilotClient()
     await client.start()
 
-    session = await client.create_session(SessionConfig(
-        model="gpt-5",
-        system_message={
-            "content": f"""
+    session = await client.create_session(
+        SessionConfig(
+            model="gpt-5",
+            system_message={"content": f"""
 <context>
 You are analyzing pull requests for the GitHub repository: {owner}/{repo_name}
 The current working directory is: {os.getcwd()}
@@ -114,9 +118,10 @@ The current working directory is: {os.getcwd()}
 - Save any generated images to the current working directory
 - Be concise in your responses
 </instructions>
-"""
-        },
-        on_permission_request=PermissionHandler.approve_all))
+"""},
+            on_permission_request=PermissionHandler.approve_all,
+        )
+    )
 
     done = asyncio.Event()
 
@@ -146,12 +151,12 @@ The current working directory is: {os.getcwd()}
     await done.wait()
 
     # Interactive loop
-    print("\n💡 Ask follow-up questions or type \"exit\" to quit.\n")
+    print('\n💡 Ask follow-up questions or type "exit" to quit.\n')
     print("Examples:")
-    print("  - \"Expand to the last month\"")
-    print("  - \"Show me the 5 oldest PRs\"")
-    print("  - \"Generate a pie chart instead\"")
-    print("  - \"Group by author instead of age\"")
+    print('  - "Expand to the last month"')
+    print('  - "Show me the 5 oldest PRs"')
+    print('  - "Generate a pie chart instead"')
+    print('  - "Group by author instead of age"')
     print()
 
     while True:
@@ -168,6 +173,7 @@ The current working directory is: {os.getcwd()}
 
     await session.destroy()
     await client.stop()
+
 
 if __name__ == "__main__":
     asyncio.run(main())

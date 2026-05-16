@@ -8,23 +8,33 @@ Serves static files as before, plus two REST endpoints to persist textarea text:
 Run: python server.py
 Then open: http://localhost:8080/index.html
 """
+
 import http.server
 import html
 import io
+import json
 import os
 import re
 import shutil
 import subprocess
+import shlex
 import sys
 import threading
 import time
+import uuid
 import webbrowser
-from urllib.parse import quote, unquote, urlsplit
+import sqlite3
+from urllib.parse import quote, unquote, urlsplit, parse_qs
 
 PORT = 8080
 WEB_ROOT = os.path.dirname(__file__)
 SAVED_DIR = os.path.join(WEB_ROOT, "saved")
-KEY_RE = re.compile(r'^[a-z0-9][a-z0-9-]{0,63}$')
+# Optional push target for mirroring saved notes to a desktop on another host.
+# Set DESKTOP_PUSH_TARGET env var to e.g. 'me@home:~/Desktop/0101_notes/' to enable.
+DESKTOP_PUSH_TARGET = os.environ.get(
+    "DESKTOP_PUSH_TARGET", "me@home:~/Desktop/0101_notes/"
+)
+KEY_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 DEFAULT_0101_WINDOW_WIDTH = 720
 DEFAULT_0101_WINDOW_HEIGHT = 1180
 
@@ -82,6 +92,87 @@ IMAGE_FALLBACK_EXTENSIONS = (
 )
 TRAVELLER_SCRIPTS_STUB = b"window.TravellerScripts = window.TravellerScripts || {};\n"
 
+# Simple sqlite index for server-side full-text search
+INDEX_DB = os.path.join(WEB_ROOT, "0101_index.db")
+
+
+def _ensure_index_db():
+    conn = sqlite3.connect(INDEX_DB)
+    c = conn.cursor()
+    try:
+        c.execute(
+            "CREATE VIRTUAL TABLE IF NOT EXISTS pages_fts USING fts5(doc_id, page_num UNINDEXED, text)"
+        )
+    except Exception:
+        # fallback to a plain table when fts5 is unavailable
+        c.execute(
+            "CREATE TABLE IF NOT EXISTS pages_fts_plain (doc_id TEXT, page_num INTEGER, text TEXT)"
+        )
+    conn.commit()
+    conn.close()
+
+
+def build_index():
+    """Scan extracted page.json files and populate the index database."""
+    extracted_root = os.path.join(WEB_ROOT, "0101_extracted")
+    if not os.path.isdir(extracted_root):
+        return
+    conn = sqlite3.connect(INDEX_DB)
+    c = conn.cursor()
+    use_fts = False
+    try:
+        c.execute("DROP TABLE IF EXISTS pages_fts")
+        c.execute(
+            "CREATE VIRTUAL TABLE pages_fts USING fts5(doc_id, page_num UNINDEXED, text)"
+        )
+        use_fts = True
+    except Exception:
+        # fts5 not available; use plain table
+        c.execute("DROP TABLE IF EXISTS pages_fts_plain")
+        c.execute(
+            "CREATE TABLE pages_fts_plain (doc_id TEXT, page_num INTEGER, text TEXT)"
+        )
+        use_fts = False
+
+    for name in sorted(os.listdir(extracted_root)):
+        base = os.path.join(extracted_root, name)
+        if not os.path.isdir(base):
+            continue
+        for p_dir in sorted(os.listdir(base)):
+            if not p_dir.startswith("page"):
+                continue
+            page_json = os.path.join(base, p_dir, "page.json")
+            if not os.path.isfile(page_json):
+                continue
+            try:
+                with open(page_json, "r", encoding="utf-8") as fh:
+                    pdata = json.load(fh)
+                text_parts = []
+                if pdata.get("text"):
+                    text_parts.append(pdata.get("text", ""))
+                if pdata.get("ocr_text"):
+                    text_parts.append(pdata.get("ocr_text", ""))
+                for b in pdata.get("text_blocks", []):
+                    for s in b.get("spans", []):
+                        if s.get("text"):
+                            text_parts.append(s.get("text"))
+                fulltext = "\n".join(text_parts)
+                page_num = pdata.get("page_number", 0)
+                if use_fts:
+                    c.execute(
+                        "INSERT INTO pages_fts(doc_id, page_num, text) VALUES (?, ?, ?)",
+                        (name, page_num, fulltext),
+                    )
+                else:
+                    c.execute(
+                        "INSERT INTO pages_fts_plain(doc_id, page_num, text) VALUES (?, ?, ?)",
+                        (name, page_num, fulltext),
+                    )
+            except Exception as e:
+                print("Indexing error", e)
+    conn.commit()
+    conn.close()
+
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
@@ -118,9 +209,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if normalized_path:
             parent = normalized_path.rsplit("/", 1)[0]
             parent_href = (parent + "/") if parent else "/"
-            items.append(
-                f'<li><a href="{quote(parent_href, safe="/%")}">..</a></li>'
-            )
+            items.append(f'<li><a href="{quote(parent_href, safe="/%")}">..</a></li>')
 
         for name in entries:
             full_path = os.path.join(path, name)
@@ -236,6 +325,193 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if self.path.rstrip("/") == "/api/shutdown":
             self._shutdown_response()
             return
+
+        # API: list extracted PDFs
+        if request_path == "/api/pdfs":
+            self._touch_ping()
+            extracted_root = os.path.join(WEB_ROOT, "0101_extracted")
+            items = []
+            if os.path.isdir(extracted_root):
+                for name in sorted(os.listdir(extracted_root)):
+                    manifest_path = os.path.join(extracted_root, name, "manifest.json")
+                    info = {"id": name, "name": name}
+                    try:
+                        if os.path.isfile(manifest_path):
+                            with open(manifest_path, "r", encoding="utf-8") as fh:
+                                m = json.load(fh)
+                                info["page_count"] = len(m.get("pages", []))
+                                info["title"] = m.get("name", name)
+                    except Exception:
+                        pass
+                    items.append(info)
+            data = json.dumps(items).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+            return
+
+        # API: pages count / manifest for a specific pdf
+        m = re.match(r"^/api/pdf/([^/]+)/pages/?$", request_path)
+        if m:
+            self._touch_ping()
+            pdf_id = unquote(m.group(1))
+            base = os.path.join(WEB_ROOT, "0101_extracted", pdf_id)
+            manifest_path = os.path.join(base, "manifest.json")
+            if os.path.isfile(manifest_path):
+                try:
+                    with open(manifest_path, "r", encoding="utf-8") as fh:
+                        mdata = json.load(fh)
+                except Exception:
+                    self.send_error(500)
+                    return
+                data = json.dumps(
+                    {"id": pdf_id, "page_count": len(mdata.get("pages", []))}
+                ).encode("utf-8")
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Content-Length", str(len(data)))
+                self.end_headers()
+                self.wfile.write(data)
+                return
+            else:
+                self.send_error(404)
+                return
+
+        # API: per-page content
+        m = re.match(r"^/api/pdf/([^/]+)/page/(\d+)/content/?$", request_path)
+        if m:
+            self._touch_ping()
+            pdf_id = unquote(m.group(1))
+            page_num = int(m.group(2))
+            base = os.path.join(WEB_ROOT, "0101_extracted", pdf_id)
+            page_dir = os.path.join(base, f"page{page_num:03d}")
+            page_json = os.path.join(page_dir, "page.json")
+            if os.path.isfile(page_json):
+                try:
+                    with open(page_json, "r", encoding="utf-8") as fh:
+                        pdata = fh.read().encode("utf-8")
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/json; charset=utf-8")
+                    self.send_header("Content-Length", str(len(pdata)))
+                    self.end_headers()
+                    self.wfile.write(pdata)
+                    return
+                except Exception:
+                    self.send_error(500)
+                    return
+            else:
+                self.send_error(404)
+                return
+
+        # API: search across indexed pages
+        if request_path == "/api/search":
+            self._touch_ping()
+            qs = urlsplit(self.path).query
+            params = parse_qs(qs)
+            q = params.get("q", [""])[0]
+            if not q:
+                self.send_error(400)
+                return
+            try:
+                conn = sqlite3.connect(INDEX_DB)
+                c = conn.cursor()
+                results = []
+                try:
+                    rows = c.execute(
+                        "SELECT doc_id, page_num, snippet(pages_fts, 2, '<mark>','</mark>','...', 10) FROM pages_fts WHERE pages_fts MATCH ? LIMIT 200",
+                        (q,),
+                    ).fetchall()
+                    for r in rows:
+                        results.append({"id": r[0], "page": r[1], "snippet": r[2]})
+                except Exception:
+                    # fallback to plain table search
+                    rows = c.execute(
+                        "SELECT doc_id, page_num, substr(text, instr(lower(text), lower(?)) - 30, 200) FROM pages_fts_plain WHERE lower(text) LIKE '%' || lower(?) || '%' LIMIT 200",
+                        (q, q),
+                    ).fetchall()
+                    for r in rows:
+                        results.append({"id": r[0], "page": r[1], "snippet": r[2]})
+                conn.close()
+            except Exception as e:
+                print("Search error", e)
+                self.send_error(500)
+                return
+            data = json.dumps(results).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+            return
+
+        # Fallback to existing behavior
+        # API: health check and push_queue listing and retrieval
+        if request_path == "/api/health":
+            # Simple health endpoint for readiness checks
+            self._touch_ping()
+            payload = {"status": "ok", "ts": int(time.time())}
+            data = json.dumps(payload).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+            return
+
+        if request_path.startswith("/api/push-queue"):
+            self._touch_ping()
+            qdir = os.path.join(SAVED_DIR, "push_queue")
+            os.makedirs(qdir, exist_ok=True)
+            # list all jobs
+            if request_path.rstrip("/") == "/api/push-queue":
+                items = []
+                for name in sorted(os.listdir(qdir)):
+                    pathf = os.path.join(qdir, name)
+                    try:
+                        with open(pathf, "r", encoding="utf-8") as fh:
+                            j = json.load(fh)
+                        items.append(
+                            {
+                                "file": name,
+                                "src": j.get("src"),
+                                "target": j.get("target"),
+                                "ts": j.get("ts"),
+                                "attempts": j.get("attempts", 0),
+                            }
+                        )
+                    except Exception:
+                        continue
+                data = json.dumps(items).encode("utf-8")
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Content-Length", str(len(data)))
+                self.end_headers()
+                self.wfile.write(data)
+                print(f"push_queue: listed {len(items)} jobs")
+                return
+            # GET specific job file
+            m = re.match(r"^/api/push-queue/([^/]+)/?$", request_path)
+            if m:
+                jobfile = unquote(m.group(1))
+                jobpath = os.path.join(qdir, jobfile)
+                if not os.path.isfile(jobpath):
+                    self.send_error(404)
+                    return
+                try:
+                    with open(jobpath, "r", encoding="utf-8") as fh:
+                        data = fh.read().encode("utf-8")
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/json; charset=utf-8")
+                    self.send_header("Content-Length", str(len(data)))
+                    self.end_headers()
+                    self.wfile.write(data)
+                    print(f"push_queue: showed {jobfile}")
+                    return
+                except Exception:
+                    self.send_error(500)
+                    return
         if request_path == "/favicon.ico":
             self.send_response(204)
             self.send_header("Content-Length", "0")
@@ -267,16 +543,306 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if self.path.rstrip("/") == "/api/shutdown":
             self._shutdown_response()
             return
+
+        # API: trigger extraction for a PDF id
+        m = re.match(r"^/api/pdf/([^/]+)/extract/?$", urlsplit(self.path).path)
+        if m:
+            self._touch_ping()
+            pdf_id = unquote(m.group(1))
+            pdfs_dir = os.path.join(WEB_ROOT, "PDFs", "SM")
+            target = None
+            # direct filename match
+            candidate = os.path.join(pdfs_dir, pdf_id)
+            if os.path.isfile(candidate):
+                target = candidate
+            else:
+                # try with .pdf
+                candidate_pdf = os.path.join(pdfs_dir, pdf_id + ".pdf")
+                if os.path.isfile(candidate_pdf):
+                    target = candidate_pdf
+                else:
+                    # try normalized stem match
+                    if os.path.isdir(pdfs_dir):
+                        for fname in os.listdir(pdfs_dir):
+                            if not fname.lower().endswith(".pdf"):
+                                continue
+                            stem = os.path.splitext(fname)[0]
+                            norm = "".join(
+                                c if c.isalnum() or c in (" ", "-", "_") else "_"
+                                for c in stem
+                            ).strip()
+                            if norm == pdf_id or fname == pdf_id or stem == pdf_id:
+                                target = os.path.join(pdfs_dir, fname)
+                                break
+            if target is None:
+                self.send_error(404)
+                return
+
+            def run_extract():
+                try:
+                    script = os.path.normpath(
+                        os.path.join(os.path.dirname(__file__), "..", "pdf_extract.py")
+                    )
+                    subprocess.run(
+                        [sys.executable, script, "--pdf", target],
+                        cwd=os.path.dirname(script),
+                    )
+                except Exception as e:
+                    print("Extraction error", e)
+
+            threading.Thread(target=run_extract, daemon=True).start()
+            self.send_response(202)
+            self.send_header("Content-Length", "0")
+            self.end_headers()
+            return
+
+        # API: trigger index build
+        if self.path.rstrip("/") == "/api/index/build":
+            self._touch_ping()
+
+            def run_build():
+                try:
+                    _ensure_index_db()
+                    build_index()
+                except Exception as e:
+                    print("Index build error", e)
+
+            threading.Thread(target=run_build, daemon=True).start()
+            self.send_response(202)
+            self.send_header("Content-Length", "0")
+            self.end_headers()
+            return
+
         key = self._api_key()
         if key is None:
             self.send_error(404)
             return
         length = int(self.headers.get("Content-Length", 0))
-        body = self.rfile.read(length).decode("utf-8")
+        body = ""
+        if length:
+            body = self.rfile.read(length).decode("utf-8")
+        else:
+            # Fallback: sometimes clients send bodies without Content-Length
+            # (e.g., chunked encoding or proxies). Try to read any immediately
+            # available data with a short socket timeout so handler doesn't block.
+            try:
+                orig_timeout = None
+                try:
+                    orig_timeout = self.connection.gettimeout()
+                except Exception:
+                    orig_timeout = None
+                try:
+                    # small timeout to drain any available body bytes
+                    self.connection.settimeout(0.1)
+                    chunks = []
+                    while True:
+                        data = self.rfile.read(65536)
+                        if not data:
+                            break
+                        chunks.append(data)
+                    if chunks:
+                        body = b"".join(chunks).decode("utf-8")
+                finally:
+                    # restore original timeout if possible
+                    try:
+                        if orig_timeout is None:
+                            self.connection.settimeout(None)
+                        else:
+                            self.connection.settimeout(orig_timeout)
+                    except Exception:
+                        pass
+            except Exception:
+                body = ""
+
         os.makedirs(SAVED_DIR, exist_ok=True)
         path = os.path.join(SAVED_DIR, f"{key}.txt")
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(body)
+        # If body is empty, remove any existing saved file to avoid keeping empty notes
+        if not body:
+            try:
+                if os.path.exists(path):
+                    os.remove(path)
+            except Exception:
+                # If removal fails, silently continue
+                pass
+
+            # Also attempt to remove the mirrored file on the configured desktop
+            # target so empty saves don't leave stale Desktop copies.
+            try:
+                if DESKTOP_PUSH_TARGET:
+                    # If target looks like a remote (user@host:/path), SSH in and remove.
+                    if (
+                        ":" in DESKTOP_PUSH_TARGET
+                        and not DESKTOP_PUSH_TARGET.startswith("/")
+                    ):
+                        try:
+                            host_part, remote_dir = DESKTOP_PUSH_TARGET.split(":", 1)
+                            remote_dir = remote_dir.rstrip("/")
+                            remote_file = remote_dir + "/" + os.path.basename(path)
+                            cmd = [
+                                "ssh",
+                                "-o",
+                                "BatchMode=yes",
+                                host_part,
+                                "rm -f " + shlex.quote(remote_file),
+                            ]
+                            subprocess.run(
+                                cmd, capture_output=True, text=True, timeout=20
+                            )
+                        except Exception:
+                            pass
+                    else:
+                        # Local directory target
+                        try:
+                            dest_path = os.path.join(
+                                DESKTOP_PUSH_TARGET, os.path.basename(path)
+                            )
+                            if os.path.exists(dest_path):
+                                os.remove(dest_path)
+                        except Exception:
+                            pass
+            except Exception:
+                pass
+        else:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(body)
+
+            # Best-effort push of the saved file to a configured desktop target.
+            # Runs in a background thread so requests stay responsive. The target
+            # can be disabled by setting DESKTOP_PUSH_TARGET to an empty string.
+            def _push_saved_file(src_path, target):
+                try:
+                    if not target:
+                        return
+                    if shutil.which("rsync") is None:
+                        return
+                    rsync_cmd = [
+                        "rsync",
+                        "-az",
+                        "--update",
+                        "-e",
+                        "ssh -o BatchMode=yes",
+                        src_path,
+                        target,
+                    ]
+                    res = subprocess.run(
+                        rsync_cmd, capture_output=True, text=True, timeout=30
+                    )
+                    if res.returncode != 0:
+                        # enqueue for retry
+                        try:
+                            qdir = os.path.join(SAVED_DIR, "push_queue")
+                            os.makedirs(qdir, exist_ok=True)
+                            job = {
+                                "src": src_path,
+                                "target": target,
+                                "ts": time.time(),
+                                "attempts": 0,
+                            }
+                            fname = (
+                                f"pushjob-{int(time.time())}-{uuid.uuid4().hex}.json"
+                            )
+                            with open(
+                                os.path.join(qdir, fname), "w", encoding="utf-8"
+                            ) as jh:
+                                json.dump(job, jh)
+                        except Exception:
+                            pass
+                except Exception:
+                    # on unexpected error, enqueue job for later retry
+                    try:
+                        qdir = os.path.join(SAVED_DIR, "push_queue")
+                        os.makedirs(qdir, exist_ok=True)
+                        job = {
+                            "src": src_path,
+                            "target": target,
+                            "ts": time.time(),
+                            "attempts": 0,
+                        }
+                        fname = f"pushjob-{int(time.time())}-{uuid.uuid4().hex}.json"
+                        with open(
+                            os.path.join(qdir, fname), "w", encoding="utf-8"
+                        ) as jh:
+                            json.dump(job, jh)
+                    except Exception:
+                        pass
+
+            try:
+                import threading
+
+                if DESKTOP_PUSH_TARGET:
+                    t = threading.Thread(
+                        target=_push_saved_file,
+                        args=(path, DESKTOP_PUSH_TARGET),
+                        daemon=True,
+                    )
+                    t.start()
+            except Exception:
+                pass
+
+        self.send_response(200)
+        self.send_header("Content-Length", "0")
+        self.end_headers()
+
+    def do_DELETE(self):
+        # Support DELETE /api/text/<key> to remove saved note file
+        # Also support DELETE /api/push-queue and /api/push-queue/<jobfile>
+        request_path = urlsplit(self.path).path
+        if request_path.startswith("/api/push-queue"):
+            qdir = os.path.join(SAVED_DIR, "push_queue")
+            os.makedirs(qdir, exist_ok=True)
+            # DELETE all jobs
+            if request_path.rstrip("/") == "/api/push-queue":
+                removed = 0
+                for name in os.listdir(qdir):
+                    p = os.path.join(qdir, name)
+                    try:
+                        os.remove(p)
+                        removed += 1
+                    except Exception:
+                        pass
+                self.send_response(200)
+                body = json.dumps({"deleted": removed}).encode("utf-8")
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Content-Length", str(len(body)))
+                self.end_headers()
+                self.wfile.write(body)
+                print(f"push_queue: deleted all ({removed})")
+                return
+            m = re.match(r"^/api/push-queue/([^/]+)/?$", request_path)
+            if m:
+                jobfile = unquote(m.group(1))
+                jobpath = os.path.join(qdir, jobfile)
+                if os.path.exists(jobpath):
+                    try:
+                        os.remove(jobpath)
+                        self.send_response(200)
+                        body = json.dumps({"deleted": jobfile}).encode("utf-8")
+                        self.send_header(
+                            "Content-Type", "application/json; charset=utf-8"
+                        )
+                        self.send_header("Content-Length", str(len(body)))
+                        self.end_headers()
+                        self.wfile.write(body)
+                        print(f"push_queue: deleted {jobfile}")
+                        return
+                    except Exception:
+                        self.send_error(500)
+                        return
+                else:
+                    self.send_error(404)
+                    return
+
+        key = self._api_key()
+        if key is None:
+            self.send_error(404)
+            return
+        path = os.path.join(SAVED_DIR, f"{key}.txt")
+        try:
+            if os.path.exists(path):
+                os.remove(path)
+        except Exception:
+            # ignore errors
+            pass
         self.send_response(200)
         self.send_header("Content-Length", "0")
         self.end_headers()
@@ -285,7 +851,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         """Return the key if the path is /api/text/<key>, else None."""
         if not self.path.startswith("/api/text/"):
             return None
-        key = self.path[len("/api/text/"):]
+        key = self.path[len("/api/text/") :]
         # strip query string
         key = key.split("?")[0]
         if not KEY_RE.match(key):
@@ -519,7 +1085,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     @staticmethod
     def _fallback_legacy_file_url(raw_url):
         decoded_path = unquote(urlsplit(raw_url).path).lower()
-        if decoded_path.endswith((".gif", ".png", ".jpg", ".jpeg", ".webp", ".bmp", ".svg")):
+        if decoded_path.endswith(
+            (".gif", ".png", ".jpg", ".jpeg", ".webp", ".bmp", ".svg")
+        ):
             return "/missing-asset.svg"
         return "#missing-local-file"
 
@@ -548,7 +1116,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 fallback_before=True,
                 prepend_if_missing=True,
             )
-        if '/0101-shell.css' not in content:
+        if "/0101-shell.css" not in content:
             content = Handler._insert_asset(
                 content,
                 r"</head\s*>",
@@ -557,7 +1125,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 fallback_before=True,
                 prepend_if_missing=True,
             )
-        if '/persist.js' not in content:
+        if "/persist.js" not in content:
             content = Handler._insert_asset(
                 content,
                 r"</body\s*>",
@@ -565,7 +1133,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 fallback_pattern=r"</html\s*>",
                 fallback_before=True,
             )
-        if '/0101-shell.js' not in content:
+        if "/0101-shell.js" not in content:
             content = Handler._insert_asset(
                 content,
                 r"</body\s*>",
@@ -613,6 +1181,81 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         sys.stderr.write(f"{self.address_string()} - {fmt % args}\n")
 
 
+def _push_retry_worker(interval=10, max_attempts=10):
+    """Background worker: retry failed push jobs stored in saved/push_queue/.
+
+    Each job is a small JSON file with keys: src, target, ts, attempts.
+    The worker attempts rsync and removes the job on success, or increments
+    attempts and retries later. Jobs exceeding max_attempts are discarded.
+    """
+    qdir = os.path.join(SAVED_DIR, "push_queue")
+    os.makedirs(qdir, exist_ok=True)
+    while True:
+        try:
+            jobs = sorted(os.listdir(qdir))
+            for jobf in jobs:
+                jobpath = os.path.join(qdir, jobf)
+                try:
+                    with open(jobpath, "r", encoding="utf-8") as fh:
+                        job = json.load(fh)
+                except Exception:
+                    # corrupt job file; remove it
+                    try:
+                        os.remove(jobpath)
+                    except Exception:
+                        pass
+                    continue
+                attempts = job.get("attempts", 0)
+                if attempts >= max_attempts:
+                    try:
+                        os.remove(jobpath)
+                    except Exception:
+                        pass
+                    continue
+                src = job.get("src")
+                target = job.get("target")
+                if not (src and target):
+                    try:
+                        os.remove(jobpath)
+                    except Exception:
+                        pass
+                    continue
+                if shutil.which("rsync") is None:
+                    break
+                rsync_cmd = [
+                    "rsync",
+                    "-az",
+                    "--update",
+                    "-e",
+                    "ssh -o BatchMode=yes",
+                    src,
+                    target,
+                ]
+                try:
+                    res = subprocess.run(
+                        rsync_cmd, capture_output=True, text=True, timeout=60
+                    )
+                    if res.returncode == 0:
+                        try:
+                            os.remove(jobpath)
+                        except Exception:
+                            pass
+                    else:
+                        job["attempts"] = attempts + 1
+                        job["ts"] = time.time()
+                        try:
+                            with open(jobpath, "w", encoding="utf-8") as fh:
+                                json.dump(job, fh)
+                        except Exception:
+                            pass
+                except Exception:
+                    # leave job file for later retry
+                    pass
+            time.sleep(interval)
+        except Exception:
+            time.sleep(interval)
+
+
 def _watchdog(httpd):
     """Shut down the server if no ping is received within SHUTDOWN_TIMEOUT seconds."""
     while True:
@@ -639,7 +1282,13 @@ def _resize_window_by_title(
             try:
                 if command == "wmctrl":
                     subprocess.run(
-                        ["wmctrl", "-r", window_title, "-e", f"0,-1,-1,{width},{height}"],
+                        [
+                            "wmctrl",
+                            "-r",
+                            window_title,
+                            "-e",
+                            f"0,-1,-1,{width},{height}",
+                        ],
                         check=True,
                         capture_output=True,
                         text=True,
@@ -696,6 +1345,12 @@ def main():
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     with ReusableThreadingHTTPServer(("", PORT), Handler) as httpd:
         print(f"Serving on http://localhost:{PORT}/")
+        # Start background retry worker for any enqueued push jobs
+        try:
+            threading.Thread(target=_push_retry_worker, daemon=True).start()
+        except Exception:
+            pass
+
         threading.Thread(target=_watchdog, args=(httpd,), daemon=True).start()
         threading.Timer(
             1.0,
@@ -704,6 +1359,7 @@ def main():
         ).start()
         httpd.serve_forever()
     print("Server stopped.")
+
 
 if __name__ == "__main__":
     main()

@@ -9,6 +9,7 @@ Exit codes:
     0  All checks passed
     1  One or more validation errors found
 """
+
 from __future__ import annotations
 
 import sys
@@ -48,7 +49,9 @@ def validate_file(path: Path) -> list[str]:
         # Find mxGraphModel (may be direct child or base64-encoded; we handle direct only)
         graph_model = diagram.find("mxGraphModel")
         if graph_model is None:
-            print(f"  SKIP {prefix}: mxGraphModel not found as direct child (may be compressed)")
+            print(
+                f"  SKIP {prefix}: mxGraphModel not found as direct child (may be compressed)"
+            )
             continue
 
         root_elem = graph_model.find("root")
@@ -101,14 +104,14 @@ def validate_file(path: Path) -> list[str]:
                     f"got parent='{cell.get('parent')}'",
                     errors,
                 )
+
         # H2: Every diagram page must contain a title cell
         # (a vertex with style containing 'text;' and 'fontSize=18')
         def _is_title_style(style: str) -> bool:
             """Return True if the style string identifies a draw.io title text cell."""
             return (
-                (style.startswith("text;") or ";text;" in style)
-                and "fontSize=18" in style
-            )
+                style.startswith("text;") or ";text;" in style
+            ) and "fontSize=18" in style
 
         has_title_cell = any(
             c.get("vertex") == "1" and _is_title_style(c.get("style") or "")
@@ -131,7 +134,10 @@ def validate_file(path: Path) -> list[str]:
             parent = cell.get("parent")
             if cid != "0":
                 if parent is None:
-                    _error(f"{prefix} Cell id='{cid}' is missing a 'parent' attribute", errors)
+                    _error(
+                        f"{prefix} Cell id='{cid}' is missing a 'parent' attribute",
+                        errors,
+                    )
                 elif parent not in cell_ids:
                     _error(
                         f"{prefix} Cell id='{cid}' references unknown parent='{parent}'",

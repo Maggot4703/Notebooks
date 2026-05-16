@@ -12,6 +12,7 @@ Examples:
         --style "rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;"
     python scripts/add-shape.py docs/arch.drawio "Preview Node" 200 200 --dry-run
 """
+
 from __future__ import annotations
 
 import argparse
@@ -20,7 +21,6 @@ import sys
 import time
 import xml.etree.ElementTree as ET
 from pathlib import Path
-
 
 DEFAULT_STYLE = "rounded=1;whiteSpace=wrap;html=1;"
 
@@ -139,7 +139,9 @@ def add_shape(
     if dry_run:
         print("DRY RUN — new cell XML (not written):")
         print(ET.tostring(new_cell, encoding="unicode"))
-        print(f"\nWould add to diagram '{diagram.get('name', diagram_index)}' in '{path}'")
+        print(
+            f"\nWould add to diagram '{diagram.get('name', diagram_index)}' in '{path}'"
+        )
         return 0
 
     root_elem.append(new_cell)
@@ -149,7 +151,7 @@ def add_shape(
     tree.write(str(path), encoding="utf-8", xml_declaration=True)
 
     print(
-        f"Added shape id=\"{new_id}\" to page {diagram_index} "
+        f'Added shape id="{new_id}" to page {diagram_index} '
         f"('{diagram.get('name', '')}') of {path}"
     )
     return 0
@@ -164,8 +166,12 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("label", help="Text label for the new shape")
     parser.add_argument("x", type=int, help="X coordinate (pixels)")
     parser.add_argument("y", type=int, help="Y coordinate (pixels)")
-    parser.add_argument("--width", type=int, default=120, help="Shape width (default: 120)")
-    parser.add_argument("--height", type=int, default=60, help="Shape height (default: 60)")
+    parser.add_argument(
+        "--width", type=int, default=120, help="Shape width (default: 120)"
+    )
+    parser.add_argument(
+        "--height", type=int, default=60, help="Shape height (default: 60)"
+    )
     parser.add_argument(
         "--style",
         default=DEFAULT_STYLE,

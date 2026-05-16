@@ -301,6 +301,25 @@
     });
   }
 
+  function handleDataHexLinks() {
+    document.addEventListener('click', function (ev) {
+      var a = ev.target && ev.target.closest ? ev.target.closest('a[data-hex]') : null;
+      if (!a) return;
+      ev.preventDefault();
+      try {
+        var hex = a.getAttribute('data-hex');
+        var sub = a.getAttribute('data-sub');
+        var sec = a.getAttribute('data-sec') || 'Spinward Marches';
+        var pdf = a.getAttribute('data-pdf');
+        if (hex) localStorage.setItem('hexJSON', JSON.stringify({hex: hex}));
+        if (sub) localStorage.setItem('sub', sub);
+        if (sec) localStorage.setItem('sec', sec);
+        if (pdf) localStorage.setItem('pdf', pdf);
+      } catch (e) {}
+      window.location = preservedUrl(a.getAttribute('href'));
+    }, false);
+  }
+
   function restoreScrollPosition() {
     var key = '0101-scroll:' + window.location.pathname;
     var value = localStorage.getItem(key);
@@ -471,7 +490,7 @@
   ready(function () {
     enforceDarkMode();
     addShellHeader();
-    preserveInternalLinks();
+    preserveInternalLinks(); handleDataHexLinks();
     restoreScrollPosition();
     addClassesForLayout();
     addWorldSearch();

@@ -1,0 +1,49 @@
+# Page 40
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 1011 Arden
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 20
+  TF: TF 5
+  TL: TI
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 1118 Garda-Vilis
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: e's
+  TF: TF 45
+  TL: TL 13
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 1119 Vilis
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 20
+  TF: TF 5
+  TL: TL 13
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 1515 Calit
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: e's
+  TF: TF 5
+  TL: TL ?

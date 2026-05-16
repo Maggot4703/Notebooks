@@ -1,0 +1,19 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/gkbd-keyboard-display
+Usage:
+  gkbd-keyboard-display [OPTION…]
+
+Help Options:
+  -h, --help                                      Show help options
+  --help-all                                      Show all help options
+  --help-gtk                                      Show GTK+ Options
+
+Application Options:
+  -g, --group=group number (1, 2, 3, 4)           Group to display
+  -l, --layout=layout (with optional variant)     Layout to display
+  --display=DISPLAY                               X display to use
+

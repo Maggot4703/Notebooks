@@ -19,11 +19,14 @@ from sector_utils import load_sector_data, SECTOR_HEADERS
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Export sector/world data to PDF table.")
-    parser.add_argument("sector_file", help="Path to sector file (.sec or tab-delimited)")
+    parser = argparse.ArgumentParser(
+        description="Export sector/world data to PDF table."
+    )
+    parser.add_argument(
+        "sector_file", help="Path to sector file (.sec or tab-delimited)"
+    )
     parser.add_argument("--output", help="Output PDF file", default="output.pdf")
     return parser.parse_args()
-
 
 
 def main():
@@ -39,18 +42,21 @@ def main():
     data = [SECTOR_HEADERS] + [row[:11] for row in rows]
     doc = SimpleDocTemplate(args.output, pagesize=landscape(letter))
     table = Table(data, repeatRows=1)
-    style = TableStyle([
-        ('BACKGROUND', (0,0), (-1,0), colors.grey),
-        ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
-        ('ALIGN', (0,0), (-1,-1), 'LEFT'),
-        ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
-        ('FONTSIZE', (0,0), (-1,0), 10),
-        ('BOTTOMPADDING', (0,0), (-1,0), 8),
-        ('GRID', (0,0), (-1,-1), 0.5, colors.black),
-    ])
+    style = TableStyle(
+        [
+            ("BACKGROUND", (0, 0), (-1, 0), colors.grey),
+            ("TEXTCOLOR", (0, 0), (-1, 0), colors.whitesmoke),
+            ("ALIGN", (0, 0), (-1, -1), "LEFT"),
+            ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+            ("FONTSIZE", (0, 0), (-1, 0), 10),
+            ("BOTTOMPADDING", (0, 0), (-1, 0), 8),
+            ("GRID", (0, 0), (-1, -1), 0.5, colors.black),
+        ]
+    )
     table.setStyle(style)
     doc.build([table])
     print(f"PDF exported to {args.output}")
+
 
 if __name__ == "__main__":
     main()

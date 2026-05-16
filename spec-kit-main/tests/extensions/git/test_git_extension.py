@@ -34,7 +34,9 @@ HAS_PWSH = shutil.which("pwsh") is not None
 def _init_git(path: Path) -> None:
     """Initialize a git repo with a dummy commit."""
     subprocess.run(["git", "init", "-q"], cwd=path, check=True)
-    subprocess.run(["git", "config", "user.email", "test@example.com"], cwd=path, check=True)
+    subprocess.run(
+        ["git", "config", "user.email", "test@example.com"], cwd=path, check=True
+    )
     subprocess.run(["git", "config", "user.name", "Test User"], cwd=path, check=True)
     subprocess.run(
         ["git", "commit", "--allow-empty", "-m", "seed", "-q"],
@@ -71,7 +73,10 @@ def _setup_project(tmp_path: Path, *, git: bool = True) -> Path:
         shutil.copy(f, ext_ps / f.name)
 
     # Copy extension.yml
-    shutil.copy(EXT_DIR / "extension.yml", tmp_path / ".specify" / "extensions" / "git" / "extension.yml")
+    shutil.copy(
+        EXT_DIR / "extension.yml",
+        tmp_path / ".specify" / "extensions" / "git" / "extension.yml",
+    )
 
     if git:
         _init_git(tmp_path)
@@ -95,7 +100,9 @@ _GIT_ENV = {
 }
 
 
-def _run_bash(script_name: str, cwd: Path, *args: str, env_extra: dict | None = None) -> subprocess.CompletedProcess:
+def _run_bash(
+    script_name: str, cwd: Path, *args: str, env_extra: dict | None = None
+) -> subprocess.CompletedProcess:
     """Run an extension bash script."""
     script = cwd / ".specify" / "extensions" / "git" / "scripts" / "bash" / script_name
     env = {**os.environ, **_GIT_ENV, **(env_extra or {})}
@@ -110,7 +117,9 @@ def _run_bash(script_name: str, cwd: Path, *args: str, env_extra: dict | None = 
 
 def _run_pwsh(script_name: str, cwd: Path, *args: str) -> subprocess.CompletedProcess:
     """Run an extension PowerShell script."""
-    script = cwd / ".specify" / "extensions" / "git" / "scripts" / "powershell" / script_name
+    script = (
+        cwd / ".specify" / "extensions" / "git" / "scripts" / "powershell" / script_name
+    )
     env = {**os.environ, **_GIT_ENV}
     return subprocess.run(
         ["pwsh", "-NoProfile", "-File", str(script), *args],
@@ -177,7 +186,9 @@ class TestGitExtensionInstall:
 
         (tmp_path / ".specify").mkdir()
         manager = ExtensionManager(tmp_path)
-        manifest = manager.install_from_directory(EXT_DIR, "0.5.0", register_commands=False)
+        manifest = manager.install_from_directory(
+            EXT_DIR, "0.5.0", register_commands=False
+        )
         assert manifest.id == "git"
         assert manager.registry.is_installed("git")
 
@@ -194,8 +205,12 @@ class TestGitExtensionInstall:
         assert (ext_installed / "scripts" / "bash" / "initialize-repo.sh").is_file()
         assert (ext_installed / "scripts" / "bash" / "auto-commit.sh").is_file()
         assert (ext_installed / "scripts" / "bash" / "git-common.sh").is_file()
-        assert (ext_installed / "scripts" / "powershell" / "create-new-feature.ps1").is_file()
-        assert (ext_installed / "scripts" / "powershell" / "initialize-repo.ps1").is_file()
+        assert (
+            ext_installed / "scripts" / "powershell" / "create-new-feature.ps1"
+        ).is_file()
+        assert (
+            ext_installed / "scripts" / "powershell" / "initialize-repo.ps1"
+        ).is_file()
         assert (ext_installed / "scripts" / "powershell" / "auto-commit.ps1").is_file()
         assert (ext_installed / "scripts" / "powershell" / "git-common.ps1").is_file()
 
@@ -224,7 +239,9 @@ class TestInitializeRepoBash:
         # Verify at least one commit exists
         log = subprocess.run(
             ["git", "log", "--oneline", "-1"],
-            cwd=project, capture_output=True, text=True,
+            cwd=project,
+            capture_output=True,
+            text=True,
         )
         assert log.returncode == 0
 
@@ -245,7 +262,9 @@ class TestInitializeRepoBash:
 
         log = subprocess.run(
             ["git", "log", "--oneline", "-1"],
-            cwd=project, capture_output=True, text=True,
+            cwd=project,
+            capture_output=True,
+            text=True,
         )
         assert "Custom init message" in log.stdout
 
@@ -274,8 +293,12 @@ class TestCreateFeatureBash:
         """Extension create-new-feature.sh creates sequential branch."""
         project = _setup_project(tmp_path)
         result = _run_bash(
-            "create-new-feature.sh", project,
-            "--json", "--short-name", "user-auth", "Add user authentication",
+            "create-new-feature.sh",
+            project,
+            "--json",
+            "--short-name",
+            "user-auth",
+            "Add user authentication",
         )
         assert result.returncode == 0, result.stderr
         data = json.loads(result.stdout)
@@ -286,8 +309,13 @@ class TestCreateFeatureBash:
         """Extension create-new-feature.sh creates timestamp branch."""
         project = _setup_project(tmp_path)
         result = _run_bash(
-            "create-new-feature.sh", project,
-            "--json", "--timestamp", "--short-name", "feat", "Feature",
+            "create-new-feature.sh",
+            project,
+            "--json",
+            "--timestamp",
+            "--short-name",
+            "feat",
+            "Feature",
         )
         assert result.returncode == 0, result.stderr
         data = json.loads(result.stdout)
@@ -300,8 +328,12 @@ class TestCreateFeatureBash:
         (project / "specs" / "002-second").mkdir(parents=True)
 
         result = _run_bash(
-            "create-new-feature.sh", project,
-            "--json", "--short-name", "third", "Third feature",
+            "create-new-feature.sh",
+            project,
+            "--json",
+            "--short-name",
+            "third",
+            "Third feature",
         )
         assert result.returncode == 0, result.stderr
         data = json.loads(result.stdout)
@@ -311,8 +343,12 @@ class TestCreateFeatureBash:
         """create-new-feature.sh works without git (outputs branch name, skips branch creation)."""
         project = _setup_project(tmp_path, git=False)
         result = _run_bash(
-            "create-new-feature.sh", project,
-            "--json", "--short-name", "no-git", "No git feature",
+            "create-new-feature.sh",
+            project,
+            "--json",
+            "--short-name",
+            "no-git",
+            "No git feature",
         )
         assert result.returncode == 0, result.stderr
         assert "Warning" in result.stderr
@@ -324,8 +360,13 @@ class TestCreateFeatureBash:
         """--dry-run computes branch name without creating anything."""
         project = _setup_project(tmp_path)
         result = _run_bash(
-            "create-new-feature.sh", project,
-            "--json", "--dry-run", "--short-name", "dry", "Dry run test",
+            "create-new-feature.sh",
+            project,
+            "--json",
+            "--dry-run",
+            "--short-name",
+            "dry",
+            "Dry run test",
         )
         assert result.returncode == 0, result.stderr
         data = json.loads(result.stdout)
@@ -339,8 +380,12 @@ class TestCreateFeaturePowerShell:
         """Extension create-new-feature.ps1 creates sequential branch."""
         project = _setup_project(tmp_path)
         result = _run_pwsh(
-            "create-new-feature.ps1", project,
-            "-Json", "-ShortName", "user-auth", "Add user authentication",
+            "create-new-feature.ps1",
+            project,
+            "-Json",
+            "-ShortName",
+            "user-auth",
+            "Add user authentication",
         )
         assert result.returncode == 0, result.stderr
         data = json.loads(result.stdout)
@@ -350,8 +395,13 @@ class TestCreateFeaturePowerShell:
         """Extension create-new-feature.ps1 creates timestamp branch."""
         project = _setup_project(tmp_path)
         result = _run_pwsh(
-            "create-new-feature.ps1", project,
-            "-Json", "-Timestamp", "-ShortName", "feat", "Feature",
+            "create-new-feature.ps1",
+            project,
+            "-Json",
+            "-Timestamp",
+            "-ShortName",
+            "feat",
+            "Feature",
         )
         assert result.returncode == 0, result.stderr
         data = json.loads(result.stdout)
@@ -361,8 +411,12 @@ class TestCreateFeaturePowerShell:
         """create-new-feature.ps1 works without git."""
         project = _setup_project(tmp_path, git=False)
         result = _run_pwsh(
-            "create-new-feature.ps1", project,
-            "-Json", "-ShortName", "no-git", "No git feature",
+            "create-new-feature.ps1",
+            project,
+            "-Json",
+            "-ShortName",
+            "no-git",
+            "No git feature",
         )
         assert result.returncode == 0, result.stderr
         # pwsh may prefix warnings to stdout; find the JSON line
@@ -386,20 +440,25 @@ class TestAutoCommitBash:
         # Should not have created any new commits
         log = subprocess.run(
             ["git", "log", "--oneline"],
-            cwd=project, capture_output=True, text=True,
+            cwd=project,
+            capture_output=True,
+            text=True,
         )
         assert log.stdout.strip().count("\n") == 0  # only the seed commit
 
     def test_enabled_per_command(self, tmp_path: Path):
         """auto-commit.sh commits when per-command key is enabled."""
         project = _setup_project(tmp_path)
-        _write_config(project, (
-            "auto_commit:\n"
-            "  default: false\n"
-            "  after_specify:\n"
-            "    enabled: true\n"
-            '    message: "test commit after specify"\n'
-        ))
+        _write_config(
+            project,
+            (
+                "auto_commit:\n"
+                "  default: false\n"
+                "  after_specify:\n"
+                "    enabled: true\n"
+                '    message: "test commit after specify"\n'
+            ),
+        )
         # Create a file to commit
         (project / "specs" / "001-test" / "spec.md").parent.mkdir(parents=True)
         (project / "specs" / "001-test" / "spec.md").write_text("test spec")
@@ -409,20 +468,25 @@ class TestAutoCommitBash:
 
         log = subprocess.run(
             ["git", "log", "--oneline", "-1"],
-            cwd=project, capture_output=True, text=True,
+            cwd=project,
+            capture_output=True,
+            text=True,
         )
         assert "test commit after specify" in log.stdout
 
     def test_custom_message(self, tmp_path: Path):
         """auto-commit.sh uses the per-command message."""
         project = _setup_project(tmp_path)
-        _write_config(project, (
-            "auto_commit:\n"
-            "  default: false\n"
-            "  after_plan:\n"
-            "    enabled: true\n"
-            '    message: "[Project] Plan complete"\n'
-        ))
+        _write_config(
+            project,
+            (
+                "auto_commit:\n"
+                "  default: false\n"
+                "  after_plan:\n"
+                "    enabled: true\n"
+                '    message: "[Project] Plan complete"\n'
+            ),
+        )
         (project / "new-file.txt").write_text("content")
 
         result = _run_bash("auto-commit.sh", project, "after_plan")
@@ -430,7 +494,9 @@ class TestAutoCommitBash:
 
         log = subprocess.run(
             ["git", "log", "--oneline", "-1"],
-            cwd=project, capture_output=True, text=True,
+            cwd=project,
+            capture_output=True,
+            text=True,
         )
         assert "[Project] Plan complete" in log.stdout
 
@@ -445,20 +511,25 @@ class TestAutoCommitBash:
 
         log = subprocess.run(
             ["git", "log", "--oneline", "-1"],
-            cwd=project, capture_output=True, text=True,
+            cwd=project,
+            capture_output=True,
+            text=True,
         )
         assert "Auto-commit after tasks" in log.stdout
 
     def test_no_changes_skips(self, tmp_path: Path):
         """auto-commit.sh skips when there are no changes."""
         project = _setup_project(tmp_path)
-        _write_config(project, (
-            "auto_commit:\n"
-            "  default: false\n"
-            "  after_specify:\n"
-            "    enabled: true\n"
-            '    message: "should not appear"\n'
-        ))
+        _write_config(
+            project,
+            (
+                "auto_commit:\n"
+                "  default: false\n"
+                "  after_specify:\n"
+                "    enabled: true\n"
+                '    message: "should not appear"\n'
+            ),
+        )
         # Commit all existing files so nothing is dirty
         subprocess.run(["git", "add", "."], cwd=project, check=True)
         subprocess.run(["git", "commit", "-m", "setup", "-q"], cwd=project, check=True)
@@ -483,7 +554,10 @@ class TestAutoCommitBash:
         _write_config(project, "auto_commit:\n  default: true\n")
         result = _run_bash("auto-commit.sh", project, "after_specify")
         assert result.returncode == 0
-        assert "not a Git repository" in result.stderr.lower() or "Warning" in result.stderr
+        assert (
+            "not a Git repository" in result.stderr.lower()
+            or "Warning" in result.stderr
+        )
 
     def test_requires_event_name_argument(self, tmp_path: Path):
         """auto-commit.sh fails without event name argument."""
@@ -504,13 +578,16 @@ class TestAutoCommitPowerShell:
     def test_enabled_per_command(self, tmp_path: Path):
         """auto-commit.ps1 commits when per-command key is enabled."""
         project = _setup_project(tmp_path)
-        _write_config(project, (
-            "auto_commit:\n"
-            "  default: false\n"
-            "  after_specify:\n"
-            "    enabled: true\n"
-            '    message: "ps commit"\n'
-        ))
+        _write_config(
+            project,
+            (
+                "auto_commit:\n"
+                "  default: false\n"
+                "  after_specify:\n"
+                "    enabled: true\n"
+                '    message: "ps commit"\n'
+            ),
+        )
         (project / "specs" / "001-test").mkdir(parents=True)
         (project / "specs" / "001-test" / "spec.md").write_text("test")
 
@@ -519,7 +596,9 @@ class TestAutoCommitPowerShell:
 
         log = subprocess.run(
             ["git", "log", "--oneline", "-1"],
-            cwd=project, capture_output=True, text=True,
+            cwd=project,
+            capture_output=True,
+            text=True,
         )
         assert "ps commit" in log.stdout
 
@@ -531,59 +610,125 @@ class TestGitCommonBash:
     def test_has_git_true(self, tmp_path: Path):
         """has_git returns 0 in a git repo."""
         project = _setup_project(tmp_path, git=True)
-        script = project / ".specify" / "extensions" / "git" / "scripts" / "bash" / "git-common.sh"
+        script = (
+            project
+            / ".specify"
+            / "extensions"
+            / "git"
+            / "scripts"
+            / "bash"
+            / "git-common.sh"
+        )
         result = subprocess.run(
             ["bash", "-c", f'source "{script}" && has_git "{project}"'],
-            capture_output=True, text=True,
+            capture_output=True,
+            text=True,
         )
         assert result.returncode == 0
 
     def test_has_git_false(self, tmp_path: Path):
         """has_git returns non-zero outside a git repo."""
         project = _setup_project(tmp_path, git=False)
-        script = project / ".specify" / "extensions" / "git" / "scripts" / "bash" / "git-common.sh"
+        script = (
+            project
+            / ".specify"
+            / "extensions"
+            / "git"
+            / "scripts"
+            / "bash"
+            / "git-common.sh"
+        )
         result = subprocess.run(
             ["bash", "-c", f'source "{script}" && has_git "{project}"'],
-            capture_output=True, text=True,
+            capture_output=True,
+            text=True,
         )
         assert result.returncode != 0
 
     def test_check_feature_branch_sequential(self, tmp_path: Path):
         """check_feature_branch accepts sequential branch names."""
         project = _setup_project(tmp_path)
-        script = project / ".specify" / "extensions" / "git" / "scripts" / "bash" / "git-common.sh"
+        script = (
+            project
+            / ".specify"
+            / "extensions"
+            / "git"
+            / "scripts"
+            / "bash"
+            / "git-common.sh"
+        )
         result = subprocess.run(
-            ["bash", "-c", f'source "{script}" && check_feature_branch "001-my-feature" "true"'],
-            capture_output=True, text=True,
+            [
+                "bash",
+                "-c",
+                f'source "{script}" && check_feature_branch "001-my-feature" "true"',
+            ],
+            capture_output=True,
+            text=True,
         )
         assert result.returncode == 0
 
     def test_check_feature_branch_timestamp(self, tmp_path: Path):
         """check_feature_branch accepts timestamp branch names."""
         project = _setup_project(tmp_path)
-        script = project / ".specify" / "extensions" / "git" / "scripts" / "bash" / "git-common.sh"
+        script = (
+            project
+            / ".specify"
+            / "extensions"
+            / "git"
+            / "scripts"
+            / "bash"
+            / "git-common.sh"
+        )
         result = subprocess.run(
-            ["bash", "-c", f'source "{script}" && check_feature_branch "20260319-143022-feat" "true"'],
-            capture_output=True, text=True,
+            [
+                "bash",
+                "-c",
+                f'source "{script}" && check_feature_branch "20260319-143022-feat" "true"',
+            ],
+            capture_output=True,
+            text=True,
         )
         assert result.returncode == 0
 
     def test_check_feature_branch_rejects_main(self, tmp_path: Path):
         """check_feature_branch rejects non-feature branch names."""
         project = _setup_project(tmp_path)
-        script = project / ".specify" / "extensions" / "git" / "scripts" / "bash" / "git-common.sh"
+        script = (
+            project
+            / ".specify"
+            / "extensions"
+            / "git"
+            / "scripts"
+            / "bash"
+            / "git-common.sh"
+        )
         result = subprocess.run(
             ["bash", "-c", f'source "{script}" && check_feature_branch "main" "true"'],
-            capture_output=True, text=True,
+            capture_output=True,
+            text=True,
         )
         assert result.returncode != 0
 
     def test_check_feature_branch_rejects_malformed_timestamp(self, tmp_path: Path):
         """check_feature_branch rejects malformed timestamps (7-digit date)."""
         project = _setup_project(tmp_path)
-        script = project / ".specify" / "extensions" / "git" / "scripts" / "bash" / "git-common.sh"
+        script = (
+            project
+            / ".specify"
+            / "extensions"
+            / "git"
+            / "scripts"
+            / "bash"
+            / "git-common.sh"
+        )
         result = subprocess.run(
-            ["bash", "-c", f'source "{script}" && check_feature_branch "2026031-143022-feat" "true"'],
-            capture_output=True, text=True,
+            [
+                "bash",
+                "-c",
+                f'source "{script}" && check_feature_branch "2026031-143022-feat" "true"',
+            ],
+            capture_output=True,
+            text=True,
         )
         assert result.returncode != 0

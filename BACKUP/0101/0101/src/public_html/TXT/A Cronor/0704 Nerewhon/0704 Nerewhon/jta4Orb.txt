@@ -1,0 +1,42 @@
+Primary = K5 V
+	CODE	DESCRIPTION	TEMPERATURE (K)
+	K	Orange	3,700-5,200
+	CODE	DESCRIPTION	DIAMETER (SOL = 1)
+	V	Main Sequence Star	0.2 - 10
+	d10Limit = -1
+	d100Limit = 1
+	d1000Limit = 6
+	Min Orbit = 0
+	HZ =  2
+0 = Planetoid belt	Y000346-6World  (StormWorld)	Y400000-0
+	  Ring @ Orbit ?
+1 = Mainworld_Nerewhon_E738475-7_(Hot)
+	  Ring @ Orbit ?
+2 = Planetoid belt	Y000100-6World  (StormWorld)	Y435000-0
+	  Ring @ Orbit ?World  (Worldlet)	H178387-4
+3 = 
+4 = 
+5 = 
+6 = 
+7 = World  (BigWorld)	F4773BC-6
+	  Ring @ Orbit ?
+8 = World  (StormWorld)	Y420000-0
+9 = 
+10 = World  (Inferno)	Y4B0000-0
+	  RadWorld	  	Y430000-0 @ Orbit I
+	  Worldlet	  	Y263369-6 @ Orbit T
+11 = 
+12 = World  (Hospitable)	G456376-6
+13 = 
+14 = 
+15 = 
+16 = 
+17 = 
+18 = 
+19 = 
+Unfilled = 13
+syscount = 1
+min = 0
+W = 10
+Extra Stars = 0
+count = 7

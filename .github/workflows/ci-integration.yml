@@ -1,0 +1,84 @@
+name: Integration Tests
+
+on:
+  push: {}
+  pull_request: {}
+  workflow_dispatch: {}
+
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      matrix:
+        python-version: [3.14, 3.12]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f CREW/Crew/requirements.txt ]; then python -m pip install -r CREW/Crew/requirements.txt; fi
+          python -m pip install pytest requests coverage
+
+      - name: Start 0101 server
+        run: |
+          mkdir -p ci-artifacts
+          nohup python 0101/0101/src/public_html/server.py > ci-artifacts/server_ci.log 2>&1 & echo $! > ci-artifacts/server.pid
+
+      - name: Wait for server
+        run: |
+          for i in $(seq 1 30); do
+            if curl -fsS http://localhost:8080/api/ping >/dev/null 2>&1; then
+              echo server-up
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "server did not start" >&2
+          cat ci-artifacts/server_ci.log || true
+          exit 1
+
+      - name: Smoke test persistence endpoints
+        run: |
+          set -euo pipefail
+          URL=http://localhost:8080/api/text/ci-smoke-test
+          echo "hello-ci" | curl -sS -X POST -H "Content-Type: text/plain" --data-binary @- "$URL" -o /tmp/post.out || { cat ci-artifacts/server_ci.log || true; exit 1; }
+          curl -fsS "$URL" -o /tmp/get.out || { cat ci-artifacts/server_ci.log || true; exit 1; }
+          if ! grep -q "hello-ci" /tmp/get.out; then echo "persist GET mismatch" >&2; cat /tmp/get.out; exit 2; fi
+          # delete by posting empty body
+          curl -sS -X POST -H "Content-Type: text/plain" --data-binary @- "$URL" </dev/null || true
+          sleep 0.5
+          # ensure deleted
+          if curl -fsS "$URL" | grep -q '.'; then echo "delete failed" >&2; exit 3; fi
+
+      - name: Run CREW tests (with coverage)
+        run: |
+          cd CREW/Crew
+          coverage run -m pytest -q || true
+          coverage xml -o ../../ci-artifacts/coverage.xml || true
+          coverage html -d ../../ci-artifacts/coverage_html || true
+          pytest -q --junitxml=../../ci-artifacts/pytest-results.xml || true
+
+      - name: Upload CI artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-artifacts
+          path: ci-artifacts/**
+
+      - name: Upload coverage to Codecov
+        if: secrets.CODECOV_TOKEN != ''
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ci-artifacts/coverage.xml
+
+      - name: Stop server
+        if: always()
+        run: |
+          if [ -f ci-artifacts/server.pid ]; then kill "$(cat ci-artifacts/server.pid)" || true; fi

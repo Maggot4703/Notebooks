@@ -1,0 +1,18 @@
+{
+  "page_number": 4,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page004/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "Spinward Marches\n\n23/08/2020\nPTL T Kee SYSTEM ORBIT MAP\n\nRed = Inner: Green = Habitable: Blue = Outer\n\n& Pink Bar = 10D Blue Bar = 10@ D Grey Bar = 100@D\n\nSUBSECTOR MAP\nShows local systems in subsector\nTAS indicator for selected world\n\n2797 Kesali\n\nSFW STYLE SYSTEM BOX\n\nEe & | Outer Box = TAS zone\n| i ie) Inner Box = Atmosphere\n\nGreen Circle = Size\n\ni | FF Blue Circle = Hydrographics\n\nUWP DATA DISPLAY\nShows UWP on a vertical scale for comparisons with other worlds\n\nand as a visual reference value.\n\nLower System Detail Boxes\nFor general combat capability assessments.\nRelevant data required for Space and Land operations during combat with\nFifth Frontier War and Invasion Earth\nOR\n\nPocket Empires and Imperial Squadrons\n\nLeft mid Right\n\nRed = Marine / Troops\n\nYellow = Scout / SDBs cyan = Navy / Rons\n\nWhite = Other / Pop Lt. Grey = Merchant / Belts\n\nGreen = Army / Defences\n\nGrey = Other Worlds\n\nGrey = Gas Giants Coloured = Mainworld\n\nfile:///C:/T5/Spinward Marches/_PRINT/SEC/0-Start/Sixhtml 4/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page004/page_full.png"
+}

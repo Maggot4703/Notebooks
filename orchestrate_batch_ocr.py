@@ -16,7 +16,6 @@ import sys
 import subprocess
 from pathlib import Path
 import logging
-from datetime import datetime
 
 BATCH_OCR_SCRIPT = "/home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py"
 LOG_FILE = "orchestrate_batch_ocr.log"
@@ -24,14 +23,18 @@ LOG_FILE = "orchestrate_batch_ocr.log"
 logging.basicConfig(
     filename=LOG_FILE,
     level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(message)s"
+    format="%(asctime)s %(levelname)s %(message)s",
 )
+
 
 def run_batch_ocr(input_dir, output_dir):
     cmd = [
-        sys.executable, BATCH_OCR_SCRIPT,
-        "--input-dir", str(input_dir),
-        "--output-dir", str(output_dir)
+        sys.executable,
+        BATCH_OCR_SCRIPT,
+        "--input-dir",
+        str(input_dir),
+        "--output-dir",
+        str(output_dir),
     ]
     logging.info(f"Running: {' '.join(cmd)}")
     result = subprocess.run(cmd, capture_output=True, text=True)
@@ -39,6 +42,7 @@ def run_batch_ocr(input_dir, output_dir):
     if result.returncode != 0:
         logging.error(result.stderr)
     return result.returncode
+
 
 def main():
     if len(sys.argv) < 3:
@@ -52,9 +56,20 @@ def main():
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Process all PDFs in the current directory (batch)
-    pdfs_in_dir = [entry.path for entry in os.scandir(input_dir) if entry.is_file() and entry.name.lower().endswith('.pdf')]
+    pdfs_in_dir = [
+        entry.path
+        for entry in os.scandir(input_dir)
+        if entry.is_file() and entry.name.lower().endswith(".pdf")
+    ]
     if pdfs_in_dir:
-        cmd = [sys.executable, BATCH_OCR_SCRIPT, '--input-dir', str(input_dir), '--output-dir', str(output_dir)]
+        cmd = [
+            sys.executable,
+            BATCH_OCR_SCRIPT,
+            "--input-dir",
+            str(input_dir),
+            "--output-dir",
+            str(output_dir),
+        ]
         logging.info(f"Running: {' '.join(cmd)}")
         try:
             subprocess.run(cmd, check=True)
@@ -79,6 +94,7 @@ def main():
                     logging.info(f"Completed {sub_input_dir}")
                 else:
                     logging.error(f"Failed {sub_input_dir} with code {rc}")
+
 
 if __name__ == "__main__":
     main()

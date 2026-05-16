@@ -28,6 +28,7 @@ if TYPE_CHECKING:
 # IntegrationOption
 # ---------------------------------------------------------------------------
 
+
 @dataclass(frozen=True)
 class IntegrationOption:
     """Declares an option that an integration accepts via ``--integration-options``.
@@ -50,6 +51,7 @@ class IntegrationOption:
 # ---------------------------------------------------------------------------
 # IntegrationBase — abstract base class
 # ---------------------------------------------------------------------------
+
 
 class IntegrationBase(ABC):
     """Abstract base class every integration must implement.
@@ -358,6 +360,7 @@ class IntegrationBase(ABC):
         #    CommandRegistrar so extension-local paths are preserved and
         #    boundary rules stay consistent across the codebase.
         from specify_cli.agents import CommandRegistrar
+
         content = CommandRegistrar.rewrite_project_relative_paths(content)
 
         return content
@@ -433,9 +436,7 @@ class IntegrationBase(ABC):
         **opts: Any,
     ) -> list[Path]:
         """High-level install — calls ``setup()`` and returns created files."""
-        return self.setup(
-            project_root, manifest, parsed_options=parsed_options, **opts
-        )
+        return self.setup(project_root, manifest, parsed_options=parsed_options, **opts)
 
     def uninstall(
         self,
@@ -451,6 +452,7 @@ class IntegrationBase(ABC):
 # ---------------------------------------------------------------------------
 # MarkdownIntegration — covers ~20 standard agents
 # ---------------------------------------------------------------------------
+
 
 class MarkdownIntegration(IntegrationBase):
     """Concrete base for integrations that use standard Markdown commands.
@@ -492,12 +494,18 @@ class MarkdownIntegration(IntegrationBase):
         dest.mkdir(parents=True, exist_ok=True)
 
         script_type = opts.get("script_type", "sh")
-        arg_placeholder = self.registrar_config.get("args", "$ARGUMENTS") if self.registrar_config else "$ARGUMENTS"
+        arg_placeholder = (
+            self.registrar_config.get("args", "$ARGUMENTS")
+            if self.registrar_config
+            else "$ARGUMENTS"
+        )
         created: list[Path] = []
 
         for src_file in templates:
             raw = src_file.read_text(encoding="utf-8")
-            processed = self.process_template(raw, self.key, script_type, arg_placeholder)
+            processed = self.process_template(
+                raw, self.key, script_type, arg_placeholder
+            )
             dst_name = self.command_filename(src_file.stem)
             dst_file = self.write_file_and_record(
                 processed, dest / dst_name, project_root, manifest
@@ -511,6 +519,7 @@ class MarkdownIntegration(IntegrationBase):
 # ---------------------------------------------------------------------------
 # TomlIntegration — TOML-format agents (Gemini, Tabnine)
 # ---------------------------------------------------------------------------
+
 
 class TomlIntegration(IntegrationBase):
     """Concrete base for integrations that use TOML command format.
@@ -603,13 +612,17 @@ class TomlIntegration(IntegrationBase):
         if "'''" not in value and not value.endswith("'"):
             return "'''\n" + value + "'''"
 
-        return '"' + (
-            value.replace("\\", "\\\\")
-            .replace('"', '\\"')
-            .replace("\n", "\\n")
-            .replace("\r", "\\r")
-            .replace("\t", "\\t")
-        ) + '"'
+        return (
+            '"'
+            + (
+                value.replace("\\", "\\\\")
+                .replace('"', '\\"')
+                .replace("\n", "\\n")
+                .replace("\r", "\\r")
+                .replace("\t", "\\t")
+            )
+            + '"'
+        )
 
     @staticmethod
     def _render_toml(description: str, body: str) -> str:
@@ -628,7 +641,9 @@ class TomlIntegration(IntegrationBase):
         toml_lines: list[str] = []
 
         if description:
-            toml_lines.append(f"description = {TomlIntegration._render_toml_string(description)}")
+            toml_lines.append(
+                f"description = {TomlIntegration._render_toml_string(description)}"
+            )
             toml_lines.append("")
 
         body = body.rstrip("\n")
@@ -665,13 +680,19 @@ class TomlIntegration(IntegrationBase):
         dest.mkdir(parents=True, exist_ok=True)
 
         script_type = opts.get("script_type", "sh")
-        arg_placeholder = self.registrar_config.get("args", "{{args}}") if self.registrar_config else "{{args}}"
+        arg_placeholder = (
+            self.registrar_config.get("args", "{{args}}")
+            if self.registrar_config
+            else "{{args}}"
+        )
         created: list[Path] = []
 
         for src_file in templates:
             raw = src_file.read_text(encoding="utf-8")
             description = self._extract_description(raw)
-            processed = self.process_template(raw, self.key, script_type, arg_placeholder)
+            processed = self.process_template(
+                raw, self.key, script_type, arg_placeholder
+            )
             _, body = self._split_frontmatter(processed)
             toml_content = self._render_toml(description, body)
             dst_name = self.command_filename(src_file.stem)
@@ -713,9 +734,7 @@ class SkillsIntegration(IntegrationBase):
         Raises ``ValueError`` when ``config`` or ``folder`` is missing.
         """
         if not self.config:
-            raise ValueError(
-                f"{type(self).__name__}.config is not set."
-            )
+            raise ValueError(f"{type(self).__name__}.config is not set.")
         folder = self.config.get("folder")
         if not folder:
             raise ValueError(

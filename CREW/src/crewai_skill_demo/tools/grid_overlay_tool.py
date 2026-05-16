@@ -8,6 +8,7 @@ from typing import Type
 try:
     from crewai.tools import BaseTool
 except Exception:
+
     class BaseTool:
         """Fallback BaseTool used when crewai is not available locally."""
 
@@ -22,6 +23,7 @@ except Exception:
 try:
     from pydantic import BaseModel, Field
 except Exception:
+
     class BaseModel:
         """Fallback BaseModel for local demo mode without pydantic."""
 
@@ -39,12 +41,8 @@ class GridOverlayInput(BaseModel):
     grid_height: int = Field(32, description="Grid cell height in pixels")
     grid_color: str = Field("lightgrey", description="Grid line color")
     show_labels: bool = Field(False, description="Draw row/column labels")
-    output_format: str = Field(
-        "", description="Optional format override, e.g. png/jpg"
-    )
-    quality: int = Field(
-        95, description="Image quality for lossy formats (1-100)"
-    )
+    output_format: str = Field("", description="Optional format override, e.g. png/jpg")
+    quality: int = Field(95, description="Image quality for lossy formats (1-100)")
 
 
 class GridOverlayTool(BaseTool):
@@ -68,10 +66,7 @@ class GridOverlayTool(BaseTool):
         quality: int = 95,
     ) -> str:
         if grid_width <= 0 or grid_height <= 0:
-            return (
-                "Error: grid_width and grid_height "
-                "must be greater than zero."
-            )
+            return "Error: grid_width and grid_height " "must be greater than zero."
         if quality < 1 or quality > 100:
             return "Error: quality must be between 1 and 100."
 

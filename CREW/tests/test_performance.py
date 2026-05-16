@@ -3,6 +3,7 @@ import time
 import tempfile
 from Crew.file_utils import save_file, read_csv_builtin
 
+
 class TestPerformance(unittest.TestCase):
     def test_large_csv_read_write(self):
         # Generate a large dataset
@@ -16,6 +17,7 @@ class TestPerformance(unittest.TestCase):
             elapsed = time.time() - start
         self.assertEqual(loaded[0], rows[0])
         self.assertLess(elapsed, 2.0)  # Should load in under 2 seconds
+
 
 if __name__ == "__main__":
     unittest.main()
