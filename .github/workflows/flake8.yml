@@ -25,9 +25,9 @@ jobs:
           pip install flake8
       - name: Run flake8 for CREW
         working-directory: CREW/Crew
-        run: flake8 . || true
+        run: flake8 --exclude=.ipynb_checkpoints . || true
       - name: Fail on flake8 issues
         run: |
           set -e
           cd CREW/Crew
-          flake8 .
+          flake8 --exclude=.ipynb_checkpoints .

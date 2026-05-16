@@ -27,7 +27,7 @@ jobs:
 
       - name: Flake8
         run: |
-          flake8 --max-line-length=88 --extend-ignore=E203,E501 .
+          flake8 --max-line-length=88 --extend-ignore=E203,E501 --exclude=.ipynb_checkpoints .
 
       - name: Install test dependencies
         run: |
