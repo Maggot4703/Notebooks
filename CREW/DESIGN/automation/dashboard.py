@@ -42,7 +42,8 @@ def resolve_path(*parts) -> Path:
     This is more robust than joining with .. strings and works when the file is executed
     from a different working directory.
     """
-    base = Path(__file__).resolve().parent.parent.parent
+    # Repository root is three levels up from this file: /<repo-root>/CREW/DESIGN/automation
+    base = Path(__file__).resolve().parents[3]
     return (base.joinpath(*parts)).resolve()
 
 
