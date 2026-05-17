@@ -1,7 +1,7 @@
 ---
 name: Lint
 
-on:
+'on':
   push: {}
   pull_request: {}
 
@@ -27,12 +27,14 @@ jobs:
 
       - name: Flake8
         run: |
-          flake8 --max-line-length=88 --extend-ignore=E203,E501 --exclude=.ipynb_checkpoints .
+          flake8 \
+            --max-line-length=88 \
+            --extend-ignore=E203,E501 \
+            --exclude=.ipynb_checkpoints .
 
       - name: Install test dependencies
         run: |
-          if [ -f CREW/Crew/requirements.txt ]; then python -m pip install -r CREW/Crew/requirements.txt; fi
-          python -m pip install pytest
+          bash .github/scripts/install_test_deps.sh
 
       - name: Run tests
         run: |
