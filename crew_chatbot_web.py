@@ -9,8 +9,7 @@ import json
 import os
 import uuid
 
-from flask import (Flask, redirect, render_template_string, request, session,
-                   url_for)
+from flask import Flask, redirect, render_template_string, request, session, url_for
 
 from crew_chatbot import CONFIG_PATH, LOG_PATH, load_agents
 

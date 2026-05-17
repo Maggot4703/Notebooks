@@ -1,5 +1,10 @@
-from image_utils import (crop_from_annotations, mark_line, markHorizontalLine,
-                         overlay_grid, process_images)
+from image_utils import (
+    crop_from_annotations,
+    mark_line,
+    markHorizontalLine,
+    overlay_grid,
+    process_images,
+)
 from PIL import Image
 
 

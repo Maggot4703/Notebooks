@@ -1,6 +1,6 @@
 ---
 name: Playwright E2E
-on: [push, pull_request]
+'on': [push, pull_request]
 
 jobs:
   e2e:
@@ -48,7 +48,7 @@ jobs:
           echo "npm: $(npm -v)"
           echo "npm root: $(npm root)"
           echo "@playwright/test resolve:"
-          node -e "try{console.log(require.resolve('@playwright/test'))}catch(e){console.error('resolve failed', e.message); process.exit(0)}"
+          node .github/scripts/check_playwright_resolve.js || true
           echo "\nls node_modules (top entries):"
           ls -la node_modules | head -n 200 || true
           echo "\nls node_modules/.bin (top entries):"
@@ -61,6 +61,4 @@ jobs:
         env:
           DEBUG: pw:api
         run: |
-          cd 0101/0101
-          echo "Running local Playwright binary with verbose debug and single worker"
-          ./node_modules/.bin/playwright test --workers=1 --retries=0 --reporter=list
+          bash .github/scripts/run_playwright.sh

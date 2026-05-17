@@ -9,10 +9,13 @@ import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import mcp_service
+
 # Import the tested functions directly for test scope
-from mcp_service import (format_data_as_mcp,
-                         gather_context_data_from_dataframe,
-                         get_mcp_context_for_npcs)
+from mcp_service import (
+    format_data_as_mcp,
+    gather_context_data_from_dataframe,
+    get_mcp_context_for_npcs,
+)
 
 
 class TestCustomEncoder(unittest.TestCase):

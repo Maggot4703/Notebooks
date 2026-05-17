@@ -20,11 +20,18 @@ from pathlib import Path
 import pytest
 import yaml
 from specify_cli.extensions import ExtensionRegistry
-from specify_cli.presets import (VALID_PRESET_TEMPLATE_TYPES, PresetCatalog,
-                                 PresetCatalogEntry, PresetCompatibilityError,
-                                 PresetError, PresetManager, PresetManifest,
-                                 PresetRegistry, PresetResolver,
-                                 PresetValidationError)
+from specify_cli.presets import (
+    VALID_PRESET_TEMPLATE_TYPES,
+    PresetCatalog,
+    PresetCatalogEntry,
+    PresetCompatibilityError,
+    PresetError,
+    PresetManager,
+    PresetManifest,
+    PresetRegistry,
+    PresetResolver,
+    PresetValidationError,
+)
 from tests.conftest import strip_ansi
 
 # ===== Fixtures =====

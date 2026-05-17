@@ -22,8 +22,7 @@ import asyncio
 import sys
 from pathlib import Path
 
-from copilot import (CopilotClient, MessageOptions, PermissionHandler,
-                     SessionConfig)
+from copilot import CopilotClient, MessageOptions, PermissionHandler, SessionConfig
 
 
 async def ralph_loop(mode: str = "build", max_iterations: int = 50):

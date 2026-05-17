@@ -6,8 +6,13 @@ import re
 import subprocess
 import sys
 
-from copilot import (CopilotClient, MessageOptions, PermissionHandler,
-                     SessionConfig, SessionEvent)
+from copilot import (
+    CopilotClient,
+    MessageOptions,
+    PermissionHandler,
+    SessionConfig,
+    SessionEvent,
+)
 
 # ============================================================================
 # Git & GitHub Detection

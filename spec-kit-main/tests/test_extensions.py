@@ -17,13 +17,21 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import pytest
-from specify_cli.extensions import (CORE_COMMAND_NAMES, CatalogEntry,
-                                    CommandRegistrar, CompatibilityError,
-                                    ExtensionCatalog, ExtensionError,
-                                    ExtensionManager, ExtensionManifest,
-                                    ExtensionRegistry, HookExecutor,
-                                    ValidationError, normalize_priority,
-                                    version_satisfies)
+from specify_cli.extensions import (
+    CORE_COMMAND_NAMES,
+    CatalogEntry,
+    CommandRegistrar,
+    CompatibilityError,
+    ExtensionCatalog,
+    ExtensionError,
+    ExtensionManager,
+    ExtensionManifest,
+    ExtensionRegistry,
+    HookExecutor,
+    ValidationError,
+    normalize_priority,
+    version_satisfies,
+)
 from tests.conftest import strip_ansi
 
 # ===== Fixtures =====
@@ -1013,8 +1021,7 @@ $ARGUMENTS
 
     def test_adjust_script_paths_does_not_mutate_input(self):
         """Path adjustments should not mutate caller-owned frontmatter dicts."""
-        from specify_cli.agents import \
-            CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
 
         registrar = AgentCommandRegistrar()
         original = {
@@ -1036,8 +1043,7 @@ $ARGUMENTS
 
     def test_adjust_script_paths_preserves_extension_local_paths(self):
         """Extension-local script paths should not be rewritten into .specify/.specify."""
-        from specify_cli.agents import \
-            CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
 
         registrar = AgentCommandRegistrar()
         original = {
@@ -1060,8 +1066,7 @@ $ARGUMENTS
 
     def test_rewrite_project_relative_paths_preserves_extension_local_body_paths(self):
         """Body rewrites should preserve extension-local assets while fixing top-level refs."""
-        from specify_cli.agents import \
-            CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
 
         body = (
             "Read `.specify/extensions/test-ext/templates/spec.md`\n"
@@ -1075,8 +1080,7 @@ $ARGUMENTS
 
     def test_render_toml_command_handles_embedded_triple_double_quotes(self):
         """TOML renderer should stay valid when body includes triple double-quotes."""
-        from specify_cli.agents import \
-            CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
 
         registrar = AgentCommandRegistrar()
         output = registrar.render_toml_command(
@@ -1090,8 +1094,7 @@ $ARGUMENTS
 
     def test_render_toml_command_escapes_when_both_triple_quote_styles_exist(self):
         """If body has both triple quote styles, fall back to escaped basic string."""
-        from specify_cli.agents import \
-            CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
 
         registrar = AgentCommandRegistrar()
         output = registrar.render_toml_command(
@@ -1106,8 +1109,7 @@ $ARGUMENTS
 
     def test_render_toml_command_preserves_multiline_description(self):
         """Multiline descriptions should render as parseable TOML with preserved semantics."""
-        from specify_cli.agents import \
-            CommandRegistrar as AgentCommandRegistrar
+        from specify_cli.agents import CommandRegistrar as AgentCommandRegistrar
 
         registrar = AgentCommandRegistrar()
         output = registrar.render_toml_command(
