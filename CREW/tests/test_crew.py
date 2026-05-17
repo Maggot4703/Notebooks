@@ -6,9 +6,18 @@ import pytest
 from PIL import Image
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent / "Crew"))
-from Crew import (calculate_hexagon_points, get_project_info, get_version,
-                  hex_to_rgb, markHorizontalLine, overlay_grid, overlayGrid,
-                  process_images, read_file, rgb_to_hex)
+from Crew import (
+    calculate_hexagon_points,
+    get_project_info,
+    get_version,
+    hex_to_rgb,
+    markHorizontalLine,
+    overlay_grid,
+    overlayGrid,
+    process_images,
+    read_file,
+    rgb_to_hex,
+)
 
 
 def test_markHorizontalLine_basic():

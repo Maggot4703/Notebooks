@@ -3670,8 +3670,7 @@ class CrewGUI:
 
         def task():
             try:
-                from ReadMine import (DocumentationFetcher,
-                                      format_readmine_summary)
+                from ReadMine import DocumentationFetcher, format_readmine_summary
 
                 summary = DocumentationFetcher(base_dir=READMINE_OUTPUT_DIR).process()
                 summary["message"] = format_readmine_summary(summary)

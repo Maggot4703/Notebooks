@@ -2,8 +2,7 @@
 
 import asyncio
 
-from copilot import (CopilotClient, MessageOptions, PermissionHandler,
-                     SessionConfig)
+from copilot import CopilotClient, MessageOptions, PermissionHandler, SessionConfig
 
 
 async def main():

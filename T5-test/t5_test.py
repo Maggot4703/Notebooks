@@ -6,8 +6,14 @@ T5-test: Unified entrypoint for CardCutter + Crew functionality
 import argparse
 import sys
 
-from t5_shared import (DEFAULT_GRID_COLOR, DEFAULT_GRID_SIZE, mark_line,
-                       overlay_grid, read_csv_pandas, read_excel)
+from t5_shared import (
+    DEFAULT_GRID_COLOR,
+    DEFAULT_GRID_SIZE,
+    mark_line,
+    overlay_grid,
+    read_csv_pandas,
+    read_excel,
+)
 
 
 # Example CLI: grid-image, read-csv, read-excel, mark-line

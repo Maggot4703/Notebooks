@@ -36,6 +36,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 import json5
+
 # For cross-platform keyboard input
 import readchar
 import typer
@@ -1488,8 +1489,7 @@ def init(
             # Install preset if specified
             if preset:
                 try:
-                    from .presets import (PresetCatalog, PresetError,
-                                          PresetManager)
+                    from .presets import PresetCatalog, PresetError, PresetManager
 
                     preset_manager = PresetManager(project_path)
                     speckit_ver = get_speckit_version()
@@ -2480,8 +2480,13 @@ def preset_add(
     ),
 ):
     """Install a preset."""
-    from .presets import (PresetCatalog, PresetCompatibilityError, PresetError,
-                          PresetManager, PresetValidationError)
+    from .presets import (
+        PresetCatalog,
+        PresetCompatibilityError,
+        PresetError,
+        PresetManager,
+        PresetValidationError,
+    )
 
     project_root = Path.cwd()
 
@@ -3592,8 +3597,13 @@ def extension_add(
     ),
 ):
     """Install an extension."""
-    from .extensions import (CompatibilityError, ExtensionCatalog,
-                             ExtensionError, ExtensionManager, ValidationError)
+    from .extensions import (
+        CompatibilityError,
+        ExtensionCatalog,
+        ExtensionError,
+        ExtensionManager,
+        ValidationError,
+    )
 
     project_root = Path.cwd()
 
@@ -3967,8 +3977,7 @@ def extension_info(
     extension: str = typer.Argument(help="Extension ID or name"),
 ):
     """Show detailed information about an extension."""
-    from .extensions import (ExtensionCatalog, ExtensionManager,
-                             normalize_priority)
+    from .extensions import ExtensionCatalog, ExtensionManager, normalize_priority
 
     project_root = Path.cwd()
 
@@ -4182,9 +4191,15 @@ def extension_update(
 
     from packaging import version as pkg_version
 
-    from .extensions import (CommandRegistrar, ExtensionCatalog,
-                             ExtensionError, ExtensionManager, HookExecutor,
-                             ValidationError, normalize_priority)
+    from .extensions import (
+        CommandRegistrar,
+        ExtensionCatalog,
+        ExtensionError,
+        ExtensionManager,
+        HookExecutor,
+        ValidationError,
+        normalize_priority,
+    )
 
     project_root = Path.cwd()
 

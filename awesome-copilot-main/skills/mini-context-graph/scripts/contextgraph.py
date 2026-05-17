@@ -19,8 +19,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import config
-from tools import (documents_store, graph_store, index_store, ontology_store,
-                   retrieval_engine)
+from tools import (
+    documents_store,
+    graph_store,
+    index_store,
+    ontology_store,
+    retrieval_engine,
+)
 
 
 class ContextGraphSkill:
