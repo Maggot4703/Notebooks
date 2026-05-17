@@ -1,0 +1,39 @@
+name: Chatbot fallback CI
+
+on:
+  push:
+    branches: [ "chore/workflows-refactor-2026-05-17", "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  crew-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository (with submodules)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.14'
+
+      - name: Install dependencies
+        run: |
+          if [ -f CREW/Crew/requirements.txt ]; then
+            pip install -r CREW/Crew/requirements.txt
+          else
+            pip install pytest
+          fi
+
+      - name: Start mock DeepSeek server
+        run: |
+          python3 CREW/Crew/scripts/mock_deepseek_server.py > /tmp/mock_deepseek.log 2>&1 &
+          sleep 0.5
+
+      - name: Run CREW tests
+        run: |
+          cd CREW/Crew
+          pytest -q
