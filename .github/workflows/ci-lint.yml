@@ -45,7 +45,12 @@ jobs:
         run: |
           bash .github/scripts/install_test_deps.sh
 
+      - name: Install system dependencies for GUI tests
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb xauth || true
+
       - name: Run tests
         run: |
-          # Run pytest explicitly against the CREW test directory to avoid discovery issues
-          pytest CREW/Crew -q
+          # Use xvfb-run wrapper script to run GUI tests in headless X server
+          bash .github/scripts/run_pytests.sh
