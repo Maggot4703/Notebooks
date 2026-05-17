@@ -189,18 +189,6 @@ To convert all `.md` files in `/home/me/Notebooks` (recursively) to PDF with ful
 =======
 
 
-## Chatbot / LLM integration
-
-This repository now includes a local-LLM integration used by the CREW workspace (Ollama preferred, DeepSeek HTTP fallback). Quick notes:
-
-- Example config: `CREW/Crew/config.llm.example.json` (copy to `CREW/Crew/config.json` or use the helper below and edit host/model).
-- Helper: `CREW/Crew/scripts/copy_config_example.sh` — copies the example to `config.json` locally (safe; config.json remains gitignored).
-- Mock server: `CREW/Crew/scripts/mock_deepseek_server.py` — lightweight test server that responds to `/v1/completions` for CI/local testing.
-- Unit tests: `CREW/Crew/tests/test_chatbot_fallback.py` exercise Ollama→DeepSeek→Referee fallback.
-- CI: `.github/workflows/chatbot-fallback-ci.yml` runs the CREW tests with the mock DeepSeek server.
-
-See `CREW/Crew/README.md#llm-integration-and-testing` for usage instructions.
-
 ## Startup Code
 
 ```bash
