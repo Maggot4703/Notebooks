@@ -40,5 +40,5 @@ jobs:
 
       - name: Run tests
         run: |
-          cd CREW/Crew
-          pytest -q
+          # Run pytest explicitly against the CREW test directory to avoid discovery issues
+          pytest CREW/Crew -q
