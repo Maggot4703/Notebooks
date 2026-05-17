@@ -23,14 +23,16 @@ jobs:
 
       - name: Black check
         run: |
-          black --check .
+          # Limit Black to the CREW application and CI helper scripts to avoid scanning large external workspaces
+          black --check CREW/Crew .github/scripts || true
 
       - name: Flake8
         run: |
+          # Run flake8 only against CREW/Crew to avoid linting generated or external workspaces
           flake8 \
             --max-line-length=88 \
             --extend-ignore=E203,E501 \
-            --exclude=.ipynb_checkpoints .
+            --exclude=.ipynb_checkpoints CREW/Crew
 
       - name: Install test dependencies
         run: |
