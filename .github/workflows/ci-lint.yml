@@ -21,6 +21,13 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install black flake8
 
+      - name: Init submodules (if any)
+        run: |
+          if [ -f .gitmodules ]; then
+            git submodule sync --recursive || true
+            git submodule update --init --recursive --depth 1 || true
+          fi
+
       - name: Black check
         run: |
           # Limit Black to the CREW application and CI helper scripts to avoid scanning large external workspaces
