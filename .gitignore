@@ -1,5 +1,5 @@
 # Ignore large backup archive
-BACKUP/CREW/CrewFolders.7z
+CREW/BACKUP/CrewFolders.7z
 # Python-generated files
 __pycache__/
 *.py[oc]
@@ -12,4 +12,4 @@ wheels/
 .venv
 \n# Ignore nested Playwright node_modules
 0101/0101/tests/playwright/node_modules
-BACKUP/CREW/Crew40/
+CREW/BACKUP/Crew40/

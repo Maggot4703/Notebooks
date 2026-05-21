@@ -22,4 +22,4 @@ This index lists all documentation and help files for the CREW project, includin
 
 ---
 
-**Note:** `CREW/Crew/ReadMine.py` is the production ReadMine implementation. Copies under `xCrew`, `xxCrew`, and `BACKUP/CREW` are not the primary source of truth.
+**Note:** `CREW/Crew/ReadMine.py` is the production ReadMine implementation. Copies under `xCrew`, `xxCrew`, and `CREW/BACKUP` are not the primary source of truth.
