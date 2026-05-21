@@ -113,7 +113,7 @@ Generated: 2026-05-09 20:34
 |------|------------|
 | JupyterLab Instruction.instructions.md | **/*.ipynb, **/*.py, Pipfile |
 
-### CREW/BACKUP/ (archived snapshots — Crew00 through Crew34)
+### BACKUP/CREW/ (archived snapshots — Crew00 through Crew34)
 34 archived copies of Crew.instructions.md (read-only reference)
 
 ---

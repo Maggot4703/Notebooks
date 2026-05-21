@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # cleanup_backups.sh
-# Move old backup archives from CREW/BACKUP and BACKUP into BACKUP/old
+# Move old backup archives from BACKUP/CREW and BACKUP into BACKUP/old
 # and optionally delete very old files. Default is a dry-run.
 
 usage(){
@@ -36,7 +36,7 @@ done
 BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$BASE_DIR"
 
-TARGETS=("CREW/BACKUP" "BACKUP")
+TARGETS=("BACKUP/CREW" "BACKUP")
 ARCHIVE_DIR="BACKUP/old"
 mkdir -p "$ARCHIVE_DIR"
 

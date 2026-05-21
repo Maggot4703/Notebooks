@@ -207,7 +207,7 @@ After a refresh, check `Reading Now/<Subject>/index.html` and the `beginner/` fo
 - If fetched docs are sparse or missing, rerun with web access enabled and check source availability.
 - If you want a clean rebuild, use `--force`.
 - If progress seems stuck on old state, inspect `readmine_progress.json`.
-- If older folders reappear, confirm you are running `CREW/Crew/ReadMine.py`, not one of the backup or experimental copies under `xCrew`, `xxCrew`, or `CREW/BACKUP`.
+- If older folders reappear, confirm you are running `CREW/Crew/ReadMine.py`, not one of the backup or experimental copies under `xCrew`, `xxCrew`, or `BACKUP/CREW`.
 
 ## Production vs Backup Copies
 
@@ -221,7 +221,7 @@ You may also see copies under:
 
 - `CREW/xCrew/`
 - `CREW/xxCrew/`
-- `CREW/BACKUP/...`
+- `BACKUP/CREW/...`
 
 Those are backup, experimental, or historical copies and should not be treated as the current source of truth for Crew Manager documentation generation unless you are intentionally working in those branches of the project.
 

@@ -37,4 +37,4 @@ These are legacy artifacts from earlier fetch-docs workflows and are not the mai
 
 Use the production implementation in `CREW/Crew/ReadMine.py`.
 
-Do not assume copies under `xCrew`, `xxCrew`, or `CREW/BACKUP` reflect the current live behavior.
+Do not assume copies under `xCrew`, `xxCrew`, or `BACKUP/CREW` reflect the current live behavior.
