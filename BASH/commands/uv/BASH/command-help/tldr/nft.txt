@@ -1,0 +1,30 @@
+nft
+
+[0m[0mAllows configuration of tables, chains and rules provided by the Linux kernel firewall.
+Nftables replaces iptables.
+More information: https://wiki.nftables.org/wiki-nftables/index.php/Main_Page.
+
+ - [0m[32;23;22;24;25mView current configuration:
+   [33;23;22;24;25msudo nft list ruleset[0m
+[0m
+ - [0m[32;23;22;24;25mAdd a new table with family "inet" and table "filter":
+   [33;23;22;24;25msudo nft add table [0minet[33;23;22;24;25m [0mfilter
+[0m
+ - [0m[32;23;22;24;25mAdd a new chain to accept all inbound traffic:
+   [33;23;22;24;25msudo nft add chain [0minet[33;23;22;24;25m [0mfilter[33;23;22;24;25m [0minput[33;23;22;24;25m \{ type [0mfilter[33;23;22;24;25m hook [0minput[33;23;22;24;25m priority [0m0[33;23;22;24;25m \; policy [0maccept[33;23;22;24;25m \; \}[0m
+[0m
+ - [0m[32;23;22;24;25mAdd a new rule to accept several TCP ports:
+   [33;23;22;24;25msudo nft add rule [0minet[33;23;22;24;25m [0mfilter[33;23;22;24;25m [0minput[33;23;22;24;25m [0mtcp[33;23;22;24;25m {{dport \{ telnet, ssh, http, https \} accept}}[0m
+[0m
+ - [0m[32;23;22;24;25mAdd a NAT rule to translate all traffic from the 192.168.0.0/24 subnet to the host's public IP:
+   [33;23;22;24;25msudo nft add rule [0mnat[33;23;22;24;25m [0mpostrouting[33;23;22;24;25m ip saddr [0m192.168.0.0/24[33;23;22;24;25m [0mmasquerade
+[0m
+ - [0m[32;23;22;24;25mShow rule handles:
+   [33;23;22;24;25msudo nft --handle --numeric list chain [0mfamily[33;23;22;24;25m [0mtable[33;23;22;24;25m [0mchain
+[0m
+ - [0m[32;23;22;24;25mDelete a rule:
+   [33;23;22;24;25msudo nft delete rule [0minet[33;23;22;24;25m [0mfilter[33;23;22;24;25m [0minput[33;23;22;24;25m handle [0m3
+[0m
+ - [0m[32;23;22;24;25mSave current configuration:
+   [33;23;22;24;25msudo nft list ruleset > [0m/etc/nftables.conf
+[0m[0m

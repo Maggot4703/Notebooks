@@ -1,0 +1,11 @@
+localedef
+
+[0m[0mManage locale definition files.
+More information: https://manned.org/localedef.
+
+ - [0m[32;23;22;24;25mList compiled locales:
+   [33;23;22;24;25mlocaledef --list-archive[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mlocaledef [0m[-?|--help]
+[0m[0m

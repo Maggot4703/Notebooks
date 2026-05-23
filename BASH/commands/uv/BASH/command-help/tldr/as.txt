@@ -1,0 +1,18 @@
+as
+
+[0m[0mPortable GNU assembler.
+Primarily intended to assemble output from gcc to be used by ld.
+More information: https://manned.org/as.
+
+ - [0m[32;23;22;24;25mAssemble a file, writing the output to a.out:
+   [33;23;22;24;25mas [0mpath/to/file.s
+[0m
+ - [0m[32;23;22;24;25mAssemble the output to a given file:
+   [33;23;22;24;25mas [0mpath/to/file.s[33;23;22;24;25m -o [0mpath/to/output_file.o
+[0m
+ - [0m[32;23;22;24;25mGenerate output faster by skipping whitespace and comment preprocessing. (Should only be used for trusted compilers):
+   [33;23;22;24;25mas -f [0mpath/to/file.s
+[0m
+ - [0m[32;23;22;24;25mInclude a given path to the list of directories to search for files specified in .include directives:
+   [33;23;22;24;25mas -I [0mpath/to/directory[33;23;22;24;25m [0mpath/to/file.s
+[0m[0m

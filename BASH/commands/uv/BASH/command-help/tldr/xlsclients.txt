@@ -1,0 +1,26 @@
+xlsclients
+
+[0m[0mList client applications running on an X11 display.
+More information: https://manned.org/xlsclients.
+
+ - [0m[32;23;22;24;25mList clients on the default display:
+   [33;23;22;24;25mxlsclients[0m
+[0m
+ - [0m[32;23;22;24;25mList clients on all screens:
+   [33;23;22;24;25mxlsclients -a[0m
+[0m
+ - [0m[32;23;22;24;25mList clients with detailed information:
+   [33;23;22;24;25mxlsclients -l[0m
+[0m
+ - [0m[32;23;22;24;25mLimit the command output length per client to a specific number of characters:
+   [33;23;22;24;25mxlsclients -m [0mmax_command_length
+[0m
+ - [0m[32;23;22;24;25mSpecify a particular display to inspect:
+   [33;23;22;24;25mxlsclients -display :[0mdisplay_number
+[0m
+ - [0m[32;23;22;24;25mList clients on remote host's display:
+   [33;23;22;24;25mxlsclients -display [0mremote_host[33;23;22;24;25m:0[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mxlsclients -version[0m
+[0m[0m

@@ -1,0 +1,20 @@
+dd
+
+[0m[0mConvert and copy a file.
+More information: https://manned.org/dd.1p.
+
+ - [0m[32;23;22;24;25mMake a bootable USB drive from an isohybrid file (such as archlinux-xxx.iso) and show the progress:
+   [33;23;22;24;25mdd if=[0mpath/to/file.iso[33;23;22;24;25m of=[0m/dev/usb_drive[33;23;22;24;25m status=progress[0m
+[0m
+ - [0m[32;23;22;24;25mClone a drive to another drive with 4 MiB block size and flush writes before the command terminates:
+   [33;23;22;24;25mdd bs=4194304 conv=fsync if=[0m/dev/source_drive[33;23;22;24;25m of=[0m/dev/dest_drive
+[0m
+ - [0m[32;23;22;24;25mGenerate a file with a specific number of random bytes by using kernel random driver:
+   [33;23;22;24;25mdd bs=[0m100[33;23;22;24;25m count=[0m1[33;23;22;24;25m if=/dev/urandom of=[0mpath/to/random_file
+[0m
+ - [0m[32;23;22;24;25mBenchmark the sequential write performance of a disk:
+   [33;23;22;24;25mdd bs=[0m1024[33;23;22;24;25m count=[0m1000000[33;23;22;24;25m if=/dev/zero of=[0mpath/to/file_1GB
+[0m
+ - [0m[32;23;22;24;25mCreate a system backup, save it into an IMG file (can be restored later by swapping if and of), and show the progress:
+   [33;23;22;24;25mdd if=[0m/dev/drive_device[33;23;22;24;25m of=[0mpath/to/file.img[33;23;22;24;25m status=progress[0m
+[0m[0m

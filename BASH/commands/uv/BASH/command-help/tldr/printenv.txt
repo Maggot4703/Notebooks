@@ -1,0 +1,14 @@
+printenv
+
+[0m[0mPrint values of all or environment variables.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/printenv-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay key-value pairs of all environment variables:
+   [33;23;22;24;25mprintenv[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the value of a specific variable:
+   [33;23;22;24;25mprintenv [0mHOME
+[0m
+ - [0m[32;23;22;24;25mDisplay the value of a variable and end with NUL instead of newline:
+   [33;23;22;24;25mprintenv [0m[-0|--null][33;23;22;24;25m [0mHOME
+[0m[0m

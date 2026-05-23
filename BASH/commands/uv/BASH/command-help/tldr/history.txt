@@ -1,0 +1,26 @@
+history
+
+[0m[0mManage command-line history.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-history.
+
+ - [0m[32;23;22;24;25mDisplay the commands history list with line numbers:
+   [33;23;22;24;25mhistory[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the last 20 commands (in Zsh it displays all commands starting from the 20th):
+   [33;23;22;24;25mhistory 20[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay history with timestamps in different formats (only available in Zsh):
+   [33;23;22;24;25mhistory -[0md|f|i|E
+[0m
+ - [0m[32;23;22;24;25m[c]lear the commands history list:
+   [33;23;22;24;25mhistory -c[0m
+[0m
+ - [0m[32;23;22;24;25mOver[w]rite history file with history of current Bash shell (often combined with history -c to purge history):
+   [33;23;22;24;25mhistory -w[0m
+[0m
+ - [0m[32;23;22;24;25m[d]elete the history entry at the specified offset:
+   [33;23;22;24;25mhistory -d [0moffset
+[0m
+ - [0m[32;23;22;24;25mAdd a command to history without running it:
+   [33;23;22;24;25mhistory -s [0mcommand
+[0m[0m

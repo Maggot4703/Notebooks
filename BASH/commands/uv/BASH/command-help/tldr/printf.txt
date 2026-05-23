@@ -1,0 +1,24 @@
+printf
+
+[0m[0mFormat and print text.
+See also: echo.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/printf-invocation.html.
+
+ - [0m[32;23;22;24;25mPrint a text message:
+   [33;23;22;24;25mprintf "[0m%s\n[33;23;22;24;25m" "[0mHello world[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mPrint an integer in bold blue:
+   [33;23;22;24;25mprintf "[0m\e[1;34m%.3d\e[0m\n[33;23;22;24;25m" [0m42
+[0m
+ - [0m[32;23;22;24;25mPrint a float number with the Unicode Euro sign:
+   [33;23;22;24;25mprintf "[0m\u20AC %.2f\n[33;23;22;24;25m" [0m123.4
+[0m
+ - [0m[32;23;22;24;25mPrint a text message composed with environment variables:
+   [33;23;22;24;25mprintf "[0mvar1: %s\tvar2: %s\n[33;23;22;24;25m" "[0m$VAR1[33;23;22;24;25m" "[0m$VAR2[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mStore a formatted message in a variable (does not work on Zsh):
+   [33;23;22;24;25mprintf -v [0mmyvar[33;23;22;24;25m [0m"This is %s = %d\n" "a year" 2016
+[0m
+ - [0m[32;23;22;24;25mPrint a hexadecimal, octal and scientific number:
+   [33;23;22;24;25mprintf "[0mhex=%x octal=%o scientific=%e[33;23;22;24;25m" 0x[0mFF[33;23;22;24;25m 0[0m377[33;23;22;24;25m [0m100000
+[0m[0m

@@ -1,0 +1,23 @@
+id
+
+[0m[0mDisplay current user and group identity.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/id-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay current user's ID (UID), group ID (GID) and groups to which they belong:
+   [33;23;22;24;25mid[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the current user identity:
+   [33;23;22;24;25mid [0m[-un|--user --name]
+[0m
+ - [0m[32;23;22;24;25mDisplay the current user identity as a number:
+   [33;23;22;24;25mid [0m[-u|--user]
+[0m
+ - [0m[32;23;22;24;25mDisplay the current primary group identity:
+   [33;23;22;24;25mid [0m[-gn|--group --name]
+[0m
+ - [0m[32;23;22;24;25mDisplay the current primary group identity as a number:
+   [33;23;22;24;25mid [0m[-g|--group]
+[0m
+ - [0m[32;23;22;24;25mDisplay an arbitrary user's ID (UID), group ID (GID) and groups to which they belong:
+   [33;23;22;24;25mid [0musername
+[0m[0m

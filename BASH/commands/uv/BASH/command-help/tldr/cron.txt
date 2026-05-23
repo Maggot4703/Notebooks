@@ -1,0 +1,8 @@
+cron
+
+[0m[0mA system scheduler for running jobs or tasks unattended.
+The command to submit, edit or delete entries to cron is called crontab.
+
+ - [0m[32;23;22;24;25mView documentation for managing cron entries:
+   [33;23;22;24;25mtldr crontab[0m
+[0m[0m

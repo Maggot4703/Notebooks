@@ -1,0 +1,15 @@
+mm2gv
+
+[0m[0mConvert a graph from Matrix Market mm format to gv format.
+Converters: gml2gv, gv2gml, gv2gxl, gxl2gv, graphml2gv & mm2gv.
+More information: https://graphviz.org/pdf/mm2gv.1.pdf.
+
+ - [0m[32;23;22;24;25mConvert a graph from mm to gv format:
+   [33;23;22;24;25mmm2gv -o [0moutput.gv[33;23;22;24;25m [0minput.mm
+[0m
+ - [0m[32;23;22;24;25mConvert a graph using stdin and stdout:
+   [33;23;22;24;25mcat [0minput.mm[33;23;22;24;25m | mm2gv > [0moutput.gv
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mmm2gv -?[0m
+[0m[0m

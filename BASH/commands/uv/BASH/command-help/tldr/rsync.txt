@@ -1,0 +1,30 @@
+rsync
+
+[0m[0mTransfer files either to or from a remote host (but not between two remote hosts), by default using SSH.
+To specify a remote path, use user@host:path/to/file_or_directory.
+More information: https://download.samba.org/pub/rsync/rsync.1.
+
+ - [0m[32;23;22;24;25mTransfer a file:
+   [33;23;22;24;25mrsync [0mpath/to/source[33;23;22;24;25m [0mpath/to/destination
+[0m
+ - [0m[32;23;22;24;25mUse archive mode (recursively copy directories, copy symlinks without resolving, and preserve permissions, ownership and modification times):
+   [33;23;22;24;25mrsync [0m[-a|--archive][33;23;22;24;25m [0mpath/to/source[33;23;22;24;25m [0mpath/to/destination
+[0m
+ - [0m[32;23;22;24;25mCompress the data as it is sent to the destination, display verbose and human-readable progress, and keep partially transferred files if interrupted:
+   [33;23;22;24;25mrsync [0m[-zvhP|--compress --verbose --human-readable --partial --progress][33;23;22;24;25m [0mpath/to/source[33;23;22;24;25m [0mpath/to/destination
+[0m
+ - [0m[32;23;22;24;25mRecursively copy directories:
+   [33;23;22;24;25mrsync [0m[-r|--recursive][33;23;22;24;25m [0mpath/to/source[33;23;22;24;25m [0mpath/to/destination
+[0m
+ - [0m[32;23;22;24;25mTransfer directory contents, but not the directory itself:
+   [33;23;22;24;25mrsync [0m[-r|--recursive][33;23;22;24;25m [0mpath/to/source[33;23;22;24;25m/ [0mpath/to/destination
+[0m
+ - [0m[32;23;22;24;25mUse archive mode, resolve symlinks, and skip files that are newer on the destination:
+   [33;23;22;24;25mrsync [0m[-auL|--archive --update --copy-links][33;23;22;24;25m [0mpath/to/source[33;23;22;24;25m [0mpath/to/destination
+[0m
+ - [0m[32;23;22;24;25mTransfer a directory from a remote host running rsyncd and delete files on the destination that do not exist on the source:
+   [33;23;22;24;25mrsync [0m[-r|--recursive][33;23;22;24;25m --delete rsync://[0mhost[33;23;22;24;25m:[0mpath/to/source[33;23;22;24;25m [0mpath/to/destination
+[0m
+ - [0m[32;23;22;24;25mTransfer a file over SSH using a different port than the default (22) and show global progress:
+   [33;23;22;24;25mrsync [0m[-e|--rsh][33;23;22;24;25m 'ssh -p [0mport[33;23;22;24;25m' --info=progress2 [0mhost[33;23;22;24;25m:[0mpath/to/source[33;23;22;24;25m [0mpath/to/destination
+[0m[0m

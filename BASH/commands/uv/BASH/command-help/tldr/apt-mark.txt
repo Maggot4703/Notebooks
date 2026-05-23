@@ -1,0 +1,20 @@
+apt-mark
+
+[0m[0mUtility to change the status of installed packages.
+More information: https://manned.org/apt-mark.8.
+
+ - [0m[32;23;22;24;25mMark a package as automatically installed:
+   [33;23;22;24;25msudo apt-mark auto [0mpackage
+[0m
+ - [0m[32;23;22;24;25mHold a package at its current version and prevent updates to it:
+   [33;23;22;24;25msudo apt-mark hold [0mpackage
+[0m
+ - [0m[32;23;22;24;25mAllow a package to be updated again:
+   [33;23;22;24;25msudo apt-mark unhold [0mpackage
+[0m
+ - [0m[32;23;22;24;25mShow manually installed packages:
+   [33;23;22;24;25mapt-mark showmanual[0m
+[0m
+ - [0m[32;23;22;24;25mShow held packages that aren't being updated:
+   [33;23;22;24;25mapt-mark showhold[0m
+[0m[0m

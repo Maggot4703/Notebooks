@@ -1,0 +1,3 @@
+Usage: /usr/sbin/aa-teardown
+
+Unloads all AppArmor profiles

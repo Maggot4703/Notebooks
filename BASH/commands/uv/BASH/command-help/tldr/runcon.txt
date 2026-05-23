@@ -1,0 +1,18 @@
+runcon
+
+[0m[0mRun a program in a different SELinux security context.
+See also: secon.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/runcon-invocation.html.
+
+ - [0m[32;23;22;24;25mPrint the security context of the current execution context:
+   [33;23;22;24;25mruncon[0m
+[0m
+ - [0m[32;23;22;24;25mSpecify the domain to run a command in:
+   [33;23;22;24;25mruncon [0m[-t|--type][33;23;22;24;25m [0mdomain[33;23;22;24;25m_t [0mcommand
+[0m
+ - [0m[32;23;22;24;25mSpecify the context role to run a command with:
+   [33;23;22;24;25mruncon [0m[-r|--role][33;23;22;24;25m [0mrole[33;23;22;24;25m_r [0mcommand
+[0m
+ - [0m[32;23;22;24;25mSpecify the full context to run a command with:
+   [33;23;22;24;25mruncon [0muser[33;23;22;24;25m_u:[0mrole[33;23;22;24;25m_r:[0mdomain[33;23;22;24;25m_t [0mcommand
+[0m[0m

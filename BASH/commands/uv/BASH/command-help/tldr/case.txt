@@ -1,0 +1,20 @@
+case
+
+[0m[0mBash builtin construct for creating multi-choice conditional statements.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-case.
+
+ - [0m[32;23;22;24;25mMatch a variable against string literals to decide which command to run:
+   [33;23;22;24;25mcase [0m$COUNTRULE[33;23;22;24;25m in [0mwords[33;23;22;24;25m) [0mwc --words README[33;23;22;24;25m ;; [0mlines[33;23;22;24;25m) [0mwc --lines README[33;23;22;24;25m ;; esac[0m
+[0m
+ - [0m[32;23;22;24;25mCombine patterns with |, use * as a fallback pattern:
+   [33;23;22;24;25mcase [0m$COUNTRULE[33;23;22;24;25m in [0m[wW]|words[33;23;22;24;25m) [0mwc --words README[33;23;22;24;25m ;; [0m[lL]|lines[33;23;22;24;25m) [0mwc --lines README[33;23;22;24;25m ;; *) [0mecho "what?"[33;23;22;24;25m ;; esac[0m
+[0m
+ - [0m[32;23;22;24;25mAllow matching multiple patterns:
+   [33;23;22;24;25mcase [0m$ANIMAL[33;23;22;24;25m in [0mcat[33;23;22;24;25m) [0mecho "It's a cat"[33;23;22;24;25m ;;& [0mcat|dog[33;23;22;24;25m) [0mecho "It's a cat or a dog"[33;23;22;24;25m ;;& *) [0mecho "Fallback"[33;23;22;24;25m ;; esac[0m
+[0m
+ - [0m[32;23;22;24;25mContinue to the next pattern's commands without checking the pattern:
+   [33;23;22;24;25mcase [0m$ANIMAL[33;23;22;24;25m in [0mcat[33;23;22;24;25m) echo [0m"It's a cat"[33;23;22;24;25m ;& [0mdog[33;23;22;24;25m) [0mecho "It's either a dog or cat fell through"[33;23;22;24;25m ;& *) [0mecho "Fallback"[33;23;22;24;25m ;; esac[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mhelp case[0m
+[0m[0m

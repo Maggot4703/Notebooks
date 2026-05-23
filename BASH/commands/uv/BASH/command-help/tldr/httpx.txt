@@ -1,0 +1,30 @@
+httpx
+
+[0m[0mA fast and multi-purpose HTTP toolkit written in Go to run multiple probes at once.
+Note: Not to be confused with the unrelated Python's HTTPX which has the same command name.
+More information: https://docs.projectdiscovery.io/tools/httpx/running.
+
+ - [0m[32;23;22;24;25mRun a probe against a [u]RL, host, IP Address or subnet (CIDR notation) showing probe status:
+   [33;23;22;24;25mhttpx -probe [0m[-u|-target][33;23;22;24;25m [0murl|host|ipaddress|subnet_with_cidr
+[0m
+ - [0m[32;23;22;24;25mRun a probe against multiple hosts showing status code with input from subfinder:
+   [33;23;22;24;25msubfinder [0m[-d|-domain][33;23;22;24;25m [0mexample.com[33;23;22;24;25m | httpx [0m[-sc|-status-code]
+[0m
+ - [0m[32;23;22;24;25mRun a rate limited probe against a list of hosts from a file showing technology detected and response time:
+   [33;23;22;24;25mhttpx [0m[-rl|-rate-limit][33;23;22;24;25m [0m150[33;23;22;24;25m [0m[-l|-list][33;23;22;24;25m [0mpath/to/newline_separated_hosts_list[33;23;22;24;25m [0m[-td|-tech-detect][33;23;22;24;25m [0m[-rt|-response-time]
+[0m
+ - [0m[32;23;22;24;25mRun a probe against a [u]RL showing its webpage title, CDN/WAF in use, and page content hash:
+   [33;23;22;24;25mhttpx [0m[-u|-target][33;23;22;24;25m [0murl[33;23;22;24;25m -title -cdn -hash [0msha256
+[0m
+ - [0m[32;23;22;24;25mRun a probe against a list of hosts with custom defined ports and timeout after certain seconds:
+   [33;23;22;24;25mhttpx -probe [0m[-u|-target][33;23;22;24;25m [0mhost1,host2,...[33;23;22;24;25m [0m[-p|-ports][33;23;22;24;25m http:[0m80,8000-8080[33;23;22;24;25m,https:[0m443,8443[33;23;22;24;25m -timeout [0m10
+[0m
+ - [0m[32;23;22;24;25mRun a probe against a list of hosts filtering out codes of certain responses:
+   [33;23;22;24;25mhttpx [0m[-u|-target][33;23;22;24;25m [0mhost1,host2,...[33;23;22;24;25m [0m[-fc|-filter-code][33;23;22;24;25m [0m400,401,404
+[0m
+ - [0m[32;23;22;24;25mRun a probe against a list of hosts matching codes of certain responses:
+   [33;23;22;24;25mhttpx [0m[-u|-target][33;23;22;24;25m [0mhost1,host2,...[33;23;22;24;25m [0m[-mc|-match-code][33;23;22;24;25m [0m200,301,304
+[0m
+ - [0m[32;23;22;24;25mRun a probe against a URL saving screenshots of certain paths, with screenshot timeouts (assets are saved in ./output):
+   [33;23;22;24;25mhttpx [0m[-u|-target][33;23;22;24;25m [0mhttps://www.github.com[33;23;22;24;25m -path [0m/tldr-pages/tldr,/projectdiscovery/httpx[33;23;22;24;25m [0m[-ss|-screenshot][33;23;22;24;25m [0m[-st|-screenshot-timeout][33;23;22;24;25m [0m10
+[0m[0m

@@ -1,0 +1,23 @@
+ethtool
+
+[0m[0mDisplay and modify Network Interface Controller (NIC) parameters.
+More information: https://manned.org/ethtool.
+
+ - [0m[32;23;22;24;25mDisplay the current settings for an interface:
+   [33;23;22;24;25methtool [0meth0
+[0m
+ - [0m[32;23;22;24;25mDisplay the driver information for an interface:
+   [33;23;22;24;25methtool [0m[-i|--driver][33;23;22;24;25m [0meth0
+[0m
+ - [0m[32;23;22;24;25mDisplay all supported features for an interface:
+   [33;23;22;24;25methtool [0m[-k|--show-features][33;23;22;24;25m [0meth0
+[0m
+ - [0m[32;23;22;24;25mDisplay the network usage statistics for an interface:
+   [33;23;22;24;25methtool [0m[-S|--statistics][33;23;22;24;25m [0meth0
+[0m
+ - [0m[32;23;22;24;25mBlink one or more LEDs on an interface for 10 seconds:
+   [33;23;22;24;25methtool [0m[-p|--identify][33;23;22;24;25m [0meth0[33;23;22;24;25m [0m10
+[0m
+ - [0m[32;23;22;24;25mSet the link speed, duplex mode, and parameter auto-negotiation for a given interface:
+   [33;23;22;24;25methtool [0m[-s|--change][33;23;22;24;25m [0meth0[33;23;22;24;25m speed [0m10|100|1000[33;23;22;24;25m duplex [0mhalf|full[33;23;22;24;25m autoneg [0mon|off
+[0m[0m

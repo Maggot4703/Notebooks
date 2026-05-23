@@ -1,0 +1,20 @@
+lsns
+
+[0m[0mList information about all namespaces or about the specified namespace.
+More information: https://manned.org/lsns.
+
+ - [0m[32;23;22;24;25mList all namespaces:
+   [33;23;22;24;25mlsns[0m
+[0m
+ - [0m[32;23;22;24;25mList namespaces in JSON format:
+   [33;23;22;24;25mlsns [0m[-J|--json]
+[0m
+ - [0m[32;23;22;24;25mList namespaces associated with the specified process:
+   [33;23;22;24;25mlsns [0m[-p|--task][33;23;22;24;25m [0mpid
+[0m
+ - [0m[32;23;22;24;25mList the specified type of namespaces only:
+   [33;23;22;24;25mlsns [0m[-t|--type][33;23;22;24;25m [0mmnt|net|ipc|user|pid|uts|cgroup|time
+[0m
+ - [0m[32;23;22;24;25mList namespaces, only showing the namespace ID, type, PID, and command:
+   [33;23;22;24;25mlsns [0m[-o|--output][33;23;22;24;25m [0mNS,TYPE,PID,COMMAND
+[0m[0m

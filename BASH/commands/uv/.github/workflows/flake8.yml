@@ -1,0 +1,33 @@
+---
+name: Lint Python (flake8)
+
+'on':
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.14]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install flake8
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8
+      - name: Run flake8 for CREW
+        working-directory: CREW/Crew
+        run: flake8 --exclude=.ipynb_checkpoints . || true
+      - name: Fail on flake8 issues
+        run: |
+          set -e
+          cd CREW/Crew
+          flake8 --exclude=.ipynb_checkpoints .

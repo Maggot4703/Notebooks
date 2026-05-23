@@ -1,0 +1,29 @@
+code
+
+[0m[0mCross platform and extensible code editor.
+More information: https://code.visualstudio.com/docs/configure/command-line.
+
+ - [0m[32;23;22;24;25mStart Visual Studio Code:
+   [33;23;22;24;25mcode[0m
+[0m
+ - [0m[32;23;22;24;25mOpen specific files/directories:
+   [33;23;22;24;25mcode [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...
+[0m
+ - [0m[32;23;22;24;25mCompare two specific files:
+   [33;23;22;24;25mcode [0m[-d|--diff][33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mOpen specific files/directories in a new window:
+   [33;23;22;24;25mcode [0m[-n|--new-window][33;23;22;24;25m [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...
+[0m
+ - [0m[32;23;22;24;25mInstall/uninstall a specific extension:
+   [33;23;22;24;25mcode --[0minstall|uninstall[33;23;22;24;25m-extension [0mpublisher.extension
+[0m
+ - [0m[32;23;22;24;25mDisplay diagnostic and process information about the running code window:
+   [33;23;22;24;25mcode [0m[-s|--status]
+[0m
+ - [0m[32;23;22;24;25mPrint installed extensions with their versions:
+   [33;23;22;24;25mcode --list-extensions --show-versions[0m
+[0m
+ - [0m[32;23;22;24;25mStart the editor as a superuser (root) while storing user data in a specific directory:
+   [33;23;22;24;25msudo code --user-data-dir [0mpath/to/directory
+[0m[0m

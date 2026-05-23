@@ -1,0 +1,11 @@
+continue
+
+[0m[0mSkip to the next iteration of a for, while, until or select loop.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-continue.
+
+ - [0m[32;23;22;24;25mSkip to the next iteration:
+   [33;23;22;24;25mwhile :; do continue; [0mecho "This will never be reached"[33;23;22;24;25m; done[0m
+[0m
+ - [0m[32;23;22;24;25mSkip to the next iteration from within a nested loop:
+   [33;23;22;24;25mfor i in [0m{1..3}[33;23;22;24;25m; do [0mecho $i[33;23;22;24;25m; while :; do continue 2; done; done[0m
+[0m[0m

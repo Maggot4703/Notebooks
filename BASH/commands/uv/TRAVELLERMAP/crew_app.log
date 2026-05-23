@@ -1,0 +1,4 @@
+2026-03-27 11:27:54,043 - __main__ - INFO - Main application script started.
+2026-03-27 11:27:58,450 - config - INFO - Configuration file not found at config.json. Using default configuration.
+2026-03-27 11:27:58,452 - config - INFO - Configuration saved to config.json
+2026-03-27 11:27:59,662 - root - INFO - Status: Auto-importing workspace modules...

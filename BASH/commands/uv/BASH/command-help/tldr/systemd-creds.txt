@@ -1,0 +1,20 @@
+systemd-creds
+
+[0m[0mList, show, encrypt and decrypt service credentials.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-creds.html.
+
+ - [0m[32;23;22;24;25mEncrypt a file and set a specific name:
+   [33;23;22;24;25msystemd-creds encrypt --name [0mname[33;23;22;24;25m [0mpath/to/input_file[33;23;22;24;25m [0mpath/to/output
+[0m
+ - [0m[32;23;22;24;25mDecrypt the file again:
+   [33;23;22;24;25msystemd-creds decrypt [0mpath/to/input_file[33;23;22;24;25m [0mpath/to/output_file
+[0m
+ - [0m[32;23;22;24;25mEncrypt text from stdin:
+   [33;23;22;24;25mecho -n [0mtext[33;23;22;24;25m | systemd-creds encrypt --name [0mname[33;23;22;24;25m - [0mpath/to/output
+[0m
+ - [0m[32;23;22;24;25mEncrypt the text and append it to the service file (the credentials will be available in $CREDENTIALS_DIRECTORY):
+   [33;23;22;24;25mecho -n [0mtext[33;23;22;24;25m | systemd-creds encrypt --name [0mname[33;23;22;24;25m --pretty - - >> [0mservice
+[0m
+ - [0m[32;23;22;24;25mCreate a credential that is only valid until the given timestamp:
+   [33;23;22;24;25msystemd-creds encrypt --not-after "[0mtimestamp[33;23;22;24;25m" [0mpath/to/input_file[33;23;22;24;25m [0mpath/to/output_file
+[0m[0m

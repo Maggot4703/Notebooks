@@ -1,0 +1,32 @@
+GPIODETECT(1)                    User Commands                   GPIODETECT(1)
+
+NAME
+       gpiodetect - manual page for gpiodetect v1.6.3
+
+SYNOPSIS
+       gpiodetect [OPTIONS]
+
+DESCRIPTION
+       List all GPIO chips, print their labels and number of GPIO lines.
+
+OPTIONS
+       -h, --help:
+              display this message and exit
+
+       -v, --version:
+              display the version and exit
+
+AUTHOR
+       Bartosz Golaszewski <bartekgola@gmail.com>
+
+REPORTING BUGS
+       Report bugs to:
+           Bartosz Golaszewski <bartekgola@gmail.com>
+           linux-gpio <linux-gpio@vger.kernel.org>
+
+COPYRIGHT
+       Copyright © 2017-2018 Bartosz Golaszewski License: LGPLv2.1
+       This  is  free  software:  you  are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
+
+libgpiod v1.6.3                  January 2023                    GPIODETECT(1)

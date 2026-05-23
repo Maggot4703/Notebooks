@@ -1,0 +1,18 @@
+tune2fs
+
+[0m[0mAdjust parameters of an ext2, ext3 or ext4 filesystem.
+May be used on mounted filesystems.
+More information: https://manned.org/tune2fs.
+
+ - [0m[32;23;22;24;25mSet the max number of counts before a filesystem is checked to 2:
+   [33;23;22;24;25mtune2fs -c 2 [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mSet the filesystem label to MY_LABEL:
+   [33;23;22;24;25mtune2fs -L 'MY_LABEL' [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mEnable discard and user-specified extended attributes for a filesystem:
+   [33;23;22;24;25mtune2fs -o [0mdiscard,user_xattr[33;23;22;24;25m [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mEnable journaling for a filesystem:
+   [33;23;22;24;25mtune2fs -o ^[0mnobarrier[33;23;22;24;25m [0m/dev/sdXN
+[0m[0m

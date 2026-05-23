@@ -1,0 +1,17 @@
+zipsplit
+
+[0m[0mSplit a Zip archive into smaller Zip archives.
+More information: https://manned.org/zipsplit.
+
+ - [0m[32;23;22;24;25mSplit Zip archive into parts that are no larger than 36000 bytes (36 MB):
+   [33;23;22;24;25mzipsplit [0mpath/to/archive.zip
+[0m
+ - [0m[32;23;22;24;25mUse a given [n]umber of bytes as the part limit:
+   [33;23;22;24;25mzipsplit -n [0msize[33;23;22;24;25m [0mpath/to/archive.zip
+[0m
+ - [0m[32;23;22;24;25m[p]ause between the creation of each part:
+   [33;23;22;24;25mzipsplit -p -n [0msize[33;23;22;24;25m [0mpath/to/archive.zip
+[0m
+ - [0m[32;23;22;24;25mOutput the smaller Zip archives into a given directory:
+   [33;23;22;24;25mzipsplit -b [0mpath/to/output_directory[33;23;22;24;25m -n [0msize[33;23;22;24;25m [0mpath/to/archive.zip
+[0m[0m

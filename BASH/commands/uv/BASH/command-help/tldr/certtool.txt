@@ -1,0 +1,20 @@
+certtool
+
+[0m[0mGenerate and manage X.509 certificates, keys, and PKI structures using GnuTLS.
+More information: https://gnutls.org/manual/gnutls.html#certtool-Invocation.
+
+ - [0m[32;23;22;24;25mGenerate a private key and save it to a file:
+   [33;23;22;24;25mcerttool [0m[-p|--generate-privkey][33;23;22;24;25m --outfile [0mpath/to/private.key
+[0m
+ - [0m[32;23;22;24;25mGenerate a self-signed certificate using a private key and a template file:
+   [33;23;22;24;25mcerttool [0m[-s|--generate-self-signed][33;23;22;24;25m --load-privkey [0mpath/to/private.key[33;23;22;24;25m --template [0mpath/to/info.template[33;23;22;24;25m --outfile [0mpath/to/certificate.crt
+[0m
+ - [0m[32;23;22;24;25mGenerate a certificate signing request (CSR):
+   [33;23;22;24;25mcerttool [0m[-q|--generate-request][33;23;22;24;25m --load-privkey [0mpath/to/private.key[33;23;22;24;25m --template [0mpath/to/info.template[33;23;22;24;25m --outfile [0mpath/to/request.csr
+[0m
+ - [0m[32;23;22;24;25mGenerate a certificate authority (CA) certificate:
+   [33;23;22;24;25mcerttool [0m[-s|--generate-self-signed][33;23;22;24;25m --load-privkey [0mpath/to/ca.key[33;23;22;24;25m --template [0mpath/to/ca.template[33;23;22;24;25m --outfile [0mpath/to/ca.crt
+[0m
+ - [0m[32;23;22;24;25mVerify a certificate against a CA certificate:
+   [33;23;22;24;25mcerttool --verify --infile [0mpath/to/certificate.crt[33;23;22;24;25m --load-ca-certificate [0mpath/to/ca.crt
+[0m[0m

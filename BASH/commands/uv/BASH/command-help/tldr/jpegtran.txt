@@ -1,0 +1,26 @@
+jpegtran
+
+[0m[0mPerform lossless transformation of JPEG files.
+More information: https://manned.org/jpegtran.
+
+ - [0m[32;23;22;24;25mMirror an image horizontally or vertically:
+   [33;23;22;24;25mjpegtran [0m[-f|-flip][33;23;22;24;25m [0mhorizontal|vertical[33;23;22;24;25m [0mpath/to/image.jpg[33;23;22;24;25m > [0mpath/to/output.jpg
+[0m
+ - [0m[32;23;22;24;25mRotate an image 90, 180 or 270 degrees clockwise:
+   [33;23;22;24;25mjpegtran [0m[-ro|-rotate][33;23;22;24;25m [0m90|180|270[33;23;22;24;25m [0mpath/to/image.jpg[33;23;22;24;25m > [0mpath/to/output.jpg
+[0m
+ - [0m[32;23;22;24;25mTranspose the image across the upper-left to lower right axis:
+   [33;23;22;24;25mjpegtran -transpose [0mpath/to/image.jpg[33;23;22;24;25m > [0mpath/to/output.jpg
+[0m
+ - [0m[32;23;22;24;25mTransverse the image across the upper right to lower left axis:
+   [33;23;22;24;25mjpegtran -transverse [0mpath/to/image.jpg[33;23;22;24;25m > [0mpath/to/output.jpg
+[0m
+ - [0m[32;23;22;24;25mConvert the image to grayscale:
+   [33;23;22;24;25mjpegtran [0m[-g|-grayscale][33;23;22;24;25m [0mpath/to/image.jpg[33;23;22;24;25m > [0mpath/to/output.jpg
+[0m
+ - [0m[32;23;22;24;25mCrop the image to a rectangular region of width W and height H from the upper-left corner, saving the output to a specific file:
+   [33;23;22;24;25mjpegtran -crop [0mW[33;23;22;24;25mx[0mH[33;23;22;24;25m -outfile [0mpath/to/output.jpg[33;23;22;24;25m [0mpath/to/image.jpg
+[0m
+ - [0m[32;23;22;24;25mCrop the image to a rectangular region of width W and height H, starting at point X and Y from the upper-left corner:
+   [33;23;22;24;25mjpegtran -crop [0mW[33;23;22;24;25mx[0mH[33;23;22;24;25m+[0mX[33;23;22;24;25m+[0mY[33;23;22;24;25m [0mpath/to/image.jpg[33;23;22;24;25m > [0mpath/to/output.jpg
+[0m[0m

@@ -1,0 +1,20 @@
+sdiff
+
+[0m[0mCompare the differences between and optionally merge 2 files.
+More information: https://manned.org/sdiff.
+
+ - [0m[32;23;22;24;25mCompare 2 files:
+   [33;23;22;24;25msdiff [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mCompare 2 files, ignoring all tabs and whitespace:
+   [33;23;22;24;25msdiff [0m[-W|--ignore-all-space][33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mCompare 2 files, ignoring whitespace at the end of lines:
+   [33;23;22;24;25msdiff [0m[-Z|--ignore-trailing-space][33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mCompare 2 files in a case-insensitive manner:
+   [33;23;22;24;25msdiff [0m[-i|--ignore-case][33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mCompare and then merge, writing the output to a new file:
+   [33;23;22;24;25msdiff [0m[-o|--output][33;23;22;24;25m [0mpath/to/merged_file[33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m[0m

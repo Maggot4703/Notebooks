@@ -1,0 +1,15 @@
+swaplabel
+
+[0m[0mPrint or change the label or UUID of a swap area.
+Note: path/to/file can either point to a regular file or a swap partition.
+More information: https://manned.org/swaplabel.
+
+ - [0m[32;23;22;24;25mDisplay the current label and UUID of a swap area:
+   [33;23;22;24;25mswaplabel [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSet the label of a swap area:
+   [33;23;22;24;25mswaplabel [0m[-L|--label][33;23;22;24;25m [0mnew_label[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSet the UUID of a swap area (you can generate a UUID using uuidgen):
+   [33;23;22;24;25mswaplabel [0m[-U|--uuid][33;23;22;24;25m [0mnew_uuid[33;23;22;24;25m [0mpath/to/file
+[0m[0m

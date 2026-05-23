@@ -1,0 +1,30 @@
+lsof
+
+[0m[0mList open files and the corresponding processes.
+Note: Root privileges are required to list files opened by others.
+More information: https://manned.org/lsof.
+
+ - [0m[32;23;22;24;25mFind the processes that have a given file open:
+   [33;23;22;24;25mlsof [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mFind the process that opened a local internet port:
+   [33;23;22;24;25mlsof -i :[0mport
+[0m
+ - [0m[32;23;22;24;25mOnly output the process ID (PID):
+   [33;23;22;24;25mlsof -t [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mList files opened by the given user:
+   [33;23;22;24;25mlsof -u [0musername
+[0m
+ - [0m[32;23;22;24;25mList files opened by the given command or process:
+   [33;23;22;24;25mlsof -c [0mprocess_or_command_name
+[0m
+ - [0m[32;23;22;24;25mList files opened by a specific process, given its PID:
+   [33;23;22;24;25mlsof -p [0mPID
+[0m
+ - [0m[32;23;22;24;25mList open files in a directory:
+   [33;23;22;24;25mlsof +D [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mFind the process that is listening on a local IPv6 TCP port and don't convert network or port numbers:
+   [33;23;22;24;25mlsof -i6TCP:[0mport[33;23;22;24;25m -sTCP:LISTEN -n -P[0m
+[0m[0m

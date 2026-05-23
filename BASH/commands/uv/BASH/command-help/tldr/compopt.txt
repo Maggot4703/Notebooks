@@ -1,0 +1,19 @@
+compopt
+
+[0m[0mPrint or change the completion options for a command.
+-o means enabled and +o means disabled.
+See also: compgen, complete.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-compopt.
+
+ - [0m[32;23;22;24;25mPrint the completion options for given command:
+   [33;23;22;24;25mcompopt [0mcommand
+[0m
+ - [0m[32;23;22;24;25mEnable or disable a completion option of a command:
+   [33;23;22;24;25mcompopt [0m-o|+o[33;23;22;24;25m [0moption1[33;23;22;24;25m [0m-o|+o[33;23;22;24;25m [0moption2[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mPrint the options for the currently executing completion:
+   [33;23;22;24;25mcompopt[0m
+[0m
+ - [0m[32;23;22;24;25mEnable or disable a completion option of a command:
+   [33;23;22;24;25mcompopt [0m-o|+o[33;23;22;24;25m [0moption1[33;23;22;24;25m [0m-o|+o[33;23;22;24;25m [0moption2
+[0m[0m

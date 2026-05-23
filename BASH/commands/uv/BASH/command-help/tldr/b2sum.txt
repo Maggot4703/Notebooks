@@ -1,0 +1,26 @@
+b2sum
+
+[0m[0mCalculate BLAKE2 cryptographic checksums.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/b2sum-invocation.html.
+
+ - [0m[32;23;22;24;25mCalculate the BLAKE2 checksum for one or more files:
+   [33;23;22;24;25mb2sum [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mCalculate and save the list of BLAKE2 checksums to a file:
+   [33;23;22;24;25mb2sum [0mpath/to/file1 path/to/file2 ...[33;23;22;24;25m > [0mpath/to/file.b2
+[0m
+ - [0m[32;23;22;24;25mCalculate a BLAKE2 checksum from stdin:
+   command[33;23;22;24;25m | b2sum[0m
+[0m
+ - [0m[32;23;22;24;25mRead a file of BLAKE2 checksums and filenames and verify all files have matching checksums:
+   [33;23;22;24;25mb2sum [0m[-c|--check][33;23;22;24;25m [0mpath/to/file.b2
+[0m
+ - [0m[32;23;22;24;25mOnly show a message for missing files or when verification fails:
+   [33;23;22;24;25mb2sum [0m[-c|--check][33;23;22;24;25m --quiet [0mpath/to/file.b2
+[0m
+ - [0m[32;23;22;24;25mOnly show a message when verification fails, ignoring missing files:
+   [33;23;22;24;25mb2sum --ignore-missing [0m[-c|--check][33;23;22;24;25m --quiet [0mpath/to/file.b2
+[0m
+ - [0m[32;23;22;24;25mCheck a known BLAKE2 checksum of a file:
+   [33;23;22;24;25mecho [0mknown_blake2_checksum_of_the_file[33;23;22;24;25m [0mpath/to/file[33;23;22;24;25m | b2sum [0m[-c|--check]
+[0m[0m

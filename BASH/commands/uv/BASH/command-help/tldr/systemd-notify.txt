@@ -1,0 +1,15 @@
+systemd-notify
+
+[0m[0mNotify the service manager about start-up completion and other daemon status changes.
+This command is useless outside systemd service scripts.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-notify.html.
+
+ - [0m[32;23;22;24;25mNotify systemd that the service has completed its initialization and is fully started. It should be invoked when the service is ready to accept incoming requests:
+   [33;23;22;24;25msystemd-notify --booted[0m
+[0m
+ - [0m[32;23;22;24;25mSignal to systemd that the service is ready to handle incoming connections or perform its tasks:
+   [33;23;22;24;25msystemd-notify --ready[0m
+[0m
+ - [0m[32;23;22;24;25mProvide a custom status message to systemd (this information is shown by systemctl status):
+   [33;23;22;24;25msystemd-notify --status "[0mAdd custom status message here...[33;23;22;24;25m"[0m
+[0m[0m

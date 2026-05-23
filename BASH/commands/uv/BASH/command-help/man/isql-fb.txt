@@ -1,0 +1,125 @@
+ISQL-FB(1)                  Firebird documentation                  ISQL-FB(1)
+
+NAME
+       isql -- Firebird Interactive SQL shell
+
+SYNOPSIS
+       isql [-a] [-cache number] [-database path] [-echo] [-input file]
+       [-merge_stderr] [-noautocommit] [-nowarnings] [-output file] [-password
+       string] [-page number] [-role string] [-s number] [-terminator string]
+       [-user name] [-x] [-z]
+
+DESCRIPTION
+       isql is a program that allows the user to issue arbitrary SQL commands
+       as well as exctacting the metadata.
+
+       isql in Debian is available under the isql-fb name due to filename
+       conflict with an executable from another package.
+
+OPTIONS
+       isql can handle various command line options. Most options can be
+       abbreviated. Below are given the shortest abbreviations as well as the
+       full versions.
+
+       -a  Extract DDL (Data definition language) statements necessary to re-
+           create database's structure, triggers and other metadata. The
+           "CREATE DATABASE" statement is in a comment. Statements are printed
+           to standard output unless -output is used. See also -extract.
+
+       -c buffers
+       -cache number
+           Specify default size of the buffers to be used in database pages.
+
+       -d path
+       -database path
+           Specifies target database name when extracting the metadata with
+           the -extract option.
+
+       -e
+       -echo
+           Prints each statement before executing it.
+
+       -x
+       -ex
+       -extract
+           Extracts DDL statements to recreate database metadata.
+
+           If no -database option is given, -extract behaves exactly as -a. If
+           -database is given, the "CREATE DATABASE" statement is not
+           commented and the database name is replaced with path.
+
+       -i file
+       -input file
+           Reads commands from file instead of standard input. Exits with
+           commit after the last command.
+
+       -m
+       -merge_stderr
+           Merges standard error to standard output. Useful for redirecting
+           both streams.
+
+       -n
+       -noautocommit
+           Normally, all DDL statements like "CREATE TABLE" are automatically
+           committed in a separate transaction. This option disables the
+           automatic commit of DDL statements.
+
+       -nowarnings
+           Disables displaying of SQL warnings.
+
+       -o file
+       -output file
+           All output is redirected to the given file.
+
+       -page number
+       -pagelength number
+           Prints column headers every number output lines. Default is 20.
+
+       -pas string
+       -password string
+           Uses given password as a default when connecting to databases.
+
+       -r string
+       -role string
+           Uses given SQL role as a default when connecting to databases.
+
+       -s number
+       -sqldialect number
+           Uses given SQL dialect as a default when connecting to databases.
+           The default is 1.
+
+       -t string
+       -terminator string
+           Set command line terminator. Default is semicolon ";".
+
+       -u string
+       -user string
+           Uses given user name as a default when connecting to databases.
+
+       -z  Prints program version string before doing anything else. Prints
+           server version after connecting to a database.
+
+ENVIRONMENT
+       ISC_USER
+           Default value for the -user option.
+
+       ISC_ROLE
+           Default value for the -role option.
+
+       ISC_PASSWORD
+           Default value for the -password option.
+
+SEE ALSO
+       gbak(1), gfix(1), fbstat(1).
+
+       Additional documentation about Firebird can be found on the Firebird
+       Project website, <http://www.firebirdsql.org>.
+
+AUTHOR
+       This manual page was written by Damyan Ivanov dmn@debian.org for the
+       Debian project. Permission is granted to use this document, with or
+       without modifications, provided that this notice is retained. If we
+       meet some day, and you think this stuff is worth it, you can buy me a
+       beer in return.
+
+Firebird 3.0                      2025-08-25                        ISQL-FB(1)

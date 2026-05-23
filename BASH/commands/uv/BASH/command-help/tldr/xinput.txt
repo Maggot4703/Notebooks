@@ -1,0 +1,26 @@
+xinput
+
+[0m[0mList available input devices, query information about a device and change input device settings.
+More information: https://manned.org/xinput.
+
+ - [0m[32;23;22;24;25mList all input devices:
+   [33;23;22;24;25mxinput list[0m
+[0m
+ - [0m[32;23;22;24;25mDisable an input:
+   [33;23;22;24;25mxinput disable [0mid
+[0m
+ - [0m[32;23;22;24;25mEnable an input:
+   [33;23;22;24;25mxinput enable [0mid
+[0m
+ - [0m[32;23;22;24;25mDisconnect an input from its master:
+   [33;23;22;24;25mxinput float [0mid
+[0m
+ - [0m[32;23;22;24;25mReattach an input as slave to a master:
+   [33;23;22;24;25mxinput reattach [0mid[33;23;22;24;25m [0mmaster_id
+[0m
+ - [0m[32;23;22;24;25mList settings of an input device:
+   [33;23;22;24;25mxinput list-props [0mid
+[0m
+ - [0m[32;23;22;24;25mChange a setting of an input device:
+   [33;23;22;24;25mxinput set-prop [0mid[33;23;22;24;25m [0msetting_id[33;23;22;24;25m [0mvalue
+[0m[0m

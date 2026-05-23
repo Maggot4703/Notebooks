@@ -1,0 +1,21 @@
+xwininfo
+
+[0m[0mDisplay information about windows.
+See also: xprop, xkill.
+More information: https://www.x.org/releases/current/doc/man/man1/xwininfo.1.xhtml.
+
+ - [0m[32;23;22;24;25mDisplay a cursor to select a window to display its attributes (id, name, size, position, ...):
+   [33;23;22;24;25mxwininfo[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the tree of all windows:
+   [33;23;22;24;25mxwininfo -tree -root[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the attributes of a window with a specific ID:
+   [33;23;22;24;25mxwininfo -id [0mid
+[0m
+ - [0m[32;23;22;24;25mDisplay the attributes of a window with a specific name:
+   [33;23;22;24;25mxwininfo -name [0mname
+[0m
+ - [0m[32;23;22;24;25mDisplay the ID of a window searching by name:
+   [33;23;22;24;25mxwininfo -tree -root | grep [0mkeyword[33;23;22;24;25m | head -1 | perl -ne 'print $1 if /(0x[\da-f]+)/ig;'[0m
+[0m[0m

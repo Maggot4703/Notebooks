@@ -1,0 +1,29 @@
+firefox
+
+[0m[0mA free and open source web browser.
+More information: https://wiki.mozilla.org/Firefox/CommandLineOptions.
+
+ - [0m[32;23;22;24;25mLaunch Firefox and open a web page:
+   [33;23;22;24;25mfirefox [0mhttps://www.duckduckgo.com
+[0m
+ - [0m[32;23;22;24;25mOpen a new window:
+   [33;23;22;24;25mfirefox --new-window [0mhttps://www.duckduckgo.com
+[0m
+ - [0m[32;23;22;24;25mOpen a private (incognito) window:
+   [33;23;22;24;25mfirefox --private-window[0m
+[0m
+ - [0m[32;23;22;24;25mSearch for "wikipedia" using the default search engine:
+   [33;23;22;24;25mfirefox --search "[0mwikipedia[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mLaunch Firefox in safe mode, with all extensions disabled:
+   [33;23;22;24;25mfirefox --safe-mode[0m
+[0m
+ - [0m[32;23;22;24;25mTake a screenshot of a web page in headless mode:
+   [33;23;22;24;25mfirefox --headless --screenshot [0mpath/to/output_file.png[33;23;22;24;25m [0mhttps://example.com/
+[0m
+ - [0m[32;23;22;24;25mUse a specific profile to allow multiple separate instances of Firefox to run at once:
+   [33;23;22;24;25mfirefox --profile [0mpath/to/directory[33;23;22;24;25m [0mhttps://example.com/
+[0m
+ - [0m[32;23;22;24;25mSet Firefox as the default browser:
+   [33;23;22;24;25mfirefox --setDefaultBrowser[0m
+[0m[0m

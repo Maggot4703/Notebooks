@@ -1,0 +1,15 @@
+groupadd
+
+[0m[0mAdd user groups to the system.
+See also: groups, groupdel, groupmod.
+More information: https://manned.org/groupadd.
+
+ - [0m[32;23;22;24;25mCreate a new group:
+   [33;23;22;24;25msudo groupadd [0mgroup_name
+[0m
+ - [0m[32;23;22;24;25mCreate a new system group:
+   [33;23;22;24;25msudo groupadd [0m[-r|--system][33;23;22;24;25m [0mgroup_name
+[0m
+ - [0m[32;23;22;24;25mCreate a new group with the specific groupid:
+   [33;23;22;24;25msudo groupadd [0m[-g|--gid][33;23;22;24;25m [0mid[33;23;22;24;25m [0mgroup_name
+[0m[0m

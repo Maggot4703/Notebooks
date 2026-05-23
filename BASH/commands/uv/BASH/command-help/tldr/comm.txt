@@ -1,0 +1,20 @@
+comm
+
+[0m[0mSelect or reject lines common to two files. Both files must be sorted.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/comm-invocation.html.
+
+ - [0m[32;23;22;24;25mProduce three tab-separated columns: lines only in first file, lines only in second file and common lines:
+   [33;23;22;24;25mcomm [0mfile1[33;23;22;24;25m [0mfile2
+[0m
+ - [0m[32;23;22;24;25mPrint only lines common to both files:
+   [33;23;22;24;25mcomm -12 [0mfile1[33;23;22;24;25m [0mfile2
+[0m
+ - [0m[32;23;22;24;25mPrint only lines common to both files, reading one file from stdin:
+   [33;23;22;24;25mcat [0mfile1[33;23;22;24;25m | comm -12 - [0mfile2
+[0m
+ - [0m[32;23;22;24;25mGet lines only found in first file, saving the result to a third file:
+   [33;23;22;24;25mcomm -23 [0mfile1[33;23;22;24;25m [0mfile2[33;23;22;24;25m > [0mfile1_only
+[0m
+ - [0m[32;23;22;24;25mPrint lines only found in second file, when the files aren't sorted:
+   [33;23;22;24;25mcomm -13 <(sort [0mfile1[33;23;22;24;25m) <(sort [0mfile2[33;23;22;24;25m)[0m
+[0m[0m

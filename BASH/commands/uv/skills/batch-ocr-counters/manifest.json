@@ -1,0 +1,16 @@
+# skills/batch-ocr-counters/manifest.json
+# This manifest can be used for skill discovery or registration.
+{
+  "name": "batch-ocr-counters",
+  "description": "Batch OCR of 200x100px counters in all PDFs in a directory using ocr-pic skill.",
+  "entrypoint": "batch_ocr_counters.py",
+  "docs": "SKILL.md",
+  "dependencies": [
+    "pypdf",
+    "Pillow",
+    "pytesseract",
+    "numpy"
+  ],
+  "system": ["tesseract-ocr"],
+  "see_also": ["../ocr-pic/SKILL.md"]
+}

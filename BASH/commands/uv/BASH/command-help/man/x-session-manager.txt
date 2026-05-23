@@ -1,0 +1,16 @@
+startlxde(1)                General Commands Manual               startlxde(1)
+
+NAME
+       startlxde - X session script to prepare environment and run lxsession.
+
+SYNOPSIS
+       startlxde
+
+DESCRIPTION
+       startlxde  is used to start the desktop session of LXDE.  By default it
+       loads openbox, lxpanel, pcmanfm, dbus-launch, and lxsession.
+
+AUTHOR
+       Hong Jen Yee <pcman.tw@gmail.com>
+
+startlxde                        Mar 21, 2008                     startlxde(1)

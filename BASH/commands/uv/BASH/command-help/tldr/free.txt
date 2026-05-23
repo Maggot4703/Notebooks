@@ -1,0 +1,17 @@
+free
+
+[0m[0mDisplay amount of free and used memory in the system.
+More information: https://manned.org/free.
+
+ - [0m[32;23;22;24;25mDisplay system memory:
+   [33;23;22;24;25mfree[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay memory in Bytes/KB/MB/GB:
+   [33;23;22;24;25mfree -[0mb|k|m|g
+[0m
+ - [0m[32;23;22;24;25mDisplay memory in human-readable units:
+   [33;23;22;24;25mfree [0m[-h|--human]
+[0m
+ - [0m[32;23;22;24;25mRefresh the output every 2 seconds:
+   [33;23;22;24;25mfree [0m[-s|--seconds][33;23;22;24;25m 2[0m
+[0m[0m

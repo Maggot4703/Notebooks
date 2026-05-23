@@ -1,0 +1,26 @@
+
+{{#unless (ifEquals system.software.class "spacecraft")}}
+<div class="shadow">
+    <h2>{{localize "MGT2.Effects.SoftwareEffects"}}</h2>
+
+    <select name="system.software.type">
+        {{selectOptions SOFTWARE_TYPE selected=system.software.type}}
+    </select>
+
+    {{#unless (ifEquals system.software.type "generic")}}
+        <select name="system.software.skill">
+            {{selectOptions AGENT_SKILLS selected=system.software.skill}}
+        </select>
+        {{#if (ifEquals system.software.type "expert")}}
+            <select name="system.software.skillLevel">
+                {{selectOptions EXPERT_LEVELS selected=system.software.skillLevel}}
+            </select>
+        {{else}}
+            <select name="system.software.skillLevel">
+                {{selectOptions TASK_LEVELS selected=system.software.skillLevel}}
+            </select>
+        {{/if}}
+    {{/unless}}
+</div>
+{{/unless}}
+

@@ -1,0 +1,26 @@
+expr
+
+[0m[0mEvaluate expressions and manipulate strings.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/expr-invocation.html.
+
+ - [0m[32;23;22;24;25mGet the length of a specific string:
+   [33;23;22;24;25mexpr length "[0mstring[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mGet the substring of a string with a specific length:
+   [33;23;22;24;25mexpr substr "[0mstring[33;23;22;24;25m" [0mfrom[33;23;22;24;25m [0mlength
+[0m
+ - [0m[32;23;22;24;25mMatch a specific substring against an anchored pattern:
+   [33;23;22;24;25mexpr match "[0mstring[33;23;22;24;25m" '[0mpattern[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mGet the first char position from a specific set in a string:
+   [33;23;22;24;25mexpr index "[0mstring[33;23;22;24;25m" "[0mchars[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mCalculate a specific mathematic expression:
+   [33;23;22;24;25mexpr [0mexpression1[33;23;22;24;25m [0m+|-|*|/|%[33;23;22;24;25m [0mexpression2
+[0m
+ - [0m[32;23;22;24;25mGet the first expression if its value is non-zero and not null otherwise get the second one:
+   [33;23;22;24;25mexpr [0mexpression1[33;23;22;24;25m \| [0mexpression2
+[0m
+ - [0m[32;23;22;24;25mGet the first expression if both expressions are non-zero and not null otherwise get zero:
+   [33;23;22;24;25mexpr [0mexpression1[33;23;22;24;25m \& [0mexpression2
+[0m[0m

@@ -1,0 +1,18 @@
+{
+  "page_number": 33,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page033/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020 ‘Spinward Marches\nSpinward Marches/N District 268/1533 Forine\n\n&\n\nee\n\nD3129B8-A\nStarport = D\nQuality = Poor\nYards = No\nRepairs = Minor damage\nFuel = Unrefined\nDownport = Yes\nHighport = No\npossBases = S\n\nSize =3\nDIGIT DIA(MI) DIA(KM)\n3 3,000 4,800\n\nAtmosphere = |\nDIGIT DESCRIPTION EFFECTS\n1 Trace $3\n\nHydrosphere = 2\nDIGIT DESCRIPTION\n220%\n\nPopulation = 9\nPOPULATION UNDER 6,000,000,000\nDIGIT DESCRIPTION VALUE\n9 Billion ,000,000,000\n\nGovernment = B\nDIGIT DESCRIPTION NOTE\nB Non-Charismatic Dictatorship Government by the successor to a charismatic dictator\n\nLaw Level= 8\nDIGIT DESCRIPTION NOTE\n8 High Law Open display of weapons prohibited\n\nTech Level= A.\nDIGIT\nA\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 19/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page033/page_full.png"
+}

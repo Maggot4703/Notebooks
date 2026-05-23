@@ -1,0 +1,20 @@
+pdftotext
+
+[0m[0mConvert PDF files to plain text format.
+More information: https://www.xpdfreader.com/pdftotext-man.html.
+
+ - [0m[32;23;22;24;25mConvert filename.pdf to plain text and print it to stdout:
+   [33;23;22;24;25mpdftotext [0mfilename.pdf[33;23;22;24;25m -[0m
+[0m
+ - [0m[32;23;22;24;25mConvert filename.pdf to plain text and save it as filename.txt:
+   [33;23;22;24;25mpdftotext [0mfilename.pdf
+[0m
+ - [0m[32;23;22;24;25mConvert filename.pdf to plain text and preserve the layout:
+   [33;23;22;24;25mpdftotext -layout [0mfilename.pdf
+[0m
+ - [0m[32;23;22;24;25mConvert input.pdf to plain text and save it as output.txt:
+   [33;23;22;24;25mpdftotext [0minput.pdf[33;23;22;24;25m [0moutput.txt
+[0m
+ - [0m[32;23;22;24;25mConvert pages 2, 3 and 4 of input.pdf to plain text and save them as output.txt:
+   [33;23;22;24;25mpdftotext -f [0m2[33;23;22;24;25m -l [0m4[33;23;22;24;25m [0minput.pdf[33;23;22;24;25m [0moutput.txt
+[0m[0m

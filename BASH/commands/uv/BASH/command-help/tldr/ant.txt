@@ -1,0 +1,20 @@
+ant
+
+[0m[0mApache Ant: build and manage Java-based projects.
+More information: https://ant.apache.org/manual/index.html.
+
+ - [0m[32;23;22;24;25mBuild a project with default build file build.xml:
+   [33;23;22;24;25mant[0m
+[0m
+ - [0m[32;23;22;24;25mBuild a project using build file other than build.xml:
+   [33;23;22;24;25mant [0m[-f|-buildfile][33;23;22;24;25m [0mbuildfile.xml
+[0m
+ - [0m[32;23;22;24;25mPrint information on possible targets for this project:
+   [33;23;22;24;25mant [0m[-p|-projecthelp]
+[0m
+ - [0m[32;23;22;24;25mPrint debugging information:
+   [33;23;22;24;25mant [0m[-d|-debug]
+[0m
+ - [0m[32;23;22;24;25mExecute all targets that do not depend on fail target(s):
+   [33;23;22;24;25mant [0m[-k|-keep-going]
+[0m[0m

@@ -1,0 +1,23 @@
+tune.exfat
+
+[0m[0mAdjust tunable filesystem parameters on an exFAT filesystem.
+More information: https://manned.org/tune.exfat.
+
+ - [0m[32;23;22;24;25mPrint the volume label of a filesystem:
+   [33;23;22;24;25mtune.exfat [0m[-l|--print-label][33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mSet the volume label of a filesystem:
+   [33;23;22;24;25mtune.exfat [0m[-L|--set-label][33;23;22;24;25m [0mnew_label[33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mPrint the volume GUID of a filesystem:
+   [33;23;22;24;25mtune.exfat [0m[-u|--print-guid][33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mSet the volume GUID of a filesystem:
+   [33;23;22;24;25mtune.exfat [0m[-U|--set-guid][33;23;22;24;25m [0mnew_guid[33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mPrint the volume serial of a filesystem:
+   [33;23;22;24;25mtune.exfat [0m[-i|--print-serial][33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mSet the volume serial of a filesystem:
+   [33;23;22;24;25mtune.exfat [0m[-I|--set-serial][33;23;22;24;25m [0mnew_serial[33;23;22;24;25m [0m/dev/sdXY
+[0m[0m

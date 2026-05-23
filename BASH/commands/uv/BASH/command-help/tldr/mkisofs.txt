@@ -1,0 +1,12 @@
+mkisofs
+
+[0m[0mCreate ISO files from directories.
+Also aliased as genisoimage.
+More information: https://manned.org/mkisofs.
+
+ - [0m[32;23;22;24;25mCreate an ISO from a directory:
+   [33;23;22;24;25mmkisofs -o [0mfilename.iso[33;23;22;24;25m [0mpath/to/source_directory
+[0m
+ - [0m[32;23;22;24;25mSet the disc label when creating an ISO:
+   [33;23;22;24;25mmkisofs -o [0mfilename.iso[33;23;22;24;25m -V "[0mlabel_name[33;23;22;24;25m" [0mpath/to/source_directory
+[0m[0m

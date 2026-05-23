@@ -1,0 +1,77 @@
+Hex = 0610
+Name = Sheyou
+UWP = B756779-A
+Starport = B
+	Quality = Good
+	Yards = Spaceships
+	Repairs = Overhaul
+	Fuel = Both
+	Downport = Yes
+	Highport = No
+	possBases = NS
+Size = 7
+	DIGIT	DIA(MI)	DIA(KM)
+	7	7,000	12,200
+Atmosphere = 5
+	DIGIT	DESCRIPTION	EFFECTS
+	5	This	S1
+Hydrosphere = 6
+	DIGIT	DESCRIPTION
+	6	60%
+Population = 7
+	POPULATION UNDER 10,000,000
+	DIGIT	DESCRIPTION	VALUE
+	7	Ten million	0,000,000
+Government = 7
+	DIGIT	DESCRIPTION	NOTE
+	7	Balkanization	Rival governments continually compete for control of the world
+Law Level = 9
+	DIGIT	DESCRIPTION	NOTE
+	9	High Law	Weapons outside the home prohibited
+Tech Level = A
+	DIGIT		
+	A		
+Remarks = Ag Ga
+	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
+	Ag		456789	45678	567			Agricultural	
+	Ga	678	568	567				Garden World	
+{Ix} = { 4 }
+	Starport B = +1
+	TL 10 = +1
+	Ag  = +1
+	Importance = Important (3)+1=4
+(Ex) = (B6D+5)
+	Resources =  11
+	Labour =  6
+	Infrastructure =  13
+	Efficiency =  5
+	RU = 4290
+[Cx] = [8B6B]
+	Homogeneity = 8
+	Acceptance = 11
+	Strangeness = 6
+	Symbols = 11
+N = -
+	No Imperial Nobles
+B = KM
+	DIGIT	DESCRIPTION	ALLEG
+	K	Naval Base	Any
+	M	Military Base	Any
+Z = -
+	CODE	DESCRIPTION
+	-	Green - Unrestricted.  Imperial.
+PBG = 111
+	Population Multiplier = 1
+	POPULATION UNDER 10,000,000
+	Planetoid Belts = 1
+	Gas Giants = 1
+W = 13
+	Non Stars In System = 13
+	-1 (mainworld)
+	-1 (planetoid belts)
+	-1 (gas giants)
+	 = 10 other worlds
+A = ZhIN
+	CODE	DESCRIPTION
+Stellar = F4 V M0 V
+	Stars = 2

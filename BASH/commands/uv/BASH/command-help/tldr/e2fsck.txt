@@ -1,0 +1,20 @@
+e2fsck
+
+[0m[0mCheck a Linux ext2/ext3/ext4 filesystem. The partition should be unmounted.
+More information: https://manned.org/e2fsck.
+
+ - [0m[32;23;22;24;25mCheck filesystem, reporting any damaged blocks:
+   [33;23;22;24;25msudo e2fsck [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mCheck filesystem and automatically repair ([p]reen) any damaged blocks:
+   [33;23;22;24;25msudo e2fsck -p [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mCheck filesystem in read only mode:
+   [33;23;22;24;25msudo e2fsck -c [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mForce checking even if the filesystem seems clean:
+   [33;23;22;24;25msudo e2fsck -f [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mPerform an exhaustive, non-destructive read-write test for bad blocks and blacklist them:
+   [33;23;22;24;25msudo e2fsck -fccky [0m/dev/sdXN
+[0m[0m

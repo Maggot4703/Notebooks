@@ -1,0 +1,20 @@
+xdg-open
+
+[0m[0mOpen a file or URL in the user's preferred application.
+More information: https://portland.freedesktop.org/doc/xdg-open.html.
+
+ - [0m[32;23;22;24;25mOpen the current directory in the default file explorer:
+   [33;23;22;24;25mxdg-open .[0m
+[0m
+ - [0m[32;23;22;24;25mOpen a URL in the default browser:
+   [33;23;22;24;25mxdg-open [0mhttps://example.com
+[0m
+ - [0m[32;23;22;24;25mOpen an image in the default image viewer:
+   [33;23;22;24;25mxdg-open [0mpath/to/image
+[0m
+ - [0m[32;23;22;24;25mOpen a PDF in the default PDF viewer:
+   [33;23;22;24;25mxdg-open [0mpath/to/pdf
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mxdg-open --help[0m
+[0m[0m

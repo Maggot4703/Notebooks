@@ -1,0 +1,14 @@
+pydoc
+
+[0m[0mDisplay offline Python documentation.
+More information: https://docs.python.org/library/pydoc.html.
+
+ - [0m[32;23;22;24;25mPrint documentation on a subject (Python keyword, topic, function, module, package, etc.):
+   [33;23;22;24;25mpydoc [0msubject
+[0m
+ - [0m[32;23;22;24;25mStart an HTTP server on an arbitrary unused port and open a [b]rowser to see the documentation:
+   [33;23;22;24;25mpydoc -b[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpydoc[0m
+[0m[0m

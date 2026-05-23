@@ -1,0 +1,24 @@
+test
+
+[0m[0mCheck file types and compare values.
+Returns 0 if the condition evaluates to true, 1 if it evaluates to false.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/test-invocation.html.
+
+ - [0m[32;23;22;24;25mTest if a given variable is equal to a given string:
+   [33;23;22;24;25mtest "[0m$MY_VAR[33;23;22;24;25m" = "[0m/bin/zsh[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mTest if a given variable is empty ([z]ero length):
+   [33;23;22;24;25mtest -z "[0m$GIT_BRANCH[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mTest if a [f]ile exists:
+   [33;23;22;24;25mtest -f "[0mpath/to/file_or_directory[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mTest if a [d]irectory does not exist:
+   [33;23;22;24;25mtest ! -d "[0mpath/to/directory[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mIf A is true, then do B, or C in the case of an error (notice that C may run even if A fails):
+   [33;23;22;24;25mtest [0mcondition[33;23;22;24;25m && [0mecho "true"[33;23;22;24;25m || [0mecho "false"
+[0m
+ - [0m[32;23;22;24;25mUse test in a conditional statement:
+   [33;23;22;24;25mif test -f "[0mpath/to/file[33;23;22;24;25m"; then echo "File exists"; else echo "File does not exist"; fi[0m
+[0m[0m

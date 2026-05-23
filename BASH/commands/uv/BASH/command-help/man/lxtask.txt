@@ -1,0 +1,28 @@
+LXTASK(1)                        lxtask manual                       LXTASK(1)
+
+NAME
+       lxtask - a lightweight GTK+ task manager.
+
+SYNOPSIS
+       lxtask
+
+DESCRIPTION
+       LXTask  - lightweight and desktop-independent task manager derived from
+       xfce4-taskmanager with all dependencies on xfce removed, new  features,
+       and some improvement of the user interface.
+
+OPTIONS
+       No options are supported by this program.
+
+AUTHOR
+       LXTask  is  derived from Xfce4 Task Manager.  Original authors of XFce4
+       Task Manager: Johannes  Zellner  <webmaster@nebulon.de>,  翼varo  Lopes
+       <alvieboy@alvie.com>
+
+       On 2008-04-26, the LXDE team derived LXTask from Xfce4 Task Manager for
+       LXDE  project.   Copyright  (C)  2008  Hong  Jen   Yee   (PCMan)   <pc‐
+       man.tw@gmail.com>
+
+       This manual page was written by Andriy Grytsenko <andrej@rep.kiev.ua>.
+
+lxtask 0.1.10                   September 2014                       LXTASK(1)

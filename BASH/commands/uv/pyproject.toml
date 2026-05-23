@@ -1,12 +1,22 @@
 [project]
-name = "uv"
+name = "notebooks"
 version = "0.1.0"
-description = "UV help files for each command"
+description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = []
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=6.29,<7",
+    "jupyterlab>=4.4,<5",
+]
 
 [tool.uv.workspace]
 members = [
-    "uv",
+    "AI",
+    "BACKUP",
+    "BASH",
+    "CALIBRE",
+    "CARDCUTTER",
+    "CREW",
+    "JUPYTERLAB",
+    "PYTHON",
 ]

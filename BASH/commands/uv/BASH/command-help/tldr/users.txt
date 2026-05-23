@@ -1,0 +1,12 @@
+users
+
+[0m[0mDisplay a list of logged in users.
+See also: useradd, userdel, usermod.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/users-invocation.html.
+
+ - [0m[32;23;22;24;25mPrint logged in usernames:
+   [33;23;22;24;25musers[0m
+[0m
+ - [0m[32;23;22;24;25mPrint logged in usernames according to a given file:
+   [33;23;22;24;25musers [0m/var/log/wmtp
+[0m[0m

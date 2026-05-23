@@ -1,0 +1,14 @@
+Usage: apparmor_status [OPTIONS]
+Displays various information about the currently loaded AppArmor policy.
+OPTIONS (one only):
+  --enabled       returns error code if AppArmor not enabled
+  --profiled      prints the number of loaded policies
+  --enforced      prints the number of loaded enforcing policies
+  --complaining   prints the number of loaded non-enforcing policies
+  --kill          prints the number of loaded enforcing policies that kill tasks on policy violations
+  --special-unconfined   prints the number of loaded non-enforcing policies in the special unconfined mode
+  --process-mixed prints the number processes with mixed profile modes
+  --json          displays multiple data points in machine-readable JSON format
+  --pretty-json   same data as --json, formatted for human consumption as well
+  --verbose       (default) displays multiple data points about loaded policy set
+  --help          this message

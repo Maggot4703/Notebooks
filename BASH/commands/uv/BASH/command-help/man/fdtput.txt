@@ -1,0 +1,31 @@
+DTC(1)                      General Commands Manual                     DTC(1)
+
+NAME
+       fdtput - write a property value to a device-tree
+
+SYNOPSIS
+       /usr/bin/fdtput <options> <dt file> <<node> <property> [<value>...]
+
+DESCRIPTION
+       Write a property value to a device-tree. The command line arguments are
+       joined together into a single value.
+
+OPTIONS
+       -h     Print this help.
+
+       -v     Verbose: display each value decoded from command line
+
+       -t <type>
+              Type of data
+
+              <type>  s=string, i=int, u=unsigned, x=hex
+              Optional modifier prefix:
+              hh or b=byte, h=2 byte, l=4 byte (default)
+
+AUTHOR
+       fdtput was written by The Chromium OS Authors.
+
+       This manual page was written by Héctor Orón <zumbi@debian.org>, for the
+       Debian project (but may be used by others).
+
+Linux                           30 January 2012                         DTC(1)

@@ -1,0 +1,26 @@
+ps
+
+[0m[0mInformation about running processes.
+More information: https://manned.org/ps.
+
+ - [0m[32;23;22;24;25mList all running processes:
+   [33;23;22;24;25mps aux[0m
+[0m
+ - [0m[32;23;22;24;25mList all running processes including the full command string:
+   [33;23;22;24;25mps auxww[0m
+[0m
+ - [0m[32;23;22;24;25mSearch for a process that matches a string (the brackets will prevent grep from matching itself):
+   [33;23;22;24;25mps aux | grep [0m[s]tring
+[0m
+ - [0m[32;23;22;24;25mList all processes of the current user in extra full format:
+   [33;23;22;24;25mps [0m[-u|--user][33;23;22;24;25m $(id [0m[-u|--user][33;23;22;24;25m) -F[0m
+[0m
+ - [0m[32;23;22;24;25mList all processes of the current user as a tree:
+   [33;23;22;24;25mps [0m[-u|--user][33;23;22;24;25m $(id [0m[-u|--user][33;23;22;24;25m) f[0m
+[0m
+ - [0m[32;23;22;24;25mGet the parent PID of a process:
+   [33;23;22;24;25mps [0m[-o|--format][33;23;22;24;25m ppid= [0m[-p|--pid][33;23;22;24;25m [0mpid
+[0m
+ - [0m[32;23;22;24;25mSort processes by memory consumption:
+   [33;23;22;24;25mps --sort size[0m
+[0m[0m

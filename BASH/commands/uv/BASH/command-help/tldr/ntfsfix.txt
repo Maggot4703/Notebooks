@@ -1,0 +1,8 @@
+ntfsfix
+
+[0m[0mFix common problems on an NTFS partition.
+More information: https://manned.org/ntfsfix.
+
+ - [0m[32;23;22;24;25mFix a given NTFS partition:
+   [33;23;22;24;25msudo ntfsfix [0m/dev/sdXN
+[0m[0m

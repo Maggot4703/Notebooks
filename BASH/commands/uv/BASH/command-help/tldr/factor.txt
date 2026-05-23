@@ -1,0 +1,11 @@
+factor
+
+[0m[0mPrint the prime factorization of a number.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/factor-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay the prime-factorization of a number:
+   [33;23;22;24;25mfactor [0mnumber
+[0m
+ - [0m[32;23;22;24;25mTake the input from stdin if no argument is specified:
+   [33;23;22;24;25mecho [0mnumber[33;23;22;24;25m | factor[0m
+[0m[0m

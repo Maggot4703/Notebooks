@@ -1,0 +1,27 @@
+bzip2
+
+[0m[0mA block-sorting file compressor.
+See also: bzcat, bunzip2, bzip2recover.
+More information: https://manned.org/bzip2.
+
+ - [0m[32;23;22;24;25mCompress a file:
+   [33;23;22;24;25mbzip2 [0mpath/to/file_to_compress
+[0m
+ - [0m[32;23;22;24;25mDecompress a file:
+   [33;23;22;24;25mbzip2 [0m[-d|--decompress][33;23;22;24;25m [0mpath/to/compressed_file.bz2
+[0m
+ - [0m[32;23;22;24;25mDecompress a file to stdout:
+   [33;23;22;24;25mbzip2 [0m[-dc|--decompress --stdout][33;23;22;24;25m [0mpath/to/compressed_file.bz2
+[0m
+ - [0m[32;23;22;24;25mTest the integrity of each file inside the archive file:
+   [33;23;22;24;25mbzip2 [0m[-t|--test][33;23;22;24;25m [0mpath/to/compressed_file.bz2
+[0m
+ - [0m[32;23;22;24;25mShow the compression ratio for each file processed with detailed information:
+   [33;23;22;24;25mbzip2 [0m[-v|--verbose][33;23;22;24;25m [0mpath/to/compressed_files.bz2
+[0m
+ - [0m[32;23;22;24;25mDecompress a file overwriting existing files:
+   [33;23;22;24;25mbzip2 [0m[-f|--force][33;23;22;24;25m [0mpath/to/compressed_file.bz2
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mbzip2 [0m[-h|--help]
+[0m[0m

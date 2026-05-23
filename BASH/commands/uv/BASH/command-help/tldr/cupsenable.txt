@@ -1,0 +1,16 @@
+cupsenable
+
+[0m[0mStart printers and classes.
+Note: Destination is referred as a printer or a class of printers.
+See also: cupsdisable, cupsaccept, cupsreject, lpstat.
+More information: https://www.cups.org/doc/man-cupsenable.html.
+
+ - [0m[32;23;22;24;25mStart one or more destination(s):
+   [33;23;22;24;25mcupsenable [0mdestination1 destination2 ...
+[0m
+ - [0m[32;23;22;24;25mResume printing of pending jobs of a destination (use after cupsdisable with --hold):
+   [33;23;22;24;25mcupsenable --release [0mdestination
+[0m
+ - [0m[32;23;22;24;25mCancel all jobs of the specified destination(s):
+   [33;23;22;24;25mcupsenable -c [0mdestination1 destination2 ...
+[0m[0m

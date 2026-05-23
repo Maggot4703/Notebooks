@@ -1,0 +1,11 @@
+export
+
+[0m[0mExport shell variables to child processes.
+More information: https://manned.org/export.1posix.
+
+ - [0m[32;23;22;24;25mSet an environment variable:
+   [33;23;22;24;25mexport [0mVARIABLE[33;23;22;24;25m=[0mvalue
+[0m
+ - [0m[32;23;22;24;25mAppend a pathname to the environment variable PATH:
+   [33;23;22;24;25mexport PATH=$PATH:[0mpath/to/append
+[0m[0m

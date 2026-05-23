@@ -1,0 +1,15 @@
+acyclic
+
+[0m[0mMake a directed graph acyclic by reversing some edges.
+Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten.
+More information: https://graphviz.org/pdf/acyclic.1.pdf.
+
+ - [0m[32;23;22;24;25mMake a directed graph acyclic by reversing some edges:
+   [33;23;22;24;25macyclic [0mpath/to/input.gv[33;23;22;24;25m > [0mpath/to/output.gv
+[0m
+ - [0m[32;23;22;24;25mPrint if a graph is acyclic, has a cycle, or is undirected, producing no output graph:
+   [33;23;22;24;25macyclic -v -n [0mpath/to/input.gv
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25macyclic -?[0m
+[0m[0m

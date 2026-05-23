@@ -1,0 +1,17 @@
+mkvmerge
+
+[0m[0mMerge and extract multimedia streams.
+More information: https://mkvtoolnix.download/doc/mkvmerge.html.
+
+ - [0m[32;23;22;24;25mDisplay information about a Matroska file:
+   [33;23;22;24;25mmkvmerge --identify [0mpath/to/file.mkv
+[0m
+ - [0m[32;23;22;24;25mExtract the audio from track 1 of a specific file:
+   [33;23;22;24;25mmkvextract tracks [0mpath/to/file.mkv[33;23;22;24;25m [0m1[33;23;22;24;25m:[0mpath/to/output.webm
+[0m
+ - [0m[32;23;22;24;25mExtract the subtitle from track 3 of a specific file:
+   [33;23;22;24;25mmkvextract tracks [0mpath/to/file.mkv[33;23;22;24;25m [0m3[33;23;22;24;25m:[0mpath/to/subs.srt
+[0m
+ - [0m[32;23;22;24;25mAdd a subtitle track to a file:
+   [33;23;22;24;25mmkvmerge --output [0mpath/to/output.mkv[33;23;22;24;25m [0mpath/to/file.mkv[33;23;22;24;25m [0mpath/to/subs.srt
+[0m[0m

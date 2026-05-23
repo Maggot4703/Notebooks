@@ -1,0 +1,27 @@
+networkctl
+
+[0m[0mQuery the status of network links.
+Manage the network configuration using systemd-networkd.
+More information: https://www.freedesktop.org/software/systemd/man/networkctl.html.
+
+ - [0m[32;23;22;24;25mList existing links with their status:
+   [33;23;22;24;25mnetworkctl list[0m
+[0m
+ - [0m[32;23;22;24;25mShow an overall network status:
+   [33;23;22;24;25mnetworkctl status[0m
+[0m
+ - [0m[32;23;22;24;25mBring network devices up:
+   [33;23;22;24;25mnetworkctl up [0minterface1 interface2 ...
+[0m
+ - [0m[32;23;22;24;25mBring network devices down:
+   [33;23;22;24;25mnetworkctl down [0minterface1 interface2 ...
+[0m
+ - [0m[32;23;22;24;25mRenew dynamic configurations (e.g. IP addresses received from a DHCP server):
+   [33;23;22;24;25mnetworkctl renew [0minterface1 interface2 ...
+[0m
+ - [0m[32;23;22;24;25mReload configuration files (.netdev and .network):
+   [33;23;22;24;25mnetworkctl reload[0m
+[0m
+ - [0m[32;23;22;24;25mReconfigure network interfaces (if you edited the config, you need to call networkctl reload first):
+   [33;23;22;24;25mnetworkctl reconfigure [0minterface1 interface2 ...
+[0m[0m

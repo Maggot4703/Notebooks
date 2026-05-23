@@ -1,0 +1,69 @@
+WEB2DISK(1)                         calibre                        WEB2DISK(1)
+
+NAME
+       web2disk - web2disk
+
+          web2disk URL
+
+       Where URL is for example https://google.com
+
+       Whenever  you  pass arguments to web2disk that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+[OPTIONS]
+       --base-dir, -d
+              Base folder into which URL is saved. Default is .
+
+       --delay
+              Minimum interval in seconds between consecutive fetches. Default
+              is 0 s
+
+       --dont-download-stylesheets
+              Do not download CSS stylesheets.
+
+       --encoding
+              The character encoding for the websites you are trying to  down‐
+              load. The default is to try and guess the encoding.
+
+       --filter-regexp
+              Any  link  that matches this regular expression will be ignored.
+              This option can be specified multiple times, in  which  case  as
+              long  as  any  regexp matches a link, it will be ignored. By de‐
+              fault, no links are ignored. If both  filter  regexp  and  match
+              regexp are specified, then filter regexp is applied first.
+
+       --help, -h
+              show this help message and exit
+
+       --match-regexp
+              Only  links that match this regular expression will be followed.
+              This option can be specified multiple times, in  which  case  as
+              long  as  a link matches any one regexp, it will be followed. By
+              default all links are followed.
+
+       --max-files, -n
+              The maximum number of files to download. This  only  applies  to
+              files from <a href> tags. Default is 9223372036854775807
+
+       --max-recursions, -r
+              Maximum  number of levels to recurse i.e. depth of links to fol‐
+              low. Default 1
+
+       --timeout, -t
+              Timeout in seconds to wait for a response from the  server.  De‐
+              fault: 10.0 s
+
+       --verbose
+              Show detailed output information. Useful for debugging
+
+       --version
+              show program's version number and exit
+
+AUTHOR
+       Kovid Goyal
+
+COPYRIGHT
+       Kovid Goyal
+
+6.13.0                         February 17, 2023                   WEB2DISK(1)

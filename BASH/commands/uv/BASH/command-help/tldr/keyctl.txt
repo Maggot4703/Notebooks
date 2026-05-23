@@ -1,0 +1,29 @@
+keyctl
+
+[0m[0mManipulate the Linux kernel keyring.
+More information: https://manned.org/keyctl.
+
+ - [0m[32;23;22;24;25mList keys in a specific keyring:
+   [33;23;22;24;25mkeyctl list [0mtarget_keyring
+[0m
+ - [0m[32;23;22;24;25mList current keys in the user default session:
+   [33;23;22;24;25mkeyctl list [0m@us
+[0m
+ - [0m[32;23;22;24;25mStore a key in a specific keyring:
+   [33;23;22;24;25mkeyctl add [0mtype_keyring[33;23;22;24;25m [0mkey_name[33;23;22;24;25m [0mkey_value[33;23;22;24;25m [0mtarget_keyring
+[0m
+ - [0m[32;23;22;24;25mStore a key with its value from stdin:
+   [33;23;22;24;25mecho -n [0mkey_value[33;23;22;24;25m | keyctl padd [0mtype_keyring[33;23;22;24;25m [0mkey_name[33;23;22;24;25m [0mtarget_keyring
+[0m
+ - [0m[32;23;22;24;25mPut a timeout on a key:
+   [33;23;22;24;25mkeyctl timeout [0mkey_name[33;23;22;24;25m [0mtimeout_in_seconds
+[0m
+ - [0m[32;23;22;24;25mRead a key and format it as a hex-dump if not printable:
+   [33;23;22;24;25mkeyctl read [0mkey_name
+[0m
+ - [0m[32;23;22;24;25mRead a key and format as-is:
+   [33;23;22;24;25mkeyctl pipe [0mkey_name
+[0m
+ - [0m[32;23;22;24;25mRevoke a key and prevent any further action on it:
+   [33;23;22;24;25mkeyctl revoke [0mkey_name
+[0m[0m

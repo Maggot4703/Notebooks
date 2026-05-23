@@ -1,0 +1,18 @@
+{
+  "page_number": 25,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page025/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020 ‘Spinward Marches\nSpinward Marches/J Sword Worlds/1223 Gram\n\nA895957-C\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\nSize=8\nDIGIT DIA(MI) DIA(KM)\n8 8,000 13,800\n\nAtmosphere = 9\nDIGIT DESCRIPTION EFFECTS\n9 Dense, Tainted P1\n\nHydrosphere = 5\nDIGIT DESCRIPTION\n550%\n\nPopulation = 9\nPOPULATION UNDER 6,000,000,000\nDIGIT DESCRIPTION VALUE\n9 Billion ,000,000,000\n\nGovernment = 5\nDIGIT DESCRIPTION NOTE\n5 Feudal Technocracy Governmental relationships based on mutually beneficial technical activities\n\nLaw Level=7\nDIGIT DESCRIPTION NOTE\n7 Moderate Law Prohibition of Pistols\n\nTech Level =C\nDIGIT\nCc\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 15/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page025/page_full.png"
+}

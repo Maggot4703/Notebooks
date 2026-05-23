@@ -1,0 +1,11 @@
+sensible-browser
+
+[0m[0mOpen the default browser.
+More information: https://manned.org/sensible-browser.
+
+ - [0m[32;23;22;24;25mOpen a new window of the default browser:
+   [33;23;22;24;25msensible-browser[0m
+[0m
+ - [0m[32;23;22;24;25mOpen a URL in the default browser:
+   [33;23;22;24;25msensible-browser [0murl
+[0m[0m

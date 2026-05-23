@@ -1,0 +1,14 @@
+mke2fs
+
+[0m[0mCreate a Linux filesystem inside a partition.
+More information: https://manned.org/mke2fs.
+
+ - [0m[32;23;22;24;25mCreate an ext2 filesystem in partition 1 of device b (sdb1):
+   [33;23;22;24;25mmke2fs -t ext2 [0m/dev/sdb1
+[0m
+ - [0m[32;23;22;24;25mCreate an ext3 filesystem in partition 1 of device b (sdb1):
+   [33;23;22;24;25mmke2fs -t ext3 [0m/dev/sdb1
+[0m
+ - [0m[32;23;22;24;25mCreate an ext4 filesystem in partition 1 of device b (sdb1):
+   [33;23;22;24;25mmke2fs -t ext4 [0m/dev/sdb1
+[0m[0m

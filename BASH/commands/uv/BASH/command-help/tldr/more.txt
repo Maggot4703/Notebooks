@@ -1,0 +1,24 @@
+more
+
+[0m[0mInteractively display a file, allowing scrolling and searching.
+See also: less.
+More information: https://manned.org/more.1p.
+
+ - [0m[32;23;22;24;25mOpen a file:
+   [33;23;22;24;25mmore [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay a specific line:
+   [33;23;22;24;25mmore +[0mline_number[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGo to the next page:
+   [33;23;22;24;25m<Space>[0m
+[0m
+ - [0m[32;23;22;24;25mSearch for a string (press <n> to go to the next match):
+   [33;23;22;24;25m</>[0msomething[33;23;22;24;25m<Enter>[0m
+[0m
+ - [0m[32;23;22;24;25mExit:
+   [33;23;22;24;25m<q>[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help about interactive commands:
+   [33;23;22;24;25m<h>[0m
+[0m[0m

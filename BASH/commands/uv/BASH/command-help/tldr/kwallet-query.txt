@@ -1,0 +1,17 @@
+kwallet-query
+
+[0m[0mRead and write to a KDE Wallet.
+More information: https://manned.org/kwallet-query.
+
+ - [0m[32;23;22;24;25mList all entries in the Passwords folder of kdewallet:
+   [33;23;22;24;25mkwallet-query [0mkdewallet[33;23;22;24;25m [0m[-l|--list-entries]
+[0m
+ - [0m[32;23;22;24;25mList all entries in a specific folder:
+   [33;23;22;24;25mkwallet-query [0mkdewallet[33;23;22;24;25m [0m[-l|--list-entries][33;23;22;24;25m [0m[-f|--folder][33;23;22;24;25m [0mfolder_name
+[0m
+ - [0m[32;23;22;24;25mList all available folders:
+   [33;23;22;24;25mkwallet-query [0mkdewallet[33;23;22;24;25m [0m[-l|--list-entries][33;23;22;24;25m [0m[-f|--folder][33;23;22;24;25m ""[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mkwallet-query [0m[-h|--help]
+[0m[0m

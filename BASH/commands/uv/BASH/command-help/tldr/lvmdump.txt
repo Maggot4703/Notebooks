@@ -1,0 +1,18 @@
+lvmdump
+
+[0m[0mCollect diagnostic information about LVM2 (Logical Volume Manager).
+By default, outputs a compressed tar archive with system and configuration data in the home directory.
+More information: https://manned.org/lvmdump.
+
+ - [0m[32;23;22;24;25mGenerate a basic dump:
+   [33;23;22;24;25mlvmdump[0m
+[0m
+ - [0m[32;23;22;24;25mGenerate an extended dump with metadata and daemon info:
+   [33;23;22;24;25mlvmdump -a -l -m[0m
+[0m
+ - [0m[32;23;22;24;25mDump the information into a directory instead of a tarball:
+   [33;23;22;24;25mlvmdump -d [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mlvmdump -h[0m
+[0m[0m

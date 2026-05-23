@@ -1,0 +1,14 @@
+rpicam-still
+
+[0m[0mCapture and store a photo using a Raspberry Pi camera with legacy features missing from rpicam-jpeg.
+More information: https://www.raspberrypi.com/documentation/computers/camera_software.html#rpicam-still.
+
+ - [0m[32;23;22;24;25mCapture a photo with different encoding:
+   [33;23;22;24;25mrpicam-still [0m[-e|--encoding][33;23;22;24;25m [0mbmp|png|rgb|yuv420[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/file.[bmp|png|rgb|yuv420]
+[0m
+ - [0m[32;23;22;24;25mCapture a raw image:
+   [33;23;22;24;25mrpicam-still [0m[-r|--raw][33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/file.jpg
+[0m
+ - [0m[32;23;22;24;25mCapture a 100 second exposure image:
+   [33;23;22;24;25mrpicam-still [0m[-o|--output][33;23;22;24;25m [0mpath/to/file.jpg[33;23;22;24;25m --shutter 100000[0m
+[0m[0m

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notebooks-backup"
+version = "0.1.0"
+description = "LAN backup tooling for me@home and me@p48"
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+notebooks-backup = "backup_manager:main"
+
+[tool.setuptools]
+py-modules = ["backup_manager"]

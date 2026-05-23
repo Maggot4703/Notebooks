@@ -1,0 +1,15 @@
+zipnote
+
+[0m[0mView, add, or edit a Zip archive's comments.
+Files can also be renamed in the Zip archive.
+More information: https://manned.org/zipnote.
+
+ - [0m[32;23;22;24;25mView the comments on a Zip archive:
+   [33;23;22;24;25mzipnote [0mpath/to/file.zip
+[0m
+ - [0m[32;23;22;24;25mExtract the comments on a Zip archive to a file:
+   [33;23;22;24;25mzipnote [0mpath/to/file.zip[33;23;22;24;25m > [0mpath/to/file.txt
+[0m
+ - [0m[32;23;22;24;25mAdd/Update comments in a Zip archive from a file:
+   [33;23;22;24;25mzipnote -w [0mpath/to/file.zip[33;23;22;24;25m < [0mpath/to/file.txt
+[0m[0m

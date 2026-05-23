@@ -1,0 +1,14 @@
+partprobe
+
+[0m[0mNotify the operating system kernel of partition table changes.
+More information: https://manned.org/partprobe.
+
+ - [0m[32;23;22;24;25mNotify the operating system kernel of partition table changes:
+   [33;23;22;24;25msudo partprobe[0m
+[0m
+ - [0m[32;23;22;24;25mNotify the kernel of partition table changes and show a summary of devices and their partitions:
+   [33;23;22;24;25msudo partprobe [0m[-s|--summary]
+[0m
+ - [0m[32;23;22;24;25mShow a summary of devices and their partitions but don't notify the kernel:
+   [33;23;22;24;25msudo partprobe [0m[-s|--summary][33;23;22;24;25m [0m[-d|--dry-run]
+[0m[0m

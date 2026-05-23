@@ -1,0 +1,26 @@
+qemu-img
+
+[0m[0mCreate and manipulate Quick Emulator Virtual HDD images.
+More information: https://qemu.readthedocs.io/en/master/tools/qemu-img.html.
+
+ - [0m[32;23;22;24;25mCreate disk image with a specific size (in gigabytes):
+   [33;23;22;24;25mqemu-img create [0mpath/to/image_file.img[33;23;22;24;25m [0mgigabytes[33;23;22;24;25mG[0m
+[0m
+ - [0m[32;23;22;24;25mShow information about a disk image:
+   [33;23;22;24;25mqemu-img info [0mpath/to/image_file.img
+[0m
+ - [0m[32;23;22;24;25mIncrease or decrease image size:
+   [33;23;22;24;25mqemu-img resize [0mpath/to/image_file.img[33;23;22;24;25m [0mgigabytes[33;23;22;24;25mG[0m
+[0m
+ - [0m[32;23;22;24;25mDump the allocation state of every sector of the specified disk image:
+   [33;23;22;24;25mqemu-img map [0mpath/to/image_file.img
+[0m
+ - [0m[32;23;22;24;25mConvert a VMware .vmdk disk image to a KVM .qcow2 disk image and display [p]rogress:
+   [33;23;22;24;25mqemu-img convert -f vmdk -O qcow2 -p [0mpath/to/image_file.vmdk[33;23;22;24;25m [0mpath/to/image_file.qcow2
+[0m
+ - [0m[32;23;22;24;25m[c]reate an internal snapshot of a KVM .qcow2 disk image:
+   [33;23;22;24;25mqemu-img snapshot -c [0msnapshot_tag_name[33;23;22;24;25m [0mpath/to/image_file.qcow2
+[0m
+ - [0m[32;23;22;24;25m[a]pply an internal snapshot to a KVM .qcow2 disk image:
+   [33;23;22;24;25mqemu-img snapshot -a [0msnapshot_tag_name[33;23;22;24;25m [0mpath/to/image_file.qcow2
+[0m[0m

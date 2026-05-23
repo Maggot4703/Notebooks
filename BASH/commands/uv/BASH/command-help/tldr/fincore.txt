@@ -1,0 +1,15 @@
+fincore
+
+[0m[0mDisplay how much cache memory a file is taking.
+See also: fadvise.
+More information: https://manned.org/fincore.
+
+ - [0m[32;23;22;24;25mDisplay cache details for a file:
+   [33;23;22;24;25mfincore [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay all possible data columns:
+   [33;23;22;24;25mfincore --output-all [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mfincore [0m[-h|--help]
+[0m[0m

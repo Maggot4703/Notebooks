@@ -1,0 +1,18 @@
+{
+  "page_number": 15,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page015/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "44/08/2020 Spinward Marches\nSpinward Marches/E Querion(0614 Querion\n\nBSS4788-9\nStarport = B\nQuality = Good\nYards = Spaceships\nRepairs = Overhaul\nFuel = Both\nDownport = Yes\n\nSize =5\nDIGIT DIA(MI) DIA(KM)\n5 5,000 8,000\n\nAtmosphere = 5\nDIGIT DESCRIPTION EFFECTS\n5 This S1\n\nHydrosphere = 4\nDIGIT DESCRIPTION\n4.40%\n\nPopulation = 7\nPOPULATION UNDER 80,000,000\nDIGIT DESCRIPTION VALUE\n7 Ten million 0,000,000\n\nGovernment = 8\nDIGIT DESCRIPTION NOTE\n8 Civil Service Bureaucracy Rule by agencies employing individuals selected by merit\n\nLaw Level= 8\nDIGIT DESCRIPTION NOTE\n8 High Law Open display of weapons prohibited\n\nTech Level = 9\nDIGIT\n9\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 10/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page015/page_full.png"
+}

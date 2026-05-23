@@ -1,0 +1,73 @@
+RPI-CONNECTD(8)             System Manager's Manual            RPI-CONNECTD(8)
+
+NAME
+       rpi-connectd - Raspberry Pi Connect daemon
+
+SYNOPSIS
+       rpi-connectd [--socket=file | --port=port] [-v]
+       rpi-connectd --version
+
+DESCRIPTION
+       rpi-connectd  is the Raspberry Pi Connect daemon responsible for commu‐
+       nicating with the Raspberry Pi Connect API to handle signing in to  the
+       service  and  negotiate connections for screen sharing and remote shell
+       access (if available and enabled).
+
+OPTIONS
+       These options control whether screen sharing is enabled:
+
+       --socket=file
+              The path to the VNC server's UNIX socket, enabling screen  shar‐
+              ing  support.  See also the RPI_CONNECT_SOCKET environment vari‐
+              able.
+
+       --port=port
+              The VNC server's TCP port, enabling screen sharing support.  See
+              also the RPI_CONNECT_PORT environment variable.
+
+       If  neither are specified, Raspberry Pi Connect will run without screen
+       sharing support.
+
+       Miscellaneous options:
+
+       -v, --verbose
+              Set the log level to DEBUG. See also the RPI_CONNECT_VERBOSE en‐
+              vironment variable.
+
+       --version
+              Print version information to standard output and exit.
+
+ENVIRONMENT
+       RPI_CONNECT_SOCKET
+              The  path to the VNC server's UNIX socket, enabling screen shar‐
+              ing support.
+
+       RPI_CONNECT_PORT
+              The VNC server's TCP port, enabling screen sharing support.
+
+       RPI_CONNECT_VERBOSE
+              Set the log level to DEBUG if set to true, set the log level  to
+              INFO if set to false or unset.
+
+       XDG_CONFIG_HOME
+              The  directory  in which to store and retrieve Raspberry Pi Con‐
+              nect's configuration.
+
+FILES
+       Raspberry Pi Connect stores its configuration in the following files:
+
+       $XDG_CONFIG_HOME/com.raspberrypi.connect/state.json
+              If $XDG_CONFIG_HOME is non-empty.
+
+       $HOME/.config/com.raspberrypi.connect/state.json
+              If $XDG_CONFIG_HOME is not set or empty.
+
+       Raspberry Pi Connect will source environment variables from the follow‐
+       ing files if they exist:
+
+       •   /etc/default/rpi-connect
+
+SEE ALSO
+       rpi-connect(1)
+
+                                 February 2026                 RPI-CONNECTD(8)

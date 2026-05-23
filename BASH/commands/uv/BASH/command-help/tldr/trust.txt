@@ -1,0 +1,23 @@
+trust
+
+[0m[0mOperate on the trust policy store.
+More information: https://manned.org/trust.
+
+ - [0m[32;23;22;24;25mList trust policy store items:
+   [33;23;22;24;25mtrust list[0m
+[0m
+ - [0m[32;23;22;24;25mList information about specific items in the trust policy store:
+   [33;23;22;24;25mtrust list --filter=[0mblocklist|ca-anchors|certificates|trust-policy
+[0m
+ - [0m[32;23;22;24;25mStore a specific trust anchor in the trust policy store:
+   [33;23;22;24;25mtrust anchor [0mpath/to/certificate.crt
+[0m
+ - [0m[32;23;22;24;25mRemove a specific anchor from the trust policy store:
+   [33;23;22;24;25mtrust anchor --remove [0mpath/to/certificate.crt
+[0m
+ - [0m[32;23;22;24;25mExtract trust policy from the shared trust policy store:
+   [33;23;22;24;25mtrust extract --format=x509-directory --filter=ca-anchors [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mDisplay help for a subcommand:
+   [33;23;22;24;25mtrust [0msubcommand[33;23;22;24;25m --help[0m
+[0m[0m

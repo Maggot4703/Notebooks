@@ -1,0 +1,17 @@
+iwconfig
+
+[0m[0mConfigure and show the parameters of a wireless network interface.
+More information: https://manned.org/iwconfig.
+
+ - [0m[32;23;22;24;25mShow the parameters and statistics of all the interfaces:
+   [33;23;22;24;25miwconfig[0m
+[0m
+ - [0m[32;23;22;24;25mShow the parameters and statistics of the specified interface:
+   [33;23;22;24;25miwconfig [0minterface
+[0m
+ - [0m[32;23;22;24;25mSet the ESSID (network name) of the specified interface (e.g. eth0 or wlp2s0):
+   [33;23;22;24;25miwconfig [0minterface[33;23;22;24;25m [0mnew_network_name
+[0m
+ - [0m[32;23;22;24;25mSet the operating mode of the specified interface:
+   [33;23;22;24;25miwconfig [0minterface[33;23;22;24;25m mode [0mAd-Hoc|Managed|Master|Repeater|Secondary|Monitor|Auto
+[0m[0m

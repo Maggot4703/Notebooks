@@ -1,0 +1,2 @@
+Invalid argument --help
+Try airscan-discover -h for more information

@@ -1,0 +1,17 @@
+clear
+
+[0m[0mClears the screen of the terminal.
+More information: https://manned.org/clear.
+
+ - [0m[32;23;22;24;25mClear the screen:
+   [33;23;22;24;25mclear[0m
+[0m
+ - [0m[32;23;22;24;25mClear the screen but keep the terminal's scrollback buffer (equivalent to pressing <Ctrl l> in Bash):
+   [33;23;22;24;25mclear -x[0m
+[0m
+ - [0m[32;23;22;24;25mIndicate the type of terminal to clean (defaults to the value of the environment variable TERM):
+   [33;23;22;24;25mclear -T [0mtype_of_terminal
+[0m
+ - [0m[32;23;22;24;25mDisplay the version of ncurses used by clear:
+   [33;23;22;24;25mclear -V[0m
+[0m[0m

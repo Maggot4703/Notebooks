@@ -1,0 +1,23 @@
+filefrag
+
+[0m[0mReport how badly fragmented a particular file might be.
+More information: https://manned.org/filefrag.
+
+ - [0m[32;23;22;24;25mDisplay a report for one or more files:
+   [33;23;22;24;25mfilefrag [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mDisplay a report using a 1024 byte blocksize:
+   [33;23;22;24;25mfilefrag -k [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay a report using a certain blocksize:
+   [33;23;22;24;25mfilefrag -b[0m1024|1K|1M|1G|...[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSync the file before requesting the mapping:
+   [33;23;22;24;25mfilefrag -s [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mDisplay mapping of extended attributes:
+   [33;23;22;24;25mfilefrag -x [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mDisplay a report with verbose information:
+   [33;23;22;24;25mfilefrag -v [0mpath/to/file1 path/to/file2 ...
+[0m[0m

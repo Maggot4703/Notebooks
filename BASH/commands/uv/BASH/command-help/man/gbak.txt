@@ -1,0 +1,231 @@
+GBAK(1)                     Firebird documentation                     GBAK(1)
+
+NAME
+       gbak -- backup /restore Firebird database
+
+SYNOPSIS
+       gbak -b [backup option...] [common option...] source target
+
+       gbak -c|-r [restore option...] [common option...] source target
+
+DESCRIPTION
+       gbak is the tool for managing Firebird database logical backup and
+       restore.
+
+       In backup mode source is the path to an existing database and target is
+       the backup file name. If target is "stdout", the backup is sent to the
+       standard output.
+
+       In restore mode source is an existing backup file and target is the
+       path to a firebird database. If source is "stdin", the backup data is
+       expected on the standard input.
+
+COMMON OPTIONS
+       Most options can be abbreviated. Below are given the shortest
+       abbreviations as well as the full versions.
+
+       -user string
+           User name to use when connecting to the database.
+
+       -ro string
+       -role string
+           SQL role to use when connecting to theh database.
+
+       -pas string
+       -password string
+           Password to use when connecting to the database.
+
+       -se
+       -service
+           Use services manager when talking to the database.
+
+       -v
+       -verify
+           Report each action.
+
+           Displays verbose information about what metadata is being
+           processed, what table is being backed up/restored and how many
+           records are processed.
+
+       -y string
+           Redirects status/error messages to the given path.
+
+       -z  Prints full program version number before doing anything else.
+           Prints server and database version information after connecting to
+           the database.
+
+BACKUP OPTIONS
+       -b
+       -backup_database
+           Turns on backup mode.
+
+       -co
+       -convert
+           Converts external tables into tables.
+
+           Normally external tables are ignored during backup and restore.
+           With the -convert option external tables are included in the backup
+           as any other regular table. When such a backup is restored, these
+           previously external tables are created as regular tables.
+
+       -fa number
+       -factor number
+           Blocking factor. Output is written in block of number bytes. Useful
+           when backing up to a tape.
+
+       -g
+       -garbage_collect
+           Inhibits garbage collection.
+
+           Normally Firebird runs a garbage collector when reading through the
+           tables.  Since the backup process reads all the tables, this forces
+           garbage collection of the whole database. Using this switch speeds
+           up the backup process and also can help in some cases of backing up
+           damaged databases.
+
+       -ig
+       -ignore
+           Ignores records with bad checksums.
+
+           This option should be used only when backing up damaged databases.
+
+       -l
+       -limbo
+           Ignores transactions in limbo.
+
+       -m
+       -metadata_only
+           Backs up metadata only. No table content is included in the backup.
+
+       -nt Uses non-transportable backup format.
+
+           Non-transportable backups can be restored only on machines using
+           the same byte order.
+
+       -o
+       -old_descriptions
+           Saves old-style metadata descriptions.
+
+RESTORE OPTIONS
+       -c
+       -create
+           Turns on restore mode.
+
+           target database will be created and must not exist.
+
+       -r [o]
+       -recreate_database [overwrite]
+           Like -create_database, but by adding "overwrite" any existing
+           database is overwritten.
+
+       -rep
+       -replace_database
+           Turns on restore mode. Target database is overwritten if it exists.
+
+       -bu number
+       -buffers number
+           When creating target database, ignore information about database
+           buffers stored in the backup and use specified number.
+
+       -e
+       -expand
+           Normally, Firebird uses RLE compression for strings when storing
+           them on disk. This option turns this compression off.
+
+       -i
+       -inactive
+           Restore indexes in inactive state. This can be used to restore a
+           backup, containing data inconsistent with foreign key/unique
+           constraints.
+
+           Note that since version 3.0 gbak leaves any problematic indices in
+           inactive state automatically.
+
+       -k
+       -kill
+           Does not restore database shadow files.
+
+       -mo access
+       -mode access
+           Restores the database with given access.
+
+           Valid values for access are "read_only" and "read_write". The
+           default is to restore the database with its original access mode.
+
+       -n
+       -no_validity
+           Restores the database without its validity constraints. This
+           includes foreign key, unique and check constraints. Useful for
+           restoring a backup, containing inconsistent data.
+
+       -o
+       -one_at_a_time
+           Commits restoring transaction after each table.
+
+       -p number
+       -page_size number
+           Override page size stored in the backup. Valid values are 1024,
+           2048, 4096, 8192, 16384 and 32768.
+
+       -use_
+       -use_all_space
+           Normally, Fireburd reserves some space on each data page for
+           further use.  This reserved space is used for newly inserted data
+           and for keeping older versions of the data. Having space reserved
+           for this purpose "near" to the data speeds up modifications. If the
+           database will be used mainly for read operations, specifying this
+           option will save disk space.
+
+       -fix_fss_metadata string
+           When restoring metadata, in case it is not valid UTF8, try to
+           convert it from the specified character set. Useful when table
+           descriptions are given in some national non-UTF8 encoding, which
+           was possible with Firebird before version 2.5.
+
+       -fix_fss_data string
+           When restoring table data, in case a column defined with
+           UNICODE_FSS character set contains no valid UTF8 (which was
+           possible with versions of Firebird prior to 2.5), try to convert
+           the data from the specified character set.
+
+   RESTORING TO MULTIPLE-FILE DATABASE
+       When the target argument is in the form file_1 pages_1 ... file_N, the
+       restored database is written in several files with file_i not bigger
+       than pages_i pages. This may be useful if the file system that holds
+       the database file can't handle files above certain size.
+
+       Note 1: the file size limit is in pages.
+
+       Note 1: there is no limit on the size of the last file.
+
+ENVIRONMENT
+       ISC_USER
+           Default value for the -user option.
+
+       ISC_ROLE
+           Default value for the -role option.
+
+       ISC_PASSWORD
+           Default value for the -password option.
+
+EXAMPLES
+   Backup a database into a compressed format
+       gbak -b srv:/database.fdb stdout | gzip > database.fbk.gz
+
+   Restore a database from a compressed backup
+       zcat database.fbk.gz | gbak -c stdin srv:/new-database.fdb
+
+SEE ALSO
+       isql-fb(1), gfix(1), fbstat(1).
+
+       Additional documentation about Firebird can be found on the Firebird
+       Project website, <http://www.firebirdsql.org>.
+
+AUTHOR
+       This manual page was written by Damyan Ivanov dmn@debian.org for the
+       Debian project. Permission is granted to use this document, with or
+       without modifications, provided that this notice is retained. If we
+       meet some day, and you think this stuff is worth it, you can buy me a
+       beer in return.
+
+Firebird 3.0                      2025-08-25                           GBAK(1)

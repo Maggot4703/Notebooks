@@ -1,0 +1,11 @@
+dhclient
+
+[0m[0mDHCP client.
+More information: https://manned.org/dhclient.
+
+ - [0m[32;23;22;24;25mGet an IP address for the eth0 interface:
+   [33;23;22;24;25msudo dhclient [0meth0
+[0m
+ - [0m[32;23;22;24;25mRelease an IP address for the eth0 interface:
+   [33;23;22;24;25msudo dhclient -r [0meth0
+[0m[0m

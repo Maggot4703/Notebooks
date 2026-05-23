@@ -1,0 +1,35 @@
+LRS2LRF(1)                          calibre                         LRS2LRF(1)
+
+NAME
+       lrs2lrf - lrs2lrf
+
+          lrs2lrf [options] file.lrs
+
+       Compile an LRS file into an LRF file.
+
+       Whenever  you  pass  arguments to lrs2lrf that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+[OPTIONS]
+       --help, -h
+              show this help message and exit
+
+       --lrs  Convert LRS to LRS, useful for debugging.
+
+       --output, -o
+              Path to output file
+
+       --verbose
+              Verbose processing
+
+       --version
+              show program's version number and exit
+
+AUTHOR
+       Kovid Goyal
+
+COPYRIGHT
+       Kovid Goyal
+
+6.13.0                         February 17, 2023                    LRS2LRF(1)

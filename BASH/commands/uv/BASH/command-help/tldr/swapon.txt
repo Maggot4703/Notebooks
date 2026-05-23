@@ -1,0 +1,18 @@
+swapon
+
+[0m[0mEnable devices and files for swapping.
+Note: path/to/file can either point to a regular file or a swap partition.
+More information: https://manned.org/swapon.8.
+
+ - [0m[32;23;22;24;25mShow swap information:
+   [33;23;22;24;25mswapon[0m
+[0m
+ - [0m[32;23;22;24;25mEnable a given swap area:
+   [33;23;22;24;25mswapon [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mEnable all swap areas specified in /etc/fstab except those with the noauto option:
+   [33;23;22;24;25mswapon [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mEnable a swap partition by its label:
+   [33;23;22;24;25mswapon -L [0mlabel
+[0m[0m

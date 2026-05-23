@@ -1,0 +1,24 @@
+pw-dump
+
+[0m[0mDump PipeWire's current state as JSON, including the information on nodes, devices, modules, ports, and other objects.
+See also: pw-mon.
+More information: https://docs.pipewire.org/page_man_pw-dump_1.html.
+
+ - [0m[32;23;22;24;25mPrint a JSON representation of the default PipeWire instance's current state:
+   [33;23;22;24;25mpw-dump[0m
+[0m
+ - [0m[32;23;22;24;25mPrint a JSON representation of an object:
+   [33;23;22;24;25mpw-dump [0mobject_id
+[0m
+ - [0m[32;23;22;24;25mDump the current state monitoring changes, printing it again:
+   [33;23;22;24;25mpw-dump [0m[-m|--monitor]
+[0m
+ - [0m[32;23;22;24;25mDump the current state of a remote instance to a file:
+   [33;23;22;24;25mpw-dump [0m[-r|--remote][33;23;22;24;25m [0mremote_name[33;23;22;24;25m > [0mpath/to/dump_file.json
+[0m
+ - [0m[32;23;22;24;25mSet a color configuration:
+   [33;23;22;24;25mpw-dump [0m[-C|--color][33;23;22;24;25m [0mnever|always|auto
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpw-dump [0m[-h|--help]
+[0m[0m

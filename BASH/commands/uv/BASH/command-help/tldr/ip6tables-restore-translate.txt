@@ -1,0 +1,1 @@
+No tldr entry for ip6tables-restore-translate

@@ -1,0 +1,17 @@
+cut
+
+[0m[0mCut out fields from stdin or files.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/cut-invocation.html.
+
+ - [0m[32;23;22;24;25mPrint a specific [c]haracter/[f]ield range of each line:
+   command[33;23;22;24;25m | cut --[0mcharacters|fields[33;23;22;24;25m [0m1|1,10|1-10|1-|-10
+[0m
+ - [0m[32;23;22;24;25mPrint a field range of each line with a specific delimiter:
+   command[33;23;22;24;25m | cut [0m[-d|--delimiter][33;23;22;24;25m "[0mdelimiter[33;23;22;24;25m" [0m[-f|--fields][33;23;22;24;25m [0m1|1,10|1-10|1-|-10
+[0m
+ - [0m[32;23;22;24;25mPrint a character range of each line of the specific file:
+   [33;23;22;24;25mcut [0m[-c|--characters][33;23;22;24;25m [0m1[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint specific fields of NUL terminated lines (e.g. as in find . -print0) instead of newlines:
+   command[33;23;22;24;25m | cut [0m[-z|--zero-terminated][33;23;22;24;25m [0m[-f|--fields][33;23;22;24;25m [0m1
+[0m[0m

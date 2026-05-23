@@ -1,0 +1,20 @@
+file
+
+[0m[0mDetermine file type.
+More information: https://manned.org/file.
+
+ - [0m[32;23;22;24;25mGive a description of the type of the specified file:
+   [33;23;22;24;25mfile [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mLook inside a zipped file and determine the file type(s) inside:
+   [33;23;22;24;25mfile [0m[-z|--uncompress][33;23;22;24;25m [0mpath/to/file.zip
+[0m
+ - [0m[32;23;22;24;25mAllow file to work with special or device files:
+   [33;23;22;24;25mfile [0m[-s|--special-files][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDon't stop at first file type match; keep going until the end of the file:
+   [33;23;22;24;25mfile [0m[-k|--keep-going][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDetermine the MIME encoding type of a file:
+   [33;23;22;24;25mfile [0m[-i|--mime][33;23;22;24;25m [0mpath/to/file
+[0m[0m

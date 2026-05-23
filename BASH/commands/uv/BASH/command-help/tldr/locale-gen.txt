@@ -1,0 +1,11 @@
+locale-gen
+
+[0m[0mGenerate locales defined in /etc/locale.gen.
+More information: https://manned.org/locale-gen.
+
+ - [0m[32;23;22;24;25mGenerate locales:
+   [33;23;22;24;25mlocale-gen[0m
+[0m
+ - [0m[32;23;22;24;25mDo not delete undefined locales:
+   [33;23;22;24;25mlocale-gen --keep-existing[0m
+[0m[0m

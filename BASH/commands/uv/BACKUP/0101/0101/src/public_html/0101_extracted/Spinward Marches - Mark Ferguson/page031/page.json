@@ -1,0 +1,18 @@
+{
+  "page_number": 31,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page031/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020 ‘Spinward Marches\nSpinward Marches/M Five Sisters/0732 Iderati\n\nO\noe\n\nio)\n\nA887798-C\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\nSize=8\nDIGIT DIA(MI) DIA(KM)\n8 8,000 13,800,\n\nAtmosphere = 8\nDIGIT DESCRIPTION EFFECTS\n8 Dense\n\nHydrosphere = 7\nDIGIT DESCRIPTION\n710%\n\nPopulation = 7\nPOPULATION UNDER 20,000,000\nDIGIT DESCRIPTION VALUE\n7 Ten million 0,000,000\n\nGovernment = 9\nDIGIT DESCRIPTION NOTE\n9 Impersonal Bureaucracy Impersonal agencies rule\n\nLaw Level= 8\nDIGIT DESCRIPTION NOTE\n8 High Law Open display of weapons prohibited\n\nTech Level = C\nDIGIT\nCc\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html 18/22\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page031/page_full.png"
+}

@@ -1,0 +1,29 @@
+script
+
+[0m[0mRecord all terminal output to a typescript file.
+More information: https://manned.org/script.
+
+ - [0m[32;23;22;24;25mRecord a new session to a file named typescript in the current directory:
+   [33;23;22;24;25mscript[0m
+[0m
+ - [0m[32;23;22;24;25mStop recording:
+   [33;23;22;24;25mexit[0m
+[0m
+ - [0m[32;23;22;24;25mRecord a new session to a custom filepath:
+   [33;23;22;24;25mscript [0mpath/to/session.out
+[0m
+ - [0m[32;23;22;24;25mAppend to an existing file:
+   [33;23;22;24;25mscript [0m[-a|--append][33;23;22;24;25m [0mlogfile.log
+[0m
+ - [0m[32;23;22;24;25mRecord timing information (data is outputted to stderr):
+   [33;23;22;24;25mscript [0m[-t|--timing][33;23;22;24;25m 2> [0mpath/to/timing_file
+[0m
+ - [0m[32;23;22;24;25mWrite out data as soon as it happens:
+   [33;23;22;24;25mscript [0m[-f|--flush][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mExecute quietly without start and done messages:
+   [33;23;22;24;25mscript [0m[-q|--quiet][33;23;22;24;25m [0mlogfile.log
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mscript [0m[-h|--help]
+[0m[0m

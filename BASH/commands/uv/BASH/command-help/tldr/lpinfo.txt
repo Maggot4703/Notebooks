@@ -1,0 +1,14 @@
+lpinfo
+
+[0m[0mList connected printers and installed drivers for the CUPS print server.
+More information: https://openprinting.github.io/cups/doc/man-lpinfo.html.
+
+ - [0m[32;23;22;24;25mList all the currently connected printers:
+   [33;23;22;24;25mlpinfo -v[0m
+[0m
+ - [0m[32;23;22;24;25mList all the currently installed printer drivers:
+   [33;23;22;24;25mlpinfo -m[0m
+[0m
+ - [0m[32;23;22;24;25mSearch installed printer drivers by make and model:
+   [33;23;22;24;25mlpinfo --make-and-model "[0mprinter_model[33;23;22;24;25m" -m[0m
+[0m[0m

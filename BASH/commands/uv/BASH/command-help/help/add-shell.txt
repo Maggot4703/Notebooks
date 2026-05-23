@@ -1,0 +1,3 @@
+/usr/sbin/add-shell: 20: cannot create /etc/shells.tmp: Permission denied
+Either another instance of /usr/sbin/add-shell is running, or it was previously interrupted.
+Please examine /etc/shells.tmp to see if it should be moved onto /etc/shells.

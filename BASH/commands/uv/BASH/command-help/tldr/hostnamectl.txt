@@ -1,0 +1,17 @@
+hostnamectl
+
+[0m[0mGet or set the hostname of the computer.
+More information: https://manned.org/hostnamectl.
+
+ - [0m[32;23;22;24;25mGet the hostname of the computer:
+   [33;23;22;24;25mhostnamectl[0m
+[0m
+ - [0m[32;23;22;24;25mSet the hostname of the computer:
+   [33;23;22;24;25msudo hostnamectl set-hostname "[0mhostname[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mSet a pretty hostname for the computer:
+   [33;23;22;24;25msudo hostnamectl set-hostname --static "[0mhostname.example.com[33;23;22;24;25m" && sudo hostnamectl set-hostname --pretty "[0mhostname[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mReset hostname to its default value:
+   [33;23;22;24;25msudo hostnamectl set-hostname --pretty ""[0m
+[0m[0m

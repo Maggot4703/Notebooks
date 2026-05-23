@@ -1,0 +1,17 @@
+sensible-editor
+
+[0m[0mOpen the default editor.
+More information: https://manned.org/sensible-editor.
+
+ - [0m[32;23;22;24;25mOpen a file in the default editor:
+   [33;23;22;24;25msensible-editor [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOpen a file in the default editor, with the cursor at the end of the file:
+   [33;23;22;24;25msensible-editor + [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOpen a file in the default editor, with the cursor at the beginning of line 10:
+   [33;23;22;24;25msensible-editor +10 [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mOpen 3 files in vertically split editor windows at the same time:
+   [33;23;22;24;25msensible-editor -O3 [0mpath/to/file1 path/to/file2 path/to/file3
+[0m[0m

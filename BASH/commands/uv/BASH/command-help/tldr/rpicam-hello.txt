@@ -1,0 +1,11 @@
+rpicam-hello
+
+[0m[0mView a live camera stream using a Raspberry Pi camera.
+More information: https://www.raspberrypi.com/documentation/computers/camera_software.html#rpicam-hello.
+
+ - [0m[32;23;22;24;25mDisplay a camera preview stream for a specific amount of time (in milliseconds):
+   [33;23;22;24;25mrpicam-hello [0m[-t|--timeout][33;23;22;24;25m [0mtime
+[0m
+ - [0m[32;23;22;24;25mTune the configuration for a particular camera sensor:
+   [33;23;22;24;25mrpicam-hello --tuning-file [0m/usr/share/libcamera/ipa/rpi/path/to/config.json
+[0m[0m

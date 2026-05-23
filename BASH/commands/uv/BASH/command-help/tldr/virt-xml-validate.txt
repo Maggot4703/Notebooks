@@ -1,0 +1,12 @@
+virt-xml-validate
+
+[0m[0mValidate libvirt XML files against a schema.
+If a schema is not specified, the schema is determined by the root element in the XML file.
+More information: https://libvirt.org/manpages/virt-xml-validate.html.
+
+ - [0m[32;23;22;24;25mValidate an XML file against a specific schema:
+   [33;23;22;24;25mvirt-xml-validate [0mpath/to/file.xml[33;23;22;24;25m [0mschema
+[0m
+ - [0m[32;23;22;24;25mValidate the domain XML against the domain schema:
+   [33;23;22;24;25mvirt-xml-validate [0mpath/to/domain.xml[33;23;22;24;25m domain[0m
+[0m[0m

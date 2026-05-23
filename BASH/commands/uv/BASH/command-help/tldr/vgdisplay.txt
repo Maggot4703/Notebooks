@@ -1,0 +1,12 @@
+vgdisplay
+
+[0m[0mDisplay information about Logical Volume Manager (LVM) volume groups.
+See also: lvm.
+More information: https://manned.org/vgdisplay.
+
+ - [0m[32;23;22;24;25mDisplay information about all volume groups:
+   [33;23;22;24;25msudo vgdisplay[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay information about volume group vg1:
+   [33;23;22;24;25msudo vgdisplay [0mvg1
+[0m[0m

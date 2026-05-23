@@ -1,0 +1,75 @@
+---
+name: Integration Tests
+
+'on':
+  push: {}
+  pull_request: {}
+  workflow_dispatch: {}
+
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      matrix:
+        python-version: [3.14, 3.12]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f CREW/Crew/requirements.txt ]; then
+            python -m pip install -r CREW/Crew/requirements.txt
+          fi
+          python -m pip install pytest requests coverage
+
+      - name: Start 0101 server
+        run: |
+          bash .github/scripts/start_0101_server.sh
+
+      - name: Wait for server
+        run: |
+          for i in $(seq 1 30); do
+            if curl -fsS http://localhost:8080/api/ping >/dev/null 2>&1; then
+              echo server-up
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "server did not start" >&2
+          cat ci-artifacts/server_ci.log || true
+          exit 1
+
+      - name: Smoke test persistence endpoints
+        run: |
+          bash .github/scripts/smoke_persistence.sh
+
+      - name: Run CREW tests (with coverage)
+        run: |
+          bash .github/scripts/run_crew_tests_with_coverage.sh
+
+      - name: Upload CI artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: ci-artifacts
+          path: ci-artifacts/**
+
+      - name: Upload coverage to Codecov
+        if: ${{ secrets.CODECOV_TOKEN != '' }}
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ci-artifacts/coverage.xml
+
+      - name: Stop server
+        if: always()
+        run: |
+          if [ -f ci-artifacts/server.pid ]; then
+            kill "$(cat ci-artifacts/server.pid)" || true
+          fi

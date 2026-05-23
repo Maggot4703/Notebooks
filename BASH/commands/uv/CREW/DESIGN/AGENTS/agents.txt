@@ -1,0 +1,26 @@
+# Folders in /home/me/Notebooks/CREW/DESIGN/AGENTS
+
+Chatman
+/home/me/Notebooks/CREW/DESIGN/AGENTS/chatman/chatman.txt
+
+Coder
+/home/me/Notebooks/CREW/DESIGN/AGENTS/coder/coder.txt
+
+Designer
+/home/me/Notebooks/CREW/DESIGN/AGENTS/designer/designer.txt
+
+Piman
+/home/me/Notebooks/CREW/DESIGN/AGENTS/piman/piman.txt
+
+Researcher
+/home/me/Notebooks/CREW/DESIGN/AGENTS/researcher/researcher.txt
+
+Scanman
+/home/me/Notebooks/CREW/DESIGN/AGENTS/scanman/scanman.txt
+
+Traveller
+/home/me/Notebooks/CREW/DESIGN/AGENTS/traveller/traveller.txt
+
+updater
+/home/me/Notebooks/CREW/DESIGN/AGENTS/updater/updater.txt
+

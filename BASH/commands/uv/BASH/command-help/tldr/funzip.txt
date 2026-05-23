@@ -1,0 +1,14 @@
+funzip
+
+[0m[0mPrint the content of the first (non-directory) member in an archive without extraction.
+More information: https://manned.org/funzip.
+
+ - [0m[32;23;22;24;25mPrint the content of the first member in a Zip archive:
+   [33;23;22;24;25mfunzip [0mpath/to/archive.zip
+[0m
+ - [0m[32;23;22;24;25mPrint the content in a gzip archive:
+   [33;23;22;24;25mfunzip [0mpath/to/archive.gz
+[0m
+ - [0m[32;23;22;24;25mDecrypt a Zip or gzip archive and print the content:
+   [33;23;22;24;25mfunzip -password [0mpassword[33;23;22;24;25m [0mpath/to/archive
+[0m[0m

@@ -1,0 +1,17 @@
+systemd-path
+
+[0m[0mList and query system and user paths.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-path.html.
+
+ - [0m[32;23;22;24;25mDisplay a list of known paths and their current values:
+   [33;23;22;24;25msystemd-path[0m
+[0m
+ - [0m[32;23;22;24;25mQuery the specified path and display its value:
+   [33;23;22;24;25msystemd-path "[0mpath_name[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mSuffix printed paths with suffix_string:
+   [33;23;22;24;25msystemd-path --suffix [0msuffix_string
+[0m
+ - [0m[32;23;22;24;25mPrint a short version string and then exit:
+   [33;23;22;24;25msystemd-path --version[0m
+[0m[0m

@@ -1,0 +1,29 @@
+set
+
+[0m[0mToggle shell options or set the values of positional parameters.
+More information: https://www.gnu.org/software/bash/manual/bash.html#The-Set-Builtin.
+
+ - [0m[32;23;22;24;25mDisplay the names and values of shell variables:
+   [33;23;22;24;25mset[0m
+[0m
+ - [0m[32;23;22;24;25mExport newly initialized variables to child processes:
+   [33;23;22;24;25mset -a[0m
+[0m
+ - [0m[32;23;22;24;25mWrite formatted messages to stderr when jobs finish:
+   [33;23;22;24;25mset -b[0m
+[0m
+ - [0m[32;23;22;24;25mWrite and edit text in the command-line with vi-like keybindings (e.g. yy):
+   [33;23;22;24;25mset -o [0mvi
+[0m
+ - [0m[32;23;22;24;25mReturn to default mode:
+   [33;23;22;24;25mset -o [0memacs
+[0m
+ - [0m[32;23;22;24;25mList all modes:
+   [33;23;22;24;25mset -o[0m
+[0m
+ - [0m[32;23;22;24;25mExit the shell when (some) command fails:
+   [33;23;22;24;25mset -e[0m
+[0m
+ - [0m[32;23;22;24;25mReset all shell parameters and assign new ones:
+   [33;23;22;24;25mset -- [0margument1 argument2 ...
+[0m[0m

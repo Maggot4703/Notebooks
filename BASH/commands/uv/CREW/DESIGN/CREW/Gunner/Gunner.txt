@@ -1,0 +1,66 @@
+Gunner
+In the Traveller universe, a Gunner is much more than just a "trigger man." While the Pilot avoids the fire and the Engineer keeps the lights on, the Gunner is responsible for the ship’s only means of negotiation once diplomacy fails. Whether manning a single turret on a Free Trader or a massive bay on a Mercenary Cruiser, the Gunner’s role is a mix of high-speed geometry and technical maintenance.
+
+Here is a breakdown of the duties and responsibilities for a Traveller Gunner.
+1. Weapons Systems Operation
+
+The primary duty is, of course, hitting the target. In Traveller, space combat happens at thousands of kilometers of range, meaning the Gunner is usually operating through a computer interface rather than looking through a window.
+
+    Target Acquisition: Using the ship's sensors to lock onto enemy heat signatures or hull profiles.
+
+    Ordnance Management: Choosing the right "tool" for the job.
+
+        Lasers: Best for pinpoint accuracy and intercepting missiles.
+
+        Missiles: High damage, but requires managing a limited magazine.
+
+        Sandcasters: Deploying clouds of particulate matter to deflect incoming enemy lasers (the ship’s primary active defense).
+
+        Plasma/Fusion Guns: Devastating short-range "ship-killers."
+
+2. Point Defense (The Shield of Steel)
+
+A Gunner’s most important job isn't always blowing up the enemy—it’s stopping the enemy from blowing up you.
+
+    Anti-Missile Fire: Using the Gunner (Turret) skill to shoot down incoming missile salvos before they impact the hull.
+
+    Screen Management: On larger ships, Gunners may operate Meson Screens or Nuclear Dampeners to neutralize specific high-tech threats.
+
+3. Maintenance and Munitions
+
+A Gunner is the "owner" of the weapon bays. If a turret jams or a missile rack fails to cycle, it's on them.
+
+    Pre-Combat Calibration: Ensuring the laser focusing crystals are aligned and the sandcaster canisters are pressurized.
+
+    Reloading: Physically (or via remote drones) moving heavy missile canisters from the cargo hold to the launchers during a protracted engagement.
+
+    Damage Control: If a turret is hit, the Gunner is often the one who has to suit up for an EVA (Extra-Vehicular Activity) to fix the tracking motors or replace charred components.
+
+4. Tactical Analysis
+
+The Gunner often serves as the ship's tactical eyes, working closely with the Pilot.
+Responsibility	Tactical Importance
+Range Control	Advising the Pilot on the "Optimal Range" for the ship's specific weapon loadout.
+Target Prioritization	Deciding whether to fire at the enemy's drives (to disable) or their bridge (to destroy).
+Sensor Integration	Helping the Sensors operator distinguish between a real ship and "ghost" decoys.
+5. Security and Armory
+
+On many small ships, the Gunner doubles as the Chief of Security.
+
+    The Armory: Maintaining the crew’s personal weapons (slug throwers, vacc suits, and combat armor).
+
+    Boarding Actions: Leading the defense if the ship is boarded, or heading the boarding party if the crew is playing "privateer."
+
+The Gunner’s Skillset
+
+A top-tier Gunner usually specializes in one or more sub-skills under the Gunner umbrella:
+
+    Gunner (Turret): The bread and butter for most Travellers.
+
+    Gunner (Ortillery): For "Orbital Artillery" (bombarding ground targets from space).
+
+    Gunner (Capital): Operating the massive spinal mounts on cruisers and battleships.
+
+    Gunner (Screen): Using defensive technology to negate incoming fire.
+
+    The Gunner's Reality: In Traveller, space is big and computers do most of the math. A Gunner’s true value is their coolness under pressure. When a missile volley is seconds away from ending your career, a Gunner needs to keep their hands steady and their timing perfect.

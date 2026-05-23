@@ -1,0 +1,32 @@
+PLAN: Crew Assignment and Readiness Review
+
+Objective:
+- Document how assignment and readiness work should map onto the current production Crew Manager app.
+
+Steps:
+1. Define the roster or NPC dataset to load into `CREW/Crew/`.
+2. Review which columns or records drive assignment, filtering, or readiness decisions.
+3. Use the GUI or supporting scripts to inspect, group, and validate the data.
+4. Record any missing requirements, mismatches, or follow-up actions in DESIGN notes or NOTEBOOKS.
+5. Update linked plans or skills if the workflow changes.
+
+Inputs:
+- Crew or NPC CSV/Excel source files
+- Current production app behavior in `CREW/Crew/Crew.py` and `CREW/Crew/gui.py`
+- Skill and readiness process notes in `DESIGN/SKILLS/`
+- Relevant design notes in `DESIGN/PLANS/`
+
+Outputs:
+- Updated assignment notes or workflow decisions
+- Validation findings captured in `NOTEBOOKS/notebooks.txt` or a linked plan
+- Follow-up tasks for GUI, scripts, or documentation
+
+Responsible Agents:
+- Crew Manager Agent
+- Designer Agent
+- Updater Agent
+
+Notes:
+- Do not hard-code dated export names as canonical outputs.
+- Treat this as a design plan unless a task explicitly asks for runtime automation changes.
+- Cross-check any workflow claims against the current production docs and GUI behavior.

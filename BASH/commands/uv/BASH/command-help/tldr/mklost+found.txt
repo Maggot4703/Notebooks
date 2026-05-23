@@ -1,0 +1,8 @@
+mklost+found
+
+[0m[0mCreate a lost+found directory.
+More information: https://linux.die.net/man/8/mklost+found.
+
+ - [0m[32;23;22;24;25mCreate a lost+found directory in the current directory:
+   [33;23;22;24;25mmklost+found[0m
+[0m[0m

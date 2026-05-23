@@ -1,0 +1,14 @@
+mkhomedir_helper
+
+[0m[0mCreate the user's home directory after creating the user.
+More information: https://manned.org/mkhomedir_helper.
+
+ - [0m[32;23;22;24;25mCreate a home directory for a user based on /etc/skel with umask 022:
+   [33;23;22;24;25msudo mkhomedir_helper [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a home directory for a user based on /etc/skel with all permissions for owner (0) and read permission for group (3):
+   [33;23;22;24;25msudo mkhomedir_helper [0musername[33;23;22;24;25m [0m037
+[0m
+ - [0m[32;23;22;24;25mCreate a home directory for a user based on a custom skeleton:
+   [33;23;22;24;25msudo mkhomedir_helper [0musername[33;23;22;24;25m [0mumask[33;23;22;24;25m [0mpath/to/skeleton_directory
+[0m[0m

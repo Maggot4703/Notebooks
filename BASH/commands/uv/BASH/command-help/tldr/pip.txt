@@ -1,0 +1,27 @@
+pip
+
+[0m[0mPython package manager.
+Some subcommands such as install have their own usage documentation.
+More information: https://pip.pypa.io.
+
+ - [0m[32;23;22;24;25mInstall a package (see pip install for more install examples):
+   [33;23;22;24;25mpip install [0mpackage
+[0m
+ - [0m[32;23;22;24;25mInstall a package to the user's directory instead of the system-wide default location:
+   [33;23;22;24;25mpip install --user [0mpackage
+[0m
+ - [0m[32;23;22;24;25mUpgrade a package:
+   [33;23;22;24;25mpip install [0m[-U|--upgrade][33;23;22;24;25m [0mpackage
+[0m
+ - [0m[32;23;22;24;25mUninstall a package:
+   [33;23;22;24;25mpip uninstall [0mpackage
+[0m
+ - [0m[32;23;22;24;25mSave installed packages to file:
+   [33;23;22;24;25mpip freeze > [0mrequirements.txt
+[0m
+ - [0m[32;23;22;24;25mShow installed package info:
+   [33;23;22;24;25mpip show [0mpackage
+[0m
+ - [0m[32;23;22;24;25mInstall packages from a file:
+   [33;23;22;24;25mpip install [0m[-r|--requirement][33;23;22;24;25m [0mrequirements.txt
+[0m[0m

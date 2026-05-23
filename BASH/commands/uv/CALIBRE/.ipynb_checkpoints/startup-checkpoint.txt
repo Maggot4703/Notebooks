@@ -1,0 +1,4 @@
+deactivate
+cd /home/me/Notebooks/CALIBRE
+source .venv/bin/activate
+#jupyter lab

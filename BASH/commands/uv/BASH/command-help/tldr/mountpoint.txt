@@ -1,0 +1,14 @@
+mountpoint
+
+[0m[0mTest if a directory is a filesystem mountpoint.
+More information: https://manned.org/mountpoint.
+
+ - [0m[32;23;22;24;25mCheck if a directory is a mountpoint:
+   [33;23;22;24;25mmountpoint [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mCheck if a directory is a mountpoint without showing any output:
+   [33;23;22;24;25mmountpoint [0m[-q|--quiet][33;23;22;24;25m [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mShow major/minor numbers of a mountpoint's filesystem:
+   [33;23;22;24;25mmountpoint [0m[-d|--fs-devno][33;23;22;24;25m [0mpath/to/directory
+[0m[0m

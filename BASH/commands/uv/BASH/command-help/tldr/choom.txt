@@ -1,0 +1,14 @@
+choom
+
+[0m[0mDisplay and change the adjust out-of-memory killer score.
+More information: https://manned.org/choom.
+
+ - [0m[32;23;22;24;25mDisplay the OOM-killer score of the process with a specific ID:
+   [33;23;22;24;25mchoom [0m[-p|--pid][33;23;22;24;25m [0mpid
+[0m
+ - [0m[32;23;22;24;25mChange the adjust OOM-killer score of a specific process:
+   [33;23;22;24;25mchoom [0m[-p|--pid][33;23;22;24;25m [0mpid[33;23;22;24;25m [0m[-n|--adjust][33;23;22;24;25m [0m-1000..+1000
+[0m
+ - [0m[32;23;22;24;25mRun a command with a specific adjust OOM-killer score:
+   [33;23;22;24;25mchoom [0m[-n|--adjust][33;23;22;24;25m [0m-1000..+1000[33;23;22;24;25m [0mcommand[33;23;22;24;25m [0margument1 argument2 ...
+[0m[0m

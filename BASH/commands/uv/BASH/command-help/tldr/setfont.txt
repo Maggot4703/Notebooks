@@ -1,0 +1,17 @@
+setfont
+
+[0m[0mSet the terminal font for TTYs.
+More information: https://manned.org/setfont.
+
+ - [0m[32;23;22;24;25mChange the terminal font:
+   [33;23;22;24;25msetfont [0mfont[33;23;22;24;25m.gz[0m
+[0m
+ - [0m[32;23;22;24;25mChange the terminal font by specifying a path:
+   [33;23;22;24;25msetfont /usr/share/kbd/[0mmapping[33;23;22;24;25m/[0mfont.ext
+[0m
+ - [0m[32;23;22;24;25mDouble font size:
+   [33;23;22;24;25msetfont [0m[-d|--double]
+[0m
+ - [0m[32;23;22;24;25mReset to the default font:
+   [33;23;22;24;25msetfont[0m
+[0m[0m

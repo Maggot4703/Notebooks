@@ -1,0 +1,17 @@
+visudo
+
+[0m[0mSafely edit the sudoers file.
+More information: https://www.sudo.ws/docs/man/visudo.man.
+
+ - [0m[32;23;22;24;25mEdit the sudoers file:
+   [33;23;22;24;25msudo visudo[0m
+[0m
+ - [0m[32;23;22;24;25mCheck the sudoers file for errors:
+   [33;23;22;24;25msudo visudo [0m[-c|--check]
+[0m
+ - [0m[32;23;22;24;25mEdit the sudoers file using a specific editor:
+   [33;23;22;24;25msudo EDITOR=[0meditor[33;23;22;24;25m visudo[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay version information:
+   [33;23;22;24;25mvisudo [0m[-V|--version]
+[0m[0m

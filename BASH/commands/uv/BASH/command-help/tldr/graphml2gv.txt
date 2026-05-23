@@ -1,0 +1,15 @@
+graphml2gv
+
+[0m[0mConvert a graph from graphml to gv format.
+Converters: gml2gv, gv2gml, gv2gxl, gxl2gv, graphml2gv & mm2gv.
+More information: https://graphviz.org/pdf/graphml2gv.1.pdf.
+
+ - [0m[32;23;22;24;25mConvert a graph from gml to gv format:
+   [33;23;22;24;25mgraphml2gv -o [0moutput.gv[33;23;22;24;25m [0minput.gml
+[0m
+ - [0m[32;23;22;24;25mConvert a graph using stdin and stdout:
+   [33;23;22;24;25mcat [0minput.gml[33;23;22;24;25m | graphml2gv > [0moutput.gv
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mgraphml2gv -?[0m
+[0m[0m

@@ -1,0 +1,59 @@
+<form class="flexcol starshipattack">
+
+
+    <div class="shadow">
+        <img class="attack-actor" src="{{gunner.img}}" width="40px"/>
+        <h4>{{gunner.name}}</h4>
+
+        <p>
+            {{gunnerChaLabel}} {{gunnerSkillLabel}}
+        </p>
+    </div>
+
+    {{#if TARGETS}}
+        <div class="shadow">
+            <h4>Targets</h4>
+
+            <ul class="targets">
+                <select class="attackDialogTargets" name="target">
+                    {{selectOptions TARGET_LIST}}
+                </select>
+            </ul>
+        </div>
+    {{/if}}
+
+    <div class="shadow grid grid-2col">
+        <div>
+            <label>{{localize "MGT2.TravellerSheet.Weapons"}}</label><br/>
+            <select class="attackDialogWeapon" name="weaponSelected">
+                {{selectOptions weaponSelect selected=weaponSelected}}
+            </select>
+        </div>
+
+        <div>
+            <label>{{localize "MGT2.Item.RangeSpace"}}</label><br/>
+            <select class="attackDialogRange" name="range">
+                {{selectOptions ranges selected=range}}
+            </select>
+        </div>
+    </div>
+
+    <div class="shadow grid grid-2col">
+        <div class="boon-selection">
+            <label for="dicetype" class="skillDialogLabel">Roll Type</label>
+            <select class="skillDialogRollType" name="dicetype">
+                {{selectOptions rollTypes selected="normal"}}
+            </select>
+        </div>
+
+        <div class="bonus-selection">
+            <label for="dm" class="skillDialogLabel">DM</label>
+            <input class="skillDialogDM" name="dm" type="text" data-dtype="Number" value="{{dm}}"/>
+        </div>
+    </div>
+
+    <footer class="sheet-footer flexrow">
+        <button type="submit" name="submit" class="attackRoll">{{localize "MGT2.TravellerSheet.Attack"}}</button>
+    </footer>
+
+</form>

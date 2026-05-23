@@ -1,0 +1,20 @@
+lsattr
+
+[0m[0mList file attributes on a Linux filesystem.
+More information: https://manned.org/lsattr.
+
+ - [0m[32;23;22;24;25mDisplay the attributes of the files in the current directory:
+   [33;23;22;24;25mlsattr[0m
+[0m
+ - [0m[32;23;22;24;25mList the attributes of files in a particular path:
+   [33;23;22;24;25mlsattr [0mpath
+[0m
+ - [0m[32;23;22;24;25mList file attributes recursively in the current and subsequent directories:
+   [33;23;22;24;25mlsattr -R[0m
+[0m
+ - [0m[32;23;22;24;25mShow attributes of all the files in the current directory, including hidden ones:
+   [33;23;22;24;25mlsattr -a[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay attributes of directories in the current directory:
+   [33;23;22;24;25mlsattr -d[0m
+[0m[0m

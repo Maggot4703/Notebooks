@@ -1,0 +1,20 @@
+ping6
+
+[0m[0mSend ICMP ECHO_REQUEST packets to network hosts via IPv6 address.
+More information: https://manned.org/ping6.
+
+ - [0m[32;23;22;24;25mPing a host:
+   [33;23;22;24;25mping6 [0mhost
+[0m
+ - [0m[32;23;22;24;25mPing a host only a specific number of times:
+   [33;23;22;24;25mping6 -c [0mcount[33;23;22;24;25m [0mhost
+[0m
+ - [0m[32;23;22;24;25mPing a host, specifying the interval in seconds between requests (default is 1 second):
+   [33;23;22;24;25mping6 -i [0mseconds[33;23;22;24;25m [0mhost
+[0m
+ - [0m[32;23;22;24;25mPing a host without trying to lookup symbolic names for addresses:
+   [33;23;22;24;25mping6 -n [0mhost
+[0m
+ - [0m[32;23;22;24;25mPing a host and ring the bell when a packet is received (if your terminal supports it):
+   [33;23;22;24;25mping6 -a [0mhost
+[0m[0m

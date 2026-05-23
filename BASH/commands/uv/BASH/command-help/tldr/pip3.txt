@@ -1,0 +1,26 @@
+pip3
+
+[0m[0mPython package manager.
+More information: https://pip.pypa.io.
+
+ - [0m[32;23;22;24;25mInstall a package:
+   [33;23;22;24;25mpip3 install [0mpackage
+[0m
+ - [0m[32;23;22;24;25mInstall a specific version of a package:
+   [33;23;22;24;25mpip3 install [0mpackage[33;23;22;24;25m==[0mversion
+[0m
+ - [0m[32;23;22;24;25mUpgrade a package:
+   [33;23;22;24;25mpip3 install [0m[-U|--upgrade][33;23;22;24;25m [0mpackage
+[0m
+ - [0m[32;23;22;24;25mUninstall a package:
+   [33;23;22;24;25mpip3 uninstall [0mpackage
+[0m
+ - [0m[32;23;22;24;25mSave the list of installed packages to a file:
+   [33;23;22;24;25mpip3 freeze > [0mrequirements.txt
+[0m
+ - [0m[32;23;22;24;25mInstall packages from a file:
+   [33;23;22;24;25mpip3 install [0m[-r|--requirement][33;23;22;24;25m [0mrequirements.txt
+[0m
+ - [0m[32;23;22;24;25mShow installed package info:
+   [33;23;22;24;25mpip3 show [0mpackage
+[0m[0m

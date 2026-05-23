@@ -1,0 +1,14 @@
+arp
+
+[0m[0mShow and manipulate your system's ARP cache.
+More information: https://manned.org/arp.8.
+
+ - [0m[32;23;22;24;25mShow the current ARP table:
+   [33;23;22;24;25marp -a[0m
+[0m
+ - [0m[32;23;22;24;25m[d]elete a specific entry:
+   [33;23;22;24;25marp -d [0maddress
+[0m
+ - [0m[32;23;22;24;25m[s]et up a new entry in the ARP table:
+   [33;23;22;24;25marp -s [0maddress[33;23;22;24;25m [0mmac_address
+[0m[0m

@@ -1,0 +1,8 @@
+exec
+
+[0m[0mExecute a command without creating a child process.
+More information: https://manned.org/exec.1posix.
+
+ - [0m[32;23;22;24;25mExecute a specific command using the current environment variables:
+   [33;23;22;24;25mexec [0mcommand -with -flags
+[0m[0m

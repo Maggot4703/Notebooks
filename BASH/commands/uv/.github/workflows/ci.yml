@@ -1,0 +1,42 @@
+---
+name: CI
+
+'on':
+  push:
+  pull_request:
+
+jobs:
+  test-crew:
+    name: Run CREW tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: false
+          persist-credentials: false
+
+      - name: Remove accidental gitlinks
+        run: |
+          bash .github/scripts/remove_gitlinks.sh
+      - name: Init submodules (if any)
+        run: |
+          if [ -f .gitmodules ]; then
+            git submodule sync --recursive || true
+            git submodule update --init --recursive --depth 1 || true
+          fi
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libffi-dev libssl-dev build-essential \
+            xvfb xauth
+      - name: Install Python deps
+        run: |
+          bash .github/scripts/install_python_deps.sh
+      - name: Run pytest for CREW
+        run: |
+          bash .github/scripts/run_pytests.sh

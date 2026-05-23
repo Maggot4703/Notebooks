@@ -1,0 +1,17 @@
+getopt
+
+[0m[0mParse command-line arguments.
+More information: https://manned.org/getopt.
+
+ - [0m[32;23;22;24;25mParse optional verbose/version flags with shorthands:
+   [33;23;22;24;25mgetopt [0m[-o|--options][33;23;22;24;25m vV [0m[-l|--longoptions][33;23;22;24;25m verbose,version -- --version --verbose[0m
+[0m
+ - [0m[32;23;22;24;25mAdd a --file option with a required argument with shorthand -f:
+   [33;23;22;24;25mgetopt [0m[-o|--options][33;23;22;24;25m f: [0m[-l|--longoptions][33;23;22;24;25m file: -- --file=somefile[0m
+[0m
+ - [0m[32;23;22;24;25mAdd a --verbose option with an optional argument with shorthand -v, and pass a non-option parameter arg:
+   [33;23;22;24;25mgetopt [0m[-o|--options][33;23;22;24;25m v:: [0m[-l|--longoptions][33;23;22;24;25m verbose:: -- --verbose arg[0m
+[0m
+ - [0m[32;23;22;24;25mAccept a -r and --verbose flag, a --accept option with an optional argument and add a --target with a required argument option with shorthands:
+   [33;23;22;24;25mgetopt [0m[-o|--options][33;23;22;24;25m rv::s::t: [0m[-l|--longoptions][33;23;22;24;25m verbose,source::,target: -- -v --target target[0m
+[0m[0m

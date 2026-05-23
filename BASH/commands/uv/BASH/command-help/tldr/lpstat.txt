@@ -1,0 +1,17 @@
+lpstat
+
+[0m[0mShow status information about printers.
+More information: https://manned.org/lpstat.
+
+ - [0m[32;23;22;24;25mList printers present on the machine and whether they are enabled for printing:
+   [33;23;22;24;25mlpstat -p[0m
+[0m
+ - [0m[32;23;22;24;25mShow the default printer:
+   [33;23;22;24;25mlpstat -d[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay all available status information:
+   [33;23;22;24;25mlpstat -t[0m
+[0m
+ - [0m[32;23;22;24;25mList print jobs queued by a specific user:
+   [33;23;22;24;25mlpstat -u [0muser
+[0m[0m

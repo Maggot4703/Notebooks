@@ -1,0 +1,6 @@
+#MAIN PLACE TO START Website
+#file:/home/me/Notebooks/0101/0101/src/public_html/0101.html
+## information
+Web-site basics to show Traveller rpg game information designed by - myself (a.k.a. me, Mark)
+## goals
+this is where the next jobs are described

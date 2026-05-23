@@ -1,0 +1,48 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/bundler2.7
+Bundler commands:
+  bundler2.7 add GEM VERSION         # Add gem to Gemfile and run bundle install
+  bundler2.7 binstubs GEM [OPTIONS]  # Install the binstubs of the listed gem
+  bundler2.7 cache [OPTIONS]         # Locks and then caches all of the gems into vendor/cache
+  bundler2.7 check [OPTIONS]         # Checks if the dependencies listed in Gemfile are satisfied by currently...
+  bundler2.7 config NAME [VALUE]     # Retrieve or set a configuration value
+  bundler2.7 config get NAME         # Returns the value for the given key
+  bundler2.7 config help [COMMAND]   # Describe subcommands or one specific subcommand
+  bundler2.7 config list             # List out all configured settings
+  bundler2.7 config set NAME VALUE   # Sets the given value for the given key
+  bundler2.7 config unset NAME       # Unsets the value for the given key
+  bundler2.7 console [GROUP]         # Opens an IRB session with the bundle pre-loaded
+  bundler2.7 doctor [OPTIONS]        # Checks the bundle for common problems
+  bundler2.7 env                     # Print information about the environment Bundler is running under
+  bundler2.7 exec [OPTIONS]          # Run the command in context of the bundle
+  bundler2.7 gem NAME [OPTIONS]      # Creates a skeleton for creating a rubygem
+  bundler2.7 help [COMMAND]          # Describe available commands or one specific command
+  bundler2.7 info GEM [OPTIONS]      # Show information for the given gem
+  bundler2.7 init [OPTIONS]          # Generates a Gemfile into the current working directory
+  bundler2.7 install [OPTIONS]       # Install the current environment to the system
+  bundler2.7 issue                   # Learn how to report an issue in Bundler
+  bundler2.7 licenses                # Prints the license of all gems in the bundle
+  bundler2.7 list                    # List all gems in the bundle
+  bundler2.7 lock                    # Creates a lockfile without installing
+  bundler2.7 open GEM                # Opens the source directory of the given bundled gem
+  bundler2.7 outdated GEM [OPTIONS]  # List installed gems with newer versions available
+  bundler2.7 platform [OPTIONS]      # Displays platform compatibility information
+  bundler2.7 plugin                  # Manage the bundler plugins
+  bundler2.7 plugin help [COMMAND]   # Describe subcommands or one specific subcommand
+  bundler2.7 plugin install PLUGINS  # Install the plugin from the source
+  bundler2.7 plugin list             # List the installed plugins and available commands
+  bundler2.7 pristine [GEMS...]      # Restores installed gems to pristine condition
+  bundler2.7 remove [GEM [GEM ...]]  # Removes gems from the Gemfile
+  bundler2.7 show GEM [OPTIONS]      # Shows all gems that are part of the bundle, or the path to a given gem
+  bundler2.7 update [OPTIONS]        # Update the current environment
+  bundler2.7 version                 # Prints the bundler's version information
+
+Options:
+      [--no-color]                 # Disable colorization in output
+  -r, [--retry=NUM]                # Specify the number of times you wish to attempt network commands
+  -V, [--verbose], [--no-verbose]  # Enable verbose output mode
+

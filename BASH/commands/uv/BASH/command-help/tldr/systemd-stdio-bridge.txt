@@ -1,0 +1,18 @@
+systemd-stdio-bridge
+
+[0m[0mImplement a proxy between stdin/stdout and a D-Bus.
+Note: It expects to receive an open connection via stdin/stdout when started, and will create a new connection to the specified bus.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-stdio-bridge.html.
+
+ - [0m[32;23;22;24;25mForward stdin/stdout to the local system bus:
+   [33;23;22;24;25msystemd-stdio-bridge[0m
+[0m
+ - [0m[32;23;22;24;25mForward stdin/stdout to a specific user's D-Bus:
+   [33;23;22;24;25msystemd-stdio-bridge --[0muser
+[0m
+ - [0m[32;23;22;24;25mForward stdin/stdout to the local system bus within a specific container:
+   [33;23;22;24;25msystemd-stdio-bridge [0m[-M|--machine][33;23;22;24;25m [0mmycontainer
+[0m
+ - [0m[32;23;22;24;25mForward stdin/stdout to a custom D-Bus address:
+   [33;23;22;24;25msystemd-stdio-bridge [0m[-p|--bus-path][33;23;22;24;25m unix:path=[0m/custom/dbus/socket
+[0m[0m

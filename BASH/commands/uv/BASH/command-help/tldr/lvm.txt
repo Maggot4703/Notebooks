@@ -1,0 +1,29 @@
+lvm
+
+[0m[0mManage physical volumes, volume groups, and logical volumes using the Logical Volume Manager (LVM) interactive shell.
+More information: https://manned.org/lvm.
+
+ - [0m[32;23;22;24;25mStart the Logical Volume Manager interactive shell:
+   [33;23;22;24;25msudo lvm[0m
+[0m
+ - [0m[32;23;22;24;25mInitialize a drive or partition to be used as a physical volume:
+   [33;23;22;24;25msudo lvm pvcreate [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mDisplay information about physical volumes:
+   [33;23;22;24;25msudo lvm pvdisplay[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a volume group called vg1 from the physical volume on /dev/sdXY:
+   [33;23;22;24;25msudo lvm vgcreate [0mvg1[33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mDisplay information about volume groups:
+   [33;23;22;24;25msudo lvm vgdisplay[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a logical volume with size 10G from volume group vg1:
+   [33;23;22;24;25msudo lvm lvcreate [0m[-L|--size][33;23;22;24;25m [0m10G[33;23;22;24;25m [0mvg1
+[0m
+ - [0m[32;23;22;24;25mDisplay information about logical volumes:
+   [33;23;22;24;25msudo lvm lvdisplay[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help for a specific command:
+   [33;23;22;24;25mlvm help [0mcommand
+[0m[0m

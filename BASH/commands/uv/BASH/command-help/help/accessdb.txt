@@ -1,0 +1,10 @@
+Usage: accessdb [OPTION...] [MAN DATABASE]
+
+  -d, --debug                emit debugging messages
+  -?, --help                 give this help list
+      --usage                give a short usage message
+  -V, --version              print program version
+
+The man database defaults to /var/cache/man/index.db.
+
+Report bugs to cjwatson@debian.org.

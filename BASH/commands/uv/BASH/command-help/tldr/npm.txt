@@ -1,0 +1,30 @@
+npm
+
+[0m[0mJavaScript and Node.js package manager.
+Manage Node.js projects and their module dependencies.
+More information: https://docs.npmjs.com/cli/npm.
+
+ - [0m[32;23;22;24;25mCreate a package.json file with default values (omit --yes to do it interactively):
+   [33;23;22;24;25mnpm init [0m[-y|--yes]
+[0m
+ - [0m[32;23;22;24;25mDownload all the packages listed as dependencies in package.json:
+   [33;23;22;24;25mnpm [0m[i|install]
+[0m
+ - [0m[32;23;22;24;25mDownload a specific version of a package and add it to the list of dependencies in package.json:
+   [33;23;22;24;25mnpm [0m[i|install][33;23;22;24;25m [0mpackage_name[33;23;22;24;25m@[0mversion
+[0m
+ - [0m[32;23;22;24;25mDownload the latest version of a package and add it to the list of dev dependencies in package.json:
+   [33;23;22;24;25mnpm [0m[i|install][33;23;22;24;25m [0mpackage_name[33;23;22;24;25m [0m[-D|--save-dev]
+[0m
+ - [0m[32;23;22;24;25mDownload the latest version of a package and install it globally:
+   [33;23;22;24;25mnpm [0m[i|install][33;23;22;24;25m [0m[-g|--global][33;23;22;24;25m [0mpackage_name
+[0m
+ - [0m[32;23;22;24;25mUninstall a package and remove it from the list of dependencies in package.json:
+   [33;23;22;24;25mnpm [0m[r|uninstall][33;23;22;24;25m [0mpackage_name
+[0m
+ - [0m[32;23;22;24;25mList all locally installed dependencies:
+   [33;23;22;24;25mnpm [0m[ls|list]
+[0m
+ - [0m[32;23;22;24;25mList all top-level globally installed packages:
+   [33;23;22;24;25mnpm [0m[ls|list][33;23;22;24;25m [0m[-g|--global][33;23;22;24;25m --depth [0m0
+[0m[0m

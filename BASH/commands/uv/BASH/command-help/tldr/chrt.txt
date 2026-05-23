@@ -1,0 +1,20 @@
+chrt
+
+[0m[0mManipulate the real-time attributes of a process.
+More information: https://manned.org/chrt.
+
+ - [0m[32;23;22;24;25mDisplay attributes of a process:
+   [33;23;22;24;25mchrt [0m[-p|--pid][33;23;22;24;25m [0mPID
+[0m
+ - [0m[32;23;22;24;25mDisplay attributes of all threads of a process:
+   [33;23;22;24;25mchrt [0m[-a|--all-tasks][33;23;22;24;25m [0m[-p|--pid][33;23;22;24;25m [0mPID
+[0m
+ - [0m[32;23;22;24;25mDisplay the min/max priority values that can be used with chrt:
+   [33;23;22;24;25mchrt [0m[-m|--max]
+[0m
+ - [0m[32;23;22;24;25mSet the scheduling priority of a process:
+   [33;23;22;24;25mchrt [0m[-p|--pid][33;23;22;24;25m [0mpriority[33;23;22;24;25m [0mPID
+[0m
+ - [0m[32;23;22;24;25mSet the scheduling policy of a process:
+   [33;23;22;24;25mchrt --[0mdeadline|idle|batch|rr|fifo|other[33;23;22;24;25m [0m[-p|--pid][33;23;22;24;25m [0mpriority[33;23;22;24;25m [0mPID
+[0m[0m

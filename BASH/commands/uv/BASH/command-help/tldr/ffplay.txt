@@ -1,0 +1,20 @@
+ffplay
+
+[0m[0mA simple and portable media player using the FFmpeg libraries and the SDL library.
+More information: https://ffmpeg.org/ffplay-all.html.
+
+ - [0m[32;23;22;24;25mPlay a media file:
+   [33;23;22;24;25mffplay [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPlay audio from a media file without a GUI:
+   [33;23;22;24;25mffplay -nodisp [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPlay media passed by ffmpeg through stdin:
+   [33;23;22;24;25mffmpeg -i [0mpath/to/file[33;23;22;24;25m -c [0mcopy[33;23;22;24;25m -f [0mmedia_format[33;23;22;24;25m - | ffplay -[0m
+[0m
+ - [0m[32;23;22;24;25mPlay a video and show motion vectors in real time:
+   [33;23;22;24;25mffplay -flags2 +export_mvs -vf codecview=mv=pf+bf+bb [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mShow only video keyframes:
+   [33;23;22;24;25mffplay -vf select="[0meq(pict_type\,PICT_TYPE_I)[33;23;22;24;25m" [0mpath/to/file
+[0m[0m

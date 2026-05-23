@@ -1,0 +1,26 @@
+ping
+
+[0m[0mSend ICMP ECHO_REQUEST packets to network hosts.
+More information: https://manned.org/ping.
+
+ - [0m[32;23;22;24;25mPing host:
+   [33;23;22;24;25mping [0mhost
+[0m
+ - [0m[32;23;22;24;25mPing a host only a specific number of times:
+   [33;23;22;24;25mping -c [0mcount[33;23;22;24;25m [0mhost
+[0m
+ - [0m[32;23;22;24;25mPing host, specifying the interval in seconds between requests (default is 1 second):
+   [33;23;22;24;25mping -i [0mseconds[33;23;22;24;25m [0mhost
+[0m
+ - [0m[32;23;22;24;25mPing host without trying to lookup symbolic names for addresses:
+   [33;23;22;24;25mping -n [0mhost
+[0m
+ - [0m[32;23;22;24;25mPing host and ring the bell when a packet is received (if your terminal supports it):
+   [33;23;22;24;25mping -a [0mhost
+[0m
+ - [0m[32;23;22;24;25mAlso display a message if no response was received:
+   [33;23;22;24;25mping -O [0mhost
+[0m
+ - [0m[32;23;22;24;25mPing a host with specific number of pings, per-packet response timeout (-W), and total time limit (-w) of the entire ping run:
+   [33;23;22;24;25mping -c [0mcount[33;23;22;24;25m -W [0mseconds[33;23;22;24;25m -w [0mseconds[33;23;22;24;25m [0mhost
+[0m[0m

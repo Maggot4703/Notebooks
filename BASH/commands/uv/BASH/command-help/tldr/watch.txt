@@ -1,0 +1,23 @@
+watch
+
+[0m[0mExecute a program periodically and monitor the output in full-screen mode.
+More information: https://manned.org/watch.
+
+ - [0m[32;23;22;24;25mRepeatedly run a command and show the result:
+   [33;23;22;24;25mwatch [0mcommand
+[0m
+ - [0m[32;23;22;24;25mRe-run a command every 60 seconds:
+   [33;23;22;24;25mwatch [0m[-n|--interval][33;23;22;24;25m 60 [0mcommand
+[0m
+ - [0m[32;23;22;24;25mMonitor disk space, highlighting differences as they appear:
+   [33;23;22;24;25mwatch [0m[-d|--differences][33;23;22;24;25m df[0m
+[0m
+ - [0m[32;23;22;24;25mRepeatedly run a pipeline and show the result:
+   [33;23;22;24;25mwatch "[0mcommand1[33;23;22;24;25m | [0mcommand2[33;23;22;24;25m | [0mcommand3[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mExit watch if the visible output changes:
+   [33;23;22;24;25mwatch [0m[-g|--chgexit][33;23;22;24;25m [0mlsblk
+[0m
+ - [0m[32;23;22;24;25mInterpret terminal control characters:
+   [33;23;22;24;25mwatch [0m[-c|--color][33;23;22;24;25m [0mls --color=always
+[0m[0m

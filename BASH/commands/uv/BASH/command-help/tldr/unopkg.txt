@@ -1,0 +1,25 @@
+unopkg
+
+[0m[0mLibreOffice extensions manager.
+Download extensions from https://extensions.libreoffice.org.
+See also: libreoffice.
+More information: https://manned.org/unopkg.
+
+ - [0m[32;23;22;24;25mAdd and deploy given extension:
+   [33;23;22;24;25munopkg add [0mpath/to/extension
+[0m
+ - [0m[32;23;22;24;25mRemove extension:
+   [33;23;22;24;25munopkg remove [0mextensions_id
+[0m
+ - [0m[32;23;22;24;25mDisplay information about deployed extensions:
+   [33;23;22;24;25munopkg list[0m
+[0m
+ - [0m[32;23;22;24;25mRaise extensions dialog (GUI):
+   [33;23;22;24;25munopkg gui[0m
+[0m
+ - [0m[32;23;22;24;25mReinstall all deployed extensions:
+   [33;23;22;24;25munopkg reinstall[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25munopkg [0m[-h|--help]
+[0m[0m

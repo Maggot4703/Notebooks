@@ -1,0 +1,26 @@
+nc
+
+[0m[0mRedirect I/O into a network stream through this versatile tool.
+More information: https://manned.org/nc.
+
+ - [0m[32;23;22;24;25mStart a listener on the specified TCP port and send a file into it:
+   [33;23;22;24;25mnc -l -p [0mport[33;23;22;24;25m < [0mfilename
+[0m
+ - [0m[32;23;22;24;25mConnect to a target listener on the specified port and receive a file from it:
+   [33;23;22;24;25mnc [0mhost[33;23;22;24;25m [0mport[33;23;22;24;25m > [0mreceived_filename
+[0m
+ - [0m[32;23;22;24;25mScan the open TCP ports of a specified host:
+   [33;23;22;24;25mnc -v -z -w [0mtimeout_in_seconds[33;23;22;24;25m [0mhost[33;23;22;24;25m [0mstart_port[33;23;22;24;25m-[0mend_port
+[0m
+ - [0m[32;23;22;24;25mStart a listener on the specified TCP port and provide your local shell access to the connected party (this is dangerous and can be abused):
+   [33;23;22;24;25mnc -l -p [0mport[33;23;22;24;25m -e [0mshell_executable
+[0m
+ - [0m[32;23;22;24;25mConnect to a target listener and provide your local shell access to the remote party (this is dangerous and can be abused):
+   [33;23;22;24;25mnc [0mhost[33;23;22;24;25m [0mport[33;23;22;24;25m -e [0mshell_executable
+[0m
+ - [0m[32;23;22;24;25mAct as a proxy and forward data from a local TCP port to the given remote host:
+   [33;23;22;24;25mnc -l -p [0mlocal_port[33;23;22;24;25m | nc [0mhost[33;23;22;24;25m [0mremote_port
+[0m
+ - [0m[32;23;22;24;25mSend an HTTP GET request:
+   [33;23;22;24;25mecho -e "GET / HTTP/1.1\nHost: [0mhost[33;23;22;24;25m\n\n" | nc [0mhost[33;23;22;24;25m 80[0m
+[0m[0m

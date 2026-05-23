@@ -1,0 +1,20 @@
+stl2gts
+
+[0m[0mConvert STL files into the GTS (GNU triangulated surface library) file format.
+More information: https://manned.org/stl2gts.
+
+ - [0m[32;23;22;24;25mConvert an STL file to a GTS file:
+   [33;23;22;24;25mstl2gts < [0mpath/to/file.stl[33;23;22;24;25m > [0mpath/to/file.gts
+[0m
+ - [0m[32;23;22;24;25mConvert an STL file to a GTS file and revert face normals:
+   [33;23;22;24;25mstl2gts --revert < [0mpath/to/file.stl[33;23;22;24;25m > [0mpath/to/file.gts
+[0m
+ - [0m[32;23;22;24;25mConvert an STL file to a GTS file and do not merge vertices:
+   [33;23;22;24;25mstl2gts --nomerge < [0mpath/to/file.stl[33;23;22;24;25m > [0mpath/to/file.gts
+[0m
+ - [0m[32;23;22;24;25mConvert an STL file to a GTS file and display surface statistics:
+   [33;23;22;24;25mstl2gts --verbose < [0mpath/to/file.stl[33;23;22;24;25m > [0mpath/to/file.gts
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mstl2gts --help[0m
+[0m[0m

@@ -1,0 +1,14 @@
+Hex = 0703
+Name = Indo
+UWP = E434662-6
+Remarks = Ni O:0605
+{Ix} = { -3 }
+(Ex) = (851-5)
+[Cx] = [2312]
+N = -
+B = -
+Z = -
+PBG = 320
+W = 11
+A = NaHu
+Stellar = F6 V

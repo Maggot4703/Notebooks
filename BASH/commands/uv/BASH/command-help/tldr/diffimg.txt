@@ -1,0 +1,9 @@
+diffimg
+
+[0m[0mCalculate intersection between two images.
+Note: The supported extensions are .png, .gif, .jpg, .ps.
+More information: https://manned.org/diffimg.
+
+ - [0m[32;23;22;24;25mCalculate the intersection between images and output an image where each pixel is the difference between corresponding pixels in input images:
+   [33;23;22;24;25mdiffimg [0mpath/to/input_image1.ext[33;23;22;24;25m [0mpath/to/input_image2.ext[33;23;22;24;25m [0mpath/to/output_image.ext
+[0m[0m

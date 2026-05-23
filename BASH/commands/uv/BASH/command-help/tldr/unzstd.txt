@@ -1,0 +1,7 @@
+unzstd
+
+[0m[0mThis command is an alias of zstd --decompress.
+
+ - [0m[32;23;22;24;25mView documentation for the original command:
+   [33;23;22;24;25mtldr zstd[0m
+[0m[0m

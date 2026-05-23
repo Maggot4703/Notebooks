@@ -1,0 +1,8 @@
+# skills/batch-ocr-counters/USAGE.txt
+Batch OCR all 200x100px counters in every PDF in a directory using the ocr-pic skill.
+
+Example:
+
+    python batch_ocr_counters.py --input-dir PDFs/ --output-dir OCR/
+
+See SKILL.md for full documentation.

@@ -1,0 +1,13 @@
+cupsaccept
+
+[0m[0mAccept jobs sent to destinations.
+Note: Destination is referred as a printer or a class of printers.
+See also: cupsreject, cupsenable, cupsdisable, lpstat.
+More information: https://www.cups.org/doc/man-cupsaccept.html.
+
+ - [0m[32;23;22;24;25mAccept print jobs to the specified destinations:
+   [33;23;22;24;25mcupsaccept [0mdestination1 destination2 ...
+[0m
+ - [0m[32;23;22;24;25mSpecify a different server:
+   [33;23;22;24;25mcupsaccept -h [0mserver[33;23;22;24;25m [0mdestination1 destination2 ...
+[0m[0m

@@ -1,0 +1,20 @@
+sysctl
+
+[0m[0mList and change kernel runtime variables.
+More information: https://manned.org/sysctl.8.
+
+ - [0m[32;23;22;24;25mShow all available variables and their values:
+   [33;23;22;24;25msysctl [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mSet a changeable kernel state variable:
+   [33;23;22;24;25msysctl [0m[-w|--write][33;23;22;24;25m [0msection.tunable[33;23;22;24;25m=[0mvalue
+[0m
+ - [0m[32;23;22;24;25mGet currently open file handlers:
+   [33;23;22;24;25msysctl fs.file-nr[0m
+[0m
+ - [0m[32;23;22;24;25mGet limit for simultaneous open files:
+   [33;23;22;24;25msysctl fs.file-max[0m
+[0m
+ - [0m[32;23;22;24;25mApply changes from /etc/sysctl.conf:
+   [33;23;22;24;25msysctl [0m[-p|--load]
+[0m[0m

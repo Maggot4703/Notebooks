@@ -1,0 +1,15 @@
+fallocate
+
+[0m[0mReserve or deallocate disk space to files.
+The utility allocates space without zeroing.
+More information: https://manned.org/fallocate.
+
+ - [0m[32;23;22;24;25mReserve a file taking up 700 MiB of disk space:
+   [33;23;22;24;25mfallocate [0m[-l|--length][33;23;22;24;25m [0m700M[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mShrink an already allocated file by 200 MiB:
+   [33;23;22;24;25mfallocate [0m[-c|--collapse-range][33;23;22;24;25m [0m[-l|--length][33;23;22;24;25m [0m200M[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mShrink 20 MB of space after 100 MiB in a file:
+   [33;23;22;24;25mfallocate [0m[-c|--collapse-range][33;23;22;24;25m [0m[-o|--offset][33;23;22;24;25m [0m100M[33;23;22;24;25m [0m[-l|--length][33;23;22;24;25m [0m20M[33;23;22;24;25m [0mpath/to/file
+[0m[0m

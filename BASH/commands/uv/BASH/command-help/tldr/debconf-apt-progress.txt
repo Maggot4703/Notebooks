@@ -1,0 +1,1 @@
+No tldr entry for debconf-apt-progress

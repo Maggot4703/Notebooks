@@ -1,0 +1,18 @@
+wodim
+
+[0m[0mCommand (aliased as cdrecord on some systems) for recording data to CDs or DVDs.
+Some invocations of wodim can cause destructive actions, such as erasing all the data on a disc.
+More information: https://manned.org/wodim.
+
+ - [0m[32;23;22;24;25mDisplay optical drives available to wodim:
+   [33;23;22;24;25mwodim --devices[0m
+[0m
+ - [0m[32;23;22;24;25mRecord ("burn") an audio-only disc:
+   [33;23;22;24;25mwodim dev=[0m/dev/optical_drive[33;23;22;24;25m -audio [0mtrack*.cdaudio
+[0m
+ - [0m[32;23;22;24;25mBurn a file to a disc, ejecting the disc once done (some recorders require this):
+   [33;23;22;24;25mwodim -eject dev=[0m/dev/optical_drive[33;23;22;24;25m -data [0mfile.iso
+[0m
+ - [0m[32;23;22;24;25mBurn a file to the disc in an optical drive, potentially writing to multiple discs in succession:
+   [33;23;22;24;25mwodim -tao dev=[0m/dev/optical_drive[33;23;22;24;25m -data [0mfile.iso
+[0m[0m

@@ -1,0 +1,17 @@
+jar
+
+[0m[0mJava applications/libraries packager.
+More information: https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html.
+
+ - [0m[32;23;22;24;25mRecursively archive all files in the current directory into a .jar file:
+   [33;23;22;24;25mjar cf [0mfile.jar[33;23;22;24;25m *[0m
+[0m
+ - [0m[32;23;22;24;25mUnzip .jar/.war file to the current directory:
+   [33;23;22;24;25mjar -xvf [0mfile.jar
+[0m
+ - [0m[32;23;22;24;25mList a .jar/.war file content:
+   [33;23;22;24;25mjar tf [0mpath/to/file.jar
+[0m
+ - [0m[32;23;22;24;25mList a .jar/.war file content with verbose output:
+   [33;23;22;24;25mjar tvf [0mpath/to/file.jar
+[0m[0m

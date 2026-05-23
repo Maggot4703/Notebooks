@@ -1,0 +1,17 @@
+xprop
+
+[0m[0mDisplay window and font properties in an X server.
+More information: https://manned.org/xprop.
+
+ - [0m[32;23;22;24;25mDisplay the name of the root window:
+   [33;23;22;24;25mxprop -root WM_NAME[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the window manager hints for a window:
+   [33;23;22;24;25mxprop -name "[0mwindow_name[33;23;22;24;25m" WM_HINTS[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the point size of a font:
+   [33;23;22;24;25mxprop -font "[0mfont_name[33;23;22;24;25m" POINT_SIZE[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay all the properties of the window with the ID 0x200007:
+   [33;23;22;24;25mxprop -id [0m0x200007
+[0m[0m

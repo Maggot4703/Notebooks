@@ -1,0 +1,15 @@
+sccmap
+
+[0m[0mExtract strongly connected components of directed graphs.
+Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten.
+More information: https://www.graphviz.org/pdf/sccmap.1.pdf.
+
+ - [0m[32;23;22;24;25mExtract strongly connected components of one or more directed graphs:
+   [33;23;22;24;25msccmap -S [0mpath/to/input1.gv path/to/input2.gv ...[33;23;22;24;25m > [0mpath/to/output.gv
+[0m
+ - [0m[32;23;22;24;25mPrint statistics about a graph, producing no output graph:
+   [33;23;22;24;25msccmap -v -s [0mpath/to/input1.gv path/to/input2.gv ...
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25msccmap -?[0m
+[0m[0m

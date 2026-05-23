@@ -1,0 +1,15 @@
+luajit
+
+[0m[0mA just-in-time compiler (JIT) for the Lua programming language.
+See also: lua.
+More information: https://luajit.org/luajit.html.
+
+ - [0m[32;23;22;24;25mStart an interactive Lua shell:
+   [33;23;22;24;25mluajit[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a Lua script:
+   [33;23;22;24;25mluajit [0mpath/to/script.lua[33;23;22;24;25m [0m--optional-argument
+[0m
+ - [0m[32;23;22;24;25mExecute a Lua expression:
+   [33;23;22;24;25mluajit -e '[0mprint("Hello World")[33;23;22;24;25m'[0m
+[0m[0m

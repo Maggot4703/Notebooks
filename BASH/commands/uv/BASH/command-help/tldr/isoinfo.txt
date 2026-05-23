@@ -1,0 +1,14 @@
+isoinfo
+
+[0m[0mUtility programs for dumping and verifying ISO disk images.
+More information: https://manned.org/isoinfo.
+
+ - [0m[32;23;22;24;25mList all the files included in an ISO image:
+   [33;23;22;24;25misoinfo -f -i [0mpath/to/image.iso
+[0m
+ - [0m[32;23;22;24;25mE[x]tract a specific file from an ISO image and send it out stdout:
+   [33;23;22;24;25misoinfo -i [0mpath/to/image.iso[33;23;22;24;25m -x [0m/PATH/TO/FILE/INSIDE/ISO.EXT
+[0m
+ - [0m[32;23;22;24;25mShow header information for an ISO disk image:
+   [33;23;22;24;25misoinfo -d -i [0mpath/to/image.iso
+[0m[0m

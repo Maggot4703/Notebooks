@@ -1,0 +1,11 @@
+zic
+
+[0m[0mCompile timezones into binary files.
+More information: https://manned.org/zic.
+
+ - [0m[32;23;22;24;25mCompile a timezone file from a directory:
+   [33;23;22;24;25mzic -d [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mReport warnings during compilation of a specific file:
+   [33;23;22;24;25mzic -v [0mpath/to/file[33;23;22;24;25m.infile[0m
+[0m[0m

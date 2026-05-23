@@ -1,0 +1,11 @@
+manpath
+
+[0m[0mDetermine the search path for manual pages.
+More information: https://manned.org/manpath.
+
+ - [0m[32;23;22;24;25mDisplay the search path used to find man pages:
+   [33;23;22;24;25mmanpath[0m
+[0m
+ - [0m[32;23;22;24;25mShow the entire global manpath:
+   [33;23;22;24;25mmanpath [0m[-g|--global]
+[0m[0m

@@ -1,0 +1,17 @@
+pidof
+
+[0m[0mGet the ID of a process using its name.
+More information: https://manned.org/pidof.
+
+ - [0m[32;23;22;24;25mList all process IDs with given name:
+   [33;23;22;24;25mpidof [0mbash
+[0m
+ - [0m[32;23;22;24;25mList a single process ID with given name:
+   [33;23;22;24;25mpidof -s [0mbash
+[0m
+ - [0m[32;23;22;24;25mList process IDs including scripts with given name:
+   [33;23;22;24;25mpidof -x [0mscript.py
+[0m
+ - [0m[32;23;22;24;25mKill all processes with given name:
+   [33;23;22;24;25mkill $(pidof [0mname[33;23;22;24;25m)[0m
+[0m[0m

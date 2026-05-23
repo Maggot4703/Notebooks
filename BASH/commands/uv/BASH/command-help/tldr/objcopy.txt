@@ -1,0 +1,20 @@
+objcopy
+
+[0m[0mCopy the contents of an object file to another file.
+More information: https://manned.org/objcopy.
+
+ - [0m[32;23;22;24;25mCopy data to another file:
+   [33;23;22;24;25mobjcopy [0mpath/to/source_file[33;23;22;24;25m [0mpath/to/target_file
+[0m
+ - [0m[32;23;22;24;25mTranslate object files from one format to another:
+   [33;23;22;24;25mobjcopy --input-target=[0minput_format[33;23;22;24;25m --output-target [0moutput_format[33;23;22;24;25m [0mpath/to/source_file[33;23;22;24;25m [0mpath/to/target_file
+[0m
+ - [0m[32;23;22;24;25mStrip all symbol information from the file:
+   [33;23;22;24;25mobjcopy --strip-all [0mpath/to/source_file[33;23;22;24;25m [0mpath/to/target_file
+[0m
+ - [0m[32;23;22;24;25mStrip debugging information from the file:
+   [33;23;22;24;25mobjcopy --strip-debug [0mpath/to/source_file[33;23;22;24;25m [0mpath/to/target_file
+[0m
+ - [0m[32;23;22;24;25mCopy a specific section from the source file to the destination file:
+   [33;23;22;24;25mobjcopy --only-section [0msection[33;23;22;24;25m [0mpath/to/source_file[33;23;22;24;25m [0mpath/to/target_file
+[0m[0m

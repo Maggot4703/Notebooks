@@ -1,0 +1,18 @@
+systemd-sysusers
+
+[0m[0mCreate system users and groups.
+If the config file is not specified, files in the sysusers.d directories are used.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-sysusers.html.
+
+ - [0m[32;23;22;24;25mCreate users and groups from a specific configuration file:
+   [33;23;22;24;25msystemd-sysusers [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mProcess configuration files and print what would be done without actually doing anything:
+   [33;23;22;24;25msystemd-sysusers --dry-run [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint the contents of all configuration files (before each file, its name is printed as a comment):
+   [33;23;22;24;25msystemd-sysusers --cat-config[0m
+[0m
+ - [0m[32;23;22;24;25mCreate users based on files listed in the previous command:
+   [33;23;22;24;25msystemd-sysusers[0m
+[0m[0m

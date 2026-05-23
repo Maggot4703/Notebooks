@@ -1,0 +1,20 @@
+sfdisk
+
+[0m[0mDisplay or manipulate a disk partition table.
+More information: https://manned.org/sfdisk.
+
+ - [0m[32;23;22;24;25mBack up the partition layout to a file:
+   [33;23;22;24;25msudo sfdisk [0m[-d|--dump][33;23;22;24;25m [0mpath/to/device[33;23;22;24;25m > [0mpath/to/file.dump
+[0m
+ - [0m[32;23;22;24;25mRestore a partition layout:
+   [33;23;22;24;25msudo sfdisk [0mpath/to/device[33;23;22;24;25m < [0mpath/to/file.dump
+[0m
+ - [0m[32;23;22;24;25mSet the type of a partition:
+   [33;23;22;24;25msfdisk --part-type [0mpath/to/device[33;23;22;24;25m [0mpartition_number[33;23;22;24;25m [0mswap
+[0m
+ - [0m[32;23;22;24;25mDelete a partition:
+   [33;23;22;24;25msfdisk --delete [0mpath/to/device[33;23;22;24;25m [0mpartition_number
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25msfdisk [0m[-h|--help]
+[0m[0m

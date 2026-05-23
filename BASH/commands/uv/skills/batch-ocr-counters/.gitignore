@@ -1,0 +1,3 @@
+# skills/batch-ocr-counters/.gitignore
+__pycache__/
+*.pyc

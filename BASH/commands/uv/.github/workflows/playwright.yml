@@ -1,0 +1,64 @@
+---
+name: Playwright E2E
+'on': [push, pull_request]
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install deps (0101)
+        run: |
+          cd 0101/0101
+          npm ci
+          npx playwright install --with-deps
+      - name: Start server
+        run: |
+          cd 0101/0101
+          # If requirements.txt exists, install dependencies
+          if [ -f requirements.txt ]; then
+            python -m pip install --upgrade pip
+            python -m pip install -r requirements.txt
+          fi
+          nohup python -u src/public_html/server.py > server.log 2>&1 &
+          echo "started server pid: $!" || true
+          # Wait for server to become responsive on /api/ping (30s timeout)
+          attempts=0
+          until curl -sSf http://localhost:8080/api/ping >/dev/null 2>&1; do
+            attempts=$((attempts+1))
+            echo "Waiting for server... ($attempts)"
+            if [ $attempts -ge 30 ]; then
+              echo "Server failed to start; dumping server.log:" >&2
+              sed -n '1,200p' server.log >&2 || true
+              exit 1
+            fi
+            sleep 1
+          done
+          echo "Server is up."
+      - name: Debug info (0101)
+        run: |
+          cd 0101/0101
+          echo "node: $(node -v)"
+          echo "npm: $(npm -v)"
+          echo "npm root: $(npm root)"
+          echo "@playwright/test resolve:"
+          node .github/scripts/check_playwright_resolve.js || true
+          echo "\nls node_modules (top entries):"
+          ls -la node_modules | head -n 200 || true
+          echo "\nls node_modules/.bin (top entries):"
+          ls -la node_modules/.bin | head -n 200 || true
+          echo "\nList @playwright packages:"
+          ls -la node_modules | grep playwright || true
+          echo "\nEnvironment variables containing 'PLAYWRIGHT' or 'PW':"
+          env | grep -i "PLAYWRIGHT\|PW" || true
+      - name: Run Playwright tests (debug)
+        env:
+          DEBUG: pw:api
+        run: |
+          bash .github/scripts/run_playwright.sh

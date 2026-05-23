@@ -1,0 +1,18 @@
+wait
+
+[0m[0mWait for a process to complete before proceeding.
+See also: ps to view information about running processes and waitpid.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-wait.
+
+ - [0m[32;23;22;24;25mWait for a process to finish given its process ID (PID) and return its exit status:
+   [33;23;22;24;25mwait [0mpid
+[0m
+ - [0m[32;23;22;24;25mWait for all processes known to the invoking shell to finish:
+   [33;23;22;24;25mwait[0m
+[0m
+ - [0m[32;23;22;24;25mWait for a job to finish (run jobs to find the job number):
+   [33;23;22;24;25mwait %[0mjob_number
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mwait --help[0m
+[0m[0m

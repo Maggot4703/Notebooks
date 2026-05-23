@@ -1,0 +1,14 @@
+pdfinfo
+
+[0m[0mPortable Document Format (PDF) file information viewer.
+More information: https://www.xpdfreader.com/pdfinfo-man.html.
+
+ - [0m[32;23;22;24;25mPrint PDF file information:
+   [33;23;22;24;25mpdfinfo [0mpath/to/file.pdf
+[0m
+ - [0m[32;23;22;24;25mSpecify user password for PDF file to bypass security restrictions:
+   [33;23;22;24;25mpdfinfo -upw [0mpassword[33;23;22;24;25m [0mpath/to/file.pdf
+[0m
+ - [0m[32;23;22;24;25mSpecify owner password for PDF file to bypass security restrictions:
+   [33;23;22;24;25mpdfinfo -opw [0mpassword[33;23;22;24;25m [0mpath/to/file.pdf
+[0m[0m

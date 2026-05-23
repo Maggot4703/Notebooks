@@ -1,0 +1,14 @@
+Hex = 0304
+Name = Chronor
+UWP = A6369A5-D
+Remarks = Hi Cp
+{Ix} = { 4 }
+(Ex) = (C8G+2)
+[Cx] = [7D3B]
+N = -
+B = KM
+Z = -
+PBG = 810
+W = 5
+A = ZhIN
+Stellar = F8 V

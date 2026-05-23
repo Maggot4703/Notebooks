@@ -1,0 +1,36 @@
+LRF2LRS(1)                          calibre                         LRF2LRS(1)
+
+NAME
+       lrf2lrs - lrf2lrs
+
+          lrf2lrs book.lrf
+
+       Convert an LRF file into an LRS (XML UTF-8 encoded) file
+
+       Whenever  you  pass  arguments to lrf2lrs that have spaces in them, en‐
+       close the arguments in quotation marks. For example:  "/some  path/with
+       spaces"
+
+[OPTIONS]
+       --dont-output-resources
+              Do not save embedded image and font files to disk
+
+       --help, -h
+              show this help message and exit
+
+       --output, -o
+              Output LRS file
+
+       --verbose
+              Be more verbose
+
+       --version
+              show program's version number and exit
+
+AUTHOR
+       Kovid Goyal
+
+COPYRIGHT
+       Kovid Goyal
+
+6.13.0                         February 17, 2023                    LRF2LRS(1)

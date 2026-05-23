@@ -1,0 +1,29 @@
+mypy
+
+[0m[0mType check Python code.
+More information: https://mypy.readthedocs.io/en/stable/running_mypy.html.
+
+ - [0m[32;23;22;24;25mType check a specific file:
+   [33;23;22;24;25mmypy [0mpath/to/file.py
+[0m
+ - [0m[32;23;22;24;25mType check a specific module:
+   [33;23;22;24;25mmypy [0m[-m|--module][33;23;22;24;25m [0mmodule_name
+[0m
+ - [0m[32;23;22;24;25mType check a specific package:
+   [33;23;22;24;25mmypy [0m[-p|--package][33;23;22;24;25m [0mpackage_name
+[0m
+ - [0m[32;23;22;24;25mType check a string of code:
+   [33;23;22;24;25mmypy [0m[-c|--command][33;23;22;24;25m "[0mcode[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mIgnore missing imports:
+   [33;23;22;24;25mmypy --ignore-missing-imports [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mShow detailed error messages:
+   [33;23;22;24;25mmypy [0m[--tb|--show-traceback][33;23;22;24;25m [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mSpecify a custom configuration file:
+   [33;23;22;24;25mmypy --config-file [0mpath/to/config_file
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mmypy [0m[-h|--help]
+[0m[0m

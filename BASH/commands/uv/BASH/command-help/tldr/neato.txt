@@ -1,0 +1,21 @@
+neato
+
+[0m[0mRender an image of a linear undirected network graph from a graphviz file.
+Layouts: dot, neato, twopi, circo, fdp, sfdp, osage & patchwork.
+More information: https://graphviz.org/doc/info/command.html.
+
+ - [0m[32;23;22;24;25mRender a PNG image with a filename based on the input filename and output format (uppercase -O):
+   [33;23;22;24;25mneato -T [0mpng[33;23;22;24;25m -O [0mpath/to/input.gv
+[0m
+ - [0m[32;23;22;24;25mRender a SVG image with the specified output filename (lowercase -o):
+   [33;23;22;24;25mneato -T [0msvg[33;23;22;24;25m -o [0mpath/to/image.svg[33;23;22;24;25m [0mpath/to/input.gv
+[0m
+ - [0m[32;23;22;24;25mRender the output in PS, PDF, SVG, Fig, PNG, GIF, JPEG, JSON, or DOT format:
+   [33;23;22;24;25mneato -T [0mformat[33;23;22;24;25m -O [0mpath/to/input.gv
+[0m
+ - [0m[32;23;22;24;25mRender a GIF image using stdin and stdout:
+   [33;23;22;24;25mecho "{{graph {this -- that} }}" | neato -T [0mgif[33;23;22;24;25m > [0mpath/to/image.gif
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mneato -?[0m
+[0m[0m

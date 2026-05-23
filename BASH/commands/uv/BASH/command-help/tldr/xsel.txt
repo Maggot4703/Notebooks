@@ -1,0 +1,23 @@
+xsel
+
+[0m[0mX11 selection and clipboard manipulation tool.
+More information: https://manned.org/xsel.
+
+ - [0m[32;23;22;24;25mUse a command's output as input of the clipboard (equivalent to <Ctrl c>):
+   [33;23;22;24;25mecho 123 | xsel [0m[-ib|--input --clipboard]
+[0m
+ - [0m[32;23;22;24;25mUse the contents of a file as input of the clipboard:
+   [33;23;22;24;25mcat [0mpath/to/file[33;23;22;24;25m | xsel [0m[-ib|--input --clipboard]
+[0m
+ - [0m[32;23;22;24;25mOutput the clipboard's contents into the terminal (equivalent to <Ctrl v>):
+   [33;23;22;24;25mxsel [0m[-ob|--output --clipboard]
+[0m
+ - [0m[32;23;22;24;25mOutput the clipboard's contents into a file:
+   [33;23;22;24;25mxsel [0m[-ob|--output --clipboard][33;23;22;24;25m > [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mClear the clipboard:
+   [33;23;22;24;25mxsel [0m[-cb|--clear --clipboard]
+[0m
+ - [0m[32;23;22;24;25mOutput the X11 primary selection's contents into the terminal (equivalent to a mouse <MiddleClick>):
+   [33;23;22;24;25mxsel [0m[-op|--output --primary]
+[0m[0m

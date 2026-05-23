@@ -1,0 +1,25 @@
+virt-xml
+
+[0m[0mEdit libvirt Domain XML files with explicit command-line options.
+Note: 'domain' refers to the name, UUID or ID for the existing VMs.
+See also: virsh.
+More information: https://github.com/virt-manager/virt-manager/blob/main/man/virt-xml.rst.
+
+ - [0m[32;23;22;24;25mList all the suboptions for a specific option:
+   [33;23;22;24;25mvirt-xml --[0moption[33;23;22;24;25m=?[0m
+[0m
+ - [0m[32;23;22;24;25mList all the suboptions for disk, network, and boot:
+   [33;23;22;24;25mvirt-xml --disk=? --network=? --boot=?[0m
+[0m
+ - [0m[32;23;22;24;25mEdit a value for a specific domain:
+   [33;23;22;24;25mvirt-xml [0mdomain[33;23;22;24;25m --edit --[0moption[33;23;22;24;25m [0msuboption[33;23;22;24;25m=[0mnew_value
+[0m
+ - [0m[32;23;22;24;25mChange the description for a specific domain:
+   [33;23;22;24;25mvirt-xml [0mdomain[33;23;22;24;25m --edit --metadata description="[0mnew_description[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mEnable/Disable the boot device menu for a specific domain:
+   [33;23;22;24;25mvirt-xml [0mdomain[33;23;22;24;25m --edit --boot bootmenu=[0mon|off
+[0m
+ - [0m[32;23;22;24;25mAttach host USB hub to a running VM (run lsusb to see a list of USB devices with their IDs):
+   [33;23;22;24;25mvirt-xml [0mdomain[33;23;22;24;25m --update --add-device --hostdev [0mbus[33;23;22;24;25m.[0mdevice
+[0m[0m

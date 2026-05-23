@@ -1,0 +1,8 @@
+hostid
+
+[0m[0mPrint the numeric identifier for the current host (not necessarily the IP address).
+More information: https://www.gnu.org/software/coreutils/manual/html_node/hostid-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay the numeric identifier for the current host in hexadecimal:
+   [33;23;22;24;25mhostid[0m
+[0m[0m

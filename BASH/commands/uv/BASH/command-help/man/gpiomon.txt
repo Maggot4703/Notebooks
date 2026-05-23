@@ -1,0 +1,77 @@
+GPIOMON(1)                       User Commands                      GPIOMON(1)
+
+NAME
+       gpiomon - manual page for gpiomon v1.6.3
+
+SYNOPSIS
+       gpiomon [OPTIONS] <chip name/number> <offset 1> <offset 2> ...
+
+DESCRIPTION
+       Wait for events on GPIO lines and print them to standard output
+
+OPTIONS
+       -h, --help:
+              display this message and exit
+
+       -v, --version:
+              display the version and exit
+
+       -l, --active-low:
+              set the line active state to low
+
+       -B, --bias=[as-is|disable|pull-down|pull-up] (defaults to 'as-is'):
+
+              set the line bias
+
+       -n, --num-events=NUM: exit after processing NUM events
+
+       -s, --silent:
+              don't print event info
+
+       -r, --rising-edge:
+              only process rising edge events
+
+       -f, --falling-edge:
+              only process falling edge events
+
+       -b, --line-buffered:
+              set standard output as line buffered
+
+       -F, --format=FMT
+              specify custom output format
+
+   Biases:
+       as-is: leave bias unchanged
+
+       disable:
+              disable bias
+
+       pull-up:
+              enable pull-up
+
+       pull-down:
+              enable pull-down
+
+   Format specifiers:
+       %o:    GPIO line offset
+
+       %e:    event type (0 - falling edge, 1 rising edge)
+
+       %s:    seconds part of the event timestamp
+
+       %n:    nanoseconds part of the event timestamp
+
+AUTHOR
+       Bartosz Golaszewski <bartekgola@gmail.com>
+
+REPORTING BUGS
+       Report bugs to:
+           Bartosz Golaszewski <bartekgola@gmail.com>
+           linux-gpio <linux-gpio@vger.kernel.org>
+
+COPYRIGHT
+       Copyright © 2017-2018 Bartosz Golaszewski License: LGPLv2.1
+       This  is  free  software:  you  are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
+
+libgpiod v1.6.3                  January 2023                       GPIOMON(1)

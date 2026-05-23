@@ -1,0 +1,12 @@
+lvremove
+
+[0m[0mRemove logical volumes.
+See also: lvm.
+More information: https://manned.org/lvremove.
+
+ - [0m[32;23;22;24;25mRemove a logical volume in a volume group:
+   [33;23;22;24;25msudo lvremove [0mvolume_group[33;23;22;24;25m/[0mlogical_volume
+[0m
+ - [0m[32;23;22;24;25mRemove all logical volumes in a volume group:
+   [33;23;22;24;25msudo lvremove [0mvolume_group
+[0m[0m

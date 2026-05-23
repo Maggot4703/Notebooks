@@ -1,0 +1,23 @@
+openocd
+
+[0m[0mDebug and program embedded systems with OpenOCD.
+More information: https://manned.org/openocd.
+
+ - [0m[32;23;22;24;25mAttach OpenOCD session to a board with a configuration file:
+   [33;23;22;24;25mopenocd [0m[-f|--file][33;23;22;24;25m [0mconfig_file.cfg
+[0m
+ - [0m[32;23;22;24;25mAttach OpenOCD session to a board with multiple configuration files:
+   [33;23;22;24;25mopenocd [0m[-f|--file][33;23;22;24;25m [0mconfig_file1.cfg[33;23;22;24;25m [0m[-f|--file][33;23;22;24;25m [0mconfig_file2.cfg
+[0m
+ - [0m[32;23;22;24;25mAttach OpenOCD session to a board with configuration files and a list of commands to be executed on server startup:
+   [33;23;22;24;25mopenocd [0m[-f|--file][33;23;22;24;25m [0mconfig_file.cfg[33;23;22;24;25m [0m[-c|--command][33;23;22;24;25m "[0mcommand[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mUse configuration files in the specified path:
+   [33;23;22;24;25mopenocd [0m[-s|--search][33;23;22;24;25m [0mpath/to/search[33;23;22;24;25m [0m[-f|--file][33;23;22;24;25m [0mconfig_file.cfg
+[0m
+ - [0m[32;23;22;24;25mAfter OpenOCD startup, connect GDB to OpenOCD default port 3333:
+   [33;23;22;24;25mtarget extended-remote localhost[0m
+[0m
+ - [0m[32;23;22;24;25mList site-wide script library:
+   [33;23;22;24;25mls /usr/local/share/openocd/scripts[0m
+[0m[0m

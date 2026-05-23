@@ -1,0 +1,20 @@
+pdffonts
+
+[0m[0mPortable Document Format (PDF) file fonts information viewer.
+More information: https://www.xpdfreader.com/pdffonts-man.html.
+
+ - [0m[32;23;22;24;25mPrint PDF file fonts information:
+   [33;23;22;24;25mpdffonts [0mpath/to/file.pdf
+[0m
+ - [0m[32;23;22;24;25mSpecify user password for PDF file to bypass security restrictions:
+   [33;23;22;24;25mpdffonts -upw [0mpassword[33;23;22;24;25m [0mpath/to/file.pdf
+[0m
+ - [0m[32;23;22;24;25mSpecify owner password for PDF file to bypass security restrictions:
+   [33;23;22;24;25mpdffonts -opw [0mpassword[33;23;22;24;25m [0mpath/to/file.pdf
+[0m
+ - [0m[32;23;22;24;25mPrint additional information on location of the font that will be used when the PDF file is rasterized:
+   [33;23;22;24;25mpdffonts -loc [0mpath/to/file.pdf
+[0m
+ - [0m[32;23;22;24;25mPrint additional information on location of the font that will be used when the PDF file is converted to PostScript:
+   [33;23;22;24;25mpdffonts -locPS [0mpath/to/file.pdf
+[0m[0m

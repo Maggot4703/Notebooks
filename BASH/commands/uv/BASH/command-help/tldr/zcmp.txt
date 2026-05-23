@@ -1,0 +1,11 @@
+zcmp
+
+[0m[0mCompare compressed files.
+More information: https://manned.org/zcmp.
+
+ - [0m[32;23;22;24;25mInvoke cmp on two files compressed via gzip:
+   [33;23;22;24;25mzcmp [0mpath/to/file1.gz[33;23;22;24;25m [0mpath/to/file2.gz
+[0m
+ - [0m[32;23;22;24;25mCompare a file to its gzipped version (assuming .gz exists already):
+   [33;23;22;24;25mzcmp [0mpath/to/file
+[0m[0m

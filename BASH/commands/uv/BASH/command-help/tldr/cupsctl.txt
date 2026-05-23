@@ -1,0 +1,23 @@
+cupsctl
+
+[0m[0mUpdate or query a server's cupsd.conf.
+More information: https://openprinting.github.io/cups/doc/man-cupsctl.html.
+
+ - [0m[32;23;22;24;25mDisplay the current configuration values:
+   [33;23;22;24;25mcupsctl[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the configuration values of a specific server:
+   [33;23;22;24;25mcupsctl -h [0mserver[:port]
+[0m
+ - [0m[32;23;22;24;25mEnable encryption on the connection to the scheduler:
+   [33;23;22;24;25mcupsctl -E[0m
+[0m
+ - [0m[32;23;22;24;25mEnable or disable debug logging to the error_log file:
+   [33;23;22;24;25mcupsctl [0m--debug-logging|--no-debug-logging
+[0m
+ - [0m[32;23;22;24;25mEnable or disable remote administration:
+   [33;23;22;24;25mcupsctl [0m--remote-admin|--no-remote-admin
+[0m
+ - [0m[32;23;22;24;25mParse the current debug logging state:
+   [33;23;22;24;25mcupsctl | grep '^_debug_logging' | awk -F= '{print $2}'[0m
+[0m[0m

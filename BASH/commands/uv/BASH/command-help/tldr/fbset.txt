@@ -1,0 +1,14 @@
+fbset
+
+[0m[0mShow and modify frame buffer device settings.
+More information: https://manned.org/man/fbset.1.
+
+ - [0m[32;23;22;24;25mShow current framebuffer settings:
+   [33;23;22;24;25msudo fbset [0m[-i|--info]
+[0m
+ - [0m[32;23;22;24;25mSet a framebuffer mode defined in /etc/fb.modes:
+   [33;23;22;24;25msudo fbset "[0m800[33;23;22;24;25mx[0m600[33;23;22;24;25m-[0m60[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mSet an arbitrary framebuffer mode:
+   [33;23;22;24;25msudo fbset [0m[-g|--geometry][33;23;22;24;25m [0mTTY_horizontal[33;23;22;24;25m [0mTTY_vertical[33;23;22;24;25m [0mmonitor_horizontal[33;23;22;24;25m [0mmonitor_vertical[33;23;22;24;25m [0mcolor_depth
+[0m[0m

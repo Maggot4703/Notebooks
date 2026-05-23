@@ -1,0 +1,14 @@
+wdctl
+
+[0m[0mShow the hardware watchdog status.
+More information: https://manned.org/wdctl.
+
+ - [0m[32;23;22;24;25mDisplay the watchdog status:
+   [33;23;22;24;25mwdctl[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the watchdog status in a single line in key-value pairs:
+   [33;23;22;24;25mwdctl [0m[-O|--oneline]
+[0m
+ - [0m[32;23;22;24;25mDisplay only specific watchdog flags (list is driver specific):
+   [33;23;22;24;25mwdctl [0m[-f|--flags][33;23;22;24;25m [0mflag_list
+[0m[0m

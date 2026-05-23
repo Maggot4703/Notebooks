@@ -1,0 +1,14 @@
+update-initramfs
+
+[0m[0mManage initramfs.
+More information: https://manned.org/update-initramfs.
+
+ - [0m[32;23;22;24;25mCreate a new initramfs (use all for all installed kernel versions):
+   [33;23;22;24;25msudo update-initramfs -c -k [0mkernel_version
+[0m
+ - [0m[32;23;22;24;25mUpdate an existing initramfs:
+   [33;23;22;24;25msudo update-initramfs -u[0m
+[0m
+ - [0m[32;23;22;24;25mRemove an existing initramfs (be careful when using all for kernel_version):
+   [33;23;22;24;25msudo update-initramfs -d -k [0mkernel_version
+[0m[0m

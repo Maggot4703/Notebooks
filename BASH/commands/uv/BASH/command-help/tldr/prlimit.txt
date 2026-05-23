@@ -1,0 +1,15 @@
+prlimit
+
+[0m[0mGet or set process resource soft and hard limits.
+Given a process ID and one or more resources, prlimit tries to retrieve and/or modify the limits.
+More information: https://manned.org/prlimit.
+
+ - [0m[32;23;22;24;25mDisplay limit values for all current resources for the running parent process:
+   [33;23;22;24;25mprlimit[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay limit values for all current resources of a specified process:
+   [33;23;22;24;25mprlimit [0m[-p|--pid][33;23;22;24;25m [0mpid_number
+[0m
+ - [0m[32;23;22;24;25mRun a command with a custom number of open files limit:
+   [33;23;22;24;25mprlimit [0m[-n|--nofile=]10[33;23;22;24;25m [0mcommand
+[0m[0m

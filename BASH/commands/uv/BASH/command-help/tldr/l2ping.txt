@@ -1,0 +1,26 @@
+l2ping
+
+[0m[0mSend an L2CAP echo request and receive an answer.
+More information: https://manned.org/l2ping.
+
+ - [0m[32;23;22;24;25mPing a Bluetooth device:
+   [33;23;22;24;25msudo l2ping [0mmac_address
+[0m
+ - [0m[32;23;22;24;25mReverse ping a Bluetooth device:
+   [33;23;22;24;25msudo l2ping -r [0mmac_address
+[0m
+ - [0m[32;23;22;24;25mPing a Bluetooth device from a specified interface:
+   [33;23;22;24;25msudo l2ping -i [0mhci0[33;23;22;24;25m [0mmac_address
+[0m
+ - [0m[32;23;22;24;25mPing Bluetooth device with a specified sized data package:
+   [33;23;22;24;25msudo l2ping -s [0mbyte_count[33;23;22;24;25m [0mmac_address
+[0m
+ - [0m[32;23;22;24;25mPing flood a Bluetooth device:
+   [33;23;22;24;25msudo l2ping -f [0mmac_address
+[0m
+ - [0m[32;23;22;24;25mPing a Bluetooth device a specified amount of times:
+   [33;23;22;24;25msudo l2ping -c [0mamount[33;23;22;24;25m [0mmac_address
+[0m
+ - [0m[32;23;22;24;25mPing a Bluetooth device with a specified delay between requests:
+   [33;23;22;24;25msudo l2ping -d [0mseconds[33;23;22;24;25m [0mmac_address
+[0m[0m

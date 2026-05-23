@@ -1,0 +1,23 @@
+whereis
+
+[0m[0mLocate the binary, source, and manual page files for a command.
+More information: https://manned.org/whereis.
+
+ - [0m[32;23;22;24;25mLocate binary, source and man pages for SSH:
+   [33;23;22;24;25mwhereis [0mssh
+[0m
+ - [0m[32;23;22;24;25mLocate [b]inary and [m]an pages for ls:
+   [33;23;22;24;25mwhereis -bm [0mls
+[0m
+ - [0m[32;23;22;24;25mLocate [s]ource of gcc and [m]an pages for Git:
+   [33;23;22;24;25mwhereis -s [0mgcc[33;23;22;24;25m -m [0mgit
+[0m
+ - [0m[32;23;22;24;25mLocate [b]inaries for gcc in /usr/bin/ only:
+   [33;23;22;24;25mwhereis -b -B [0m/usr/bin/[33;23;22;24;25m -f [0mgcc
+[0m
+ - [0m[32;23;22;24;25mLocate [u]nusual binaries (those that have more or less than one binary on the system):
+   [33;23;22;24;25mwhereis -u *[0m
+[0m
+ - [0m[32;23;22;24;25mLocate binaries that have [u]nusual [m]anual entries (binaries that have more or less than one manual installed):
+   [33;23;22;24;25mwhereis -u -m *[0m
+[0m[0m

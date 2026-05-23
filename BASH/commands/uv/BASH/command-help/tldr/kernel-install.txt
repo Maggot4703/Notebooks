@@ -1,0 +1,14 @@
+kernel-install
+
+[0m[0mAdd and remove kernel and initrd images to and from /boot.
+More information: https://manned.org/kernel-install.8.
+
+ - [0m[32;23;22;24;25mAdd kernel and initramfs images to bootloader partition:
+   [33;23;22;24;25msudo kernel-install add [0mkernel-version[33;23;22;24;25m [0mkernel-image[33;23;22;24;25m [0mpath/to/initrd-file ...
+[0m
+ - [0m[32;23;22;24;25mRemove kernel from the bootloader partition:
+   [33;23;22;24;25msudo kernel-install remove [0mkernel-version
+[0m
+ - [0m[32;23;22;24;25mShow various paths and parameters that have been configured or auto-detected:
+   [33;23;22;24;25msudo kernel-install inspect [0mkernel-image
+[0m[0m

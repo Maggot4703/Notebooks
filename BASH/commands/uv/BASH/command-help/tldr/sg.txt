@@ -1,0 +1,17 @@
+sg
+
+[0m[0mAst-grep is a tool for code structural search, lint, and rewriting.
+More information: https://ast-grep.github.io/guide/introduction.html.
+
+ - [0m[32;23;22;24;25mScan for possible queries using interactive mode:
+   [33;23;22;24;25msg scan --interactive[0m
+[0m
+ - [0m[32;23;22;24;25mRewrite code in the current directory using patterns:
+   [33;23;22;24;25msg run --pattern '[0mfoo[33;23;22;24;25m' --rewrite '[0mbar[33;23;22;24;25m' --lang [0mpython
+[0m
+ - [0m[32;23;22;24;25mVisualize possible changes without applying them:
+   [33;23;22;24;25msg run --pattern '[0museState<number>($A)[33;23;22;24;25m' --rewrite '[0museState($A)[33;23;22;24;25m' --lang [0mtypescript
+[0m
+ - [0m[32;23;22;24;25mOutput results as JSON, extract information using jq and interactively view it using jless:
+   [33;23;22;24;25msg run --pattern '[0mSome($A)[33;23;22;24;25m' --rewrite '[0mNone[33;23;22;24;25m' --json | jq '[0m.[].replacement[33;23;22;24;25m' | jless[0m
+[0m[0m

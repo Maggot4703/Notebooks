@@ -1,0 +1,22 @@
+nmtui
+
+[0m[0mText user interface for controlling NetworkManager.
+Use <ArrowKeys> to navigate, <Enter> to select an option.
+See also: nmcli.
+More information: https://networkmanager.pages.freedesktop.org/NetworkManager/NetworkManager/nmtui.html.
+
+ - [0m[32;23;22;24;25mOpen the user interface:
+   [33;23;22;24;25mnmtui[0m
+[0m
+ - [0m[32;23;22;24;25mList available connections, with the option to activate or deactivate them:
+   [33;23;22;24;25mnmtui connect[0m
+[0m
+ - [0m[32;23;22;24;25mConnect to a given network:
+   [33;23;22;24;25mnmtui connect [0mname|uuid|device|SSID
+[0m
+ - [0m[32;23;22;24;25mEdit/Add/Delete a given network:
+   [33;23;22;24;25mnmtui edit [0mname|id
+[0m
+ - [0m[32;23;22;24;25mSet the system hostname:
+   [33;23;22;24;25mnmtui hostname[0m
+[0m[0m

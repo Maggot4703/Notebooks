@@ -1,0 +1,18 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/gstreamer-codec-install
+Usage:
+  gstreamer-codec-install [OPTION?] Install missing codecs
+
+Help Options:
+  -h, --help                    Show help options
+
+Application Options:
+  --transient-for               The XID of the parent window
+  --desktop-id                  The desktop ID of the calling application
+  --interaction                 Interaction mode specifying which UI elements should be shown
+  --startup-notification-id     The startup notification ID for focus stealing prevention
+

@@ -1,0 +1,11 @@
+chcpu
+
+[0m[0mEnable/disable a system's CPUs.
+More information: https://manned.org/chcpu.
+
+ - [0m[32;23;22;24;25mDisable one or more CPUs by their IDs:
+   [33;23;22;24;25mchcpu [0m[-d|--disable][33;23;22;24;25m [0m1,3
+[0m
+ - [0m[32;23;22;24;25mEnable one or more ranges of CPUs by their IDs:
+   [33;23;22;24;25mchcpu [0m[-e|--enable][33;23;22;24;25m [0m1-3,5-7
+[0m[0m

@@ -1,0 +1,11 @@
+rpicam-raw
+
+[0m[0mCapture a raw video on a Raspberry Pi camera.
+More information: https://www.raspberrypi.com/documentation/computers/camera_software.html#rpicam-raw.
+
+ - [0m[32;23;22;24;25mCapture a video for a specific amount of seconds:
+   [33;23;22;24;25mrpicam-raw [0m[-t|--timeout][33;23;22;24;25m [0m2000[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/file.raw
+[0m
+ - [0m[32;23;22;24;25mChange video dimensions and framerate:
+   [33;23;22;24;25mrpicam-raw [0m[-t|--timeout][33;23;22;24;25m [0m5000[33;23;22;24;25m --width [0m4056[33;23;22;24;25m --height [0m3040[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/file.raw[33;23;22;24;25m --framerate [0m8
+[0m[0m

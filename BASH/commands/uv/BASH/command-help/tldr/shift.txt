@@ -1,0 +1,11 @@
+shift
+
+[0m[0mMove positional parameters.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-shift.
+
+ - [0m[32;23;22;24;25mRemove the first positional parameter:
+   [33;23;22;24;25mshift[0m
+[0m
+ - [0m[32;23;22;24;25mRemove the first n positional parameters:
+   [33;23;22;24;25mshift [0mn
+[0m[0m

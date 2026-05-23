@@ -1,0 +1,1 @@
+No manual entry for wayvnc-generate-keys.sh

@@ -1,0 +1,29 @@
+v4l2-ctl
+
+[0m[0mControl video devices.
+More information: https://manned.org/v4l2-ctl.
+
+ - [0m[32;23;22;24;25mList all video devices:
+   [33;23;22;24;25mv4l2-ctl [0m[-A|--list-devices]
+[0m
+ - [0m[32;23;22;24;25mList supported video formats and resolutions of default video device /dev/video0:
+   [33;23;22;24;25mv4l2-ctl --list-formats-ext[0m
+[0m
+ - [0m[32;23;22;24;25mList supported video formats and resolutions of a specific video device:
+   [33;23;22;24;25mv4l2-ctl --list-formats-ext [0m[-d|--device][33;23;22;24;25m [0mpath/to/video_device
+[0m
+ - [0m[32;23;22;24;25mGet all details of a video device:
+   [33;23;22;24;25mv4l2-ctl --all [0m[-d|--device][33;23;22;24;25m [0mpath/to/video_device
+[0m
+ - [0m[32;23;22;24;25mCapture a JPEG photo with a specific resolution from video device:
+   [33;23;22;24;25mv4l2-ctl [0m[-d|--device][33;23;22;24;25m [0mpath/to/video_device[33;23;22;24;25m --set-fmt-video=width=[0mwidth[33;23;22;24;25m,height=[0mheight[33;23;22;24;25m,pixelformat=MJPG --stream-mmap --stream-to=[0mpath/to/output.jpg[33;23;22;24;25m --stream-count=1[0m
+[0m
+ - [0m[32;23;22;24;25mCapture a raw video stream from video device:
+   [33;23;22;24;25mv4l2-ctl [0m[-d|--device][33;23;22;24;25m [0mpath/to/video_device[33;23;22;24;25m --set-fmt-video=width=[0mwidth[33;23;22;24;25m,height=[0mheight[33;23;22;24;25m,pixelformat=[0mformat[33;23;22;24;25m --stream-mmap --stream-to=[0mpath/to/output[33;23;22;24;25m --stream-count=[0mnumber_of_frames_to_capture
+[0m
+ - [0m[32;23;22;24;25mList all video device's controls and their values:
+   [33;23;22;24;25mv4l2-ctl [0m[-l|--list-ctrls][33;23;22;24;25m [0m[-d|--device][33;23;22;24;25m [0mpath/to/video_device
+[0m
+ - [0m[32;23;22;24;25mSet the value of a video device control:
+   [33;23;22;24;25mv4l2-ctl [0m[-d|--device][33;23;22;24;25m [0mpath/to/video_device[33;23;22;24;25m [0m[-c|--set-ctrl][33;23;22;24;25m [0mcontrol_name[33;23;22;24;25m=[0mvalue
+[0m[0m

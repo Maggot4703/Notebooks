@@ -1,0 +1,29 @@
+blockdev
+
+[0m[0mManage, query, and manipulate block devices.
+More information: https://manned.org/blockdev.
+
+ - [0m[32;23;22;24;25mPrint a report for all devices:
+   [33;23;22;24;25msudo blockdev --report[0m
+[0m
+ - [0m[32;23;22;24;25mPrint a report for a specific device:
+   [33;23;22;24;25msudo blockdev --report [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mGet the size of a device in 512-byte sectors:
+   [33;23;22;24;25msudo blockdev --getsz [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mSet read-only:
+   [33;23;22;24;25msudo blockdev --setro [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mSet read-write:
+   [33;23;22;24;25msudo blockdev --setrw [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mFlush buffers:
+   [33;23;22;24;25msudo blockdev --flushbufs [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mGet the physical block size:
+   [33;23;22;24;25msudo blockdev --getpbsz [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mSet the read-ahead value to 128 sectors:
+   [33;23;22;24;25msudo blockdev --setra 128 [0m/dev/sdXY
+[0m[0m

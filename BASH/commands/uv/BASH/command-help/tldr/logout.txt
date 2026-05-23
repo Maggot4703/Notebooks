@@ -1,0 +1,11 @@
+logout
+
+[0m[0mExit a login shell.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-logout.
+
+ - [0m[32;23;22;24;25mExit a login shell:
+   [33;23;22;24;25mlogout[0m
+[0m
+ - [0m[32;23;22;24;25mExit a login shell and specify a return value:
+   [33;23;22;24;25mlogout [0mexit_code
+[0m[0m

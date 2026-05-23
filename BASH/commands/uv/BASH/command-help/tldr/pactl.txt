@@ -1,0 +1,23 @@
+pactl
+
+[0m[0mControl a running PulseAudio sound server.
+More information: https://manned.org/pactl.
+
+ - [0m[32;23;22;24;25mShow information about the sound server:
+   [33;23;22;24;25mpactl info[0m
+[0m
+ - [0m[32;23;22;24;25mList all sinks (or other types - sinks are outputs and sink-inputs are active audio streams):
+   [33;23;22;24;25mpactl list [0msinks[33;23;22;24;25m short[0m
+[0m
+ - [0m[32;23;22;24;25mChange the default sink (output) to 1 (the number can be retrieved via the list subcommand):
+   [33;23;22;24;25mpactl set-default-sink [0m1
+[0m
+ - [0m[32;23;22;24;25mMove sink-input 627 to sink 1:
+   [33;23;22;24;25mpactl move-sink-input [0m627[33;23;22;24;25m [0m1
+[0m
+ - [0m[32;23;22;24;25mSet the volume of sink 1 to 75%:
+   [33;23;22;24;25mpactl set-sink-volume [0m1[33;23;22;24;25m [0m0.75
+[0m
+ - [0m[32;23;22;24;25mToggle mute on the default sink (using the special name @DEFAULT_SINK@):
+   [33;23;22;24;25mpactl set-sink-mute [0m@DEFAULT_SINK@[33;23;22;24;25m toggle[0m
+[0m[0m

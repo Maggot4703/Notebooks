@@ -1,0 +1,31 @@
+compgen
+
+[0m[0mBash built-in command for generating possible completion matches in Bash.
+Usually used within custom completion functions.
+See also: complete, compopt.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-compgen.
+
+ - [0m[32;23;22;24;25mList all shell built-ins, aliases, functions and executables that you could run:
+   [33;23;22;24;25mcompgen -c[0m
+[0m
+ - [0m[32;23;22;24;25mList all commands that you could run that start with a specified string and save results to COMPREPLY:
+   [33;23;22;24;25mcompgen -V COMPREPLY -c [0mstr
+[0m
+ - [0m[32;23;22;24;25mMatch against a wordlist:
+   [33;23;22;24;25mcompgen -W "[0mapple orange banana[33;23;22;24;25m" [0ma
+[0m
+ - [0m[32;23;22;24;25mList all aliases:
+   [33;23;22;24;25mcompgen -a[0m
+[0m
+ - [0m[32;23;22;24;25mList all functions that you could run:
+   [33;23;22;24;25mcompgen -A function[0m
+[0m
+ - [0m[32;23;22;24;25mShow shell reserved keywords:
+   [33;23;22;24;25mcompgen -k[0m
+[0m
+ - [0m[32;23;22;24;25mSee all available commands/aliases starting with 'ls':
+   [33;23;22;24;25mcompgen -ac [0mls
+[0m
+ - [0m[32;23;22;24;25mList all users on the system:
+   [33;23;22;24;25mcompgen -u[0m
+[0m[0m

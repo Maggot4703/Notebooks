@@ -1,0 +1,20 @@
+systemd-detect-virt
+
+[0m[0mDetect execution in a virtualized environment.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-detect-virt.html.
+
+ - [0m[32;23;22;24;25mList detectable virtualization technologies:
+   [33;23;22;24;25msystemd-detect-virt --list[0m
+[0m
+ - [0m[32;23;22;24;25mDetect virtualization, print the result and return a zero status code when running in a VM or a container, and a non-zero code otherwise:
+   [33;23;22;24;25msystemd-detect-virt[0m
+[0m
+ - [0m[32;23;22;24;25mSilently check without printing anything:
+   [33;23;22;24;25msystemd-detect-virt [0m[-q|--quiet]
+[0m
+ - [0m[32;23;22;24;25mOnly detect container virtualization:
+   [33;23;22;24;25msystemd-detect-virt [0m[-c|--container]
+[0m
+ - [0m[32;23;22;24;25mOnly detect hardware virtualization:
+   [33;23;22;24;25msystemd-detect-virt [0m[-v|--vm]
+[0m[0m

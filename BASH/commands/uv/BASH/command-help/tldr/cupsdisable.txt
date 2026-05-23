@@ -1,0 +1,13 @@
+cupsdisable
+
+[0m[0mStop printers and classes.
+Note: Destination is referred as a printer or a class of printers.
+See also: cupsenable, cupsaccept, cupsreject, lpstat.
+More information: https://openprinting.github.io/cups/doc/man-cupsenable.html.
+
+ - [0m[32;23;22;24;25mStop one or more destination(s):
+   [33;23;22;24;25mcupsdisable [0mdestination1 destination2 ...
+[0m
+ - [0m[32;23;22;24;25mCancel all jobs of the specified destination(s):
+   [33;23;22;24;25mcupsdisable -c [0mdestination1 destination2 ...
+[0m[0m

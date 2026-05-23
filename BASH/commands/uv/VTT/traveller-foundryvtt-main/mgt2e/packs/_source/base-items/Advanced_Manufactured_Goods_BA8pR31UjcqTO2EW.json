@@ -1,0 +1,43 @@
+{
+  "name": "Advanced Manufactured Goods",
+  "type": "cargo",
+  "img": "systems/mgt2e/icons/cargo/advanced_manufactured_goods.svg",
+  "system": {
+    "cargo": {
+      "price": 100000,
+      "availability": "In, HT",
+      "purchaseDM": "In +1",
+      "saleDM": "Hi +1, Ri +2",
+      "tons": "1D6 * 5",
+      "illegal": false,
+      "cost": 100
+    },
+    "description": "<p>Devices and clothing incorporating advanced technologies.</p>",
+    "quantity": 1,
+    "cost": 1000
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "KjVCQnLdKUJeJDZy": 3,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.mongoose-traveller-core.cargo-items.Item.TikkjayYWZFOlkDF",
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mgt2e",
+    "systemVersion": "0.11.6.13-DEV",
+    "createdTime": 1739833676234,
+    "modifiedTime": 1739833676234,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "exportSource": null
+  },
+  "folder": "nTFQBn7eKDifeKFR",
+  "_id": "BA8pR31UjcqTO2EW",
+  "sort": 0,
+  "_key": "!items!BA8pR31UjcqTO2EW"
+}

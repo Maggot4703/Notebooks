@@ -1,0 +1,14 @@
+Hex = 0307
+Name = Atsa
+UWP = B4337CA-A
+Remarks = Na Po An Pz
+{Ix} = { 3 }
+(Ex) = (A6C+5)
+[Cx] = [9A7C]
+N = -
+B = KM
+Z = A
+PBG = 810
+W = 8
+A = ZhIN
+Stellar = F7 V M3 V

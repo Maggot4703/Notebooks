@@ -1,0 +1,27 @@
+bc
+
+[0m[0mAn arbitrary precision calculator language.
+See also: dc, qalc.
+More information: https://manned.org/bc.
+
+ - [0m[32;23;22;24;25mStart an interactive session:
+   [33;23;22;24;25mbc[0m
+[0m
+ - [0m[32;23;22;24;25mStart an interactive session with the standard math library enabled:
+   [33;23;22;24;25mbc [0m[-i|--interactive][33;23;22;24;25m [0m[-l|--mathlib]
+[0m
+ - [0m[32;23;22;24;25mCalculate an expression:
+   [33;23;22;24;25mecho '[0m5 / 3[33;23;22;24;25m' | bc[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a script:
+   [33;23;22;24;25mbc [0mpath/to/script.bc
+[0m
+ - [0m[32;23;22;24;25mCalculate an expression with the specified scale:
+   [33;23;22;24;25mecho 'scale = [0m10[33;23;22;24;25m; [0m5 / 3[33;23;22;24;25m' | bc[0m
+[0m
+ - [0m[32;23;22;24;25mCalculate a sine/cosine/arctangent/natural logarithm/exponential function using mathlib:
+   [33;23;22;24;25mecho '[0ms|c|a|l|e[33;23;22;24;25m([0m1[33;23;22;24;25m)' | bc [0m[-l|--mathlib]
+[0m
+ - [0m[32;23;22;24;25mExecute an inline factorial script:
+   [33;23;22;24;25mecho "define factorial(n) { if (n <= 1) return 1; return n*factorial(n-1); }; factorial([0m10[33;23;22;24;25m)" | bc[0m
+[0m[0m

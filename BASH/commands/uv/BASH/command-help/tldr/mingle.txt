@@ -1,0 +1,15 @@
+mingle
+
+[0m[0mBundle the edges of a graph layout.
+Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten.
+More information: https://www.graphviz.org/pdf/mingle.1.pdf.
+
+ - [0m[32;23;22;24;25mBundle the edges of one or more graph layouts (that already have layout information):
+   [33;23;22;24;25mmingle [0mpath/to/layout1.gv path/to/layout2.gv ...[33;23;22;24;25m > [0mpath/to/output.gv
+[0m
+ - [0m[32;23;22;24;25mPerform layout, bundling, and output to a picture with one command:
+   [33;23;22;24;25mdot [0mpath/to/input.gv[33;23;22;24;25m | mingle | dot -T [0mpng[33;23;22;24;25m > [0mpath/to/output.png
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mmingle -?[0m
+[0m[0m
