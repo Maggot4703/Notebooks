@@ -55,7 +55,7 @@ jobs:
           bash .github/scripts/run_crew_tests_with_coverage.sh
 
       - name: Upload CI artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ci-artifacts
           path: ci-artifacts/**
