@@ -23,11 +23,7 @@ jobs:
 
       - name: Init submodules (if any)
         run: |
-          if [ -f .gitmodules ]; then
-            git submodule sync --recursive || true
-            git submodule update --init --recursive --depth 1 || true
-          fi
-
+          echo "Skipping submodule init in CI to avoid clone failures"
       - name: Black check
         run: |
           # Limit Black to the CREW application and CI helper scripts to avoid scanning large external workspaces
