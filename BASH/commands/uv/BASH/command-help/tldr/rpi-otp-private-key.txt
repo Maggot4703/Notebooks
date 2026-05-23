@@ -1,0 +1,8 @@
+rpi-otp-private-key
+
+[0m[0mDisplay the One-Time Programmable (OTP) private key of a Raspberry Pi.
+More information: https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#program-a-key-into-otp-with-rpi-otp-private-key.
+
+ - [0m[32;23;22;24;25mRead the OTP private key:
+   [33;23;22;24;25mrpi-otp-private-key[0m
+[0m[0m

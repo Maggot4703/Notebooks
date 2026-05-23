@@ -1,0 +1,27 @@
+xzgrep
+
+[0m[0mSearch files possibly compressed with xz, lzma, gzip, bzip2, lzop, or zstd using regex.
+See also: grep.
+More information: https://manned.org/xzgrep.
+
+ - [0m[32;23;22;24;25mSearch for a pattern within a file:
+   [33;23;22;24;25mxzgrep "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for an exact string (disables regex):
+   [33;23;22;24;25mxzgrep [0m[-F|--fixed-strings][33;23;22;24;25m "[0mexact_string[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for a pattern in all files showing line numbers of matches:
+   [33;23;22;24;25mxzgrep [0m[-n|--line-number][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mUse extended regex (supports ?, +, {}, () and |), in case-insensitive mode:
+   [33;23;22;24;25mxzgrep [0m[-E|--extended-regexp][33;23;22;24;25m [0m[-i|--ignore-case][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint 3 lines of [C]ontext around, [B]efore, or [A]fter each match:
+   [33;23;22;24;25mxzgrep --[0mcontext|before-context|after-context[33;23;22;24;25m [0m3[33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint file name and line number for each match with color output:
+   [33;23;22;24;25mxzgrep [0m[-H|--with-filename][33;23;22;24;25m [0m[-n|--line-number][33;23;22;24;25m --color=always "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for lines matching a pattern, printing only the matched text:
+   [33;23;22;24;25mxzgrep [0m[-o|--only-matching][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m[0m

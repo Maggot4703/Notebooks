@@ -1,0 +1,10 @@
+open
+
+[0m[0mopen can refer to multiple commands with the same name.
+
+ - [0m[32;23;22;24;25mView documentation for the command available in macOS:
+   [33;23;22;24;25mtldr open [0m[-p|--platform][33;23;22;24;25m osx[0m
+[0m
+ - [0m[32;23;22;24;25mView documentation for the command available through fish:
+   [33;23;22;24;25mtldr open.fish[0m
+[0m[0m

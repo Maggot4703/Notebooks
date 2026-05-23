@@ -1,0 +1,14 @@
+blkid
+
+[0m[0mList all recognized partitions and their Universally Unique Identifier (UUID).
+More information: https://manned.org/blkid.
+
+ - [0m[32;23;22;24;25mList all partitions:
+   [33;23;22;24;25msudo blkid[0m
+[0m
+ - [0m[32;23;22;24;25mList all partitions in a table, including current mountpoints:
+   [33;23;22;24;25msudo blkid [0m[-o|--output][33;23;22;24;25m list[0m
+[0m
+ - [0m[32;23;22;24;25mGet the UUID of the filesystem on a partition:
+   [33;23;22;24;25msudo blkid [0m[-s|--match-tag][33;23;22;24;25m UUID [0m[-o|--output][33;23;22;24;25m value [0m/dev/sdXY
+[0m[0m

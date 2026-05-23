@@ -1,0 +1,16 @@
+[Unit]
+Description=0101 server
+After=network.target
+
+[Service]
+Type=simple
+# Push saved notes to me@home by default; adjust DESKTOP_PUSH_TARGET as needed
+Environment=DESKTOP_PUSH_TARGET=me@home:~/Desktop/0101_notes/
+WorkingDirectory=/home/me/Notebooks/0101/0101/src/public_html
+ExecStart=/usr/bin/env python3 server.py
+Restart=on-failure
+User=me
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

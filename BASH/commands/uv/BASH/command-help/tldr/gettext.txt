@@ -1,0 +1,16 @@
+gettext
+
+[0m[0mTranslates a string using stored translations in a compiled .mo file.
+Translations are stored in /usr/share/locale/<locale_name>/LC_MESSAGES/ with domain being the filename without its extension.
+See also: msgfmt, msgunfmt.
+More information: https://www.gnu.org/software/gettext/manual/gettext.html#gettext-Invocation.
+
+ - [0m[32;23;22;24;25mGet the translation of a string as specified in the domain file (falls back to given msgid if no translation exists):
+   [33;23;22;24;25mLANGUAGE=[0mlocale[33;23;22;24;25m gettext [0m[-d|--domain][33;23;22;24;25m [0mdomain[33;23;22;24;25m "[0mmsgid[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mgettext [0m[-h|--help]
+[0m
+ - [0m[32;23;22;24;25mDisplay gettext version:
+   [33;23;22;24;25mgettext [0m[-V|--version]
+[0m[0m

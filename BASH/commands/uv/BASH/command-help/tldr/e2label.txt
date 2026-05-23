@@ -1,0 +1,8 @@
+e2label
+
+[0m[0mChange the label on an ext2/ext3/ext4 filesystem.
+More information: https://manned.org/e2label.
+
+ - [0m[32;23;22;24;25mChange the volume label on a specific ext partition:
+   [33;23;22;24;25me2label [0m/dev/sda1[33;23;22;24;25m "[0mlabel_name[33;23;22;24;25m"[0m
+[0m[0m

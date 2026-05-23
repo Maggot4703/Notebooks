@@ -1,0 +1,3684 @@
+
+############################################################
+# A Cronor - Mark Ferguson - page37.txt
+############################################################
+
+# Page 37
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 0304 Chronor
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 0304 Chronor
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 0304 Chronor
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 0705 Cipango
+  Ship Code: C0ut
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 12
+
+############################################################
+# A Cronor - Mark Ferguson - page38.txt
+############################################################
+
+# Page 38
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 0304 Chronor
+  Code: 0003
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 0610 Sheyou
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 13
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 0808 Quar
+  Code: [unreadable - 4-digit code, see PDF]
+  Size: -Company
+  Quality: 1-Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: CF?
+  TF: 1
+  TL: 11
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 0102 Reno
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 13
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 0108 Gyomar
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 2
+  TF: 45
+  TL: 8
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 0304 Chronor
+  Code: 0001
+  Size: 4-Division
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 40
+  TF: 20
+  TL: 13
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 0304 Chronor
+  Code: 0002
+  Size: 4-Division
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 40
+  TF: 20
+  TL: 13
+
+############################################################
+# B Jewell - Mark Ferguson - page35.txt
+############################################################
+
+# Page 35
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 1106 Jewell
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 12
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 1106 Jewell
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 12
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 1102 Riverland
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: TI
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 1102 Riverland
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: TI
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 1102 Riverland
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: TI
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 1103 Clan
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+############################################################
+# B Jewell - Mark Ferguson - page36.txt
+############################################################
+
+# Page 36
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 1102 Riverland
+  Code: 0004
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 10
+  TL: TI
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 1102 Riverland
+  Code: 0005
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 10
+  TL: TI
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 1103 Clan
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 1106 Jewell
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 12
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 1106 Jewell
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 12
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 0904 Chwistyoch
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 13
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 1106 Jewell
+  Code: 0003
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 12
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 1106 Jewell
+  Code: 0004
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 12
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 1102 Riverland
+  Code: 0001
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 10
+  TL: TI
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 1604 Louzy
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 8
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 1102 Riverland
+  Code: 0002
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 10
+  TL: TI
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 1604 Louzy
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 8
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 1102 Riverland
+  Code: 0003
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 10
+  TL: TI
+
+--- R4C1 | MARINE | X19.png ---
+  Unit ID: 1604 Louzy
+  Code: 0005
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 8
+
+############################################################
+# C Regina - Mark Ferguson - page47.txt
+############################################################
+
+# Page 47
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 1910 Regina
+  Ship Code: C001 
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 12
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 2005 Feri
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 11
+
+--- R1C3 | NAVY | X12.png ---
+  Unit ID: 220f ¥Wochiers
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: TI
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 1705 Efate
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 1705 Efate
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 1705 Efate
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 1706 Alell
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+############################################################
+# C Regina - Mark Ferguson - page48.txt
+############################################################
+
+# Page 48
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 1705 Efate
+  Code: 0005
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 1706 Alell
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 1802 Yres
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: &
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 1803 Menorb
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: ?
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 1803 Menorb
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: ?
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 1705 Efate
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 1802 Yres
+  Code: [unreadable - 4-digit code, see PDF]
+  Size: qi
+  Quality: Terms: 0
+  Mobility: UPP: AARAAAA
+  Mobility: AGE: 18:
+  Type: RANK: It
+  CF: m 1
+  TF: 1
+  TL: 4
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 1805 Uakye
+  Code: 4???
+  Size: -Army Group
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: Ointanty
+  CF: 2700
+  TF: 500
+  TL: 13
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 1705 Efate
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 1809 Ruie
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: ?
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 1705 Efate
+  Code: 0003
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 1809 Ruie
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: ?
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 1705 Efate
+  Code: 0004
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R4C1 | MARINE | X19.png ---
+  Unit ID: 1910 Regina
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 12
+
+--- R4C2 | MARINE | X20.png ---
+  Unit ID: 2005 Feri
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 11
+
+--- R4C3 | MARINE | X21.png ---
+  Unit ID: 2007 Roup
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: ?
+
+--- R5C1 | MARINE | X22.png ---
+  Unit ID: 2007 Roup
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: ?
+
+--- R5C2 | MARINE | X23.png ---
+  Unit ID: 2110 Yori
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 13
+
+--- R5C3 | MARINE | X24.png ---
+  Unit ID: 2205 Enope
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: ?
+
+--- R6C1 | MARINE | X25.png ---
+  Unit ID: 2205 Enope
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: ?
+
+--- R6C2 | MARINE | X26.png ---
+  Unit ID: 2207 VWochiers
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 4
+
+--- R6C3 | MARINE | X27.png ---
+  Unit ID: 2306 Shionthy
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 8
+
+--- R7C1 | MARINE | X28.png ---
+  Unit ID: 2408 Rethe
+  Code: 3???
+  Size: -Brigade
+  Quality: Tete
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 40
+  TF: 10
+  TL: R
+
+--- R7C2 | MARINE | X29.png ---
+  Unit ID: 2408 Rethe
+  Code: 0002
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 10
+  TL: 8
+
+--- R7C3 | MARINE | X30.png ---
+  Unit ID: 2408 Rethe
+  Code: 0003
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 10
+  TL: 8
+
+--- R8C1 | MARINE | X31.png ---
+  Unit ID: 2408 Rethe
+  Code: 0004
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 10
+  TL: 8
+
+--- R8C2 | MARINE | X32.png ---
+  Unit ID: 2410 Inthe
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: &
+
+############################################################
+# D Aramis - Mark Ferguson - page39.txt
+############################################################
+
+# Page 39
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 3202 Junidy
+  Code: 0003
+  Size: 6-Corps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 100
+  TF: 50
+  TL: 11
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 3202 Junidy
+  Code: 0004
+  Size: 6-Corps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 100
+  TF: 50
+  TL: 11
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 3202 Junidy
+  Code: 0005
+  Size: 6-Corps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 100
+  TF: 50
+  TL: 11
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 2908 Zila
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: ?
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 3002 Yebab
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 8
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 3202 Junidy
+  Code: 0001
+  Size: 6-Corps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 100
+  TF: 50
+  TL: 11
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 3202 Junidy
+  Code: 0002
+  Size: 6-Corps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 100
+  TF: 50
+  TL: 11
+
+############################################################
+# D Aramis - Mark Ferguson - page40.txt
+############################################################
+
+# Page 40
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 3202 Junidy
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 3202 Junidy
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 3202 Junidy
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 3202 Junidy
+  Ship Code: C004
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+############################################################
+# E Querion - Mark Ferguson - page33.txt
+############################################################
+
+# Page 33
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 0720 Entrope
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 0720 Entrope
+  Ship Code: C004
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 0416 Retinae
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: ?F
+  TL: Ti 4
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 0416 Retinae
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: ?F
+  TL: Ti 4
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 0720 Entrope
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 0720 Entrope
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+############################################################
+# E Querion - Mark Ferguson - page34.txt
+############################################################
+
+# Page 34
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 0416 Retinae
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: TI
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 0614 Querion
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: &
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 0720 Entrope
+  Code: 0001
+  Size: ?-Army Group
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 500
+  TF: 500
+  TL: 11
+
+############################################################
+# F Vilis. - Mark Ferguson - page39.txt
+############################################################
+
+# Page 39
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 1119 ¥ilis
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 1011 Arden
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: Ti 4
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 1011 Arden
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: Ti 4
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 1118 Garda-Vilis
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 1119 ¥ilis
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+############################################################
+# F Vilis. - Mark Ferguson - page40.txt
+############################################################
+
+# Page 40
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 1011 Arden
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: TI
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 1118 Garda-Vilis
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 1119 Vilis
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 1515 Calit
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 5
+  TL: ?
+
+############################################################
+# G Lanth - Mark Ferguson - page39.txt
+############################################################
+
+# Page 39
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 1711 Extolay
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 2417 Fquus
+  Ship Code: C00
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 11
+
+############################################################
+# G Lanth - Mark Ferguson - page40.txt
+############################################################
+
+# Page 40
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 1711 Extolay
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 2311 Treece
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 8
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 2417 POuUs
+  Code: 000?
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 11
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 2420 Skull
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: &
+
+############################################################
+# H Rhylanor - Mark Ferguson - page47.txt
+############################################################
+
+# Page 47
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 2715 Porozlo
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 2715 Porozlo
+  Ship Code: C004
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+--- R1C3 | NAVY | X12.png ---
+  Unit ID: 2/16 Rhylanor
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-4
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 14
+
+--- R2C1 | NAVY | X13.png ---
+  Unit ID: 2716 Bhylanor
+  Ship Code: C00
+  Squadron Type: Cruiser
+  Jump: J-4
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 14
+
+--- R2C2 | NAVY | X14.png ---
+  Unit ID: 2716 Bhylanor
+  Ship Code: C00
+  Squadron Type: Cruiser
+  Jump: J-4
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 14
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 2620 Natoko
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: Ti 4
+
+--- R2C3 | NAVY | X15.png ---
+  Unit ID: 2012 Zivije
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 11
+
+--- R3C1 | NAVY | X16.png ---
+  Unit ID: 2012 Zivije
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 11
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 2620 Natoko
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: Ti 4
+
+--- R3C2 | NAVY | X17.png ---
+  Unit ID: 3216 Bevey
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 2715 Porozlo
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+--- R3C3 | NAVY | X18.png ---
+  Unit ID: 3216 Bevey
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 2715 Porozlo
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 11
+
+############################################################
+# H Rhylanor - Mark Ferguson - page48.txt
+############################################################
+
+# Page 48
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 2715 Porozlo
+  Code: 0003
+  Size: 6-Corps
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 100
+  TF: 50
+  TL: 11
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 2716 Bhylanor
+  Code: 000?
+  Size: = Corns
+  Quality: 1-Elife
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 2700
+  TF: 50
+  TL: 14
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 2716 Bhylanor
+  Code: 000?
+  Size: = Corns
+  Quality: 1-Elife
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 2700
+  TF: 50
+  TL: 14
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 2716 Phylanor
+  Code: 000?
+  Size: 6-Corps
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 100
+  TF: 50
+  TL: 1A
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 2012 Zivije
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 11
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 2620 Natoko
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 4
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 2012 Zivije
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 11
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 2012 Zivije
+  Code: 0003
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 10
+  TF: 5
+  TL: 11
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 2620 Natoko
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 4
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 3216 Bevey
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 10
+  TF: 5
+  TL: 13
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 2715 Porozlo
+  Code: 0001
+  Size: 6-Corps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 2700
+  TF: 50
+  TL: Til 11
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 3216 Bevey
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 10
+  TF: 5
+  TL: 13
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 2715 Porozlo
+  Code: 0002
+  Size: 6-Corps
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 2700
+  TF: 50
+  TL: Til 11
+
+############################################################
+# I Darrian - Mark Ferguson - page43.txt
+############################################################
+
+# Page 43
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 0476 Ilium
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: TI
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 0527 Mire
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 12
+
+--- R1C3 | NAVY | X12.png ---
+  Unit ID: 0527 Mire
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 12
+
+--- R2C1 | NAVY | X13.png ---
+  Unit ID: 0527 Mire
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 12
+
+--- R2C2 | NAVY | X14.png ---
+  Unit ID: 0527 Mire
+  Ship Code: C004
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 12
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 0130 Garoo
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 0321 Nonym
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 0421 Zarmine
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 0421 Zarmine
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+############################################################
+# I Darrian - Mark Ferguson - page44.txt
+############################################################
+
+# Page 44
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 0427 Roget
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: &
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 0130 Garoo
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 0321 Nonym
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 0425 Engrange
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 8
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 0426 lliurmn
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 4
+
+--- R4C1 | MARINE | X19.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R4C2 | MARINE | X20.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R4C3 | MARINE | X21.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R5C1 | MARINE | X22.png ---
+  Unit ID: 0527 Mire
+  Code: 3???
+  Size: -Brigade
+  Quality: (Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 10
+  TL: 12
+
+--- R5C2 | MARINE | X23.png ---
+  Unit ID: 052? Mire
+  Code: 0013
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 10
+  TL: 12
+
+############################################################
+# J Sword Worlds - Mark Ferguson - page43.txt
+############################################################
+
+# Page 43
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 1026 Anduril
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 11
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 1223 Gram
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 12
+
+--- R1C3 | NAVY | X12.png ---
+  Unit ID: 1223 Gram
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 12
+
+--- R2C1 | NAVY | X13.png ---
+  Unit ID: 1325 Sacnoth
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 12
+
+--- R2C2 | NAVY | X14.png ---
+  Unit ID: 1325 Sacnoth
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 12
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 092? Tizon
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+--- R2C3 | NAVY | X15.png ---
+  Unit ID: 1522 Dyrnwyn
+  Ship Code: C0nt
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+--- R3C1 | NAVY | X16.png ---
+  Unit ID: 1524 Hofud
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: O92? Narsil
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 13
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: O92? Narsil
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 13
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: O92? Narsil
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 13
+
+############################################################
+# J Sword Worlds - Mark Ferguson - page44.txt
+############################################################
+
+# Page 44
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: O92? Narsil
+  Code: 0003
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: O92? Narsil
+  Code: 0004
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: O92? Narsil
+  Code: 0005
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 1026 Anduril
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 10
+  TF: 5
+  TL: 11
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 1123 AoveUse
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 1
+  TF: 1
+  TL: 13
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 0921 Hrunting
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: &
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 1126 Orcrist
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 1
+  TF: 1
+  TL: 13
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 1221. Gungnir
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 1
+  TF: 1
+  TL: 8
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 0922 Tizon
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 1223 Gram
+  Code: 0001
+  Size: 6-Corps
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 50
+  TF: 50
+  TL: 12
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 0927 Narsil
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 1225 Excalibur
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 1
+  TF: 1
+  TL: 13
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: O92? Narsil
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R4C1 | MARINE | X19.png ---
+  Unit ID: 1324 hating
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 1
+  TF: 1
+  TL: 13
+
+--- R4C2 | MARINE | X20.png ---
+  Unit ID: 1325 Sacnoth
+  Code: 0001
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 20
+  TF: 10
+  TL: 12
+
+--- R4C3 | MARINE | X21.png ---
+  Unit ID: 1325 Sacnoth
+  Code: 0002
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 1-Cavalry
+  CF: 20
+  TF: 10
+  TL: 12
+
+--- R5C1 | MARINE | X22.png ---
+  Unit ID: 1325 Sacnoth
+  Code: 0003
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 10
+  TL: 12
+
+--- R5C2 | MARINE | X23.png ---
+  Unit ID: 1329 Caladbolg
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 13
+
+--- R5C3 | MARINE | X24.png ---
+  Unit ID: 1522 Dyrnwyn
+  Code: [unreadable - 4-digit code, see PDF]
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R6C1 | MARINE | X25.png ---
+  Unit ID: 1523 Durendal
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: 2
+  TF: 1
+  TL: 11
+
+--- R6C2 | MARINE | X26.png ---
+  Unit ID: 1523 Durendal
+  Code: 0002
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 11
+
+--- R6C3 | MARINE | X27.png ---
+  Unit ID: 1524 Hofud
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R7C1 | MARINE | X28.png ---
+  Unit ID: 1525 Sting
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 13
+
+############################################################
+# K Lunion - Mark Ferguson - page39.txt
+############################################################
+
+# Page 39
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 2226 Persephone
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 232? Strouden
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R1C3 | NAVY | X12.png ---
+  Unit ID: 232? Strouden
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R2C1 | NAVY | X13.png ---
+  Unit ID: 232? Strouden
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 1824 Adabicci
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 11
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 2124 Lunion
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 2124 Lunion
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 2124 Lunion
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+############################################################
+# K Lunion - Mark Ferguson - page40.txt
+############################################################
+
+# Page 40
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 2124 Lunion
+  Code: 0001
+  Size: 1-Battalion
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 16
+  TF: 2
+  TL: 13
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 2124 Lunion
+  Code: 0002
+  Size: 1-Battalion
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 16
+  TF: 2
+  TL: 13
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 2124 Lunion
+  Code: 0003
+  Size: 1-Battalion
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 16
+  TF: 2
+  TL: 13
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 2124 Lunion
+  Code: 04??
+  Size: 1-Battalion
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 16
+  TF: 2
+  TL: 13
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 2124 Lunion
+  Code: 0005
+  Size: 1-Battalion
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 16
+  TF: 2
+  TL: 13
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 1729 Smoug
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: &
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 2124 Lunion
+  Code: 0006
+  Size: 1-Battalion
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 16
+  TF: 2
+  TL: 13
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 2124 Lunion
+  Code: [unreadable - 4-digit code, see PDF]
+  Size: 1-Battalion
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 4
+  TF: 2
+  TL: 13
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 1824 Adabicci
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 11
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 2129 Harvosette
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: &
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 1826 Tenalphi
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: e's
+  TF: 5
+  TL: 14
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 2228 Persephone
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 2024 Derchon
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Foot
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 8
+
+--- R4C1 | MARINE | X19.png ---
+  Unit ID: 2324 Capon
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 13
+
+--- R4C2 | MARINE | X20.png ---
+  Unit ID: 232? Strouden
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 5
+  TL: 13
+
+--- R4C3 | MARINE | X21.png ---
+  Unit ID: 232? Strouden
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 40
+  TF: 5
+  TL: 13
+
+--- R5C1 | MARINE | X22.png ---
+  Unit ID: 232? Strouden
+  Code: 0003
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 13
+
+############################################################
+# L Mora - Mark Ferguson - page39.txt
+############################################################
+
+# Page 39
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 3029 Palique
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-3
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 14
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 3029 Palique
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-3
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 14
+
+--- R1C3 | NAVY | X12.png ---
+  Unit ID: 3029 Palique
+  Ship Code: C0gs
+  Squadron Type: Cruiser
+  Jump: J-3
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 14
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 3025 Fornice
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 12
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 3025 Fornice
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 12
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 3025 Fornice
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 12
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 3025 Fornice
+  Ship Code: C004
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 8
+  AF: 4
+  BF: 0
+  TF: 8
+  TL: 12
+
+############################################################
+# L Mora - Mark Ferguson - page40.txt
+############################################################
+
+# Page 40
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 3025 Fornice
+  Code: 3???
+  Size: -Brigade
+  Quality: Tete
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 80
+  TF: 10
+  TL: 12
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 3025 Fornice
+  Code: 3???
+  Size: -Brigade
+  Quality: Tete
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 80
+  TF: 10
+  TL: 12
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 3025 Fornice
+  Code: 0003
+  Size: 4-Division
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 160
+  TF: 20
+  TL: 12
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 3025 Fornice
+  Code: 0004
+  Size: 4-Division
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 160
+  TF: 20
+  TL: 12
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 3025 Fornice
+  Code: 0005
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 12
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 2521 Heroni
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 8
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 3029 Palique
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 14
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 3029 Palique
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 14
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 2/28 Duale
+  Code: 0???
+  Size: -Company
+  Quality: 1-Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: CF?
+  TF: 1
+  TL: 11
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 3029 Palique
+  Code: 0003
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 14
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 3024 Jokotre
+  Code: [unreadable - 4-digit code, see PDF]
+  Size: -Company
+  Quality: {-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 4
+  TF: 1
+  TL: ?
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 3029 Palique
+  Code: 0004
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 14
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 3024 Jokotre
+  Code: 0002
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: ?
+
+--- R4C1 | MARINE | X19.png ---
+  Unit ID: 3029 Palique
+  Code: 0005
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: 14
+
+############################################################
+# M Five Sisters - Mark Ferguson - page39.txt
+############################################################
+
+# Page 39
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 0333 Mirriarm
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+############################################################
+# M Five Sisters - Mark Ferguson - page40.txt
+############################################################
+
+# Page 40
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 0632 Gohature
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: ?
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 0637 Quhaiathat
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: &
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 0732 Iderati
+  Code: 0001
+  Size: 1-Battalion
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 2
+  TF: 2
+  TL: 12
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 0236 Andor
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: &
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 0333 Mirriarm
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 5
+  TF: 5
+  TL: 13
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 0534 Karin
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 2
+  TF: 1
+  TL: 12
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 0538 VYonstar
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: ?
+
+############################################################
+# N District 268 - Mark Ferguson - page45.txt
+############################################################
+
+# Page 45
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 1339 Trexalon
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 12
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 1435 Dallia
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: TI
+
+--- R1C3 | NAVY | X12.png ---
+  Unit ID: 1533 Forine
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R2C1 | NAVY | X13.png ---
+  Unit ID: 1533 Forine
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 1237 Collace
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 1237 Collace
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 1237 Collace
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 13
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 1237 Collace
+  Ship Code: T001
+  Squadron Type: Tanker
+  Jump: J-2
+  Streamlining: USL
+  DF: 7
+  AF: O
+  BF: 0
+  TF: O
+  TL: 13
+
+############################################################
+# N District 268 - Mark Ferguson - page46.txt
+############################################################
+
+# Page 46
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 1237 Collace
+  Code: 0005
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 1339 Trexalon
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 12
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 1433 Noctocol
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 8
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 1435 Dallia
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 4
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 1533 Forine
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 13
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 1237 Collace
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 1533 Forine
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 13
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 1537 Mertactor
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 11
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 1237 Collace
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 1537 Mertactor
+  Code: 0002
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 11
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 1237 Collace
+  Code: 0003
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 1632 Milagro
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: ?
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 1237 Collace
+  Code: 0004
+  Size: 2-Regiment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 5
+  TL: 13
+
+############################################################
+# O Glisten - Mark Ferguson - page43.txt
+############################################################
+
+# Page 43
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 2036 Glisten
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-4
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 14
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 2036 Glisten
+  Ship Code: C00s
+  Squadron Type: Cruiser
+  Jump: J-4
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 14
+
+--- R1C3 | NAVY | X12.png ---
+  Unit ID: 2138 Horosho
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 13
+
+--- R2C1 | NAVY | X13.png ---
+  Unit ID: 2233 lirem
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 11
+
+--- R2C2 | NAVY | X14.png ---
+  Unit ID: 2233 lirem
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 11
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 1938 New Rome
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 11
+
+--- R2C3 | NAVY | X15.png ---
+  Unit ID: 2334 Frudn
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 12
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 2035 Aki
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: Ti 4
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 2035 Aki
+  Ship Code: C002
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: Ti 4
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 2036 Glisten
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-4
+  Streamlining: USL
+  DF: 7
+  AF: 3
+  BF: 0
+  TF: 7
+  TL: 14
+
+############################################################
+# O Glisten - Mark Ferguson - page44.txt
+############################################################
+
+# Page 44
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 2036 Glisten
+  Code: 0002
+  Size: 4-Division
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 80
+  TF: 20
+  TL: 14
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 2036 Glisten
+  Code: 0003
+  Size: 4-Division
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 80
+  TF: 20
+  TL: 14
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 2036 Glisten
+  Code: 0004
+  Size: 4-Division
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 80
+  TF: 20
+  TL: 14
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 2036 Glisten
+  Code: 005?
+  Size: 4-Division
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 80
+  TF: 20
+  TL: 14
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 2036 Glisten
+  Code: 0006
+  Size: 4-Division
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 80
+  TF: 20
+  TL: 14
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 1938 New Rome
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 11
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 2138 Horosho
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: e's
+  TF: 45
+  TL: 13
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 2232 Crout
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: ?
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 2035 Aki
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 4
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 2233 Tirem
+  Code: 0001
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 10
+  TL: 11
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 2035 Aki
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 4
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 2233 Tirem
+  Code: 0002
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 10
+  TL: 11
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 2036 Glisten
+  Code: 0001
+  Size: 4-Division
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 80
+  TF: 20
+  TL: 14
+
+--- R4C1 | MARINE | X19.png ---
+  Unit ID: 2233 Tirem
+  Code: 0003
+  Size: 3-Brigade
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 20
+  TF: 10
+  TL: 11
+
+--- R4C2 | MARINE | X20.png ---
+  Unit ID: 2334 Ffudn
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 12
+
+############################################################
+# P Trin's Veil - Mark Ferguson - page43.txt
+############################################################
+
+# Page 43
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 2/33 Edenelt
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: 6
+  AF: 3
+  BF: 0
+  TF: 6
+  TL: 11
+
+############################################################
+# P Trin's Veil - Mark Ferguson - page44.txt
+############################################################
+
+# Page 44
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 2733 Edenelt
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 10
+  TF: 5
+  TL: 11
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 2739 Dodds
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: 20
+  TF: 5
+  TL: ?
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 3233 Ramiva
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Grav
+  Type: 0-Infantry
+  CF: 1
+  TF: 1
+  TL: 8

@@ -1,0 +1,67 @@
+[submodule "CARDCUTTER/CardCutter"]
+	path = CARDCUTTER/CardCutter
+	url = https://github.com/Maggot4703/CardCutter.git
+
+[submodule "openwebui-upstream"]
+	path = openwebui-upstream
+	url = https://github.com/open-webui/open-webui.git
+
+[submodule "CREW/BACKUP/Crew30"]
+	path = CREW/BACKUP/Crew30
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/BACKUP/Crew31"]
+	path = CREW/BACKUP/Crew31
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/BACKUP/Crew32"]
+	path = CREW/BACKUP/Crew32
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/BACKUP/Crew33"]
+	path = CREW/BACKUP/Crew33
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/BACKUP/Crew34"]
+	path = CREW/BACKUP/Crew34
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/BACKUP/Crew35"]
+	path = CREW/BACKUP/Crew35
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/BACKUP/Crew36"]
+	path = CREW/BACKUP/Crew36
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/BACKUP/Crew37"]
+	path = CREW/BACKUP/Crew37
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/BACKUP/Crew38"]
+	path = CREW/BACKUP/Crew38
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/BACKUP/Crew39"]
+	path = CREW/BACKUP/Crew39
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/BACKUP/Crew40"]
+	path = CREW/BACKUP/Crew40
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/Crew"]
+	path = CREW/Crew
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/Crew-work"]
+	path = CREW/Crew-work
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "CREW/DESIGN/xCrew"]
+	path = CREW/DESIGN/xCrew
+	url = https://github.com/Maggot4703/Crew.git
+
+[submodule "BASH/commands/uv"]
+	path = BASH/commands/uv
+	url = https://github.com/Maggot4703/Notebooks.git

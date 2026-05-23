@@ -1,0 +1,17 @@
+split
+
+[0m[0mSplit a file into pieces.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/split-invocation.html.
+
+ - [0m[32;23;22;24;25mSplit a file, each split having 10 lines (except the last split):
+   [33;23;22;24;25msplit [0m[-l|--lines][33;23;22;24;25m 10 [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSplit a file into 5 files. File is split such that each split has same size (except the last split):
+   [33;23;22;24;25msplit [0m[-n|--number][33;23;22;24;25m 5 [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSplit a file with 512 bytes in each split (except the last split; use 512k for kilobytes and 512m for megabytes):
+   [33;23;22;24;25msplit [0m[-b|--bytes][33;23;22;24;25m 512 [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSplit a file with at most 512 bytes in each split without breaking lines:
+   [33;23;22;24;25msplit [0m[-C|--line-bytes][33;23;22;24;25m 512 [0mpath/to/file
+[0m[0m

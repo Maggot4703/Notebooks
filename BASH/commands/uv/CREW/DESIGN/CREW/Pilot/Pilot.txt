@@ -1,0 +1,60 @@
+Pilot
+In the Traveller universe, the Pilot is the ship’s hands and feet. While the Captain decides the destination and the Navigator handles the math, the Pilot is the one who actually "feels" the ship. Whether it’s threading a 400-ton freighter through a crowded starport or pulling 6Gs to dodge an incoming missile, the Pilot is responsible for the physical safety of the hull during movement.
+
+Here is a breakdown of the duties and responsibilities for a Traveller Pilot.
+1. Flight Operations and Maneuvering
+
+The Pilot's primary job is the execution of flight, from docking maneuvers to high-velocity combat.
+
+    Atmospheric Entry: This is often the most dangerous part of a Pilot’s day. Transitioning from the vacuum of space into a planetary atmosphere requires careful management of heat shields and angle of attack.
+
+    Docking and Berthing: Precision maneuvering to bring the ship into a starport cradle or a spinning orbital station without scratching the paint (or causing a hull breach).
+
+    Nap-of-the-Earth (NOE) Flight: Flying at low altitudes to avoid planetary radar or to navigate treacherous terrain like canyons and mountain ranges.
+
+2. Space Combat Tactics
+
+In a dogfight or a fleet engagement, the Pilot’s skill is the ship's primary defense.
+
+    Evasive Action: Using the Pilot skill to make the ship harder to hit. A good Pilot can use the ship's thrusters to "jink" and "weave," providing a negative DM (Difficulty Modifier) to enemy Gunner rolls.
+
+    Positioning: Working with the Gunner to ensure the ship’s weapons have a clear "Line of Sight" to the target while keeping the ship’s own vulnerable spots (like the engines) protected.
+
+    Interceptor Screening: On larger ships, the Pilot might coordinate the launch and recovery of small craft or fighters.
+
+3. Launch and Recovery of Sub-Craft
+
+Many Traveller ships carry smaller vessels, such as Air/Rafts, G-Carriers, or Ship’s Boats.
+
+    Small Craft Handling: The Pilot is often the most skilled person on board for operating any vehicle that leaves the main ship.
+
+    Transfers: Moving cargo or passengers between ships while in motion—a task that requires nerves of steel and perfect synchronization with the other vessel's pilot.
+
+4. Systems Monitoring (The "Flight Deck")
+
+The Pilot doesn't just hold a joystick; they monitor the health of the ship’s kinetic systems.
+Responsibility	Description
+Inertial Compensators	Monitoring the grav-tech that keeps the crew from being crushed by G-forces during high-speed turns.
+Fuel Efficiency	Working with the Engineer to optimize thrust-to-weight ratios to save on hydrogen consumption.
+Thruster Calibration	Ensuring the Maneuver Drive (M-Drive) is responding correctly to control inputs.
+5. Interface and Communications
+
+The Pilot is the primary contact for Traffic Control (ATC).
+
+    Landing Clearances: Negotiating with Starport Authority for a landing pad or an orbital slot.
+
+    Flight Logs: Maintaining the official record of the ship’s flight path, speeds, and any incidents that occurred during the voyage.
+
+The Pilot’s Skillset
+
+A Pilot usually specializes based on the type of craft they fly:
+
+    Pilot (Small Craft): For shuttles, fighters, and ship's boats.
+
+    Pilot (Spacecraft): The standard skill for ships between 100 and 5,000 tons.
+
+    Pilot (Capital Ships): For the massive dreadnoughts and carriers of the Imperial Navy.
+
+    Flyer: A secondary skill used for operating atmospheric vehicles like grav-speeders or jet-planes.
+
+    The Pilot's Mantra: "Speed is life, altitude is life insurance." In space, there is no "up," so a Pilot’s insurance is usually a hot reactor and a clear path to the Jump point.

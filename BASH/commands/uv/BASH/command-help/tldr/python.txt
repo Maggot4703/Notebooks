@@ -1,0 +1,29 @@
+python
+
+[0m[0mPython language interpreter.
+More information: https://docs.python.org/using/cmdline.html.
+
+ - [0m[32;23;22;24;25mStart a REPL (interactive shell):
+   [33;23;22;24;25mpython[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a specific Python file:
+   [33;23;22;24;25mpython [0mpath/to/file.py
+[0m
+ - [0m[32;23;22;24;25mExecute a specific Python file and start a REPL:
+   [33;23;22;24;25mpython -i [0mpath/to/file.py
+[0m
+ - [0m[32;23;22;24;25mExecute a Python expression:
+   [33;23;22;24;25mpython -c "[0mexpression[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mRun the script of the specified library module:
+   [33;23;22;24;25mpython -m [0mmodule[33;23;22;24;25m [0marguments
+[0m
+ - [0m[32;23;22;24;25mInstall a package using pip:
+   [33;23;22;24;25mpython -m pip install [0mpackage
+[0m
+ - [0m[32;23;22;24;25mInteractively debug a Python script:
+   [33;23;22;24;25mpython -m pdb [0mpath/to/file.py
+[0m
+ - [0m[32;23;22;24;25mStart the built-in HTTP server on port 8000 in the current directory:
+   [33;23;22;24;25mpython -m http.server[0m
+[0m[0m

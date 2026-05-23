@@ -1,0 +1,73 @@
+# Page 35
+
+--- R1C1 | NAVY | X10.png ---
+  Unit ID: 1106 Jewell
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 7
+  AF: AF 3
+  BF: BF 0
+  TF: TF 7
+  TL: TL 12
+
+--- R1C2 | NAVY | X11.png ---
+  Unit ID: 1106 Jewell
+  Ship Code: C00?
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 7
+  AF: AF 3
+  BF: BF 0
+  TF: TF 7
+  TL: TL 12
+
+--- R2C2 | NAVY | X5.png ---
+  Unit ID: 1102 Riverland
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 8
+  AF: AF 4
+  BF: BF 0
+  TF: TF 8
+  TL: TI
+
+--- R3C1 | NAVY | X7.png ---
+  Unit ID: 1102 Riverland
+  Ship Code: C00?
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 8
+  AF: AF 4
+  BF: BF 0
+  TF: TF 8
+  TL: TI
+
+--- R3C2 | NAVY | X8.png ---
+  Unit ID: 1102 Riverland
+  Ship Code: C003
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 8
+  AF: AF 4
+  BF: BF 0
+  TF: TF 8
+  TL: TI
+
+--- R3C3 | NAVY | X9.png ---
+  Unit ID: 1103 Clan
+  Ship Code: C001
+  Squadron Type: Cruiser
+  Jump: J-1
+  Streamlining: USL
+  DF: DF 6
+  AF: AF 3
+  BF: BF 0
+  TF: TF 6
+  TL: TL 13

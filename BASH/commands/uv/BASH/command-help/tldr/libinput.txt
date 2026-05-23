@@ -1,0 +1,20 @@
+libinput
+
+[0m[0mInterface with libinput.
+More information: https://wayland.freedesktop.org/libinput/doc/latest/.
+
+ - [0m[32;23;22;24;25mList all devices recognized by libinput:
+   [33;23;22;24;25msudo libinput list-devices[0m
+[0m
+ - [0m[32;23;22;24;25mPrint all libinput events:
+   [33;23;22;24;25msudo libinput debug-events[0m
+[0m
+ - [0m[32;23;22;24;25mShow a GUI to visualize libinput's events:
+   [33;23;22;24;25msudo libinput debug-gui[0m
+[0m
+ - [0m[32;23;22;24;25mDebug tablet axis values:
+   [33;23;22;24;25msudo libinput debug-tablet[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mlibinput [0m[-h|--help]
+[0m[0m

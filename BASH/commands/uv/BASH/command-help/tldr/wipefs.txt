@@ -1,0 +1,20 @@
+wipefs
+
+[0m[0mWipe filesystem, raid, or partition-table signatures from a device.
+More information: https://manned.org/wipefs.
+
+ - [0m[32;23;22;24;25mDisplay signatures for specified device:
+   [33;23;22;24;25msudo wipefs [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mWipe all available signature types for a specific device with no recursion into partitions:
+   [33;23;22;24;25msudo wipefs [0m[-a|--all][33;23;22;24;25m [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mWipe all available signature types for the device and partitions using a glob pattern:
+   [33;23;22;24;25msudo wipefs [0m[-a|--all][33;23;22;24;25m [0m/dev/sdX[33;23;22;24;25m*[0m
+[0m
+ - [0m[32;23;22;24;25mPerform dry run:
+   [33;23;22;24;25msudo wipefs [0m[-a|--all][33;23;22;24;25m [0m[-n|--no-act][33;23;22;24;25m [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mForce wipe, even if the filesystem is mounted:
+   [33;23;22;24;25msudo wipefs [0m[-a|--all][33;23;22;24;25m [0m[-f|--force][33;23;22;24;25m [0m/dev/sdX
+[0m[0m

@@ -1,0 +1,53 @@
+TLDR-HS(1)                       User Commands                      TLDR-HS(1)
+
+NAME
+       tldr-hs - manual page for tldr-hs 0.9.2
+
+SYNOPSIS
+       tldr-hs [-v|--version]
+
+DESCRIPTION
+       tldr - Simplified and community-driven man pages
+
+              ((-u|--update) | [-p|--platform PLATFORM] [-L|--language LOCALE]
+
+              COMMAND | (-a|--about)) [--auto-update-interval DAYS]
+
+              [--color | --no-color]
+
+              tldr Client program
+
+   Available options:
+       -h,--help
+              Show this help text
+
+       -v,--version
+              Show version
+
+       -u,--update
+              Update offline cache of tldr pages
+
+       -p,--platform PLATFORM
+              Prioritize a specific platform while searching. Valid values in‐
+              clude linux, osx, windows, sunos
+
+       -L,--language LOCALE
+              Preferred language for the page returned
+
+       COMMAND
+              name of the command
+
+       -a,--about
+              About this program
+
+       --auto-update-interval DAYS
+              Perform an automatic update if the cache is older than DAYS
+
+       --color
+              Force colored output, overriding the NO_COLOR environment  vari‐
+              able
+
+       --no-color
+              Disable colored output
+
+tldr-hs 0.9.2                    October 2022                       TLDR-HS(1)

@@ -1,0 +1,20 @@
+lslocks
+
+[0m[0mList local system locks.
+More information: https://manned.org/lslocks.
+
+ - [0m[32;23;22;24;25mList all local system locks:
+   [33;23;22;24;25mlslocks[0m
+[0m
+ - [0m[32;23;22;24;25mList locks with defined column headers:
+   [33;23;22;24;25mlslocks [0m[-o|--output][33;23;22;24;25m [0mPID[33;23;22;24;25m,[0mCOMMAND[33;23;22;24;25m,[0mPATH
+[0m
+ - [0m[32;23;22;24;25mList locks producing a raw output (no columns), and without column headers:
+   [33;23;22;24;25mlslocks [0m[-r|--raw][33;23;22;24;25m [0m[-n|--noheadings]
+[0m
+ - [0m[32;23;22;24;25mList locks by PID input:
+   [33;23;22;24;25mlslocks [0m[-p|--pid][33;23;22;24;25m [0mPID
+[0m
+ - [0m[32;23;22;24;25mList locks with JSON output to stdout:
+   [33;23;22;24;25mlslocks [0m[-J|--json]
+[0m[0m

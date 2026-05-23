@@ -1,0 +1,20 @@
+DTC(1)                      General Commands Manual                     DTC(1)
+
+NAME
+       fdtdump - prints a readable version of a flat device-tree file.
+
+SYNOPSIS
+       /usr/bin/fdtdump <DTB-file-name>
+
+DESCRIPTION
+       The  fdtdump  program  prints  a readable version of a flat device-tree
+       file.
+
+AUTHOR
+       fdtdump  was  written  by  Pantelis  Antoniou   <pantelis.antoniou   AT
+       gmail.com>.
+
+       This manual page was written by Héctor Orón <zumbi@debian.org>, for the
+       Debian project (but may be used by others).
+
+Linux                           30 January 2012                         DTC(1)

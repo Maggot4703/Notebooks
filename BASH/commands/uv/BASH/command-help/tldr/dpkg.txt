@@ -1,0 +1,28 @@
+dpkg
+
+[0m[0mDebian package manager.
+Some subcommands such as deb have their own usage documentation.
+For equivalent commands in other package managers, see https://wiki.archlinux.org/title/Pacman/Rosetta.
+More information: https://manned.org/dpkg.
+
+ - [0m[32;23;22;24;25mInstall a package:
+   [33;23;22;24;25mdpkg [0m[-i|--install][33;23;22;24;25m [0mpath/to/file.deb
+[0m
+ - [0m[32;23;22;24;25mRemove a package:
+   [33;23;22;24;25mdpkg [0m[-r|--remove][33;23;22;24;25m [0mpackage
+[0m
+ - [0m[32;23;22;24;25mList installed packages:
+   [33;23;22;24;25mdpkg [0m[-l|--list][33;23;22;24;25m [0mpattern
+[0m
+ - [0m[32;23;22;24;25mList a package's contents:
+   [33;23;22;24;25mdpkg [0m[-L|--listfiles][33;23;22;24;25m [0mpackage
+[0m
+ - [0m[32;23;22;24;25mList contents of a local package file:
+   [33;23;22;24;25mdpkg [0m[-c|--contents][33;23;22;24;25m [0mpath/to/file.deb
+[0m
+ - [0m[32;23;22;24;25mFind out which package owns a file:
+   [33;23;22;24;25mdpkg [0m[-S|--search][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPurge an installed or already removed package, including configuration:
+   [33;23;22;24;25mdpkg [0m[-P|--purge][33;23;22;24;25m [0mpackage
+[0m[0m

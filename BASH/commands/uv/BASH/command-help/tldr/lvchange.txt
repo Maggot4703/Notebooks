@@ -1,0 +1,23 @@
+lvchange
+
+[0m[0mChange attributes or the activation state of logical volumes.
+More information: https://manned.org/lvchange.
+
+ - [0m[32;23;22;24;25mActivate a logical volume:
+   [33;23;22;24;25mlvchange [0m[-a|--activate][33;23;22;24;25m y [0m/dev/vg_name/lv_name
+[0m
+ - [0m[32;23;22;24;25mDeactivate a logical volume:
+   [33;23;22;24;25mlvchange [0m[-a|--activate][33;23;22;24;25m n [0m/dev/vg_name/lv_name
+[0m
+ - [0m[32;23;22;24;25mEnable autoactivation for a logical volume:
+   [33;23;22;24;25mlvchange [0m[-a|--activate][33;23;22;24;25m ay [0m/dev/vg_name/lv_name
+[0m
+ - [0m[32;23;22;24;25mSet a logical volume to read-only (use rw for read-write):
+   [33;23;22;24;25mlvchange [0m[-p|--permission][33;23;22;24;25m r [0m/dev/vg_name/lv_name
+[0m
+ - [0m[32;23;22;24;25mSkip activation for a logical volume:
+   [33;23;22;24;25mlvchange [0m[-k|--setactivationskip][33;23;22;24;25m y [0m/dev/vg_name/lv_name
+[0m
+ - [0m[32;23;22;24;25mRefresh a logical volume using the latest metadata:
+   [33;23;22;24;25mlvchange --refresh [0m/dev/vg_name/lv_name
+[0m[0m

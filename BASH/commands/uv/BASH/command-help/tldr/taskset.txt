@@ -1,0 +1,20 @@
+taskset
+
+[0m[0mGet or set a process' CPU affinity or start a new process with a defined CPU affinity.
+More information: https://manned.org/taskset.
+
+ - [0m[32;23;22;24;25mGet a running process' CPU affinity by PID:
+   [33;23;22;24;25mtaskset [0m[-p|--pid][33;23;22;24;25m [0m[-c|--cpu-list][33;23;22;24;25m [0mpid
+[0m
+ - [0m[32;23;22;24;25mSet a running process' CPU affinity by PID:
+   [33;23;22;24;25mtaskset [0m[-p|--pid][33;23;22;24;25m [0m[-c|--cpu-list][33;23;22;24;25m [0mcpu_id[33;23;22;24;25m [0mpid
+[0m
+ - [0m[32;23;22;24;25mStart a new process with affinity for a single CPU:
+   [33;23;22;24;25mtaskset [0m[-c|--cpu-list][33;23;22;24;25m [0mcpu_id[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mStart a new process with affinity for multiple non-sequential CPUs:
+   [33;23;22;24;25mtaskset [0m[-c|--cpu-list][33;23;22;24;25m [0mcpu_id_1[33;23;22;24;25m,[0mcpu_id_2[33;23;22;24;25m,[0mcpu_id_3
+[0m
+ - [0m[32;23;22;24;25mStart a new process with affinity for CPUs 1 through 4:
+   [33;23;22;24;25mtaskset [0m[-c|--cpu-list][33;23;22;24;25m [0mcpu_id_1[33;23;22;24;25m-[0mcpu_id_4
+[0m[0m

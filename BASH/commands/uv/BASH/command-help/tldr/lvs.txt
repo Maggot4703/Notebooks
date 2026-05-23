@@ -1,0 +1,27 @@
+lvs
+
+[0m[0mDisplay information about logical volumes.
+See also: lvm.
+More information: https://manned.org/lvs.
+
+ - [0m[32;23;22;24;25mDisplay information about logical volumes:
+   [33;23;22;24;25mlvs[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay all logical volumes:
+   [33;23;22;24;25mlvs [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mChange default display to show more details:
+   [33;23;22;24;25mlvs [0m[-v|--verbose]
+[0m
+ - [0m[32;23;22;24;25mDisplay only specific fields:
+   [33;23;22;24;25mlvs [0m[-o|--options][33;23;22;24;25m [0mfield_name_1[33;23;22;24;25m,[0mfield_name_2
+[0m
+ - [0m[32;23;22;24;25mAppend field to default display:
+   [33;23;22;24;25mlvs [0m[-o|--options][33;23;22;24;25m +[0mfield_name
+[0m
+ - [0m[32;23;22;24;25mSuppress heading line:
+   [33;23;22;24;25mlvs --noheadings[0m
+[0m
+ - [0m[32;23;22;24;25mUse a separator to separate fields:
+   [33;23;22;24;25mlvs --separator [0m=
+[0m[0m

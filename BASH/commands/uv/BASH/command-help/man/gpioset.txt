@@ -1,0 +1,100 @@
+GPIOSET(1)                       User Commands                      GPIOSET(1)
+
+NAME
+       gpioset - manual page for gpioset v1.6.3
+
+SYNOPSIS
+       gpioset   [OPTIONS]   <chip   name/number>   <offset1>=<value1>   <off‐
+       set2>=<value2> ...
+
+DESCRIPTION
+       Set GPIO line values of a GPIO chip and maintain the  state  until  the
+       process exits
+
+OPTIONS
+       -h, --help:
+              display this message and exit
+
+       -v, --version:
+              display the version and exit
+
+       -l, --active-low:
+              set the line active state to low
+
+       -B, --bias=[as-is|disable|pull-down|pull-up] (defaults to 'as-is'):
+
+              set the line bias
+
+       -D,     --drive=[push-pull|open-drain|open-source]     (defaults     to
+              'push-pull'):
+
+              set the line drive mode
+
+       -m, --mode=[exit|wait|time|signal] (defaults to 'exit'):
+
+              tell the program what to do after setting values
+
+       -s, --sec=SEC:
+              specify  the  number  of  seconds  to  wait  (only   valid   for
+              --mode=time)
+
+       -u, --usec=USEC:
+              specify  the  number  of  microseconds  to  wait (only valid for
+              --mode=time)
+
+       -b, --background:
+              after setting values: detach from the controlling terminal
+
+   Biases:
+       as-is: leave bias unchanged
+
+       disable:
+              disable bias
+
+       pull-up:
+              enable pull-up
+
+       pull-down:
+              enable pull-down
+
+   Drives:
+       push-pull:
+              drive the line both high and low
+
+       open-drain:
+              drive the line low or go high impedance
+
+       open-source:
+              drive the line high or go high impedance
+
+   Modes:
+       exit:  set values and exit immediately
+
+       wait:  set values and wait for user to press ENTER
+
+       time:  set values and sleep for a specified amount of time
+
+       signal:
+              set values and wait for SIGINT or SIGTERM
+
+       Note: the state of a GPIO line controlled over the character device re‐
+       verts  to default when the last process referencing the file descriptor
+       representing the device file exits.  This means that it's wrong to  run
+       gpioset, have it exit and expect the line to continue being driven high
+       or low. It may happen if given pin is floating but it  must  be  inter‐
+       preted as undefined behavior.
+
+AUTHOR
+       Bartosz Golaszewski <bartekgola@gmail.com>
+
+REPORTING BUGS
+       Report bugs to:
+           Bartosz Golaszewski <bartekgola@gmail.com>
+           linux-gpio <linux-gpio@vger.kernel.org>
+
+COPYRIGHT
+       Copyright © 2017-2018 Bartosz Golaszewski License: LGPLv2.1
+       This  is  free  software:  you  are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
+
+libgpiod v1.6.3                  January 2023                       GPIOSET(1)

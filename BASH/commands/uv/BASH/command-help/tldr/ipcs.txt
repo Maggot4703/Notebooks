@@ -1,0 +1,26 @@
+ipcs
+
+[0m[0mShow information about the usage of XSI IPC facilities: shared memory segments, message queues, and semaphore arrays.
+More information: https://manned.org/ipcs.1p.
+
+ - [0m[32;23;22;24;25mShow information about all the IPC:
+   [33;23;22;24;25mipcs -a[0m
+[0m
+ - [0m[32;23;22;24;25mShow information about active shared [m]emory segments, message [q]ueues or [s]empahore sets:
+   [33;23;22;24;25mipcs [0m-m|-q|-s
+[0m
+ - [0m[32;23;22;24;25mShow information on maximum allowable size in [b]ytes:
+   [33;23;22;24;25mipcs -b[0m
+[0m
+ - [0m[32;23;22;24;25mShow [c]reator's user name and group name for all IPC facilities:
+   [33;23;22;24;25mipcs -c[0m
+[0m
+ - [0m[32;23;22;24;25mShow the [p]ID of the last operators for all IPC facilities:
+   [33;23;22;24;25mipcs -p[0m
+[0m
+ - [0m[32;23;22;24;25mShow access [t]imes for all IPC facilities:
+   [33;23;22;24;25mipcs -t[0m
+[0m
+ - [0m[32;23;22;24;25mShow [o]utstanding usage for active message queues, and shared memory segments:
+   [33;23;22;24;25mipcs -o[0m
+[0m[0m

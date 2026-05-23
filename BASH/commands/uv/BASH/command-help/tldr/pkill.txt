@@ -1,0 +1,21 @@
+pkill
+
+[0m[0mSignal process by name.
+Mostly used for stopping processes.
+More information: https://www.manned.org/pkill.
+
+ - [0m[32;23;22;24;25mKill all processes which match:
+   [33;23;22;24;25mpkill "[0mprocess_name[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mKill all processes which match their full command instead of just the process name:
+   [33;23;22;24;25mpkill [0m[-f|--full][33;23;22;24;25m "[0mcommand_name[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mForce kill matching processes (can't be blocked):
+   [33;23;22;24;25mpkill -9 "[0mprocess_name[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mSend SIGUSR1 signal to processes which match:
+   [33;23;22;24;25mpkill -USR1 "[0mprocess_name[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mKill the main firefox process to close the browser:
+   [33;23;22;24;25mpkill [0m[-o|--oldest][33;23;22;24;25m "[0mfirefox[33;23;22;24;25m"[0m
+[0m[0m

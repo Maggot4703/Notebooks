@@ -1,0 +1,21 @@
+namei
+
+[0m[0mFollows a pathname (which can be a symbolic link) until a terminal point is found (a file/directory/char device etc).
+This program is useful for finding "too many levels of symbolic links" problems.
+More information: https://manned.org/namei.
+
+ - [0m[32;23;22;24;25mResolve the pathnames specified as the argument parameters:
+   [33;23;22;24;25mnamei [0mpath/to/a[33;23;22;24;25m [0mpath/to/b[33;23;22;24;25m [0mpath/to/c
+[0m
+ - [0m[32;23;22;24;25mDisplay the results in a long-listing format:
+   [33;23;22;24;25mnamei [0m[-l|--long][33;23;22;24;25m [0mpath/to/a[33;23;22;24;25m [0mpath/to/b[33;23;22;24;25m [0mpath/to/c
+[0m
+ - [0m[32;23;22;24;25mShow the mode bits of each file type in the style of ls:
+   [33;23;22;24;25mnamei [0m[-m|--modes][33;23;22;24;25m [0mpath/to/a[33;23;22;24;25m [0mpath/to/b[33;23;22;24;25m [0mpath/to/c
+[0m
+ - [0m[32;23;22;24;25mShow owner and group name of each file:
+   [33;23;22;24;25mnamei [0m[-o|--owners][33;23;22;24;25m [0mpath/to/a[33;23;22;24;25m [0mpath/to/b[33;23;22;24;25m [0mpath/to/c
+[0m
+ - [0m[32;23;22;24;25mDon't follow symlinks while resolving:
+   [33;23;22;24;25mnamei [0m[-n|--nosymlinks][33;23;22;24;25m [0mpath/to/a[33;23;22;24;25m [0mpath/to/b[33;23;22;24;25m [0mpath/to/c
+[0m[0m

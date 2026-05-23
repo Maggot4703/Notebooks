@@ -1,0 +1,26 @@
+bzgrep
+
+[0m[0mFind patterns in bzip2 compressed files using grep.
+More information: https://manned.org/bzgrep.
+
+ - [0m[32;23;22;24;25mSearch for a pattern within a compressed file:
+   [33;23;22;24;25mbzgrep "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mUse extended regex (supports ?, +, {}, () and |), in case-insensitive mode:
+   [33;23;22;24;25mbzgrep [0m[-E|--extended-regexp][33;23;22;24;25m [0m[-i|--ignore-case][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint 3 lines of [C]ontext around, [B]efore, or [A]fter each match:
+   [33;23;22;24;25mbzgrep --[0mcontext|before-context|after-context[33;23;22;24;25m [0m3[33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint file name and line number for each match:
+   [33;23;22;24;25mbzgrep [0m[-H|--with-filename][33;23;22;24;25m [0m[-n|--line-number][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for lines matching a pattern, printing only the matched text:
+   [33;23;22;24;25mbzgrep [0m[-o|--only-matching][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mRecursively search files in a bzip2 compressed tar archive for a pattern:
+   [33;23;22;24;25mbzgrep [0m[-r|--recursive][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/tar/file
+[0m
+ - [0m[32;23;22;24;25mSearch stdin for lines that do not match a pattern:
+   [33;23;22;24;25mcat [0mpath/to/bz/compressed/file[33;23;22;24;25m | bzgrep [0m[-v|--invert-match][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m"[0m
+[0m[0m

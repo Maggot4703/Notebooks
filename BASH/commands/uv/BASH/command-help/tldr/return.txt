@@ -1,0 +1,11 @@
+return
+
+[0m[0mExit a function or a script if run with source.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-return.
+
+ - [0m[32;23;22;24;25mExit a function prematurely:
+   func_name[33;23;22;24;25m() { [0mecho "This is reached"[33;23;22;24;25m; return; [0mecho "This is not"[33;23;22;24;25m; }[0m
+[0m
+ - [0m[32;23;22;24;25mSpecify the function's return value:
+   func_name[33;23;22;24;25m() { return [0mexit_code[33;23;22;24;25m; }[0m
+[0m[0m

@@ -1,0 +1,12 @@
+runlevel
+
+[0m[0mSysV runlevel utility.
+See also: init.
+More information: https://manned.org/runlevel.
+
+ - [0m[32;23;22;24;25mReturn previous and current SysV runlevel:
+   [33;23;22;24;25mrunlevel[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mrunlevel --help[0m
+[0m[0m

@@ -1,0 +1,20 @@
+cmatrix
+
+[0m[0mShows a scrolling Matrix like screen in the terminal.
+More information: https://manned.org/cmatrix.
+
+ - [0m[32;23;22;24;25mEnable [a]synchronous scrolling:
+   [33;23;22;24;25mcmatrix -a[0m
+[0m
+ - [0m[32;23;22;24;25mChange the text [C]olor (green by default):
+   [33;23;22;24;25mcmatrix -C [0mred
+[0m
+ - [0m[32;23;22;24;25mEnable [r]ainbow mode:
+   [33;23;22;24;25mcmatrix -r[0m
+[0m
+ - [0m[32;23;22;24;25mUse a screen [u]pdate delay of 100 centiseconds (1 second):
+   [33;23;22;24;25mcmatrix -u 100[0m
+[0m
+ - [0m[32;23;22;24;25mUse [s]creensaver mode where the first keystroke exits:
+   [33;23;22;24;25mcmatrix -s[0m
+[0m[0m

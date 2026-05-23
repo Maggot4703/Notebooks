@@ -1,0 +1,20 @@
+systemd-escape
+
+[0m[0mEscape strings for usage in systemd unit names.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-escape.html.
+
+ - [0m[32;23;22;24;25mEscape the given text:
+   [33;23;22;24;25msystemd-escape [0mtext
+[0m
+ - [0m[32;23;22;24;25mReverse the escaping process:
+   [33;23;22;24;25msystemd-escape [0m[-u|--unescape][33;23;22;24;25m [0mtext
+[0m
+ - [0m[32;23;22;24;25mTreat the given text as a path:
+   [33;23;22;24;25msystemd-escape [0m[-p|--path][33;23;22;24;25m [0mtext
+[0m
+ - [0m[32;23;22;24;25mAppend the given suffix to the escaped text:
+   [33;23;22;24;25msystemd-escape --suffix [0msuffix[33;23;22;24;25m [0mtext
+[0m
+ - [0m[32;23;22;24;25mUse a template and inject the escaped text:
+   [33;23;22;24;25msystemd-escape --template [0mtemplate[33;23;22;24;25m [0mtext
+[0m[0m

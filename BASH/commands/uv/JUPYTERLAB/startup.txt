@@ -1,0 +1,4 @@
+deactivate 2>/dev/null || true
+cd "/home/me/Notebooks/JUPYTERLAB"
+uv sync --active
+uv run --active jupyter lab

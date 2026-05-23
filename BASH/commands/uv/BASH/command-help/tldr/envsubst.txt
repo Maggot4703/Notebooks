@@ -1,0 +1,18 @@
+envsubst
+
+[0m[0mSubstitutes environment variables with their value in shell format strings.
+Variables to be replaced should be in either ${var} or $var format.
+More information: https://www.gnu.org/software/gettext/manual/gettext.html#envsubst-Invocation.
+
+ - [0m[32;23;22;24;25mReplace environment variables in stdin and output to stdout:
+   [33;23;22;24;25mecho '[0m$HOME[33;23;22;24;25m' | envsubst[0m
+[0m
+ - [0m[32;23;22;24;25mReplace environment variables in an input file and output to stdout:
+   [33;23;22;24;25menvsubst < [0mpath/to/input_file
+[0m
+ - [0m[32;23;22;24;25mReplace environment variables in an input file and output to a file:
+   [33;23;22;24;25menvsubst < [0mpath/to/input_file[33;23;22;24;25m > [0mpath/to/output_file
+[0m
+ - [0m[32;23;22;24;25mReplace environment variables in an input file from a space-separated list:
+   [33;23;22;24;25menvsubst '[0m$USER $SHELL $HOME[33;23;22;24;25m' < [0mpath/to/input_file
+[0m[0m

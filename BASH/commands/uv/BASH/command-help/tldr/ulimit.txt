@@ -1,0 +1,21 @@
+ulimit
+
+[0m[0mGet and set resource limits for user processes.
+It is a shell builtin hence not shell-agnostic.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-ulimit.
+
+ - [0m[32;23;22;24;25mGet the properties of all the user limits:
+   [33;23;22;24;25mulimit -a[0m
+[0m
+ - [0m[32;23;22;24;25mGet hard limit for the number of simultaneously opened files:
+   [33;23;22;24;25mulimit -H -n[0m
+[0m
+ - [0m[32;23;22;24;25mGet soft limit for the number of simultaneously opened files:
+   [33;23;22;24;25mulimit -S -n[0m
+[0m
+ - [0m[32;23;22;24;25mSet max per-user process limit:
+   [33;23;22;24;25mulimit -u [0m30
+[0m
+ - [0m[32;23;22;24;25mDisplay help (Bash only):
+   [33;23;22;24;25mhelp ulimit[0m
+[0m[0m

@@ -1,0 +1,13 @@
+kmod
+
+[0m[0mManage Linux kernel modules.
+This program is usually called via its symlinks: lsmod, rmmod, insmod, modinfo, modprobe, and depmod.
+See their respective pages for more information.
+More information: https://manned.org/kmod.
+
+ - [0m[32;23;22;24;25mList currently loaded kernel modules:
+   [33;23;22;24;25mkmod list[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the static device nodes information provided by the modules of the currently running kernel:
+   [33;23;22;24;25mkmod static-nodes[0m
+[0m[0m

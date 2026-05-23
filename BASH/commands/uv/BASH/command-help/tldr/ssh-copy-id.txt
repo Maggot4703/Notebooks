@@ -1,0 +1,14 @@
+ssh-copy-id
+
+[0m[0mInstall your public key in a remote machine's authorized_keys.
+More information: https://manned.org/ssh-copy-id.
+
+ - [0m[32;23;22;24;25mCopy your keys to the remote machine:
+   [33;23;22;24;25mssh-copy-id [0musername[33;23;22;24;25m@[0mremote_host
+[0m
+ - [0m[32;23;22;24;25mCopy the given public key to the remote:
+   [33;23;22;24;25mssh-copy-id -i [0mpath/to/certificate[33;23;22;24;25m [0musername[33;23;22;24;25m@[0mremote_host
+[0m
+ - [0m[32;23;22;24;25mCopy the given public key to the remote with specific port:
+   [33;23;22;24;25mssh-copy-id -i [0mpath/to/certificate[33;23;22;24;25m -p [0mport[33;23;22;24;25m [0musername[33;23;22;24;25m@[0mremote_host
+[0m[0m

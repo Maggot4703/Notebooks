@@ -1,0 +1,15 @@
+ipptool
+
+[0m[0mIssue IPP requests and receive printer's/server's responses.
+See also: ippfind, ippeveprinter.
+More information: https://openprinting.github.io/cups/doc/man-ipptool.html.
+
+ - [0m[32;23;22;24;25mGet all attributes and their values supported by a printer:
+   [33;23;22;24;25mipptool ipp://[0mprinter_uri[33;23;22;24;25m get-completed-jobs.test[0m
+[0m
+ - [0m[32;23;22;24;25mGet the list of completed jobs of a printer:
+   [33;23;22;24;25mipptool ipp://[0mprinter_uri[33;23;22;24;25m get-completed-jobs.test[0m
+[0m
+ - [0m[32;23;22;24;25mSend an email notification when a printer changes:
+   [33;23;22;24;25mipptool -d recipient=mailto:[0memail[33;23;22;24;25m ipp://[0mprinter_uri[33;23;22;24;25m create-printer-subscription.test[0m
+[0m[0m

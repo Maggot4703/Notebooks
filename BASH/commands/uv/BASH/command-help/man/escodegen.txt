@@ -1,0 +1,16 @@
+ESCODEGEN(1)                General Commands Manual               ESCODEGEN(1)
+
+NAME
+       escodegen - ECMAScript code generator
+
+SYNOPSIS
+       escodegen [options] file...
+
+DESCRIPTION
+       escodegen  is  an  ECMAScript (also popularly known as JavaScript) code
+       generator from Mozilla's Parser API AST.
+
+OPTIONS
+       -c, --config String configuration json for escodegen
+
+escodegen                          May 2018                       ESCODEGEN(1)

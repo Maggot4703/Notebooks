@@ -1,0 +1,11 @@
+utmpdump
+
+[0m[0mDump and load btmp, utmp and wtmp accounting files.
+More information: https://manned.org/utmpdump.
+
+ - [0m[32;23;22;24;25mDump the /var/log/wtmp file to stdout as plain text:
+   [33;23;22;24;25mutmpdump [0m/var/log/wtmp
+[0m
+ - [0m[32;23;22;24;25mLoad a previously dumped file into /var/log/wtmp:
+   [33;23;22;24;25mutmpdump [0m[-r|--reverse][33;23;22;24;25m [0mdumpfile[33;23;22;24;25m > [0m/var/log/wtmp
+[0m[0m

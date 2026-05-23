@@ -1,0 +1,12 @@
+[project]
+name = "uv"
+version = "0.1.0"
+description = "UV help files for each command"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv.workspace]
+members = [
+    "uv",
+]

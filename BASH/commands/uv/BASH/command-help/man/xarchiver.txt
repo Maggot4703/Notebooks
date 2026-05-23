@@ -1,0 +1,69 @@
+XARCHIVER(1)                     User Commands                    XARCHIVER(1)
+
+NAME
+       xarchiver - GTK+ front end for managing archives
+
+SYNOPSIS
+       xarchiver [OPTION] [archive]
+
+DESCRIPTION
+       Xarchiver  is  a lightweight desktop environment independent GTK+ front
+       end for handling 7z, a (libraries), apk, arj,  bzip2,  cab,  cbz,  com‐
+       press,  cpio,  epub, exe (self-extracting Windows archives), gzip, iso,
+       jar, jsonlz4, lha, lrzip, lz4, lzip,  lzma,  lzop,  mozlz4,  oxt,  rar,
+       snap,  squashfs,  tar,  xpi,  xz,  zip,  zpaq,  zstd,  tar.bz2, tar.gz,
+       tar.lrz, tar.lz, tar.lz4, tar.lzma, tar.lzop,  tar.xz,  tar.Z,  tar.zst
+       and (without their package managers) deb and rpm files.
+       It  detects  the file types by their file signature (magic number), not
+       by their extension, and  utilizes  various  (un)compressor/(un)archiver
+       command  line  programs  at runtime. It allows to list, test and create
+       archives, add and copy files to them, extract,  delete,  cut  and  drag
+       files  from  them,  edit  files  in them, and paste and drop files into
+       them. Password protected 7z, arj, lrzip, rar and zip archives are  sup‐
+       ported and will be recognized.
+
+OPTIONS
+       -a, --add
+              add to archive by asking which files and quit
+
+       -c, --compress=file1 ... fileN
+              add the given files by asking the name of the archive and quit
+
+       -d, --ensure-directory
+              extract archive to a containing directory and quit
+
+       -e, --extract
+              extract archive by asking the extraction directory and quit
+
+       -m, --multi-extract
+              extract multiple archives by asking the extraction directory and
+              quit
+
+       -x, --extract-to=destination
+              extract archive to the destination directory and quit
+
+       -i, --info
+              show found command line programs to be used and exit
+
+       -v, --version
+              show version and exit
+
+       --display=DISPLAY
+              X display to use
+
+       -?, -h, --help
+              show help options
+
+       --help-gtk
+              show GTK+ options
+
+       --help-all
+              show all help options
+
+AUTHOR
+       Written by Giuseppe Torelli and Ingo Brückl.
+
+REPORTING BUGS
+       <https://github.com/ib/xarchiver/issues>
+
+xarchiver                         August 2022                     XARCHIVER(1)

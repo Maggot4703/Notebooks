@@ -1,0 +1,27 @@
+chat
+
+[0m[0mAutomate conversations with a modem or serial device.
+Commonly used to establish PPP (Point-to-Point Protocol) connections.
+More information: https://manned.org/chat.8.
+
+ - [0m[32;23;22;24;25mExecute a chat script directly from the command line:
+   [33;23;22;24;25mchat '[0mexpect_send_pairs[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a chat script from a file:
+   [33;23;22;24;25mchat -f '[0mpath/to/chat_script[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mSet a custom timeout (in seconds) for expecting a response:
+   [33;23;22;24;25mchat -t [0mtimeout_in_seconds[33;23;22;24;25m '[0mexpect_send_pairs[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mEnable verbose output to log the conversation to syslog:
+   [33;23;22;24;25mchat -v '[0mexpect_send_pairs[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mUse a report file to log specific strings received during the conversation:
+   [33;23;22;24;25mchat -r [0mpath/to/report_file[33;23;22;24;25m '[0mexpect_send_pairs[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mDial a phone number using a variable, substituting \T in the script:
+   [33;23;22;24;25mchat -T '[0mphone_number[33;23;22;24;25m' '[0m"ATDT\\T CONNECT"[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mInclude an abort condition if a specific string is received:
+   [33;23;22;24;25mchat 'ABORT "[0merror_string[33;23;22;24;25m" [0mexpect_send_pairs[33;23;22;24;25m'[0m
+[0m[0m

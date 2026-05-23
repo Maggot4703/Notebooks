@@ -1,0 +1,18 @@
+ccomps
+
+[0m[0mDecompose graphs into their connected components.
+Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten.
+More information: https://graphviz.org/pdf/ccomps.1.pdf.
+
+ - [0m[32;23;22;24;25mDecompose one or more graphs into their connected components:
+   [33;23;22;24;25mccomps [0mpath/to/input1.gv path/to/input2.gv ...[33;23;22;24;25m > [0mpath/to/output.gv
+[0m
+ - [0m[32;23;22;24;25mPrint the number of nodes, edges, and connected components in one or more graphs:
+   [33;23;22;24;25mccomps -v -s [0mpath/to/input1.gv path/to/input2.gv ...
+[0m
+ - [0m[32;23;22;24;25mWrite each connected component to numbered filenames based on output.gv:
+   [33;23;22;24;25mccomps -x -o [0mpath/to/output.gv[33;23;22;24;25m [0mpath/to/input1.gv path/to/input2.gv ...
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mccomps -?[0m
+[0m[0m

@@ -1,0 +1,12 @@
+tzselect
+
+[0m[0mInteractively select timezone.
+Note: This program doesn't actually set the timezone.
+More information: https://manned.org/tzselect.
+
+ - [0m[32;23;22;24;25mOpen the interactive menu for timezone selection and print the selected timezone to stdout:
+   [33;23;22;24;25mtzselect[0m
+[0m
+ - [0m[32;23;22;24;25mAsk for nearest timezone to coordinates in ISO 6709 notation:
+   [33;23;22;24;25mtzselect -c [0mcoordinates
+[0m[0m

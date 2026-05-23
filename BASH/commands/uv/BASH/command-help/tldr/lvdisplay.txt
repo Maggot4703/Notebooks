@@ -1,0 +1,18 @@
+lvdisplay
+
+[0m[0mDisplay information about Logical Volume Manager (LVM) logical volumes.
+See also: lvm, lvs.
+More information: https://manned.org/lvdisplay.
+
+ - [0m[32;23;22;24;25mDisplay information about all logical volumes:
+   [33;23;22;24;25msudo lvdisplay[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the information in a short format (same as running lvs):
+   [33;23;22;24;25msudo lvdisplay [0m[-C|--columns]
+[0m
+ - [0m[32;23;22;24;25mDisplay information about all logical volumes in volume group vg1:
+   [33;23;22;24;25msudo lvdisplay [0mvg1
+[0m
+ - [0m[32;23;22;24;25mDisplay information about logical volume lv1 in volume group vg1:
+   [33;23;22;24;25msudo lvdisplay [0mvg1/lv1
+[0m[0m

@@ -1,0 +1,20 @@
+ifconfig
+
+[0m[0mNetwork Interface Configurator.
+More information: https://net-tools.sourceforge.io/man/ifconfig.8.html.
+
+ - [0m[32;23;22;24;25mView network settings of an interface:
+   [33;23;22;24;25mifconfig [0minterface_name
+[0m
+ - [0m[32;23;22;24;25mDisplay details of all interfaces, including disabled interfaces:
+   [33;23;22;24;25mifconfig -a[0m
+[0m
+ - [0m[32;23;22;24;25mDisable an interface:
+   [33;23;22;24;25mifconfig [0minterface_name[33;23;22;24;25m down[0m
+[0m
+ - [0m[32;23;22;24;25mEnable an interface:
+   [33;23;22;24;25mifconfig [0minterface_name[33;23;22;24;25m up[0m
+[0m
+ - [0m[32;23;22;24;25mAssign an IP address to an interface:
+   [33;23;22;24;25mifconfig [0minterface_name[33;23;22;24;25m [0mip_address
+[0m[0m

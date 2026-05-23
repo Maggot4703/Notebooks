@@ -1,0 +1,169 @@
+# Page 40
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 3025 Fornice
+  Code: 3???
+  Size: -Brigade
+  Quality: Tete
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 80
+  TF: TF 10
+  TL: TL 12
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 3025 Fornice
+  Code: 3???
+  Size: -Brigade
+  Quality: Tete
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 80
+  TF: TF 10
+  TL: TL 12
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 3025 Fornice
+  Code: 0003
+  Size: 4-Division
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 160
+  TF: TF 20
+  TL: TL 12
+
+--- R2C1 | MARINE | X13.png ---
+  Unit ID: 3025 Fornice
+  Code: 0004
+  Size: 4-Division
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 160
+  TF: TF 20
+  TL: TL 12
+
+--- R2C2 | MARINE | X14.png ---
+  Unit ID: 3025 Fornice
+  Code: 0005
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 20
+  TF: TF 5
+  TL: TL 12
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 2521 Heroni
+  Code: 0001
+  Size: 2-Realment
+  Quality: 1-Elite
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 2-Marines
+  CF: CF 20
+  TF: TF 5
+  TL: TL 8
+
+--- R2C3 | MARINE | X15.png ---
+  Unit ID: 3029 Palique
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 20
+  TF: TF 5
+  TL: TL 14
+
+--- R3C1 | MARINE | X16.png ---
+  Unit ID: 3029 Palique
+  Code: 0002
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 20
+  TF: TF 5
+  TL: TL 14
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 2/28 Duale
+  Code: 0???
+  Size: -Company
+  Quality: i-elite
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF?
+  TF: TF 1
+  TL: TL 11
+
+--- R3C2 | MARINE | X17.png ---
+  Unit ID: 3029 Palique
+  Code: 0003
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 20
+  TF: TF 5
+  TL: TL 14
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 3024 Jokotre
+  Code: [unreadable - 4-digit code, see PDF]
+  Size: -Company
+  Quality: {-Elite
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 4
+  TF: TF 1
+  TL: TL ?
+
+--- R3C3 | MARINE | X18.png ---
+  Unit ID: 3029 Palique
+  Code: 0004
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 20
+  TF: TF 5
+  TL: TL 14
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 3024 Jokotre
+  Code: 0002
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL ?
+
+--- R4C1 | MARINE | X19.png ---
+  Unit ID: 3029 Palique
+  Code: 0005
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Grav
+  Type: 2-Marines
+  CF: CF 20
+  TF: TF 5
+  TL: TL 14

@@ -1,0 +1,21 @@
+setarch
+
+[0m[0mChange the reported architecture for a program's execution, primarily used to modify how programs behave based on system architecture.
+Useful for compatibility testing or running legacy applications.
+More information: https://manned.org/setarch.8.
+
+ - [0m[32;23;22;24;25mRun a command as if the machine architecture is i686 (useful for running 32-bit apps on a 64-bit kernel):
+   [33;23;22;24;25msetarch i686 [0mcommand
+[0m
+ - [0m[32;23;22;24;25mRun a shell with the x86_64 architecture:
+   [33;23;22;24;25msetarch x86_64 [0mbash
+[0m
+ - [0m[32;23;22;24;25mDisable randomization of the virtual address space:
+   [33;23;22;24;25msetarch [0mlinux32[33;23;22;24;25m [0m[-R|--addr-no-randomize][33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mList supported architectures:
+   [33;23;22;24;25msetarch --list[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25msetarch [0m[-h|--help]
+[0m[0m

@@ -1,0 +1,17 @@
+locale
+
+[0m[0mGet locale-specific information.
+More information: https://manned.org/locale.
+
+ - [0m[32;23;22;24;25mList all global environment variables describing the user's locale:
+   [33;23;22;24;25mlocale[0m
+[0m
+ - [0m[32;23;22;24;25mList all available locales:
+   [33;23;22;24;25mlocale [0m[-a|--all-locales]
+[0m
+ - [0m[32;23;22;24;25mDisplay all available locales and the associated metadata:
+   [33;23;22;24;25mlocale [0m[-a|--all-locales][33;23;22;24;25m [0m[-v|--verbose]
+[0m
+ - [0m[32;23;22;24;25mDisplay the current date format:
+   [33;23;22;24;25mlocale date_fmt[0m
+[0m[0m

@@ -1,0 +1,30 @@
+iw
+
+[0m[0mShow and manipulate wireless devices.
+See also: iw dev.
+More information: https://wireless.docs.kernel.org/en/latest/en/users/documentation/iw.html.
+
+ - [0m[32;23;22;24;25mScan for available wireless networks:
+   [33;23;22;24;25miw dev [0mwlp[33;23;22;24;25m scan[0m
+[0m
+ - [0m[32;23;22;24;25mJoin an open wireless network:
+   [33;23;22;24;25miw dev [0mwlp[33;23;22;24;25m connect [0mSSID
+[0m
+ - [0m[32;23;22;24;25mClose the current connection:
+   [33;23;22;24;25miw dev [0mwlp[33;23;22;24;25m disconnect[0m
+[0m
+ - [0m[32;23;22;24;25mShow information about the current connection:
+   [33;23;22;24;25miw dev [0mwlp[33;23;22;24;25m link[0m
+[0m
+ - [0m[32;23;22;24;25mList all physical and logical wireless network interfaces:
+   [33;23;22;24;25miw dev[0m
+[0m
+ - [0m[32;23;22;24;25mList all wireless capabilities for all physical hardware interfaces:
+   [33;23;22;24;25miw phy[0m
+[0m
+ - [0m[32;23;22;24;25mList the kernel's current wireless regulatory domain information:
+   [33;23;22;24;25miw reg get[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help for all commands:
+   [33;23;22;24;25miw help[0m
+[0m[0m

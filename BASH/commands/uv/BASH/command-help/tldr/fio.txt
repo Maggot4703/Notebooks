@@ -1,0 +1,20 @@
+fio
+
+[0m[0mFlexible I/O tester: do an I/O action spawning multiple threads or processes.
+More information: https://fio.readthedocs.io/en/latest/fio_doc.html.
+
+ - [0m[32;23;22;24;25mTest random reads:
+   [33;23;22;24;25mfio --filename=[0mpath/to/file[33;23;22;24;25m --direct=1 --rw=randread --bs=4k --ioengine=libaio --iodepth=256 --runtime=120 --numjobs=4 --time_based --group_reporting --name=[0mjob_name[33;23;22;24;25m --eta-newline=1 --readonly[0m
+[0m
+ - [0m[32;23;22;24;25mTest sequential reads:
+   [33;23;22;24;25mfio --filename=[0mpath/to/file[33;23;22;24;25m --direct=1 --rw=read --bs=4k --ioengine=libaio --iodepth=256 --runtime=120 --numjobs=4 --time_based --group_reporting --name=[0mjob_name[33;23;22;24;25m --eta-newline=1 --readonly[0m
+[0m
+ - [0m[32;23;22;24;25mTest random read/write:
+   [33;23;22;24;25mfio --filename=[0mpath/to/file[33;23;22;24;25m --direct=1 --rw=randrw --bs=4k --ioengine=libaio --iodepth=256 --runtime=120 --numjobs=4 --time_based --group_reporting --name=[0mjob_name[33;23;22;24;25m --eta-newline=1[0m
+[0m
+ - [0m[32;23;22;24;25mTest with parameters from a job file:
+   [33;23;22;24;25mfio [0mpath/to/job_file
+[0m
+ - [0m[32;23;22;24;25mConvert a specific job file to command-line options:
+   [33;23;22;24;25mfio --showcmd [0mpath/to/job_file
+[0m[0m

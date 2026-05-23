@@ -1,0 +1,14 @@
+dirname
+
+[0m[0mCalculates the parent directory of a file or directory path.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/dirname-invocation.html.
+
+ - [0m[32;23;22;24;25mCalculate the parent directory of a given path:
+   [33;23;22;24;25mdirname [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mCalculate the parent directory of multiple paths:
+   [33;23;22;24;25mdirname [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...
+[0m
+ - [0m[32;23;22;24;25mDelimit output with a NUL character instead of a newline (useful when combining with xargs):
+   [33;23;22;24;25mdirname [0m[-z|--zero][33;23;22;24;25m [0mpath/to/file_or_directory1 path/to/file_or_directory2 ...
+[0m[0m

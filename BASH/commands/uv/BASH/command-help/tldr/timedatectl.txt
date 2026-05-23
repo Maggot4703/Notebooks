@@ -1,0 +1,23 @@
+timedatectl
+
+[0m[0mControl the system time and date.
+More information: https://manned.org/timedatectl.
+
+ - [0m[32;23;22;24;25mCheck the current system clock time:
+   [33;23;22;24;25mtimedatectl[0m
+[0m
+ - [0m[32;23;22;24;25mSet the local time of the system clock directly:
+   [33;23;22;24;25mtimedatectl set-time "[0myyyy-MM-dd hh:mm:ss[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mList available timezones:
+   [33;23;22;24;25mtimedatectl list-timezones[0m
+[0m
+ - [0m[32;23;22;24;25mSet the system timezone:
+   [33;23;22;24;25mtimedatectl set-timezone [0mtimezone
+[0m
+ - [0m[32;23;22;24;25mEnable Network Time Protocol (NTP) synchronization:
+   [33;23;22;24;25mtimedatectl set-ntp on[0m
+[0m
+ - [0m[32;23;22;24;25mChange the hardware clock time standard to localtime:
+   [33;23;22;24;25mtimedatectl set-local-rtc 1[0m
+[0m[0m

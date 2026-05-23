@@ -1,0 +1,30 @@
+wget
+
+[0m[0mDownload files from the Web.
+Supports HTTP, HTTPS, and FTP.
+More information: https://www.gnu.org/software/wget/manual/wget.html.
+
+ - [0m[32;23;22;24;25mDownload the contents of a URL to a file (named "foo" in this case):
+   [33;23;22;24;25mwget [0mhttps://example.com/foo
+[0m
+ - [0m[32;23;22;24;25mDownload the contents of a URL to a file (named "bar" in this case):
+   [33;23;22;24;25mwget [0m[-O|--output-document][33;23;22;24;25m [0mbar[33;23;22;24;25m [0mhttps://example.com/foo
+[0m
+ - [0m[32;23;22;24;25mDownload a single web page and all its resources with 3-second intervals between requests (scripts, stylesheets, images, etc.):
+   [33;23;22;24;25mwget [0m[-pkw|--page-requisites --convert-links --wait][33;23;22;24;25m 3 [0mhttps://example.com/some_page.html
+[0m
+ - [0m[32;23;22;24;25mDownload all listed files within a directory and its sub-directories (does not download embedded page elements):
+   [33;23;22;24;25mwget [0m[-mnp|--mirror --no-parent][33;23;22;24;25m [0mhttps://example.com/some_path/
+[0m
+ - [0m[32;23;22;24;25mLimit the download speed and the number of connection retries:
+   [33;23;22;24;25mwget --limit-rate [0m300k[33;23;22;24;25m [0m[-t|--tries][33;23;22;24;25m [0m100[33;23;22;24;25m [0mhttps://example.com/some_path/
+[0m
+ - [0m[32;23;22;24;25mDownload a file from an HTTP server using Basic Auth (also works for FTP):
+   [33;23;22;24;25mwget --user [0musername[33;23;22;24;25m --password [0mpassword[33;23;22;24;25m [0mhttps://example.com
+[0m
+ - [0m[32;23;22;24;25mContinue an incomplete download:
+   [33;23;22;24;25mwget [0m[-c|--continue][33;23;22;24;25m [0mhttps://example.com
+[0m
+ - [0m[32;23;22;24;25mDownload all URLs stored in a text file to a specific directory:
+   [33;23;22;24;25mwget [0m[-P|--directory-prefix][33;23;22;24;25m [0mpath/to/directory[33;23;22;24;25m [0m[-i|--input-file][33;23;22;24;25m [0mpath/to/URLs.txt
+[0m[0m

@@ -1,0 +1,588 @@
+================================================================================
+                    CREWAI — AGENTS & SKILLS IN DETAIL
+================================================================================
+  Based on the CREW/ workspace at /home/me/Notebooks/CREW
+  Framework: CrewAI (Python 3.11)
+  Key source: src/crewai_skill_demo/tools/world_lookup_tool.py
+================================================================================
+
+
+────────────────────────────────────────────────────────────────────────────────
+PART 1 — CONCEPTUAL OVERVIEW
+────────────────────────────────────────────────────────────────────────────────
+
+What is CrewAI?
+───────────────
+CrewAI is a Python framework for orchestrating multiple AI agents that
+collaborate to complete complex tasks. Think of it like a crew of specialists
+aboard a ship — each member has a distinct role, goal, and a set of tools
+(skills) they know how to use. CrewAI wires those crew members together with
+tasks and a shared mission.
+
+The three core building blocks are:
+  1. Skills  — what an agent CAN DO  (implemented as Tools / BaseTool subclasses)
+  2. Agents  — who does the work     (role, goal, backstory, tools)
+  3. Crew    — how they work together (tasks, process, agents)
+
+This document focuses deeply on Skills and Agents.
+
+
+────────────────────────────────────────────────────────────────────────────────
+PART 2 — SKILLS  (CrewAI Tools / BaseTool)
+────────────────────────────────────────────────────────────────────────────────
+
+What is a "Skill"?
+──────────────────
+In the current CrewAI documentation, a reusable agent "skill" is implemented
+as a custom Tool — specifically a subclass of `crewai.tools.BaseTool`.
+The terms "skill" and "tool" are interchangeable in this context.
+
+A skill gives an agent a concrete capability it can call at any time during its
+reasoning loop: look up data, call an API, parse a file, run a calculation, etc.
+The LLM running the agent decides when to invoke a skill and with what input;
+the skill executes deterministically and returns a result string.
+
+The BaseTool Contract
+─────────────────────
+Every skill must satisfy three required class attributes and one method:
+
+  ┌────────────────────────────────────────────────────────────────────────────┐
+  │  name:        str              — machine-readable identifier               │
+  │  description: str              — natural-language description for the LLM  │
+  │  args_schema: Type[BaseModel]  — Pydantic model defining valid inputs       │
+  │  _run(self, **kwargs) -> str   — the actual implementation                 │
+  └────────────────────────────────────────────────────────────────────────────┘
+
+Why each matters:
+
+  name
+    The LLM selects which tool to call by this identifier. It should be a
+    concise snake_case string, e.g. "traveller_world_lookup". Names must be
+    unique within a crew.
+
+  description
+    This is the primary signal the LLM uses to decide whether to call the tool.
+    Write it like a one-sentence docstring: start with a verb, be specific.
+    A vague description leads to the agent calling the wrong tool or not calling
+    it at all.
+
+  args_schema
+    A Pydantic v2 BaseModel class. Each field on the model becomes a parameter
+    the LLM must supply when it invokes the tool. The framework validates the
+    LLM's output against this schema before calling _run(), preventing malformed
+    inputs. Always use `Field(..., description="...")` so the LLM knows what
+    each field means.
+
+  _run(self, ...)
+    The real Python code that executes the skill. It receives the validated
+    field values from args_schema as keyword arguments. It must return a str —
+    that string is handed back to the agent as the "tool result" and gets
+    included in the agent's reasoning context.
+
+
+The Full Pattern (Minimal)
+──────────────────────────
+  from typing import Type
+  from crewai.tools import BaseTool
+  from pydantic import BaseModel, Field
+
+  class MySkillInput(BaseModel):
+      value: str = Field(..., description="The input string for the skill.")
+
+  class MySkillTool(BaseTool):
+      name: str = "my_skill"
+      description: str = "Processes a value and returns a transformed result."
+      args_schema: Type[BaseModel] = MySkillInput
+
+      def _run(self, value: str) -> str:
+          return f"Handled: {value}"
+
+This is the exact pattern documented in CREW/README.md (lines 56–73).
+
+
+Real Example: WorldLookupTool
+──────────────────────────────
+File: src/crewai_skill_demo/tools/world_lookup_tool.py
+
+  from typing import Type
+  from crewai.tools import BaseTool
+  from pydantic import BaseModel, Field
+
+
+  class WorldLookupInput(BaseModel):
+      """Validated input schema for the world lookup skill."""
+      world_name: str = Field(..., description="Traveller world name to look up.")
+
+
+  class WorldLookupTool(BaseTool):
+      """Example CrewAI tool backed by a small in-memory Traveller catalogue."""
+
+      name: str = "traveller_world_lookup"
+      description: str = "Looks up a small local Traveller world catalogue by name."
+      args_schema: Type[BaseModel] = WorldLookupInput
+
+      _WORLD_DATA: dict[str, str] = {
+          "regina":   "Regina (1910): subsector capital, class A starport, major trade role.",
+          "efate":    "Efate (1705): high-population world, strong Imperial center.",
+          "rhylanor": "Rhylanor (2716): major Spinward Marches hub, strong commerce.",
+      }
+
+      def _run(self, world_name: str) -> str:
+          key = world_name.strip().lower()          # normalise casing
+          if key in self._WORLD_DATA:
+              return self._WORLD_DATA[key]
+          return (
+              f"No local entry for '{world_name}'. "
+              "Add it to WorldLookupTool._WORLD_DATA to expand this skill."
+          )
+
+Walkthrough of the real example:
+
+  WorldLookupInput (the schema)
+    • Declares one required field: world_name (str).
+    • The Field(...) first argument is "..." which means required (no default).
+    • The description is what the agent's LLM sees when deciding what to pass.
+
+  WorldLookupTool (the skill)
+    • name = "traveller_world_lookup" — short and descriptive.
+    • description tells the LLM exactly what the tool does.
+    • args_schema = WorldLookupInput — wires up validation.
+    • _WORLD_DATA is a class-level dict — acts as the in-memory "database".
+      Because this is a class variable (not an instance variable), it is shared
+      across all instances, which is fine for read-only reference data.
+    • _run() lower-cases the input to make lookups case-insensitive, then
+      returns either the found record or a helpful "not found" message.
+
+  Why store data in the tool?
+    The demo is intentionally self-contained so it runs without external
+    services, APIs, or database connections. In production you would replace
+    _WORLD_DATA with a real DB query, API call, or file read.
+
+
+How Skills Are Discovered and Invoked at Runtime
+──────────────────────────────────────────────────
+When an agent is running a task, CrewAI builds a prompt for the underlying
+LLM that includes:
+
+  1. The agent's role, goal, and backstory.
+  2. The task description.
+  3. A formatted list of available tools: for each tool, the name, description,
+     and the JSON schema derived from args_schema.
+
+The LLM reads this and decides: "I should call traveller_world_lookup with
+world_name = 'Regina'."
+
+CrewAI intercepts that decision, validates "Regina" against WorldLookupInput,
+calls tool._run(world_name="Regina"), and injects the returned string back into
+the LLM's context. The agent can then use that result to form its final answer.
+
+This loop (reason → act → observe) is the ReAct pattern and is central to how
+agentic systems work.
+
+
+Exporting Skills (tools/__init__.py)
+─────────────────────────────────────
+File: src/crewai_skill_demo/tools/__init__.py
+
+  from crewai_skill_demo.tools.world_lookup_tool import WorldLookupTool
+  __all__ = ["WorldLookupTool"]
+
+Every new tool file must be imported here and added to __all__. This lets
+consumers do:
+
+  from crewai_skill_demo.tools import WorldLookupTool
+
+instead of importing the full dotted path. When you add a new skill, always
+update this file.
+
+
+Scaffolding a New Skill with the CLI
+──────────────────────────────────────
+Once crewai is installed you can auto-generate a tool scaffold:
+
+  pipenv run crewai create tool my_skill_name
+
+This creates a new file with the BaseTool boilerplate already filled in.
+You then fill in the business logic in _run().
+
+
+Testing Skills in Isolation
+─────────────────────────────
+Because _run() is a plain Python method, you can test skills without an LLM:
+
+  tool = WorldLookupTool()
+  result = tool._run("Regina")
+  assert "Regina (1910)" in result
+
+This is exactly what demo.py does:
+
+  File: src/crewai_skill_demo/demo.py
+
+    from crewai_skill_demo.tools.world_lookup_tool import WorldLookupTool
+
+    def main() -> None:
+        tool = WorldLookupTool()
+        print(tool._run("Regina"))
+
+    if __name__ == "__main__":
+        main()
+
+Run it with:
+  PYTHONPATH=src pipenv run python -m crewai_skill_demo.demo
+
+Expected output:
+  Regina (1910): subsector capital with a class A starport and a major trade role.
+
+And the smoke tests in tests/test_skill_demo.py verify this automatically:
+
+  class SkillDemoSmokeTests(unittest.TestCase):
+      def test_root_starter_demo_outputs_regina_lookup(self) -> None:
+          output = self._run_demo(ROOT_STARTER)
+          self.assertIn("Regina (1910)", output)
+
+Run all tests:
+  PYTHONPATH=src python -m pytest tests/
+
+
+Skill Design Best Practices
+─────────────────────────────
+  1. One responsibility per skill.
+     A skill should do one thing well. Don't build a "do everything" tool.
+     The LLM has a better chance of calling the right tool when each has a
+     narrow, clear purpose.
+
+  2. Make descriptions LLM-friendly.
+     Write the description as if you are telling a capable but literal
+     assistant what the tool does. Include what inputs it expects and what
+     format the output is in.
+
+  3. Always validate with Pydantic.
+     Never skip args_schema. LLMs can hallucinate parameters. Pydantic catches
+     type mismatches and missing fields before they reach your code.
+
+  4. Return plain strings.
+     _run() must return str. If your data is structured (dict, list, object),
+     convert it: return json.dumps(result) or return str(result).
+
+  5. Handle errors gracefully.
+     Return an informative error string rather than raising an exception.
+     The agent can then decide what to do with that information.
+     Example:
+       if not found:
+           return f"No entry for '{name}'. Try a different spelling."
+
+  6. Keep skills runnable without credentials in development.
+     Use local data (like _WORLD_DATA) for the demo path. Add API calls and
+     environment variable reads behind conditionals so tests don't fail without
+     secrets configured.
+
+  7. Export from __init__.py.
+     Always add new tools to tools/__init__.py so imports stay clean and
+     consistent across the codebase.
+
+
+────────────────────────────────────────────────────────────────────────────────
+PART 3 — AGENTS
+────────────────────────────────────────────────────────────────────────────────
+
+What is an Agent?
+──────────────────
+An Agent is an autonomous AI entity that has a role, a goal, a backstory, and
+a set of tools (skills). It uses an LLM to reason about a task, decide which
+tools to call and in what order, interpret the results, and ultimately produce
+an output.
+
+An agent is not a script. It does not follow a fixed sequence of steps.
+It reasons dynamically — given its goal and the available tools, it figures out
+a plan and executes it iteratively until it has a satisfactory answer.
+
+Defining an Agent
+──────────────────
+  from crewai import Agent
+  from crewai_skill_demo.tools.world_lookup_tool import WorldLookupTool
+
+  researcher = Agent(
+      role      = "Traveller researcher",
+      goal      = "Answer world questions accurately",
+      backstory = "Knows how to use a local world lookup skill.",
+      tools     = [WorldLookupTool()],
+      verbose   = True,
+  )
+
+This is the canonical example from CREW/README.md (lines 101–109).
+
+Agent Parameters Explained
+───────────────────────────
+
+  role (str, required)
+    The agent's professional title or function. Used in prompts to set context.
+    Think of it as the job description. Example: "Senior Data Analyst",
+    "Travel Researcher", "Code Reviewer".
+
+  goal (str, required)
+    The single driving objective this agent is trying to achieve. It should be
+    specific and outcome-oriented. The agent uses this to evaluate whether its
+    work is "done enough". Example: "Find and summarise recent news about the
+    Spinward Marches subsectors."
+
+  backstory (str, required)
+    A prose paragraph (or sentence) describing who this agent is, what
+    experience it has, and how it approaches problems. This is injected into the
+    LLM system prompt to shape tone, reasoning style, and personality.
+    Example: "A seasoned Traveller scout who has mapped dozens of subsectors
+    and relies on data-driven research before drawing conclusions."
+
+  tools (list[BaseTool], default=[])
+    A list of instantiated BaseTool objects (skills) the agent is allowed to
+    use. The agent sees the name and description of each tool and decides when
+    to invoke them. An agent with no tools can only reason using its LLM
+    knowledge — it cannot take external actions.
+
+  verbose (bool, default=False)
+    When True, CrewAI prints each reasoning step, tool call, and tool result
+    to stdout. Essential during development so you can see what the agent is
+    actually doing. Disable in production to reduce noise.
+
+  llm (optional)
+    The language model to use for this agent. If not specified, CrewAI uses
+    the model configured in the environment (MODEL= in .env). Supports any
+    LiteLLM-compatible model string, e.g. "openai/gpt-4.1-mini".
+
+  memory (bool, default=False)
+    When True, the agent remembers context across multiple task runs within
+    a crew execution, allowing later tasks to build on earlier results.
+
+  allow_delegation (bool, default=True)
+    Allows this agent to hand off a subtask to another agent in the crew.
+    Useful in multi-agent setups where agents specialise.
+
+  max_iter (int, default=15)
+    Maximum number of reasoning iterations before the agent is forced to stop
+    and return whatever answer it has. Prevents infinite loops.
+
+  step_callback (callable, optional)
+    A function called after each agent step, useful for logging or monitoring.
+
+
+The Agent Reasoning Loop (ReAct)
+──────────────────────────────────
+CrewAI agents follow the ReAct (Reason + Act) pattern:
+
+  ┌──────────────────────────────────────────────────────────────────────┐
+  │                                                                      │
+  │  Thought: "I need to look up Regina. I'll use traveller_world_lookup"│
+  │      ↓                                                               │
+  │  Action: traveller_world_lookup(world_name="Regina")                 │
+  │      ↓                                                               │
+  │  Observation: "Regina (1910): subsector capital, class A starport…"  │
+  │      ↓                                                               │
+  │  Thought: "I have the data. I can now answer the task."              │
+  │      ↓                                                               │
+  │  Final Answer: "Regina is the subsector capital at hex 1910…"        │
+  │                                                                      │
+  └──────────────────────────────────────────────────────────────────────┘
+
+Each iteration consists of:
+  1. Thought   — the LLM reasons about what to do next
+  2. Action    — choose a tool and provide arguments
+  3. Observation — the tool's return value is fed back to the LLM
+  4. Repeat until the LLM produces a "Final Answer"
+
+The agent's backstory, role, and goal all influence the Thought steps.
+The tools available influence which Actions are possible.
+
+
+Attaching Skills to Agents
+───────────────────────────
+Skills are attached at instantiation time via the tools= list:
+
+  tools=[WorldLookupTool()]    # instantiated, not the class itself
+
+Each tool in the list is available to the agent. The agent's LLM sees:
+
+  Available Tools:
+  - traveller_world_lookup: Looks up a small local Traveller world catalogue by name.
+    Arguments: {"world_name": {"type": "string", "description": "Traveller world name to look up."}}
+
+The richer and more accurate your tool's description and schema, the better
+the agent can decide when and how to use it.
+
+You can give an agent multiple skills:
+
+  navigator = Agent(
+      role="Navigator",
+      goal="Plan safe jump routes through the Spinward Marches",
+      backstory="Expert in astrogation with access to world and route data.",
+      tools=[
+          WorldLookupTool(),
+          RoutePlannerTool(),
+          FuelCalculatorTool(),
+      ],
+  )
+
+
+Agents Without Tools
+─────────────────────
+An agent can have no tools. In that case it acts as a "pure reasoning" agent —
+it uses only LLM knowledge and the context provided by other agents in the crew.
+
+  analyst = Agent(
+      role="Data Analyst",
+      goal="Synthesise research into a clear summary",
+      backstory="Excellent at drawing conclusions from gathered data.",
+      tools=[],     # no tools — this agent only reasons
+  )
+
+In a multi-agent crew, a researcher agent (with tools) gathers data and a
+synthesis agent (no tools) analyses and writes the final output.
+
+
+The LLM Behind the Agent
+─────────────────────────
+Agents need an LLM to do their reasoning. This is configured via environment
+variables in the .env file:
+
+  OPENAI_API_KEY=replace-me
+  MODEL=openai/gpt-4.1-mini
+
+CrewAI uses LiteLLM under the hood, which means you can swap to any supported
+provider by changing the MODEL= value:
+
+  openai/gpt-4.1-mini     → OpenAI GPT-4.1 mini
+  openai/gpt-4o           → OpenAI GPT-4o
+  anthropic/claude-3-5-sonnet-20241022  → Anthropic Claude
+  ollama/llama3           → Local Ollama model
+
+The demo (demo.py) does NOT need an LLM because it calls tool._run() directly.
+The LLM is only required when running a full crew where the agent must reason
+about which tool to call.
+
+
+────────────────────────────────────────────────────────────────────────────────
+PART 4 — FROM SKILL TO CREW: THE FULL PICTURE
+────────────────────────────────────────────────────────────────────────────────
+
+Here is how everything fits together in a complete (minimal) crew:
+
+  from crewai import Agent, Task, Crew, Process
+  from crewai_skill_demo.tools.world_lookup_tool import WorldLookupTool
+
+  # 1. Define the skill
+  lookup_skill = WorldLookupTool()
+
+  # 2. Define the agent with that skill
+  researcher = Agent(
+      role="Traveller researcher",
+      goal="Answer world questions accurately",
+      backstory="Knows how to use a local world lookup skill.",
+      tools=[lookup_skill],
+      verbose=True,
+  )
+
+  # 3. Define a task for that agent
+  task = Task(
+      description="Look up the world Regina and summarise its key features.",
+      expected_output="A short paragraph about Regina.",
+      agent=researcher,
+  )
+
+  # 4. Assemble the crew
+  crew = Crew(
+      agents=[researcher],
+      tasks=[task],
+      process=Process.sequential,    # tasks run one after another
+      verbose=True,
+  )
+
+  # 5. Run the crew
+  result = crew.kickoff()
+  print(result)
+
+Data flow:
+  crew.kickoff()
+      → Task is given to researcher agent
+      → Agent LLM reasons: "I should call traveller_world_lookup with Regina"
+      → CrewAI validates "Regina" against WorldLookupInput
+      → WorldLookupTool._run(world_name="Regina") executes
+      → Returns "Regina (1910): subsector capital…"
+      → LLM incorporates result into final answer
+      → Task result returned to crew
+      → crew.kickoff() returns final output
+
+
+────────────────────────────────────────────────────────────────────────────────
+PART 5 — WORKSPACE FILE STRUCTURE (ANNOTATED)
+────────────────────────────────────────────────────────────────────────────────
+
+CREW/
+├── .env.example                ← Copy to .env, add OPENAI_API_KEY + MODEL
+│                                  Only needed for real LLM-driven crew runs
+│
+├── README.md                   ← Step-by-step guide; skill pattern; run commands
+│
+├── crew.ipynb                  ← Jupyter notebook with Traveller world data
+│                                  experiments (UWP parsing, crew roster concepts)
+│
+├── src/
+│   └── crewai_skill_demo/
+│       ├── __init__.py         ← Package marker; docstring only
+│       │
+│       ├── demo.py             ← Entry point: instantiates WorldLookupTool
+│       │                          and calls _run("Regina") directly
+│       │                          Run: PYTHONPATH=src python -m crewai_skill_demo.demo
+│       │
+│       └── tools/
+│           ├── __init__.py     ← Re-exports WorldLookupTool; add new tools here
+│           └── world_lookup_tool.py  ← THE skill implementation
+│                                        WorldLookupInput (schema)
+│                                        WorldLookupTool (BaseTool subclass)
+│
+├── tests/
+│   └── test_skill_demo.py      ← Smoke tests; both root and Crew/ copies tested
+│                                  Run: PYTHONPATH=src python -m pytest tests/
+│
+└── Crew/                       ← Nested copy of the same starter
+    ├── Pipfile                 ← crewai = "*", python_version = "3.11"
+    ├── .env.example
+    ├── README.md
+    ├── src/  (identical layout)
+    └── tests/ (single-copy smoke test)
+
+
+────────────────────────────────────────────────────────────────────────────────
+PART 6 — QUICK REFERENCE
+────────────────────────────────────────────────────────────────────────────────
+
+SKILL CHECKLIST (for every new tool):
+  ☐  Create new file in src/crewai_skill_demo/tools/my_tool.py
+  ☐  Define Pydantic input model (MyToolInput) with Field(..., description=...)
+  ☐  Define BaseTool subclass with name, description, args_schema
+  ☐  Implement _run(self, ...) → str
+  ☐  Add to tools/__init__.py and __all__
+  ☐  Test in isolation: tool = MyTool(); print(tool._run(...))
+
+AGENT CHECKLIST:
+  ☐  Give a specific role, goal, and backstory
+  ☐  Attach instantiated tool objects: tools=[MyTool()]
+  ☐  Set verbose=True during development
+  ☐  Configure LLM via .env (copy .env.example → .env)
+
+COMMANDS:
+  Install:    cd CREW && pipenv install --skip-lock
+  Demo:       PYTHONPATH=src pipenv run python -m crewai_skill_demo.demo
+  Tests:      PYTHONPATH=src python -m pytest tests/
+  Scaffold:   pipenv run crewai create tool my_tool_name
+
+KEY IMPORTS:
+  from crewai import Agent, Task, Crew, Process
+  from crewai.tools import BaseTool
+  from pydantic import BaseModel, Field
+  from typing import Type
+
+ENVIRONMENT VARIABLES (.env):
+  OPENAI_API_KEY   — API key for the LLM provider
+  MODEL            — LiteLLM model string, e.g. openai/gpt-4.1-mini
+
+================================================================================
+END OF DOCUMENT
+================================================================================

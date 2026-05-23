@@ -1,0 +1,12 @@
+vgscan
+
+[0m[0mScan for volume groups on all supported Logical Volume Manager (LVM) block devices.
+See also: lvm, vgchange.
+More information: https://manned.org/vgscan.
+
+ - [0m[32;23;22;24;25mScan for volume groups and print information about each group found:
+   [33;23;22;24;25msudo vgscan[0m
+[0m
+ - [0m[32;23;22;24;25mScan for volume groups and add the special files in /dev, if they don't already exist, needed to access the logical volumes in the found groups:
+   [33;23;22;24;25msudo vgscan --mknodes[0m
+[0m[0m

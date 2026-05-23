@@ -1,0 +1,17 @@
+login
+
+[0m[0mInitiates a session for a user.
+More information: https://manned.org/login.
+
+ - [0m[32;23;22;24;25mLog in as a user:
+   [33;23;22;24;25mlogin [0muser
+[0m
+ - [0m[32;23;22;24;25mLog in as user without authentication if user is preauthenticated:
+   [33;23;22;24;25mlogin -f [0muser
+[0m
+ - [0m[32;23;22;24;25mLog in as user and preserve environment:
+   [33;23;22;24;25mlogin -p [0muser
+[0m
+ - [0m[32;23;22;24;25mLog in as a user on a remote host:
+   [33;23;22;24;25mlogin -h [0mhost[33;23;22;24;25m [0muser
+[0m[0m

@@ -1,0 +1,17 @@
+mkfifo
+
+[0m[0mMake FIFOs (named pipes).
+More information: https://www.gnu.org/software/coreutils/manual/html_node/mkfifo-invocation.html.
+
+ - [0m[32;23;22;24;25mCreate a named pipe at a given path:
+   [33;23;22;24;25mmkfifo [0mpath/to/pipe
+[0m
+ - [0m[32;23;22;24;25mSend data through a named pipe and send the command to the background:
+   [33;23;22;24;25mecho "[0mHello World[33;23;22;24;25m" > [0mpath/to/pipe[33;23;22;24;25m &[0m
+[0m
+ - [0m[32;23;22;24;25mReceive data through a named pipe:
+   [33;23;22;24;25mcat [0mpath/to/pipe
+[0m
+ - [0m[32;23;22;24;25mShare your terminal session in real-time:
+   [33;23;22;24;25mmkfifo [0mpath/to/pipe[33;23;22;24;25m; script [0m[-f|--flush][33;23;22;24;25m [0mpath/to/pipe
+[0m[0m

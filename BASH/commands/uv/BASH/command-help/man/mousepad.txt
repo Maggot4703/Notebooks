@@ -1,0 +1,79 @@
+MOUSEPAD(1)                      User Commands                     MOUSEPAD(1)
+
+NAME
+       mousepad — simple text editor for Xfce
+
+SYNOPSIS
+       mousepad [files]
+
+DESCRIPTION
+       This manual page documents briefly the mousepad command.
+
+       mousepad is a simple text editor for the Xfce Desktop Environment.
+
+   Usage:
+              mousepad [OPTION...] [FILES...]
+
+   Help Options:
+       -h, --help
+              Show help options
+
+       --help-all
+              Show all help options
+
+       --help-gtk
+              Show GTK+ Options
+
+       GTK+ Options
+
+       --class=CLASS
+              Program class as used by the window manager
+
+       --name=NAME
+              Program name as used by the window manager
+
+       --screen=SCREEN
+              X screen to use
+
+       --sync Make X calls synchronous
+
+       --gtk-module=MODULES
+              Load additional GTK+ modules
+
+       --g-fatal-warnings
+              Make all warnings fatal
+
+   Application Options:
+       --disable-server
+              Do not register with the D-BUS session message bus
+
+       -q, --quit
+              Quit a running Mousepad instance
+
+       -v, --version
+              Print version information and exit
+
+       --display=DISPLAY
+              X display to use
+
+COPYRIGHT
+       Copyright © 2007
+
+              The Xfce development team. All rights reserved.
+
+       Please report bugs to <https://bugzilla.xfce.org/>.
+
+SEE ALSO
+       xfprint4 (1).
+
+AUTHOR
+       This  manual  page was written by Yves-Alexis Perez <corsac@debian.org>
+       for the Debian system (but may  be  used  by  others).   Permission  is
+       granted to copy, distribute and/or modify this document under the terms
+       of the GNU General Public License, Version 2  any  later  version  pub‐
+       lished by the Free Software Foundation.
+
+       On  Debian systems, the complete text of the GNU General Public License
+       can be found in /usr/share/common-licenses/GPL-2.
+
+Mousepad 0.3.0                  September 2013                     MOUSEPAD(1)

@@ -1,0 +1,17 @@
+znew
+
+[0m[0mRecompress files from .Z to gzip format.
+More information: https://manned.org/znew.
+
+ - [0m[32;23;22;24;25mRecompress a file from .Z to gzip format:
+   [33;23;22;24;25mznew [0mpath/to/file1.Z
+[0m
+ - [0m[32;23;22;24;25mRecompress multiple files and display the achieved size reduction % per file:
+   [33;23;22;24;25mznew -v [0mpath/to/file1.Z path/to/file2.Z ...
+[0m
+ - [0m[32;23;22;24;25mRecompress a file using the slowest compression method (for optimal compression):
+   [33;23;22;24;25mznew -9 [0mpath/to/file1.Z
+[0m
+ - [0m[32;23;22;24;25mRecompress a file, [K]eeping the .Z file if it is smaller than the gzip file:
+   [33;23;22;24;25mznew -K [0mpath/to/file1.Z
+[0m[0m

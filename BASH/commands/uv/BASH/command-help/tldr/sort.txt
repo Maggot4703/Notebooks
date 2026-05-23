@@ -1,0 +1,29 @@
+sort
+
+[0m[0mSort lines of text files.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html.
+
+ - [0m[32;23;22;24;25mSort a file in ascending order:
+   [33;23;22;24;25msort [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSort a file in descending order:
+   [33;23;22;24;25msort [0m[-r|--reverse][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSort a file in case-insensitive way:
+   [33;23;22;24;25msort [0m[-f|--ignore-case][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSort a file using numeric rather than alphabetic order:
+   [33;23;22;24;25msort [0m[-n|--numeric-sort][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSort /etc/passwd by the 3rd field of each line numerically, using ":" as a field separator:
+   [33;23;22;24;25msort [0m[-t|--field-separator][33;23;22;24;25m [0m:[33;23;22;24;25m [0m[-k|--key][33;23;22;24;25m [0m3n[33;23;22;24;25m [0m/etc/passwd
+[0m
+ - [0m[32;23;22;24;25mAs above, but when items in the 3rd field are equal, sort by the 4th field by numbers with exponents:
+   [33;23;22;24;25msort [0m[-t|--field-separator][33;23;22;24;25m [0m:[33;23;22;24;25m [0m[-k|--key][33;23;22;24;25m [0m3,3n[33;23;22;24;25m [0m[-k|--key][33;23;22;24;25m [0m4,4g[33;23;22;24;25m [0m/etc/passwd
+[0m
+ - [0m[32;23;22;24;25mSort a file preserving only unique lines:
+   [33;23;22;24;25msort [0m[-u|--unique][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSort a file, printing the output to the specified output file (can be used to sort a file in-place):
+   [33;23;22;24;25msort [0m[-o|--output][33;23;22;24;25m [0mpath/to/file[33;23;22;24;25m [0mpath/to/file
+[0m[0m

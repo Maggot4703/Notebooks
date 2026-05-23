@@ -1,0 +1,33 @@
+REGJSPARSER(1)                   User Commands                  REGJSPARSER(1)
+
+NAME
+       regjsparser - Parser of Javascript regular expressions
+
+SYNOPSIS
+       regjsparser [regex ...]
+
+       regjsparser [-f | --flags] [flags] [regex ...]
+
+       regjsparser [-v | --version]
+
+       regjsparser [-h | --help]
+
+OPTIONS
+       flags flags to set options
+
+       version
+              prints the version
+
+       help   prints help screen
+
+FLAGS
+       Currently, only u to enable Unicode support is available.
+
+EXAMPLES
+              regjsparser '^foo.bar$'
+
+              regjsparser '[a-zA-Z0-9]'
+
+              regjsparser -f u '^foo.bar$'
+
+regjsparser v0.2.1                August 2017                   REGJSPARSER(1)

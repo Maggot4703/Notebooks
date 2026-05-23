@@ -1,0 +1,15 @@
+gv2gxl
+
+[0m[0mConvert a graph from gv to gxl format.
+Converters: gml2gv, gv2gml, gv2gxl, gxl2gv, graphml2gv & mm2gv.
+More information: https://graphviz.org/pdf/gxl2gv.1.pdf.
+
+ - [0m[32;23;22;24;25mConvert a graph from gv to gxl format:
+   [33;23;22;24;25mgv2gxl -o [0moutput.gxl[33;23;22;24;25m [0minput.gv
+[0m
+ - [0m[32;23;22;24;25mConvert a graph using stdin and stdout:
+   [33;23;22;24;25mcat [0minput.gv[33;23;22;24;25m | gv2gxl > [0moutput.gxl
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mgv2gxl -?[0m
+[0m[0m

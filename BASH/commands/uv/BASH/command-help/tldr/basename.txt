@@ -1,0 +1,14 @@
+basename
+
+[0m[0mRemove leading directory portions from a path.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/basename-invocation.html.
+
+ - [0m[32;23;22;24;25mShow only the file name from a path:
+   [33;23;22;24;25mbasename [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mShow only the rightmost directory name from a path:
+   [33;23;22;24;25mbasename [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mShow only the file name from a path, with a suffix removed:
+   [33;23;22;24;25mbasename [0mpath/to/file[33;23;22;24;25m [0msuffix
+[0m[0m

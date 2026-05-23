@@ -1,0 +1,20 @@
+unzipsfx
+
+[0m[0mCreate a self-extracting compressed binary file by prepending self-extracting stubs on a Zip file.
+More information: https://manned.org/unzipsfx.
+
+ - [0m[32;23;22;24;25mCreate a self-extracting binary file of a Zip archive:
+   [33;23;22;24;25mcat unzipsfx [0mpath/to/archive.zip[33;23;22;24;25m > [0mfilename[33;23;22;24;25m && chmod 755 [0mfilename
+[0m
+ - [0m[32;23;22;24;25mExtract a self-extracting binary in the current directory:
+   ./path/to/binary
+[0m
+ - [0m[32;23;22;24;25mTest a self-extracting binary for errors:
+   ./path/to/binary[33;23;22;24;25m -t[0m
+[0m
+ - [0m[32;23;22;24;25mPrint content of a file in the self-extracting binary without extraction:
+   ./path/to/binary[33;23;22;24;25m -c [0mpath/to/filename
+[0m
+ - [0m[32;23;22;24;25mPrint comments on Zip archive in the self-extracting binary:
+   ./path/to/binary[33;23;22;24;25m -z[0m
+[0m[0m

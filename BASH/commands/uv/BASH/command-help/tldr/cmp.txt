@@ -1,0 +1,17 @@
+cmp
+
+[0m[0mCompare two files byte by byte.
+More information: https://www.gnu.org/software/diffutils/manual/diffutils.html#Invoking-cmp.
+
+ - [0m[32;23;22;24;25mOutput char and line number of the first difference between two files:
+   [33;23;22;24;25mcmp [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mOutput info of the first difference: char, line number, bytes, and values:
+   [33;23;22;24;25mcmp [0m[-b|--print-bytes][33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mOutput the byte numbers and values of every difference:
+   [33;23;22;24;25mcmp [0m[-l|--verbose][33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mCompare files but output nothing, yield only the exit status:
+   [33;23;22;24;25mcmp [0m[-s|--quiet][33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m[0m

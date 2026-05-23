@@ -1,0 +1,63 @@
+Tech
+In the Traveller universe, a Technician (often referred to as a "Deckhand," "Systems Tech," or "Journeyman") is the versatile backbone of the ship. While the Chief Engineer focuses on the massive Jump and Maneuver drives, the Technician is responsible for the thousands of smaller, critical systems that make a starship habitable and functional.
+
+They are the "fix-it" experts who handle everything from the computer core to the plumbing.
+1. General Maintenance and Repair
+
+The most visible duty of a Technician is the constant battle against entropy. Ships in Traveller are often decades (or centuries) old, and things break constantly.
+
+    Systems Integration: Ensuring that a newly purchased sensor array from a TL-12 world actually talks to the ship’s TL-10 bridge computer.
+
+    Structural Integrity: Monitoring the hull for stress fractures or micrometeorite pitting. If there’s a slow air leak, the Technician is the one crawling through the maintenance conduits to find it.
+
+    Preventative Maintenance: Replacing filters, lubricating mechanical joints in cargo cranes, and testing emergency backup batteries before they are actually needed.
+
+2. Robotics and Drone Operations
+
+As automation increases, the Technician’s role often shifts toward overseeing non-human labor.
+
+    Repair Drones: Programming and maintaining the small robotic units that crawl along the exterior of the hull to perform repairs during flight.
+
+    Cargo Mechs: Maintaining the heavy-duty loaders used in the cargo bay.
+
+    Expert Systems: Interfacing with the ship’s computer to run diagnostic software that "hunts" for glitches in the ship’s sub-routines.
+
+3. Specialized Sub-Systems
+
+While the Engineer handles "The Big Three" (Jump, Maneuver, Power), the Technician owns the "Utility Systems."
+System	Responsibility
+Gravitics	Maintaining the internal gravity plates and inertial compensators so the crew doesn't float away or get crushed.
+Electronics	Repairing the ship’s internal comms, intercoms, and personal terminal interfaces.
+Life Support	Assisting the Doctor/Engineer with the physical hardware of the atmospheric scrubbers and water recyclers.
+Weapon Mounts	Working with the Gunner to ensure the physical turret motors and ammunition belts are moving smoothly.
+4. Mission-Specific Support
+
+Technicians are often the "away team" MVPs because of their broad technical knowledge.
+
+    Salvage Operations: Using cutting torches and specialized tools to strip valuable components from derelict ships.
+
+    Field Repairs: Fixing the group’s Air/Raft or G-Carrier after it takes damage on a planetary surface.
+
+    Security Tech: Bypassing electronic locks or hacking into a planetary data-net (often using the Electronics (Computers) or Jack-of-all-Trades skills).
+
+5. EVA (Extra-Vehicular Activity)
+
+When something breaks on the outside of the ship while in deep space, the Technician puts on a Vacc Suit.
+
+    Hull Patching: Applying emergency "slap-patches" to hull breaches.
+
+    Sensor Calibration: Manually adjusting external sensor dish alignments that have been shaken loose by high-G maneuvers or combat.
+
+The Technician’s Skillset
+
+A Technician is usually a "Generalist" compared to the "Specialist" Engineer. Their character sheet often looks like a Swiss Army knife:
+
+    Mechanic: The bread and butter for fixing anything physical or industrial.
+
+    Electronics (Computers/Remote Ops): For dealing with the ship’s "brain" and drones.
+
+    Vacc Suit: A mandatory skill, as much of their work happens in depressurized maintenance shafts or outside the hull.
+
+    Jack-of-all-Trades: This is the "God-tier" skill for a Technician, allowing them to attempt almost any repair with a reduced penalty.
+
+    The Technician’s Philosophy: "If it’s moving and it shouldn't, use duct tape. If it’s not moving and it should, use WD-40. If neither works, ask the Chief Engineer for a bigger hammer."

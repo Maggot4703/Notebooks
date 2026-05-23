@@ -1,0 +1,23 @@
+wc
+
+[0m[0mCount lines, words, and bytes.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/wc-invocation.html.
+
+ - [0m[32;23;22;24;25mCount all lines in a file:
+   [33;23;22;24;25mwc [0m[-l|--lines][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCount all words in a file:
+   [33;23;22;24;25mwc [0m[-w|--words][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCount all bytes in a file:
+   [33;23;22;24;25mwc [0m[-c|--bytes][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCount all characters in a file (taking multi-byte characters into account):
+   [33;23;22;24;25mwc [0m[-m|--chars][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCount all lines, words and bytes from stdin:
+   find .[33;23;22;24;25m | wc[0m
+[0m
+ - [0m[32;23;22;24;25mCount the length of the longest line in number of characters:
+   [33;23;22;24;25mwc [0m[-L|--max-line-length][33;23;22;24;25m [0mpath/to/file
+[0m[0m

@@ -1,0 +1,14 @@
+colrm
+
+[0m[0mRemove columns from stdin.
+More information: https://manned.org/colrm.
+
+ - [0m[32;23;22;24;25mRemove first column of stdin:
+   [33;23;22;24;25mcolrm [0m1 1
+[0m
+ - [0m[32;23;22;24;25mRemove from 3rd column till the end of each line:
+   [33;23;22;24;25mcolrm [0m3
+[0m
+ - [0m[32;23;22;24;25mRemove from the 3rd column till the 5th column of each line:
+   [33;23;22;24;25mcolrm [0m3 5
+[0m[0m

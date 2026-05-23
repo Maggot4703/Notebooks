@@ -1,0 +1,30 @@
+curl
+
+[0m[0mTransfers data from or to a server.
+Supports most protocols, including HTTP, HTTPS, FTP, SCP, etc.
+More information: https://curl.se/docs/manpage.html.
+
+ - [0m[32;23;22;24;25mMake an HTTP GET request and dump the contents in stdout:
+   [33;23;22;24;25mcurl [0mhttps://example.com
+[0m
+ - [0m[32;23;22;24;25mMake an HTTP GET request, follow any 3xx redirects, and dump the reply headers and contents to stdout:
+   [33;23;22;24;25mcurl [0m[-L|--location][33;23;22;24;25m [0m[-D|--dump-header][33;23;22;24;25m - [0mhttps://example.com
+[0m
+ - [0m[32;23;22;24;25mDownload a file, saving the output under the filename indicated by the URL:
+   [33;23;22;24;25mcurl [0m[-O|--remote-name][33;23;22;24;25m [0mhttps://example.com/filename.zip
+[0m
+ - [0m[32;23;22;24;25mSend form-encoded data (POST request of type application/x-www-form-urlencoded). Use --data @file_name or --data @'-' to read from stdin:
+   [33;23;22;24;25mcurl [0m[-X|--request][33;23;22;24;25m POST [0m[-d|--data][33;23;22;24;25m [0m'name=bob'[33;23;22;24;25m [0mhttp://example.com/form
+[0m
+ - [0m[32;23;22;24;25mSend a request with an extra header, using a custom HTTP method and over a proxy (such as BurpSuite), ignoring insecure self-signed certificates:
+   [33;23;22;24;25mcurl [0m[-k|--insecure][33;23;22;24;25m [0m[-x|--proxy][33;23;22;24;25m [0mhttp://127.0.0.1:8080[33;23;22;24;25m [0m[-H|--header][33;23;22;24;25m [0m'Authorization: Bearer token'[33;23;22;24;25m [0m[-X|--request][33;23;22;24;25m [0mGET|PUT|POST|DELETE|PATCH|...[33;23;22;24;25m [0mhttps://example.com
+[0m
+ - [0m[32;23;22;24;25mSend data in JSON format, specifying the appropriate Content-Type header:
+   [33;23;22;24;25mcurl [0m[-d|--data][33;23;22;24;25m {{'{"name":"bob"}'}} [0m[-H|--header][33;23;22;24;25m [0m'Content-Type: application/json'[33;23;22;24;25m [0mhttp://example.com/users/1234
+[0m
+ - [0m[32;23;22;24;25mPass client certificate and key for a resource, skipping certificate validation:
+   [33;23;22;24;25mcurl [0m[-E|--cert][33;23;22;24;25m [0mclient.pem[33;23;22;24;25m --key [0mkey.pem[33;23;22;24;25m [0m[-k|--insecure][33;23;22;24;25m [0mhttps://example.com
+[0m
+ - [0m[32;23;22;24;25mResolve a hostname to a custom IP address, with verbose output (similar to editing the /etc/hosts file for custom DNS resolution):
+   [33;23;22;24;25mcurl [0m[-v|--verbose][33;23;22;24;25m --resolve [0mexample.com[33;23;22;24;25m:[0m80[33;23;22;24;25m:[0m127.0.0.1[33;23;22;24;25m [0mhttp://example.com
+[0m[0m

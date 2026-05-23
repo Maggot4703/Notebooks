@@ -1,0 +1,29 @@
+journalctl
+
+[0m[0mQuery the systemd journal.
+More information: https://manned.org/journalctl.
+
+ - [0m[32;23;22;24;25mShow all messages with priority level 3 (errors) from this boot:
+   [33;23;22;24;25mjournalctl [0m[-b|--boot][33;23;22;24;25m [0m[-p|--priority][33;23;22;24;25m 3[0m
+[0m
+ - [0m[32;23;22;24;25mDelete journal logs which are older than 2 days:
+   [33;23;22;24;25mjournalctl --vacuum-time 2d[0m
+[0m
+ - [0m[32;23;22;24;25mShow only the last n lines and follow new messages (like tail -f for traditional syslog):
+   [33;23;22;24;25mjournalctl [0m[-n|--lines][33;23;22;24;25m [0mn[33;23;22;24;25m [0m[-f|--follow]
+[0m
+ - [0m[32;23;22;24;25mShow all messages by a specific unit:
+   [33;23;22;24;25mjournalctl [0m[-u|--unit][33;23;22;24;25m [0munit
+[0m
+ - [0m[32;23;22;24;25mShow logs for a given unit since the last time it started:
+   [33;23;22;24;25mjournalctl _SYSTEMD_INVOCATION_ID=$(systemctl show --value --property=InvocationID [0munit[33;23;22;24;25m)[0m
+[0m
+ - [0m[32;23;22;24;25mFilter messages within a time range (either timestamp or placeholders like "yesterday"):
+   [33;23;22;24;25mjournalctl [0m[-S|--since][33;23;22;24;25m [0mnow|today|yesterday|tomorrow[33;23;22;24;25m [0m[-U|--until][33;23;22;24;25m "[0mYYYY-MM-DD HH:MM:SS[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mShow all messages by a specific process:
+   [33;23;22;24;25mjournalctl _PID=[0mpid
+[0m
+ - [0m[32;23;22;24;25mShow all messages by a specific executable:
+   [33;23;22;24;25mjournalctl [0mpath/to/executable
+[0m[0m

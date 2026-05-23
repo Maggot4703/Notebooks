@@ -1,0 +1,23 @@
+lslogins
+
+[0m[0mShow information about users on a Linux system.
+More information: https://manned.org/lslogins.
+
+ - [0m[32;23;22;24;25mDisplay users in the system:
+   [33;23;22;24;25mlslogins[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay users belonging to a specific group:
+   [33;23;22;24;25mlslogins [0m[-g|--groups][33;23;22;24;25m [0mgroups
+[0m
+ - [0m[32;23;22;24;25mDisplay user accounts:
+   [33;23;22;24;25mlslogins [0m[-u|--user-accs]
+[0m
+ - [0m[32;23;22;24;25mDisplay last logins:
+   [33;23;22;24;25mlslogins [0m[-L|--last]
+[0m
+ - [0m[32;23;22;24;25mDisplay system accounts:
+   [33;23;22;24;25mlslogins [0m[-s|--system-accs]
+[0m
+ - [0m[32;23;22;24;25mDisplay supplementary groups:
+   [33;23;22;24;25mlslogins [0m[-G|--supp-groups]
+[0m[0m

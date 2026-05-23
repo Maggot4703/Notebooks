@@ -1,0 +1,26 @@
+udisksctl
+
+[0m[0mInteract with udisksd to query and manipulate storage devices.
+More information: https://storaged.org/doc/udisks2-api/latest/udisksctl.1.html.
+
+ - [0m[32;23;22;24;25mShow high-level information about disk drives and block devices:
+   [33;23;22;24;25mudisksctl status[0m
+[0m
+ - [0m[32;23;22;24;25mShow detailed information about a device:
+   [33;23;22;24;25mudisksctl info [0m[-b|--block-device][33;23;22;24;25m [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mShow detailed information about a device partition:
+   [33;23;22;24;25mudisksctl info [0m[-b|--block-device][33;23;22;24;25m [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mMount a device partition and prints the mount point:
+   [33;23;22;24;25mudisksctl mount [0m[-b|--block-device][33;23;22;24;25m [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mUnmount a device partition:
+   [33;23;22;24;25mudisksctl unmount [0m[-b|--block-device][33;23;22;24;25m [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mPower off a device to safely remove it:
+   [33;23;22;24;25mudisksctl power-off [0m[-b|--block-device][33;23;22;24;25m [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mMonitor the daemon for events:
+   [33;23;22;24;25mudisksctl monitor[0m
+[0m[0m

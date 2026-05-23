@@ -1,0 +1,73 @@
+vnclicense(1)                         VNC                        vnclicense(1)
+
+NAME
+       vnclicense - VNC® Server offline licensing utility
+
+SYNOPSIS
+       vnclicense [OPTION...] COMMAND
+
+DESCRIPTION
+       vnclicense  applies  an offline license to VNC Server, and performs re‐
+       lated             auxiliary              operations.              Visit
+       https://www.realvnc.com/docs/faq/#licensing for more on licensing.
+
+       Run  vnclicense  -add  FILE  as  root to apply an offline license file.
+       This operation can also be performed via the VNC Server user interface.
+       FILE  must  be  an  offline license file obtained from RealVNC (usually
+       with a .lic extension).  The file is copied  to  /etc/vnc/licenses/vnc‐
+       server/vnc.lic.
+
+       If VNC Server is hosted on a network share, you should instead copy the
+       offline license file  to  <install-dir>/vnc/licenses/vncserver/vnc.lic,
+       where  <install-dir>  is  the  directory  where the executables are in‐
+       stalled.  Run vnclicense -reload to  cause  running  instances  of  VNC
+       Server to apply the new license.
+
+       Note  that  if  VNC  Server in Service Mode has been licensed online by
+       signing in to a RealVNC account then it ignores any offline license.
+
+COMMANDS
+       Valid commands are:
+
+       -add FILE
+              Apply the offline license FILE,  overwriting  any  existing  li‐
+              cense.  Must be run as root.
+
+       -remove
+              Remove the current offline license.  Must be run as root.
+
+       -list  Print information about the current offline license.
+
+       -info FILE
+              Print information about the given offline license FILE.
+
+       -check Check  how many instances of VNC Server are running on this com‐
+              puter.  Returns 0 (success) if the current  offline  license  is
+              valid  for this many computer desktops.  It cannot check whether
+              you exceed the total number of licensed desktops if you run  VNC
+              Server on multiple computers.
+
+       -reload
+              Reload  the  offline  license and other settings for all running
+              instances of VNC Server for the current user.  Run as root to do
+              the  same  for  all users.  Note that vnclicense -add and vncli‐
+              cense -remove do this already.
+
+OPTIONS
+       For a list of options, run vnclicense -help.
+
+SEE ALSO
+       vncserver-x11(1), vncserver-x11-serviced(1), vncserver-virtual(1), vnc‐
+       server-virtuald(1)
+
+AUTHOR
+       Copyright © RealVNC Ltd.
+
+       RealVNC  and  VNC  are  trademarks  of RealVNC Ltd and are protected by
+       trademark registrations and/or pending trademark  applications  in  the
+       European Union, United States of America and other jurisdictions.  Pro‐
+       tected by UK patent 2481870; US patent 8760366; EU patent 2652951.
+
+       https://www.realvnc.com
+
+RealVNC Ltd                      December 2022                   vnclicense(1)

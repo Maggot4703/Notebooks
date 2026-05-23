@@ -1,0 +1,23 @@
+pw-loopback
+
+[0m[0mCreate loopback devices in PipeWire.
+More information: https://docs.pipewire.org/page_man_pw-loopback_1.html.
+
+ - [0m[32;23;22;24;25mCreate a loopback device with the default loopback behavior:
+   [33;23;22;24;25mpw-loopback[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a loopback device that automatically connects to the speakers:
+   [33;23;22;24;25mpw-loopback [0m[-m|--channel-map][33;23;22;24;25m '[0m[FL FR][33;23;22;24;25m' [0m[-i|--capture-props][33;23;22;24;25m '[0mmedia.class=Audio/Sink[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a loopback device that automatically connects to the microphone:
+   [33;23;22;24;25mpw-loopback [0m[-m|--channel-map][33;23;22;24;25m '[0m[FL FR][33;23;22;24;25m' [0m[-o|--playback-props][33;23;22;24;25m '[0mmedia.class=Audio/Source[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a dummy loopback device that doesn't automatically connect to anything:
+   [33;23;22;24;25mpw-loopback [0m[-m|--channel-map][33;23;22;24;25m '[0m[FL FR][33;23;22;24;25m' [0m[-i|--capture-props][33;23;22;24;25m '[0mmedia.class=Audio/Sink[33;23;22;24;25m' [0m[-o|--playback-props][33;23;22;24;25m '[0mmedia.class=Audio/Source[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a loopback device that automatically connects to the speakers and swaps the left and right channels between the sink and source:
+   [33;23;22;24;25mpw-loopback [0m[-i|--capture-props][33;23;22;24;25m '[0mmedia.class=Audio/Sink audio.position=[FL FR][33;23;22;24;25m' [0m[-o|--playback-props][33;23;22;24;25m '[0maudio.position=[FR FL][33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mCreate a loopback device that automatically connects to the microphone and swaps the left and right channels between the sink and source:
+   [33;23;22;24;25mpw-loopback [0m[-i|--capture-props][33;23;22;24;25m '[0maudio.position=[FR FL][33;23;22;24;25m' [0m[-o|--playback-props][33;23;22;24;25m '[0mmedia.class=Audio/Source audio.position=[FL FR][33;23;22;24;25m'[0m
+[0m[0m

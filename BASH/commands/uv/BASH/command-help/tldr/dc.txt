@@ -1,0 +1,24 @@
+dc
+
+[0m[0mAn arbitrary precision calculator. Uses reverse polish notation (RPN).
+See also: bc, qalc.
+More information: https://www.gnu.org/software/bc/manual/dc-1.05/html_mono/dc.html.
+
+ - [0m[32;23;22;24;25mStart an interactive session:
+   [33;23;22;24;25mdc[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a script:
+   [33;23;22;24;25mdc [0mpath/to/script.dc
+[0m
+ - [0m[32;23;22;24;25mCalculate an expression with the specified scale:
+   [33;23;22;24;25mdc [0m[-e|--expression][33;23;22;24;25m '[0m10[33;23;22;24;25m k [0m5 3 /[33;23;22;24;25m p'[0m
+[0m
+ - [0m[32;23;22;24;25mCalculate 4 times 5 (4 5 *), subtract 17 (17 -), and [p]rint the output:
+   [33;23;22;24;25mdc [0m[-e|--expression][33;23;22;24;25m '4 5 * 17 - p'[0m
+[0m
+ - [0m[32;23;22;24;25mSpecify the number of decimal places to 7 (7 k), calculate 5 divided by -3 (5 _3 /) and [p]rint:
+   [33;23;22;24;25mdc [0m[-e|--expression][33;23;22;24;25m '7 k 5 _3 / p'[0m
+[0m
+ - [0m[32;23;22;24;25mCalculate the golden ratio, phi: set number of decimal places to 100 (100 k), square root of 5 (5 v) plus 1 (1 +), divided by 2 (2 /), and [p]rint result:
+   [33;23;22;24;25mdc [0m[-e|--expression][33;23;22;24;25m '100 k 5 v 1 + 2 / p'[0m
+[0m[0m

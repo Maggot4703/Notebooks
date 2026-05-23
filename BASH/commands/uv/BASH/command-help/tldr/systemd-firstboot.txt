@@ -1,0 +1,29 @@
+systemd-firstboot
+
+[0m[0mInitialize basic system settings on or before the first boot-up of a system.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-firstboot.html.
+
+ - [0m[32;23;22;24;25mOperate on the specified directory instead of the root directory of the host system:
+   [33;23;22;24;25msudo systemd-firstboot --root [0mpath/to/root_directory
+[0m
+ - [0m[32;23;22;24;25mSet the system keyboard layout:
+   [33;23;22;24;25msudo systemd-firstboot --keymap [0mkeymap
+[0m
+ - [0m[32;23;22;24;25mSet the system hostname:
+   [33;23;22;24;25msudo systemd-firstboot --hostname [0mhostname
+[0m
+ - [0m[32;23;22;24;25mSet the root user's password:
+   [33;23;22;24;25msudo systemd-firstboot --root-password [0mpassword
+[0m
+ - [0m[32;23;22;24;25mPrompt the user interactively for a specific basic setting:
+   [33;23;22;24;25msudo systemd-firstboot --prompt [0msetting
+[0m
+ - [0m[32;23;22;24;25mForce writing configuration even if the relevant files already exist:
+   [33;23;22;24;25msudo systemd-firstboot --force[0m
+[0m
+ - [0m[32;23;22;24;25mRemove all existing files that are configured by systemd-firstboot:
+   [33;23;22;24;25msudo systemd-firstboot --reset[0m
+[0m
+ - [0m[32;23;22;24;25mRemove the password of the system's root user:
+   [33;23;22;24;25msudo systemd-firstboot --delete-root-password[0m
+[0m[0m

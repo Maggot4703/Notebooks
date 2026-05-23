@@ -1,0 +1,21 @@
+pdfdetach
+
+[0m[0mList or extract attachments (embedded files) from a PDF file.
+See also: pdfattach, pdfimages, pdfinfo.
+More information: https://manned.org/pdfdetach.
+
+ - [0m[32;23;22;24;25mList all attachments in a file with a specific text encoding:
+   [33;23;22;24;25mpdfdetach list -enc [0mUTF-8[33;23;22;24;25m [0mpath/to/input.pdf
+[0m
+ - [0m[32;23;22;24;25mSave specific embedded file by specifying its number:
+   [33;23;22;24;25mpdfdetach -save [0mnumber[33;23;22;24;25m [0mpath/to/input.pdf
+[0m
+ - [0m[32;23;22;24;25mSave specific embedded file by specifying its name:
+   [33;23;22;24;25mpdfdetach -savefile [0mname[33;23;22;24;25m [0mpath/to/input.pdf
+[0m
+ - [0m[32;23;22;24;25mSave the embedded file with a custom output filename:
+   [33;23;22;24;25mpdfdetach -save [0mnumber[33;23;22;24;25m -o [0mpath/to/output[33;23;22;24;25m [0mpath/to/input.pdf
+[0m
+ - [0m[32;23;22;24;25mSave the attachment from a file secured by owner/user password:
+   [33;23;22;24;25mpdfdetach -save [0mnumber[33;23;22;24;25m [0m-opw|-upw[33;23;22;24;25m [0mpassword[33;23;22;24;25m [0mpath/to/input.pdf
+[0m[0m

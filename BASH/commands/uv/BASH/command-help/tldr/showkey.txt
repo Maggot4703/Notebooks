@@ -1,0 +1,20 @@
+showkey
+
+[0m[0mDisplay the keycode of pressed keys on the keyboard, helpful for debugging keyboard-related issues and key remapping.
+More information: https://manned.org/showkey.
+
+ - [0m[32;23;22;24;25mView keycodes in decimal:
+   [33;23;22;24;25msudo showkey[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay scancodes in hexadecimal:
+   [33;23;22;24;25msudo showkey [0m[-s|--scancodes]
+[0m
+ - [0m[32;23;22;24;25mDisplay keycodes in decimal (default):
+   [33;23;22;24;25msudo showkey [0m[-k|--keycodes]
+[0m
+ - [0m[32;23;22;24;25mDisplay keycodes in ASCII, decimal, and hexadecimal:
+   [33;23;22;24;25msudo showkey [0m[-a|--ascii]
+[0m
+ - [0m[32;23;22;24;25mExit the program:
+   [33;23;22;24;25m<Ctrl d>[0m
+[0m[0m

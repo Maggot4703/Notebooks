@@ -1,0 +1,14 @@
+systemsettings
+
+[0m[0mKDE central settings program.
+More information: https://manned.org/systemsettings.
+
+ - [0m[32;23;22;24;25mOpen the settings GUI:
+   [33;23;22;24;25msystemsettings[0m
+[0m
+ - [0m[32;23;22;24;25mList all possible KCM modules for systemsettings:
+   [33;23;22;24;25msystemsettings --list[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25msystemsettings [0m[-h|--help]
+[0m[0m

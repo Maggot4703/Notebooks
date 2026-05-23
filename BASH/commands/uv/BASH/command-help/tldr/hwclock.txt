@@ -1,0 +1,14 @@
+hwclock
+
+[0m[0mRead or change the hardware clock. Usually requires root.
+More information: https://manned.org/hwclock.
+
+ - [0m[32;23;22;24;25mDisplay the current time as reported by the hardware clock:
+   [33;23;22;24;25mhwclock[0m
+[0m
+ - [0m[32;23;22;24;25mWrite the current software clock time to the hardware clock (sometimes used during system setup):
+   [33;23;22;24;25mhwclock [0m[-w|--systohc]
+[0m
+ - [0m[32;23;22;24;25mWrite the current hardware clock time to the software clock:
+   [33;23;22;24;25mhwclock [0m[-s|--hctosys]
+[0m[0m

@@ -1,0 +1,27 @@
+vdir
+
+[0m[0mVerbosely list directory contents.
+Drop-in replacement for ls -l -b.
+More information: https://manned.org/vdir.
+
+ - [0m[32;23;22;24;25mList files and directories in the current directory, one per line, with details:
+   [33;23;22;24;25mvdir[0m
+[0m
+ - [0m[32;23;22;24;25mList with sizes displayed in human-readable units (KB, MB, GB):
+   [33;23;22;24;25mvdir [0m[-h|--human-readable]
+[0m
+ - [0m[32;23;22;24;25mList including hidden files (starting with a dot):
+   [33;23;22;24;25mvdir [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mList files and directories sorting entries by size (largest first):
+   [33;23;22;24;25mvdir -S[0m
+[0m
+ - [0m[32;23;22;24;25mList files and directories sorting entries by modification time (newest first):
+   [33;23;22;24;25mvdir -t[0m
+[0m
+ - [0m[32;23;22;24;25mList grouping directories first:
+   [33;23;22;24;25mvdir --group-directories-first[0m
+[0m
+ - [0m[32;23;22;24;25mRecursively list all files and directories in a specific directory:
+   [33;23;22;24;25mvdir [0m[-R|--recursive][33;23;22;24;25m [0mpath/to/directory
+[0m[0m

@@ -1,0 +1,92 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debugpy Old: Current File",
+            "type": "debugpy-old",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Crew: GUI",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/CREW/Crew/Crew.py",
+            "cwd": "${workspaceFolder}/CREW/Crew",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Crew: CLI grid-image",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/CREW/Crew/Crew.py",
+            "cwd": "${workspaceFolder}/CREW/Crew",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "grid-image",
+                "input.png",
+                "output.png",
+                "--grid-width",
+                "42",
+                "--grid-height",
+                "32",
+                "--grid-color",
+                "lightgrey",
+                "--quality",
+                "95"
+            ]
+        },
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "T5-test: CLI (t5 venv)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/T5-test/t5_test.py",
+            "cwd": "${workspaceFolder}/T5-test",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "python": "${workspaceFolder}/T5-test/.venv/bin/python"
+        },
+        {
+            "name": "T5-test: grid-image sample (t5 venv)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/T5-test/t5_test.py",
+            "cwd": "${workspaceFolder}/T5-test",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "python": "${workspaceFolder}/T5-test/.venv/bin/python",
+            "args": [
+                "grid-image",
+                "input.png",
+                "output.png",
+                "--grid-width",
+                "42",
+                "--grid-height",
+                "32",
+                "--grid-color",
+                "lightgrey",
+                "--quality",
+                "95"
+            ]
+        }
+    ]
+}

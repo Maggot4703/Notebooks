@@ -1,0 +1,17 @@
+tqdm
+
+[0m[0mShow progress over time of a command.
+More information: https://tqdm.github.io/docs/cli/.
+
+ - [0m[32;23;22;24;25mShow iterations per second and use stdout afterwards:
+   seq 10000000[33;23;22;24;25m | tqdm | [0mcommand
+[0m
+ - [0m[32;23;22;24;25mCreate a progress bar:
+   seq 10000000[33;23;22;24;25m | tqdm --total [0m10000000[33;23;22;24;25m | [0mcommand
+[0m
+ - [0m[32;23;22;24;25mCreate an archive out of a directory and use the file count of that directory to create a progress bar:
+   [33;23;22;24;25mzip [0m[-r|--recurse-paths][33;23;22;24;25m [0mpath/to/archive.zip[33;23;22;24;25m [0mpath/to/directory[33;23;22;24;25m | tqdm --total $(find [0mpath/to/directory[33;23;22;24;25m | wc [0m[-l|--lines][33;23;22;24;25m) --unit files --null[0m
+[0m
+ - [0m[32;23;22;24;25mCreate an archive with tar and create a progress bar (system agnostic, GNU tar uses stdout while BSD tar uses stderr):
+   [33;23;22;24;25mtar vzcf [0mpath/to/archive.tar.gz[33;23;22;24;25m [0mpath/to/directory[33;23;22;24;25m 2>&1 | tqdm --total $(find [0mpath/to/directory[33;23;22;24;25m | wc [0m[-l|--lines][33;23;22;24;25m) --unit files --null[0m
+[0m[0m

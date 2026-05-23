@@ -1,0 +1,18 @@
+machinectl
+
+[0m[0mControl the systemd machine manager.
+Execute operations on virtual machines, containers and images.
+More information: https://www.freedesktop.org/software/systemd/man/machinectl.html.
+
+ - [0m[32;23;22;24;25mStart a machine as a service using systemd-nspawn:
+   [33;23;22;24;25msudo machinectl start [0mmachine_name
+[0m
+ - [0m[32;23;22;24;25mStop a running machine:
+   [33;23;22;24;25msudo machinectl stop [0mmachine_name
+[0m
+ - [0m[32;23;22;24;25mDisplay a list of running machines:
+   [33;23;22;24;25mmachinectl list[0m
+[0m
+ - [0m[32;23;22;24;25mOpen an interactive shell inside the machine:
+   [33;23;22;24;25msudo machinectl shell [0mmachine_name
+[0m[0m

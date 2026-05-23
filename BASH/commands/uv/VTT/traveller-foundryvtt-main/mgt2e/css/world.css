@@ -1,0 +1,137 @@
+
+
+.broker-label {
+  font-weight: bold;
+}
+
+.dropZone {
+}
+
+.trade-configuration .trade {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #C0C0C0;
+  margin-top: 5px;
+  padding: 3px;
+}
+
+.dropZone img {
+  width: 48px;
+  height: 48px;
+  border: none;
+  float: left;
+  margin-right: 4px;
+}
+
+.dropZone .trade-drop {
+  font-style: italic;
+  font-size: larger;
+  color: #444444;
+}
+
+.trader-name {
+  font-size: large;
+  font-weight: bold;
+}
+
+.dropZone label.trader-skill {
+  font-weight: bold;
+  text-align: center;
+  margin-left: 24px;
+}
+
+.dropZone .trader-score {
+  display: block;
+  text-align: center;
+  font-size: x-large;
+}
+
+
+table.trade-list {
+}
+
+table.trade-list th {
+  font-weight: bold;
+}
+
+table.trade-list td.trade-quantity {
+  text-align: right;
+}
+
+table.trade-list td.trade-price {
+  text-align: right;
+}
+
+
+td.trade-name img {
+  width: 32px;
+  margin-right: 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+span.sale1 {
+  color: green;
+}
+
+span.sale-1 {
+  color: red;
+}
+
+span.buy1 {
+  color: red;
+}
+
+span.buy-1 {
+  color: green;
+}
+
+.fuelPurchase {
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 1px;
+}
+
+.fuelPurchase h4 {
+  margin: -2px -2px 2px -2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid black;
+  background-color: #C0C0C0;
+  color: black;
+  font-weight: bold;
+}
+
+.fuelPurchase img {
+  width: 32px;
+  height: 32px;
+  border: none;
+  float: left;
+  padding-right: 4px;
+}
+
+ol.planet-list li.item-world {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+ol.planet-list li.item-world .uwp-data-name {
+  display: inline-block;
+  text-align: left;
+  width: 8em;
+}
+ol.planet-list li.item-world .uwp-data-type {
+  display: inline-block;
+  text-align: left;
+  width: 8em;
+}
+ol.planet-list li.item-world .uwp-data-uwp {
+  display: inline-block;
+  text-align: left;
+  width: 8em;
+}

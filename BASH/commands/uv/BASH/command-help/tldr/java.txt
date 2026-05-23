@@ -1,0 +1,23 @@
+java
+
+[0m[0mJava application launcher.
+More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/java.html.
+
+ - [0m[32;23;22;24;25mExecute a Java .class file that contains a main method by using just the class name:
+   [33;23;22;24;25mjava [0mclassname
+[0m
+ - [0m[32;23;22;24;25mExecute a Java program and use additional third-party or user-defined classes:
+   [33;23;22;24;25mjava -classpath [0mpath/to/classes1[33;23;22;24;25m:[0mpath/to/classes2[33;23;22;24;25m:. [0mclassname
+[0m
+ - [0m[32;23;22;24;25mExecute a .jar program:
+   [33;23;22;24;25mjava -jar [0mfilename.jar
+[0m
+ - [0m[32;23;22;24;25mExecute a .jar program with debug waiting to connect on port 5005:
+   [33;23;22;24;25mjava -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005 -jar [0mfilename.jar
+[0m
+ - [0m[32;23;22;24;25mDisplay JDK, JRE and HotSpot versions:
+   [33;23;22;24;25mjava -version[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mjava -help[0m
+[0m[0m

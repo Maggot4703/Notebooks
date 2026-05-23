@@ -1,0 +1,18 @@
+update-rc.d
+
+[0m[0mInstall and remove services which are System-V style init script links.
+Init scripts are in the /etc/init.d/.
+More information: https://manned.org/update-rc.d.
+
+ - [0m[32;23;22;24;25mInstall a service:
+   [33;23;22;24;25mupdate-rc.d [0mmysql[33;23;22;24;25m defaults[0m
+[0m
+ - [0m[32;23;22;24;25mEnable a service:
+   [33;23;22;24;25mupdate-rc.d [0mmysql[33;23;22;24;25m enable[0m
+[0m
+ - [0m[32;23;22;24;25mDisable a service:
+   [33;23;22;24;25mupdate-rc.d [0mmysql[33;23;22;24;25m disable[0m
+[0m
+ - [0m[32;23;22;24;25mForcibly remove a service:
+   [33;23;22;24;25mupdate-rc.d -f [0mmysql[33;23;22;24;25m remove[0m
+[0m[0m

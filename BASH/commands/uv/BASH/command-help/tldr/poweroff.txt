@@ -1,0 +1,20 @@
+poweroff
+
+[0m[0mPower off the system.
+More information: https://www.manned.org/poweroff.
+
+ - [0m[32;23;22;24;25mPower off the system:
+   [33;23;22;24;25mpoweroff[0m
+[0m
+ - [0m[32;23;22;24;25mHalt the system (same as halt):
+   [33;23;22;24;25mpoweroff --halt[0m
+[0m
+ - [0m[32;23;22;24;25mReboot the system (same as reboot):
+   [33;23;22;24;25mpoweroff --reboot[0m
+[0m
+ - [0m[32;23;22;24;25mShut down immediately without contacting the system manager:
+   [33;23;22;24;25mpoweroff [0m[-f|--force]
+[0m
+ - [0m[32;23;22;24;25mWrite the wtmp shutdown entry without shutting down the system:
+   [33;23;22;24;25mpoweroff [0m[-w|--wtmp-only]
+[0m[0m

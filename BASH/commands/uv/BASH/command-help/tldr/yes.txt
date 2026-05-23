@@ -1,0 +1,18 @@
+yes
+
+[0m[0mOutput something repeatedly.
+This command is commonly used to answer yes to every prompt by install commands (such as apt-get).
+More information: https://www.gnu.org/software/coreutils/manual/html_node/yes-invocation.html.
+
+ - [0m[32;23;22;24;25mRepeatedly output "message":
+   [33;23;22;24;25myes [0mmessage
+[0m
+ - [0m[32;23;22;24;25mRepeatedly output "y":
+   [33;23;22;24;25myes[0m
+[0m
+ - [0m[32;23;22;24;25mAccept everything prompted by the apt-get command:
+   [33;23;22;24;25myes | sudo apt-get install [0mprogram
+[0m
+ - [0m[32;23;22;24;25mRepeatedly output a newline to always accept the default option of a prompt:
+   [33;23;22;24;25myes ''[0m
+[0m[0m

@@ -1,0 +1,17 @@
+sync
+
+[0m[0mFlushes all pending write operations to the appropriate disks.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/sync-invocation.html.
+
+ - [0m[32;23;22;24;25mFlush all pending write operations on all disks:
+   [33;23;22;24;25msync[0m
+[0m
+ - [0m[32;23;22;24;25mFlush all pending write operations on a single file to disk:
+   [33;23;22;24;25msync [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mFlush writes and drop file system caches (Linux only):
+   [33;23;22;24;25msync; echo 3 | sudo tee /proc/sys/vm/drop_caches[0m
+[0m
+ - [0m[32;23;22;24;25mFlush disk writes and attempts to clear inactive memory and filesystem caches (macOS only):
+   [33;23;22;24;25msync; sudo purge[0m
+[0m[0m

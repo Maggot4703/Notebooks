@@ -1,0 +1,21 @@
+aa-status
+
+[0m[0mList currently loaded AppArmor modules.
+See also: aa-complain, aa-disable, aa-enforce.
+More information: https://gitlab.com/apparmor/apparmor/-/wikis/manpage_aa-status.8.
+
+ - [0m[32;23;22;24;25mCheck status:
+   [33;23;22;24;25msudo aa-status[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the number of loaded policies:
+   [33;23;22;24;25msudo aa-status --profiled[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the number of loaded enforicing policies:
+   [33;23;22;24;25msudo aa-status --enforced[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the number of loaded non-enforcing policies:
+   [33;23;22;24;25msudo aa-status --complaining[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the number of loaded enforcing policies that kill tasks:
+   [33;23;22;24;25msudo aa-status --kill[0m
+[0m[0m

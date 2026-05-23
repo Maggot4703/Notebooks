@@ -1,0 +1,53 @@
+tape(1)                   BSD General Commands Manual                  tape(1)
+
+NAME
+     tape — tap-producing test harness for node and browsers
+
+SYNOPSIS
+     tape [-r module] [file] [file ...]
+
+DESCRIPTION
+     tape is a tap-producing test harness for node and browsers requiring only
+     a few line of code. It can be used for unit and integration testing.
+     tape will execute test described by file option. File are interpreted us‐
+     ing glob module by default. You may therefore need to quote file in order
+     to avoid globbing by shell.  Tests are written in pure javascript, so
+     tests could be run using Node.js.
+
+OPTIONS
+     -r, --require
+              load one or more modules before running any tests. Please note
+              that all modules loaded using the -r flag will run before any
+              tests, regardless of when they are specified. For example, tape
+              -r a b -r c will actually load a and c before loading b, since
+              they are flagged as required modules.
+
+     -i, --ignore
+              ignore tests from certain folders and/or files are not intended
+              to be run. It defaults to `.gitignore` file when passed with no
+              argument. For example:
+              tape -i .ignore **/*.js`
+
+     --no-only
+              This is particularly useful in a CI environment where an "only
+              test" is not supposed to go unnoticed. By passing the `--no-
+              only` flag, any existing "only test" causes tests to fail:
+              tape --no-only **/*.js`
+              Alternatively, the environment variable `NODE_TAPE_NO_ONLY_TEST`
+              can be set to `true` to achieve the same behavior; the command-
+              line flag takes precedence.
+
+METHODS
+     The assertion methods in `tape` are heavily influenced or copied from the
+     methods in node-tap.
+     var test = require('tape')
+
+EXAMPLES
+     tape 'tests/**/*.js'
+     tape -r './my/local/module' 'tests/**/*.js'
+     tape -r 'babel-register' 'tests/**/*.js'
+
+SEE ALSO
+     /usr/share/doc/node-tape/readme.markdown.gz, tap(1), nodejs(1), glob(7)
+
+                                March 11, 2026

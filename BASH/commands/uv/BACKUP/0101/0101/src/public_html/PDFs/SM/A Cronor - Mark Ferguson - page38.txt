@@ -1,0 +1,85 @@
+# Page 38
+
+--- R1C1 | MARINE | X10.png ---
+  Unit ID: 0304 Chronor
+  Code: 0003
+  Size: 2-Realment
+  Quality: 1-Elite
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 20
+  TF: TF 5
+  TL: TL 13
+
+--- R1C2 | MARINE | X11.png ---
+  Unit ID: 0610 Sheyou
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL 13
+
+--- R1C3 | MARINE | X12.png ---
+  Unit ID: 0808 Quar
+  Code: [unreadable - 4-digit code, see PDF]
+  Size: -Company
+  Quality: i-elite
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF?
+  TF: TF 1
+  TL: TL 11
+
+--- R2C2 | MARINE | X5.png ---
+  Unit ID: 0102 Reno
+  Code: 0001
+  Size: 0-Company
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 1
+  TF: TF 1
+  TL: TL 13
+
+--- R3C1 | MARINE | X7.png ---
+  Unit ID: 0108 Gyomar
+  Code: 0001
+  Size: 2-Regiment
+  Quality: 0-Regular
+  Mobility: 0-Light
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 2
+  TF: TF 45
+  TL: TL 8
+
+--- R3C2 | MARINE | X8.png ---
+  Unit ID: 0304 Chronor
+  Code: 0001
+  Size: 4-Division
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 40
+  TF: TF 20
+  TL: TL 13
+
+--- R3C3 | MARINE | X9.png ---
+  Unit ID: 0304 Chronor
+  Code: 0002
+  Size: 4-Division
+  Quality: 0-Regular
+  Mobility: 1-Armoured
+  Mobility: Gray
+  Type: 0-Infantry
+  CF: CF 40
+  TF: TF 20
+  TL: TL 13

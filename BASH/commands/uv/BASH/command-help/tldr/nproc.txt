@@ -1,0 +1,14 @@
+nproc
+
+[0m[0mPrint the number of processing units (normally CPUs) available.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/nproc-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay the number of available processing units:
+   [33;23;22;24;25mnproc[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the number of installed processing units, including any inactive ones:
+   [33;23;22;24;25mnproc --all[0m
+[0m
+ - [0m[32;23;22;24;25mIf possible, subtract a given number of units from the returned value:
+   [33;23;22;24;25mnproc --ignore [0mcount
+[0m[0m

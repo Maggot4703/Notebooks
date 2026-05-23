@@ -1,8 +1,0 @@
-[project]
-name = "openwebui"
-version = "0.9.4"
-description = "Host mapping for Open WebUI companion apps."
-requires-python = ">=3.11"
-dependencies = [
-    "open-webui>=0.9.4",
-]

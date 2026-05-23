@@ -1,0 +1,14 @@
+gpg-zip
+
+[0m[0mEncrypt files and directories in an archive using GPG.
+More information: https://www.gnupg.org/documentation/manuals/gnupg/gpg_002dzip.html.
+
+ - [0m[32;23;22;24;25mEncrypt a directory into archive.gpg using a passphrase:
+   [33;23;22;24;25mgpg-zip [0m[-c|--symmetric][33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0marchive.gpg[33;23;22;24;25m [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mDecrypt archive.gpg into a directory of the same name:
+   [33;23;22;24;25mgpg-zip [0m[-d|--decrypt][33;23;22;24;25m [0mpath/to/archive.gpg
+[0m
+ - [0m[32;23;22;24;25mList the contents of the encrypted archive.gpg:
+   [33;23;22;24;25mgpg-zip --list-archive [0mpath/to/archive.gpg
+[0m[0m

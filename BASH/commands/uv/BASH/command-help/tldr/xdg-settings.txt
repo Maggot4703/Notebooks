@@ -1,0 +1,20 @@
+xdg-settings
+
+[0m[0mManage settings of XDG-compatible desktop environments.
+More information: https://portland.freedesktop.org/doc/xdg-settings.html.
+
+ - [0m[32;23;22;24;25mPrint the default web browser:
+   [33;23;22;24;25mxdg-settings get [0mdefault-web-browser
+[0m
+ - [0m[32;23;22;24;25mSet the default web browser to Firefox:
+   [33;23;22;24;25mxdg-settings set [0mdefault-web-browser[33;23;22;24;25m [0mfirefox.desktop
+[0m
+ - [0m[32;23;22;24;25mSet the default mail URL scheme handler to Evolution:
+   [33;23;22;24;25mxdg-settings set [0mdefault-url-scheme-handler[33;23;22;24;25m [0mmailto[33;23;22;24;25m [0mevolution.desktop
+[0m
+ - [0m[32;23;22;24;25mSet the default PDF document viewer:
+   [33;23;22;24;25mxdg-settings set [0mpdf-viewer.desktop
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mxdg-settings --help[0m
+[0m[0m

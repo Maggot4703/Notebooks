@@ -1,0 +1,20 @@
+cat
+
+[0m[0mPrint and concatenate files.
+More information: https://manned.org/cat.1posix.
+
+ - [0m[32;23;22;24;25mPrint the contents of a file to stdout:
+   [33;23;22;24;25mcat [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mConcatenate several files into an output file:
+   [33;23;22;24;25mcat [0mpath/to/file1 path/to/file2 ...[33;23;22;24;25m > [0mpath/to/output_file
+[0m
+ - [0m[32;23;22;24;25mAppend several files to an output file:
+   [33;23;22;24;25mcat [0mpath/to/file1 path/to/file2 ...[33;23;22;24;25m >> [0mpath/to/output_file
+[0m
+ - [0m[32;23;22;24;25mCopy the contents of a file into an output file without buffering:
+   [33;23;22;24;25mcat -u [0m/dev/tty12[33;23;22;24;25m > [0m/dev/tty13
+[0m
+ - [0m[32;23;22;24;25mWrite stdin to a file:
+   [33;23;22;24;25mcat - > [0mpath/to/file
+[0m[0m

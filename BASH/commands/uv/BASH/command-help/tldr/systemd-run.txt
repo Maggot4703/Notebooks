@@ -1,0 +1,29 @@
+systemd-run
+
+[0m[0mRun programs in transient scope units, service units, or path-, socket-, or timer-triggered service units.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-run.html.
+
+ - [0m[32;23;22;24;25mStart a transient service:
+   [33;23;22;24;25msudo systemd-run [0mcommand[33;23;22;24;25m [0margument1 argument2 ...
+[0m
+ - [0m[32;23;22;24;25mStart a transient service under the service manager of the current user (no privileges):
+   [33;23;22;24;25msystemd-run --user [0mcommand[33;23;22;24;25m [0margument1 argument2 ...
+[0m
+ - [0m[32;23;22;24;25mStart a transient service with a custom unit name and description:
+   [33;23;22;24;25msudo systemd-run [0m[-u|--unit][33;23;22;24;25m [0mname[33;23;22;24;25m --description [0mstring[33;23;22;24;25m [0mcommand[33;23;22;24;25m [0margument1 argument2 ...
+[0m
+ - [0m[32;23;22;24;25mStart a transient service that does not get cleaned up after it terminates with a custom environment variable:
+   [33;23;22;24;25msudo systemd-run [0m[-r|--remain-after-exit][33;23;22;24;25m --set-env=[0mname[33;23;22;24;25m=[0mvalue[33;23;22;24;25m [0mcommand[33;23;22;24;25m [0margument1 argument2 ...
+[0m
+ - [0m[32;23;22;24;25mStart a transient timer that periodically runs its transient service (see man systemd.time for calendar event format):
+   [33;23;22;24;25msudo systemd-run --on-calendar=[0mcalendar_event[33;23;22;24;25m [0mcommand[33;23;22;24;25m [0margument1 argument2 ...
+[0m
+ - [0m[32;23;22;24;25mShare the terminal with the program (allowing interactive input/output) and make sure the execution details remain after the program exits:
+   [33;23;22;24;25msystemd-run [0m[-r|--remain-after-exit][33;23;22;24;25m --pty [0mcommand
+[0m
+ - [0m[32;23;22;24;25mSet properties (e.g. CPUQuota, MemoryMax) of the process and wait until it exits:
+   [33;23;22;24;25msystemd-run [0m[-p|--property][33;23;22;24;25m MemoryMax=[0mmemory_in_bytes[33;23;22;24;25m [0m[-p|--property][33;23;22;24;25m CPUQuota=[0mpercentage_of_CPU_time[33;23;22;24;25m% --wait [0mcommand
+[0m
+ - [0m[32;23;22;24;25mUse the program in a shell pipeline:
+   command1[33;23;22;24;25m | systemd-run [0m[-P|--pipe][33;23;22;24;25m [0mcommand2[33;23;22;24;25m | [0mcommand3
+[0m[0m

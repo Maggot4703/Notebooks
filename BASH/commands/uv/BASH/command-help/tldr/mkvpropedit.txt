@@ -1,0 +1,17 @@
+mkvpropedit
+
+[0m[0mModify properties of existing Matroska files without a complete remux.
+More information: https://mkvtoolnix.download/doc/mkvpropedit.html.
+
+ - [0m[32;23;22;24;25mDelete title:
+   [33;23;22;24;25mmkvpropedit [0m[-d|--delete][33;23;22;24;25m title [0mpath/to/file.mkv
+[0m
+ - [0m[32;23;22;24;25mMark subtitle track 3 as SDH - Subtitles for deaf and hearing impared:
+   [33;23;22;24;25mmkvpropedit [0mpath/to/file.mkv[33;23;22;24;25m [0m[-e|--edit][33;23;22;24;25m track:s3 [0m[-s|--set][33;23;22;24;25m flag-hearing-impaired=1[0m
+[0m
+ - [0m[32;23;22;24;25mMark audio track 2 as Default:
+   [33;23;22;24;25mmkvpropedit [0mpath/to/file.mkv[33;23;22;24;25m [0m[-e|--edit][33;23;22;24;25m track:a2 [0m[-s|--set][33;23;22;24;25m flag-default=1[0m
+[0m
+ - [0m[32;23;22;24;25mDelete the name of video track 1:
+   [33;23;22;24;25mmkvpropedit [0mpath/to/file.mkv[33;23;22;24;25m [0m[-e|--edit][33;23;22;24;25m track:v1 [0m[-d|--delete][33;23;22;24;25m name[0m
+[0m[0m

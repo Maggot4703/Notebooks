@@ -1,0 +1,26 @@
+tr
+
+[0m[0mTranslate characters: run replacements based on single characters and character sets.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/tr-invocation.html.
+
+ - [0m[32;23;22;24;25mReplace all occurrences of a character in a file, and print the result:
+   [33;23;22;24;25mtr [0mfind_character[33;23;22;24;25m [0mreplace_character[33;23;22;24;25m < [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mReplace all occurrences of a character from another command's output:
+   [33;23;22;24;25mecho [0mtext[33;23;22;24;25m | tr [0mfind_character[33;23;22;24;25m [0mreplace_character
+[0m
+ - [0m[32;23;22;24;25mMap each character of the first set to the corresponding character of the second set:
+   [33;23;22;24;25mtr '[0mabcd[33;23;22;24;25m' '[0mjkmn[33;23;22;24;25m' < [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDelete all occurrences of the specified set of characters from the input:
+   [33;23;22;24;25mtr [0m[-d|--delete][33;23;22;24;25m '[0minput_characters[33;23;22;24;25m' < [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mCompress a series of identical characters to a single character:
+   [33;23;22;24;25mtr [0m[-s|--squeeze-repeats][33;23;22;24;25m '[0minput_characters[33;23;22;24;25m' < [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mTranslate the contents of a file to upper-case:
+   [33;23;22;24;25mtr "[:lower:]" "[:upper:]" < [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mStrip out non-printable characters from a file:
+   [33;23;22;24;25mtr [0m[-cd|--complement --delete][33;23;22;24;25m "[:print:]" < [0mpath/to/file
+[0m[0m

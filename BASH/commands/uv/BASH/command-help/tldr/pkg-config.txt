@@ -1,0 +1,14 @@
+pkg-config
+
+[0m[0mProvide the details of installed libraries for compiling applications.
+More information: https://www.freedesktop.org/wiki/Software/pkg-config/.
+
+ - [0m[32;23;22;24;25mGet the list of libraries and their dependencies:
+   [33;23;22;24;25mpkg-config --libs [0mlibrary1 library2 ...
+[0m
+ - [0m[32;23;22;24;25mGet the list of libraries, their dependencies, and proper cflags for gcc:
+   [33;23;22;24;25mpkg-config --cflags --libs [0mlibrary1 library2 ...
+[0m
+ - [0m[32;23;22;24;25mCompile your code with libgtk-3, libwebkit2gtk-4.0 and all their dependencies:
+   [33;23;22;24;25mc++ example.cpp $(pkg-config --cflags --libs gtk+-3.0 webkit2gtk-4.0) -o example[0m
+[0m[0m

@@ -1,0 +1,14 @@
+caller
+
+[0m[0mPrint function context.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-caller.
+
+ - [0m[32;23;22;24;25mPrint the line and filename where the current function was called:
+   [33;23;22;24;25mcaller[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the line, function and filename where the current function was called:
+   [33;23;22;24;25mcaller 0[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the line, the function name and the filename of a function call n frames back:
+   [33;23;22;24;25mcaller [0mn
+[0m[0m

@@ -1,0 +1,14 @@
+addr2line
+
+[0m[0mConvert addresses of a binary into file names and line numbers.
+More information: https://manned.org/addr2line.
+
+ - [0m[32;23;22;24;25mDisplay the filename and line number of the source code from an instruction address of an executable:
+   [33;23;22;24;25maddr2line [0m[-e|--exe][33;23;22;24;25m [0mpath/to/executable[33;23;22;24;25m [0maddress
+[0m
+ - [0m[32;23;22;24;25mDisplay the function name, filename and line number:
+   [33;23;22;24;25maddr2line [0m[-e|--exe][33;23;22;24;25m [0mpath/to/executable[33;23;22;24;25m [0m[-f|--functions][33;23;22;24;25m [0maddress
+[0m
+ - [0m[32;23;22;24;25mDemangle the function name for C++ code:
+   [33;23;22;24;25maddr2line [0m[-e|--exe][33;23;22;24;25m [0mpath/to/executable[33;23;22;24;25m [0m[-f|--functions][33;23;22;24;25m [0m[-C|--demangle][33;23;22;24;25m [0maddress
+[0m[0m

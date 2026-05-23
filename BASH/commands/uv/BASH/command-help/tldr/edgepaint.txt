@@ -1,0 +1,18 @@
+edgepaint
+
+[0m[0mColorize edges of a graph layout to clarify crossing edges.
+Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten.
+More information: https://graphviz.org/pdf/edgepaint.1.pdf.
+
+ - [0m[32;23;22;24;25mColorize edges of one or more graph layouts (that already have layout information) to clarify crossing edges:
+   [33;23;22;24;25medgepaint [0mpath/to/layout1.gv path/to/layout2.gv ...[33;23;22;24;25m > [0mpath/to/output.gv
+[0m
+ - [0m[32;23;22;24;25mColorize edges using a color scheme. (See https://graphviz.org/doc/info/colors.html#brewer):
+   [33;23;22;24;25medgepaint -color-scheme=[0maccent7[33;23;22;24;25m [0mpath/to/layout.gv[33;23;22;24;25m > [0mpath/to/output.gv
+[0m
+ - [0m[32;23;22;24;25mLay out a graph and colorize its edges, then convert to a PNG image:
+   [33;23;22;24;25mdot [0mpath/to/input.gv[33;23;22;24;25m | edgepaint | dot -T [0mpng[33;23;22;24;25m > [0mpath/to/output.png
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25medgepaint -?[0m
+[0m[0m

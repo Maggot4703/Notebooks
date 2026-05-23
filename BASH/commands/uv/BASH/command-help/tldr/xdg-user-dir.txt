@@ -1,0 +1,12 @@
+xdg-user-dir
+
+[0m[0mRetrieve XDG user directory locations.
+See also: xdg-user-dirs-update.
+More information: https://manned.org/xdg-user-dir.
+
+ - [0m[32;23;22;24;25mDisplay the home directory for the current user:
+   [33;23;22;24;25mxdg-user-dir[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the location of a user directory:
+   [33;23;22;24;25mxdg-user-dir [0mDESKTOP|DOWNLOAD|TEMPLATES|PUBLICSHARE|DOCUMENTS|MUSIC|PICTURES|VIDEOS
+[0m[0m

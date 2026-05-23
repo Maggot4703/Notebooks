@@ -1,0 +1,17 @@
+jhsdb
+
+[0m[0mAttach to a Java process or launch a postmortem debugger to analyze the core dump from a crashed Java Virtual Machine.
+More information: https://manned.org/jhsdb.
+
+ - [0m[32;23;22;24;25mPrint stack and locks information of a Java process:
+   [33;23;22;24;25mjhsdb jstack --pid [0mpid
+[0m
+ - [0m[32;23;22;24;25mOpen a core dump in interactive debug mode:
+   [33;23;22;24;25mjhsdb clhsdb --core [0mpath/to/core_dump[33;23;22;24;25m --exe [0mpath/to/jdk/bin/java
+[0m
+ - [0m[32;23;22;24;25mStart a remote debug server:
+   [33;23;22;24;25mjhsdb debugd --pid [0mpid[33;23;22;24;25m --serverid [0moptional_unique_id
+[0m
+ - [0m[32;23;22;24;25mConnect to a process in interactive debug mode:
+   [33;23;22;24;25mjhsdb clhsdb --pid [0mpid
+[0m[0m

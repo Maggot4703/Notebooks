@@ -1,0 +1,20 @@
+lxterminal
+
+[0m[0mTerminal emulator for LXDE.
+More information: https://github.com/lxde/lxterminal.
+
+ - [0m[32;23;22;24;25mOpen an LXTerminal window:
+   [33;23;22;24;25mlxterminal[0m
+[0m
+ - [0m[32;23;22;24;25mOpen an LXTerminal window, run a command, and then exit:
+   [33;23;22;24;25mlxterminal [0m[-e|--command][33;23;22;24;25m "[0mcommand[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mOpen an LXTerminal window with multiple tabs:
+   [33;23;22;24;25mlxterminal --tabs=[0mtab_name1,tab_name2,...
+[0m
+ - [0m[32;23;22;24;25mOpen an LXTerminal window with a specific title:
+   [33;23;22;24;25mlxterminal --title=[0mtitle_name
+[0m
+ - [0m[32;23;22;24;25mOpen an LXTerminal window with a specific working directory:
+   [33;23;22;24;25mlxterminal --working-directory=[0mpath/to/directory
+[0m[0m

@@ -1,0 +1,26 @@
+tc
+
+[0m[0mShow/manipulate traffic control settings.
+More information: https://manned.org/tc.
+
+ - [0m[32;23;22;24;25mAdd constant network delay to outbound packages:
+   [33;23;22;24;25msudo tc [0m[q|qdisc][33;23;22;24;25m [0m[a|add][33;23;22;24;25m dev [0meth0[33;23;22;24;25m root netem delay [0mdelay_in_milliseconds[33;23;22;24;25mms[0m
+[0m
+ - [0m[32;23;22;24;25mAdd normal distributed network delay to outbound packages:
+   [33;23;22;24;25msudo tc [0m[q|qdisc][33;23;22;24;25m [0m[a|add][33;23;22;24;25m dev [0meth0[33;23;22;24;25m root netem delay [0mmean_delay_ms[33;23;22;24;25mms [0mdelay_std_ms[33;23;22;24;25mms[0m
+[0m
+ - [0m[32;23;22;24;25mAdd package corruption/loss/duplication to a portion of packages:
+   [33;23;22;24;25msudo tc [0m[q|qdisc][33;23;22;24;25m [0m[a|add][33;23;22;24;25m dev [0meth0[33;23;22;24;25m root netem [0mcorruption|loss|duplication[33;23;22;24;25m [0meffect_percentage[33;23;22;24;25m%[0m
+[0m
+ - [0m[32;23;22;24;25mLimit bandwidth, burst rate and max latency:
+   [33;23;22;24;25msudo tc [0m[q|qdisc][33;23;22;24;25m [0m[a|add][33;23;22;24;25m dev eth0 root tbf rate [0mmax_bandwidth_mb[33;23;22;24;25mmbit burst [0mmax_burst_rate_kb[33;23;22;24;25mkbit latency [0mmax_latency_before_drop_ms[33;23;22;24;25mms[0m
+[0m
+ - [0m[32;23;22;24;25mShow active traffic control policies:
+   [33;23;22;24;25mtc [0m[q|qdisc][33;23;22;24;25m [0m[s|show][33;23;22;24;25m dev [0meth0
+[0m
+ - [0m[32;23;22;24;25mDelete all traffic control rules:
+   [33;23;22;24;25msudo tc [0m[q|qdisc][33;23;22;24;25m [0m[d|delete][33;23;22;24;25m dev [0meth0
+[0m
+ - [0m[32;23;22;24;25mChange traffic control rule:
+   [33;23;22;24;25msudo tc [0m[q|qdisc][33;23;22;24;25m [0m[c|change][33;23;22;24;25m dev [0meth0[33;23;22;24;25m root netem [0mpolicy[33;23;22;24;25m [0mpolicy_parameters
+[0m[0m

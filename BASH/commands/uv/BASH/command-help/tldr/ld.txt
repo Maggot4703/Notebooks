@@ -1,0 +1,14 @@
+ld
+
+[0m[0mLink object files together.
+More information: https://sourceware.org/binutils/docs/ld.html.
+
+ - [0m[32;23;22;24;25mLink a specific object file with no dependencies into an executable:
+   [33;23;22;24;25mld [0mpath/to/file.o[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output_executable
+[0m
+ - [0m[32;23;22;24;25mLink two object files together:
+   [33;23;22;24;25mld [0mpath/to/file1.o[33;23;22;24;25m [0mpath/to/file2.o[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output_executable
+[0m
+ - [0m[32;23;22;24;25mDynamically link an x86_64 program to glibc (file paths change depending on the system):
+   [33;23;22;24;25mld [0m[-o|--output][33;23;22;24;25m [0mpath/to/output_executable[33;23;22;24;25m [0m[-I|--dynamic-linker][33;23;22;24;25m /lib/ld-linux-x86-64.so.2 /lib/crt1.o /lib/crti.o -lc [0mpath/to/file.o[33;23;22;24;25m /lib/crtn.o[0m
+[0m[0m

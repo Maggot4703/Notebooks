@@ -1,0 +1,23 @@
+pinky
+
+[0m[0mPrint user information using the finger protocol.
+More information: https://manned.org/pinky.
+
+ - [0m[32;23;22;24;25mDisplay details about the current user:
+   [33;23;22;24;25mpinky[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay details for a specific user:
+   [33;23;22;24;25mpinky [0muser
+[0m
+ - [0m[32;23;22;24;25mDisplay details in the long format:
+   [33;23;22;24;25mpinky [0muser[33;23;22;24;25m -l[0m
+[0m
+ - [0m[32;23;22;24;25mOmit the user's home directory and shell in long format:
+   [33;23;22;24;25mpinky [0muser[33;23;22;24;25m -lb[0m
+[0m
+ - [0m[32;23;22;24;25mOmit the user's project file in long format:
+   [33;23;22;24;25mpinky [0muser[33;23;22;24;25m -lh[0m
+[0m
+ - [0m[32;23;22;24;25mOmit the column headings in short format:
+   [33;23;22;24;25mpinky [0muser[33;23;22;24;25m -f[0m
+[0m[0m

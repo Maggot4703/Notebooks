@@ -1,0 +1,64 @@
+TH-CMD(1)                     Triggerhappy daemon                    TH-CMD(1)
+
+NAME
+       th-cmd -- triggerhappy commander
+
+SYNOPSIS
+       th-cmd --socket <socket> [--passfd] [--tag <foo>]
+       [--clear|--enable|--disable|--mode <mode>|--quit|--udev|--add
+       <devices...>|--remove <devices...>]
+
+DESCRIPTION
+       This program is used to issue commands to a running triggerhappy
+       daemon. It utilizes an unix domain socket bound by the daemon.
+
+OPTIONS
+       --socket socket
+           The socket file opened by the running triggerhappy daemon instance.
+
+       --add <devices...>
+           Instruct the running daemon to open the input devices specified on
+           the command line
+
+       --remove <devices...>
+           Remove specified devices from the running daemon.
+
+       --clear
+           Remove all devices from the running daemon.
+
+       --udev
+           Deduce operation and device name from udev environment (for use in
+           udev rules).
+
+       --disable
+           Disable the execution of triggers.
+
+       --enable
+           Re-enable the execution of triggers.
+
+       --mode <newmode>
+           Change the mode of the triggerhappy daemon to <newmode>. If no new
+           mode is specified, the daemon switches to default mode.
+
+       --quit
+           Terminate the triggerhappy daemon.
+
+       --passfd
+           Instead of instructing the daemon to open the device, open the
+           device and pass the file descriptor to the daemon. This allows the
+           adding of new devices to a daemon having dropped its privileges,
+           however the th-cmd process must have access to the device file.
+
+       --grab
+           Grab the device; the triggerhappy daemon will try to get exclusive
+           access to the device, other applications will not receive the
+           events emitted by it.
+
+       --tag foo
+           Label the added device with the tag <foo>; this can be used to
+           limit the scope of event handlers to a subset of input devices.
+
+AUTHOR
+       Stefan Tomanek <stefan.tomanek+th@wertarbyte.de>
+
+0.5.0                             2023-03-23                         TH-CMD(1)

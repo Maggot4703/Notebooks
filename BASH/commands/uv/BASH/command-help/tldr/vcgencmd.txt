@@ -1,0 +1,23 @@
+vcgencmd
+
+[0m[0mPrint system information for a Raspberry Pi.
+More information: https://www.raspberrypi.com/documentation/computers/os.html#vcgencmd.
+
+ - [0m[32;23;22;24;25mList all available commands:
+   [33;23;22;24;25mvcgencmd commands[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the current CPU temperature:
+   [33;23;22;24;25mvcgencmd measure_temp[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the current voltage:
+   [33;23;22;24;25mvcgencmd measure_volts[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the throttled state of the system as a bit pattern:
+   [33;23;22;24;25mvcgencmd get_throttled[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the bootloader configuration (only available on Raspberry Pi 4 models):
+   [33;23;22;24;25mvcgencmd bootloader_config[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mvcgencmd --help[0m
+[0m[0m

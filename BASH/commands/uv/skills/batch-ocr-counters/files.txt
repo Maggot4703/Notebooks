@@ -1,0 +1,8 @@
+# skills/batch-ocr-counters/files.txt
+batch_ocr_counters.py
+SKILL.md
+README.md
+description.txt
+name.txt
+manifest.json
+__init__.py

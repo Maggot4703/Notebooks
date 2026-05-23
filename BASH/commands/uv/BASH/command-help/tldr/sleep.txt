@@ -1,0 +1,11 @@
+sleep
+
+[0m[0mDelay for a specified amount of time.
+More information: https://manned.org/sleep.
+
+ - [0m[32;23;22;24;25mDelay in seconds:
+   [33;23;22;24;25msleep [0mseconds
+[0m
+ - [0m[32;23;22;24;25mExecute a specific command after 20 seconds delay:
+   [33;23;22;24;25msleep 20 && [0mcommand
+[0m[0m

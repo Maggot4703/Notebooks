@@ -1,0 +1,11 @@
+break
+
+[0m[0mBreak out of a for, while, until or select loop.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-break.
+
+ - [0m[32;23;22;24;25mBreak out of a single loop:
+   [33;23;22;24;25mwhile :; do break; done[0m
+[0m
+ - [0m[32;23;22;24;25mBreak out of nested loops:
+   [33;23;22;24;25mwhile :; do while :; do break 2; done; done[0m
+[0m[0m

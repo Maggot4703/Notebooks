@@ -1,0 +1,80 @@
+rpcctl(8)                   System Manager's Manual                  rpcctl(8)
+
+NAME
+       rpcctl - Displays SunRPC connection information
+
+SYNOPSIS
+       rpcctl [ -h | --help ] { client | switch | xprt }
+
+       rpcctl client [ -h | --help ] { show }
+       rpcctl client show [ -h  --help ] [ XPRT ]
+
+       rpcctl switch [ -h | --help ] { set | show }
+       rpcctl switch set [ -h | --help ] SWITCH dstaddr NEWADDR
+       rpcctl switch show [ -h | --help ] [ SWITCH ]
+
+       rpcctl xprt [ -h | --help ] { remove | set | show }
+       rpcctl xprt remove [ -h | --help ] XPRT
+       rpcctl xprt set [ -h | --help ] XPRT { dstaddr NEWADDR | offline | online }
+       rpcctl xprt show [ -h | --help ] [ XPRT ]
+
+DESCRIPTION
+       The  rpcctl  command displays information collected in the SunRPC sysfs
+       files about the system's SunRPC objects.
+
+   rpcctl client - Commands operating on RPC clients
+       show [ CLIENT ] (default)
+              Show detailed information about the RPC clients on this  system.
+              If  CLIENT was provided, then only show information about a sin‐
+              gle RPC client.
+
+   rpcctl switch - Commands operating on groups of transports
+       set SWITCH dstaddr NEWADDR
+              Change the destination address of all transports in  the  SWITCH
+              to NEWADDR.  NEWADDR can be an IP address, DNS name, or anything
+              else resolvable by gethostbyname(3).
+
+       show [ SWITCH ] (default)
+              Show detailed information about groups  of  transports  on  this
+              system.   If  SWITCH  was  provided,  then only show information
+              about a single transport group.
+
+   rpcctl xprt - Commands operating on individual transports
+       remove XPRT
+              Removes the specified XPRT from the system.   Note  that  "main"
+              transports cannot be removed.
+
+       set XPRT dstaddr NEWADDR
+              Change  the  destination  address  of  the  specified  XPRT   to
+              NEWADDR.  NEWADDR can be an IP address, DNS  name,  or  anything
+              else resolvable by gethostbyname(3).
+
+       set XPRT offline
+              Sets the specified XPRT's state to offline.
+
+       set XPRT online
+              Sets the specified XPRT's state to online.
+
+       show [ XPRT ] (default)
+              Show  detailed  information  about this system's transports.  If
+              XPRT was provided, then only show  information  about  a  single
+              transport.
+
+EXAMPLES
+       rpcctl switch show switch-2
+              Show details about the RPC switch named "switch-2".
+
+       rpcctl xprt remove xprt-4
+              Remove the xprt named "xprt-4" from the system.
+
+       rpcctl xprt set xprt-3 dstaddr https://linux-nfs.org
+              Change the dstaddr of the xprt named "xprt-3" to point to linux-
+              nfs.org
+
+DIRECTORY
+       /sys/kernel/sunrpc/
+
+AUTHOR
+       Anna Schumaker <Anna.Schumaker@Netapp.com>
+
+                                  15 Feb 2022                        rpcctl(8)

@@ -1,0 +1,23 @@
+VCMAILBOX(1)                General Commands Manual               VCMAILBOX(1)
+
+NAME
+       vcmailbox - send messages to the VideoCore via the mailbox
+
+SYNOPSIS
+       vcmailbox [word0] [word1] ...
+
+DESCRIPTION
+       vcmailbox is a low-level utility for sending mailbox messages to the
+       VideoCore. See [MAILBOX] or vcmailbox(7) for more information on the
+       available messages and their respective formats.  and raspiotp(7) for
+       some examples of typical usage.
+
+SEE ALSO
+       vcgencmd(1), raspiotp(7), [MAILBOX]
+
+REFERENCES
+       [MAILBOX]
+              https://github.com/raspberrypi/firmware/wiki/Mailbox-property-
+              interface
+
+                                                                  VCMAILBOX(1)

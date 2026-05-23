@@ -1,0 +1,14 @@
+aa-remove-unknown
+
+[0m[0mRemove AppArmor profiles that are no longer present in the configuration directory.
+More information: https://gitlab.com/apparmor/apparmor/-/wikis/manpage_aa-remove-unknown.8.
+
+ - [0m[32;23;22;24;25mPerform a dry run to see which profiles would be removed:
+   [33;23;22;24;25msudo aa-remove-unknown -n[0m
+[0m
+ - [0m[32;23;22;24;25mActually remove the profiles:
+   [33;23;22;24;25msudo aa-remove-unknown[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25maa-remove-unknown [0m[-h|--help]
+[0m[0m

@@ -1,0 +1,20 @@
+pw-link
+
+[0m[0mManage links between ports in PipeWire.
+More information: https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Virtual-Devices.
+
+ - [0m[32;23;22;24;25mList all audio output and input ports with their IDs:
+   [33;23;22;24;25mpw-link [0m[-oiI|--output --input --id]
+[0m
+ - [0m[32;23;22;24;25mCreate a link between an output and an input port:
+   [33;23;22;24;25mpw-link [0moutput_port_name[33;23;22;24;25m [0minput_port_name
+[0m
+ - [0m[32;23;22;24;25mDisconnect two ports:
+   [33;23;22;24;25mpw-link [0m[-d|--disconnect][33;23;22;24;25m [0moutput_port_name[33;23;22;24;25m [0minput_port_name
+[0m
+ - [0m[32;23;22;24;25mList all links with their IDs:
+   [33;23;22;24;25mpw-link [0m[-lI|--links --id]
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mpw-link [0m[-h|--help]
+[0m[0m

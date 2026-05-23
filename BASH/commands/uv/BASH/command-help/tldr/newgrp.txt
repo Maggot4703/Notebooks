@@ -1,0 +1,11 @@
+newgrp
+
+[0m[0mSwitch primary group membership.
+More information: https://manned.org/newgrp.
+
+ - [0m[32;23;22;24;25mChange user's primary group membership:
+   [33;23;22;24;25mnewgrp [0mgroup_name
+[0m
+ - [0m[32;23;22;24;25mReset primary group membership to user's default group in /etc/passwd:
+   [33;23;22;24;25mnewgrp[0m
+[0m[0m

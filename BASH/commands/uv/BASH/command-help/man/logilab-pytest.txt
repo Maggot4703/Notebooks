@@ -1,0 +1,53 @@
+logilab-pytest(1)           General Commands Manual          logilab-pytest(1)
+
+NAME
+       logilab-pytest - run python unit tests
+
+SYNOPSIS
+       usage: logilab-pytest [OPTIONS] [testfile [testpattern]]
+
+       examples:
+
+       logilab-pytest   path/to/mytests.py  logilab-pytest  path/to/mytests.py
+       TheseTests logilab-pytest path/to/mytests.py TheseTests.test_thisone
+
+       logilab-pytest one (will run both test_thisone and test_thatone)  logi‐
+       lab-pytest path/to/mytests.py -s not (will skip test_notthisone)
+
+       logilab-pytest --coverage test_foo.py
+
+              (only if logilab.devtools is available)
+
+   options:
+       -h, --help
+              show this help message and exit
+
+       -t TESTDIR
+              directory where the tests will be found
+
+       -d     enable design-by-contract
+
+       -v, --verbose
+              Verbose output
+
+       -i, --pdb
+              Enable test failure inspection (conflicts with --coverage)
+
+       -x, --exitfirst
+              Exit  on  first failure (only make sense when logilab-pytest run
+              one test file)
+
+       -s SKIPPED, --skip=SKIPPED
+              test names matching this name will be skipped  to  skip  several
+              patterns, use commas
+
+       -q, --quiet
+              Minimal output
+
+       -P PROFILE, --profile=PROFILE
+              Profile execution and store data in the given file
+
+       --coverage
+              run tests with pycoverage (conflicts with --pdb)
+
+logilab-pytest                   January 2008                logilab-pytest(1)

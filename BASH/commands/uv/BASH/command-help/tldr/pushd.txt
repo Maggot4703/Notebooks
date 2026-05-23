@@ -1,0 +1,18 @@
+pushd
+
+[0m[0mPlace a directory on a stack so it can be accessed later.
+See also: popd to switch back to original directory and dirs to display directory stack contents.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-pushd.
+
+ - [0m[32;23;22;24;25mSwitch to directory and push it on the stack:
+   [33;23;22;24;25mpushd [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mSwitch first and second directories on the stack:
+   [33;23;22;24;25mpushd[0m
+[0m
+ - [0m[32;23;22;24;25mRotate stack by making the 5th element the top of the stack:
+   [33;23;22;24;25mpushd +4[0m
+[0m
+ - [0m[32;23;22;24;25mRotate the stack 4 times to the left (the current directory stays at the top by replacing the 5th element):
+   [33;23;22;24;25mpushd -n +4[0m
+[0m[0m

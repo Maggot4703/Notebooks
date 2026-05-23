@@ -1,0 +1,25 @@
+complete
+
+[0m[0mGet and set argument autocompletion rules of shell commands in Bash.
+The specified completions will be invoked when <Tab> is pressed in Bash.
+See also: compgen, compopt.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-complete.
+
+ - [0m[32;23;22;24;25mSet arguments of a command to autocomplete through a function (completion response is sent in COMPREPLY variable):
+   [33;23;22;24;25mcomplete -F [0mfunction[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mSet arguments of a command to autocomplete through another command ($1 is the command, $2 is the argument the cursor is on, and $3 is the argument preceding the cursor):
+   [33;23;22;24;25mcomplete -C [0mautocomplete_command[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mSet arguments of a command to autocomplete to shell builtins:
+   [33;23;22;24;25mcomplete -b [0mcommand
+[0m
+ - [0m[32;23;22;24;25mApply autocompletion without appending a space to the completed word:
+   [33;23;22;24;25mcomplete -o nospace -F [0mfunction[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mList all loaded complete specifications:
+   [33;23;22;24;25mcomplete -p[0m
+[0m
+ - [0m[32;23;22;24;25mList loaded complete specifications for a command:
+   [33;23;22;24;25mcomplete -p [0mcommand
+[0m[0m

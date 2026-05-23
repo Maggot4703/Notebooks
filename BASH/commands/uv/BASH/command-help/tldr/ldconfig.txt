@@ -1,0 +1,14 @@
+ldconfig
+
+[0m[0mConfigure symlinks and cache for shared library dependencies.
+More information: https://manned.org/ldconfig.
+
+ - [0m[32;23;22;24;25mUpdate symlinks and rebuild the cache (usually run when a new library is installed):
+   [33;23;22;24;25msudo ldconfig[0m
+[0m
+ - [0m[32;23;22;24;25mUpdate the symlinks for a given directory:
+   [33;23;22;24;25msudo ldconfig -n [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mPrint the libraries in the cache and check whether a given library is present:
+   [33;23;22;24;25mldconfig [0m[-p|--print-cache][33;23;22;24;25m | grep [0mlibrary_name
+[0m[0m

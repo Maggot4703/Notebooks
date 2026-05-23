@@ -1,0 +1,18 @@
+let
+
+[0m[0mEvaluate arithmetic expressions in shell.
+Supports variables, operators, and conditional expressions.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-let.
+
+ - [0m[32;23;22;24;25mEvaluate a simple arithmetic expression:
+   [33;23;22;24;25mlet "[0mresult = a + b[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mUse post-increment and assignment in an expression:
+   [33;23;22;24;25mlet "[0mx++[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mUse conditional operator in an expression:
+   [33;23;22;24;25mlet "[0mresult = (x > 10) ? x : 0[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mlet --help[0m
+[0m[0m

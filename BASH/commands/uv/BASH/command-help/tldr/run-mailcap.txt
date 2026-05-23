@@ -1,0 +1,18 @@
+run-mailcap
+
+[0m[0mRun MailCap Programs.
+Run mailcap view, see, edit, compose, print - execute programs via entries in the mailcap file (or any of its aliases) will use the given action to process each mime-type/file.
+More information: https://manned.org/run-mailcap.
+
+ - [0m[32;23;22;24;25mInvoke individual actions/programs on run-mailcap:
+   [33;23;22;24;25mrun-mailcap --action=[0mview|cat|compose|composetyped|edit|print[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mTurn on extra information:
+   [33;23;22;24;25mrun-mailcap --action=[0maction[33;23;22;24;25m --debug [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mIgnore any "copiousoutput" directive and forward output to stdout:
+   [33;23;22;24;25mrun-mailcap --action=[0maction[33;23;22;24;25m --nopager [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay the found command without actually executing it:
+   [33;23;22;24;25mrun-mailcap --action=[0maction[33;23;22;24;25m --norun [0mpath/to/file
+[0m[0m

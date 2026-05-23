@@ -1,0 +1,17 @@
+webpack
+
+[0m[0mBundle a web project's js files and other assets into a single output file.
+More information: https://webpack.js.org.
+
+ - [0m[32;23;22;24;25mCreate a single output file from an entry point file:
+   [33;23;22;24;25mwebpack [0mapp.js[33;23;22;24;25m [0mbundle.js
+[0m
+ - [0m[32;23;22;24;25mLoad CSS files too from the JavaScript file (this uses the CSS loader for CSS files):
+   [33;23;22;24;25mwebpack [0mapp.js[33;23;22;24;25m [0mbundle.js[33;23;22;24;25m --module-bind '[0mcss=css[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mPass a configuration file (with e.g. the entry script and the output filename) and show compilation progress:
+   [33;23;22;24;25mwebpack --config [0mwebpack.config.js[33;23;22;24;25m --progress[0m
+[0m
+ - [0m[32;23;22;24;25mAutomatically recompile on changes to project files:
+   [33;23;22;24;25mwebpack --watch [0mapp.js[33;23;22;24;25m [0mbundle.js
+[0m[0m

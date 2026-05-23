@@ -1,0 +1,20 @@
+fc-list
+
+[0m[0mList available fonts installed on the system.
+More information: https://manned.org/fc-list.
+
+ - [0m[32;23;22;24;25mReturn a list of installed fonts:
+   [33;23;22;24;25mfc-list[0m
+[0m
+ - [0m[32;23;22;24;25mReturn a list of installed fonts with given name:
+   [33;23;22;24;25mfc-list | grep '[0mDejaVu Serif[33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mReturn the number of installed fonts:
+   [33;23;22;24;25mfc-list | wc [0m[-l|--lines]
+[0m
+ - [0m[32;23;22;24;25mReturn a list of installed fonts that support the language based on its locale code:
+   [33;23;22;24;25mfc-list :lang=[0mjp
+[0m
+ - [0m[32;23;22;24;25mReturn a list of installed fonts that contain the glyph specified by its Unicode code-point:
+   [33;23;22;24;25mfc-list :charset=[0mf303
+[0m[0m

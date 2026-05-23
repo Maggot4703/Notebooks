@@ -1,0 +1,20 @@
+systemd-sysext
+
+[0m[0mActivate or deactivate system extension images.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-sysext.html.
+
+ - [0m[32;23;22;24;25mList installed extension images:
+   [33;23;22;24;25msystemd-sysext list[0m
+[0m
+ - [0m[32;23;22;24;25mMerge system extension images into /usr/ and /opt/:
+   [33;23;22;24;25msystemd-sysext merge[0m
+[0m
+ - [0m[32;23;22;24;25mCheck the current merge status:
+   [33;23;22;24;25msystemd-sysext status[0m
+[0m
+ - [0m[32;23;22;24;25mUnmerge all currently installed system extension images from /usr/ and /opt/:
+   [33;23;22;24;25msystemd-sysext unmerge[0m
+[0m
+ - [0m[32;23;22;24;25mRefresh system extension images (a combination of unmerge and merge):
+   [33;23;22;24;25msystemd-sysext refresh[0m
+[0m[0m

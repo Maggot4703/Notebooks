@@ -1,0 +1,20 @@
+join
+
+[0m[0mJoin lines of two sorted files on a common field.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/join-invocation.html.
+
+ - [0m[32;23;22;24;25mJoin two files on the first (default) field:
+   [33;23;22;24;25mjoin [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mJoin two files using a comma (instead of a space) as the field separator:
+   [33;23;22;24;25mjoin -t [0m','[33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mJoin field3 of file1 with field1 of file2:
+   [33;23;22;24;25mjoin -1 [0m3[33;23;22;24;25m -2 [0m1[33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mProduce a line for each unpairable line for file1:
+   [33;23;22;24;25mjoin -a [0m1[33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mJoin a file from stdin:
+   [33;23;22;24;25mcat [0mpath/to/file1[33;23;22;24;25m | join - [0mpath/to/file2
+[0m[0m

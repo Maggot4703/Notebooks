@@ -1,0 +1,21 @@
+systemd-tmpfiles
+
+[0m[0mCreate, delete and clean up volatile and temporary files and directories.
+This command is automatically invoked on boot by systemd services, and running it manually is usually not needed.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-tmpfiles.html.
+
+ - [0m[32;23;22;24;25mCreate files and directories as specified in the configuration:
+   [33;23;22;24;25msystemd-tmpfiles --create[0m
+[0m
+ - [0m[32;23;22;24;25mClean up files and directories with age parameters configured:
+   [33;23;22;24;25msystemd-tmpfiles --clean[0m
+[0m
+ - [0m[32;23;22;24;25mRemove files and directories as specified in the configuration:
+   [33;23;22;24;25msystemd-tmpfiles --remove[0m
+[0m
+ - [0m[32;23;22;24;25mApply operations for user-specific configurations:
+   [33;23;22;24;25msystemd-tmpfiles --create --user[0m
+[0m
+ - [0m[32;23;22;24;25mExecute lines marked for early boot:
+   [33;23;22;24;25msystemd-tmpfiles --create --boot[0m
+[0m[0m

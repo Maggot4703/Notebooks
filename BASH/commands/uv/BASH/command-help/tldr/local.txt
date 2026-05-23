@@ -1,0 +1,24 @@
+local
+
+[0m[0mDeclare local variables and give them attributes.
+See also: declare, export.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-local.
+
+ - [0m[32;23;22;24;25mDeclare a string variable with the specified value:
+   [33;23;22;24;25mlocal [0mvariable[33;23;22;24;25m="[0mvalue[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mDeclare an integer variable with the specified value:
+   [33;23;22;24;25mlocal -i [0mvariable[33;23;22;24;25m="[0mvalue[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mDeclare an array variable with the specified value:
+   [33;23;22;24;25mlocal [0mvariable[33;23;22;24;25m=([0mitem_a item_b item_c[33;23;22;24;25m)[0m
+[0m
+ - [0m[32;23;22;24;25mDeclare an associative array variable with the specified value:
+   [33;23;22;24;25mlocal -A [0mvariable[33;23;22;24;25m=([0m[key_a]=item_a [key_b]=item_b [key_c]=item_c[33;23;22;24;25m)[0m
+[0m
+ - [0m[32;23;22;24;25mDeclare a readonly variable with the specified value:
+   [33;23;22;24;25mlocal -r [0mvariable[33;23;22;24;25m="[0mvalue[33;23;22;24;25m"[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mlocal --help[0m
+[0m[0m

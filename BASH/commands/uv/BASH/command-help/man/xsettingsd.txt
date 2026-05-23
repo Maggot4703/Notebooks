@@ -1,0 +1,57 @@
+XSETTINGSD(1)               General Commands Manual              XSETTINGSD(1)
+
+NAME
+       xsettingsd - provides settings to X11 applications
+
+SYNOPSIS
+       xsettingsd [options]
+
+DESCRIPTION
+       xsettingsd  is  a  daemon  that implements the XSETTINGS specification.
+       The typical invocation is from a user's ~/.xsession file.
+
+       It is intended to be small, fast, and minimally dependent on other  li‐
+       braries.  It  can  serve as an alternative to gnome-settings-daemon for
+       users who are not using the GNOME desktop environment but who still run
+       GTK+ applications and want to configure things such as themes, font an‐
+       tialiasing/hinting, and UI sound effects.
+
+       Additional  documentation  is  available  at  the  project's   website:
+       https://github.com/derat/xsettingsd
+
+OPTIONS
+       -c, --config=FILE
+              Load settings from FILE (default is ~/.xsettingsd).
+
+       -h, --help
+              Display a help message and exit.
+
+       -s, --screen=SCREEN
+              Use  the  X  screen  numbered  SCREEN  (default  of -1 means all
+              screens).
+
+BUGS
+       https://github.com/derat/xsettingsd/issues
+
+EXAMPLE
+       Running dump_xsettings(1)  while  another  XSETTINGS  daemon,  such  as
+       gnome-settings-daemon,  is already running will print your current set‐
+       tings in xsettingsd's configuration file format.
+
+       Here is a short example ~/.xsettingsd file:
+
+       Net/ThemeName "Human"
+       Xft/Antialias 1
+       Xft/DPI 100352
+       Xft/HintStyle "hintfull"
+       Xft/Hinting 1
+       Xft/RGBA "none"
+       Xft/lcdfilter "none"
+
+SEE ALSO
+       dump_xsettings(1)
+
+AUTHOR
+       xsettingsd was written by Daniel Erat <dan@erat.org>.
+
+                                                                 XSETTINGSD(1)

@@ -1,0 +1,6 @@
+acyclic: option -- unrecognized
+Usage: acyclic [-nv?] [-o outfile] <file>
+  -o <file> - put output in <file>
+  -n        - do not output graph
+  -v        - verbose
+  -?        - print usage

@@ -1,0 +1,15 @@
+mkfs
+
+[0m[0mBuild a Linux filesystem on a hard disk partition.
+This command is deprecated in favor of filesystem specific mkfs.type utils.
+More information: https://manned.org/mkfs.
+
+ - [0m[32;23;22;24;25mBuild a Linux ext2 filesystem on a partition:
+   [33;23;22;24;25mmkfs [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mBuild a filesystem of a specified type:
+   [33;23;22;24;25mmkfs [0m[-t|--type][33;23;22;24;25m [0mext4[33;23;22;24;25m [0m/dev/sdXY
+[0m
+ - [0m[32;23;22;24;25mBuild a filesystem of a specified type and check for bad blocks:
+   [33;23;22;24;25mmkfs -c [0m[-t|--type][33;23;22;24;25m [0mntfs[33;23;22;24;25m [0m/dev/sdXY
+[0m[0m

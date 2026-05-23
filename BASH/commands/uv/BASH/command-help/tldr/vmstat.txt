@@ -1,0 +1,11 @@
+vmstat
+
+[0m[0mReport information about processes, memory, paging, block IO, traps, disks and CPU activity.
+More information: https://manned.org/vmstat.
+
+ - [0m[32;23;22;24;25mDisplay virtual memory statistics:
+   [33;23;22;24;25mvmstat[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay reports every 2 seconds for 5 times:
+   [33;23;22;24;25mvmstat [0m2[33;23;22;24;25m [0m5
+[0m[0m

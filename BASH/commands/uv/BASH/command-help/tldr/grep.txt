@@ -1,0 +1,29 @@
+grep
+
+[0m[0mFind patterns in files using regexes.
+More information: https://www.gnu.org/software/grep/manual/grep.html.
+
+ - [0m[32;23;22;24;25mSearch for a pattern within a file:
+   [33;23;22;24;25mgrep "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for an exact string (disables regexes):
+   [33;23;22;24;25mgrep [0m[-F|--fixed-strings][33;23;22;24;25m "[0mexact_string[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for a pattern in all files recursively in a directory, showing line numbers of matches, ignoring binary files:
+   [33;23;22;24;25mgrep [0m[-rnI|--recursive --line-number --binary-files=without-match][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mUse extended regexes (supports ?, +, {}, (), and |), in case-insensitive mode:
+   [33;23;22;24;25mgrep [0m[-Ei|--extended-regexp --ignore-case][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint 3 lines of [C]ontext around, [B]efore or [A]fter each match:
+   [33;23;22;24;25mgrep [0m--context|--before-context|--after-context[33;23;22;24;25m 3 "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mPrint file name and line number for each match with color output:
+   [33;23;22;24;25mgrep [0m[-Hn|--with-filename --line-number][33;23;22;24;25m --color=always "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for lines matching a pattern, printing only the matched text:
+   [33;23;22;24;25mgrep [0m[-o|--only-matching][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch stdin for lines that do not match a pattern:
+   [33;23;22;24;25mcat [0mpath/to/file[33;23;22;24;25m | grep [0m[-v|--invert-match][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m"[0m
+[0m[0m

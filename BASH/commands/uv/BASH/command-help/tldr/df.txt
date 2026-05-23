@@ -1,0 +1,17 @@
+df
+
+[0m[0mDisplay an overview of the filesystem disk space usage.
+More information: https://manned.org/df.1posix.
+
+ - [0m[32;23;22;24;25mDisplay all filesystems and their disk usage using 512-byte units:
+   [33;23;22;24;25mdf[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the filesystem and its disk usage containing the given file or directory:
+   [33;23;22;24;25mdf [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mUse 1024-byte units when writing space figures:
+   [33;23;22;24;25mdf -k[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay information in a portable way:
+   [33;23;22;24;25mdf -P[0m
+[0m[0m

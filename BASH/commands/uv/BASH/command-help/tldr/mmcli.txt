@@ -1,0 +1,20 @@
+mmcli
+
+[0m[0mControl and monitor the ModemManager.
+More information: https://www.freedesktop.org/software/ModemManager/man/latest/mmcli.1.html.
+
+ - [0m[32;23;22;24;25mList available modems:
+   [33;23;22;24;25mmmcli --list-modems[0m
+[0m
+ - [0m[32;23;22;24;25mPrint information about a modem:
+   [33;23;22;24;25mmmcli --modem=[0mmodem
+[0m
+ - [0m[32;23;22;24;25mEnable a modem:
+   [33;23;22;24;25mmmcli --modem=[0mmodem[33;23;22;24;25m --enable[0m
+[0m
+ - [0m[32;23;22;24;25mList SMS messages available on the modem:
+   [33;23;22;24;25msudo mmcli --modem=[0mmodem[33;23;22;24;25m --messaging-list-sms[0m
+[0m
+ - [0m[32;23;22;24;25mDelete a message from the modem, specifying its path:
+   [33;23;22;24;25msudo mmcli --modem=[0mmodem[33;23;22;24;25m --messaging-delete-sms=[0mpath/to/message_file
+[0m[0m

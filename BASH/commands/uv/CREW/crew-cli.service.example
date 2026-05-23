@@ -1,0 +1,16 @@
+[Unit]
+Description=Crew CLI task on Raspberry Pi boot
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=me
+WorkingDirectory=/home/me/Notebooks/CREW
+Environment=PYTHONPATH=/home/me/Notebooks/CREW/src
+Environment=PYTHONUNBUFFERED=1
+Environment="CREW_COMMAND=read-csv /absolute/path/to/file.csv"
+ExecStart=/bin/sh -lc 'exec /home/me/Notebooks/.venv/bin/python /home/me/Notebooks/CREW/Crew/Crew.py $CREW_COMMAND'
+
+[Install]
+WantedBy=multi-user.target

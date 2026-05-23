@@ -1,0 +1,15 @@
+iptables-save
+
+[0m[0mSave the iptables IPv4 configuration.
+Use ip6tables-save to do the same for IPv6.
+More information: https://manned.org/iptables-save.
+
+ - [0m[32;23;22;24;25mPrint the iptables configuration:
+   [33;23;22;24;25msudo iptables-save[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the iptables configuration of a specific table:
+   [33;23;22;24;25msudo iptables-save [0m[-t|--table][33;23;22;24;25m [0mtable
+[0m
+ - [0m[32;23;22;24;25mSave the iptables configuration to a file:
+   [33;23;22;24;25msudo iptables-save [0m[-f|--file][33;23;22;24;25m [0mpath/to/file
+[0m[0m

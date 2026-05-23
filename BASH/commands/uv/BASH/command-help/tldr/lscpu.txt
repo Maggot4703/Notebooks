@@ -1,0 +1,23 @@
+lscpu
+
+[0m[0mDisplay information about the CPU architecture.
+More information: https://manned.org/lscpu.
+
+ - [0m[32;23;22;24;25mDisplay information about all CPUs:
+   [33;23;22;24;25mlscpu[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay information in a table:
+   [33;23;22;24;25mlscpu [0m[-e|--extended]
+[0m
+ - [0m[32;23;22;24;25mDisplay only information about online CPUs in a table:
+   [33;23;22;24;25mlscpu [0m[-e|--extended][33;23;22;24;25m [0m[-b|--online]
+[0m
+ - [0m[32;23;22;24;25mDisplay only information about offline CPUs in a table:
+   [33;23;22;24;25mlscpu [0m[-e|--extended][33;23;22;24;25m [0m[-c|--offline]
+[0m
+ - [0m[32;23;22;24;25mDisplay details about CPU caches:
+   [33;23;22;24;25mlscpu [0m[-C|--caches]
+[0m
+ - [0m[32;23;22;24;25mDisplay information in JSON format:
+   [33;23;22;24;25mlscpu [0m[-J|--json]
+[0m[0m

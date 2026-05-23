@@ -1,0 +1,11 @@
+e2freefrag
+
+[0m[0mPrint the free space fragmentation information for ext2/ext3/ext4 filesystems.
+More information: https://manned.org/e2freefrag.
+
+ - [0m[32;23;22;24;25mCheck how many free blocks are present as contiguous and aligned free space:
+   [33;23;22;24;25me2freefrag [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mSpecify [c]hunk size in kilobytes to print how many free chunks are available:
+   [33;23;22;24;25me2freefrag -c [0mchunk_size_in_kb[33;23;22;24;25m [0m/dev/sdXN
+[0m[0m

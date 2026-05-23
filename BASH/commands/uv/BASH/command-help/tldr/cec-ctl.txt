@@ -1,0 +1,15 @@
+cec-ctl
+
+[0m[0mControl kernel CEC devices.
+See also: cec-client.
+More information: https://manned.org/cec-ctl.
+
+ - [0m[32;23;22;24;25mList CEC devices:
+   [33;23;22;24;25mcec-ctl --list-devices[0m
+[0m
+ - [0m[32;23;22;24;25mMonitor CEC traffic:
+   [33;23;22;24;25msudo cec-ctl [0m[-m|--monitor]
+[0m
+ - [0m[32;23;22;24;25mShow CEC topology:
+   [33;23;22;24;25mcec-ctl [0m[-S|--show-topology]
+[0m[0m

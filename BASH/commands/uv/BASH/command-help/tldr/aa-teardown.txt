@@ -1,0 +1,11 @@
+aa-teardown
+
+[0m[0mTear down all AppArmor profiles and disable AppArmor enforcement.
+More information: https://gitlab.com/apparmor/apparmor/-/wikis/manpage_aa-teardown.8.
+
+ - [0m[32;23;22;24;25mDisable all AppArmor profiles and stop enforcement:
+   [33;23;22;24;25msudo aa-teardown[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25maa-teardown [0m[-h|--help]
+[0m[0m

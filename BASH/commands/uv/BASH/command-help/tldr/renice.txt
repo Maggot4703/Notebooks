@@ -1,0 +1,16 @@
+renice
+
+[0m[0mAlter the scheduling priority/niceness of running processes.
+Niceness values range from -20 (most favorable to the process) to 19 (least favorable to the process).
+See also: nice.
+More information: https://manned.org/renice.1p.
+
+ - [0m[32;23;22;24;25mIncrease/decrease the priority of a running [p]rocess:
+   [33;23;22;24;25mrenice -n [0m3[33;23;22;24;25m -p [0mpid
+[0m
+ - [0m[32;23;22;24;25mIncrease/decrease the priority of all processes owned by a [u]ser:
+   [33;23;22;24;25mrenice -n [0m-4[33;23;22;24;25m -u [0muid|user
+[0m
+ - [0m[32;23;22;24;25mIncrease/decrease the priority of all processes that belong to a process [g]roup:
+   [33;23;22;24;25mrenice -n [0m5[33;23;22;24;25m -g [0mprocess_group
+[0m[0m

@@ -1,0 +1,11 @@
+bwrap
+
+[0m[0mRun programs in a lightweight sandbox.
+More information: https://manned.org/bwrap.
+
+ - [0m[32;23;22;24;25mRun a program in a read-only environment:
+   [33;23;22;24;25mbwrap --ro-bind / / [0m/bin/bash
+[0m
+ - [0m[32;23;22;24;25mGive the environment access to devices, process information and create a tmpfs for it:
+   [33;23;22;24;25mbwrap --dev-bind /dev /dev --proc /proc --ro-bind / / --tmpfs /tmp [0m/bin/bash
+[0m[0m

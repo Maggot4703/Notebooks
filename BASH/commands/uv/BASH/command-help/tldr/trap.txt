@@ -1,0 +1,14 @@
+trap
+
+[0m[0mExecute a command upon an event.
+More information: https://manned.org/trap.1posix.
+
+ - [0m[32;23;22;24;25mList the commands and the names of the expected events:
+   [33;23;22;24;25mtrap[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a command when a signal is received:
+   [33;23;22;24;25mtrap 'echo "Caught signal [0mSIGHUP[33;23;22;24;25m"' [0mHUP
+[0m
+ - [0m[32;23;22;24;25mRemove commands:
+   [33;23;22;24;25mtrap - [0mHUP[33;23;22;24;25m [0mINT
+[0m[0m

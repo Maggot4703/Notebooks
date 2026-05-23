@@ -1,0 +1,15 @@
+nop
+
+[0m[0mCheck validity and pretty-print graphs in canonical format.
+Graphviz filters: acyclic, bcomps, comps, edgepaint, gvcolor, gvpack, mingle, nop, sccmap, tred, & unflatten.
+More information: https://www.graphviz.org/pdf/nop.1.pdf.
+
+ - [0m[32;23;22;24;25mPretty-print one or more graphs in canonical format:
+   [33;23;22;24;25mnop [0mpath/to/input1.gv path/to/input2.gv ...[33;23;22;24;25m > [0mpath/to/output.gv
+[0m
+ - [0m[32;23;22;24;25mCheck one or more graphs for validity, producing no output graph:
+   [33;23;22;24;25mnop -p [0mpath/to/input1.gv path/to/input2.gv ...
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mnop -?[0m
+[0m[0m

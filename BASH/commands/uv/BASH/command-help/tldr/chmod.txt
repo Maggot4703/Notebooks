@@ -1,0 +1,29 @@
+chmod
+
+[0m[0mChange the access permissions of a file or directory.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html.
+
+ - [0m[32;23;22;24;25mGive the [u]ser who owns a file the right to e[x]ecute it:
+   [33;23;22;24;25mchmod u+x [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGive the [u]ser rights to [r]ead and [w]rite to a file/directory:
+   [33;23;22;24;25mchmod u+rw [0mpath/to/file_or_directory
+[0m
+ - [0m[32;23;22;24;25mRemove e[x]ecutable rights from the [g]roup:
+   [33;23;22;24;25mchmod g-x [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGive [a]ll users rights to [r]ead and e[x]ecute:
+   [33;23;22;24;25mchmod a+rx [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGive [o]thers (not in the file owner's group) the same rights as the [g]roup:
+   [33;23;22;24;25mchmod o=g [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mRemove all rights from [o]thers:
+   [33;23;22;24;25mchmod o= [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mChange permissions recursively giving [g]roup and [o]thers the ability to [w]rite:
+   [33;23;22;24;25mchmod [0m[-R|--recursive][33;23;22;24;25m g+w,o+w [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mRecursively give [a]ll users [r]ead permissions to files and e[X]ecute permissions to sub-directories within a directory:
+   [33;23;22;24;25mchmod [0m[-R|--recursive][33;23;22;24;25m a+rX [0mpath/to/directory
+[0m[0m

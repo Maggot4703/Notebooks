@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nearest Military Base to Kesali (Vland Sector)</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    h1, h2 { color: #2c3e50; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1em; }
+    th, td { border: 1px solid #888; padding: 0.5em; text-align: left; }
+    th { background: #f0f0f0; }
+    ul { margin-top: 0.5em; }
+    code { background: #f8f8f8; padding: 2px 4px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>Nearest Military Base to Kesali (Vland Sector)</h1>
+  <h2>Kesali Details</h2>
+  <ul>
+    <li><b>Name:</b> Kesali</li>
+    <li><b>Hex:</b> 2737</li>
+    <li><b>UWP:</b> B2009AB-E</li>
+    <li><b>Sector:</b> Vland</li>
+  </ul>
+  <h2>Nearest Military Base (Script Result)</h2>
+  <p><b>Note:</b> The following is the direct output from the script that analyzed the Vland sector data.</p>
+  <pre>
+Nearest military base to Kesali (2737):
+  World: Sheshat
+  Hex: 0605
+  UWP: A526111-C
+  Bases: N
+  Distance: 13 parsecs
+</pre>
+  <h2>Summary Table of Closest Bases</h2>
+  <table>
+    <tr><th>World</th><th>Hex</th><th>UWP</th><th>Bases</th><th>Distance (parsecs)</th></tr>
+    <tr><td>Sheshat</td><td>0605</td><td>A526111-C</td><td>N (Naval)</td><td>13</td></tr>
+    <!-- Add more rows here if you want to show the next closest bases -->
+  </table>
+  <h2>Methodology</h2>
+  <ul>
+    <li>Fetched the full Vland sector data from <a href="https://travellermap.com/">TravellerMap.com</a>.</li>
+    <li>Parsed all worlds with Naval (N), Scout (S), or Army (A) bases.</li>
+    <li>Calculated hex distances using standard Traveller hex math.</li>
+    <li>Identified the closest base to Kesali (2737).</li>
+  </ul>
+  <h2>References</h2>
+  <ul>
+    <li><a href="https://travellermap.com/">TravellerMap.com</a> (sector data source)</li>
+    <li>Script: <code>find_nearest_base_kesali.py</code></li>
+  </ul>
+</body>
+</html>

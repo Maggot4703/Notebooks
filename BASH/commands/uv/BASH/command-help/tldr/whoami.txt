@@ -1,0 +1,11 @@
+whoami
+
+[0m[0mPrint the username associated with the current effective user ID.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/whoami-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay currently logged username:
+   [33;23;22;24;25mwhoami[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the username after a change in the user ID:
+   [33;23;22;24;25msudo whoami[0m
+[0m[0m

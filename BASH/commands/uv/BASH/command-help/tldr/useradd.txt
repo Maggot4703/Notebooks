@@ -1,0 +1,27 @@
+useradd
+
+[0m[0mCreate a new user.
+See also: users, userdel, usermod.
+More information: https://manned.org/useradd.
+
+ - [0m[32;23;22;24;25mCreate a new user:
+   [33;23;22;24;25msudo useradd [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a new user with the specified user ID:
+   [33;23;22;24;25msudo useradd [0m[-u|--uid][33;23;22;24;25m [0mid[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a new user with the specified shell:
+   [33;23;22;24;25msudo useradd [0m[-s|--shell][33;23;22;24;25m [0mpath/to/shell[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a new user belonging to additional groups (mind the lack of whitespace):
+   [33;23;22;24;25msudo useradd [0m[-G|--groups][33;23;22;24;25m [0mgroup1,group2,...[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a new user with the default home directory:
+   [33;23;22;24;25msudo useradd [0m[-m|--create-home][33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a new user with the home directory filled by template directory files:
+   [33;23;22;24;25msudo useradd [0m[-k|--skel][33;23;22;24;25m [0mpath/to/template_directory[33;23;22;24;25m [0m[-m|--create-home][33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a new system user without the home directory:
+   [33;23;22;24;25msudo useradd [0m[-r|--system][33;23;22;24;25m [0musername
+[0m[0m

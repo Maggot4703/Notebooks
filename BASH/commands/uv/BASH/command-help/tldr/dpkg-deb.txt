@@ -1,0 +1,20 @@
+dpkg-deb
+
+[0m[0mPack, unpack and provide information about Debian archives.
+More information: https://manned.org/dpkg-deb.
+
+ - [0m[32;23;22;24;25mDisplay information about a package:
+   [33;23;22;24;25mdpkg-deb [0m[-I|--info][33;23;22;24;25m [0mpath/to/file.deb
+[0m
+ - [0m[32;23;22;24;25mDisplay the package's name and version on one line:
+   [33;23;22;24;25mdpkg-deb [0m[-W|--show][33;23;22;24;25m [0mpath/to/file.deb
+[0m
+ - [0m[32;23;22;24;25mList the package's contents:
+   [33;23;22;24;25mdpkg-deb [0m[-c|--contents][33;23;22;24;25m [0mpath/to/file.deb
+[0m
+ - [0m[32;23;22;24;25mExtract package's contents into a directory:
+   [33;23;22;24;25mdpkg-deb [0m[-x|--extract][33;23;22;24;25m [0mpath/to/file.deb[33;23;22;24;25m [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mCreate a package from a specified directory:
+   [33;23;22;24;25mdpkg-deb [0m[-b|--build][33;23;22;24;25m [0mpath/to/directory
+[0m[0m

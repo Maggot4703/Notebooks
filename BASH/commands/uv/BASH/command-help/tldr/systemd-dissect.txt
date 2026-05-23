@@ -1,0 +1,23 @@
+systemd-dissect
+
+[0m[0mIntrospect and interact with file system OS disk images, specifically Discoverable Disk Images (DDIs).
+More information: https://www.freedesktop.org/software/systemd/man/systemd-dissect.html.
+
+ - [0m[32;23;22;24;25mShow general image information about the OS image:
+   [33;23;22;24;25msystemd-dissect [0mpath/to/image.raw
+[0m
+ - [0m[32;23;22;24;25mMount an OS image:
+   [33;23;22;24;25msystemd-dissect [0m[-m|--mount][33;23;22;24;25m [0mpath/to/image.raw[33;23;22;24;25m [0m/mnt/image
+[0m
+ - [0m[32;23;22;24;25mUnmount an OS image:
+   [33;23;22;24;25msystemd-dissect [0m[-u|--umount][33;23;22;24;25m [0m/mnt/image
+[0m
+ - [0m[32;23;22;24;25mList files in an image:
+   [33;23;22;24;25msystemd-dissect [0m[-l|--list][33;23;22;24;25m [0mpath/to/image.raw
+[0m
+ - [0m[32;23;22;24;25mAttach an OS image to an automatically allocated loopback block device and print its path:
+   [33;23;22;24;25msystemd-dissect --attach [0mpath/to/image.raw
+[0m
+ - [0m[32;23;22;24;25mDetach an OS image from a loopback block device:
+   [33;23;22;24;25msystemd-dissect --detach [0mpath/to/device
+[0m[0m

@@ -1,0 +1,342 @@
+{
+  "folder": "t85YBjArVegjKBuG",
+  "name": "Name Vilani Lineage",
+  "_id": "bIzFAmWjgXQX0zqv",
+  "img": "systems/mgt2e/icons/misc/text.svg",
+  "description": "",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "3tFF7eTNBcShPqCc",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Shugashiik",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.3tFF7eTNBcShPqCc"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "y0dNiMULEf2zX3mD",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Indunna",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.y0dNiMULEf2zX3mD"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_id": "I6JCY2trh9pPRl4j",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Shikarrida",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.I6JCY2trh9pPRl4j"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_id": "ReGe8kwatM2LZIVI",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Agardur",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.ReGe8kwatM2LZIVI"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_id": "7nHxeuph8PQN04uJ",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Ugugme",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.7nHxeuph8PQN04uJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_id": "sXDVOgpLY1BVmSHR",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Umdadusag",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.sXDVOgpLY1BVmSHR"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_id": "ulJYd6ZMUc8hbObv",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Irirun",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.ulJYd6ZMUc8hbObv"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_id": "LKdLcv1YXEH20KsJ",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Irgakusela",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.LKdLcv1YXEH20KsJ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_id": "CpYRjnTNB4tzCmSM",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Udliraa",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.CpYRjnTNB4tzCmSM"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_id": "lBL9xwW7581e5awq",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Amligishe",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.lBL9xwW7581e5awq"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_id": "ycuhHzcO9BIPbWSF",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Arkigaga",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.ycuhHzcO9BIPbWSF"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_id": "3hT6ZmkIcJD3Pmwx",
+      "img": "icons/svg/d20-black.svg",
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "description": "Kami",
+      "name": "",
+      "_key": "!tables.results!bIzFAmWjgXQX0zqv.3hT6ZmkIcJD3Pmwx"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mhUjqDVicnwIUaiq": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mgt2e",
+    "systemVersion": "0.15.4.1-DEV",
+    "createdTime": 1762622372585,
+    "modifiedTime": 1763127345640,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "exportSource": null
+  },
+  "formula": "1d12",
+  "_key": "!tables!bIzFAmWjgXQX0zqv"
+}

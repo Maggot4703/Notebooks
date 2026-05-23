@@ -1,0 +1,9 @@
+bzip2recover
+
+[0m[0mAttempt to recover data from a damaged .bz2 file.
+See also: bzip2.
+More information: https://manned.org/bzip2recover.
+
+ - [0m[32;23;22;24;25mRecover all intact blocks from a damaged .bz2 file:
+   [33;23;22;24;25mbzip2recover [0mdamaged_file.bz2
+[0m[0m

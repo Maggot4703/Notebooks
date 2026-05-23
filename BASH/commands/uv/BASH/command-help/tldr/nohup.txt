@@ -1,0 +1,17 @@
+nohup
+
+[0m[0mAllows for a process to live when the terminal gets killed.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/nohup-invocation.html.
+
+ - [0m[32;23;22;24;25mRun a process that can live beyond the terminal:
+   [33;23;22;24;25mnohup [0mcommand[33;23;22;24;25m [0margument1 argument2 ...
+[0m
+ - [0m[32;23;22;24;25mLaunch nohup in background mode:
+   [33;23;22;24;25mnohup [0mcommand[33;23;22;24;25m [0margument1 argument2 ...[33;23;22;24;25m &[0m
+[0m
+ - [0m[32;23;22;24;25mRun a shell script that can live beyond the terminal:
+   [33;23;22;24;25mnohup [0mpath/to/script.sh[33;23;22;24;25m &[0m
+[0m
+ - [0m[32;23;22;24;25mRun a process and write the output to a specific file:
+   [33;23;22;24;25mnohup [0mcommand[33;23;22;24;25m [0margument1 argument2 ...[33;23;22;24;25m > [0mpath/to/output_file[33;23;22;24;25m &[0m
+[0m[0m

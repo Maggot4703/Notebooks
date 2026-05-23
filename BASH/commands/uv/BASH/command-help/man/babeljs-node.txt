@@ -1,0 +1,56 @@
+BABEL-NODE.JS(1)                 User Commands                BABEL-NODE.JS(1)
+
+NAME
+       babel-node.js  -  CLI  that  works exactly the same as the Node.js CLI,
+       with the added benefit of compiling with Babel presets and plugins  be‐
+       fore running it
+
+SYNOPSIS
+       babel-node [options] [ -e script | script.js ] [arguments]
+
+OPTIONS
+       -e, --eval [script]
+              Evaluate script
+
+       --no-babelrc
+              Specify whether or not to use .babelrc and .babelignore files
+
+       -r, --require [module]
+              Require module
+
+       -p, --print [code]
+              Evaluate script and print result
+
+       -o, --only [globs]
+              A comma-separated list of glob patterns to compile
+
+       -i, --ignore [globs]
+              A comma-separated list of glob patterns to skip compiling
+
+       -x, --extensions [extensions]
+              List of extensions to hook into [.es6,.js,.es,.jsx,.mjs]
+
+       --config-file [path]
+              Path to the babel config file to use. Defaults to working direc‐
+              tory babel.config.js
+
+       --env-name [name]
+              The name of the 'env' to use when loading configs  and  plugins.
+              Defaults  to  the  value of BABEL_ENV, or else NODE_ENV, or else
+              'development'.
+
+       --root-mode [mode]
+              The project-root resolution mode. One of 'root'  (the  default),
+              'upward', or 'upward-optional'.
+
+       -w, --plugins [string]
+
+       -b, --presets [string]
+
+       -V, --version
+              output the version number
+
+       -h, --help
+              display help for command
+
+babel-node.js 7.20.15+ds1+~cs214.26June82024                  BABEL-NODE.JS(1)

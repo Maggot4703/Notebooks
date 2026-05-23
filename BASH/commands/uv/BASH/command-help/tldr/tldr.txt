@@ -1,0 +1,30 @@
+tldr
+
+[0m[0mDisplay simple help pages for command-line tools from the tldr-pages project.
+Note: The --language and --list options are not required by the client specification, but most clients implement them.
+More information: https://github.com/tldr-pages/tldr/blob/main/CLIENT-SPECIFICATION.md#command-line-interface.
+
+ - [0m[32;23;22;24;25mPrint the tldr page for a specific command (hint: this is how you got here!):
+   [33;23;22;24;25mtldr [0mcommand
+[0m
+ - [0m[32;23;22;24;25mPrint the tldr page for a specific subcommand:
+   [33;23;22;24;25mtldr [0mcommand[33;23;22;24;25m [0msubcommand
+[0m
+ - [0m[32;23;22;24;25mPrint the tldr page for a command in the given language (if available, otherwise fall back to English):
+   [33;23;22;24;25mtldr [0m[-L|--language][33;23;22;24;25m [0mlanguage_code[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mPrint the tldr page for a command from a specific platform:
+   [33;23;22;24;25mtldr [0m[-p|--platform][33;23;22;24;25m [0mandroid|common|freebsd|linux|osx|netbsd|openbsd|sunos|windows[33;23;22;24;25m [0mcommand
+[0m
+ - [0m[32;23;22;24;25mUpdate the local cache of tldr pages:
+   [33;23;22;24;25mtldr [0m[-u|--update]
+[0m
+ - [0m[32;23;22;24;25mList all pages for the current platform and common:
+   [33;23;22;24;25mtldr [0m[-l|--list]
+[0m
+ - [0m[32;23;22;24;25mList all available subcommand pages for a command:
+   [33;23;22;24;25mtldr [0m[-l|--list][33;23;22;24;25m | grep [0mcommand[33;23;22;24;25m | column[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the tldr page for a random command:
+   [33;23;22;24;25mtldr [0m[-l|--list][33;23;22;24;25m | shuf [0m[-n|--head-count][33;23;22;24;25m 1 | xargs tldr[0m
+[0m[0m

@@ -1,0 +1,67 @@
+2026-04-07 19:05:38,406 INFO Processing /media/me/SSD120/T5/Vland -> /media/me/SSD120/T5/Vland/OCRd
+2026-04-07 19:05:38,406 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland --output-dir /media/me/SSD120/T5/Vland/OCRd
+2026-04-07 19:05:40,487 INFO No PDFs found in --input-dir
+
+2026-04-07 19:05:40,487 INFO Completed /media/me/SSD120/T5/Vland
+2026-04-07 19:05:40,487 INFO Processing /media/me/SSD120/T5/Vland/L Anakod -> /media/me/SSD120/T5/Vland/OCRd/L Anakod
+2026-04-07 19:05:40,487 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/L Anakod --output-dir /media/me/SSD120/T5/Vland/OCRd/L Anakod
+2026-04-07 19:05:40,723 INFO No PDFs found in --input-dir
+
+2026-04-07 19:05:40,723 INFO Completed /media/me/SSD120/T5/Vland/L Anakod
+2026-04-07 19:05:40,724 INFO Processing /media/me/SSD120/T5/Vland/OCRd -> /media/me/SSD120/T5/Vland/OCRd/OCRd
+2026-04-07 19:05:40,724 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/OCRd --output-dir /media/me/SSD120/T5/Vland/OCRd/OCRd
+2026-04-07 19:05:40,950 INFO No PDFs found in --input-dir
+
+2026-04-07 19:05:40,951 INFO Completed /media/me/SSD120/T5/Vland/OCRd
+2026-04-07 19:05:40,951 INFO Processing /media/me/SSD120/T5/Vland/ODG -> /media/me/SSD120/T5/Vland/OCRd/ODG
+2026-04-07 19:05:40,951 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/ODG --output-dir /media/me/SSD120/T5/Vland/OCRd/ODG
+2026-04-07 19:05:41,177 INFO No PDFs found in --input-dir
+
+2026-04-07 19:05:41,178 INFO Completed /media/me/SSD120/T5/Vland/ODG
+2026-04-07 19:05:41,178 INFO Processing /media/me/SSD120/T5/Vland/PNG -> /media/me/SSD120/T5/Vland/OCRd/PNG
+2026-04-07 19:05:41,178 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/PNG --output-dir /media/me/SSD120/T5/Vland/OCRd/PNG
+2026-04-07 19:05:41,410 INFO No PDFs found in --input-dir
+
+2026-04-07 19:05:41,410 INFO Completed /media/me/SSD120/T5/Vland/PNG
+2026-04-07 19:07:45,511 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland --output-dir /media/me/SSD120/T5/Vland/OCRd
+2026-04-07 19:07:45,773 INFO Processing /media/me/SSD120/T5/Vland/L Anakod -> /media/me/SSD120/T5/Vland/OCRd/L Anakod
+2026-04-07 19:07:45,774 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/L Anakod --output-dir /media/me/SSD120/T5/Vland/OCRd/L Anakod
+2026-04-07 19:07:46,039 INFO No PDFs found in --input-dir
+
+2026-04-07 19:07:46,040 INFO Completed /media/me/SSD120/T5/Vland/L Anakod
+2026-04-07 19:07:46,040 INFO Processing /media/me/SSD120/T5/Vland/OCRd -> /media/me/SSD120/T5/Vland/OCRd/OCRd
+2026-04-07 19:07:46,040 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/OCRd --output-dir /media/me/SSD120/T5/Vland/OCRd/OCRd
+2026-04-07 19:07:46,307 INFO No PDFs found in --input-dir
+
+2026-04-07 19:07:46,307 INFO Completed /media/me/SSD120/T5/Vland/OCRd
+2026-04-07 19:07:46,307 INFO Processing /media/me/SSD120/T5/Vland/ODG -> /media/me/SSD120/T5/Vland/OCRd/ODG
+2026-04-07 19:07:46,307 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/ODG --output-dir /media/me/SSD120/T5/Vland/OCRd/ODG
+2026-04-07 19:07:46,574 INFO No PDFs found in --input-dir
+
+2026-04-07 19:07:46,574 INFO Completed /media/me/SSD120/T5/Vland/ODG
+2026-04-07 19:07:46,575 INFO Processing /media/me/SSD120/T5/Vland/PNG -> /media/me/SSD120/T5/Vland/OCRd/PNG
+2026-04-07 19:07:46,575 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/PNG --output-dir /media/me/SSD120/T5/Vland/OCRd/PNG
+2026-04-07 19:07:46,842 INFO No PDFs found in --input-dir
+
+2026-04-07 19:07:46,842 INFO Completed /media/me/SSD120/T5/Vland/PNG
+2026-04-07 19:10:11,875 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland --output-dir /media/me/SSD120/T5/Vland/OCRd
+2026-04-07 19:10:12,139 INFO Processing /media/me/SSD120/T5/Vland/L Anakod -> /media/me/SSD120/T5/Vland/OCRd/L Anakod
+2026-04-07 19:10:12,139 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/L Anakod --output-dir /media/me/SSD120/T5/Vland/OCRd/L Anakod
+2026-04-07 19:10:12,406 INFO No PDFs found in --input-dir
+
+2026-04-07 19:10:12,406 INFO Completed /media/me/SSD120/T5/Vland/L Anakod
+2026-04-07 19:10:12,406 INFO Processing /media/me/SSD120/T5/Vland/OCRd -> /media/me/SSD120/T5/Vland/OCRd/OCRd
+2026-04-07 19:10:12,406 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/OCRd --output-dir /media/me/SSD120/T5/Vland/OCRd/OCRd
+2026-04-07 19:10:12,656 INFO No PDFs found in --input-dir
+
+2026-04-07 19:10:12,656 INFO Completed /media/me/SSD120/T5/Vland/OCRd
+2026-04-07 19:10:12,656 INFO Processing /media/me/SSD120/T5/Vland/ODG -> /media/me/SSD120/T5/Vland/OCRd/ODG
+2026-04-07 19:10:12,656 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/ODG --output-dir /media/me/SSD120/T5/Vland/OCRd/ODG
+2026-04-07 19:10:12,894 INFO No PDFs found in --input-dir
+
+2026-04-07 19:10:12,894 INFO Completed /media/me/SSD120/T5/Vland/ODG
+2026-04-07 19:10:12,895 INFO Processing /media/me/SSD120/T5/Vland/PNG -> /media/me/SSD120/T5/Vland/OCRd/PNG
+2026-04-07 19:10:12,895 INFO Running: /usr/bin/python3 /home/me/Notebooks/skills/batch-ocr-counters/batch_ocr_counters.py --input-dir /media/me/SSD120/T5/Vland/PNG --output-dir /media/me/SSD120/T5/Vland/OCRd/PNG
+2026-04-07 19:10:13,150 INFO No PDFs found in --input-dir
+
+2026-04-07 19:10:13,151 INFO Completed /media/me/SSD120/T5/Vland/PNG

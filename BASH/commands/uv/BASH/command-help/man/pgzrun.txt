@@ -1,0 +1,20 @@
+PGZRUN(1)                   General Commands Manual                  PGZRUN(1)
+
+NAME
+       pgzrun - Run games written in Pygame Zero.
+
+SYNOPSIS
+       pgzrun [ gamefile ] [ arguments ]
+
+DESCRIPTION
+       pgzrun runs a game written in Pygame Zero
+
+       Pygame  Zero provides an environment in which new programmers can write
+       games with Zero boilerplate.
+
+       It is possible to write Pygame Zero games such that they can be run di‐
+       rectly  with  python3,  however  doing so requires two lines of boiler‐
+       plate, "import pgzrun" at the start and "pgzrun.go()" at  the  end.  To
+       meet the goal of zero boilerplate a launcher is needed.
+
+Debian                            2018-06-21                         PGZRUN(1)

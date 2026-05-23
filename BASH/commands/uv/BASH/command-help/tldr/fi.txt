@@ -1,0 +1,7 @@
+fi
+
+[0m[0mThis shell keyword is used to end an if statement.
+
+ - [0m[32;23;22;24;25mView documentation for the if keyword:
+   [33;23;22;24;25mtldr if[0m
+[0m[0m

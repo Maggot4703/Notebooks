@@ -1,0 +1,8 @@
+builtin
+
+[0m[0mExecute shell builtins.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-builtin.
+
+ - [0m[32;23;22;24;25mRun a shell builtin:
+   [33;23;22;24;25mbuiltin [0mcommand
+[0m[0m

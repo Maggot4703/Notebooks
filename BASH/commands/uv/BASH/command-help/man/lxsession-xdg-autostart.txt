@@ -1,0 +1,9 @@
+lxsession-xdg-autostart(1)  General Commands Manual lxsession-xdg-autostart(1)
+
+NAME
+       lxsession-xdg-autostart - lxsession's autostart runner
+
+DESCRIPTION
+       This program is for internal usage by lxsession. Never run it manually.
+
+                                                    lxsession-xdg-autostart(1)

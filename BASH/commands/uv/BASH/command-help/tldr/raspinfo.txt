@@ -1,0 +1,8 @@
+raspinfo
+
+[0m[0mDisplay Raspberry Pi system information.
+More information: https://github.com/raspberrypi/utils/tree/master/raspinfo.
+
+ - [0m[32;23;22;24;25mDisplay system information:
+   [33;23;22;24;25mraspinfo[0m
+[0m[0m

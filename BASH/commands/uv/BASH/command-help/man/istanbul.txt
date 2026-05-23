@@ -1,0 +1,47 @@
+ISTANBUL(1)                 General Commands Manual                ISTANBUL(1)
+
+NAME
+       istanbul - a JS code coverage tool written in JS
+
+SYNOPSIS
+       istanbul help config | <command>
+
+DESCRIPTION
+       Available commands are:
+
+       check-coverage
+
+              checks  overall/per-file coverage against thresholds from cover‐
+              age JSON files. Exits 1 if thresholds are not met, 0 otherwise
+
+       cover
+
+              transparently adds coverage information to a node command. Saves
+              coverage.json and reports at the end of execution
+
+       help
+
+              shows help
+
+       instrument
+
+              instruments  a  file  or a directory tree and writes the instru‐
+              mented code to the desired output location
+
+       report
+
+              writes reports for coverage JSON objects produced in a  previous
+              run
+
+       test
+
+              cover  a  node command only when npm_config_coverage is set. Use
+              in an `npm test` script for conditional coverage
+
+       Command names can be abbreviated as long as the abbreviation  is  unam‐
+       biguous.
+
+SEE ALSO
+       tap(1)
+
+a JS code coverage tool written in June 2018                       ISTANBUL(1)

@@ -1,0 +1,72 @@
+Hex = 0104
+Name = Cantrel
+UWP = C566243-9
+Starport = C
+	Quality = Routine
+	Yards = No
+	Repairs = Major damage
+	Fuel = Unrefined
+	Downport = Yes
+	Highport = No
+	possBases = S
+Size = 5
+	DIGIT	DIA(MI)	DIA(KM)
+	5	5,000	8,000
+Atmosphere = 6
+	DIGIT	DESCRIPTION	EFFECTS
+	6	Standard	
+Hydrosphere = 6
+	DIGIT	DESCRIPTION
+	6	60%
+Population = 2
+	POPULATION UNDER 500
+	DIGIT	DESCRIPTION	VALUE
+	2	Hundred	00
+Government = 4
+	DIGIT	DESCRIPTION	NOTE
+	4	Representative Democracy	Government by proxy
+Law Level = 3
+	DIGIT	DESCRIPTION	NOTE
+	3	Low Law	Prohibition of Acid, Fire, Gas weapons
+Tech Level = 9
+	DIGIT		
+	9		
+Remarks = Lo
+	CODE	SIZ	ATM	HYD	POP	GOVT	LAW	DEFINITION	FORMULA
+	Lo				123			Low Population	
+{Ix} = { -1 }
+	Pop < 7 = -1
+	Importance = Unimportant (-1)+0=-1
+(Ex) = (611-4)
+	Resources =  6
+	Labour =  1
+	Infrastructure =  1
+	Efficiency =  -4
+	RU = -24
+[Cx] = [1126]
+	Homogeneity = 1
+	Acceptance = 1
+	Strangeness = 2
+	Symbols = 6
+N = -
+	No Imperial Nobles
+B = -
+	DIGIT	DESCRIPTION	ALLEG
+Z = -
+	CODE	DESCRIPTION
+	-	Green - Unrestricted.  Imperial.
+PBG = 520
+	Population Multiplier = 5
+	POPULATION UNDER 500
+	Planetoid Belts = 2
+	Gas Giants = 0
+W = 12
+	Non Stars In System = 12
+	-1 (mainworld)
+	-2 (planetoid belts)
+	-0 (gas giants)
+	 = 9 other worlds
+A = ZhIN
+	CODE	DESCRIPTION
+Stellar = F1 V
+	Stars = 1

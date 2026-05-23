@@ -1,0 +1,20 @@
+gunzip
+
+[0m[0mExtract files from a gzip (.gz) archive.
+More information: https://manned.org/gunzip.
+
+ - [0m[32;23;22;24;25mExtract a file from an archive, replacing the original file if it exists:
+   [33;23;22;24;25mgunzip [0marchive.tar.gz
+[0m
+ - [0m[32;23;22;24;25mExtract a file to a target destination:
+   [33;23;22;24;25mgunzip [0m[-c|--stdout][33;23;22;24;25m [0marchive.tar.gz[33;23;22;24;25m > [0marchive.tar
+[0m
+ - [0m[32;23;22;24;25mExtract a file and keep the archive file:
+   [33;23;22;24;25mgunzip [0m[-k|--keep][33;23;22;24;25m [0marchive.tar.gz
+[0m
+ - [0m[32;23;22;24;25mList the contents of a compressed file:
+   [33;23;22;24;25mgunzip [0m[-l|--list][33;23;22;24;25m [0mfile.txt.gz
+[0m
+ - [0m[32;23;22;24;25mDecompress an archive from stdin:
+   [33;23;22;24;25mcat [0mpath/to/archive.gz[33;23;22;24;25m | gunzip[0m
+[0m[0m

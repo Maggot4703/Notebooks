@@ -1,0 +1,645 @@
+/**
+ * Built in macros
+ */
+import {rollAttack, skillLabel} from "../dice-rolls.mjs";
+import {randomiseAssociate} from "../utils/character-utils.mjs";
+import {Tools} from "./tools.mjs";
+import {MgT2BuyDialog} from "../buy-dialog.mjs";
+
+export const MgT2eMacros = {};
+
+// Add a skill to a character sheet.
+// If the level is specified, skill is set to this level if higher.
+// If a level is not specified, then the skill is incremened by 1.
+MgT2eMacros.skillGain = function(args) {
+    let skillId = args.skill;
+    let specId = null;
+    let level = args.level;
+    let context = args.text;
+
+    if (!skillId && args.cha) {
+        MgT2eMacros.chaGain(args);
+        return;
+    }
+
+    if (skillId.indexOf(".") > -1) {
+        skillId = args.skill.split(".")[0];
+        specId = args.skill.split(".")[1];
+    }
+    if (level !== undefined) {
+        level = Number(level);
+    }
+
+    for (let actor of Tools.getSelectedOwned(args.actor)) {
+        let skill = actor.system.skills[skillId];
+        let text = "";
+        let skillName = args.quiet?args.skill:actor.getSkillLabel(args.skill, false);
+        let added = false;
+
+        if (!skill) {
+            if (args.name) {
+                skill = {
+                    "id": skillId,
+                    "label": args.name,
+                    "level": 0,
+                    "trained": false
+                }
+                if (args.cha) {
+                    skill.default = args.cha;
+                }
+                actor.system.skills[skillId] = skill;
+                skillName = args.name;
+                ui.notifications.info(`Add skill ${args.name} to character ${actor.name}`);
+                added = true;
+            } else {
+                ui.notifications.error(`Character ${actor.name} does not have skill ${skillId}`);
+                continue;
+            }
+        }
+
+        if (!skill.trained) {
+            skill.trained = true;
+            text += `<b>${skillName}</b> is now trained.<br/>`;
+            added = true;
+        }
+
+        if (specId && args.sname && !skill.specialities) {
+            ui.notifications.info(`Add speciality ${skillName} (${args.sname}) to character ${actor.name}`);
+            skill.specialities = {};
+            skill.specialities[specId] = {
+                id: specId,
+                label: args.sname,
+                value: 0
+            }
+            skillName += ` (${args.sname})`;
+            text += `<b>${skillName} added as a new speciality.<br/>`;
+            added = true;
+        }
+
+        if (level !== undefined && level === 0) {
+            // Level set to zero, nothing else to do.
+            if (specId && skill.specialities && !skill.specialities[specId] && args.sname) {
+                skill.specialities[specId] = {
+                    "id": specId,
+                    label: args.sname,
+                    value: 0
+                }
+                skillName += ` (${args.sname})`;
+                text += `<b>${skillName} added as a new speciality.<br/>`;
+                added = true;
+            }
+            if (specId && skill.specialities && skill.specialities[specId] && skill.individual) {
+                skill.specialities[specId].trained = true;
+            } else if (!specId && skill.specialities && skill.individual) {
+                // Need to select which one to set to trained.
+                if (args.quiet) {
+                    // If running automatically, select a random speciality.
+                    let keys = Object.keys(skill.specialities);
+                    let r = Math.floor(Math.random() * keys.length);
+                    skill.specialities[keys[r]].trained = true;
+                    skill.specialities[keys[r]].value = 0;
+                } else {
+                    text += `Select a speciality to train:<br/>`;
+                    for (let s in skill.specialities) {
+                        let spec = skillId + "." + s;
+                        let specName = actor.getSkillLabel(spec, false);
+                        let current = Number(skill.specialities[s].value);
+
+                        if (!skill.specialities[s].trained) {
+                            text += `<span class="skillGain-spec" data-actorId="${actor._id}" data-skill="${spec}" data-level="${level}">${specName} ${current}</span><br/>`;
+                        }
+                    }
+                }
+            } else if (!added) {
+                text += `${skillName} is unchanged`;
+            }
+        } else {
+            if (skill.specialities) {
+                if (specId) {
+                    if (!skill.specialities[specId] && args.sname) {
+                        // Create a new speciality.
+                        ui.notifications.info(`Add speciality ${skillName} (${args.sname}) to character ${actor.name}`);
+                        skill.specialities[specId] = {
+                            "id": specId,
+                            "label": args.sname,
+                            "value": level?level:0
+                        }
+                        skillName += ` (${args.sname})`;
+                        text += `${skillName} added as a new specialisation.<br/>`;
+                        added = true;
+                    }
+                    if (skill.specialities[specId]) {
+                        let current = Number(skill.specialities[specId].value);
+                        if (skill.individual) {
+                            skill.specialities[specId].trained = true;
+                        }
+                        if (level === undefined && current < 4) {
+                            skill.specialities[specId].value = current + 1;
+                            text += `Incrementing <b>${skillName}</b> to ${current + 1}.`;
+                        } else if (level > current) {
+                            skill.specialities[specId].value = level;
+                            text += `Setting <b>${skillName}</b> to ${level}.`;
+                        } else if (args.quiet && current >= level) {
+                            skill.specialities[specId].value += 1;
+                        } else if (!added) {
+                            text += `<b>${skillName}</b> is unchanged.`;
+                        }
+                    } else {
+                        ui.notifications.error(`Character ${actor.name} does not have speciality ${skillName} (${specId})`);
+                    }
+                } else {
+                    // Player has to select which speciality to raise.
+                    // Put the choice into the chat.
+                    if (args.quiet) {
+                        // If running automatically, select a random speciality.
+                        let keys = Object.keys(skill.specialities);
+                        let r = Math.floor(Math.random() * keys.length);
+                        let current = Number(skill.specialities[keys[r]].value);
+                        if (current >= level) {
+                            skill.specialities[keys[r]].value = current + 1;
+                        } else {
+                            skill.specialities[keys[r]].value = level;
+                        }
+                        if (skill.individual) {
+                            skill.specialities[keys[r]].trained = true;
+                        }
+                    } else {
+                        text += `Select a speciality to train:<br/>`;
+                        for (let s in skill.specialities) {
+                            let spec = skillId + "." + s;
+                            let specName = actor.getSkillLabel(spec, false);
+                            let current = Number(skill.specialities[s].value);
+
+                            if ((level === undefined || level > current) && current < 4) {
+                                text += `<span class="skillGain-spec" data-actorId="${actor._id}" data-skill="${spec}" data-level="${level}">${specName} ${current}</span><br/>`;
+                            }
+                        }
+                    }
+                }
+            } else if (level === undefined && parseInt(skill.value) < 4) {
+                skill.value = parseInt(skill.value) + 1;
+                text += `Incrementing <b>${skillName}</b> to ${skill.value}.`;
+            } else if (level > skill.value) {
+                skill.value = parseInt(level);
+                text += `Setting <b>${skillName}</b> to ${level}.`;
+            } else if (!added) {
+                text += `<b>${skillName}</b> is unchanged.`;
+            }
+        }
+        if (!args.actor) {
+            actor.update({"system.skills": actor.system.skills});
+        }
+
+        let html = `<div class="chat-package"><h3>${actor.name}</h3>`;
+        if (context) {
+            html += `<p>${context}</p>`;
+        }
+        html += `<p>${text}</p>`;
+        html += `</div>`;
+
+        if (!args.quiet) {
+            let chatData = {
+                speaker: ChatMessage.getSpeaker({actor: actor}),
+                content: html
+            };
+            ChatMessage.create(chatData, {});
+        }
+    }
+};
+
+MgT2eMacros.cash = function(args) {
+    let cash = args.cash;
+    let pension = args.pension;
+    let medical = args.medical;
+    let context = args.text;
+
+    for (let actor of Tools.getSelectedOwned()) {
+        let text = "";
+
+        if (actor.system.finance) {
+            let finance = actor.system.finance;
+
+            if (cash) {
+                finance.cash = Number(finance.cash) + Number(cash);
+                finance.cash = Math.max(0, finance.cash);
+                text += `Gain Cr${cash} to a total of Cr${finance.cash}.`;
+            }
+            if (pension) {
+                finance.pension = Number(finance.pension) + Number(pension);
+                finance.pension = Math.max(0, finance.pension);
+                text += `Pension increases by Cr${pension} to a total of Cr${finance.pension}/year.`;
+            }
+            if (medical) {
+                finance.medicalDebt = Number(finance.medicalDebt) + Number(medical);
+                finance.medicalDebt = Math.max(0, finance.medicalDebt);
+                text += `Medical debt increases by Cr${medical} to a total of Cr${finance.medicalDebt}.`;
+            }
+
+            actor.update({"system.finance": finance});
+
+            let html = `<div class="chat-package"><h3>${actor.name}</h3>`;
+            if (context) {
+                html += `<p>${context}</p>`;
+            }
+            html += `<p>${text}</p>`;
+            html += `</div>`;
+
+            let chatData = {
+                speaker: ChatMessage.getSpeaker({actor: actor}),
+                content: html
+            };
+            ChatMessage.create(chatData, {});
+        }
+    }
+}
+
+MgT2eMacros.chaGain = async function(args) {
+    let cha = args.cha;
+    let level = args.level;
+    let context = args.text;
+    let min = args.min;
+
+    if (!level) {
+        level = 1;
+    } else if (level.indexOf("D")) {
+        // This is a dice roll.
+        let roll = await new Roll(level, null).evaluate();
+        level = Number(roll.total);
+    } else {
+        level = Number(level);
+    }
+    if (min) {
+        min = Number(min);
+    }
+
+    for (let actor of Tools.getSelectedOwned(args.actor)) {
+        let text = "";
+
+        if (actor && actor.system.characteristics[cha]) {
+            let current = Number(actor.system.characteristics[cha].value);
+            if (min && min > (current + level)) {
+                actor.system.characteristics[cha].value = min;
+                text += `Setting <b>${cha}</b> to ${actor.system.characteristics[cha].value}.`;
+            } else if (level > 0) {
+                if (current < 15) {
+                    actor.system.characteristics[cha].value = Math.min(15, current + level);
+                    text += `Raising <b>${cha}</b> to ${actor.system.characteristics[cha].value}.`;
+                } else {
+                    text += `<b>${cha}</b> is unchanged.`;
+                }
+            } else if (level < 0) {
+                if (current > 0) {
+                    actor.system.characteristics[cha].value = Math.max(0, current + level);
+                    text += `Reducing <b>${cha}</b> to ${actor.system.characteristics[cha].value}.`;
+                } else {
+                    text += `<b>${cha}</b> is unchanged.`;
+                }
+            }
+        }
+        if (!args.actor) {
+            actor.update({"system.characteristics": actor.system.characteristics});
+        }
+
+        let html = `<div class="chat-package"><h3>${actor.name}</h3>`;
+        if (context) {
+            html += `<p>${context}</p>`;
+        }
+        html += `<p>${text}</p>`;
+        html += `</div>`;
+
+        if (!args.quiet) {
+            let chatData = {
+                speaker: ChatMessage.getSpeaker({actor: actor}),
+                content: html
+            };
+            ChatMessage.create(chatData, {});
+        }
+    }
+}
+
+MgT2eMacros.specialityGain = function(actorId, skill, level) {
+    let actor = game.actors.get(actorId);
+    let text = "";
+    if (actor.permission < 3) {
+        ui.notifications.error("You do not have permission to update this actor");
+        return;
+    }
+
+    if (actor) {
+        let skills = actor.system.skills;
+        let skillId = skill.split(".")[0];
+        let specId = skill.split(".")[1];
+
+        if (skills[skillId] && skills[skillId].specialities[specId]) {
+            let spec = skills[skillId].specialities[specId];
+            if (skills[skillId].individual) {
+                spec.trained = true;
+            }
+            if (level === "undefined") {
+                if (spec.value < 4) {
+                    spec.value = Number(spec.value) + 1;
+                }
+            } else {
+                if (spec.value < level) {
+                    spec.value = Number(level);
+                }
+            }
+            text += `<b>${actor.getSkillLabel(skill)}</b> is set to ${spec.value}`;
+            actor.update({"system.skills": actor.system.skills });
+
+            let html = `<div class="chat-package"><h3>${actor.name}</h3>`;
+            html += `<p>${text}</p>`;
+            html += `</div>`;
+
+            let chatData = {
+                speaker: ChatMessage.getSpeaker({actor: actor}),
+                content: html
+            };
+            ChatMessage.create(chatData, {});
+        }
+    }
+};
+
+MgT2eMacros.skillCheck = async function(args, ask) {
+    let skillFqn = args.skill;
+    let target = args.target?args.target:8;
+    let dm = args.dm?Number(args.dm):0;
+
+    if (!args.agent && !ask && game.users.current.isGM && !canvas.tokens.controlled.length) {
+        // If current user is the GM, when trying to roll a skill, if no tokens
+        // are selected then turn it into a skill request.
+        ask = true;
+    }
+
+    if (ask) {
+        let title = "";
+        let cha = args.cha?args.cha:null;
+        let skillFqn = args.skill;
+
+        let skillId = skillFqn;
+        let specId = null;
+        if (skillId && skillId.indexOf(".")) {
+            skillId = skillFqn.split(".")[0];
+            specId = skillFqn.split(".")[1];
+        }
+        let skill = CONFIG.MGT2.getDefaultSkills()[skillId];
+
+        if (skillFqn && !skill) {
+            ui.notifications.error(`Skill [${skillId}] is unrecognised.`);
+        }
+        if (skill && !skill.id) {
+            skill.id = skillId;
+        }
+
+        if (!cha) {
+            cha = skill.default;
+        }
+        if (CONFIG.MGT2.CHARACTERISTICS[cha]) {
+            title = `${cha}`;
+        }
+        if (skill) {
+            title += ` + ${skillLabel(skill, skillId)}`;
+            if (specId) {
+                let specLabel = skillLabel(skill.specialities[specId], specId);
+                specLabel = specLabel.replaceAll(/ /g, "&nbsp;");
+                title += ` (${specLabel})`;
+            }
+        }
+
+        let html = `<div class='skill-message'><h2>${title}</h2><div class="message-content">`;
+        if (args.text) {
+            html += `<div class="skill-description">${args.text}</div>`;
+        }
+        if (args.target) {
+            html += `<div><b>Target:</b> ${args.target}+</div>`;
+        }
+        let jsonData = {
+            "dm": dm,
+            "rollType": "standard",
+            "difficulty": args.target,
+            "description": args.text,
+            "success": args.success,
+            "failure": args.failure,
+            "cost": args.cost?args.cost:0
+        }
+        if (skillFqn) {
+            jsonData["skill"] = skillFqn;
+        }
+        if (specId) {
+            jsonData["specId"] = specId;
+        }
+        if (cha) {
+            jsonData["cha"] = cha;
+        }
+        let json = JSON.stringify(jsonData);
+
+        let contentData = {
+            skillIcon: skill?`systems/mgt2e/icons/skills/${skill.id}.svg`:"",
+            skillTitle: title,
+            skillFqn: skillFqn,
+            json: json,
+            difficulty: args.target,
+            description: args.text,
+        }
+
+        const content = await renderTemplate("systems/mgt2e/templates/chat/skill-request.html", contentData);
+        let chatData = {
+            content: content,
+            rollMode: game.settings.get("core", "rollMode")
+        }
+        ChatMessage.create(chatData, {});
+    } else {
+        let options = {
+            "difficulty": target,
+            "cha": args.cha,
+            "dm": dm,
+            "description": args.text,
+            "success": args.success,
+            "failure": args.failure,
+            "cost": args.cost?args.cost:0
+        }
+        if (args.agent) {
+            // This is a direct skill roll with a specified skill level.
+            // It does not use a character's skill.
+            options.cha = "-";
+            options.agent = args.agent;
+            if (args.level !== undefined) {
+                options.level = args.level;
+            } else {
+                options.level = -3;
+            }
+        }
+        game.mgt2e.rollSkillMacro(skillFqn, options);
+    }
+};
+
+MgT2eMacros.damage = function(args) {
+    let dice = args.dice;
+    let text = args.text;
+    let damageType = args.type?args.type:"standard";
+    let scale = args.scale?args.scale:null;
+    let traits = args.traits;
+
+    rollAttack(null, null, {
+        "damage": dice,
+        "title": args.title?args.title:null,
+        "description": text,
+        "scale": scale,
+        "traits": args.traits,
+        "damageType": damageType
+    });
+};
+
+MgT2eMacros.createItem = async function(args, buy) {
+    let item = null;
+    let uuid = args.uuid;
+
+    if (uuid) {
+        let src = await fromUuid(uuid);
+        if (!src) {
+            ui.notifications.error(
+                game.i18n.localize("MGT2.Error.CreateItem.NoItem")
+            );
+            return;
+        }
+        item = await src.clone();
+    } else {
+        item = {
+            "name": "New Item",
+            "type": "item",
+            "system": {
+                "quantity": 1,
+                "description": "New Item"
+            }
+        }
+        if (args.name) {
+            item.name = args.name;
+        }
+        if (args.description) {
+            item.system.description = args.description;
+        }
+        if (args.type) {
+            item.type = type;
+        }
+        if (args.cost) {
+            item.system.cost = args.cost;
+        }
+    }
+    let quantity = 1;
+    if (args.quantity) {
+        let roll = await new Roll(args.quantity, null).evaluate();
+        // Setting quantity on a cloned object doesn't seem to take.
+        quantity = roll.total;
+    }
+
+    let cost = 0;
+    if (buy && item.system.cost) {
+        cost = Number(item.system.cost);
+    }
+
+    let added = false;
+    for (let actor of Tools.getSelectedOwned()) {
+        if (actor) {
+            if (cost > 0 && actor.system.finance) {
+                new MgT2BuyDialog(actor, item, Number(quantity)).render(true);
+                added=true;
+                continue;
+            }
+            if (cost === 0 && actor.permission >= 3) {
+                // Force item to be sorted last in the list. This is required for
+                // career terms.
+                let maxSort = 0;
+                for (let i of actor.items) {
+                    maxSort = Math.max(maxSort, i.sort);
+                }
+                let d = await Item.create(item, {parent: actor});
+                d.update({"sort": maxSort + 1000, "system.quantity": quantity});
+                ui.notifications.info(
+                    game.i18n.format("MGT2.Info.CreateItem", {"item": item.name, "actor": actor.name})
+                );
+                added = true;
+            }
+        }
+    }
+    if (!added) {
+        new MgT2BuyDialog(null, item, Number(quantity)).render(true);
+    }
+}
+
+MgT2eMacros.createAssociate = async function(args) {
+    let type = args.type;
+    if (!["contact", "enemy", "ally", "rival"].includes(type)) {
+        ui.notifications.error("Unknown associate type");
+        return;
+    }
+    let name = args.name?args.name:type;
+    let description = args.description?args.description:"";
+
+    let item = {
+        "name": name,
+        "type": "associate",
+        "system": {
+            "associate": {
+                "relationship": type
+            },
+            "description": description
+        }
+    }
+    let added = false;
+    for (let actor of Tools.getSelectedOwned()) {
+        if (actor) {
+            let number = 1;
+            if (args.number) {
+                const roll = await new Roll(args.number).evaluate();
+                number = roll.total;
+            }
+
+            for (let i = 0; i < number; i++) {
+                if (number > 1) {
+                    item.name = `${name} ${i + 1}`;
+                }
+                await randomiseAssociate(item);
+                await Item.create(item, {parent: actor});
+                ui.notifications.info(
+                    game.i18n.format("MGT2.Info.CreateItem", {"item": item.name, "actor": actor.name})
+                );
+            }
+            added = true;
+        }
+    }
+};
+
+MgT2eMacros.roll = async function(args) {
+    let uuid = args.uuid;
+    let dice = args.dice;
+    let text = args.text;
+
+    if (text && dice) {
+        let data = await foundry.applications.api.DialogV2.input({
+            window: { title: text },
+            content: `<input type='text' name='dm'>`,
+            ok: {
+                label: "Roll",
+                icon: "fa-solid fa-dice",
+            }
+        });
+        if (data && data.dm && !isNaN(parseInt(data.dm))) {
+            dice = dice + " + " + data.dm;
+        }
+    }
+
+    let table = null;
+
+    if (uuid) {
+        table = await fromUuid(uuid);
+    }
+
+    if (table) {
+        if (!dice) {
+            table.draw();
+        } else {
+            let roll = new Roll(dice);
+            table.draw({roll});
+        }
+    }
+}

@@ -1,0 +1,17 @@
+systemd-nspawn
+
+[0m[0mSpawn a command or OS in a lightweight container.
+More information: https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html.
+
+ - [0m[32;23;22;24;25mRun a command in a container:
+   [33;23;22;24;25msystemd-nspawn [0m[-D|--directory][33;23;22;24;25m [0mpath/to/container_root
+[0m
+ - [0m[32;23;22;24;25mRun a full Linux-based OS in a container:
+   [33;23;22;24;25msystemd-nspawn [0m[-b|--boot][33;23;22;24;25m [0m[-D|--directory][33;23;22;24;25m [0mpath/to/container_root
+[0m
+ - [0m[32;23;22;24;25mRun the specified command as PID 2 in the container (as opposed to PID 1) using a stub init process:
+   [33;23;22;24;25msystemd-nspawn [0m[-D|--directory][33;23;22;24;25m [0mpath/to/container_root[33;23;22;24;25m [0m[-a|--as-pid2]
+[0m
+ - [0m[32;23;22;24;25mSpecify the machine name and hostname:
+   [33;23;22;24;25msystemd-nspawn [0m[-M|--machine][33;23;22;24;25m [0mcontainer_name[33;23;22;24;25m --hostname [0mcontainer_host[33;23;22;24;25m [0m[-D|--directory][33;23;22;24;25m [0mpath/to/container_root
+[0m[0m

@@ -1,0 +1,17 @@
+startx
+
+[0m[0mA front-end to xinit that provides a nice user interface for running a single session of the X Window System.
+More information: https://x.org/releases/X11R7.5/doc/man/man1/startx.1.html.
+
+ - [0m[32;23;22;24;25mStart an X session:
+   [33;23;22;24;25mstartx[0m
+[0m
+ - [0m[32;23;22;24;25mStart an X session with a predefined depth value:
+   [33;23;22;24;25mstartx -- -depth [0mvalue
+[0m
+ - [0m[32;23;22;24;25mStart an X session with a predefined dpi value:
+   [33;23;22;24;25mstartx -- -dpi [0mvalue
+[0m
+ - [0m[32;23;22;24;25mOverride the settings in the .xinitrc file and start a new X session:
+   [33;23;22;24;25mstartx /[0mpath/to/window_manager_or_desktop_environment
+[0m[0m

@@ -1,0 +1,25 @@
+od
+
+[0m[0mDisplay file contents in octal, decimal or hexadecimal format.
+Optionally display the byte offsets and/or printable representation for each line.
+See also: hexyl, xxd, hexdump.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/od-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay file using default settings: octal format, 8 bytes per line, byte offsets in octal, and duplicate lines replaced with *:
+   [33;23;22;24;25mod [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay file in verbose mode, i.e. without replacing duplicate lines with *:
+   [33;23;22;24;25mod [0m[-v|--output-duplicates][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay file in hexadecimal format (2-byte units), with byte offsets in decimal format:
+   [33;23;22;24;25mod [0m[-t|--format][33;23;22;24;25m [0mx[33;23;22;24;25m [0m[-A|--address-radix][33;23;22;24;25m [0md[33;23;22;24;25m [0m[-v|--output-duplicates][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay file in hexadecimal format (1-byte units), and 4 bytes per line:
+   [33;23;22;24;25mod [0m[-t|--format][33;23;22;24;25m [0mx1[33;23;22;24;25m [0m[-w|--width=][33;23;22;24;25m4 [0m[-v|--output-duplicates][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay file in hexadecimal format along with its character representation, and do not print byte offsets:
+   [33;23;22;24;25mod [0m[-t|--format][33;23;22;24;25m [0mxz[33;23;22;24;25m [0m[-A|--address-radix][33;23;22;24;25m [0mn[33;23;22;24;25m [0m[-v|--output-duplicates][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mRead only 100 bytes of a file starting from the 500th byte:
+   [33;23;22;24;25mod [0m[-N|--read-bytes][33;23;22;24;25m 100 [0m[-j|--skip-bytes][33;23;22;24;25m 500 [0m[-v|--output-duplicates][33;23;22;24;25m [0mpath/to/file
+[0m[0m

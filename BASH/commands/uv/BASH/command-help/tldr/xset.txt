@@ -1,0 +1,23 @@
+xset
+
+[0m[0mUser preference utility for X.
+More information: https://manned.org/xset.
+
+ - [0m[32;23;22;24;25mDisable the screensaver:
+   [33;23;22;24;25mxset s off[0m
+[0m
+ - [0m[32;23;22;24;25mDisable the bell sound:
+   [33;23;22;24;25mxset b off[0m
+[0m
+ - [0m[32;23;22;24;25mSet the screensaver to start after 60 minutes of inactivity:
+   [33;23;22;24;25mxset s 3600 3600[0m
+[0m
+ - [0m[32;23;22;24;25mDisable DPMS (Energy Star) features:
+   [33;23;22;24;25mxset -dpms[0m
+[0m
+ - [0m[32;23;22;24;25mEnable DPMS (Energy Star) features:
+   [33;23;22;24;25mxset +dpms[0m
+[0m
+ - [0m[32;23;22;24;25mQuery information on any X server:
+   [33;23;22;24;25mxset -display :[0m0[33;23;22;24;25m q[0m
+[0m[0m

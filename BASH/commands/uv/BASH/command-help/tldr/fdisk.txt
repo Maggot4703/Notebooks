@@ -1,0 +1,30 @@
+fdisk
+
+[0m[0mManage partition tables and partitions on a storage drive.
+See also: partprobe.
+More information: https://manned.org/fdisk.
+
+ - [0m[32;23;22;24;25mList partitions:
+   [33;23;22;24;25msudo fdisk [0m[-l|--list]
+[0m
+ - [0m[32;23;22;24;25mStart the partition manipulator:
+   [33;23;22;24;25msudo fdisk [0m/dev/sdX
+[0m
+ - [0m[32;23;22;24;25mCreate a [n]ew partition:
+   [33;23;22;24;25m<n>[0m
+[0m
+ - [0m[32;23;22;24;25mSelect a partition to [d]elete:
+   [33;23;22;24;25m<d>[0m
+[0m
+ - [0m[32;23;22;24;25mView the [p]artition table:
+   [33;23;22;24;25m<p>[0m
+[0m
+ - [0m[32;23;22;24;25m[w]rite the changes made:
+   [33;23;22;24;25m<w>[0m
+[0m
+ - [0m[32;23;22;24;25mDiscard the changes made and [q]uit:
+   [33;23;22;24;25m<q>[0m
+[0m
+ - [0m[32;23;22;24;25mOpen a help [m]enu:
+   [33;23;22;24;25m<m>[0m
+[0m[0m

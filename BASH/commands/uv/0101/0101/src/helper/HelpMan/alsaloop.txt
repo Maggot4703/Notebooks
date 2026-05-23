@@ -1,0 +1,226 @@
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+/usr/bin/alsaloop
+alsaloop (1)         - command-line PCM loopback
+Usage: alsaloop [OPTION]...
+
+-h,--help      help
+-g,--config    configuration file (one line = one job specified)
+-d,--daemonize daemonize the main process and use syslog for errors
+-P,--pdevice   playback device
+-C,--cdevice   capture device
+-X,--pctl      playback ctl device
+-Y,--cctl      capture ctl device
+-l,--latency   requested latency in frames
+-t,--tlatency  requested latency in usec (1/1000000sec)
+-f,--format    sample format
+-c,--channels  channels
+-r,--rate      rate
+-n,--resample  resample in alsa-lib
+-A,--samplerate use converter (0=sincbest,1=sincmedium,2=sincfastest,
+                               3=zerohold,4=linear)
+-B,--buffer    buffer size in frames
+-E,--period    period size in frames
+-s,--seconds   duration of loop in seconds
+-b,--nblock    non-block mode (very early process wakeup)
+-S,--sync      sync mode(0=none,1=simple,2=captshift,3=playshift,4=samplerate,
+                         5=auto)
+-a,--slave     stream parameters slave mode (0=auto, 1=on, 2=off)
+-T,--thread    thread number (-1 = create unique)
+-m,--mixer	redirect mixer, argument is:
+		    SRC_SLAVE_ID(PLAYBACK)[@DST_SLAVE_ID(CAPTURE)]
+-O,--ossmixer	rescan and redirect oss mixer, argument is:
+		    ALSA_ID@OSS_ID  (for example: "Master@VOLUME")
+-e,--effect    apply an effect (bandpass filter sweep)
+-v,--verbose   verbose mode (more -v means more verbose)
+-w,--workaround use workaround (serialopen)
+-U,--xrun      xrun profiling
+-W,--wake      process wake timeout in ms
+-z,--syslog    use syslog for errors
+
+Recognized sample formats are: S8 U8 S16_LE S16_BE U16_LE U16_BE S24_LE S24_BE U24_LE U24_BE S32_LE S32_BE U32_LE U32_BE FLOAT_LE FLOAT_BE FLOAT64_LE FLOAT64_BE IEC958_SUBFRAME_LE IEC958_SUBFRAME_BE MU_LAW A_LAW IMA_ADPCM MPEG GSM S20_LE S20_BE U20_LE U20_BE SPECIAL S24_3LE S24_3BE U24_3LE U24_3BE S20_3LE S20_3BE U20_3LE U20_3BE S18_3LE S18_3BE U18_3LE U18_3BE G723_24 G723_24_1B G723_40 G723_40_1B DSD_U8 DSD_U16_LE DSD_U32_LE DSD_U16_BE
+
+Tip #1 (usable 500ms latency, good CPU usage, superb xrun prevention):
+  alsaloop -t 500000
+Tip #2 (superb 1ms latency, but heavy CPU usage):
+  alsaloop -t 1000
+ALSALOOP(1)                                 General Commands Manual                                ALSALOOP(1)
+
+NAME
+       alsaloop - command-line PCM loopback
+
+SYNOPSIS
+       alsaloop [-option] [cmd]
+
+DESCRIPTION
+       alsaloop allows create a PCM loopback between a PCM capture device and a PCM playback device.
+
+       alsaloop  supports  multiple soundcards, adaptive clock synchronization, adaptive rate resampling using
+       the samplerate library (if available in the system). Also, mixer controls can be  redirected  from  one
+       card to another (for example Master and PCM).
+
+OPTIONS
+       -h | --help
+
+              Prints the help information.
+
+       -g <file> | --config=<file>
+
+              Use  given  configuration file. The syntax of this file is simple: one line contains the command
+              line options for one job. The '#' means comment and rest of line is ignored. Example:
+
+                # First line - comment, second line - first job
+                -C hw:1,0 -P hw:0,0 -t 50000 -T 1
+                # Third line - comment, fourth line - second job
+                -C hw:1,1 -P hw:0,1 -t 40000 -T 2
+
+       -d | --daemonize
+
+              Daemonize the main process and use syslog for messages.
+
+       -P <device> | --pdevice=<device>
+
+              Use given playback device.
+
+       -C <device> | --cdevice=<device>
+
+              Use given capture device.
+
+       -X <device> | --pctl=<device>
+
+              Use given CTL device for playback.
+
+       -Y <device> | --cctl=<device>
+
+              Use given CTL device for capture.
+
+       -l <latency> | --latency=<frames>
+
+              Requested latency in frames.
+
+       -t <usec> | --tlatency=<usec>
+
+              Requested latency in usec (1/1000000sec).
+
+       -f <format> | --format=<format>
+
+              Format specification (usually S16_LE S32_LE). Use -h to list all  formats.   Default  format  is
+              S16_LE.
+
+       -c <channels> | --channels=<channels>
+
+              Channel count specification. Default value is 2.
+
+       -c <rate> | --rate=<rate>
+
+              Rate specification. Default value is 48000 (Hz).
+
+       -n | --resample
+
+              Allow rate resampling using alsa-lib.
+
+       -A <converter> | --samplerate=<converter>
+
+              Use libsamplerate and choose a converter:
+
+                0 or sincbest     - best quality
+                1 or sincmedium   - medium quality
+                2 or sincfastest  - lowest quality
+                3 or zerohold     - hold zero samples
+                4 or linear       - worst quality - linear resampling
+                5 or auto         - choose best method
+
+       -B <size> | --buffer=<size>
+
+              Buffer size in frames.
+
+       -E <size> | --period=<size>
+
+              Period size in frames.
+
+       -s <secs> | --seconds=<secs>
+
+              Duration of loop in seconds.
+
+       -b | --nblock
+
+              Non-block mode (very early process wakeup). Eats more CPU.
+
+       -S <mode> | --sync=<mode>
+
+              Sync mode specification for capture to playback stream:
+                0 or none       - do not touch the stream
+                1 or simple     - add or remove samples to keep
+                                  both streams synchronized
+                2 or captshift  - use driver for the capture device
+                                  (if supported) to compensate
+                                  the rate shift
+                3 or playshift  - use driver for the playback device
+                                  (if supported) to compensate
+                                  the rate shift
+                4 or samplerate - use samplerate library to do rate resampling
+                5 or auto       - automatically selects the best method
+                                  in this order: captshift, playshift,
+                                  samplerate, simple
+
+       -T <num> | --thread=<num>
+
+              Thread  number  (-1  means  create  a  unique thread). All jobs with same thread numbers are run
+              within one thread.
+
+       -m <mixid> | --mixer=<midid>
+
+              Redirect mixer control from the playback card to the  capture  card.  Format  of  mixid  is  SR‐
+              CID(PLAYBACK)[@DSTID(PLAYBACK)]:
+
+                "name='Master Playback Switch'@name='Another Switch'"
+                "name='PCM Playback Volume'"
+
+              Known attributes:
+
+                name      - control ID name
+                index     - control ID index
+                device    - control ID device
+                subdevice - control ID subdevice
+                iface     - control ID interface
+                numid     - control ID numid
+
+       -O <ossmixid> | --ossmixer=<midid>
+
+              Redirect mixer control from the OSS Mixer emulation layer (capture card) to the ALSA layer (cap‐
+              ture card). Format of ossmixid is ALSAID[,INDEX]@OSSID:
+
+                "Master@VOLUME"
+                "PCM,1@ALTPCM"
+
+              Known OSS attributes:
+
+                VOLUME, BASS, TREBLE, SYNTH, PCM, SPEAKER, LINE, MIC, CD, IMIX, ALTPCM,
+                RECLEV, IGAIN, OGAIN, LINE1, LINE2, LINE3, DIGITAL1, DIGITAL2, DIGITAL3,
+                PHONEIN, PHONEOUT, VIDEO, RADIO, MONITOR
+
+       -v | --verbose
+
+              Verbose mode. Use multiple times to increase verbosity.
+
+       -U | --xrun
+
+              Verbose xrun profiling.
+
+       -W <timeout> | --wake=<timeout>
+
+              Set process wake timeout.
+
+EXAMPLES
+       alsaloop -C hw:0,0 -P hw:1,0 -t 50000
+
+BUGS
+       None known.
+
+AUTHOR
+       alsaloop is by Jaroslav Kysela <perex@perex.cz>.  This document is by Jaroslav Kysela <perex@perex.cz>.
+
+                                                  5 Aug 2010                                       ALSALOOP(1)

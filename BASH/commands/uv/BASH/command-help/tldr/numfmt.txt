@@ -1,0 +1,14 @@
+numfmt
+
+[0m[0mConvert numbers to and from human-readable strings.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/numfmt-invocation.html.
+
+ - [0m[32;23;22;24;25mConvert 1.5K (SI Units) to 1500:
+   [33;23;22;24;25mnumfmt --from si 1.5K[0m
+[0m
+ - [0m[32;23;22;24;25mConvert 5th field (1-indexed) to IEC Units without converting header:
+   [33;23;22;24;25mls -l | numfmt --header=1 --field 5 --to iec[0m
+[0m
+ - [0m[32;23;22;24;25mConvert to IEC units, pad with 5 characters, left aligned:
+   [33;23;22;24;25mdu [0m[-s|--summarize][33;23;22;24;25m * | numfmt --to iec --format "%-5f"[0m
+[0m[0m

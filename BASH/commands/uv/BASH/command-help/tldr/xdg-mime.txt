@@ -1,0 +1,17 @@
+xdg-mime
+
+[0m[0mQuery and manage MIME types according to the XDG standard.
+More information: https://portland.freedesktop.org/doc/xdg-mime.html.
+
+ - [0m[32;23;22;24;25mDisplay the MIME type of a file:
+   [33;23;22;24;25mxdg-mime query filetype [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDisplay the default application for opening PNGs:
+   [33;23;22;24;25mxdg-mime query default [0mimage/png
+[0m
+ - [0m[32;23;22;24;25mDisplay the default application for opening a specific file:
+   [33;23;22;24;25mxdg-mime query default $(xdg-mime query filetype [0mpath/to/file[33;23;22;24;25m)[0m
+[0m
+ - [0m[32;23;22;24;25mSet imv as the default application for opening PNG and JPEG images:
+   [33;23;22;24;25mxdg-mime default [0mimv.desktop[33;23;22;24;25m [0mimage/png[33;23;22;24;25m [0mimage/jpeg
+[0m[0m

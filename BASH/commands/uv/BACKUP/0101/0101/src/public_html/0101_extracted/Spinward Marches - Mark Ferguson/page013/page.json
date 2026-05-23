@@ -1,0 +1,18 @@
+{
+  "page_number": 13,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page013/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020\n\nSpinward Marches\nSpinward Marches/D Aramis/3110 Aramis\n\nASA0556-B\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\no\n\nSize =5\nDIGIT DIA(MI) DIA(KM)\n5 5,000 8,000\n\nAtmosphere = A\nDIGIT DESCRIPTION EFFECTS\nA Exotic PI\n\nHydrosphere = 0\nDIGIT DESCRIPTION\n0 Desert World\n\nPopulation = 5\n\nPOPULATION UNDER 700,000\n\nDIGIT DESCRIPTION VALUE\n5 Hundred thousand 00,000\n\nGovernment = 5\nDIGIT DESCRIPTION NOTE\n5 Feudal Technocracy Governmental relationships based on mutually beneficial technical activities\n\nLaw Level= 6\nDIGIT DESCRIPTION NOTE\n6 Moderate Law Pohibition of Machineguns\n\nTech Level = B\nDIGIT\nB\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page013/page_full.png"
+}

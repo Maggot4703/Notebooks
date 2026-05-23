@@ -1,0 +1,20 @@
+adduser
+
+[0m[0mUser addition utility.
+More information: https://manned.org/adduser.
+
+ - [0m[32;23;22;24;25mCreate a new user with a default home directory and prompt the user to set a password:
+   [33;23;22;24;25madduser [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a new user without a home directory:
+   [33;23;22;24;25madduser --no-create-home [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a new user with a home directory at the specified path:
+   [33;23;22;24;25madduser --home [0mpath/to/home[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a new user with the specified shell set as the login shell:
+   [33;23;22;24;25madduser --shell [0mpath/to/shell[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mCreate a new user belonging to the specified group:
+   [33;23;22;24;25madduser --ingroup [0mgroup[33;23;22;24;25m [0musername
+[0m[0m

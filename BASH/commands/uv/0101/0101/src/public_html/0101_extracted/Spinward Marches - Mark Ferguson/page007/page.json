@@ -1,0 +1,18 @@
+{
+  "page_number": 7,
+  "bbox": [
+    0.0,
+    0.0,
+    595.3200073242188,
+    841.9200439453125
+  ],
+  "text_blocks": [],
+  "images": [
+    {
+      "file": "0101_extracted/Spinward Marches - Mark Ferguson/page007/img001.png",
+      "type": "png"
+    }
+  ],
+  "ocr_text": "14/08/2020\n\nSpinward Marches\nSpinward Marches/A Cronor/0304 Chronor\n\nCOS\nco)\nees\n~ 88\n\nOo\n\nA6369A5-D\nStarport = A\nQuality = Excellent\nYards = Starships\n\nRepairs = Overhaul\nFuel= Both\nDownport = Yes\n\nSize=6\nDIGIT DIA(MI) DIA(KM)\n6 6,000 9,600\n\nAtmosphere = 3\nDIGIT DESCRIPTION EFFECTS\n3 VThin S2\n\nHydrosphere = 6\nDIGIT DESCRIPTION\n6 60%\n\nPopulation = 9\nPOPULATION UNDER 8,000,000,000\nDIGIT DESCRIPTION VALUE\n9 Billion ,000,000,000\n\nGovernment = A\nDIGIT DESCRIPTION NOTE\nA Charismatic Dictatorship Government by a single leader enjoying the confidence of the citizens\n\nLaw Level = 5\nDIGIT DESCRIPTION NOTE\n5 Moderate Law Shock, EMP, Rad, Mag, Grav weapons prohibited\n\nTech Level= D\nDIGIT\nD\n\nfile:///C:/T5/Spinward Marches/_SEC/0-COVER/Spinward Marches.html\n",
+  "page_image": "0101_extracted/Spinward Marches - Mark Ferguson/page007/page_full.png"
+}

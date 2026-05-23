@@ -1,0 +1,28 @@
+SEND2TRASH(1)               General Commands Manual              SEND2TRASH(1)
+
+NAME
+       send2trash - send files to the trash
+
+SYNOPSIS
+       send2trash [options] file...
+
+DESCRIPTION
+       This manual page documents the send2trash command.
+
+       send2trash  is a program that sends the listed files to the trash using
+       the operating system's conventions.  On Linux systems, the trash is  in
+       ~/.local/share/Trash.
+
+OPTIONS
+       -h, --help
+              Show summary of options.
+
+       -v, --verbose
+              Report on deleted files to stdout.
+
+NOTES
+       This manual page was written for the Debian GNU/Linux distribution (but
+       may be used by others), because the original program does  not  have  a
+       manual page.
+
+                                   Jan 2021                      SEND2TRASH(1)

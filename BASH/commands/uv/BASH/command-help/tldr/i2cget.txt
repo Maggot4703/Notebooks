@@ -1,0 +1,16 @@
+i2cget
+
+[0m[0mRead from an register of an I2C device.
+See also: i2cdetect, i2cdump, i2cset.
+Note: All addresses should be specified in hexadecimal.
+More information: https://manned.org/i2cget.
+
+ - [0m[32;23;22;24;25mRead from a register of an I2C device:
+   [33;23;22;24;25mi2cget [0mi2cbus[33;23;22;24;25m [0mdevice_address[33;23;22;24;25m [0mregister_address
+[0m
+ - [0m[32;23;22;24;25mRead from a register of an I2C device without asking for confirmation:
+   [33;23;22;24;25mi2cget -y [0mi2cbus[33;23;22;24;25m [0mdevice_address[33;23;22;24;25m [0mregister_address
+[0m
+ - [0m[32;23;22;24;25mRead from a register of an I2C device using a specific mode:
+   [33;23;22;24;25mi2cget [0mi2cbus[33;23;22;24;25m [0mdevice_address[33;23;22;24;25m [0mregister_address[33;23;22;24;25m [0mb|w|c|s|i
+[0m[0m

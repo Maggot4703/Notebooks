@@ -1,0 +1,30 @@
+usermod
+
+[0m[0mModify a user account.
+See also: users, useradd, userdel.
+More information: https://manned.org/usermod.
+
+ - [0m[32;23;22;24;25mChange a username:
+   [33;23;22;24;25msudo usermod [0m[-l|--login][33;23;22;24;25m [0mnew_username[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mChange a user ID:
+   [33;23;22;24;25msudo usermod [0m[-u|--uid][33;23;22;24;25m [0mid[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mChange a user shell:
+   [33;23;22;24;25msudo usermod [0m[-s|--shell][33;23;22;24;25m [0mpath/to/shell[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mAdd a user to supplementary groups (mind the lack of whitespace):
+   [33;23;22;24;25msudo usermod [0m[-aG|--append --groups][33;23;22;24;25m [0mgroup1,group2,...[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mRemove a user from specific groups:
+   [33;23;22;24;25msudo usermod [0m[-rG|--remove --groups][33;23;22;24;25m [0mgroup1,group2,...[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mChange a user home directory:
+   [33;23;22;24;25msudo usermod [0m[-m|--move-home][33;23;22;24;25m [0m[-d|--home][33;23;22;24;25m [0mpath/to/new_home[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mLock an account:
+   [33;23;22;24;25msudo usermod [0m[-L|--lock][33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mUnlock an account:
+   [33;23;22;24;25msudo usermod [0m[-U|--unlock][33;23;22;24;25m [0musername
+[0m[0m

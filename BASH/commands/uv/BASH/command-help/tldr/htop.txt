@@ -1,0 +1,29 @@
+htop
+
+[0m[0mDisplay dynamic real-time information about running processes. An enhanced version of top.
+More information: https://manned.org/htop.
+
+ - [0m[32;23;22;24;25mStart htop:
+   [33;23;22;24;25mhtop[0m
+[0m
+ - [0m[32;23;22;24;25mStart htop displaying processes owned by a specific user:
+   [33;23;22;24;25mhtop [0m[-u|--user][33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mDisplay processes hierarchically in a tree view to show the parent-child relationships:
+   [33;23;22;24;25mhtop [0m[-t|--tree]
+[0m
+ - [0m[32;23;22;24;25mSort processes by a specified sort_item (use htop --sort help for available options):
+   [33;23;22;24;25mhtop [0m[-s|--sort][33;23;22;24;25m [0msort_item
+[0m
+ - [0m[32;23;22;24;25mStart htop with the specified delay between updates, in tenths of a second (i.e. 50 = 5 seconds):
+   [33;23;22;24;25mhtop [0m[-d|--delay][33;23;22;24;25m [0m50
+[0m
+ - [0m[32;23;22;24;25mSee interactive commands while running htop:
+   [33;23;22;24;25m<?>[0m
+[0m
+ - [0m[32;23;22;24;25mSwitch to a different tab:
+   [33;23;22;24;25m<Tab>[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mhtop [0m[-h|--help]
+[0m[0m

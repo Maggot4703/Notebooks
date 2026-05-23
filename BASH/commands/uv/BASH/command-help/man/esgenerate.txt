@@ -1,0 +1,19 @@
+ESGENERATE(1)               General Commands Manual              ESGENERATE(1)
+
+NAME
+       esgenerate - ECMAScript code generator
+
+SYNOPSIS
+       esgenerate [options] file...
+
+DESCRIPTION
+       esgenerate  is  an ECMAScript (also popularly known as JavaScript) code
+       generator from Mozilla's Parser API AST.
+
+OPTIONS
+       -c, --config String configuration json for escodgen
+
+SEEALSO
+       escodgen(1)
+
+esgenerate                         May 2018                      ESGENERATE(1)

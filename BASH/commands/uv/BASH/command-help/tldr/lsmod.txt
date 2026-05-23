@@ -1,0 +1,9 @@
+lsmod
+
+[0m[0mShow the status of Linux kernel modules.
+See also: kmod for other module management commands.
+More information: https://manned.org/lsmod.
+
+ - [0m[32;23;22;24;25mList all currently loaded kernel modules:
+   [33;23;22;24;25mlsmod[0m
+[0m[0m

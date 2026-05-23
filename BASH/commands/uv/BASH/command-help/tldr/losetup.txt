@@ -1,0 +1,23 @@
+losetup
+
+[0m[0mSet up and control loop devices.
+More information: https://manned.org/losetup.
+
+ - [0m[32;23;22;24;25mList loop devices with detailed info:
+   [33;23;22;24;25mlosetup [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mAttach a file to a given loop device:
+   [33;23;22;24;25msudo losetup [0m/dev/loop[33;23;22;24;25m /[0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mAttach a file to a new free loop device and scan the device for partitions:
+   [33;23;22;24;25msudo losetup --show [0m[-P|--partscan][33;23;22;24;25m [0m[-f|--find][33;23;22;24;25m /[0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mAttach a file to a read-only loop device:
+   [33;23;22;24;25msudo losetup [0m[-r|--read-only][33;23;22;24;25m [0m/dev/loop[33;23;22;24;25m /[0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mDetach all loop devices:
+   [33;23;22;24;25msudo losetup [0m[-D|--detach-all]
+[0m
+ - [0m[32;23;22;24;25mDetach a given loop device:
+   [33;23;22;24;25msudo losetup [0m[-d|--detach][33;23;22;24;25m [0m/dev/loop
+[0m[0m

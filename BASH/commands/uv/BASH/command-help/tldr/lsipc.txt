@@ -1,0 +1,24 @@
+lsipc
+
+[0m[0mShow information on System V IPC facilities currently employed in the system.
+See also: ipcs for the older tool.
+More information: https://manned.org/lsipc.
+
+ - [0m[32;23;22;24;25mShow information about all active IPC facilities:
+   [33;23;22;24;25mlsipc[0m
+[0m
+ - [0m[32;23;22;24;25mShow information about active shared [m]emory segments, message [q]ueues or [s]empahore sets:
+   [33;23;22;24;25mlsipc [0m--shmems|--queues|--semaphores
+[0m
+ - [0m[32;23;22;24;25mShow full details on the resource with a specific ID:
+   [33;23;22;24;25mlsipc [0m--shmems|--queues|--semaphores[33;23;22;24;25m [0m[-i|--id][33;23;22;24;25m [0mresource_id
+[0m
+ - [0m[32;23;22;24;25mPrint the given output columns (see all supported columns with --help):
+   [33;23;22;24;25mlsipc [0m[-o|--output][33;23;22;24;25m [0mKEY,ID,PERMS,SEND,STATUS,NSEMS,RESOURCE,...
+[0m
+ - [0m[32;23;22;24;25mUse [r]aw, [J]SON, [l]ist or [e]xport (key="value") format:
+   [33;23;22;24;25mlsipc [0m--raw|--json|--list|--export
+[0m
+ - [0m[32;23;22;24;25mDon't truncate the output:
+   [33;23;22;24;25mlsipc --notruncate[0m
+[0m[0m

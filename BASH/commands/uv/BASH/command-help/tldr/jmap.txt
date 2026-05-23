@@ -1,0 +1,20 @@
+jmap
+
+[0m[0mJava memory map tool.
+More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/jmap.html.
+
+ - [0m[32;23;22;24;25mPrint shared object mappings for a Java process (output like pmap):
+   [33;23;22;24;25mjmap [0mjava_pid
+[0m
+ - [0m[32;23;22;24;25mPrint heap summary information:
+   [33;23;22;24;25mjmap -heap [0mfilename.jar[33;23;22;24;25m [0mjava_pid
+[0m
+ - [0m[32;23;22;24;25mPrint histogram of heap usage by type:
+   [33;23;22;24;25mjmap -histo [0mjava_pid
+[0m
+ - [0m[32;23;22;24;25mDump contents of the heap into a binary file for analysis with jhat:
+   [33;23;22;24;25mjmap -dump:format=b,file=[0mpath/to/file[33;23;22;24;25m [0mjava_pid
+[0m
+ - [0m[32;23;22;24;25mDump live objects of the heap into a binary file for analysis with jhat:
+   [33;23;22;24;25mjmap -dump:live,format=b,file=[0mpath/to/file[33;23;22;24;25m [0mjava_pid
+[0m[0m

@@ -1,0 +1,6 @@
+Usage: aplaymidi -p client:port[,...] [-d delay] midifile ...
+-h, --help                  this help
+-V, --version               print current version
+-l, --list                  list all possible output ports
+-p, --port=client:port,...  set port(s) to play to
+-d, --delay=seconds         delay after song ends

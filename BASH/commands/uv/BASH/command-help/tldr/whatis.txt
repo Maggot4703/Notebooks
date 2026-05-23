@@ -1,0 +1,20 @@
+whatis
+
+[0m[0mDisplay one-line descriptions from manual pages.
+More information: https://manned.org/whatis.
+
+ - [0m[32;23;22;24;25mDisplay a description from a man page:
+   [33;23;22;24;25mwhatis [0mcommand
+[0m
+ - [0m[32;23;22;24;25mDon't cut the description off at the end of the line:
+   [33;23;22;24;25mwhatis --long [0mcommand
+[0m
+ - [0m[32;23;22;24;25mDisplay descriptions for all commands matching a glob:
+   [33;23;22;24;25mwhatis --wildcard [0mnet*
+[0m
+ - [0m[32;23;22;24;25mSearch man page descriptions with a regex:
+   [33;23;22;24;25mwhatis --regex '[0mwish[0-9]\.[0-9][33;23;22;24;25m'[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay descriptions in a specific language:
+   [33;23;22;24;25mwhatis --locale=[0men[33;23;22;24;25m [0mcommand
+[0m[0m

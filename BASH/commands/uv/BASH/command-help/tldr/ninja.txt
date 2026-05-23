@@ -1,0 +1,20 @@
+ninja
+
+[0m[0mA Build system designed to be fast.
+More information: https://ninja-build.org/manual.html.
+
+ - [0m[32;23;22;24;25mBuild in the current directory:
+   [33;23;22;24;25mninja[0m
+[0m
+ - [0m[32;23;22;24;25mBuild in the current directory, executing 4 jobs at a time in parallel:
+   [33;23;22;24;25mninja -j [0m4
+[0m
+ - [0m[32;23;22;24;25mBuild a program in a given directory:
+   [33;23;22;24;25mninja -C [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mShow targets (e.g. install and uninstall):
+   [33;23;22;24;25mninja -t targets[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mninja -h[0m
+[0m[0m

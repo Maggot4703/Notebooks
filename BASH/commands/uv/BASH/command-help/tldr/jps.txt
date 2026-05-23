@@ -1,0 +1,20 @@
+jps
+
+[0m[0mShow JVM process status of current user.
+More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/jps.html.
+
+ - [0m[32;23;22;24;25mList all JVM processes:
+   [33;23;22;24;25mjps[0m
+[0m
+ - [0m[32;23;22;24;25mList all JVM processes with only PID:
+   [33;23;22;24;25mjps -q[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the arguments passed to the processes:
+   [33;23;22;24;25mjps -m[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the full package name of all processes:
+   [33;23;22;24;25mjps -l[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the arguments passed to the JVM:
+   [33;23;22;24;25mjps -v[0m
+[0m[0m

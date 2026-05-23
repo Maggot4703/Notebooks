@@ -1,0 +1,17 @@
+mkdir
+
+[0m[0mCreate directories and set their permissions.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html.
+
+ - [0m[32;23;22;24;25mCreate specific directories:
+   [33;23;22;24;25mmkdir [0mpath/to/directory1 path/to/directory2 ...
+[0m
+ - [0m[32;23;22;24;25mCreate specific directories and their parents if needed:
+   [33;23;22;24;25mmkdir [0m[-p|--parents][33;23;22;24;25m [0mpath/to/directory1 path/to/directory2 ...
+[0m
+ - [0m[32;23;22;24;25mCreate directories with specific permissions:
+   [33;23;22;24;25mmkdir [0m[-m|--mode][33;23;22;24;25m [0mrwxrw-r--[33;23;22;24;25m [0mpath/to/directory1 path/to/directory2 ...
+[0m
+ - [0m[32;23;22;24;25mCreate multiple nested directories recursively:
+   [33;23;22;24;25mmkdir [0m[-p|--parents][33;23;22;24;25m {{path/to/{a,b}/{x,y,z}/{h,i,j}}}[0m
+[0m[0m

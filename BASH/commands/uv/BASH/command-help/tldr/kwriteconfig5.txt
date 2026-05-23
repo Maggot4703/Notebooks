@@ -1,0 +1,26 @@
+kwriteconfig5
+
+[0m[0mWrite KConfig entries for KDE Plasma.
+More information: https://userbase.kde.org/KDE_System_Administration/Configuration_Files.
+
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mkwriteconfig5 --help[0m
+[0m
+ - [0m[32;23;22;24;25mSet a global configuration key:
+   [33;23;22;24;25mkwriteconfig5 --group [0mgroup_name[33;23;22;24;25m --key [0mkey[33;23;22;24;25m [0mvalue
+[0m
+ - [0m[32;23;22;24;25mSet a key in a specific configuration file:
+   [33;23;22;24;25mkwriteconfig5 --file [0mpath/to/file[33;23;22;24;25m --group [0mgroup_name[33;23;22;24;25m --key [0mkey[33;23;22;24;25m [0mvalue
+[0m
+ - [0m[32;23;22;24;25mDelete a key:
+   [33;23;22;24;25mkwriteconfig5 --group [0mgroup_name[33;23;22;24;25m --key [0mkey[33;23;22;24;25m --delete[0m
+[0m
+ - [0m[32;23;22;24;25mUse systemd to start the Plasma session when available:
+   [33;23;22;24;25mkwriteconfig5 --file [0mstartkderc[33;23;22;24;25m --group [0mGeneral[33;23;22;24;25m --key [0msystemdBoot[33;23;22;24;25m [0mtrue
+[0m
+ - [0m[32;23;22;24;25mHide the title bar when a window is maximized (like Ubuntu):
+   [33;23;22;24;25mkwriteconfig5 --file [0m~/.config/kwinrc[33;23;22;24;25m --group [0mWindows[33;23;22;24;25m --key [0mBorderlessMaximizedWindows[33;23;22;24;25m [0mtrue
+[0m
+ - [0m[32;23;22;24;25mConfigure KRunner to open with the Meta (Command/Windows) global hotkey:
+   [33;23;22;24;25mkwriteconfig5 --file [0m~/.config/kwinrc[33;23;22;24;25m --group [0mModifierOnlyShortcuts[33;23;22;24;25m --key [0mMeta[33;23;22;24;25m "[0morg.kde.kglobalaccel,/component/krunner_desktop,org.kde.kglobalaccel.Component,invokeShortcut,_launch[33;23;22;24;25m"[0m
+[0m[0m

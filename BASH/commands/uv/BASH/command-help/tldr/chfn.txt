@@ -1,0 +1,17 @@
+chfn
+
+[0m[0mUpdate finger info for a user.
+More information: https://manned.org/chfn.
+
+ - [0m[32;23;22;24;25mUpdate a user's "Name" field in the output of finger:
+   [33;23;22;24;25mchfn [0m[-f|--full-name][33;23;22;24;25m [0mnew_display_name[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mUpdate a user's "Office Room Number" field for the output of finger:
+   [33;23;22;24;25mchfn [0m[-o|--office][33;23;22;24;25m [0mnew_office_room_number[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mUpdate a user's "Office Phone Number" field for the output of finger:
+   [33;23;22;24;25mchfn [0m[-p|--office-phone][33;23;22;24;25m [0mnew_office_telephone_number[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mUpdate a user's "Home Phone Number" field for the output of finger:
+   [33;23;22;24;25mchfn [0m[-h|--home-phone][33;23;22;24;25m [0mnew_home_telephone_number[33;23;22;24;25m [0musername
+[0m[0m

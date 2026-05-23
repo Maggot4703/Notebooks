@@ -1,0 +1,29 @@
+ffmpeg
+
+[0m[0mVideo conversion tool.
+More information: https://ffmpeg.org/ffmpeg.html#Options.
+
+ - [0m[32;23;22;24;25mExtract the sound from a video and save it as MP3:
+   [33;23;22;24;25mffmpeg -i [0mpath/to/video.mp4[33;23;22;24;25m -vn [0mpath/to/sound.mp3
+[0m
+ - [0m[32;23;22;24;25mTranscode a FLAC file to Red Book CD format (44100kHz, 16bit):
+   [33;23;22;24;25mffmpeg -i [0mpath/to/input_audio.flac[33;23;22;24;25m -ar 44100 -sample_fmt s16 [0mpath/to/output_audio.wav
+[0m
+ - [0m[32;23;22;24;25mSave a video as GIF, scaling the height to 1000px and setting framerate to 15:
+   [33;23;22;24;25mffmpeg -i [0mpath/to/video.mp4[33;23;22;24;25m [0m[-vf|-filter:v][33;23;22;24;25m 'scale=-1:[0m1000[33;23;22;24;25m' -r [0m15[33;23;22;24;25m [0mpath/to/output.gif
+[0m
+ - [0m[32;23;22;24;25mCombine numbered images (frame_1.jpg, frame_2.jpg, etc) into a video or GIF:
+   [33;23;22;24;25mffmpeg -i [0mpath/to/frame_%d.jpg[33;23;22;24;25m -f image2 [0mvideo.mpg|video.gif
+[0m
+ - [0m[32;23;22;24;25mTrim a video from a given start time mm:ss to an end time mm2:ss2 (omit the -to flag to trim till the end):
+   [33;23;22;24;25mffmpeg -i [0mpath/to/input_video.mp4[33;23;22;24;25m -ss [0mmm:ss[33;23;22;24;25m -to [0mmm2:ss2[33;23;22;24;25m [0m[-c|-codec][33;23;22;24;25m copy [0mpath/to/output_video.mp4
+[0m
+ - [0m[32;23;22;24;25mConvert AVI video to MP4. AAC Audio @ 128kbit, h264 Video @ CRF 23:
+   [33;23;22;24;25mffmpeg -i [0mpath/to/input_video[33;23;22;24;25m.avi [0m[-c|-codec][33;23;22;24;25m:a aac -b:a 128k [0m[-c|-codec][33;23;22;24;25m:v libx264 -crf 23 [0mpath/to/output_video[33;23;22;24;25m.mp4[0m
+[0m
+ - [0m[32;23;22;24;25mRemux MKV video to MP4 without re-encoding audio or video streams:
+   [33;23;22;24;25mffmpeg -i [0mpath/to/input_video[33;23;22;24;25m.mkv [0m[-c|-codec][33;23;22;24;25m copy [0mpath/to/output_video[33;23;22;24;25m.mp4[0m
+[0m
+ - [0m[32;23;22;24;25mConvert MP4 video to VP9 codec. For the best quality, use a CRF value (recommended range 15-35) and -b:v MUST be 0:
+   [33;23;22;24;25mffmpeg -i [0mpath/to/input_video[33;23;22;24;25m.mp4 [0m[-c|-codec][33;23;22;24;25m:v libvpx-vp9 -crf [0m30[33;23;22;24;25m -b:v 0 [0m[-c|-codec][33;23;22;24;25m:a libopus -vbr on -threads [0mnumber_of_threads[33;23;22;24;25m [0mpath/to/output_video[33;23;22;24;25m.webm[0m
+[0m[0m

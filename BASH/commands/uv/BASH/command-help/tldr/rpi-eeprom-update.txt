@@ -1,0 +1,17 @@
+rpi-eeprom-update
+
+[0m[0mUpdate EEPROM and view other EEPROM information.
+More information: https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#rpi-eeprom-update.
+
+ - [0m[32;23;22;24;25mPrint information about the current raspberry pi EEPROM installed:
+   [33;23;22;24;25msudo rpi-eeprom-update[0m
+[0m
+ - [0m[32;23;22;24;25mUpdate a raspberry pi EEPROM:
+   [33;23;22;24;25msudo rpi-eeprom-update -a[0m
+[0m
+ - [0m[32;23;22;24;25mCancel the pending update:
+   [33;23;22;24;25msudo rpi-eeprom-update -r[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mrpi-eeprom-update -h[0m
+[0m[0m

@@ -1,0 +1,17 @@
+soffice
+
+[0m[0mCLI for the powerful and free LibreOffice suite.
+More information: https://help.libreoffice.org/latest/en-US/text/shared/guide/pdf_params.html.
+
+ - [0m[32;23;22;24;25mOpen one or more files in read-only mode:
+   [33;23;22;24;25msoffice --view [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mDisplay the content of one or more files:
+   [33;23;22;24;25msoffice --cat [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mPrint files using a specific printer:
+   [33;23;22;24;25msoffice --pt [0mprinter_name[33;23;22;24;25m [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mConvert all .doc files in the current directory to PDF:
+   [33;23;22;24;25msoffice --convert-to pdf *.doc[0m
+[0m[0m

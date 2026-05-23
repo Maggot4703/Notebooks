@@ -1,0 +1,14 @@
+e4defrag
+
+[0m[0mDefragment an ext4 filesystem.
+More information: https://manned.org/e4defrag.
+
+ - [0m[32;23;22;24;25mDefragment the filesystem:
+   [33;23;22;24;25me4defrag [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mSee how fragmented a filesystem is:
+   [33;23;22;24;25me4defrag -c [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mPrint errors and the fragmentation count before and after each file:
+   [33;23;22;24;25me4defrag -v [0m/dev/sdXN
+[0m[0m

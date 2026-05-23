@@ -1,0 +1,27 @@
+loginctl
+
+[0m[0mManage the systemd login manager.
+See also: lslogins.
+More information: https://www.freedesktop.org/software/systemd/man/loginctl.html.
+
+ - [0m[32;23;22;24;25mPrint all current sessions:
+   [33;23;22;24;25mloginctl[0m
+[0m
+ - [0m[32;23;22;24;25mPrint all properties of a specific session:
+   [33;23;22;24;25mloginctl show-session [0msession_id[33;23;22;24;25m [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mPrint all properties of a specific user:
+   [33;23;22;24;25mloginctl show-user [0musername
+[0m
+ - [0m[32;23;22;24;25mPrint a specific property of a user:
+   [33;23;22;24;25mloginctl show-user [0musername[33;23;22;24;25m [0m[-p|--property][33;23;22;24;25m [0mproperty_name
+[0m
+ - [0m[32;23;22;24;25mExecute a loginctl operation on a remote host:
+   [33;23;22;24;25mloginctl list-users [0m[-H|--host][33;23;22;24;25m [0mhostname
+[0m
+ - [0m[32;23;22;24;25mLog a user out on all of their sessions:
+   [33;23;22;24;25mloginctl terminate-user [0musername
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mloginctl [0m[-h|--help]
+[0m[0m

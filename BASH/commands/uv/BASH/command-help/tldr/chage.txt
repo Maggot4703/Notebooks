@@ -1,0 +1,23 @@
+chage
+
+[0m[0mChange user account and password expiry information.
+More information: https://manned.org/chage.
+
+ - [0m[32;23;22;24;25mList password information for the user:
+   [33;23;22;24;25mchage [0m[-l|--list][33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mEnable password expiration in 10 days:
+   [33;23;22;24;25msudo chage [0m[-M|--maxdays][33;23;22;24;25m [0m10[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mDisable password expiration:
+   [33;23;22;24;25msudo chage [0m[-M|--maxdays][33;23;22;24;25m [0m-1[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mSet account expiration date:
+   [33;23;22;24;25msudo chage [0m[-E|--expiredate][33;23;22;24;25m [0mYYYY-MM-DD[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mForce user to change password on next log in:
+   [33;23;22;24;25msudo chage [0m[-d|--lastday][33;23;22;24;25m [0m0[33;23;22;24;25m [0musername
+[0m
+ - [0m[32;23;22;24;25mRe-enable an account:
+   [33;23;22;24;25msudo chage [0m[-E|--expiredate][33;23;22;24;25m -1 [0musername
+[0m[0m

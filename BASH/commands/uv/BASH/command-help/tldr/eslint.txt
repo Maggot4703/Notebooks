@@ -1,0 +1,17 @@
+eslint
+
+[0m[0mA pluggable linting utility for JavaScript and JSX.
+More information: https://eslint.org.
+
+ - [0m[32;23;22;24;25mCreate the ESLint configuration file:
+   [33;23;22;24;25meslint --init[0m
+[0m
+ - [0m[32;23;22;24;25mLint one or more files:
+   [33;23;22;24;25meslint [0mpath/to/file1.js path/to/file2.js ...
+[0m
+ - [0m[32;23;22;24;25mFix lint issues:
+   [33;23;22;24;25meslint --fix[0m
+[0m
+ - [0m[32;23;22;24;25mLint using the specified configuration file:
+   [33;23;22;24;25meslint [0m[-c|--config][33;23;22;24;25m [0mpath/to/config_file[33;23;22;24;25m [0mpath/to/file1.js path/to/file2.js ...
+[0m[0m

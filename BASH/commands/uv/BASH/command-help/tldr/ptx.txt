@@ -1,0 +1,20 @@
+ptx
+
+[0m[0mGenerate a permuted index of words from text files.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/ptx-invocation.html.
+
+ - [0m[32;23;22;24;25mGenerate a permuted index where the first field of each line is an index reference:
+   [33;23;22;24;25mptx [0m[-r|--references][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGenerate a permuted index with automatically generated index references:
+   [33;23;22;24;25mptx [0m[-A|--auto-reference][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGenerate a permuted index with a fixed width:
+   [33;23;22;24;25mptx [0m[-w|--width][33;23;22;24;25m [0mwidth_in_columns[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGenerate a permuted index with a list of filtered words:
+   [33;23;22;24;25mptx [0m[-o|--only-file][33;23;22;24;25m [0mpath/to/filter[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mGenerate a permuted index with SYSV-style behaviors:
+   [33;23;22;24;25mptx [0m[-G|--traditional][33;23;22;24;25m [0mpath/to/file
+[0m[0m

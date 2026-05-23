@@ -1,0 +1,15 @@
+i2cdetect
+
+[0m[0mScan I2C buses.
+See also: i2cdump, i2cget, i2cset.
+More information: https://manned.org/i2cdetect.
+
+ - [0m[32;23;22;24;25mList active I2C buses:
+   [33;23;22;24;25mi2cdetect -l[0m
+[0m
+ - [0m[32;23;22;24;25mScan devices on an I2C bus:
+   [33;23;22;24;25mi2cdetect [0mi2c_bus
+[0m
+ - [0m[32;23;22;24;25mScan devices on an I2C bus without asking for confirmation:
+   [33;23;22;24;25mi2cdetect -y [0mi2c_bus
+[0m[0m

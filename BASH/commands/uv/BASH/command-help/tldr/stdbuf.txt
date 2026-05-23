@@ -1,0 +1,14 @@
+stdbuf
+
+[0m[0mRun a command with modified buffering operations for its standard streams.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/stdbuf-invocation.html.
+
+ - [0m[32;23;22;24;25mChange stdin buffer size to 512 KiB:
+   [33;23;22;24;25mstdbuf [0m[-i|--input][33;23;22;24;25m 512K [0mcommand
+[0m
+ - [0m[32;23;22;24;25mChange stdout buffer to line-buffered:
+   [33;23;22;24;25mstdbuf [0m[-o|--output][33;23;22;24;25m L [0mcommand
+[0m
+ - [0m[32;23;22;24;25mChange stderr buffer to unbuffered:
+   [33;23;22;24;25mstdbuf [0m[-e|--error][33;23;22;24;25m 0 [0mcommand
+[0m[0m

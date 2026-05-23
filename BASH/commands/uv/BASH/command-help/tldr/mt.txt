@@ -1,0 +1,26 @@
+mt
+
+[0m[0mControl magnetic tape drive operation (commonly LTO tape).
+More information: https://manned.org/mt.
+
+ - [0m[32;23;22;24;25mCheck the status of a tape drive:
+   [33;23;22;24;25mmt -f [0m/dev/nstX[33;23;22;24;25m status[0m
+[0m
+ - [0m[32;23;22;24;25mRewind the tape to beginning:
+   [33;23;22;24;25mmt -f [0m/dev/nstX[33;23;22;24;25m rewind[0m
+[0m
+ - [0m[32;23;22;24;25mMove forward a given files, then position the tape on first block of next file:
+   [33;23;22;24;25mmt -f [0m/dev/nstX[33;23;22;24;25m fsf [0mcount
+[0m
+ - [0m[32;23;22;24;25mRewind the tape, then position the tape at beginning of the given file:
+   [33;23;22;24;25mmt -f [0m/dev/nstX[33;23;22;24;25m asf [0mcount
+[0m
+ - [0m[32;23;22;24;25mPosition the tape at the end of valid data:
+   [33;23;22;24;25mmt -f [0m/dev/nstX[33;23;22;24;25m eod[0m
+[0m
+ - [0m[32;23;22;24;25mRewind the tape and unload/eject it:
+   [33;23;22;24;25mmt -f [0m/dev/nstX[33;23;22;24;25m eject[0m
+[0m
+ - [0m[32;23;22;24;25mWrite EOF (End-of-file) mark at the current position:
+   [33;23;22;24;25mmt -f [0m/dev/nstX[33;23;22;24;25m eof[0m
+[0m[0m

@@ -1,0 +1,23 @@
+egrep
+
+[0m[0mFind patterns in files using extended regex (supports ?, +, {}, (), and |).
+More information: https://manned.org/egrep.
+
+ - [0m[32;23;22;24;25mSearch for a pattern within a file:
+   [33;23;22;24;25megrep "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for a pattern within multiple files:
+   [33;23;22;24;25megrep "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file1 path/to/file2 ...
+[0m
+ - [0m[32;23;22;24;25mSearch stdin for a pattern:
+   [33;23;22;24;25mcat [0mpath/to/file[33;23;22;24;25m | egrep [0msearch_pattern
+[0m
+ - [0m[32;23;22;24;25mPrint file name and line number for each match:
+   [33;23;22;24;25megrep [0m[-H|--with-filename][33;23;22;24;25m [0m[-n|--line-number][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mSearch for a pattern in all files recursively in a directory, ignoring binary files:
+   [33;23;22;24;25megrep [0m[-r|--recursive][33;23;22;24;25m --binary-files=[0mwithout-match[33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/directory
+[0m
+ - [0m[32;23;22;24;25mSearch for lines that do not match a pattern:
+   [33;23;22;24;25megrep [0m[-v|--invert-match][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file
+[0m[0m

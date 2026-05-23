@@ -1,0 +1,11 @@
+zdump
+
+[0m[0mPrint timezone information.
+More information: https://manned.org/zdump.
+
+ - [0m[32;23;22;24;25mPrint the current time in a timezone:
+   [33;23;22;24;25mzdump [0mtimezone
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mzdump --help[0m
+[0m[0m

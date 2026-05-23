@@ -1,0 +1,20 @@
+alsamixer
+
+[0m[0mGraphical mixer for ALSA soundcard driver.
+More information: https://manned.org/alsamixer.
+
+ - [0m[32;23;22;24;25mSelect the soundcard to use:
+   [33;23;22;24;25malsamixer [0m[-c|--card][33;23;22;24;25m [0msoundcard_number
+[0m
+ - [0m[32;23;22;24;25mSelect mixer device to control:
+   [33;23;22;24;25malsamixer [0m[-D|--device][33;23;22;24;25m [0mdevice_name
+[0m
+ - [0m[32;23;22;24;25mIncrease volume:
+   [33;23;22;24;25m<w>[0m
+[0m
+ - [0m[32;23;22;24;25mDecrease volume:
+   [33;23;22;24;25m<x>[0m
+[0m
+ - [0m[32;23;22;24;25mQuit alsamixer:
+   [33;23;22;24;25m<Esc>[0m
+[0m[0m

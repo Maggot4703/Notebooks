@@ -1,0 +1,30 @@
+gcc
+
+[0m[0mPreprocess and compile C and C++ source files, then assemble and link them together.
+Part of GCC (GNU Compiler Collection).
+More information: https://gcc.gnu.org/onlinedocs/gcc/.
+
+ - [0m[32;23;22;24;25mCompile multiple source files into an executable:
+   [33;23;22;24;25mgcc [0mpath/to/source1.c path/to/source2.c ...[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output_executable
+[0m
+ - [0m[32;23;22;24;25mActivate output of all errors and warnings:
+   [33;23;22;24;25mgcc [0mpath/to/source.c[33;23;22;24;25m -Wall [0m[-o|--output][33;23;22;24;25m [0moutput_executable
+[0m
+ - [0m[32;23;22;24;25mShow common warnings, debug symbols in output, and optimize without affecting debugging:
+   [33;23;22;24;25mgcc [0mpath/to/source.c[33;23;22;24;25m -Wall [0m[-g|--debug][33;23;22;24;25m -Og [0m[-o|--output][33;23;22;24;25m [0mpath/to/output_executable
+[0m
+ - [0m[32;23;22;24;25mInclude libraries from a different path:
+   [33;23;22;24;25mgcc [0mpath/to/source.c[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output_executable[33;23;22;24;25m -I[0mpath/to/header[33;23;22;24;25m -L[0mpath/to/library[33;23;22;24;25m -l[0mlibrary_name
+[0m
+ - [0m[32;23;22;24;25mCompile source code into Assembler instructions:
+   [33;23;22;24;25mgcc [0m[-S|--assemble][33;23;22;24;25m [0mpath/to/source.c
+[0m
+ - [0m[32;23;22;24;25mCompile source code into an object file without linking:
+   [33;23;22;24;25mgcc [0m[-c|--compile][33;23;22;24;25m [0mpath/to/source.c
+[0m
+ - [0m[32;23;22;24;25mOptimize the compiled program for performance:
+   [33;23;22;24;25mgcc [0mpath/to/source.c[33;23;22;24;25m -O[0m1|2|3|fast[33;23;22;24;25m [0m[-o|--output][33;23;22;24;25m [0mpath/to/output_executable
+[0m
+ - [0m[32;23;22;24;25mDisplay version:
+   [33;23;22;24;25mgcc --version[0m
+[0m[0m

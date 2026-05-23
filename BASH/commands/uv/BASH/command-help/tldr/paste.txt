@@ -1,0 +1,20 @@
+paste
+
+[0m[0mMerge lines of files.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/paste-invocation.html.
+
+ - [0m[32;23;22;24;25mJoin all the lines into a single line, using TAB as delimiter:
+   [33;23;22;24;25mpaste [0m[-s|--serial][33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mJoin all the lines into a single line, using the specified delimiter:
+   [33;23;22;24;25mpaste [0m[-sd|--serial --delimiters][33;23;22;24;25m [0mdelimiter[33;23;22;24;25m [0mpath/to/file
+[0m
+ - [0m[32;23;22;24;25mMerge two files side by side, each in its column, using TAB as delimiter:
+   [33;23;22;24;25mpaste [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mMerge two files side by side, each in its column, using the specified delimiter:
+   [33;23;22;24;25mpaste [0m[-d|--delimiters][33;23;22;24;25m [0mdelimiter[33;23;22;24;25m [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m
+ - [0m[32;23;22;24;25mMerge two files, with lines added alternatively:
+   [33;23;22;24;25mpaste [0m[-d|--delimiters][33;23;22;24;25m '\n' [0mpath/to/file1[33;23;22;24;25m [0mpath/to/file2
+[0m[0m

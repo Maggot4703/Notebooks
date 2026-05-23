@@ -1,0 +1,29 @@
+lynx
+
+[0m[0mCommand-line web browser.
+More information: https://lynx.browser.org.
+
+ - [0m[32;23;22;24;25mVisit a website:
+   [33;23;22;24;25mlynx [0mexample.com
+[0m
+ - [0m[32;23;22;24;25mApply restrictions for anonymous account:
+   [33;23;22;24;25mlynx -anonymous [0mexample.com
+[0m
+ - [0m[32;23;22;24;25mTurn on mouse support, if available:
+   [33;23;22;24;25mlynx -use_mouse [0mexample.com
+[0m
+ - [0m[32;23;22;24;25mForce color mode on, if available:
+   [33;23;22;24;25mlynx -color [0mexample.com
+[0m
+ - [0m[32;23;22;24;25mOpen a link, using a specific file to read and write cookies:
+   [33;23;22;24;25mlynx -cookie_file=[0mpath/to/file[33;23;22;24;25m [0mexample.com
+[0m
+ - [0m[32;23;22;24;25mNavigate forwards and backwards through the links on a page:
+   <ArrowUp>|<ArrowDown>
+[0m
+ - [0m[32;23;22;24;25mGo back to the previously displayed page:
+   <ArrowLeft>|<u>
+[0m
+ - [0m[32;23;22;24;25mExit:
+   [33;23;22;24;25m<q><y>[0m
+[0m[0m

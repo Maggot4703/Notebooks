@@ -1,0 +1,20 @@
+BROWSERSLIST(1)                  User Commands                 BROWSERSLIST(1)
+
+NAME
+       browserslist - The config to share target browsers and Node.js versions
+
+DESCRIPTION
+       Share  target browsers between different front-end tools, like Autopre‐
+       fixer, Stylelint and babel-env-preset.
+
+   Usage:
+              npx browserslist npx  browserslist  "QUERIES"  npx  browserslist
+              --json       "QUERIES"       npx       browserslist       --con‐
+              fig="path/to/browserlist/file"   npx   browserslist   --coverage
+              "QUERIES"  npx browserslist --coverage=US "QUERIES" npx browser‐
+              slist   --coverage=US,RU,global   "QUERIES"   npx   browserslist
+              --env="environment  name  defined  in  config"  npx browserslist
+              --stats="path/to/browserlist/stats/file" npx browserslist  --mo‐
+              bile-to-desktop npx browserslist --ignore-unknown-versions
+
+browserslist 4.21.4              December 2022                 BROWSERSLIST(1)

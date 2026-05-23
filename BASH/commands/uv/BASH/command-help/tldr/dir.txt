@@ -1,0 +1,21 @@
+dir
+
+[0m[0mList directory contents using one line per file, special characters are represented by backslash escape sequences.
+Works as ls -C --escape.
+More information: https://manned.org/dir.
+
+ - [0m[32;23;22;24;25mList all files, including hidden files:
+   [33;23;22;24;25mdir [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mList files including their author (-l is required):
+   [33;23;22;24;25mdir -l --author[0m
+[0m
+ - [0m[32;23;22;24;25mList files excluding those that match a specified blob pattern:
+   [33;23;22;24;25mdir --hide [0mpattern
+[0m
+ - [0m[32;23;22;24;25mList subdirectories recursively:
+   [33;23;22;24;25mdir [0m[-R|--recursive]
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mdir --help[0m
+[0m[0m

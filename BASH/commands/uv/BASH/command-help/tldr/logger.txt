@@ -1,0 +1,8 @@
+logger
+
+[0m[0mAdd messages to syslog.
+More information: https://manned.org/logger.1p.
+
+ - [0m[32;23;22;24;25mLog a message to syslog:
+   [33;23;22;24;25mlogger [0mmessage
+[0m[0m

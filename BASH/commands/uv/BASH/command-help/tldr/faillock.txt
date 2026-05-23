@@ -1,0 +1,20 @@
+faillock
+
+[0m[0mDisplay and modify authentication failure record files.
+More information: https://manned.org/faillock.
+
+ - [0m[32;23;22;24;25mList login failures of the current user:
+   [33;23;22;24;25mfaillock[0m
+[0m
+ - [0m[32;23;22;24;25mReset the failure records of the current user:
+   [33;23;22;24;25mfaillock --reset[0m
+[0m
+ - [0m[32;23;22;24;25mList login failures of all users:
+   [33;23;22;24;25msudo faillock[0m
+[0m
+ - [0m[32;23;22;24;25mList login failures of the specified user:
+   [33;23;22;24;25msudo faillock --user [0muser
+[0m
+ - [0m[32;23;22;24;25mReset the failure records of the specified user:
+   [33;23;22;24;25msudo faillock --user [0muser[33;23;22;24;25m --reset[0m
+[0m[0m

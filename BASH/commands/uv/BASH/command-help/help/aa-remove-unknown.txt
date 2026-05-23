@@ -1,0 +1,7 @@
+usage: /usr/sbin/aa-remove-unknown [options]
+
+Remove profiles unknown to the system
+
+Options:
+ -h, --help	Show this help message and exit
+ -n		Dry run; don't remove profiles

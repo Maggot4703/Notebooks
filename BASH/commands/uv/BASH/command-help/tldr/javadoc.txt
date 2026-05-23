@@ -1,0 +1,14 @@
+javadoc
+
+[0m[0mGenerate Java API documentation in HTML format from source code.
+More information: https://docs.oracle.com/en/java/javase/20/docs/specs/man/javadoc.html.
+
+ - [0m[32;23;22;24;25mGenerate documentation for Java source code and save the result in a directory:
+   [33;23;22;24;25mjavadoc -d [0mpath/to/directory[33;23;22;24;25m/ [0mpath/to/java_source_code
+[0m
+ - [0m[32;23;22;24;25mGenerate documentation with a specific encoding:
+   [33;23;22;24;25mjavadoc -docencoding [0mUTF-8[33;23;22;24;25m [0mpath/to/java_source_code
+[0m
+ - [0m[32;23;22;24;25mGenerate documentation excluding some packages:
+   [33;23;22;24;25mjavadoc -exclude [0mpackage_list[33;23;22;24;25m [0mpath/to/java_source_code
+[0m[0m

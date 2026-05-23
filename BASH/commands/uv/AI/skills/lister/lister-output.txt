@@ -1,0 +1,44 @@
+Available Copilot Agents:
+- Agent List
+- Captain: [Leadership, Decision-making, Maritime law, Navigation, Crisis management]
+- Chief: [Engineering expertise, Leadership, Problem-solving, Technical documentation]
+- Doctor: [Medical knowledge, Emergency response, Record keeping, Communication]
+- GUI Designer Agent
+- Gunner: [Weapons proficiency, Targeting and accuracy, Safety protocols, Teamwork]
+- Navigator: [Navigation (traditional and electronic), Chart management, Analytical thinking, Attention to detail]
+- Pilot: [Navigation, Technical proficiency, Communication, Situational awareness]
+- Technician: [Technical proficiency, Problem-solving, Attention to detail, Safety awareness]
+- Trader: [Negotiation, Market analysis, Logistics, Communication]
+- Traveller: [api-design, data-parsing, rpg-data, nearest-base, pdf-to-txt]
+
+Available Copilot Skills:
+- CREW: /home/me/Notebooks/AI/agents/CREW/SKILL.md
+- algorithmic-art: /home/me/Notebooks/AI/skills/skills-main/skills/algorithmic-art/SKILL.md
+- api-design: /home/me/Notebooks/.github/skills/api-design/SKILL.md
+- backup-notebooks: /home/me/Notebooks/.github/skills/backup-notebooks/SKILL.md
+- book-speaker: /home/me/Notebooks/AI/skills/book-speaker/SKILL.md
+- brand-guidelines: /home/me/Notebooks/AI/skills/skills-main/skills/brand-guidelines/SKILL.md
+- canvas-design: /home/me/Notebooks/AI/skills/skills-main/skills/canvas-design/SKILL.md
+- claude-api: /home/me/Notebooks/AI/skills/skills-main/skills/claude-api/SKILL.md
+- data-parsing: /home/me/Notebooks/.github/skills/data-parsing/SKILL.md
+- detect-lines: /home/me/Notebooks/AI/skills/detect-lines/SKILL.md
+- doc-coauthoring: /home/me/Notebooks/AI/skills/skills-main/skills/doc-coauthoring/SKILL.md
+- docx: /home/me/Notebooks/AI/skills/skills-main/skills/docx/SKILL.md
+- frontend-design: /home/me/Notebooks/AI/skills/skills-main/skills/frontend-design/SKILL.md
+- internal-comms: /home/me/Notebooks/AI/skills/skills-main/skills/internal-comms/SKILL.md
+- list-agents: /home/me/Notebooks/AI/skills/list-agents/SKILL.md
+- list-skills: /home/me/Notebooks/AI/skills/list-skills/SKILL.md
+- lister: /home/me/Notebooks/AI/skills/lister/SKILL.md
+- mcp-builder: /home/me/Notebooks/AI/skills/skills-main/skills/mcp-builder/SKILL.md
+- nearest-base: /home/me/Notebooks/.github/skills/nearest-base/SKILL.md
+- pdf: /home/me/Notebooks/AI/skills/skills-main/skills/pdf/SKILL.md
+- pdf-work: /home/me/Notebooks/AI/skills/skills-main/skills/pdf-work/SKILL.md
+- pptx: /home/me/Notebooks/AI/skills/skills-main/skills/pptx/SKILL.md
+- rpg-data: /home/me/Notebooks/.github/skills/rpg-data/SKILL.md
+- skill-creator: /home/me/Notebooks/AI/skills/skills-main/skills/skill-creator/SKILL.md
+- slack-gif-creator: /home/me/Notebooks/AI/skills/skills-main/skills/slack-gif-creator/SKILL.md
+- template: /home/me/Notebooks/AI/skills/skills-main/template/SKILL.md
+- theme-factory: /home/me/Notebooks/AI/skills/skills-main/skills/theme-factory/SKILL.md
+- web-artifacts-builder: /home/me/Notebooks/AI/skills/skills-main/skills/web-artifacts-builder/SKILL.md
+- webapp-testing: /home/me/Notebooks/AI/skills/skills-main/skills/webapp-testing/SKILL.md
+- xlsx: /home/me/Notebooks/AI/skills/skills-main/skills/xlsx/SKILL.md

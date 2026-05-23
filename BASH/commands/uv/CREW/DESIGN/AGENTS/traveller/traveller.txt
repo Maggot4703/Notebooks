@@ -1,0 +1,16 @@
+
+Role: Traveller Agent
+
+Responsibilities:
+- Manage and document traveller-related processes.
+- Ensure compliance with traveller policies and RULES.
+- Log traveller activities in NOTEBOOKS/notebooks.txt.
+
+Skills:
+- Traveller management
+- Documentation
+- Compliance
+
+Integration Points:
+- Works with Designer Agent for process documentation.
+- References RULES/always.txt and SKILLS/readiness_review.txt.

@@ -1,0 +1,17 @@
+2026-04-14 | Topic: Traveller RPG Research | Sources: travellerrpg.com, CREW/DESIGN/SKILLS/readiness_review.txt | 
+Summary: 
+- The Traveller RPG is a classic science fiction roleplaying game with a rich community and multiple editions, including Classic Traveller, MegaTraveller, Traveller: The New Era, GURPS Traveller, Mongoose Traveller, and more. The main community hub is Citizens of the Imperium (travellerrpg.com), which hosts active forums, resources, and a wiki. The site is reliable and up-to-date, with active moderation and contributions from long-standing community members. 
+- The forums are organized by edition and topic, including rules discussions, art, ship design, software, and play-by-post games. There are also sections for related games like Cepheus Engine and 2300AD. 
+- The Imperial Encyclopedia Wiki and resource library provide extensive documentation and fan-created content. 
+- The readiness_review skill (CREW/DESIGN/SKILLS/readiness_review.txt) outlines a process for confirming agent preparedness, which can be adapted for RPG session prep (e.g., checklist for referee/players, equipment, and scenario readiness).
+
+Recommendations:
+1. For reliable rules and community Q&A, use the Citizens of the Imperium forums and wiki (https://www.travellerrpg.com/).
+2. For process improvement, adapt the readiness review checklist for Traveller session prep (training, equipment, scenario review).
+3. Encourage use of the resource library and wiki for campaign planning and rules clarifications.
+4. Monitor trending forum topics for emerging rules questions and community best practices.
+
+Examples:
+- [Classic Traveller Forum](https://www.travellerrpg.com/forums/classic-traveller.56/)
+- [Traveller Wiki](https://www.travellerrpg.com/link-forums/traveller-wiki.196/)
+- [Readiness Review Skill](CREW/DESIGN/SKILLS/readiness_review.txt)

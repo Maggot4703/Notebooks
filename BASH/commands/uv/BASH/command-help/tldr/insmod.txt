@@ -1,0 +1,9 @@
+insmod
+
+[0m[0mDynamically load modules into the Linux Kernel.
+See also: kmod for other module management commands.
+More information: https://manned.org/insmod.
+
+ - [0m[32;23;22;24;25mInsert a kernel module into the Linux kernel:
+   [33;23;22;24;25msudo insmod [0mpath/to/module.ko
+[0m[0m

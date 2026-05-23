@@ -1,0 +1,29 @@
+virt-manager
+
+[0m[0mA desktop user interface for managing KVM and Xen virtual machines and LXC containers.
+More information: https://manned.org/virt-manager.1.
+
+ - [0m[32;23;22;24;25mLaunch the GUI:
+   [33;23;22;24;25mvirt-manager[0m
+[0m
+ - [0m[32;23;22;24;25mConnect to a hypervisor:
+   [33;23;22;24;25mvirt-manager --connect [0mhypervisor_uri
+[0m
+ - [0m[32;23;22;24;25mDon't fork virt-manager process into background on startup:
+   [33;23;22;24;25mvirt-manager --no-fork[0m
+[0m
+ - [0m[32;23;22;24;25mPrint debug output:
+   [33;23;22;24;25mvirt-manager --debug[0m
+[0m
+ - [0m[32;23;22;24;25mOpen the "New VM" wizard:
+   [33;23;22;24;25mvirt-manager --show-domain-creator[0m
+[0m
+ - [0m[32;23;22;24;25mShow domain details window for a specific virtual machine/container:
+   [33;23;22;24;25mvirt-manager --show-domain-editor [0mname|id|uuid
+[0m
+ - [0m[32;23;22;24;25mShow domain performance window for a specific virtual machine/container:
+   [33;23;22;24;25mvirt-manager --show-domain-performance [0mname|id|uuid
+[0m
+ - [0m[32;23;22;24;25mShow connection details window:
+   [33;23;22;24;25mvirt-manager --show-host-summary[0m
+[0m[0m

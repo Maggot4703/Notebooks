@@ -1,0 +1,14 @@
+while
+
+[0m[0mSimple shell loop that repeats while the return value remains zero.
+More information: https://www.gnu.org/software/bash/manual/bash.html#index-while.
+
+ - [0m[32;23;22;24;25mRead stdin and perform an action on every line:
+   [33;23;22;24;25mwhile read line; do [0mecho "$line"[33;23;22;24;25m; done[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a command forever once every second:
+   [33;23;22;24;25mwhile :; do [0mcommand[33;23;22;24;25m; sleep 1; done[0m
+[0m
+ - [0m[32;23;22;24;25mExecute a command until it fails:
+   [33;23;22;24;25mwhile [0mcommand[33;23;22;24;25m; do :; done[0m
+[0m[0m

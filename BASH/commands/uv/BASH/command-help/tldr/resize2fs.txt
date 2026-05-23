@@ -1,0 +1,15 @@
+resize2fs
+
+[0m[0mResize an ext2, ext3 or ext4 filesystem.
+Does not resize the underlying partition. The filesystem may have to be unmounted first, read the man page for more details.
+More information: https://manned.org/resize2fs.
+
+ - [0m[32;23;22;24;25mAutomatically resize a filesystem to its maximum possible size:
+   [33;23;22;24;25mresize2fs [0m/dev/sdXN
+[0m
+ - [0m[32;23;22;24;25mResize the filesystem to a size of 40G, displaying a progress bar:
+   [33;23;22;24;25mresize2fs -p [0m/dev/sdXN[33;23;22;24;25m [0m40G
+[0m
+ - [0m[32;23;22;24;25mShrink the filesystem to its minimum possible size:
+   [33;23;22;24;25mresize2fs -M [0m/dev/sdXN
+[0m[0m

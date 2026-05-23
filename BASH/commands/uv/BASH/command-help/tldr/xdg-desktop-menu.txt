@@ -1,0 +1,17 @@
+xdg-desktop-menu
+
+[0m[0mInstall or uninstall desktop menu items.
+More information: https://manned.org/xdg-desktop-menu.
+
+ - [0m[32;23;22;24;25mInstall an application to the desktop menu system:
+   [33;23;22;24;25mxdg-desktop-menu install [0mpath/to/file.desktop
+[0m
+ - [0m[32;23;22;24;25mInstall an application to the desktop menu system with the vendor prefix check disabled:
+   [33;23;22;24;25mxdg-desktop-menu install --novendor [0mpath/to/file.desktop
+[0m
+ - [0m[32;23;22;24;25mUninstall an application from the desktop menu system:
+   [33;23;22;24;25mxdg-desktop-menu uninstall [0mpath/to/file.desktop
+[0m
+ - [0m[32;23;22;24;25mForce an update of the desktop menu system:
+   [33;23;22;24;25mxdg-desktop-menu forceupdate --mode [0muser|system
+[0m[0m

@@ -1,0 +1,29 @@
+tree
+
+[0m[0mShow the contents of the current directory as a tree.
+More information: https://manned.org/tree.
+
+ - [0m[32;23;22;24;25mPrint files and directories up to 'num' levels of depth (where 1 means the current directory):
+   [33;23;22;24;25mtree -L [0mnum
+[0m
+ - [0m[32;23;22;24;25mPrint directories only:
+   [33;23;22;24;25mtree -d[0m
+[0m
+ - [0m[32;23;22;24;25mPrint hidden files too with colorization on:
+   [33;23;22;24;25mtree -a -C[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the tree without indentation lines, showing the full path instead (use -N to not escape non-printable characters):
+   [33;23;22;24;25mtree -i -f[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the size of each file and the cumulative size of each directory, in human-readable format:
+   [33;23;22;24;25mtree -s -h --du[0m
+[0m
+ - [0m[32;23;22;24;25mPrint files within the tree hierarchy, using a wildcard (glob) pattern, and pruning out directories that don't contain matching files:
+   [33;23;22;24;25mtree -P '[0m*.txt[33;23;22;24;25m' --prune[0m
+[0m
+ - [0m[32;23;22;24;25mPrint directories within the tree hierarchy, using the wildcard (glob) pattern, and pruning out directories that aren't ancestors of the wanted one:
+   [33;23;22;24;25mtree -P [0mdirectory_name[33;23;22;24;25m --matchdirs --prune[0m
+[0m
+ - [0m[32;23;22;24;25mPrint the tree ignoring the given directories:
+   [33;23;22;24;25mtree -I '[0mdirectory_name1|directory_name2[33;23;22;24;25m'[0m
+[0m[0m

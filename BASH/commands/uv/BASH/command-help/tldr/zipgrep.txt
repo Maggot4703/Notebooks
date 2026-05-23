@@ -1,0 +1,20 @@
+zipgrep
+
+[0m[0mFind patterns in files in a Zip archive using extended regex (supports ?, +, {}, () and |).
+More information: https://manned.org/zipgrep.
+
+ - [0m[32;23;22;24;25mSearch for a pattern within a Zip archive:
+   [33;23;22;24;25mzipgrep "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file.zip
+[0m
+ - [0m[32;23;22;24;25mPrint file name and line number for each match:
+   [33;23;22;24;25mzipgrep [0m[-H|--with-filename][33;23;22;24;25m [0m[-n|--line-number][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file.zip
+[0m
+ - [0m[32;23;22;24;25mSearch for lines that do not match a pattern:
+   [33;23;22;24;25mzipgrep [0m[-v|--invert-match][33;23;22;24;25m "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file.zip
+[0m
+ - [0m[32;23;22;24;25mSpecify files inside a Zip archive from search:
+   [33;23;22;24;25mzipgrep "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file.zip[33;23;22;24;25m [0mfile/to/search1[33;23;22;24;25m [0mfile/to/search2
+[0m
+ - [0m[32;23;22;24;25mExclude files inside a Zip archive from search:
+   [33;23;22;24;25mzipgrep "[0msearch_pattern[33;23;22;24;25m" [0mpath/to/file.zip[33;23;22;24;25m [0m[-x|--line-regexp][33;23;22;24;25m [0mfile/to/exclude1[33;23;22;24;25m [0mfile/to/exclude2
+[0m[0m

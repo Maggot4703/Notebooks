@@ -1,0 +1,12 @@
+wpexec
+
+[0m[0mRun WirePlumber Lua scripts.
+See also: wpctl, wireplumber.
+More information: https://pipewire.pages.freedesktop.org/wireplumber/scripting/lua_api/lua_introduction.html.
+
+ - [0m[32;23;22;24;25mRun a WirePlumber script:
+   [33;23;22;24;25mwpexec [0mpath/to/file.lua
+[0m
+ - [0m[32;23;22;24;25mDisplay help:
+   [33;23;22;24;25mwpexec --help[0m
+[0m[0m

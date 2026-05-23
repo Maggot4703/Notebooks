@@ -1,0 +1,187 @@
+
+<script>
+    function applyDamage(cha) {
+        let actual = document.getElement();
+    }
+</script>
+
+<form class="flexcol damage-dialog">
+
+    <h1 class="charname shadow">
+        {{#if actor.token}}
+            {{actor.token.name}}
+        {{else}}
+            {{actor.name}}
+        {{/if}}
+    </h1>
+
+    {{#if playerRequestName}}
+        <h2 class="charname shadow">Damage requested by {{playerRequestName}}</h2>
+    {{/if}}
+
+    <div class="shadow grid grid-4col">
+        <div class="resource flex-group-center">
+            <label for="damage" class="resource-label">{{localize "MGT2.DamageDialog.Damage"}}</label>
+            <input type="text" name="damage" value="{{damage}}" data-dtype="Number" readonly/>
+        </div>
+        <div class="resource flex-group-center">
+            <label for="ap" class="resource-label">{{localize "MGT2.DamageDialog.AP"}}</label>
+            <input type="text" name="ap" value="{{ap}}" data-dtype="Number" readonly/>
+        </div>
+        <div class="resource flex-group-center">
+            <label for="armour" class="resource-label">{{localize "MGT2.DamageDialog.Armour"}}</label>
+            <input type="text" name="armour" value="{{armour}}" data-dtype="Number" readonly/>
+        </div>
+        <div class="resource flex-group-center">
+            <label for="actualDamage" class="resource-label">{{localize "MGT2.DamageDialog.Actual"}}</label>
+            <input type="text" name="actualDamage" value="{{actualDamage}}" data-dtype="Number" readonly/>
+        </div>
+
+        {{#if armourText}}
+            <div class="flex-group-center grid-span-4">
+                {{armourText}}
+            </div>
+        {{/if}}
+
+        {{#if radiation}}
+            <div class="resource flex-group-center">
+                <label for="radiation" class="resource-label">{{localize "MGT2.DamageDialog.Radiation"}}</label>
+                <input type="text" name="damage" value="{{radiation}}" data-dtype="Number" readonly/>
+            </div>
+            <div class="resource flex-group-center">
+            </div>
+            <div class="resource flex-group-center">
+                <label for="armourRads" class="resource-label">{{localize "MGT2.DamageDialog.ArmourRads"}}</label>
+                <input type="text" name="armourRads" value="{{armourRads}}" data-dtype="Number" readonly/>
+            </div>
+            <div class="resource flex-group-center">
+                <label for="actualRadiation" class="resource-label">{{localize "MGT2.DamageDialog.Actual"}}</label>
+                <input type="text" name="actualRadiation" value="{{actualRadiation}}" data-dtype="Number" readonly/>
+            </div>
+        {{/if}}
+    </div>
+
+    <div class="shadow">
+        <h1>Characteristics</h1>
+
+        <div class="damage-header grid grid-4col">
+            <div class="flex-group-center">
+                <label>{{localize "MGT2.DamageDialog.ToApply"}}</label>
+                <input class="characteristic-readonly remaining"
+                       type="number"
+                       name="remainingDamage"
+                       value="{{remainingDamage}}"
+                       data-dtype="Number" readonly/>
+            </div>
+
+            <div class="flex-group-left grid-span-2" title="{{woundsEffect}}">
+                <label>{{localize "MGT2.DamageDialog.WoundEffect"}}</label>
+                <input class="characteristic-readonly remaining"
+                       type="text"
+                       name="woundEffects"
+                       value="{{wounds}}"
+                       data-dtype="String"
+                       readonly/>
+            </div>
+
+        </div>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>Total</th>
+                <th>Current</th>
+                <th>Damage</th>
+                <th/>
+            </tr>
+            {{#unless stun}}
+                {{#if XXX}}
+                    <tr class="targeted-cha-row">
+                        <td><label class="resource-label">{{laser}}</label></td>
+                        <td class="value">{{XXX_VALUE}}</td>
+                        <td class="value">
+                            <input class="characteristic-readonly VAL_{{laser}}"
+                                   type="number" min="0" max="20" step="1"
+                                   name="{{laser}}"
+                                   value="{{XXX}}"
+                                   data-dtype="Number" readonly/>
+                        </td>
+                        <td class="value">
+                            <input class="damage-value DMG_{{laser}} DMG_XXX"
+                                   type="number" min="0" step="1"
+                                   name="DMG_{{laser}}" value="{{DMG_XXX}}"
+                                   data-dtype="Number"/>
+
+                        </td>
+                        <td><button class="apply-button" data-cha="{{laser}}" type="button">Apply</button></td>
+                    </tr>
+                {{else}}
+                    <tr>
+                        <td><label class="resource-label">STR</label></td>
+                        <td class="value">{{data.characteristics.STR.value}}</td>
+                        <td class="value">
+                            <input class="characteristic-readonly VAL_STR"
+                                   type="number" min="0" max="20" step="1"
+                                   name="STR"
+                                   value="{{STR}}"
+                                   data-dtype="Number" readonly/>
+                        </td>
+                        <td class="value">
+                            <input class="damage-value DMG_STR"
+                                   type="number" min="0" step="1"
+                                   name="DMG_STR" value="{{DMG_STR}}"
+                                   data-dtype="Number"/>
+
+                        </td>
+                        <td><button class="apply-button" data-cha="STR" type="button">Apply</button></td>
+                    </tr>
+                    <tr>
+                        <td><label class="resource-label">DEX</label></td>
+                        <td class="value">{{data.characteristics.DEX.value}}</td>
+                        <td class="value">
+                            <input class="characteristic-readonly VAL_DEX"
+                                   type="number" min="0" max="20" step="1"
+                                   name="DEX"
+                                   value="{{DEX}}"
+                                   data-dtype="Number" readonly/>
+                        </td>
+                        <td class="value">
+                            <input class="damage-value DMG_DEX"
+                                   type="number" min="0" step="1"
+                                   name="DMG_DEX" value="{{DMG_DEX}}"
+                                   data-dtype="Number"/>
+
+                        </td>
+                        <td><button class="apply-button" data-cha="DEX" type="button">Apply</button></td>
+                    </tr>
+                {{/if}}
+            {{/unless}}
+            {{#unless XXX}}
+                <tr>
+                    <td><label class="resource-label">END</label></td>
+                    <td class="value">{{data.characteristics.END.value}}</td>
+                    <td class="value">
+                        <input class="characteristic-readonly VAL_END"
+                               type="number" min="0" max="20" step="1"
+                               name="END"
+                               value="{{END}}"
+                               data-dtype="Number" readonly/>
+                    </td>
+                    <td class="value">
+                        <input class="damage-value DMG_END"
+                               type="number" min="0" step="1"
+                               name="DMG_END" value="{{DMG_END}}"
+                               data-dtype="Number"/>
+
+                    </td>
+                    <td><button class="apply-button" data-cha="END" type="button">Apply</button></td>
+                </tr>
+            {{/unless}}
+        </table>
+    </div>
+
+    <footer class="sheet-footer flexrow">
+        <button type="submit" name="submit" class="damageDone">Done</button>
+    </footer>
+
+</form>

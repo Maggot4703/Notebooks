@@ -1,0 +1,29 @@
+date
+
+[0m[0mSet or display the system date.
+More information: https://www.gnu.org/software/coreutils/manual/html_node/date-invocation.html.
+
+ - [0m[32;23;22;24;25mDisplay the current date using the default locale's format:
+   [33;23;22;24;25mdate +%c[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the current date in UTC, using the ISO 8601 format:
+   [33;23;22;24;25mdate [0m[-u|--utc][33;23;22;24;25m +%Y-%m-%dT%H:%M:%S%Z[0m
+[0m
+ - [0m[32;23;22;24;25mDisplay the current date as a Unix timestamp (seconds since the Unix epoch):
+   [33;23;22;24;25mdate +%s[0m
+[0m
+ - [0m[32;23;22;24;25mConvert a date specified as a Unix timestamp to the default format:
+   [33;23;22;24;25mdate [0m[-d|--date][33;23;22;24;25m @[0m1473305798
+[0m
+ - [0m[32;23;22;24;25mConvert a given date to the Unix timestamp format:
+   [33;23;22;24;25mdate [0m[-d|--date][33;23;22;24;25m "[0m2018-09-01 00:00[33;23;22;24;25m" +%s [0m[-u|--utc]
+[0m
+ - [0m[32;23;22;24;25mDisplay the current date using the RFC-3339 format (YYYY-MM-DD hh:mm:ss TZ):
+   [33;23;22;24;25mdate --rfc-3339 s[0m
+[0m
+ - [0m[32;23;22;24;25mSet the current date using the format MMDDhhmmYYYY.ss (YYYY and .ss are optional):
+   [33;23;22;24;25mdate [0m093023592021.59
+[0m
+ - [0m[32;23;22;24;25mDisplay the current ISO week number:
+   [33;23;22;24;25mdate +%V[0m
+[0m[0m

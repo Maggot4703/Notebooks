@@ -1,0 +1,11 @@
+virt-clone
+
+[0m[0mClone a libvirt virtual machine.
+More information: https://manned.org/virt-clone.
+
+ - [0m[32;23;22;24;25mClone a virtual machine and automatically generate a new name, storage path, and MAC address:
+   [33;23;22;24;25mvirt-clone [0m[-o|--original][33;23;22;24;25m [0mvm_name[33;23;22;24;25m --auto-clone[0m
+[0m
+ - [0m[32;23;22;24;25mClone a virtual machine and specify the new name, storage path, and MAC address:
+   [33;23;22;24;25mvirt-clone [0m[-o|--original][33;23;22;24;25m [0mvm_name[33;23;22;24;25m [0m[-n|--name][33;23;22;24;25m [0mnew_vm_name[33;23;22;24;25m [0m[-f|--file][33;23;22;24;25m [0mpath/to/new_storage[33;23;22;24;25m [0m[-m|--mac][33;23;22;24;25m [0mff:ff:ff:ff:ff:ff|RANDOM
+[0m[0m
