@@ -1,5 +1,5 @@
 # Linting and testing requirements for Crew
 flake8>=6.0.0
-black>=23.0.0
+black>=26.3.1
 pytest>=7.0.0
 pytest-cov>=4.0.0
