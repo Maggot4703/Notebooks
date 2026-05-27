@@ -11,7 +11,7 @@ jobs:
   protect:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Require status checks on default branch
         uses: actions/github-script@v7
         with:
